@@ -72,7 +72,7 @@ public class VQCCSRLoginLogout extends QCStore
 						}
 						else
 						{
-							String Node = Vprop.getProperty("login_node");  // Added in jan21.1
+							String Node = "http://192.168.2.72:5555/wd/hub";
 							 //String Node2 = "http://192.168.0.238:5566/wd/hub";
 							 DesiredCapabilities cap = DesiredCapabilities.internetExplorer();
 							 driver = new RemoteWebDriver(new URL(Node), cap);	
