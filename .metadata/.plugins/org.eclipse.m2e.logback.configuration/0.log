@@ -70,3 +70,11 @@
 2019-02-11 11:44:28,084 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QC_Batch\QC_LOC\src\main\resources
 2019-02-11 11:44:28,085 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-02-11 11:44:28,085 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QC_Batch\QC_LOC\src\test\resources
+2019-02-11 16:42:59,031 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-11 16:42:59,051 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QC_Batch\QC_LOC\src\main\resources
+2019-02-11 16:42:59,055 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-11 16:42:59,055 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QC_Batch\QC_LOC\src\test\resources
+2019-02-11 16:43:04,962 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-11 16:43:04,962 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QC_Batch\QC_LOC\src\main\resources
+2019-02-11 16:43:04,963 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-11 16:43:04,964 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QC_Batch\QC_LOC\src\test\resources
