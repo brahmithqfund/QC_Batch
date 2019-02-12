@@ -1,16 +1,8 @@
-<<<<<<< HEAD
-#Tue Feb 12 10:26:05 IST 2019
+#Tue Feb 12 10:33:38 IST 2019
 l=Installed plugins\: AS-RUNTIME
 ct=jbt
-d=1549947365769
+d=1549947818839
 c=1
-=======
-#Mon Feb 11 16:42:58 IST 2019
-l=Installed plugins\: AS-RUNTIME
-ct=jbt
-d=1549883578925
-c=3
->>>>>>> jan21.1
 cmp=usage
 a=installed
 cl=AS-RUNTIME
