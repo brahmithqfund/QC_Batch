@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 #Tue Feb 12 10:26:06 IST 2019
 l=true|false|N/A
 ct=central
 d=1549947366005
 c=1
+=======
+#Mon Feb 11 16:42:58 IST 2019
+l=true|false|N/A
+ct=central
+d=1549883578627
+c=3
+>>>>>>> jan21.1
 cmp=usage
 a=showOnStartup
 cl=N/A

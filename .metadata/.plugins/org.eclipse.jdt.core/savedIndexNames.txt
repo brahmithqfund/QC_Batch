@@ -2,6 +2,10 @@ INDEX VERSION 1.127+D:\QC_Batch\.metadata\.plugins\org.eclipse.jdt.core
 890887124.index
 1096158784.index
 2558740310.index
+<<<<<<< HEAD
+=======
+4131172713.index
+>>>>>>> jan21.1
 1548865914.index
 2088728460.index
 1265454775.index
@@ -58,6 +62,10 @@ INDEX VERSION 1.127+D:\QC_Batch\.metadata\.plugins\org.eclipse.jdt.core
 3363692690.index
 508472479.index
 2388078536.index
+<<<<<<< HEAD
+=======
+2048548144.index
+>>>>>>> jan21.1
 471798448.index
 823384711.index
 1813844446.index
@@ -77,12 +85,20 @@ INDEX VERSION 1.127+D:\QC_Batch\.metadata\.plugins\org.eclipse.jdt.core
 982196614.index
 2872033403.index
 1518120837.index
+<<<<<<< HEAD
+=======
+3040154504.index
+>>>>>>> jan21.1
 2604603704.index
 2836239320.index
 3030704822.index
 768125789.index
 1831002856.index
 1269981075.index
+<<<<<<< HEAD
+=======
+1860463891.index
+>>>>>>> jan21.1
 1869052835.index
 4121661813.index
 3282962970.index
@@ -92,6 +108,10 @@ INDEX VERSION 1.127+D:\QC_Batch\.metadata\.plugins\org.eclipse.jdt.core
 3303049757.index
 414817829.index
 1078142336.index
+<<<<<<< HEAD
+=======
+3544354246.index
+>>>>>>> jan21.1
 1213446795.index
 263528479.index
 4012855535.index

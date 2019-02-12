@@ -10,7 +10,6 @@
 
 #QC_ILP_Test_data_sheet_path=/TestData/ILP/
 login_method=local
-login_node=http://192.168.2.72:5555/wd/hub
 QC_Store_NewLoan_Test_data_sheet_path=/TestData/QC_LOC/LOC/
 QC_Store_NewLoan_Test_data_sheet_path=/TestData/LOC/
 
