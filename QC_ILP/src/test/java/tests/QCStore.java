@@ -1161,8 +1161,8 @@ public class QCStore {
 
 
 	
-	//Janaki Transactions
-	//@Test(priority=0,enabled = true)
+	//Janaki Transactions edited by Janaki
+	@Test(priority=0,enabled = true)
 		public static void JQC_ILP_Deposit_Menu_Txn() throws Exception {
 			try
 			{			
