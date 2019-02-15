@@ -221,7 +221,7 @@ public class QCAgeStoreDueDate extends QCStore{
 					String screenshotPath = getScreenhot(driver, "DueDate");
 									test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 					test.log(LogStatus.INFO, "Age store Due Date is process is initiated again due to Application sync issue");
-					driver.get("https://qcuat.qfund.net/cc/login/index.jsp");
+					driver.get(prop.getProperty("login_page")); 
 					continue;
 
 

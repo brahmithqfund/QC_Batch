@@ -515,7 +515,7 @@ System.out.println(columnname+"_TxnHistory_FieldValue");
 								test.log(LogStatus.FAIL, "LOC_status->Expected value:"+loan_status +"; not equals to Actual value:"+loan_status_inf_loan_status);
 
 							}
-							if(check_status.equalsIgnoreCase(loan_status_inf_checkstatus))
+							if(check_status.trim().equalsIgnoreCase(loan_status_inf_checkstatus.trim()))
 							{
 								test.log(LogStatus.PASS, "Balance_status->Expected value:"+check_status +"; == Actual value:"+loan_status_inf_checkstatus);
 							}
@@ -1091,11 +1091,11 @@ System.out.println(columnname+"_TxnHistory_FieldValue");
 							
 							if(loc_history_Stmt_Date.equalsIgnoreCase(loc_history_Stmt_Date_test))
 							{
-								test.log(LogStatus.PASS, "loc_history_Stmt_Nbr->Expected value:"+loc_history_Stmt_Date +"; == Actual value:"+loc_history_Stmt_Date_test);
+								test.log(LogStatus.PASS, "loc_history_Stmt_Date->Expected value:"+loc_history_Stmt_Date +"; == Actual value:"+loc_history_Stmt_Date_test);
 							}
 							else
 							{
-								test.log(LogStatus.FAIL, "loc_history_Stmt_Nbr->Expected value:"+loc_history_Stmt_Date +"; not equals to Actual value:"+loc_history_Stmt_Nbr_test);
+								test.log(LogStatus.FAIL, "loc_history_Stmt_Date->Expected value:"+loc_history_Stmt_Date +"; not equals to Actual value:"+loc_history_Stmt_Date_test);
 
 							}
 							if(loc_history_Min_Payment_Amt.equalsIgnoreCase(loc_history_Min_Payment_Amt_test))

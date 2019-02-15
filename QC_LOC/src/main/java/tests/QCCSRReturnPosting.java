@@ -202,7 +202,7 @@ public class QCCSRReturnPosting extends QCStore {
 						driver.switchTo().defaultContent();
 						driver.switchTo().frame("mainFrame");
 						driver.switchTo().frame("main");
-						//business_date="06/02/2018";
+						//business_date="08/02/2018";
 						String App_date[] = business_date.split("/");
 						System.out.println("business_date");
 
@@ -240,12 +240,12 @@ public class QCCSRReturnPosting extends QCStore {
 						driver.findElement(By.name("toDate3")).clear();
 						driver.findElement(By.name("toDate3")).sendKeys(Todate3.trim());
 						test.log(LogStatus.PASS, "Year is entered: " + Todate3);
-						Thread.sleep(500);
+						Thread.sleep(5000);
 						driver.findElement(By
 								.xpath("/html/body/table/tbody/tr/td/table/tbody/tr/td[1]/form/table[3]/tbody/tr/td[2]/input"))
 								.click();
 						test.log(LogStatus.PASS, "Clicked on Search Button");
-						Thread.sleep(500);
+						Thread.sleep(5000);
 						driver.findElement(By.name("CmdReturnPosting")).click();
 						test.log(LogStatus.PASS, "Clicked on Process Button");
 						Thread.sleep(5000);

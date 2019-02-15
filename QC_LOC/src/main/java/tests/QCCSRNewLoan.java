@@ -212,7 +212,11 @@ public static void LOC() throws InterruptedException
 
 		if(!(ESign_LoanAmt.isEmpty()))
 		{
-			driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr[1]/td/table[2]/tbody/tr/td/table/tbody/tr[13]/td[3]/input")).sendKeys(ESign_LoanAmt);
+			WebElement e1=driver.findElement(By.name("advanceRequestBean.loanAmount"));
+			e1.click();
+			e1.sendKeys(Keys.chord(Keys.BACK_SPACE, Keys.BACK_SPACE,Keys.BACK_SPACE,Keys.BACK_SPACE,Keys.BACK_SPACE,Keys.BACK_SPACE,Keys.BACK_SPACE,Keys.BACK_SPACE)+ESign_LoanAmt);
+
+			//driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr[1]/td/table[2]/tbody/tr/td/table/tbody/tr[13]/td[3]/input")).sendKeys(ESign_LoanAmt);
 			test.log(LogStatus.PASS, "Loan amount is enterted as "+ESign_LoanAmt);
 		}
 		Due_Date1=driver.findElement(By.name("stmtDueDate1")).getAttribute("value");		
@@ -300,9 +304,9 @@ public static void LOC() throws InterruptedException
 			else if(!(ESign_LoanAmt.isEmpty()))
 			{
 			
-			driver.findElement(By.name("advanceRequestBean.disbAmtFirst")).sendKeys(LOCamount);
+			driver.findElement(By.name("advanceRequestBean.disbAmtFirst")).sendKeys(ESign_LoanAmt);
 			
-			test.log(LogStatus.PASS, "Disb amount enterd  as "+LOCamount);
+			test.log(LogStatus.PASS, "Disb amount enterd  as "+ESign_LoanAmt);
 			}
 			
 			driver.findElement(By.name("requestBean.password")).sendKeys(ESign_Password);

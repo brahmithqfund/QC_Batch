@@ -1939,7 +1939,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 169, groups = { "EOD2" })
+	@Test(priority = 169, groups = { "EOD2" })
 	public static void LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn() throws Exception {
 		try {
 
@@ -1964,9 +1964,9 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					/*QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);*/
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
@@ -2015,9 +2015,6 @@ public class QCStore {
 
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
-				/*	QCCSRLoginLogout.login(SSN, AppURL);
-					QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
-*/
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCDefaultStatus.defaultStatus(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
@@ -2037,6 +2034,7 @@ public class QCStore {
 
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
+			test.log(LogStatus.ERROR, e);
 			test.log(LogStatus.ERROR, "Unable to start scenario LOC_Biweekly_Nextpay_Txn ");
 
 		}
@@ -6650,7 +6648,7 @@ public class QCStore {
 		
 //V Jyothi scenarios
 		
-		@Test(priority=0,enabled=true)
+		//@Test(priority=0,enabled=true)
 		public static void LOC_Writeoff() throws Exception {
 			
 				  
