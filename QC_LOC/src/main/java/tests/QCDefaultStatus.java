@@ -86,6 +86,7 @@ public class QCDefaultStatus extends QCStore {
 					test.log(LogStatus.PASS, "Loan status is Default");
 				} else {
 					test.log(LogStatus.FAIL, "Loan status is not Default");
+					test.log(LogStatus.FAIL, "Loan status is "+BalanceStatus);
 				}
 			
 				

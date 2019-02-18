@@ -447,7 +447,7 @@ public class QCAgeStoreGraceDays extends QCStore {
 								test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 				test.log(LogStatus.INFO,
 						"Age store Grace days process is initiated again due to Application sync issue");
-				driver.get("https://qcuat.qfund.net/cc/login/index.jsp");
+				driver.get(prop.getProperty("login_page")); 
 				continue;
 
 			}
