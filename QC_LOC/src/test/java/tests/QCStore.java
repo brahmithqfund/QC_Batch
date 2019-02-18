@@ -7182,89 +7182,136 @@ public class QCStore {
 			BufferedReader Vreader;
 			String propertyFilePath = ("user.dir") + "/Objects.properties";
 
-			try {
+			try{ 
 				reader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_LOC/src/test/java/tests/Objects.properties"));
+						new FileReader("D:/QC_Batch/QC_ILP/src/test/java/tests/Objects.properties"));
 				prop = new Properties();
+				prop.load(reader);
+				reader.close();
+				AppURL = prop.getProperty("CSR_URL");
+				AdminURL = prop.getProperty("ADMIN_CSR_URL"); 
+				String filename = prop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+
+				reports = new ExtentReports(
+						System.getProperty("user.dir") + prop.getProperty("QC_Store_extent_report_path") + filename, true);
+
+				
+				
+			
+			}
+			
+			catch(Exception e)
+			{
+				test.log(LogStatus.ERROR, e);
+				System.out.println("Object proprties file not found");
+			}
+			
+
+			try{ 
 				Jreader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_LOC/src/test/java/tests/JObjects.properties"));
+						new FileReader("D:/QC_Batch/QC_ILP/src/test/java/tests/JObjects.properties"));
 				Jprop = new Properties();
+				Jprop.load(Jreader);
+				Jreader.close();
+				String filename = Jprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+
+				reports = new ExtentReports(
+						System.getProperty("user.dir") + Jprop.getProperty("QC_Store_extent_report_path") + filename, true);
+
+			}
+			
+			catch(Exception e)
+			{
+				test.log(LogStatus.ERROR, e);
+				System.out.println("Object proprties file not found");
+			}
+			
+
+			try{ 
 				Rreader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_LOC/src/test/java/tests/RObjects.properties"));
+						new FileReader("D:/QC_Batch/QC_ILP/src/test/java/tests/RObjects.properties"));
 				Rprop = new Properties();
+				Rprop.load(Rreader);
+				Rreader.close();
+				csr_url=Rprop.getProperty("CSR_URL");
+				csrloginpage=Rprop.getProperty("Login_Page");
+				AdminURL=Rprop.getProperty("ADMIN_URL");
+				String filename = Rprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+
+				reports = new ExtentReports(
+						System.getProperty("user.dir") + Rprop.getProperty("QC_Store_extent_report_path") + filename, true);
+
+			}
+			
+			catch(Exception e)
+			{
+				test.log(LogStatus.ERROR, e);
+				System.out.println("Object proprties file not found");
+			}
+			
+
+			try{ 
 				Areader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_LOC/src/test/java/tests/AObjects.properties"));
+						new FileReader("D:/QC_Batch/QC_ILP/src/test/java/tests/AObjects.properties"));
 				Aprop = new Properties();
+				Aprop.load(Areader);
+				Areader.close();
+				String filename = Aprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+
+				reports = new ExtentReports(
+						System.getProperty("user.dir") + Aprop.getProperty("QC_Store_extent_report_path") + filename, true);
+
+			}
+			
+			catch(Exception e)
+			{
+				test.log(LogStatus.ERROR, e);
+				System.out.println("Object proprties file not found");
+			}
+			
+			try{ 
 				Sreader = new BufferedReader(
 						new FileReader("D:/QC_Batch/QC_LOC/src/test/java/tests/SObjects.properties"));
 				Sprop = new Properties();
+				Sprop.load(Sreader);
+				Sreader.close();
+				String filename = Sprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+
+				reports = new ExtentReports(
+						System.getProperty("user.dir") + Sprop.getProperty("QC_Store_extent_report_path") + filename, true);
+
+			}
+			
+			catch(Exception e)
+			{
+				test.log(LogStatus.ERROR, e);
+				System.out.println("Object proprties file not found");
+			}
+			
+			try{ 
 				Vreader = new BufferedReader(
 						new FileReader("D:/QC_Batch/QC_LOC/src/test/java/tests/VObjects.properties"));
 				Vprop = new Properties();
-				try {
-					prop.load(reader);
-					reader.close();
-					Jprop.load(Jreader);
-					Jreader.close();
-					Rprop.load(Rreader);
-					Rreader.close();
-					Aprop.load(Areader);
-					Areader.close();
-					Sprop.load(Sreader);
-					Sreader.close();
-					Vprop.load(Vreader);
-					Vreader.close();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			} catch (FileNotFoundException e) {
-				e.printStackTrace();
-				throw new RuntimeException("Configuration.properties not found at " + propertyFilePath);
+				Vprop.load(Vreader);
+				Vreader.close();
+				String filename = Vprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+
+				reports = new ExtentReports(
+						System.getProperty("user.dir") + Vprop.getProperty("QC_Store_extent_report_path") + filename, true);
+
 			}
-			String filename = prop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
-
-			reports = new ExtentReports(
-					System.getProperty("user.dir") + prop.getProperty("QC_Store_extent_report_path") + filename, true);
-
-			// Extent reports added code
-
-			// String timestamp = new
-			// SimpleDateFormat("MM.dd.yyyy.HH.mm.ss").format(new Date());
-
-			// Date D = new Date();
-			// System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/chromedriver.exe");
-			AppURL = prop.getProperty("CSR_URL");
-			AdminURL = prop.getProperty("ADMIN_CSR_URL");
-			csr_url=Rprop.getProperty("CSR_URL");
-			csrloginpage=Rprop.getProperty("Login_Page");
-			AdminURL=Rprop.getProperty("ADMIN_URL");
+			
+			catch(Exception e)
+			{
+				test.log(LogStatus.ERROR, e);
+				System.out.println("Object proprties file not found");
+			}
+			
+	
+			
 			System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "/IEDriverServer.exe");
 
-			// New Reports
-
-			/*
-			 * htmlReporter = new
-			 * ExtentHtmlReporter(System.getProperty("user.dir")
-			 * +prop.getProperty("QC_Store_extent_report_path")+filename);
-			 * extent = new ExtentReports ();
-			 * extent.attachReporter(htmlReporter); extent.setSystemInfo(
-			 * "Host Name", "QTLSYS2-238"); extent.setSystemInfo("Java Version",
-			 * "1.8.0_171"); extent.setSystemInfo("Environment", "Windows 7");
-			 * htmlReporter.getStartTime(); htmlReporter.getEndTime();
-			 * htmlReporter.config().getChartVisibilityOnOpen();
-			 * //extent.setTestRunnerOutput(log);
-			 * extent.config().statusConfigurator();
-			 * 
-			 * 
-			 * extent.setSystemInfo("User Name", "Brahmith P"); extent.config();
-			 * 
-			 * htmlReporter.config().setDocumentTitle("QC Store Smoke_Testing");
-			 * htmlReporter.config().setReportName("QC Store");
-			 * htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP)
-			 * ; htmlReporter.config().setTheme(Theme.STANDARD);
-			 * System.out.println("end of the log initiation");
-			 */
-		}
+					}
 
 		catch (Exception e) {
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
