@@ -5,25 +5,12 @@
     <classes>
       <class name="tests.QCStore">
         <methods>
-          <include name="QC_PayAnyotherAmount_Void_Txn"/>
-          <include name="QC_AgeStore_Void_Txn"/>
-          <include name="setup"/>
-          <include name="QC_ILP_Deposit_Return_Txn"/>
-          <include name="QC_Installmentpayment_Txn"/>
-          <include name="QC_LessInterest_VoidFullPayment_Txn"/>
-          <include name="QC_ILP_Buyback_Txn"/>
-          <include name="QC_ILP_Buyback_Void_Txn"/>
-          <include name="QC_PayAnyotherAmount_Txn"/>
-          <include name="endReport"/>
-          <include name="QC_NewLoan_Void_Txn"/>
-          <include name="killProcess"/>
           <include name="QC_ILP_clear_Menu_Txn"/>
-          <include name="QC_ILP_NewLoanInstallmentDeposit_Txn"/>
           <include name="QC_ILP_Return_Menu_Txn"/>
-          <include name="QC_Installmentpayment_Void_Txn"/>
           <include name="getResult"/>
-          <include name="QC_InstallPayment_Ref_Rescind_Txn"/>
-          <include name="QC_NewLoan_TLPConversion_Txn"/>
+          <include name="setup"/>
+          <include name="endReport"/>
+          <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->
     </classes>

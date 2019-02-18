@@ -7190,10 +7190,10 @@ public class QCStore {
 				reader.close();
 				AppURL = prop.getProperty("CSR_URL");
 				AdminURL = prop.getProperty("ADMIN_CSR_URL"); 
-				String filename = prop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+				String Bfilename = prop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
 				reports = new ExtentReports(
-						System.getProperty("user.dir") + prop.getProperty("QC_Store_extent_report_path") + filename, true);
+						System.getProperty("user.dir") + prop.getProperty("QC_Store_extent_report_path") + Bfilename, true);
 
 				
 				
@@ -7213,10 +7213,10 @@ public class QCStore {
 				Jprop = new Properties();
 				Jprop.load(Jreader);
 				Jreader.close();
-				String filename = Jprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+				String Jfilename = Jprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
 				reports = new ExtentReports(
-						System.getProperty("user.dir") + Jprop.getProperty("QC_Store_extent_report_path") + filename, true);
+						System.getProperty("user.dir") + Jprop.getProperty("QC_Store_extent_report_path") + Jfilename, true);
 
 			}
 			
@@ -7236,10 +7236,10 @@ public class QCStore {
 				csr_url=Rprop.getProperty("CSR_URL");
 				csrloginpage=Rprop.getProperty("Login_Page");
 				AdminURL=Rprop.getProperty("ADMIN_URL");
-				String filename = Rprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+				String Rfilename = Rprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
 				reports = new ExtentReports(
-						System.getProperty("user.dir") + Rprop.getProperty("QC_Store_extent_report_path") + filename, true);
+						System.getProperty("user.dir") + Rprop.getProperty("QC_Store_extent_report_path") + Rfilename, true);
 
 			}
 			
@@ -7256,10 +7256,10 @@ public class QCStore {
 				Aprop = new Properties();
 				Aprop.load(Areader);
 				Areader.close();
-				String filename = Aprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+				String Afilename = Aprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
 				reports = new ExtentReports(
-						System.getProperty("user.dir") + Aprop.getProperty("QC_Store_extent_report_path") + filename, true);
+						System.getProperty("user.dir") + Aprop.getProperty("QC_Store_extent_report_path") + Afilename, true);
 
 			}
 			
@@ -7275,10 +7275,10 @@ public class QCStore {
 				Sprop = new Properties();
 				Sprop.load(Sreader);
 				Sreader.close();
-				String filename = Sprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+				String Sfilename = Sprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
 				reports = new ExtentReports(
-						System.getProperty("user.dir") + Sprop.getProperty("QC_Store_extent_report_path") + filename, true);
+						System.getProperty("user.dir") + Sprop.getProperty("QC_Store_extent_report_path") + Sfilename, true);
 
 			}
 			
@@ -7294,10 +7294,10 @@ public class QCStore {
 				Vprop = new Properties();
 				Vprop.load(Vreader);
 				Vreader.close();
-				String filename = Vprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+				String Vfilename = Vprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
 				reports = new ExtentReports(
-						System.getProperty("user.dir") + Vprop.getProperty("QC_Store_extent_report_path") + filename, true);
+						System.getProperty("user.dir") + Vprop.getProperty("QC_Store_extent_report_path") + Vfilename, true);
 
 			}
 			

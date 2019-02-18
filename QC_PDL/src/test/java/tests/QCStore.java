@@ -4790,10 +4790,10 @@ public class QCStore {
 				reader.close();
 				AppURL=prop.getProperty("CSR_URL");   
 				AdminURL=prop.getProperty("ADMIN_CSR_URL"); 
-				String filename = prop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+				String Bfilename = prop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
 				reports = new ExtentReports(
-						System.getProperty("user.dir") + prop.getProperty("QC_Store_extent_report_path") + filename, true);
+						System.getProperty("user.dir") + prop.getProperty("QC_Store_extent_report_path") + Bfilename, true);
 			
 			}
 			
@@ -4810,10 +4810,10 @@ public class QCStore {
 				Jprop = new Properties();
 				Jprop.load(Jreader);
 				Jreader.close();
-				String filename = Jprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+				String Jfilename = Jprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
 				reports = new ExtentReports(
-						System.getProperty("user.dir") + Jprop.getProperty("QC_Store_extent_report_path") + filename, true);
+						System.getProperty("user.dir") + Jprop.getProperty("QC_Store_extent_report_path") + Jfilename, true);
 
 			}
 			
@@ -4830,10 +4830,10 @@ public class QCStore {
 				Rprop = new Properties();
 				Rprop.load(Rreader);
 				Rreader.close();
-				String filename = Rprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+				String Rfilename = Rprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
 				reports = new ExtentReports(
-						System.getProperty("user.dir") + Rprop.getProperty("QC_Store_extent_report_path") + filename, true);
+						System.getProperty("user.dir") + Rprop.getProperty("QC_Store_extent_report_path") + Rfilename, true);
 
 			}
 			
@@ -4850,10 +4850,10 @@ public class QCStore {
 				Aprop = new Properties();
 				Aprop.load(Areader);
 				Areader.close();
-				String filename = Aprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+				String Afilename = Aprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
 				reports = new ExtentReports(
-						System.getProperty("user.dir") + Aprop.getProperty("QC_Store_extent_report_path") + filename, true);
+						System.getProperty("user.dir") + Aprop.getProperty("QC_Store_extent_report_path") + Afilename, true);
 
 			}
 			
