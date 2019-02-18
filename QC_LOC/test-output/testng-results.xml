@@ -2,6 +2,7 @@
 <testng-results skipped="2" failed="0" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="10081" started-at="2019-02-18T09:53:19Z" finished-at="2019-02-18T09:53:29Z">
     <groups>
       <group name="Janaki_NEOD">
@@ -100,6 +101,30 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
 at tests.QCStore.getResult(QCStore.java:7326)
+=======
+  <suite name="Default suite" duration-ms="5137" started-at="2019-02-18T09:16:28Z" finished-at="2019-02-18T09:16:33Z">
+    <groups>
+      <group name="Janaki_NEOD">
+        <method signature="QCStore.JQC_LOC_New_Loan_Void_Txn()[pri:301, instance:tests.QCStore@71423665]" name="JQC_LOC_New_Loan_Void_Txn" class="tests.QCStore"/>
+      </group> <!-- Janaki_NEOD -->
+    </groups>
+    <test name="Default test" duration-ms="5137" started-at="2019-02-18T09:16:28Z" finished-at="2019-02-18T09:16:33Z">
+      <class name="tests.QCStore">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@71423665]" name="setup" is-config="true" duration-ms="89" started-at="2019-02-18T09:16:28Z" finished-at="2019-02-18T09:16:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@71423665]" name="killProcess" is-config="true" duration-ms="5003" started-at="2019-02-18T09:16:28Z" finished-at="2019-02-18T09:16:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="FAIL" signature="JQC_LOC_New_Loan_Void_Txn()[pri:301, instance:tests.QCStore@71423665]" name="JQC_LOC_New_Loan_Void_Txn" duration-ms="20" started-at="2019-02-18T09:16:33Z" finished-at="2019-02-18T09:16:33Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at tests.QCStore.getScreenhot(QCStore.java:7335)
+at tests.QCStore.JQC_LOC_New_Loan_Void_Txn(QCStore.java:3591)
+>>>>>>> master
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -133,6 +158,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- getResult -->
         <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@55b699ef]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T09:53:24Z" finished-at="2019-02-18T09:53:24Z">
           <reporter-output>
@@ -188,13 +214,30 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <param index="0">
               <value>
                 <![CDATA[[TestResult name={null} status=CREATED method=QCStore.JQC_LOC_New_Loan_Void_Txn()[pri:301, instance:tests.QCStore@55b699ef] output={null}]]]>
+=======
+        </test-method> <!-- JQC_LOC_New_Loan_Void_Txn -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@71423665]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T09:16:33Z" finished-at="2019-02-18T09:16:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@71423665]" name="getResult" is-config="true" duration-ms="2" started-at="2019-02-18T09:16:33Z" finished-at="2019-02-18T09:16:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JQC_LOC_New_Loan_Void_Txn status=FAILURE method=QCStore.JQC_LOC_New_Loan_Void_Txn()[pri:301, instance:tests.QCStore@71423665] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
+<<<<<<< HEAD
 at tests.QCStore.getResult(QCStore.java:7326)
+=======
+at tests.QCStore.getScreenhot(QCStore.java:7335)
+at tests.QCStore.getResult(QCStore.java:7351)
+>>>>>>> master
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

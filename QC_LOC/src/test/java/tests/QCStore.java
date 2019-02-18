@@ -1964,9 +1964,9 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					/*QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);*/
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
@@ -2015,9 +2015,6 @@ public class QCStore {
 
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
-				/*	QCCSRLoginLogout.login(SSN, AppURL);
-					QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
-*/
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCDefaultStatus.defaultStatus(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
@@ -2037,6 +2034,7 @@ public class QCStore {
 
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
+			test.log(LogStatus.ERROR, e);
 			test.log(LogStatus.ERROR, "Unable to start scenario LOC_Biweekly_Nextpay_Txn ");
 
 		}
@@ -2145,7 +2143,7 @@ public class QCStore {
 	//Ratikanta scenarios
 	
 
-	  //@Test(priority=201)
+	  //@Test(priority=201, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_ManualDefault_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -2217,7 +2215,7 @@ public class QCStore {
 	  }
 	  
 	 	
-	//@Test(priority=202)
+	//@Test(priority=202, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_Deposit_Return_ManualDefault_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -2295,7 +2293,7 @@ public class QCStore {
 
 	  
 	 		  
-	//@Test(priority=203)
+	//@Test(priority=203, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_Deposit_Return_2ndDeposit_Clear_3rdDeposit_Return_Default_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -2390,7 +2388,7 @@ public class QCStore {
 	  } 
 	  
 
-	//@Test(priority=204)
+	//@Test(priority=204, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_2missedPayment_Default_EOD_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -2468,7 +2466,7 @@ public class QCStore {
 	  
 	  
 	  
-	//@Test(priority=205)
+	//@Test(priority=205, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_Default_DefaultPayment_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -2569,7 +2567,7 @@ public class QCStore {
 		  }
 	  } 
 	  
-	//@Test(priority=206)
+	//@Test(priority=206, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_Default_DefaultPayment_Void_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -2651,7 +2649,7 @@ public class QCStore {
 	  } 
 
 	  
-	//@Test(priority=207)
+	//@Test(priority=207, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_Default_PartialDefaultPayment_Void_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -2733,7 +2731,7 @@ public class QCStore {
 		  }
 	  } 
 	
-	//@Test(priority=208)
+	//@Test(priority=208, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_Default_DefaultPayment_Return_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -2818,7 +2816,7 @@ public class QCStore {
 		  }
 	  }   
 	  
-	//@Test(priority=209)
+	//@Test(priority=209, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -2905,7 +2903,7 @@ public class QCStore {
 	
 	
 	  
-	//@Test(priority=210)
+	//@Test(priority=210, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Void_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -2988,7 +2986,7 @@ public class QCStore {
 
 	  
 	  
-	  //@Test(priority=211)
+	  //@Test(priority=211, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_PayOff_Closure_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -3061,7 +3059,7 @@ public class QCStore {
 	  } 
 
 
-	  //@Test(priority=212)
+	  //@Test(priority=212, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_Payment_PayOff_Closure_Void_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -3139,7 +3137,7 @@ public class QCStore {
 		  }
 	  } 
 
-	//@Test(priority=213)
+	//@Test(priority=213, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_PayOff_Closure_PayoffReturn_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -3219,7 +3217,7 @@ public class QCStore {
 		  }
 	  } 
 	  
-	//@Test(priority=214)
+	//@Test(priority=214, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_PayOff_Agestore180days_AutoClosure_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -3298,7 +3296,7 @@ public class QCStore {
 	  } 
 	  
 	
-	//@Test(priority=215)
+	//@Test(priority=215, groups="EOD")
 	  public static void RQC_LOC_ManualDefault_EOD_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -3376,7 +3374,7 @@ public class QCStore {
 	  } 
 	
 	
-	//@Test(priority=216)
+	//@Test(priority=216, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -3546,11 +3544,15 @@ public class QCStore {
 		public static void JQC_LOC_New_Loan_Void_Txn() throws Exception {
 			try
 			{			
+				
 				test=reports.startTest(Jprop.getProperty("QC_LOC_New_Loan_Void_Txn"),"Login->Borrower Registratino->New Loan ->Void");
-
+				//test=reports.startTest(("QC_LOC_New_Loan_Void_Txn"),"Login->Borrower Registratino->New Loan ->Void");
+				
 				FileName= Jprop.getProperty("QC_LOC_New_Loan_Void_Txn_file_name")+".xls";
+				//FileName= "QC_LOC_ManualDefault_Txn_Testdata.xls";
 
 				TestData = new ExcelNew(System.getProperty("user.dir")+Jprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+				
 
 				int lastrow=TestData.getLastRow("Start");
 				String sheetName="Start";
@@ -6650,7 +6652,7 @@ public class QCStore {
 		
 //V Jyothi scenarios
 		
-		@Test(priority=0,enabled=true)
+		//@Test(priority=0,enabled=true)
 		public static void LOC_Writeoff() throws Exception {
 			
 				  
@@ -7182,91 +7184,128 @@ public class QCStore {
 			BufferedReader Areader;
 			BufferedReader Sreader;
 			BufferedReader Vreader;
-			String propertyFilePath = ("user.dir") + "/Objects.properties";
+			
 
-			try {
+			try{ 
 				reader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_LOC/src/test/java/tests/Objects.properties"));
+						new FileReader("D:/QC_Batch/QC_ILP/src/test/java/tests/Objects.properties"));
 				prop = new Properties();
+				prop.load(reader);
+				reader.close();
+				AppURL = prop.getProperty("CSR_URL");
+				AdminURL = prop.getProperty("ADMIN_CSR_URL"); 
+				String filename = prop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+
+				reports = new ExtentReports(
+						System.getProperty("user.dir") + prop.getProperty("QC_Store_extent_report_path") + filename, true);
+
+				
+				
+			
+			}
+			
+			catch(Exception e)
+			{
+				
+				System.out.println("Object proprties file not found");
+			}
+			
+
+			try{ 
 				Jreader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_LOC/src/test/java/tests/JObjects.properties"));
+						new FileReader("E:/QC_Batch/QC_LOC/src/test/java/tests/JObjects.properties"));
 				Jprop = new Properties();
+				Jprop.load(Jreader);
+				Jreader.close();
+				String filename = Jprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+
+				reports = new ExtentReports(
+						System.getProperty("user.dir") + Jprop.getProperty("QC_Store_extent_report_path") + filename, true);
+
+			}
+			
+			catch(Exception e)
+			{
+				
+				System.out.println("Object proprties file not found");
+			}
+			
+
+			try{ 
 				Rreader = new BufferedReader(
 						new FileReader("E:/QC_Batch/QC_LOC/src/test/java/tests/RObjects.properties"));
 				Rprop = new Properties();
-				Areader = new BufferedReader(
-						new FileReader("E:/QC_Batch/QC_LOC/src/test/java/tests/AObjects.properties"));
-				Aprop = new Properties();
-				Sreader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_LOC/src/test/java/tests/SObjects.properties"));
-				Sprop = new Properties();
-				Vreader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_LOC/src/test/java/tests/VObjects.properties"));
-				Vprop = new Properties();
-				try {
-					prop.load(reader);
-					reader.close();
-					Jprop.load(Jreader);
-					Jreader.close();
-					Rprop.load(Rreader);
-					Rreader.close();
-					Aprop.load(Areader);
-					Areader.close();
-					Sprop.load(Sreader);
-					Sreader.close();
-					Vprop.load(Vreader);
-					Vreader.close();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			} catch (FileNotFoundException e) {
-				e.printStackTrace();
-				throw new RuntimeException("Configuration.properties not found at " + propertyFilePath);
+				Rprop.load(Rreader);
+				Rreader.close();
+				csr_url=Rprop.getProperty("CSR_URL");
+				csrloginpage=Rprop.getProperty("Login_Page");
+				AdminURL=Rprop.getProperty("ADMIN_URL");
+				String filename = Rprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+
+				reports = new ExtentReports(
+						System.getProperty("user.dir") + Rprop.getProperty("QC_Store_extent_report_path") + filename, true);
+
 			}
-			String filename = prop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+			
+			catch(Exception e)
+			{
+				
+				System.out.println("Object proprties file not found");
+			}
+			
 
-			reports = new ExtentReports(
-					System.getProperty("user.dir") + prop.getProperty("QC_Store_extent_report_path") + filename, true);
+			try{ 
+				Areader = new BufferedReader(
+<<<<<<< HEAD
+						new FileReader("E:/QC_Batch/QC_LOC/src/test/java/tests/AObjects.properties"));
+=======
+						new FileReader("D:/QC_Batch/QC_ILP/src/test/java/tests/AObjects.properties"));
 
-			// Extent reports added code
+>>>>>>> master
+				Aprop = new Properties();
+				Aprop.load(Areader);
+				Areader.close();
+				String filename = Aprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
-			// String timestamp = new
-			// SimpleDateFormat("MM.dd.yyyy.HH.mm.ss").format(new Date());
+				reports = new ExtentReports(
+						System.getProperty("user.dir") + Aprop.getProperty("QC_Store_extent_report_path") + filename, true);
 
-			// Date D = new Date();
-			// System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/chromedriver.exe");
-			AppURL = prop.getProperty("CSR_URL");
-			AdminURL = prop.getProperty("ADMIN_CSR_URL");
-			csr_url=Rprop.getProperty("CSR_URL");
-			csrloginpage=Rprop.getProperty("Login_Page");
-			AdminURL=Rprop.getProperty("ADMIN_URL");
+			}
+			
+			catch(Exception e)
+			{
+				
+				System.out.println("Object proprties file not found");
+			}
+			
+			
+			
+			
+			
+			try{ 
+				Vreader = new BufferedReader(
+						new FileReader("E:/QC_Batch/QC_LOC/src/test/java/tests/VObjects.properties"));
+				Vprop = new Properties();
+				Vprop.load(Vreader);
+				Vreader.close();
+				String filename = Vprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+
+				reports = new ExtentReports(
+						System.getProperty("user.dir") + Vprop.getProperty("QC_Store_extent_report_path") + filename, true);
+
+			}
+			
+			catch(Exception e)
+			{
+				
+				System.out.println("Object proprties file not found");
+			}
+			
+	
+			
 			System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "/IEDriverServer.exe");
 
-			// New Reports
-
-			/*
-			 * htmlReporter = new
-			 * ExtentHtmlReporter(System.getProperty("user.dir")
-			 * +prop.getProperty("QC_Store_extent_report_path")+filename);
-			 * extent = new ExtentReports ();
-			 * extent.attachReporter(htmlReporter); extent.setSystemInfo(
-			 * "Host Name", "QTLSYS2-238"); extent.setSystemInfo("Java Version",
-			 * "1.8.0_171"); extent.setSystemInfo("Environment", "Windows 7");
-			 * htmlReporter.getStartTime(); htmlReporter.getEndTime();
-			 * htmlReporter.config().getChartVisibilityOnOpen();
-			 * //extent.setTestRunnerOutput(log);
-			 * extent.config().statusConfigurator();
-			 * 
-			 * 
-			 * extent.setSystemInfo("User Name", "Brahmith P"); extent.config();
-			 * 
-			 * htmlReporter.config().setDocumentTitle("QC Store Smoke_Testing");
-			 * htmlReporter.config().setReportName("QC Store");
-			 * htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP)
-			 * ; htmlReporter.config().setTheme(Theme.STANDARD);
-			 * System.out.println("end of the log initiation");
-			 */
-		}
+					}
 
 		catch (Exception e) {
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to

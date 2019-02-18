@@ -34,10 +34,7 @@ public class QCAdminACHReturn extends QCStore {
 			for (int row = 2; row <= lastrow; row++) {
 				String RegSSN = TestData.getCellData(sheetName, "SSN", row);
 				if (SSN.equals(RegSSN)) {
-					String AdminUserName = TestData.getCellData(sheetName,"AdminUserName",row);
-					String AdminPassword = TestData.getCellData(sheetName,"AdminPassword",row);
-					String AdminURL = TestData.getCellData(sheetName, "AdminURL", row);
-					String PIN = TestData.getCellData(sheetName,"PIN",row);
+					
 					String StoreID = TestData.getCellData(sheetName,"StoreID",row);
 					String ReasonForReturn = TestData.getCellData(sheetName,"ReasonForReturn",row);
 					String Esign_CollateralType = TestData.getCellData(sheetName,"Esign_CollateralType",row);
@@ -107,7 +104,7 @@ public class QCAdminACHReturn extends QCStore {
 			
 			driver.switchTo().frame("main");
 			
-			Thread.sleep(500);
+			Thread.sleep(5000);
 			
 			driver.findElement(By.name("rtnReasonId")).sendKeys(ReasonForReturn);
 			test.log(LogStatus.PASS, "Return For Reason is: "+ReasonForReturn);
