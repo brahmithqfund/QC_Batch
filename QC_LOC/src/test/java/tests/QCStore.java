@@ -1939,7 +1939,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 169, groups = { "EOD2" })
+	//@Test(priority = 169, groups = { "EOD2" })
 	public static void LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn() throws Exception {
 		try {
 
@@ -2143,7 +2143,7 @@ public class QCStore {
 	//Ratikanta scenarios
 	
 
-	  @Test(priority=201)
+	  //@Test(priority=201, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_ManualDefault_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -2215,7 +2215,7 @@ public class QCStore {
 	  }
 	  
 	 	
-	//@Test(priority=202)
+	//@Test(priority=202, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_Deposit_Return_ManualDefault_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -2293,7 +2293,7 @@ public class QCStore {
 
 	  
 	 		  
-	//@Test(priority=203)
+	//@Test(priority=203, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_Deposit_Return_2ndDeposit_Clear_3rdDeposit_Return_Default_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -2388,7 +2388,7 @@ public class QCStore {
 	  } 
 	  
 
-	//@Test(priority=204)
+	//@Test(priority=204, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_2missedPayment_Default_EOD_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -2466,7 +2466,7 @@ public class QCStore {
 	  
 	  
 	  
-	//@Test(priority=205)
+	//@Test(priority=205, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_Default_DefaultPayment_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -2567,7 +2567,7 @@ public class QCStore {
 		  }
 	  } 
 	  
-	//@Test(priority=206)
+	//@Test(priority=206, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_Default_DefaultPayment_Void_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -2649,7 +2649,7 @@ public class QCStore {
 	  } 
 
 	  
-	//@Test(priority=207)
+	//@Test(priority=207, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_Default_PartialDefaultPayment_Void_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -2731,7 +2731,7 @@ public class QCStore {
 		  }
 	  } 
 	
-	//@Test(priority=208)
+	//@Test(priority=208, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_Default_DefaultPayment_Return_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -2816,7 +2816,7 @@ public class QCStore {
 		  }
 	  }   
 	  
-	//@Test(priority=209)
+	//@Test(priority=209, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -2903,7 +2903,7 @@ public class QCStore {
 	
 	
 	  
-	//@Test(priority=210)
+	//@Test(priority=210, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Void_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -2986,7 +2986,7 @@ public class QCStore {
 
 	  
 	  
-	  //@Test(priority=211)
+	  //@Test(priority=211, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_PayOff_Closure_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -3059,7 +3059,7 @@ public class QCStore {
 	  } 
 
 
-	  //@Test(priority=212)
+	  //@Test(priority=212, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_Payment_PayOff_Closure_Void_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -3137,7 +3137,7 @@ public class QCStore {
 		  }
 	  } 
 
-	//@Test(priority=213)
+	//@Test(priority=213, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_PayOff_Closure_PayoffReturn_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -3217,7 +3217,7 @@ public class QCStore {
 		  }
 	  } 
 	  
-	//@Test(priority=214)
+	//@Test(priority=214, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_PayOff_Agestore180days_AutoClosure_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -3296,7 +3296,7 @@ public class QCStore {
 	  } 
 	  
 	
-	//@Test(priority=215)
+	//@Test(priority=215, groups="EOD")
 	  public static void RQC_LOC_ManualDefault_EOD_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -3374,7 +3374,7 @@ public class QCStore {
 	  } 
 	
 	
-	//@Test(priority=216)
+	//@Test(priority=216, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -3540,15 +3540,19 @@ public class QCStore {
 	  
 //Janaki's (Ratikanta) scenarios
 	  
-	  //@Test(priority=301,enabled = true)
+	  @Test(priority=301,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_New_Loan_Void_Txn() throws Exception {
 			try
 			{			
+				
 				test=reports.startTest(Jprop.getProperty("QC_LOC_New_Loan_Void_Txn"),"Login->Borrower Registratino->New Loan ->Void");
-
+				//test=reports.startTest(("QC_LOC_New_Loan_Void_Txn"),"Login->Borrower Registratino->New Loan ->Void");
+				
 				FileName= Jprop.getProperty("QC_LOC_New_Loan_Void_Txn_file_name")+".xls";
+				//FileName= "QC_LOC_ManualDefault_Txn_Testdata.xls";
 
 				TestData = new ExcelNew(System.getProperty("user.dir")+Jprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+				
 
 				int lastrow=TestData.getLastRow("Start");
 				String sheetName="Start";
@@ -6648,7 +6652,7 @@ public class QCStore {
 		
 //V Jyothi scenarios
 		
-		@Test(priority=0,enabled=true)
+		//@Test(priority=0,enabled=true)
 		public static void LOC_Writeoff() throws Exception {
 			
 				  
@@ -7182,20 +7186,6 @@ public class QCStore {
 			BufferedReader Vreader;
 			
 
-<<<<<<< HEAD
-			try {
-				/*reader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_LOC/src/test/java/tests/Objects.properties"));
-				prop = new Properties();*/
-				/*Jreader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_LOC/src/test/java/tests/JObjects.properties"));
-				Jprop = new Properties();*/
-				Rreader = new BufferedReader(
-						new FileReader("E:/QC_Batch/QC_LOC/src/test/java/tests/RObjects.properties"));
-				Rprop = new Properties();
-				/*Areader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_LOC/src/test/java/tests/AObjects.properties"));
-=======
 			try{ 
 				reader = new BufferedReader(
 						new FileReader("D:/QC_Batch/QC_ILP/src/test/java/tests/Objects.properties"));
@@ -7223,7 +7213,7 @@ public class QCStore {
 
 			try{ 
 				Jreader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_ILP/src/test/java/tests/JObjects.properties"));
+						new FileReader("E:/QC_Batch/QC_LOC/src/test/java/tests/JObjects.properties"));
 				Jprop = new Properties();
 				Jprop.load(Jreader);
 				Jreader.close();
@@ -7243,7 +7233,7 @@ public class QCStore {
 
 			try{ 
 				Rreader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_ILP/src/test/java/tests/RObjects.properties"));
+						new FileReader("E:/QC_Batch/QC_LOC/src/test/java/tests/RObjects.properties"));
 				Rprop = new Properties();
 				Rprop.load(Rreader);
 				Rreader.close();
@@ -7267,7 +7257,7 @@ public class QCStore {
 			try{ 
 				Areader = new BufferedReader(
 						new FileReader("D:/QC_Batch/QC_ILP/src/test/java/tests/AObjects.properties"));
->>>>>>> b50e5c7425055cd846c0596a6552686c8ed2cba5
+
 				Aprop = new Properties();
 				Aprop.load(Areader);
 				Areader.close();
@@ -7284,51 +7274,9 @@ public class QCStore {
 				System.out.println("Object proprties file not found");
 			}
 			
-			try{ 
-				Sreader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_LOC/src/test/java/tests/SObjects.properties"));
-				Sprop = new Properties();
-<<<<<<< HEAD
-				Vreader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_LOC/src/test/java/tests/VObjects.properties"));
-				Vprop = new Properties();*/
-				try {
-					/*prop.load(reader);
-					reader.close();
-					Jprop.load(Jreader);
-					Jreader.close();*/
-					Rprop.load(Rreader);
-					Rreader.close();
-					/*Aprop.load(Areader);
-					Areader.close();
-					Sprop.load(Sreader);
-					Sreader.close();
-					Vprop.load(Vreader);
-					Vreader.close();*/
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			} catch (FileNotFoundException e) {
-				e.printStackTrace();
-				throw new RuntimeException("Configuration.properties not found at " + propertyFilePath);
-			}
-			String filename = prop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
-=======
-				Sprop.load(Sreader);
-				Sreader.close();
-				String filename = Sprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
->>>>>>> b50e5c7425055cd846c0596a6552686c8ed2cba5
-
-				reports = new ExtentReports(
-						System.getProperty("user.dir") + Sprop.getProperty("QC_Store_extent_report_path") + filename, true);
-
-			}
 			
-			catch(Exception e)
-			{
-				
-				System.out.println("Object proprties file not found");
-			}
+			
+			
 			
 			try{ 
 				Vreader = new BufferedReader(

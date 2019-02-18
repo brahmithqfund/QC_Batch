@@ -6,10 +6,8 @@
       <class name="tests.QCStore">
         <methods>
           <include name="getResult"/>
-          <include name="LOC_Writeoff"/>
-          <include name="LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn"/>
           <include name="setup"/>
-          <include name="RQC_LOC_ManualDefault_Txn_Testdata"/>
+          <include name="JQC_LOC_New_Loan_Void_Txn"/>
           <include name="endReport"/>
           <include name="killProcess"/>
         </methods>

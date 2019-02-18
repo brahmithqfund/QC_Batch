@@ -2,47 +2,29 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-<<<<<<< HEAD
-		<item value="Ratikanta" key="selection"/>
-=======
-		<item value="QC_Store_extent_report_file_name" key="selection"/>
->>>>>>> b50e5c7425055cd846c0596a6552686c8ed2cba5
+		<item value="Janaki" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-<<<<<<< HEAD
+			<item value="janaki"/>
+			<item value="QC_LOC_New_Loan_Void_Txn"/>
+			<item value="Rprop"/>
 			<item value="ratikanta"/>
-			<item value="QC_Store_extent_report_file_name"/>
-			<item value="E:/QC_Batch/QC_LOC/src/test/java/tests/RObjects.properties"/>
-			<item value="rat"/>
-			<item value="@BeforeClass"/>
-			<item value="@BeforeClass setup"/>
-			<item value="Ratikanta"/>
-=======
-			<item value="QC_Store_extent_report_file_name"/>
-			<item value="QC_Store_extent_report_path"/>
-			<item value="QC_Store_extent_report_path+"/>
-			<item value="QC_Store_ILP_NewLoan_Promotion_Txn_file_name"/>
-			<item value="2]/tbody/tr/td/table/tbody/tr[13]/td[3]/input"/>
->>>>>>> b50e5c7425055cd846c0596a6552686c8ed2cba5
+			<item value="FileName"/>
 			<item value="prop"/>
+			<item value="Jprop"/>
+			<item value="rati"/>
 		</list>
 		<list key="replacehistory">
-			<item value="Vprop."/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
-<<<<<<< HEAD
-		<item value="956" key="DIALOG_X_ORIGIN"/>
-		<item value="153" key="DIALOG_Y_ORIGIN"/>
-=======
-		<item value="650" key="DIALOG_X_ORIGIN"/>
-		<item value="351" key="DIALOG_Y_ORIGIN"/>
->>>>>>> b50e5c7425055cd846c0596a6552686c8ed2cba5
+		<item value="76" key="DIALOG_X_ORIGIN"/>
+		<item value="404" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>
