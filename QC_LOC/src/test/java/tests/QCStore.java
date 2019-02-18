@@ -3542,7 +3542,7 @@ public class QCStore {
 	  
 //Janaki's (Ratikanta) scenarios
 	  
-	  //@Test(priority=301,enabled = true)
+	  @Test(priority=301,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_New_Loan_Void_Txn() throws Exception {
 			try
 			{			
@@ -7192,10 +7192,10 @@ public class QCStore {
 						new FileReader("D:/QC_Batch/QC_LOC/src/test/java/tests/JObjects.properties"));
 				Jprop = new Properties();
 				Rreader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_LOC/src/test/java/tests/RObjects.properties"));
+						new FileReader("E:/QC_Batch/QC_LOC/src/test/java/tests/RObjects.properties"));
 				Rprop = new Properties();
 				Areader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_LOC/src/test/java/tests/AObjects.properties"));
+						new FileReader("E:/QC_Batch/QC_LOC/src/test/java/tests/AObjects.properties"));
 				Aprop = new Properties();
 				Sreader = new BufferedReader(
 						new FileReader("D:/QC_Batch/QC_LOC/src/test/java/tests/SObjects.properties"));
