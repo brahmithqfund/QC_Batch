@@ -8,4 +8,15 @@ W
 W
 'src/test/java/tests/AObjects.properties,6\b\6b7e93440d570d871bcabb6a7242204cd62aee33
 P
+<<<<<<< HEAD
  src/test/java/tests/QCStore.java,f\1\f1f5f4816296e60d7232d0a00b509d48935fb3a4
+=======
+ src/test/java/tests/QCStore.java,f\1\f1f5f4816296e60d7232d0a00b509d48935fb3a4
+:
+
+testng.xml,5\2\522a7a4e21649af06297e31a9e33f13bb4fd3022
+@
+chromedriver.exe,d\0\d0b49ae29587435df3e9988b34c286a37d9a89d9
+B
+IEDriverServer.exe,9\1\91c8366e22f75cf182379d0c621025823649da39
+>>>>>>> master
