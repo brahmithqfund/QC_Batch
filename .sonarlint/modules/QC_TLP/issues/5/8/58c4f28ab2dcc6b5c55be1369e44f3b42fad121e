@@ -1,0 +1,60 @@
+
+squid:S1192w"cDefine a constant instead of duplicating this literal "drawerDeassignRequestBean.password" 3 times.(²ŞÇıÿÿÿÿ
+Gsquid:S00108¢")Either remove or fill this block of code.(ÒÌâ–øÿÿÿÿ
+Bsquid:S1166¯"%Either log or rethrow this exception.(¼Ôîàùÿÿÿÿ
+Gsquid:S00108°")Either remove or fill this block of code.(ÒÌâ–øÿÿÿÿ
+nsquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ïñ©
+osquid:S00117·"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“ÌÅ
+=squid:S1166"%Either log or rethrow this exception.(¬Ù¨Í
+tsquid:S00117î"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Éïâ›üÿÿÿÿ
+gsquid:CommentedOutCodeLineq"<This block of commented-out lines of code should be removed.(ÕÉµÕüÿÿÿÿ
+osquid:S00117ï"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô¤ä¡
+Gsquid:S00108ˆ")Either remove or fill this block of code.(ÒÌâ–øÿÿÿÿ
+ssquid:S00117 "VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰¢ŞÔıÿÿÿÿ
+nsquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒñ§é
+csquid:CommentedOutCodeLine¨"<This block of commented-out lines of code should be removed.(ÿÉĞ²
+W
+squid:S106¦";Replace this usage of System.out or System.err by a logger.(¥ú‹Ÿúÿÿÿÿ
+d
+squid:S134M"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(ıà‰
+Bsquid:S1166”"%Either log or rethrow this exception.(¼Ôîàùÿÿÿÿ
+`squid:S1192+"IDefine a constant instead of duplicating this literal "topFrame" 4 times.(ğÁ¾”
+Qsquid:S1854¢"9Remove this useless assignment to local variable "count".(æÕ¿¼
+Psquid:S1197ğ"8Move the array designator from the variable to the type.(×çù
+Bsquid:S1481¢"*Remove this unused "count" local variable.(æÕ¿¼
+hsquid:CommentedOutCodeLine§"<This block of commented-out lines of code should be removed.(öÓÏïúÿÿÿÿ
+j
+squid:S134È"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(¡»¢üùÿÿÿÿ
+ssquid:S00117""VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü¶„Îşÿÿÿÿ
+ssquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„¾˜ şÿÿÿÿ
+j
+squid:S134Ö"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(£ëı¤úÿÿÿÿ
+Vsquid:S1854£"9Remove this useless assignment to local variable "count".(‰”ş™ûÿÿÿÿ
+nsquid:S00117!"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã–Ò
+ssquid:S00117#"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İøúÇıÿÿÿÿ
+j
+squid:S134í"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(¡»¢üùÿÿÿÿ
+j
+squid:S134«"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(¡»¢üùÿÿÿÿ
+Bsquid:S1166‡"%Either log or rethrow this exception.(¼Ôîàùÿÿÿÿ
+j
+squid:S134™"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(¡»¢üùÿÿÿÿ
+=squid:S1166±"%Either log or rethrow this exception.(¬Ù¨Í
+j
+squid:S134‹"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(¡»¢üùÿÿÿÿ
+Lsquid:S1481ö"/Remove this unused "mainwindow" local variable.(Ò®…•şÿÿÿÿ
+Usquid:S1197ò"8Move the array designator from the variable to the type.(Èòêıÿÿÿÿ
+isquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 53 to the 15 allowed.(ƒñ§é
+e
+squid:S134¤"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(ùÖ‘ö
+[squid:S1854ö">Remove this useless assignment to local variable "mainwindow".(Ò®…•şÿÿÿÿ
+nsquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒñ§é
+R
+squid:S106¡";Replace this usage of System.out or System.err by a logger.(İÔÂ
+=squid:S1166Î"%Either log or rethrow this exception.(¬Ù¨Í
+Bsquid:S1166¡"%Either log or rethrow this exception.(¼Ôîàùÿÿÿÿ
+Gsquid:S00108•")Either remove or fill this block of code.(ÒÌâ–øÿÿÿÿ
+=squid:S1166”"%Either log or rethrow this exception.(¬Ù¨Í
+fsquid:S11925"JDefine a constant instead of duplicating this literal "mainFrame" 7 times.(ËøÇªıÿÿÿÿ
+|squid:S1192s"fDefine a constant instead of duplicating this literal "drawerDeassignRequestBean.noOfDollars" 3 times.(”ñ©e
+bsquid:CommentedOutCodeLinev"<This block of commented-out lines of code should be removed.(íØé‹

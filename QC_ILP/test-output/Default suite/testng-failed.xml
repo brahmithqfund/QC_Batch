@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="tests.QCStore">
+        <methods>
+          <include name="JQC_ILP_Deposit_MidDay_Txn"/>
+          <include name="getResult"/>
+          <include name="JQC_ILP_Deposit_dropdown_Txn"/>
+          <include name="setup"/>
+          <include name="JQC_ILP_GraceDays_Deposit_MidDay_Txn"/>
+          <include name="JQC_ILP_GraceDays_Deposit_dropdown_Txn"/>
+          <include name="RQC_Bankruptcy_WORecovery_Txn_Testdata"/>
+          <include name="endReport"/>
+          <include name="JQC_ILP_GraceDays_Deposit_Menu_Txn"/>
+          <include name="JQC_ILP_SignaturLoan_Default_Txn"/>
+          <include name="killProcess"/>
+        </methods>
+      </class> <!-- tests.QCStore -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
