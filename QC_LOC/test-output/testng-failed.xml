@@ -8,6 +8,7 @@
           <include name="getResult"/>
           <include name="LOC_Writeoff"/>
           <include name="setup"/>
+          <include name="RQC_LOC_ManualDefault_Txn_Testdata"/>
           <include name="endReport"/>
           <include name="killProcess"/>
         </methods>

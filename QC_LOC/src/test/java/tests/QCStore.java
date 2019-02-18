@@ -2145,7 +2145,7 @@ public class QCStore {
 	//Ratikanta scenarios
 	
 
-	  //@Test(priority=201)
+	  @Test(priority=201)
 	  public static void RQC_LOC_ManualDefault_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -7185,16 +7185,16 @@ public class QCStore {
 			String propertyFilePath = ("user.dir") + "/Objects.properties";
 
 			try {
-				reader = new BufferedReader(
+				/*reader = new BufferedReader(
 						new FileReader("D:/QC_Batch/QC_LOC/src/test/java/tests/Objects.properties"));
-				prop = new Properties();
-				Jreader = new BufferedReader(
+				prop = new Properties();*/
+				/*Jreader = new BufferedReader(
 						new FileReader("D:/QC_Batch/QC_LOC/src/test/java/tests/JObjects.properties"));
-				Jprop = new Properties();
+				Jprop = new Properties();*/
 				Rreader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_LOC/src/test/java/tests/RObjects.properties"));
+						new FileReader("E:/QC_Batch/QC_LOC/src/test/java/tests/RObjects.properties"));
 				Rprop = new Properties();
-				Areader = new BufferedReader(
+				/*Areader = new BufferedReader(
 						new FileReader("D:/QC_Batch/QC_LOC/src/test/java/tests/AObjects.properties"));
 				Aprop = new Properties();
 				Sreader = new BufferedReader(
@@ -7202,20 +7202,20 @@ public class QCStore {
 				Sprop = new Properties();
 				Vreader = new BufferedReader(
 						new FileReader("D:/QC_Batch/QC_LOC/src/test/java/tests/VObjects.properties"));
-				Vprop = new Properties();
+				Vprop = new Properties();*/
 				try {
-					prop.load(reader);
+					/*prop.load(reader);
 					reader.close();
 					Jprop.load(Jreader);
-					Jreader.close();
+					Jreader.close();*/
 					Rprop.load(Rreader);
 					Rreader.close();
-					Aprop.load(Areader);
+					/*Aprop.load(Areader);
 					Areader.close();
 					Sprop.load(Sreader);
 					Sreader.close();
 					Vprop.load(Vreader);
-					Vreader.close();
+					Vreader.close();*/
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
