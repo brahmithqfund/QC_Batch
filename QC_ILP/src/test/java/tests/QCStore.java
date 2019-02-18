@@ -149,6 +149,10 @@ public class QCStore {
 	public static Properties Aprop;
 	public static String loan_number;
 	public static ExtentReports reports;
+	public static ExtentReports Breports;
+	public static ExtentReports Jreports;
+	public static ExtentReports Rreports;
+	public static ExtentReports Areports;
 	public static ExtentTest test;
 	// public static ExtentReports reports;
 	// public static ExtentTest test;
@@ -1162,7 +1166,7 @@ public class QCStore {
 
 	
 	//Janaki Transactions edited by Janaki
-	//@Test(priority=0,enabled = true)
+	@Test(priority=0,enabled = true,groups="Janaki")
 		public static void JQC_ILP_Deposit_Menu_Txn() throws Exception {
 			try
 			{			
@@ -1214,7 +1218,7 @@ public class QCStore {
 
 			}
 		}
-		@Test(priority=1,enabled = true)
+		@Test(priority=1,enabled = true,groups="Janaki")
 		public static void JQC_ILP_Deposit_dropdown_Txn() throws Exception {
 			try
 			{			
@@ -1266,7 +1270,7 @@ public class QCStore {
 
 			}
 		}
-		@Test(priority=2,enabled = true)
+		@Test(priority=2,enabled = true,groups="Janaki")
 		public static void JQC_ILP_GraceDays_Deposit_Menu_Txn() throws Exception {
 			try
 			{			
@@ -1320,7 +1324,7 @@ public class QCStore {
 
 			}
 		}
-		@Test(priority=3,enabled = true)
+		@Test(priority=3,enabled = true,groups="Janaki")
 		public static void JQC_ILP_GraceDays_Deposit_MidDay_Txn() throws Exception {
 					
 				test=reports.startTest(Jprop.getProperty("QC_ILP_GraceDays_Deposit_MidDay_Txn"),"Login->Borrower Registratino->New Loan with Promotion->Age Store->Deposit through MidDay");
@@ -1364,7 +1368,7 @@ public class QCStore {
 				}
 			
 		}
-		@Test(priority=4,enabled = true)
+		@Test(priority=4,enabled = true,groups="Janaki")
 		public static void JQC_ILP_Deposit_MidDay_Txn() throws Exception {
 			try
 			{			
@@ -1416,7 +1420,7 @@ public class QCStore {
 
 			}
 		}
-		@Test(priority=5,enabled = true)
+		@Test(priority=5,enabled = true,groups="Janaki")
 		public static void JQC_ILP_GraceDays_Deposit_dropdown_Txn() throws Exception {
 			try
 			{			
@@ -1470,8 +1474,8 @@ public class QCStore {
 
 			}
 		}
-		//@Test(priority=6,enabled=true)
-
+		//Date:07/06/2018
+		@Test(priority=6,enabled=true,groups="Janaki_EOD_set1")
 		public static void JQC_ILP_Deceased_Txn() throws Exception {
 			
 			test=reports.startTest(Jprop.getProperty("QC_ILP_Deceased_Txn"),"Login->Borrower Registratino->New Loan ->Deceased");
@@ -1517,7 +1521,8 @@ public class QCStore {
 			}
 			 
 		}
-		//@Test(priority=8,enabled = true)
+		//Date:07/06/2018
+		@Test(priority=8,enabled = true,groups="Janaki_EOD_set1")
 		public static void JQC_ILP_Deposit_EOD_Txn() throws Exception {
 			try
 			{			
@@ -1574,7 +1579,8 @@ public class QCStore {
 
 			}
 		}
-		//@Test(priority=9,enabled = true)
+		//Date:01/11/2018
+		@Test(priority=9,enabled = true,groups="Janaki_EOD_set2")
 		public static void JQC_ILP_GraceDays_Deposit_EOD_Txn() throws Exception {
 			try
 			{			
@@ -1634,7 +1640,7 @@ public class QCStore {
 
 			}
 		}
-		@Test(priority=7,enabled = true)
+		@Test(priority=7,enabled = true,groups="Janaki")
 		public static void JQC_ILP_SignaturLoan_Default_Txn() throws Exception {
 			try
 			{			
@@ -3071,7 +3077,8 @@ public class QCStore {
 
 	
 	
-	@BeforeClass
+	
+	@BeforeClass(alwaysRun=true)
 	public void setup() throws IOException {
 
 		try {
@@ -3092,16 +3099,16 @@ public class QCStore {
 				reader.close();
 				AppURL=prop.getProperty("CSR_URL");   
 				AdminURL=prop.getProperty("ADMIN_CSR_URL"); 
-				String filename = prop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+				String Bfilename = prop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
 				reports = new ExtentReports(
-						System.getProperty("user.dir") + prop.getProperty("QC_Store_extent_report_path") + filename, true);
+						System.getProperty("user.dir") + prop.getProperty("QC_Store_extent_report_path") + Bfilename, true);
 			
 			}
 			
 			catch(Exception e)
 			{
-				test.log(LogStatus.ERROR, e);
+				
 				System.out.println("Object proprties file not found");
 			}
 			
@@ -3114,16 +3121,16 @@ public class QCStore {
 				Jprop = new Properties();
 				Jprop.load(Jreader);
 				Jreader.close();
-				String filename = Jprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+				String Jfilename = Jprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
 				reports = new ExtentReports(
-						System.getProperty("user.dir") + Jprop.getProperty("QC_Store_extent_report_path") + filename, true);
+						System.getProperty("user.dir") + Jprop.getProperty("QC_Store_extent_report_path") + Jfilename, true);
 
 			}
 			
 			catch(Exception e)
 			{
-				test.log(LogStatus.ERROR, e);
+				
 				System.out.println("Object proprties file not found");
 			}
 			
@@ -3133,7 +3140,7 @@ public class QCStore {
 
 						new FileReader("E:/QC_Batch/QC_ILP/src/test/java/tests/RObjects.properties"));
 			
-			String filename = prop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+			String Rfilename = Rprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
 						
 				Rprop = new Properties();
@@ -3142,13 +3149,13 @@ public class QCStore {
 
 
 				reports = new ExtentReports(
-						System.getProperty("user.dir") + Rprop.getProperty("QC_Store_extent_report_path") + filename, true);
+						System.getProperty("user.dir") + Rprop.getProperty("QC_Store_extent_report_path") + Rfilename, true);
 
 			}
 			
 			catch(Exception e)
 			{
-				test.log(LogStatus.ERROR, e);
+				
 				System.out.println("Object proprties file not found");
 			}
 			
@@ -3159,16 +3166,16 @@ public class QCStore {
 				Aprop = new Properties();
 				Aprop.load(Areader);
 				Areader.close();
-				String filename = Aprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+				String Afilename = Aprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
 				reports = new ExtentReports(
-						System.getProperty("user.dir") + Aprop.getProperty("QC_Store_extent_report_path") + filename, true);
+						System.getProperty("user.dir") + Aprop.getProperty("QC_Store_extent_report_path") + Afilename, true);
 
 			}
 			
 			catch(Exception e)
 			{
-				test.log(LogStatus.ERROR, e);
+				
 				System.out.println("Object proprties file not found");
 			}
 			
@@ -3187,7 +3194,7 @@ public class QCStore {
 
 	}
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	public void killProcess() throws Exception {
 
 		try {
@@ -3216,7 +3223,7 @@ public class QCStore {
 		return destination;
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public void getResult(ITestResult result) throws Exception {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			test.log(LogStatus.FAIL, "Test Case Failed is " + result.getName());
@@ -3237,13 +3244,13 @@ public class QCStore {
 
 	}
 
-	@AfterMethod
+	//@AfterMethod
 
 	public void endReport() {
 
 		// reports.endTest(test);
 		// reports.flush();
-
+		
 		//driver.quit();
 		// extent.flush();
 

@@ -5,38 +5,36 @@
     <classes>
       <class name="tests.QCStore">
         <methods>
-<<<<<<< HEAD
-          <include name="JQC_ILP_Deposit_MidDay_Txn"/>
-          <include name="getResult"/>
-          <include name="JQC_ILP_Deposit_dropdown_Txn"/>
-          <include name="setup"/>
-          <include name="JQC_ILP_GraceDays_Deposit_MidDay_Txn"/>
-          <include name="JQC_ILP_GraceDays_Deposit_dropdown_Txn"/>
-          <include name="RQC_Bankruptcy_WORecovery_Txn_Testdata"/>
-          <include name="endReport"/>
-          <include name="JQC_ILP_GraceDays_Deposit_Menu_Txn"/>
-          <include name="JQC_ILP_SignaturLoan_Default_Txn"/>
-=======
           <include name="QC_PayAnyotherAmount_Void_Txn"/>
           <include name="QC_AgeStore_Void_Txn"/>
           <include name="setup"/>
           <include name="QC_ILP_Deposit_Return_Txn"/>
+          <include name="JQC_ILP_GraceDays_Deposit_dropdown_Txn"/>
+          <include name="QC_PayAnyotherAmount_Txn"/>
+          <include name="endReport"/>
+          <include name="QC_NewLoan_Void_Txn"/>
+          <include name="JQC_ILP_SignaturLoan_Default_Txn"/>
+          <include name="JQC_ILP_Deposit_MidDay_Txn"/>
+          <include name="QC_NewLoan_Promotion_Txn"/>
           <include name="QC_Installmentpayment_Txn"/>
           <include name="QC_LessInterest_VoidFullPayment_Txn"/>
           <include name="QC_ILP_Buyback_Txn"/>
           <include name="QC_ILP_Buyback_Void_Txn"/>
-          <include name="QC_PayAnyotherAmount_Txn"/>
-          <include name="endReport"/>
-          <include name="QC_NewLoan_Void_Txn"/>
->>>>>>> b50e5c7425055cd846c0596a6552686c8ed2cba5
+          <include name="JQC_ILP_GraceDays_Deposit_Menu_Txn"/>
           <include name="killProcess"/>
           <include name="QC_ILP_clear_Menu_Txn"/>
           <include name="QC_ILP_NewLoanInstallmentDeposit_Txn"/>
           <include name="QC_ILP_Return_Menu_Txn"/>
           <include name="QC_Installmentpayment_Void_Txn"/>
           <include name="getResult"/>
+          <include name="JQC_ILP_Deposit_Menu_Txn"/>
+          <include name="JQC_ILP_Deposit_dropdown_Txn"/>
           <include name="QC_InstallPayment_Ref_Rescind_Txn"/>
+          <include name="JQC_ILP_GraceDays_Deposit_EOD_Txn"/>
+          <include name="JQC_ILP_GraceDays_Deposit_MidDay_Txn"/>
           <include name="QC_NewLoan_TLPConversion_Txn"/>
+          <include name="JQC_ILP_Deceased_Txn"/>
+          <include name="JQC_ILP_Deposit_EOD_Txn"/>
         </methods>
       </class> <!-- tests.QCStore -->
     </classes>
