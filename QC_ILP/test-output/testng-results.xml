@@ -2,24 +2,24 @@
 <testng-results skipped="7" failed="0" ignored="0" total="8" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10911" started-at="2019-02-18T07:33:19Z" finished-at="2019-02-18T07:33:30Z">
+  <suite name="Default suite" duration-ms="10835" started-at="2019-02-18T09:26:28Z" finished-at="2019-02-18T09:26:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10911" started-at="2019-02-18T07:33:19Z" finished-at="2019-02-18T07:33:30Z">
+    <test name="Default test" duration-ms="10835" started-at="2019-02-18T09:26:28Z" finished-at="2019-02-18T09:26:39Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@20398b7c]" name="setup" is-config="true" duration-ms="92" started-at="2019-02-18T07:33:19Z" finished-at="2019-02-18T07:33:20Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@20398b7c]" name="setup" is-config="true" duration-ms="78" started-at="2019-02-18T09:26:28Z" finished-at="2019-02-18T09:26:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@20398b7c]" name="killProcess" is-config="true" duration-ms="5010" started-at="2019-02-18T07:33:20Z" finished-at="2019-02-18T07:33:25Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@20398b7c]" name="killProcess" is-config="true" duration-ms="5010" started-at="2019-02-18T09:26:28Z" finished-at="2019-02-18T09:26:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="JQC_ILP_Deposit_Menu_Txn()[pri:0, instance:tests.QCStore@20398b7c]" name="JQC_ILP_Deposit_Menu_Txn" duration-ms="5552" started-at="2019-02-18T07:33:25Z" finished-at="2019-02-18T07:33:30Z">
+        <test-method status="PASS" signature="JQC_ILP_Deposit_Menu_Txn()[pri:0, instance:tests.QCStore@20398b7c]" name="JQC_ILP_Deposit_Menu_Txn" duration-ms="5531" started-at="2019-02-18T09:26:33Z" finished-at="2019-02-18T09:26:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JQC_ILP_Deposit_Menu_Txn -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@20398b7c]" name="getResult" is-config="true" duration-ms="214" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
+        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@20398b7c]" name="getResult" is-config="true" duration-ms="180" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
           <params>
             <param index="0">
               <value>
@@ -65,15 +65,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@20398b7c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@20398b7c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="SKIP" signature="killProcess()[pri:0, instance:tests.QCStore@20398b7c]" name="killProcess" is-config="true" duration-ms="0" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
+        <test-method status="SKIP" signature="killProcess()[pri:0, instance:tests.QCStore@20398b7c]" name="killProcess" is-config="true" duration-ms="0" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="SKIP" signature="JQC_ILP_Deposit_dropdown_Txn()[pri:1, instance:tests.QCStore@20398b7c]" name="JQC_ILP_Deposit_dropdown_Txn" duration-ms="0" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
+        <test-method status="SKIP" signature="JQC_ILP_Deposit_dropdown_Txn()[pri:1, instance:tests.QCStore@20398b7c]" name="JQC_ILP_Deposit_dropdown_Txn" duration-ms="0" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -112,15 +112,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JQC_ILP_Deposit_dropdown_Txn -->
-        <test-method status="SKIP" signature="endReport()[pri:0, instance:tests.QCStore@20398b7c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
+        <test-method status="SKIP" signature="endReport()[pri:0, instance:tests.QCStore@20398b7c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@20398b7c]" name="getResult" is-config="true" duration-ms="0" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@20398b7c]" name="getResult" is-config="true" duration-ms="0" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="RQC_Bankruptcy_WORecovery_Txn_Testdata()[pri:1, instance:tests.QCStore@20398b7c]" name="RQC_Bankruptcy_WORecovery_Txn_Testdata" duration-ms="0" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
+        <test-method status="SKIP" signature="killProcess()[pri:0, instance:tests.QCStore@20398b7c]" name="killProcess" is-config="true" duration-ms="0" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="SKIP" signature="RQC_Bankruptcy_WORecovery_Txn_Testdata()[pri:1, instance:tests.QCStore@20398b7c]" name="RQC_Bankruptcy_WORecovery_Txn_Testdata" duration-ms="0" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -159,23 +163,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RQC_Bankruptcy_WORecovery_Txn_Testdata -->
-        <test-method status="SKIP" signature="killProcess()[pri:0, instance:tests.QCStore@20398b7c]" name="killProcess" is-config="true" duration-ms="0" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="SKIP" signature="endReport()[pri:0, instance:tests.QCStore@20398b7c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
+        <test-method status="SKIP" signature="endReport()[pri:0, instance:tests.QCStore@20398b7c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@20398b7c]" name="getResult" is-config="true" duration-ms="0" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@20398b7c]" name="getResult" is-config="true" duration-ms="0" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="killProcess()[pri:0, instance:tests.QCStore@20398b7c]" name="killProcess" is-config="true" duration-ms="0" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
+        <test-method status="SKIP" signature="killProcess()[pri:0, instance:tests.QCStore@20398b7c]" name="killProcess" is-config="true" duration-ms="0" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="SKIP" signature="JQC_ILP_GraceDays_Deposit_Menu_Txn()[pri:2, instance:tests.QCStore@20398b7c]" name="JQC_ILP_GraceDays_Deposit_Menu_Txn" duration-ms="0" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
+        <test-method status="SKIP" signature="JQC_ILP_GraceDays_Deposit_Menu_Txn()[pri:2, instance:tests.QCStore@20398b7c]" name="JQC_ILP_GraceDays_Deposit_Menu_Txn" duration-ms="0" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -214,19 +214,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JQC_ILP_GraceDays_Deposit_Menu_Txn -->
-        <test-method status="SKIP" signature="endReport()[pri:0, instance:tests.QCStore@20398b7c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
+        <test-method status="SKIP" signature="endReport()[pri:0, instance:tests.QCStore@20398b7c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@20398b7c]" name="getResult" is-config="true" duration-ms="0" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@20398b7c]" name="getResult" is-config="true" duration-ms="0" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="killProcess()[pri:0, instance:tests.QCStore@20398b7c]" name="killProcess" is-config="true" duration-ms="0" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="SKIP" signature="JQC_ILP_GraceDays_Deposit_MidDay_Txn()[pri:3, instance:tests.QCStore@20398b7c]" name="JQC_ILP_GraceDays_Deposit_MidDay_Txn" duration-ms="0" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
+        <test-method status="SKIP" signature="JQC_ILP_GraceDays_Deposit_MidDay_Txn()[pri:3, instance:tests.QCStore@20398b7c]" name="JQC_ILP_GraceDays_Deposit_MidDay_Txn" duration-ms="0" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -265,19 +261,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JQC_ILP_GraceDays_Deposit_MidDay_Txn -->
-        <test-method status="SKIP" signature="endReport()[pri:0, instance:tests.QCStore@20398b7c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@20398b7c]" name="getResult" is-config="true" duration-ms="0" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="killProcess()[pri:0, instance:tests.QCStore@20398b7c]" name="killProcess" is-config="true" duration-ms="0" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
+        <test-method status="SKIP" signature="killProcess()[pri:0, instance:tests.QCStore@20398b7c]" name="killProcess" is-config="true" duration-ms="0" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="SKIP" signature="JQC_ILP_Deposit_MidDay_Txn()[pri:4, instance:tests.QCStore@20398b7c]" name="JQC_ILP_Deposit_MidDay_Txn" duration-ms="0" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@20398b7c]" name="getResult" is-config="true" duration-ms="0" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="SKIP" signature="endReport()[pri:0, instance:tests.QCStore@20398b7c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="SKIP" signature="JQC_ILP_Deposit_MidDay_Txn()[pri:4, instance:tests.QCStore@20398b7c]" name="JQC_ILP_Deposit_MidDay_Txn" duration-ms="0" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -316,15 +312,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JQC_ILP_Deposit_MidDay_Txn -->
-        <test-method status="SKIP" signature="endReport()[pri:0, instance:tests.QCStore@20398b7c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
+        <test-method status="SKIP" signature="killProcess()[pri:0, instance:tests.QCStore@20398b7c]" name="killProcess" is-config="true" duration-ms="0" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="SKIP" signature="endReport()[pri:0, instance:tests.QCStore@20398b7c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@20398b7c]" name="getResult" is-config="true" duration-ms="0" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
+        <test-method status="SKIP" signature="killProcess()[pri:0, instance:tests.QCStore@20398b7c]" name="killProcess" is-config="true" duration-ms="0" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@20398b7c]" name="getResult" is-config="true" duration-ms="0" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="JQC_ILP_GraceDays_Deposit_dropdown_Txn()[pri:5, instance:tests.QCStore@20398b7c]" name="JQC_ILP_GraceDays_Deposit_dropdown_Txn" duration-ms="0" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
+        <test-method status="SKIP" signature="JQC_ILP_GraceDays_Deposit_dropdown_Txn()[pri:5, instance:tests.QCStore@20398b7c]" name="JQC_ILP_GraceDays_Deposit_dropdown_Txn" duration-ms="0" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -363,19 +367,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JQC_ILP_GraceDays_Deposit_dropdown_Txn -->
-        <test-method status="SKIP" signature="killProcess()[pri:0, instance:tests.QCStore@20398b7c]" name="killProcess" is-config="true" duration-ms="0" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="SKIP" signature="endReport()[pri:0, instance:tests.QCStore@20398b7c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
+        <test-method status="SKIP" signature="endReport()[pri:0, instance:tests.QCStore@20398b7c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@20398b7c]" name="getResult" is-config="true" duration-ms="0" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@20398b7c]" name="getResult" is-config="true" duration-ms="0" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="JQC_ILP_SignaturLoan_Default_Txn()[pri:7, instance:tests.QCStore@20398b7c]" name="JQC_ILP_SignaturLoan_Default_Txn" duration-ms="0" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
+        <test-method status="SKIP" signature="killProcess()[pri:0, instance:tests.QCStore@20398b7c]" name="killProcess" is-config="true" duration-ms="0" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="SKIP" signature="JQC_ILP_SignaturLoan_Default_Txn()[pri:7, instance:tests.QCStore@20398b7c]" name="JQC_ILP_SignaturLoan_Default_Txn" duration-ms="0" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -414,18 +418,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JQC_ILP_SignaturLoan_Default_Txn -->
-        <test-method status="SKIP" signature="killProcess()[pri:0, instance:tests.QCStore@20398b7c]" name="killProcess" is-config="true" duration-ms="0" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@20398b7c]" name="getResult" is-config="true" duration-ms="0" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="endReport()[pri:0, instance:tests.QCStore@20398b7c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T07:33:30Z" finished-at="2019-02-18T07:33:30Z">
+        <test-method status="SKIP" signature="endReport()[pri:0, instance:tests.QCStore@20398b7c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@20398b7c]" name="getResult" is-config="true" duration-ms="0" started-at="2019-02-18T09:26:39Z" finished-at="2019-02-18T09:26:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
       </class> <!-- tests.QCStore -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -1,0 +1,13 @@
+
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.( Öõßøÿÿÿÿ
+bsquid:CommentedOutCodeLine0"<This block of commented-out lines of code should be removed.(¶ß§ð
+o
+squid:S135"YReduce the total number of break and continue statements in this loop to use at most one.(ø‘ 
+d
+squid:S134"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(µþ–
+Isquid:S1172	"-Remove this unused method parameter "AppURL".(¶Ê·”úÿÿÿÿ
+Asquid:S1166?"%Either log or rethrow this exception.(ñ“Š±üÿÿÿÿ
+ssquid:S00117	"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ê·”úÿÿÿÿ
+ssquid:S00117	"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ê·”úÿÿÿÿ
+nsquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ïñ©
+msquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Öé¹

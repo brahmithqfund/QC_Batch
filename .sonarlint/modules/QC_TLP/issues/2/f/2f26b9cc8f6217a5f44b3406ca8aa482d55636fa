@@ -1,19 +1,19 @@
 
 msquid:S00117 "VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò›Í-
-ssquid:S00117$"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£ÚšÀúÿÿÿÿ
->squid:S14813"'Remove this unused "df" local variable.(©Âìü
-Msquid:S18543"6Remove this useless assignment to local variable "df".(©Âìü
-nsquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ïñ©
 ksquid:UselessImportCheck"GRemove this unused import 'com.relevantcodes.extentreports.ExtentTest'.(ŞÁİÌ
+ssquid:S00117$"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£ÚšÀúÿÿÿÿ
 ssquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼§–¡ùÿÿÿÿ
-msquid:UselessImportCheck
-"IRemove this unused import 'org.openqa.selenium.support.ui.WebDriverWait'.(¥÷ó
-nsquid:S00117!"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û«ù
+fsquid:S1192R"JDefine a constant instead of duplicating this literal "mainFrame" 3 times.(ËøÇªıÿÿÿÿ
 ssquid:S00117""VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄÛÚÇÿÿÿÿÿ
+nsquid:S00117!"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û«ù
 nsquid:UselessImportCheck"JRemove this unused import 'com.relevantcodes.extentreports.ExtentReports'.(èşÛÑ
 P
 squid:S1061";Replace this usage of System.out or System.err by a logger.(é—y
-fsquid:S1192R"JDefine a constant instead of duplicating this literal "mainFrame" 3 times.(ËøÇªıÿÿÿÿ
-Isquid:S1172"-Remove this unused method parameter "AppURL".(¼§–¡ùÿÿÿÿ
-ssquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼§–¡ùÿÿÿÿ
 _squid:S1226'"CIntroduce a new variable instead of reusing the parameter "driver".(Áç¸ÿøÿÿÿÿ
+Isquid:S1172"-Remove this unused method parameter "AppURL".(¼§–¡ùÿÿÿÿ
+nsquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ïñ©
+Msquid:S18543"6Remove this useless assignment to local variable "df".(©Âìü
+>squid:S14813"'Remove this unused "df" local variable.(©Âìü
+msquid:UselessImportCheck
+"IRemove this unused import 'org.openqa.selenium.support.ui.WebDriverWait'.(¥÷ó
+ssquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼§–¡ùÿÿÿÿ
