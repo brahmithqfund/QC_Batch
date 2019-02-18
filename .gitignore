@@ -3,8 +3,19 @@
 *.DS_Store
 
 #Visual Studio files
+<<<<<<< HEAD
 *.[Oo]bj
 .metadata\
 .recommenders\
 .sonarlint\
 RemoteSystemsTempFiles\
+=======
+*.index
+*.png
+.metadata/
+.recommenders/
+.sonarlint/
+RemoteSystemsTempFiles/
+.xmi
+.snap
+>>>>>>> f50b11208812b9a3da18b28f508ffb930f9f5fc9

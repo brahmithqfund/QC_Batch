@@ -5,6 +5,7 @@
     <classes>
       <class name="tests.QCStore">
         <methods>
+<<<<<<< HEAD
           <include name="QC_PayAnyotherAmount_Void_Txn"/>
           <include name="QC_AgeStore_Void_Txn"/>
           <include name="setup"/>
@@ -22,11 +23,12 @@
           <include name="QC_ILP_Buyback_Void_Txn"/>
           <include name="JQC_ILP_GraceDays_Deposit_Menu_Txn"/>
           <include name="killProcess"/>
+=======
+>>>>>>> f50b11208812b9a3da18b28f508ffb930f9f5fc9
           <include name="QC_ILP_clear_Menu_Txn"/>
-          <include name="QC_ILP_NewLoanInstallmentDeposit_Txn"/>
           <include name="QC_ILP_Return_Menu_Txn"/>
-          <include name="QC_Installmentpayment_Void_Txn"/>
           <include name="getResult"/>
+<<<<<<< HEAD
           <include name="JQC_ILP_Deposit_Menu_Txn"/>
           <include name="JQC_ILP_Deposit_dropdown_Txn"/>
           <include name="QC_InstallPayment_Ref_Rescind_Txn"/>
@@ -35,6 +37,11 @@
           <include name="QC_NewLoan_TLPConversion_Txn"/>
           <include name="JQC_ILP_Deceased_Txn"/>
           <include name="JQC_ILP_Deposit_EOD_Txn"/>
+=======
+          <include name="setup"/>
+          <include name="endReport"/>
+          <include name="killProcess"/>
+>>>>>>> f50b11208812b9a3da18b28f508ffb930f9f5fc9
         </methods>
       </class> <!-- tests.QCStore -->
     </classes>
