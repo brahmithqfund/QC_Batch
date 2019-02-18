@@ -6648,7 +6648,7 @@ public class QCStore {
 		
 //V Jyothi scenarios
 		
-		//@Test(priority=0,enabled=true)
+		@Test(priority=0,enabled=true)
 		public static void LOC_Writeoff() throws Exception {
 			
 				  
@@ -7180,7 +7180,7 @@ public class QCStore {
 			BufferedReader Areader;
 			BufferedReader Sreader;
 			BufferedReader Vreader;
-			String propertyFilePath = ("user.dir") + "/Objects.properties";
+			
 
 			try{ 
 				reader = new BufferedReader(
@@ -7202,7 +7202,7 @@ public class QCStore {
 			
 			catch(Exception e)
 			{
-				test.log(LogStatus.ERROR, e);
+				
 				System.out.println("Object proprties file not found");
 			}
 			
@@ -7222,7 +7222,7 @@ public class QCStore {
 			
 			catch(Exception e)
 			{
-				test.log(LogStatus.ERROR, e);
+				
 				System.out.println("Object proprties file not found");
 			}
 			
@@ -7245,7 +7245,7 @@ public class QCStore {
 			
 			catch(Exception e)
 			{
-				test.log(LogStatus.ERROR, e);
+				
 				System.out.println("Object proprties file not found");
 			}
 			
@@ -7265,7 +7265,7 @@ public class QCStore {
 			
 			catch(Exception e)
 			{
-				test.log(LogStatus.ERROR, e);
+				
 				System.out.println("Object proprties file not found");
 			}
 			
@@ -7284,13 +7284,13 @@ public class QCStore {
 			
 			catch(Exception e)
 			{
-				test.log(LogStatus.ERROR, e);
+				
 				System.out.println("Object proprties file not found");
 			}
 			
 			try{ 
 				Vreader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_LOC/src/test/java/tests/VObjects.properties"));
+						new FileReader("E:/QC_Batch/QC_LOC/src/test/java/tests/VObjects.properties"));
 				Vprop = new Properties();
 				Vprop.load(Vreader);
 				Vreader.close();
@@ -7303,7 +7303,7 @@ public class QCStore {
 			
 			catch(Exception e)
 			{
-				test.log(LogStatus.ERROR, e);
+				
 				System.out.println("Object proprties file not found");
 			}
 			
