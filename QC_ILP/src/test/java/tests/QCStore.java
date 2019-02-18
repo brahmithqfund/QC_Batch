@@ -192,7 +192,7 @@ public class QCStore {
 	
 //Brahmith Transactions	
 
-	//@Test(priority=4)
+	@Test(priority=4)
 	public static void QC_NewLoan_Promotion_Txn() throws Exception {
 		try {
 
@@ -241,7 +241,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 7)
+	@Test(priority = 7)
 	public static void QC_NewLoan_Void_Txn() throws Exception {
 		try {
 			// test =
@@ -296,7 +296,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 54)
+	@Test(priority = 54)
 	public static void QC_AgeStore_Void_Txn() throws Exception {
 		try {
 			// test =
@@ -362,7 +362,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 21)
+	@Test(priority = 21)
 	public static void QC_Installmentpayment_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Installmentpayment_Txn_Scenario")),
@@ -420,7 +420,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 22)
+	@Test(priority = 22)
 	public static void QC_Installmentpayment_Void_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Installmentpayment_Void_Txn_Scenario")),
@@ -481,7 +481,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 23)
+	@Test(priority = 23)
 	public static void QC_PayAnyotherAmount_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Payanyotheramount_Txn_Scenario")),
@@ -539,7 +539,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 24)
+	@Test(priority = 24)
 	public static void QC_PayAnyotherAmount_Void_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Payanyotheramount_Void_Txn_Scenario")),
@@ -599,7 +599,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 31)
+	@Test(priority = 31)
 	public static void QC_ILP_Return_Menu_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Return_Menu_Txn_Scenario")),
@@ -663,7 +663,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 32)
+	@Test(priority = 32)
 	public static void QC_ILP_clear_Menu_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_clear_Menu_Txn_Scenario")),
@@ -727,7 +727,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 35)
+	@Test(priority = 35)
 	public static void QC_ILP_Deposit_Return_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Deposit_Return_Txn_Scenario")),
@@ -793,7 +793,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 55)
+	@Test(priority = 55)
 	public static void QC_ILP_NewLoanInstallmentDeposit_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_NewLoanInstallmentDeposit_Txn_Scenario")),
@@ -859,7 +859,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 47)
+	@Test(priority = 47)
 	public static void QC_InstallPayment_Ref_Rescind_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_InstallPayment_Ref_Rescind_Txn_Scenario")),
@@ -922,7 +922,7 @@ public class QCStore {
 		}
 	}
 
-//@Test(priority = 53)
+@Test(priority = 53)
 	public static void QC_NewLoan_TLPConversion_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_NewLoan_TLPConversion_Txn_Scenario")),
@@ -978,7 +978,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 51)
+	@Test(priority = 51)
 	public static void QC_LessInterest_VoidFullPayment_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_LessInterest_VoidFullPayment_Txn_Scenario")),
@@ -1042,7 +1042,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 16)
+	@Test(priority = 16)
 	public static void QC_ILP_Buyback_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Buyback_Txn_scenario")),
@@ -1099,7 +1099,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 17)
+	@Test(priority = 17)
 	public static void QC_ILP_Buyback_Void_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Buyback_Void_Txn_scenario")),
@@ -1161,7 +1161,7 @@ public class QCStore {
 
 
 	
-	//Janaki Transactions
+	//Janaki Transactions edited by Janaki
 	//@Test(priority=0,enabled = true)
 		public static void JQC_ILP_Deposit_Menu_Txn() throws Exception {
 			try
@@ -1690,7 +1690,7 @@ public class QCStore {
 	
 //RATIKANTA transactions	
 
-		@Test(priority=1)
+		//@Test(priority=1)
 		  public static void RQC_Bankruptcy_WORecovery_Txn_Testdata() throws Exception {
 			  try
 			  {
@@ -3076,88 +3076,102 @@ public class QCStore {
 
 		try {
 
-			// prop=prop.getProperty("user.dir")+"/Tests/Objects.properties";
 			BufferedReader reader;
 			BufferedReader Jreader;
 			BufferedReader Rreader;
 			BufferedReader Areader;
-			String propertyFilePath = ("user.dir") + "/Objects.properties";
+			
 
-			try {
+			try{ 
 				reader = new BufferedReader(
-						new FileReader("C:/QC_ILP/src/test/java/tests/Objects.properties"));
+						new FileReader("D:/QC_Batch/QC_ILP/src/test/java/tests/Objects.properties"));
 				prop = new Properties();
-				Jreader = new BufferedReader(
-						new FileReader("C:/QC_ILP/src/test/java/tests/JObjects.properties"));
-				Jprop = new Properties();
-				Rreader = new BufferedReader(
-						new FileReader("C:/QC_ILP/src/test/java/tests/RObjects.properties"));
-				Rprop = new Properties();
-				Areader = new BufferedReader(
-						new FileReader("C:/QC_ILP/src/test/java/tests/AObjects.properties"));
-				Aprop = new Properties();
-				try {
-					prop.load(reader);
-					reader.close();
-					Jprop.load(Jreader);
-					Jreader.close();
-					Rprop.load(Rreader);
-					Rreader.close();
-					Aprop.load(Areader);
-					Areader.close();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			} catch (FileNotFoundException e) {
-				e.printStackTrace();
-				throw new RuntimeException("Configuration.properties not found at " + propertyFilePath);
+				prop.load(reader);
+				reader.close();
+				AppURL=prop.getProperty("CSR_URL");   
+				AdminURL=prop.getProperty("ADMIN_CSR_URL"); 
+				String filename = prop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+
+				reports = new ExtentReports(
+						System.getProperty("user.dir") + prop.getProperty("QC_Store_extent_report_path") + filename, true);
+			
 			}
-			String filename = prop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+			
+			catch(Exception e)
+			{
+				
+				System.out.println("Object proprties file not found");
+			}
+			
 
-			reports = new ExtentReports(
-					System.getProperty("user.dir") + prop.getProperty("QC_Store_extent_report_path") + filename, true);
+			try{ 
+				Jreader = new BufferedReader(
+						new FileReader("D:/QC_Batch/QC_ILP/src/test/java/tests/JObjects.properties"));
+				Jprop = new Properties();
+				Jprop.load(Jreader);
+				Jreader.close();
+				String filename = Jprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
-			// Extent reports added code
+				reports = new ExtentReports(
+						System.getProperty("user.dir") + Jprop.getProperty("QC_Store_extent_report_path") + filename, true);
 
-			// String timestamp = new
-			// SimpleDateFormat("MM.dd.yyyy.HH.mm.ss").format(new Date());
+			}
+			
+			catch(Exception e)
+			{
+				
+				System.out.println("Object proprties file not found");
+			}
+			
 
-			// Date D = new Date();
-			// System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/chromedriver.exe");
+			try{ 
+				Rreader = new BufferedReader(
+						new FileReader("D:/QC_Batch/QC_ILP/src/test/java/tests/RObjects.properties"));
+				Rprop = new Properties();
+				Rprop.load(Rreader);
+				Rreader.close();
+				String filename = Rprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+
+				reports = new ExtentReports(
+						System.getProperty("user.dir") + Rprop.getProperty("QC_Store_extent_report_path") + filename, true);
+
+			}
+			
+			catch(Exception e)
+			{
+				
+				System.out.println("Object proprties file not found");
+			}
+			
+
+			try{ 
+				Areader = new BufferedReader(
+						new FileReader("D:/QC_Batch/QC_ILP/src/test/java/tests/AObjects.properties"));
+				Aprop = new Properties();
+				Aprop.load(Areader);
+				Areader.close();
+				String filename = Aprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+
+				reports = new ExtentReports(
+						System.getProperty("user.dir") + Aprop.getProperty("QC_Store_extent_report_path") + filename, true);
+
+			}
+			
+			catch(Exception e)
+			{
+				
+				System.out.println("Object proprties file not found");
+			}
+			
+		
 			System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "/IEDriverServer.exe");
-			AppURL=prop.getProperty("CSR_URL");   
-			AdminURL=prop.getProperty("ADMIN_CSR_URL"); 
-			System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "/IEDriverServer.exe");
+			
+			
 
-			// New Reports
-
-			/*
-			 * htmlReporter = new
-			 * ExtentHtmlReporter(System.getProperty("user.dir")
-			 * +prop.getProperty("QC_Store_extent_report_path")+filename);
-			 * extent = new ExtentReports ();
-			 * extent.attachReporter(htmlReporter); extent.setSystemInfo(
-			 * "Host Name", "QTLSYS2-238"); extent.setSystemInfo("Java Version",
-			 * "1.8.0_171"); extent.setSystemInfo("Environment", "Windows 7");
-			 * htmlReporter.getStartTime(); htmlReporter.getEndTime();
-			 * htmlReporter.config().getChartVisibilityOnOpen();
-			 * //extent.setTestRunnerOutput(log);
-			 * extent.config().statusConfigurator();
-			 * 
-			 * 
-			 * extent.setSystemInfo("User Name", "Brahmith P"); extent.config();
-			 * 
-			 * htmlReporter.config().setDocumentTitle("QC Store Smoke_Testing");
-			 * htmlReporter.config().setReportName("QC Store");
-			 * htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP)
-			 * ; htmlReporter.config().setTheme(Theme.STANDARD);
-			 * System.out.println("end of the log initiation");
-			 */
 		}
 
 		catch (Exception e) {
-			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
-			// setup for the QC Store " , ExtentColor.RED));
+			
 			test.log(LogStatus.ERROR, "Unable to setup for the QC Store ");
 
 		}

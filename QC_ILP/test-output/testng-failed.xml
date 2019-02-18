@@ -5,7 +5,8 @@
     <classes>
       <class name="tests.QCStore">
         <methods>
-          <include name="ILP_borrowregNewloan"/>
+          <include name="QC_ILP_clear_Menu_Txn"/>
+          <include name="QC_ILP_Return_Menu_Txn"/>
           <include name="getResult"/>
           <include name="setup"/>
           <include name="endReport"/>

@@ -29,7 +29,7 @@ public class SCSRLoginLogout extends QCStore{
 					passwrd=TestData.getCellData(sheetName,"Password",row);
 					Storeid=TestData.getCellData(sheetName,"StoreID",row);
                     //......For UAT purpose we change the URL in script ........//
-					if(prop.getProperty("login_method").equalsIgnoreCase("local"))
+					if(Sprop.getProperty("login_method").equalsIgnoreCase("local"))
 					{
 						driver = new InternetExplorerDriver();
 					}
