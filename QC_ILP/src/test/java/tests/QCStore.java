@@ -3084,11 +3084,9 @@ public class QCStore {
 
 			try{ 
 				reader = new BufferedReader(
-<<<<<<< HEAD
+
 						new FileReader("E:/QC_Batch/QC_ILP/src/test/java/tests/Objects.properties"));
-=======
-						new FileReader("D:/QC_Batch/QC_ILP/src/test/java/tests/Objects.properties"));
->>>>>>> b50e5c7425055cd846c0596a6552686c8ed2cba5
+
 				prop = new Properties();
 				prop.load(reader);
 				reader.close();
@@ -3110,11 +3108,9 @@ public class QCStore {
 
 			try{ 
 				Jreader = new BufferedReader(
-<<<<<<< HEAD
+
 						new FileReader("E:/QC_Batch/QC_ILP/src/test/java/tests/JObjects.properties"));
-=======
-						new FileReader("D:/QC_Batch/QC_ILP/src/test/java/tests/JObjects.properties"));
->>>>>>> b50e5c7425055cd846c0596a6552686c8ed2cba5
+
 				Jprop = new Properties();
 				Jprop.load(Jreader);
 				Jreader.close();
@@ -3134,36 +3130,16 @@ public class QCStore {
 
 			try{ 
 				Rreader = new BufferedReader(
-<<<<<<< HEAD
+
 						new FileReader("E:/QC_Batch/QC_ILP/src/test/java/tests/RObjects.properties"));
-				Rprop = new Properties();
-				Areader = new BufferedReader(
-						new FileReader("E:/QC_Batch/QC_ILP/src/test/java/tests/AObjects.properties"));
-				Aprop = new Properties();
-				try {
-					prop.load(reader);
-					reader.close();
-					Jprop.load(Jreader);
-					Jreader.close();
-					Rprop.load(Rreader);
-					Rreader.close();
-					Aprop.load(Areader);
-					Areader.close();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			} catch (FileNotFoundException e) {
-				e.printStackTrace();
-				throw new RuntimeException("Configuration.properties not found at " + propertyFilePath);
-			}
+			
 			String filename = prop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
-=======
-						new FileReader("D:/QC_Batch/QC_ILP/src/test/java/tests/RObjects.properties"));
+
+						
 				Rprop = new Properties();
 				Rprop.load(Rreader);
 				Rreader.close();
-				String filename = Rprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
->>>>>>> b50e5c7425055cd846c0596a6552686c8ed2cba5
+
 
 				reports = new ExtentReports(
 						System.getProperty("user.dir") + Rprop.getProperty("QC_Store_extent_report_path") + filename, true);
