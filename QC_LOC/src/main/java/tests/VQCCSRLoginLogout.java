@@ -30,7 +30,7 @@ import tests.QCStore;
 
 public class VQCCSRLoginLogout extends QCStore
 {
-	public static void login(String SSN,String csr_url)
+	public static void login(String SSN,String AppURL)
 	{
 		try{
 			//String FileName= Vprop.getProperty("QC_Store_NewLoan_file_name");
@@ -43,7 +43,7 @@ public class VQCCSRLoginLogout extends QCStore
 				{		
 					String RegSSN = TestData.getCellData(sheetName,"SSN",row);
 					//String csr_url = TestData.getCellData(sheetName,"csr_url",row);
-					//String csr_url="https://qcuat.qfund.net/cc/demoIndex.do";
+					String csr_url="https://qcuat.qfund.net/cc/demoIndex.do";
 
 					String username = TestData.getCellData(sheetName,"UserName",row);
 					String password = TestData.getCellData(sheetName,"Password",row);

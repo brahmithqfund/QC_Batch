@@ -7,6 +7,23 @@ W
 'src/test/java/tests/VObjects.properties,d\3\d30bfd7e1bd7dd48e8d6863a9e9fc5ee33d94b8c
 Z
 *src/main/java/tests/VQCCSRLoginLogout.java,e\6\e6b68d01758e174cfbbfe4228166ab114abfff8e
+<<<<<<< HEAD
+€
+PTestData/QCStore/LOC_BiWeekly/LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn.xls,c\1\c1521e9bb8091a8055fd4e700543760f1e390ef6
+…
+UTestData/QCStore/LOC_BiWeekly/LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn.xls,f\d\fd1a61553e79af69e45c2e522b27366a3741d0a3
+p
+@TestData/QCStore/LOC_BiWeekly/LOC_ACHDeposit_EODs_Return_Txn.xls,d\8\d8f012e22ca7d344eb37c255b558cac841b19341
+
+QTestData/QCStore/LOC_BiWeekly/LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn.xls,3\e\3e6b522b10b244bdca975458ea907fe890c21035
+}
+MTestData/QCStore/LOC_BiWeekly/LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn.xls,6\6\66c6ef1f47fe0d29c3512ecf3f16ec40fdfdbd64
+:
+
+testng.xml,5\2\522a7a4e21649af06297e31a9e33f13bb4fd3022
+U
+%src/main/java/tests/QCCSRNewLoan.java,d\0\d069f22d391cdb8a340fb6770db22a97a84ce4b7
+=======
 Q
 !src/test/java/tests/ExcelNew.java,0\f\0f1ab13854e28798698f421f8b6ba847311d93f8
 7
@@ -21,3 +38,4 @@ W
 'src/test/java/tests/SObjects.properties,5\3\5316a5bf09c0eb7158b75ad5682d07c4c1db845b
 W
 'src/test/java/tests/AObjects.properties,6\b\6b7e93440d570d871bcabb6a7242204cd62aee33
+>>>>>>> f720bbc9067fd9b475d843d7e06941575147eb82
