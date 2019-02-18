@@ -6374,7 +6374,7 @@ public class QCStore {
 		
 	
 						
-		//@Test(priority=500,enabled=true)
+		@Test(priority=500,enabled=true)
 		public void Deposit_Dropdown() throws Exception{
 			FileName="QC_LOC_Deposit_Dropdown.xls";
 			test=reports.startTest("QC_LOC_Deposit_DropDown");
@@ -6412,7 +6412,7 @@ public class QCStore {
 		
 		
 		
-		    //@Test(priority=501,enabled=true)
+		    @Test(priority=501,enabled=true)
 	    public void Deposit_Dropdown_Void() throws Exception{
 				FileName="QC_LOC_Deposit_DropDown_Void.xls";
 				test=reports.startTest("QC_LOC_Deposit_DropDown_Void");
