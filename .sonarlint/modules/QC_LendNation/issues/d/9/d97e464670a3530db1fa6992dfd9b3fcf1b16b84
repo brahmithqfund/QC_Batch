@@ -1,0 +1,23 @@
+
+ssquid:S1192I"WDefine a constant instead of duplicating this literal "go_to_dashboard_button" 4 times.(™©Ž²ùÿÿÿÿ
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Šøî¿þÿÿÿÿ
+gsquid:CommentedOutCodeLine&"<This block of commented-out lines of code should be removed.(ƒ€Þ²üÿÿÿÿ
+gsquid:CommentedOutCodeLine*"<This block of commented-out lines of code should be removed.(„ôž¬øÿÿÿÿ
+bsquid:CommentedOutCodeLineM"<This block of commented-out lines of code should be removed.(½Æ¨–
+gsquid:CommentedOutCodeLineZ"<This block of commented-out lines of code should be removed.(ŠÖ²†ùÿÿÿÿ
+bsquid:CommentedOutCodeLine`"<This block of commented-out lines of code should be removed.(ôÓš
+bsquid:CommentedOutCodeLined"<This block of commented-out lines of code should be removed.(°ŒÇ
+c
+squid:S134K"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(à´
+P
+squid:S106(";Replace this usage of System.out or System.err by a logger.(Æ©Ž
+V
+squid:S106|";Replace this usage of System.out or System.err by a logger.(¨¶ÑÍþÿÿÿÿ
+Isquid:S1172"-Remove this unused method parameter "AppURL".(â®óûþÿÿÿÿ
+ssquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(â®óûþÿÿÿÿ
+ssquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(â®óûþÿÿÿÿ
+msquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€û±
+ssquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½Éü—ÿÿÿÿÿ
+nsquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ïñ©
+ssquid:S00117""VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä¥¥þÿÿÿÿ
+ssquid:S00117a"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“±ÉÒúÿÿÿÿ
