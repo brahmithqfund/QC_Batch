@@ -3540,7 +3540,7 @@ public class QCStore {
 	  
 //Janaki's (Ratikanta) scenarios
 	  
-	  @Test(priority=301,enabled = true, groups="Janaki_NEOD")
+	  //@Test(priority=301,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_New_Loan_Void_Txn() throws Exception {
 			try
 			{			
@@ -3597,7 +3597,7 @@ public class QCStore {
 
 			}
 		}
-		//@Test(priority=302,enabled = true)
+		//@Test(priority=302,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_New_Loan_Rescind_Txn() throws Exception {
 			try
 			{			
@@ -3649,7 +3649,7 @@ public class QCStore {
 
 			}
 		}
-		//@Test(priority=303,enabled = true)
+		@Test(priority=303,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_New_Loan_Void_GraceDay_Txn() throws Exception {
 			try
 			{			
@@ -3671,7 +3671,7 @@ public class QCStore {
 						String SSN = TestData.getCellData(sheetName,"SSN",row); 
 						System.out.println(AppURL);
 
-						JQCCSRLoginLogout.login(SSN, AppURL);
+						/*JQCCSRLoginLogout.login(SSN, AppURL);
 						JQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 						JQCCSRLoginLogout.logout(SSN, AppURL);
 						JQCCSRLoginLogout.login(SSN, AppURL);
@@ -3681,7 +3681,7 @@ public class QCStore {
 						JQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
 						JQCCSRLoginLogout.login(SSN, AppURL);
 						JQCEncryptionDetails.readEncryptionDetails(SSN, AppURL);
-						JQCCSRLoginLogout.logout(SSN, AppURL);
+						JQCCSRLoginLogout.logout(SSN, AppURL);*/
 						JQCAdminEncryption.getEncryption(driver, SSN, AppURL);
 						JQCCSRLoginLogout.login(SSN, AppURL);
 						JQCAgeStoreVoid.ageStoreVoid(SSN, AppURL);
@@ -3707,7 +3707,7 @@ public class QCStore {
 
 			}
 		}
-		//@Test(priority=304,enabled = true)
+		@Test(priority=304,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_New_Loan_GraceDay_Rescind_Txn() throws Exception {
 			try
 			{			
@@ -3761,7 +3761,7 @@ public class QCStore {
 
 			}
 		}
-		//@Test(priority=305,enabled = true)
+		@Test(priority=305,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_New_Loan_After_RescindDays_Txn() throws Exception {
 			try
 			{			
@@ -3814,7 +3814,7 @@ public class QCStore {
 
 			}
 		}
-		//@Test(priority=306,enabled = true)
+		@Test(priority=306,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_Payment_After_Rescind_Txn() throws Exception {
 			try
 			{			
@@ -3869,7 +3869,7 @@ public class QCStore {
 
 			}
 		}
-		//@Test(priority=307,enabled = true)
+		@Test(priority=307,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_Payment_OnDueDate_Txn() throws Exception {
 			try
 			{			
@@ -3925,7 +3925,7 @@ public class QCStore {
 			}
 		}
 			
-		//@Test(priority=308,enabled = true)
+		@Test(priority=308,enabled = true, groups="Janaki_NEOD")
 		
 		public static void JQC_LOC_LessThan_MinPayment_Txn() throws Exception {
 			try
@@ -3982,7 +3982,7 @@ public class QCStore {
 			}
 		}
 
-		//@Test(priority=309,enabled = true)
+		@Test(priority=309,enabled = true, groups="Janaki_NEOD")
 		
 
 		public static void JQC_LOC_GreaterThan_MinPayment_Txn() throws Exception {
@@ -4040,7 +4040,7 @@ public class QCStore {
 			}
 		}
 
-		//@Test(priority=310,enabled = true)
+		@Test(priority=310,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_DueDate_GreaterThan_MinPayment_Txn() throws Exception {
 			try
 			{			
@@ -7254,7 +7254,7 @@ public class QCStore {
 			}
 			
 
-			try{ 
+			/*try{ 
 				Areader = new BufferedReader(
 <<<<<<< HEAD
 						new FileReader("E:/QC_Batch/QC_LOC/src/test/java/tests/AObjects.properties"));
@@ -7276,7 +7276,7 @@ public class QCStore {
 			{
 				
 				System.out.println("Object proprties file not found");
-			}
+			}*/
 			
 			
 			
