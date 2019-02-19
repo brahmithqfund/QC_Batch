@@ -4,15 +4,10 @@
   <test thread-count="5" name="Test">
   <groups>
   <run>
-<<<<<<< HEAD
- <!--  <include name="EOD"/>-->
- <!-- <include name="Ratikanta_NEOD"/>-->
- <include name="Janaki_NEOD"/>
-=======
  <!-- <include name="EOD"/>  -->
  <!-- <include name="Ratikanta_NEOD"/>  -->
   <include name="Janaki_NEOD"/> 
->>>>>>> master
+
    <!-- <include name="EOD2"/>-->
  <!-- <include name="1st Batch"/>-->
   </run>
