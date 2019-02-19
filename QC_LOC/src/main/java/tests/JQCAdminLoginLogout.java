@@ -34,7 +34,7 @@ public class JQCAdminLoginLogout extends QCStore {
 					Thread.sleep(4000);
 					test.log(LogStatus.INFO, "Opened the CSR URL " +AdminURL);
 					test.log(LogStatus.INFO, "admin Application is launched " );
-					if(prop.getProperty("login_method").equalsIgnoreCase("local"))
+					if(Jprop.getProperty("login_method").equalsIgnoreCase("local"))
 					{
 						driver = new InternetExplorerDriver();
 					}

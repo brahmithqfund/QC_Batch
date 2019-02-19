@@ -1,2 +1,16 @@
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=b50e5c7425055cd846c0596a6552686c8ed2cba5
 eclipse.preferences.version=1
-org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1550216529655" defaultVMConnector\="">\r\n<vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\r\n<vm id\="1550216529655" name\="jre1.8.0_171" path\="C\:\\Program Files\\Java\\jre1.8.0_171"/>\r\n</vmType>\r\n</vmSettings>\r\n
+<<<<<<< HEAD
+<<<<<<< HEAD
+org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1550473866660" defaultVMConnector\="">\r\n<vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\r\n<vm id\="1550473866660" name\="jdk1.8.0_181" path\="C\:\\Program Files\\Java\\jdk1.8.0_181"/>\r\n</vmType>\r\n</vmSettings>\r\n
+=======
+org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1550480694071" defaultVMConnector\="">\r\n<vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\r\n<vm id\="1550480694071" name\="jre1.8.0_101" path\="C\:\\Program Files\\Java\\jre1.8.0_101"/>\r\n</vmType>\r\n</vmSettings>\r\n
+>>>>>>> 596c6382aa9b39e06e09f90b7401ee03b0aa53e7
+=======
+org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1550482886704" defaultVMConnector\="">\r\n<vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\r\n<vm id\="1550482886704" name\="jdk1.8.0_181" path\="C\:\\Program Files\\Java\\jdk1.8.0_181"/>\r\n</vmType>\r\n</vmSettings>\r\n
+=======
+org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1550473866660" defaultVMConnector\="">\r\n<vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\r\n<vm id\="1550473866660" name\="jdk1.8.0_181" path\="C\:\\Program Files\\Java\\jdk1.8.0_181"/>\r\n</vmType>\r\n</vmSettings>\r\n
+>>>>>>> master
+>>>>>>> feb1.1

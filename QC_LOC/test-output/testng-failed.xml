@@ -6,10 +6,9 @@
       <class name="tests.QCStore">
         <methods>
           <include name="getResult"/>
-          <include name="LOC_Writeoff"/>
-          <include name="LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn"/>
           <include name="setup"/>
           <include name="endReport"/>
+          <include name="JQC_LOC_Refinance_Latefee_Payment_Txn"/>
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->
