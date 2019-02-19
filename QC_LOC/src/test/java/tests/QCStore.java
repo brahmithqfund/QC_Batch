@@ -2143,7 +2143,7 @@ public class QCStore {
 	//Ratikanta scenarios
 	
 
-	  ////@Test(priority=201, groups="Ratikanta_NEOD")
+	  //@Test(priority=201, groups="Ratikanta_NEOD")
 	  public static void RQC_LOC_ManualDefault_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -3540,7 +3540,7 @@ public class QCStore {
 	  
 //Janaki's (Ratikanta) scenarios
 	  
-	  ////@Test(priority=301,enabled = true, groups="Janaki_NEOD")
+	  @Test(priority=301,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_New_Loan_Void_Txn() throws Exception {
 			try
 			{			
@@ -3597,7 +3597,7 @@ public class QCStore {
 
 			}
 		}
-		////@Test(priority=302,enabled = true, groups="Janaki_NEOD")
+		@Test(priority=302,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_New_Loan_Rescind_Txn() throws Exception {
 			try
 			{			
@@ -3649,7 +3649,7 @@ public class QCStore {
 
 			}
 		}
-		//@Test(priority=303,enabled = true, groups="Janaki_NEOD")
+		@Test(priority=303,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_New_Loan_Void_GraceDay_Txn() throws Exception {
 			try
 			{			
@@ -3707,7 +3707,7 @@ public class QCStore {
 
 			}
 		}
-		//@Test(priority=304,enabled = true, groups="Janaki_NEOD")
+		@Test(priority=304,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_New_Loan_GraceDay_Rescind_Txn() throws Exception {
 			try
 			{			
@@ -3761,7 +3761,7 @@ public class QCStore {
 
 			}
 		}
-		//@Test(priority=305,enabled = true, groups="Janaki_NEOD")
+		@Test(priority=305,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_New_Loan_After_RescindDays_Txn() throws Exception {
 			try
 			{			
@@ -3814,7 +3814,7 @@ public class QCStore {
 
 			}
 		}
-		//@Test(priority=306,enabled = true, groups="Janaki_NEOD")
+		@Test(priority=306,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_Payment_After_Rescind_Txn() throws Exception {
 			try
 			{			
@@ -3869,7 +3869,7 @@ public class QCStore {
 
 			}
 		}
-		//@Test(priority=307,enabled = true, groups="Janaki_NEOD")
+		@Test(priority=307,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_Payment_OnDueDate_Txn() throws Exception {
 			try
 			{			
@@ -3925,7 +3925,7 @@ public class QCStore {
 			}
 		}
 			
-		//@Test(priority=308,enabled = true, groups="Janaki_NEOD")
+		@Test(priority=308,enabled = true, groups="Janaki_NEOD")
 		
 		public static void JQC_LOC_LessThan_MinPayment_Txn() throws Exception {
 			try
@@ -3982,7 +3982,7 @@ public class QCStore {
 			}
 		}
 
-		//@Test(priority=309,enabled = true, groups="Janaki_NEOD")
+		@Test(priority=309,enabled = true, groups="Janaki_NEOD")
 		
 
 		public static void JQC_LOC_GreaterThan_MinPayment_Txn() throws Exception {
@@ -4040,7 +4040,7 @@ public class QCStore {
 			}
 		}
 
-		//@Test(priority=310,enabled = true, groups="Janaki_NEOD")
+		@Test(priority=310,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_DueDate_GreaterThan_MinPayment_Txn() throws Exception {
 			try
 			{			
@@ -4096,7 +4096,7 @@ public class QCStore {
 			}
 		}
 
-		//@Test(priority=311,enabled = true, groups="Janaki_NEOD")
+		@Test(priority=311,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_DueDate_LessThan_MinPayment_Txn() throws Exception {
 			try
 			{			
@@ -4151,7 +4151,7 @@ public class QCStore {
 
 			}
 		}
-		//@Test(priority=312,enabled = true, groups="Janaki_NEOD")
+		@Test(priority=312,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_Payment_void_Txn() throws Exception {
 			try
 			{			
@@ -4209,7 +4209,7 @@ public class QCStore {
 			}
 		}
 		
-		//@Test(priority=313,enabled = true, groups="Janaki_NEOD")
+		@Test(priority=313,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_Payment_void_NextBusinessDay_Txn() throws Exception {
 			try
 			{			
@@ -4275,7 +4275,7 @@ public class QCStore {
 			}
 		}
 
-		//@Test(priority=314,enabled = true, groups="Janaki_NEOD")
+		@Test(priority=314,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_LessThan_MinPayment_Viod_Txn() throws Exception {
 			try
 			{			
@@ -4333,7 +4333,7 @@ public class QCStore {
 
 			}
 		}
-		//@Test(priority=315,enabled = true, groups="Janaki_NEOD")
+		@Test(priority=315,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_GreaterThan_MinPayment_Void_Txn() throws Exception {
 			
 			try
@@ -4394,7 +4394,7 @@ public class QCStore {
 			}
 		}
 		
-		//@Test(priority=316,enabled = true, groups="Janaki_NEOD")
+		@Test(priority=316,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_LessThan_MinPayment_Return_Txn() throws Exception {
 			try
 			{			
@@ -4459,7 +4459,7 @@ public class QCStore {
 
 			}
 		}
-		//@Test(priority=317,enabled = true, groups="Janaki_NEOD")
+		@Test(priority=317,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_GreaterThan_MinPayment_Return_Txn() throws Exception {
 			try
 			{			
@@ -4525,7 +4525,7 @@ public class QCStore {
 			}
 		}
 
-		//@Test(priority=318,enabled = true, groups="Janaki_NEOD")
+		@Test(priority=318,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_Refinance_StepSame_Txn() throws Exception {
 			try
 			{			
@@ -4585,7 +4585,7 @@ public class QCStore {
 			}
 		}
 		
-		//@Test(priority=319,enabled = true, groups="Janaki_NEOD")
+		@Test(priority=319,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_Refinance_StepUp_Txn() throws Exception {
 			try
 			{			
@@ -4646,7 +4646,7 @@ public class QCStore {
 			}
 		}
 		
-		//@Test(priority=320,enabled = true, groups="Janaki_NEOD")
+		@Test(priority=320,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_Refinance_CABPayment_Return_Txn() throws Exception {
 			try
 			{			
@@ -4713,7 +4713,7 @@ public class QCStore {
 
 			}
 		}
-		//@Test(priority=321,enabled = true, groups="Janaki_NEOD")
+		@Test(priority=321,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_Refinance_Stepdown_Txn() throws Exception {
 			try
 			{			
@@ -4774,7 +4774,7 @@ public class QCStore {
 			}
 		}
 		
-	 //@Test(priority=322,enabled = true, groups="Janaki_NEOD")
+	 @Test(priority=322,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_Refinance_Latefee_Payment_Txn() throws Exception {
 			try
 			{			
@@ -4841,7 +4841,7 @@ public class QCStore {
 
 			}
 		}
-		////@Test(priority=323,enabled = true)
+		//@Test(priority=323,enabled = true)
 		public static void JQC_LOC_Refinance_EOD_Payment_Txn() throws Exception {
 			try
 			{			

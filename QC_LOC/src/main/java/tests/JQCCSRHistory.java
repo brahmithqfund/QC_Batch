@@ -121,7 +121,8 @@ System.out.println(columnname+"_TxnHistory_FieldValue");
 			       String finance_charge=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",12);
 			       String interest_rate=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",13);
 			       String loan_date=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",14);
-			   String min_pay_amt=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",15);
+			       String min_pay_amt=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",15);
+			       //String ESign_CollateralType=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",16);
 			       String loan_frequency=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",17);
 			       String credot_or_verification_fee=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",18);
 			       String available_credit=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",18);
@@ -626,11 +627,11 @@ System.out.println(columnname+"_TxnHistory_FieldValue");
 							}
 							if(loan_balance_inf_Return_Fee_Due_test.equalsIgnoreCase(loan_balance_inf_Return_Fee_Due))
 							{
-								test.log(LogStatus.PASS, "Earned_and_unpaid_interest->Expected value:"+loan_balance_inf_Return_Fee_Due_test +"; == Actual value:"+loan_balance_inf_Return_Fee_Due);
+								test.log(LogStatus.PASS, "Return_Fee_Due->Expected value:"+loan_balance_inf_Return_Fee_Due_test +"; == Actual value:"+loan_balance_inf_Return_Fee_Due);
 							}
 							else
 							{
-								test.log(LogStatus.FAIL, "Earned_and_unpaid_interest->Expected value:"+loan_balance_inf_Return_Fee_Due_test +"; not equals to Actual value:"+loan_balance_inf_Return_Fee_Due);
+								test.log(LogStatus.FAIL, "Return_Fee_Due->Expected value:"+loan_balance_inf_Return_Fee_Due_test +"; not equals to Actual value:"+loan_balance_inf_Return_Fee_Due);
 
 							}
 							if(loan_balance_inf_Late_Fee_Due_test.equalsIgnoreCase(loan_balance_inf_Late_Fee_Due))

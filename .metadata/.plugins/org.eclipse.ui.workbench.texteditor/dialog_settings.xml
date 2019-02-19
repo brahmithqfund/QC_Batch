@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<item value="Janaki" key="selection"/>
 =======
 		<item value="QC_Store_extent_report_path" key="selection"/>
@@ -15,6 +16,9 @@
 =======
 		<item value="Shashi" key="selection"/>
 >>>>>>> QCH1.1
+=======
+		<item value="Janaki" key="selection"/>
+>>>>>>> feb1.1
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
@@ -23,26 +27,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> feb1.1
 			<item value="janaki"/>
-			<item value="QC_LOC_New_Loan_Void_Txn"/>
-			<item value="Rprop"/>
+			<item value="RLOC"/>
 			<item value="ratikanta"/>
-			<item value="FileName"/>
-			<item value="prop"/>
-			<item value="Jprop"/>
-			<item value="rati"/>
-=======
-			<item value="QC_Store_extent_report_path"/>
-			<item value="QC_Store_extent_report_file_name"/>
-			<item value="janaki"/>
-			<item value="janaaki"/>
-			<item value="before test"/>
-			<item value="beforetest"/>
-			<item value="screen"/>
->>>>>>> 596c6382aa9b39e06e09f90b7401ee03b0aa53e7
-=======
-			<item value="priority=322"/>
 			<item value="@Test"/>
+<<<<<<< HEAD
 			<item value="ADMIN_URL"/>
 			<item value="AdminURL"/>
 			<item value="janaki"/>
@@ -60,17 +52,21 @@
 			<item value="QC_Store_extent_report_path"/>
 			<item value="QC_Store_extent_report_path+"/>
 >>>>>>> QCH1.1
+=======
+			<item value="collateral_type-&gt;Expec"/>
+			<item value="collateral_type"/>
+			<item value="min_pay_amt"/>
+			<item value=",16"/>
+>>>>>>> feb1.1
 		</list>
 		<list key="replacehistory">
-			<item value="//@Test"/>
-			<item value="&quot;Janaki_NEOD&quot;"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
-<<<<<<< HEAD
 		<item value="380" key="DIALOG_HEIGHT"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		<item value="76" key="DIALOG_X_ORIGIN"/>
@@ -88,5 +84,9 @@
 		<item value="51" key="DIALOG_X_ORIGIN"/>
 		<item value="193" key="DIALOG_Y_ORIGIN"/>
 >>>>>>> QCH1.1
+=======
+		<item value="80" key="DIALOG_X_ORIGIN"/>
+		<item value="311" key="DIALOG_Y_ORIGIN"/>
+>>>>>>> feb1.1
 	</section>
 </section>
