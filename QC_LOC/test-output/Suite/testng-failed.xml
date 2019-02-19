@@ -4,17 +4,16 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="EOD"/>
+        <include name="Shashi"/>
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
-          <include name="LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn"/>
           <include name="getResult"/>
           <include name="setup"/>
+          <include name="Deposit_Dropdown"/>
           <include name="endReport"/>
-          <include name="LOC_ACHDeposit_EODs_Return_Txn"/>
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->

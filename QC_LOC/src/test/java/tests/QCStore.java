@@ -6372,7 +6372,7 @@ public class QCStore {
 		
 	
 						
-		@Test(priority=500,enabled=true)
+		@Test(priority=500,enabled=true,groups="Shashi")
 		public void Deposit_Dropdown() throws Exception{
 			FileName="QC_LOC_Deposit_Dropdown.xls";
 			test=reports.startTest("QC_LOC_Deposit_DropDown");
@@ -6410,7 +6410,7 @@ public class QCStore {
 		
 		
 		
-		    @Test(priority=501,enabled=true)
+		   // @Test(priority=501,enabled=true,groups="Shashi")
 	    public void Deposit_Dropdown_Void() throws Exception{
 				FileName="QC_LOC_Deposit_DropDown_Void.xls";
 				test=reports.startTest("QC_LOC_Deposit_DropDown_Void");
@@ -6450,7 +6450,7 @@ public class QCStore {
 			
 					
 			
-		    //@Test(priority=502,enabled=true)
+		   // @Test(priority=502,enabled=true,groups="Shashi")
 		public void SQC_LOC_Deposit_Bulk() throws Exception{
 				FileName="QC_LOC_Deposit_Bulk.xls";
 				test=reports.startTest("QC_LOC_Deposit_Bulk");
@@ -6486,7 +6486,7 @@ public class QCStore {
 					}}}
 			
 						
-		//@Test(priority=503,enabled=true)
+		//@Test(priority=503,enabled=true,groups="Shashi")
 		public void SQC_LOC_Deposit_Bulk_Void() throws Exception{
 			FileName="QC_LOC_Deposit_Bulk_Void.xls";
 			test=reports.startTest("QC_LOC_Deposit_Bulk_Void");
@@ -6526,7 +6526,7 @@ public class QCStore {
 		
 						
 		
-		  //@Test(priority=504,enabled=true)
+		//  @Test(priority=504,enabled=true,groups="Shashi")
 		public void MidDay_Deposit() throws Exception{
 				FileName="QC_LOC_MidDay_Deposit.xls";
 				test=reports.startTest("QC_LOC_MidDay_Deposit");
@@ -6566,7 +6566,7 @@ public class QCStore {
 
 			
 		
-			//@Test(priority=505,enabled=true)
+			//@Test(priority=505,enabled=true,groups="Shashi")
 		public void MidDay_Void_Deposit() throws Exception{
 				FileName="QC_LOC_MidDay_Void_Deposit.xls";
 				test=reports.startTest("QC_LOC_MidDay_Void_Deposit");
@@ -6606,7 +6606,7 @@ public class QCStore {
 					}}}
 			
 
-			//@Test(priority=506,enabled=true)
+			//@Test(priority=506,enabled=true,groups="Shashi")
 		public void SQC_LOC_LessMinPayment_Deposit() throws Exception{
 				FileName="QC_LOC_LessMinPayment_Deposit.xls";
 				test=reports.startTest("QC_LOC_LessMinPayment_Deposit");
@@ -6648,7 +6648,7 @@ public class QCStore {
 		
 //V Jyothi scenarios
 		
-		@Test(priority=0,enabled=true)
+		//@Test(priority=0,enabled=true)
 		public static void LOC_Writeoff() throws Exception {
 			
 				  
@@ -7373,7 +7373,7 @@ public class QCStore {
 
 	}
 
-	@AfterMethod(alwaysRun = true)
+	//@AfterMethod(alwaysRun = true)
 
 	public void endReport() {
 
