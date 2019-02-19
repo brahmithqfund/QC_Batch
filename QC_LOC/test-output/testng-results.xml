@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
@@ -27,17 +28,51 @@
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=JQC_LOC_Refinance_CABPayment_Return_Txn status=SUCCESS method=QCStore.JQC_LOC_Refinance_CABPayment_Return_Txn()[pri:320, instance:tests.QCStore@71423665] output={null}]]]>
+=======
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="969487" started-at="2019-02-19T05:07:00Z" finished-at="2019-02-19T05:23:09Z">
+    <groups>
+      <group name="Shashi">
+        <method signature="QCStore.Deposit_Dropdown()[pri:500, instance:tests.QCStore@6d7b4f4c]" name="Deposit_Dropdown" class="tests.QCStore"/>
+      </group> <!-- Shashi -->
+    </groups>
+    <test name="Test" duration-ms="969487" started-at="2019-02-19T05:07:00Z" finished-at="2019-02-19T05:23:09Z">
+      <class name="tests.QCStore">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="setup" is-config="true" duration-ms="127" started-at="2019-02-19T05:07:00Z" finished-at="2019-02-19T05:07:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="killProcess" is-config="true" duration-ms="5020" started-at="2019-02-19T05:07:00Z" finished-at="2019-02-19T05:07:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="Deposit_Dropdown()[pri:500, instance:tests.QCStore@6d7b4f4c]" name="Deposit_Dropdown" duration-ms="963614" started-at="2019-02-19T05:07:05Z" finished-at="2019-02-19T05:23:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Deposit_Dropdown -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@6d7b4f4c]" name="getResult" is-config="true" duration-ms="711" started-at="2019-02-19T05:23:08Z" finished-at="2019-02-19T05:23:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Deposit_Dropdown status=SUCCESS method=QCStore.Deposit_Dropdown()[pri:500, instance:tests.QCStore@6d7b4f4c] output={null}]]]>
+>>>>>>> QCH1.1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@71423665]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T20:05:01Z" finished-at="2019-02-18T20:05:01Z">
+=======
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-19T05:23:08Z" finished-at="2019-02-19T05:23:08Z">
+>>>>>>> QCH1.1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- tests.QCStore -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

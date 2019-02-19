@@ -214,8 +214,8 @@ public class SQCVoid extends QCStore{
 					e.printStackTrace();
 					test.log(LogStatus.INFO,"Exception occured "+e.toString().substring(0, 250));
 					test.log(LogStatus.INFO, "Void Trasaction is initiated again due to application sync issue");
-					//driver.get("http://192.168.2.203/cc/login/index.jsp");
-					driver.get("https://qcuat.qfund.net/cc/login/index.jsp");
+					driver.get("http://192.168.2.203/cc/login/index.jsp");
+					//driver.get("https://qcuat.qfund.net/cc/login/index.jsp");
 
 					
 					//continue;
