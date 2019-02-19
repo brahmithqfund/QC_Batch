@@ -6,7 +6,8 @@
   <run>
    <!-- <include name="EOD"/>-->
      <!--  <include name="Rebate"/>   -->
-   <include name="1stBatch"/>   
+  <!--  <include name="1stBatch"/> -->   
+   <include name="Janaki"/> 
   </run>
   </groups>
     <classes>

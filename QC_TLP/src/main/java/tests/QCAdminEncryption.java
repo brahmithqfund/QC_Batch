@@ -30,9 +30,9 @@ public class QCAdminEncryption extends QCStore
 		{
 		
 	try{
-		//String FileName= prop.getProperty("QC_Store_NewLoan_file_name");
+		//String FileName= Jprop.getProperty("QC_Store_NewLoan_file_name");
 		
-		//ExcelNew TestData = new ExcelNew(System.getProperty("user.dir")+prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName+".xls");  		 
+		//ExcelNew TestData = new ExcelNew(System.getProperty("user.dir")+Jprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName+".xls");  		 
 			int lastrow=TestData.getLastRow("Login");
 			String sheetName="Login";
 
@@ -43,7 +43,7 @@ public class QCAdminEncryption extends QCStore
 				{
 				String UserName = TestData.getCellData(sheetName,"AdminUserName",row);
 				String Password = TestData.getCellData(sheetName,"AdminPassword",row);
-				//String AdminURL = TestData.getCellData(sheetName,"AdminURL",row);
+				String AdminURL = TestData.getCellData(sheetName,"AdminURL",row);
 			
 				String Tran_cd = TestData.getCellData(sheetName,"Tran_cd",row);
 				encryption_store_no=TestData.getCellData(sheetName,"StoreID",row);
@@ -52,7 +52,7 @@ public class QCAdminEncryption extends QCStore
 
 				//test.log(LogStatus.INFO, MarkupHelper.createLabel("Admin Application is launched", ExtentColor.BLUE));
 				test.log(LogStatus.INFO, "********Admin Application is launched********");
-				if(prop.getProperty("login_method").equalsIgnoreCase("local"))
+				if(Jprop.getProperty("login_method").equalsIgnoreCase("local"))
 				{
 					driver = new InternetExplorerDriver();
 				}
@@ -180,7 +180,7 @@ break;
 					String screenshotPath = getScreenhot(driver, "AdminEncryption");
 					test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 					test.log(LogStatus.INFO,"Getting Encryption from Admin process is initiated again due to Application sync issue");
-					driver.get(prop.getProperty("login_page"));  
+					driver.get(Jprop.getProperty("login_page"));  
 					continue;
 
 				}
