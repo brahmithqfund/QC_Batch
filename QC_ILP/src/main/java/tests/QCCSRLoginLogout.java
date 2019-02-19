@@ -46,10 +46,10 @@ public class QCCSRLoginLogout extends QCStore
 					//String csr_url = TestData.getCellData(sheetName,"AppURL",row);
 
 					String username = "csr1709";
-							//TestData.getCellData(sheetName,"UserName",row);
+					//String username =TestData.getCellData(sheetName,"UserName",row);
 					String password = TestData.getCellData(sheetName,"Password",row);
 					String store_id = "1709";
-							//TestData.getCellData(sheetName,"StoreID",row);
+					//String store_id = TestData.getCellData(sheetName,"StoreID",row);
 					
 
 
@@ -74,7 +74,7 @@ public class QCCSRLoginLogout extends QCStore
 						}
 						else
 						{
-							String Node = "http://192.168.3.29:5555/wd/hub";
+							String Node = "http://192.168.2.164:5555/wd/hub";
 							 //String Node2 = "http://192.168.0.238:5566/wd/hub";
 							 DesiredCapabilities cap = DesiredCapabilities.internetExplorer();
 							 driver = new RemoteWebDriver(new URL(Node), cap);	
@@ -191,7 +191,7 @@ public static void logout(String SSN,String AppURL){
 				}
 				else
 				{
-					String Node = "http://192.168.3.29:5555/wd/hub";
+					String Node = "http://192.168.2.164:5555/wd/hub";
 					 //String Node2 = "http://192.168.0.238:5566/wd/hub";
 					 DesiredCapabilities cap = DesiredCapabilities.internetExplorer();
 					 driver = new RemoteWebDriver(new URL(Node), cap);	
