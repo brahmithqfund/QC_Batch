@@ -1,14 +1,11 @@
 package tests;
 
 
-import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.relevantcodes.extentreports.LogStatus;
@@ -35,25 +32,7 @@ public class JQCAdminStoreSetup extends QCStore
 
 					String StoreID = TestData.getCellData(sheetName,"StoreID",row);
 
-					if(prop.getProperty("login_method").equalsIgnoreCase("local"))
-					{
-						driver = new InternetExplorerDriver();
-					}
-					else
-					{
-						String Node = "http://192.168.1.182:5555/wd/hub";
-						 //String Node2 = "http://192.168.0.238:5566/wd/hub";
-						 DesiredCapabilities cap = DesiredCapabilities.internetExplorer();
-						 driver = new RemoteWebDriver(new URL(Node), cap);	
-					}
-					
-					 /*String Node = "http://192.168.2.164:5555/wd/hub";
-					  DesiredCapabilities cap = DesiredCapabilities.internetExplorer();
-					 
-					 
-						System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "/IEDriverServer.exe");
-
-								driver = new RemoteWebDriver(new URL(Node), cap);*/
+					driver = new InternetExplorerDriver();
 					wait = new WebDriverWait(driver, 40000);
 
 					driver.manage().window().maximize();
@@ -75,29 +54,29 @@ public class JQCAdminStoreSetup extends QCStore
 		driver.findElement(By.name("login")).click();
 
 		test.log(LogStatus.PASS, "Clicked on Submit button");
-		
+		Thread.sleep(5000);
 		driver.switchTo().defaultContent();
 
 		driver.switchTo().frame("topFrame");
 
-		driver.findElement(locator(Jprop.getProperty("admin_store_setup_tab"))).click(); 
+		driver.findElement(locator(prop.getProperty("admin_store_setup_tab"))).click(); 
 
 		test.log(LogStatus.PASS, "Clicked on Store tab");
-	
+		Thread.sleep(2000);
 	driver.switchTo().defaultContent();
 
 	driver.switchTo().frame("mainFrame");
 
 	
-	driver.findElement(locator(Jprop.getProperty("admin_store_config"))).click();
+	driver.findElement(locator(prop.getProperty("admin_store_config"))).click();
 
 	test.log(LogStatus.PASS, "Clicked on Store Config link");
 
 	driver.switchTo().defaultContent();
 
 	driver.switchTo().frame("mainFrame");
-	Thread.sleep(2000);
-	driver.findElement(locator(Jprop.getProperty("admin_store_edit"))).click();
+Thread.sleep(2000);
+	driver.findElement(locator(prop.getProperty("admin_store_edit"))).click();
 
 	test.log(LogStatus.PASS, "Clicked on Store Edit");
 	
@@ -105,11 +84,11 @@ public class JQCAdminStoreSetup extends QCStore
 	
 	driver.switchTo().frame("main");
 	
-	driver.findElement(locator(Jprop.getProperty("admin_store_nbr"))).sendKeys(StoreID);
+	driver.findElement(locator(prop.getProperty("admin_store_nbr"))).sendKeys(StoreID);
 
 	test.log(LogStatus.PASS, "Entered Store number "+StoreID);
 
-	driver.findElement(locator(Jprop.getProperty("admin_store_submit_btn"))).click();
+	driver.findElement(locator(prop.getProperty("admin_store_submit_btn"))).click();
 
 	test.log(LogStatus.PASS, "Clicked on Submit button");
 
@@ -123,15 +102,15 @@ public class JQCAdminStoreSetup extends QCStore
 
 	driver.switchTo().frame("main");
 
-	driver.findElement(locator(Jprop.getProperty("admin_store_status"))).sendKeys("Open");
+	driver.findElement(locator(prop.getProperty("admin_store_status"))).sendKeys("Open");
 
 	test.log(LogStatus.PASS, "Store status set as Open"); 
 
-	driver.findElement(locator(Jprop.getProperty("admin_store_edit_submit"))).click();
+	driver.findElement(locator(prop.getProperty("admin_store_edit_submit"))).click();
 
 	test.log(LogStatus.PASS, "Clicked on Submit"); 
 	Thread.sleep(2000);
-	driver.findElement(locator(Jprop.getProperty("admin_store_ok_btn"))).click();
+	driver.findElement(locator(prop.getProperty("admin_store_ok_btn"))).click();
 
 	test.log(LogStatus.PASS, "Clicked on OK button"); 
 

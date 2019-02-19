@@ -10,6 +10,24 @@ W
 'src/test/java/tests/JObjects.properties,8\0\80cc7a1d4a27a98d5470617f02e4ff852bf81b78
 =======
 'src/test/java/tests/JObjects.properties,8\0\80cc7a1d4a27a98d5470617f02e4ff852bf81b78
+<<<<<<< HEAD
+@
+chromedriver.exe,d\0\d0b49ae29587435df3e9988b34c286a37d9a89d9
+B
+IEDriverServer.exe,9\1\91c8366e22f75cf182379d0c621025823649da39
+[
++src/main/java/tests/JQCAdminEncryption.java,2\f\2f26b9cc8f6217a5f44b3406ca8aa482d55636fa
+[
++src/main/java/tests/JQCAdminStoreSetup.java,a\4\a4fbc04674999f4297a27a0256f9fa040539e078
+X
+(src/main/java/tests/JQCDrawerAssign.java,4\4\44f58447c78b57d16f395bbda7774f787befd2bc
+V
+&src/main/java/tests/JQCEODDeposit.java,5\8\58c4f28ab2dcc6b5c55be1369e44f3b42fad121e
+V
+&src/main/java/tests/JQCSafeAssign.java,1\a\1ae3380d349c60780d93c24c570be6039b941b92
+P
+ src/test/java/tests/QCStore.java,f\1\f1f5f4816296e60d7232d0a00b509d48935fb3a4
+=======
 P
  src/test/java/tests/QCStore.java,f\1\f1f5f4816296e60d7232d0a00b509d48935fb3a4
 T

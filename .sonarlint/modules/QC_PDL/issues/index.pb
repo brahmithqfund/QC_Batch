@@ -22,5 +22,20 @@ V
 testng.xml,5\2\522a7a4e21649af06297e31a9e33f13bb4fd3022
 =======
 P
+<<<<<<< HEAD
  src/test/java/tests/QCStore.java,f\1\f1f5f4816296e60d7232d0a00b509d48935fb3a4
 >>>>>>> b50e5c7425055cd846c0596a6552686c8ed2cba5
+=======
+<<<<<<< HEAD
+ src/test/java/tests/QCStore.java,f\1\f1f5f4816296e60d7232d0a00b509d48935fb3a4
+=======
+ src/test/java/tests/QCStore.java,f\1\f1f5f4816296e60d7232d0a00b509d48935fb3a4
+:
+
+testng.xml,5\2\522a7a4e21649af06297e31a9e33f13bb4fd3022
+@
+chromedriver.exe,d\0\d0b49ae29587435df3e9988b34c286a37d9a89d9
+B
+IEDriverServer.exe,9\1\91c8366e22f75cf182379d0c621025823649da39
+>>>>>>> master
+>>>>>>> 596c6382aa9b39e06e09f90b7401ee03b0aa53e7

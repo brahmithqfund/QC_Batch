@@ -9,9 +9,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-/*import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.markuputils.ExtentColor;
-import com.aventstack.extentreports.markuputils.MarkupHelper;*/
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -20,11 +17,11 @@ import com.relevantcodes.extentreports.LogStatus;
 public class JQCAdminEncryption extends QCStore
 {
 
-	public static void getEncryption(WebDriver driver,String SSN,String AppURL)
+	public static void getEncryption(WebDriver driver,String SSN,String AppURL) throws InterruptedException
 	{
 		
-	try{
-		int lastrow=TestData.getLastRow("Login");
+		 
+			int lastrow=TestData.getLastRow("Login");
 			String sheetName="Login";
 
 			for(int row=2;row<=lastrow;row++)
@@ -35,14 +32,15 @@ public class JQCAdminEncryption extends QCStore
 				String UserName = TestData.getCellData(sheetName,"AdminUserName",row);
 				String Password = TestData.getCellData(sheetName,"AdminPassword",row);
 				String AdminURL = TestData.getCellData(sheetName,"AdminURL",row);
-				String PIN = TestData.getCellData(sheetName,"PIN",row);
-				String Tran_cd = TestData.getCellData(sheetName,"Tran_cd",row);
 
+				String Tran_cd = TestData.getCellData(sheetName,"Tran_cd",row);
 
 				test.log(LogStatus.INFO, "********Admin Application is launched********");
 				driver = new InternetExplorerDriver();
-					driver.get(AdminURL);
+
+				driver.get(AdminURL);
 				test.log(LogStatus.INFO, "Opened the Admin URL" + AdminURL);
+
 				test.log(LogStatus.INFO, "Reading encryption details from Admin has initiated"+ AdminURL);
 
 
@@ -129,7 +127,6 @@ public class JQCAdminEncryption extends QCStore
 
 
 	Eankey = driver.findElement(By.name("EanKey")).getAttribute("value");
-
 	test.log(LogStatus.PASS, "GetKey captured as:" +Eankey);
 	test.log(LogStatus.PASS, "***********************************************");
 	driver.close();
@@ -137,16 +134,7 @@ public class JQCAdminEncryption extends QCStore
 break;
 }
 			}	
-	
-}
 
-				catch (Exception e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-					test.log(LogStatus.INFO,""+e);
-					test.log(LogStatus.FAIL,"Getting Encryption from Admin process is initiated again due to Application sync issue");
-
-				}
 
 	
 }

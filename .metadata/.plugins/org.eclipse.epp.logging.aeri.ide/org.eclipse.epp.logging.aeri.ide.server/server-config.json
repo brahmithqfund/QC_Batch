@@ -2,7 +2,11 @@
   "version": "v1",
   "title": "Eclipse",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "timestamp": 1550472958699,
+=======
+  "timestamp": 1550472795161,
+>>>>>>> 596c6382aa9b39e06e09f90b7401ee03b0aa53e7
 =======
   "timestamp": 1550470128383,
 >>>>>>> b50e5c7425055cd846c0596a6552686c8ed2cba5
@@ -74,7 +78,11 @@
     "org.eclipse.ui::Conflicting handlers for*"
   ],
 <<<<<<< HEAD
+<<<<<<< HEAD
   "problemsZipLastDownloadTimestamp": 1550473262501
+=======
+  "problemsZipLastDownloadTimestamp": 1550473105787
+>>>>>>> 596c6382aa9b39e06e09f90b7401ee03b0aa53e7
 =======
   "problemsZipLastDownloadTimestamp": 1550470437487
 >>>>>>> b50e5c7425055cd846c0596a6552686c8ed2cba5

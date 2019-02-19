@@ -82,7 +82,7 @@ public class QCStore {
 	public static String Date1;
 	public static String Date2;
 	public static String Date3;
-
+	public static String customer_number;
 	
 	
 	public static String FirstName;
@@ -2060,7 +2060,7 @@ public class QCStore {
 			
 			catch(Exception e)
 			{
-				test.log(LogStatus.ERROR, e);
+				
 				System.out.println("Object proprties file not found");
 			}
 			
@@ -2080,7 +2080,7 @@ public class QCStore {
 			
 			catch(Exception e)
 			{
-				test.log(LogStatus.ERROR, e);
+				
 				System.out.println("Object proprties file not found");
 			}
 			
@@ -2100,7 +2100,7 @@ public class QCStore {
 			
 			catch(Exception e)
 			{
-				test.log(LogStatus.ERROR, e);
+			
 				System.out.println("Object proprties file not found");
 			}
 			
@@ -2120,7 +2120,7 @@ public class QCStore {
 			
 			catch(Exception e)
 			{
-				test.log(LogStatus.ERROR, e);
+				
 				System.out.println("Object proprties file not found");
 			}
 			
