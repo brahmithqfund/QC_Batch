@@ -28,7 +28,7 @@ public class ACSRLoginLogout extends QCStore{
 					String uname=TestData.getCellData(sheetName,"UserName",row);
 					passwrd=TestData.getCellData(sheetName,"Password",row);
 					Storeid=TestData.getCellData(sheetName,"StoreID",row);
-					if(prop.getProperty("login_method").equalsIgnoreCase("local"))
+					if(Aprop.getProperty("login_method").equalsIgnoreCase("local"))
 					{
 						driver = new InternetExplorerDriver();
 					}
@@ -76,7 +76,7 @@ public class ACSRLoginLogout extends QCStore{
 			/*if(driver.getTitle().contains("Login")){
 				test.log(LogStatus.PASS, "<FONT color=green> Logout Successfully"); 
 				test.log(LogStatus.INFO, "******************************************************** ");
-				//driver.close();
+				driver.close();
 			}
 			else{
 				test.log(LogStatus.PASS, "<FONT color=Red> Logout was unsuccessfull"); 
@@ -91,6 +91,7 @@ public class ACSRLoginLogout extends QCStore{
 			else{
 				test.log(LogStatus.PASS, "<FONT color=Red> Logout was unsuccessfull"); 
 			}*/
+			driver.close();
 
 		}
 		catch(Exception e)
