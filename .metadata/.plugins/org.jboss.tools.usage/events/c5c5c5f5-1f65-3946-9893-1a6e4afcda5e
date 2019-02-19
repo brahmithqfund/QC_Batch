@@ -1,11 +1,23 @@
+<<<<<<< HEAD
 #Tue Feb 19 10:56:47 IST 2019
 vl=How many times the 'Finish' button pressed during the day
 l=Wizard class name
 ct=jbt
 d=1550554007823
+=======
+#Tue Feb 19 18:35:24 IST 2019
+vl=How many times the 'Finish' button pressed during the day
+l=Wizard class name
+ct=jbt
+d=1550581524275
+>>>>>>> feb1
 c=0
 cmp=usage
 a=finishWizard
 cl=org.testng.eclipse.refactoring.ConvertFromJUnitWizard
 v=2.1.1
+<<<<<<< HEAD
 s=0
+=======
+s=3
+>>>>>>> feb1

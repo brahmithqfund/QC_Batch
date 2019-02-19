@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<item value="Janaki" key="selection"/>
 =======
 		<item value="QC_Store_extent_report_path" key="selection"/>
@@ -19,11 +20,15 @@
 =======
 		<item value="Janaki" key="selection"/>
 >>>>>>> feb1.1
+=======
+		<item value=",groups=&quot;Janaki&quot;" key="selection"/>
+>>>>>>> feb1
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -58,14 +63,27 @@
 			<item value="min_pay_amt"/>
 			<item value=",16"/>
 >>>>>>> feb1.1
+=======
+			<item value=",groups=&quot;Janaki&quot;"/>
+			<item value="//@Test("/>
+			<item value="eod"/>
+			<item value="prop."/>
+			<item value="daily_processing_start_eod"/>
+			<item value="Clicked on Daily Processing"/>
+			<item value="E:\QC_Batch\QC_TLP\TestData_Monthly\QCStore\TLP\"/>
+			<item value="click on Update button"/>
+>>>>>>> feb1
 		</list>
 		<list key="replacehistory">
+			<item value="@Test("/>
+			<item value="Jprop."/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -88,5 +106,9 @@
 		<item value="80" key="DIALOG_X_ORIGIN"/>
 		<item value="311" key="DIALOG_Y_ORIGIN"/>
 >>>>>>> feb1.1
+=======
+		<item value="652" key="DIALOG_X_ORIGIN"/>
+		<item value="356" key="DIALOG_Y_ORIGIN"/>
+>>>>>>> feb1
 	</section>
 </section>

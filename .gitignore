@@ -12,7 +12,10 @@
 RemoteSystemsTempFiles/
 .xmi
 .snap
+<<<<<<< HEAD
 .log
 .zip
 .metadata/*
+=======
+>>>>>>> feb1
 

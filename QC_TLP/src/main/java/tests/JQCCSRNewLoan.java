@@ -257,7 +257,7 @@ public class JQCCSRNewLoan extends QCStore {
 				// test.log(LogStatus.FAIL, "New Loan is failed");
 				test.log(LogStatus.INFO, "Exception occured " + e.toString().substring(0, 250));
 				test.log(LogStatus.INFO, "New Loan process is initiated again due to Application sync issue");
-				driver.get("https://qcuat.qfund.net/cc/demoIndex.do");
+				driver.get("http://192.168.2.203/cc/login/index.jsp");
 				continue;
 
 			}
@@ -348,7 +348,7 @@ public class JQCCSRNewLoan extends QCStore {
 			test.log(LogStatus.PASS, "Entered the Title number as " + TitleNumber);
 			driver.findElement(By.name("button1")).click();
 			test.log(LogStatus.PASS, "click on Update button ");
-			Thread.sleep(4000);
+			Thread.sleep(5000);
 			driver.findElement(By.name("requestBean.licensePltNbr")).sendKeys(LicensePlateNumber);
 			test.log(LogStatus.PASS, "Entered License Plate number as " + LicensePlateNumber);
 			driver.findElement(By.name("requestBean.extClr")).sendKeys(ExteriorColor);

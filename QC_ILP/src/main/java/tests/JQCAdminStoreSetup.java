@@ -59,7 +59,7 @@ public class JQCAdminStoreSetup extends QCStore
 
 		driver.switchTo().frame("topFrame");
 
-		driver.findElement(locator(prop.getProperty("admin_store_setup_tab"))).click(); 
+		driver.findElement(locator(Jprop.getProperty("admin_store_setup_tab"))).click(); 
 
 		test.log(LogStatus.PASS, "Clicked on Store tab");
 		Thread.sleep(2000);
@@ -68,7 +68,7 @@ public class JQCAdminStoreSetup extends QCStore
 	driver.switchTo().frame("mainFrame");
 
 	
-	driver.findElement(locator(prop.getProperty("admin_store_config"))).click();
+	driver.findElement(locator(Jprop.getProperty("admin_store_config"))).click();
 
 	test.log(LogStatus.PASS, "Clicked on Store Config link");
 
@@ -76,7 +76,7 @@ public class JQCAdminStoreSetup extends QCStore
 
 	driver.switchTo().frame("mainFrame");
 Thread.sleep(2000);
-	driver.findElement(locator(prop.getProperty("admin_store_edit"))).click();
+	driver.findElement(locator(Jprop.getProperty("admin_store_edit"))).click();
 
 	test.log(LogStatus.PASS, "Clicked on Store Edit");
 	
@@ -84,11 +84,11 @@ Thread.sleep(2000);
 	
 	driver.switchTo().frame("main");
 	
-	driver.findElement(locator(prop.getProperty("admin_store_nbr"))).sendKeys(StoreID);
+	driver.findElement(locator(Jprop.getProperty("admin_store_nbr"))).sendKeys(StoreID);
 
 	test.log(LogStatus.PASS, "Entered Store number "+StoreID);
 
-	driver.findElement(locator(prop.getProperty("admin_store_submit_btn"))).click();
+	driver.findElement(locator(Jprop.getProperty("admin_store_submit_btn"))).click();
 
 	test.log(LogStatus.PASS, "Clicked on Submit button");
 
@@ -102,15 +102,15 @@ Thread.sleep(2000);
 
 	driver.switchTo().frame("main");
 
-	driver.findElement(locator(prop.getProperty("admin_store_status"))).sendKeys("Open");
+	driver.findElement(locator(Jprop.getProperty("admin_store_status"))).sendKeys("Open");
 
 	test.log(LogStatus.PASS, "Store status set as Open"); 
 
-	driver.findElement(locator(prop.getProperty("admin_store_edit_submit"))).click();
+	driver.findElement(locator(Jprop.getProperty("admin_store_edit_submit"))).click();
 
 	test.log(LogStatus.PASS, "Clicked on Submit"); 
 	Thread.sleep(2000);
-	driver.findElement(locator(prop.getProperty("admin_store_ok_btn"))).click();
+	driver.findElement(locator(Jprop.getProperty("admin_store_ok_btn"))).click();
 
 	test.log(LogStatus.PASS, "Clicked on OK button"); 
 

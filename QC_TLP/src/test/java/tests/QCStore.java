@@ -808,7 +808,7 @@ public class QCStore {
 	}
 //Janaki Scenarios
 	
-	@Test(priority=204,enabled = true)
+	@Test(priority=204,enabled = true,groups="Janaki")
 		public static void JQC_TLP_Deposit_Menu_Txn() throws Exception {
 			try
 			{			
@@ -863,7 +863,7 @@ public class QCStore {
 
 			}
 		}
-		@Test(priority=203,enabled = true)
+		@Test(priority=203,enabled = true,groups="Janaki")
 		public static void JQC_TLP_Deposit_dropdown_Txn() throws Exception {
 			try
 			{			
@@ -918,7 +918,7 @@ public class QCStore {
 
 			}
 		}
-		@Test(priority=202,enabled = true)
+		@Test(priority=202,enabled = true,groups="Janaki")
 		public static void JQC_TLP_GraceDays_Deposit_Menu_Txn() throws Exception {
 			try
 			{			
@@ -975,7 +975,7 @@ public class QCStore {
 
 			}
 		}
-		@Test(priority=201,enabled = true)
+		@Test(priority=201,enabled = true,groups="Janaki")
 		public static void JQC_TLP_GraceDays_Deposit_MidDay_Txn() throws Exception {
 			try
 			{			
@@ -1032,7 +1032,7 @@ public class QCStore {
 
 			}
 		}
-		@Test(priority=200,enabled = true)
+		@Test(priority=200,enabled = true,groups="Janaki")
 		public static void JQC_TLP_Deposit_MidDay_Txn() throws Exception {
 			try
 			{			
@@ -1087,7 +1087,7 @@ public class QCStore {
 
 			}
 		}
-		@Test(priority=205,enabled = true)
+		@Test(priority=205,enabled = true,groups="Janaki")
 		public static void JQC_TLP_GraceDays_Deposit_dropdown_Txn() throws Exception {
 			try
 			{			
@@ -1144,8 +1144,8 @@ public class QCStore {
 
 			}
 		}
-		
-		@Test(priority=206,enabled=true)
+		//Date: 01/02/2018
+		@Test(priority=206,enabled=true,groups="Janaki_EOD_set12")
 
 		public static void JQC_TLP_Deceased_Txn() throws Exception {
 			try
@@ -1207,12 +1207,12 @@ public class QCStore {
 			}
 			 
 		}
-		@Test(priority=207,enabled=true)
+		@Test(priority=207,enabled=true,groups="Janaki")
 		  public static void JQC_DefaultPayment_Txn_Testdata() throws Exception {
 			  try
 			  {
 				  test=reports.startTest(("QC_DefaultPayment"),"Login->Borrower Registration->New Loan->Age the Store installment wise to make a loan Default->DefaultPayment");
-				  String FileName= "JQC_DefaultPayment_Txn_Testdata.xls";
+				  String FileName= "QC_DefaultPayment_Txn_Testdata.xls";
 				  
 				  			TestData = new ExcelNew(System.getProperty("user.dir")+Jprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
 				  		  
@@ -1263,12 +1263,12 @@ public class QCStore {
 		  }
 		  
 		  
-		 	@Test(priority=208,enabled=true)
+		 	@Test(priority=208,enabled=true,groups="Janaki")
 		 	public static void JQC_DefaultPayment_Void_Txn_Testdata() throws Exception {
 			  try
 			  {
 				  test=reports.startTest(("QC_DefaultPayment_Void"),"Login->Borrower Registration->New Loan->Age the Store installment wise to make a loan Default->DefaultPayment-->Void");
-				  String FileName= "JQC_DefaultPayment_Void_Txn_Testdata.xls";
+				  String FileName= "QC_DefaultPayment_Void_Txn_Testdata.xls";
 				
 				  			TestData = new ExcelNew(System.getProperty("user.dir")+Jprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
 				  	
@@ -1324,8 +1324,9 @@ public class QCStore {
 				  test.log(LogStatus.ERROR, "Unable to start scenarios " );
 
 			  }
-		  }  
-		@Test(priority=209,enabled = true)
+		  } 
+		 //Date: 01/02/2018	
+		@Test(priority=209,enabled = true,groups="Janaki_EOD_set1")
 		public static void JQC_TLP_Deposit_EOD_Txn() throws Exception {
 			try
 			{			
@@ -1386,7 +1387,8 @@ public class QCStore {
 
 			}
 		}
-		@Test(priority=210,enabled = true)
+		//Date:01/11/2018
+		@Test(priority=210,enabled = true,groups="Janaki_EOD_set2")
 	 	public static void JQC_TLP_GraceDays_Deposit_EOD_Txn() throws Exception {
 			try
 			{			
@@ -2033,7 +2035,7 @@ public class QCStore {
 				}}}
 		
 
-	@BeforeClass
+	@BeforeClass(alwaysRun=true)
 	public void setup() throws IOException {
 
 		try {
@@ -2067,14 +2069,18 @@ public class QCStore {
 
 			try{ 
 				Jreader = new BufferedReader(
+<<<<<<< HEAD
 						new FileReader("D:/QC_Batch/QC_TLP/src/test/java/tests/JObjects.properties"));
+=======
+						new FileReader("E:/QC_Batch/QC_TLP/src/test/java/tests/JObjects.properties"));
+>>>>>>> feb1
 				Jprop = new Properties();
 				Jprop.load(Jreader);
 				Jreader.close();
-				String filename = Jprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+				String Jfilename = Jprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
 				reports = new ExtentReports(
-						System.getProperty("user.dir") + Jprop.getProperty("QC_Store_extent_report_path") + filename, true);
+						System.getProperty("user.dir") + Jprop.getProperty("QC_Store_extent_report_path") + Jfilename, true);
 
 			}
 			
@@ -2138,7 +2144,7 @@ public class QCStore {
 
 	}
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	public void killProcess() throws Exception {
 
 		try {
@@ -2167,7 +2173,7 @@ public class QCStore {
 		return destination;
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public void getResult(ITestResult result) throws Exception {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			test.log(LogStatus.FAIL, "Test Case Failed is " + result.getName());
@@ -2188,7 +2194,7 @@ public class QCStore {
 
 	}
 
-	@AfterMethod
+	//@AfterMethod
 
 	public void endReport() {
 
