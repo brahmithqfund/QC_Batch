@@ -7,6 +7,7 @@
  <!-- <include name="EOD"/>  -->
  <!-- <include name="Ratikanta_NEOD"/>  -->
   <include name="Janaki_NEOD"/> 
+   <!--<include name="Janaki_EOD"/>  --> 
 
    <!-- <include name="EOD2"/>-->
  <!-- <include name="1st Batch"/>-->

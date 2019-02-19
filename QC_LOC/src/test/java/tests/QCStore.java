@@ -3540,7 +3540,7 @@ public class QCStore {
 	  
 //Janaki's (Ratikanta) scenarios
 	  
-	  ////@Test(priority=301,enabled = true, groups="Janaki_NEOD")
+	  //@Test(priority=301,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_New_Loan_Void_Txn() throws Exception {
 			try
 			{			
@@ -3597,7 +3597,7 @@ public class QCStore {
 
 			}
 		}
-		////@Test(priority=302,enabled = true, groups="Janaki_NEOD")
+		//@Test(priority=302,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_New_Loan_Rescind_Txn() throws Exception {
 			try
 			{			
@@ -4774,7 +4774,7 @@ public class QCStore {
 			}
 		}
 		
-	 //@Test(priority=322,enabled = true, groups="Janaki_NEOD")
+	 @Test(priority=322,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_Refinance_Latefee_Payment_Txn() throws Exception {
 			try
 			{			
@@ -4841,7 +4841,7 @@ public class QCStore {
 
 			}
 		}
-		////@Test(priority=323,enabled = true)
+		//@Test(priority=323,enabled = true)
 		public static void JQC_LOC_Refinance_EOD_Payment_Txn() throws Exception {
 			try
 			{			
