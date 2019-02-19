@@ -12,4 +12,7 @@
 RemoteSystemsTempFiles/
 .xmi
 .snap
+.log
+.zip
+.metadata/*
 
