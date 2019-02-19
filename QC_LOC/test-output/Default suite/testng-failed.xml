@@ -7,8 +7,8 @@
         <methods>
           <include name="getResult"/>
           <include name="setup"/>
-          <include name="JQC_LOC_New_Loan_Void_Txn"/>
           <include name="endReport"/>
+          <include name="JQC_LOC_Refinance_Latefee_Payment_Txn"/>
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->

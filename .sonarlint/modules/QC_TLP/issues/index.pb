@@ -9,6 +9,9 @@ W
 <<<<<<< HEAD
 'src/test/java/tests/JObjects.properties,8\0\80cc7a1d4a27a98d5470617f02e4ff852bf81b78
 =======
+<<<<<<< HEAD
+'src/test/java/tests/JObjects.properties,8\0\80cc7a1d4a27a98d5470617f02e4ff852bf81b78
+=======
 'src/test/java/tests/JObjects.properties,8\0\80cc7a1d4a27a98d5470617f02e4ff852bf81b78
 <<<<<<< HEAD
 @
@@ -43,3 +46,4 @@ W
 V
 &src/main/java/tests/JQCCSRDefault.java,b\1\b18828de96c369817e3438894cb34d824c274ffb
 >>>>>>> b50e5c7425055cd846c0596a6552686c8ed2cba5
+>>>>>>> master

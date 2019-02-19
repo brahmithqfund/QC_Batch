@@ -1,0 +1,41 @@
+
+fsquid:S1192T"JDefine a constant instead of duplicating this literal "mainFrame" 3 times.(ËøÇªıÿÿÿÿ
+asquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¥ÿäj
+gsquid:CommentedOutCodeLine'"<This block of commented-out lines of code should be removed.(È’Ìşÿÿÿÿ
+bsquid:CommentedOutCodeLine,"<This block of commented-out lines of code should be removed.(®ùŒ•
+bsquid:CommentedOutCodeLine7"<This block of commented-out lines of code should be removed.(ƒÕİı
+bsquid:CommentedOutCodeLineL"<This block of commented-out lines of code should be removed.(€‰Ã
+gsquid:CommentedOutCodeLineW"<This block of commented-out lines of code should be removed.(®Šòûÿÿÿÿ
+bsquid:CommentedOutCodeLinea"<This block of commented-out lines of code should be removed.(åáó¼
+gsquid:CommentedOutCodeLineg"<This block of commented-out lines of code should be removed.(²ºÀûÿÿÿÿ
+gsquid:CommentedOutCodeLinei"<This block of commented-out lines of code should be removed.(£±åÆÿÿÿÿÿ
+gsquid:CommentedOutCodeLinel"<This block of commented-out lines of code should be removed.(ºğòÂúÿÿÿÿ
+gsquid:CommentedOutCodeLiner"<This block of commented-out lines of code should be removed.(äÁòşıÿÿÿÿ
+csquid:CommentedOutCodeLine‚"<This block of commented-out lines of code should be removed.(ı×öˆ
+hsquid:CommentedOutCodeLineˆ"<This block of commented-out lines of code should be removed.(¬¶Ê¸úÿÿÿÿ
+csquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(àÓÄ
+hsquid:CommentedOutCodeLine£"<This block of commented-out lines of code should be removed.(Ñ½ÎÁúÿÿÿÿ
+hsquid:CommentedOutCodeLine¨"<This block of commented-out lines of code should be removed.(¬¶Ê¸úÿÿÿÿ
+hsquid:CommentedOutCodeLine³"<This block of commented-out lines of code should be removed.(µš€Šıÿÿÿÿ
+hsquid:CommentedOutCodeLine»"<This block of commented-out lines of code should be removed.(—ÈÉ¿ıÿÿÿÿ
+e
+squid:S134š"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(±æ²ò
+_squid:S1132š"GMove the "1" string literal on the left side of this string comparison.(±æ²ò
+Csquid:S1172"-Remove this unused method parameter "AppURL".(–³ƒ/
+=squid:S1166–"%Either log or rethrow this exception.(¬Ù¨Í
+Bsquid:S1166®"%Either log or rethrow this exception.(¼Ôîàùÿÿÿÿ
+Gsquid:S00108¯")Either remove or fill this block of code.(ÒÌâ–øÿÿÿÿ
+msquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–³ƒ/
+msquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–³ƒ/
+nsquid:S00117!"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ïñ©
+msquid:S00117$"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò›Í-
+nsquid:S00117%"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û«ù
+ssquid:S00117&"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄÛÚÇÿÿÿÿÿ
+msquid:S00117)"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( Õ›)
+osquid:S00117†"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®ŠšË
+ksquid:UselessImportCheck"GRemove this unused import 'com.relevantcodes.extentreports.ExtentTest'.(ŞÁİÌ
+^squid:UselessImportCheck
+":Remove this unused import 'org.openqa.selenium.WebDriver'.(ñšÿÀ
+[squid:UselessImportCheck"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ
+nsquid:UselessImportCheck"JRemove this unused import 'com.relevantcodes.extentreports.ExtentReports'.(èşÛÑ
+Usquid:UselessImportCheck"1Remove this unused import 'java.text.DateFormat'.(÷Œá¼
