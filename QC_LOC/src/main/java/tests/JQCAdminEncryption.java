@@ -40,7 +40,7 @@ public class JQCAdminEncryption extends QCStore
 				{
 				String UserName = TestData.getCellData(sheetName,"AdminUserName",row);
 				String Password = TestData.getCellData(sheetName,"AdminPassword",row);
-				//String AdminURL = TestData.getCellData(sheetName,"AdminURL",row);
+				String AdminURL = TestData.getCellData(sheetName,"AdminURL",row);
 			
 				String Tran_cd = TestData.getCellData(sheetName,"Tran_cd",row);
 
