@@ -2045,7 +2045,7 @@ public class QCStore {
 			BufferedReader Areader;
 			try{ 
 				reader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_ILP/src/test/java/tests/Objects.properties"));
+						new FileReader("D:/QC_Batch/QC_TLP/src/test/java/tests/Objects.properties"));
 				prop = new Properties();
 				prop.load(reader);
 				reader.close();
@@ -2067,7 +2067,7 @@ public class QCStore {
 
 			try{ 
 				Jreader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_ILP/src/test/java/tests/JObjects.properties"));
+						new FileReader("D:/QC_Batch/QC_TLP/src/test/java/tests/JObjects.properties"));
 				Jprop = new Properties();
 				Jprop.load(Jreader);
 				Jreader.close();
@@ -2087,7 +2087,7 @@ public class QCStore {
 
 			try{ 
 				Rreader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_ILP/src/test/java/tests/RObjects.properties"));
+						new FileReader("D:/QC_Batch/QC_TLP/src/test/java/tests/RObjects.properties"));
 				Rprop = new Properties();
 				Rprop.load(Rreader);
 				Rreader.close();
@@ -2107,7 +2107,7 @@ public class QCStore {
 
 			try{ 
 				Areader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_ILP/src/test/java/tests/AObjects.properties"));
+						new FileReader("D:/QC_Batch/QC_TLP/src/test/java/tests/AObjects.properties"));
 				Aprop = new Properties();
 				Aprop.load(Areader);
 				Areader.close();

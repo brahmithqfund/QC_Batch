@@ -86,7 +86,7 @@ public class ACSRLoginLogout extends QCStore{
 			if(driver.getTitle().contains("Login")){
 				test.log(LogStatus.PASS, "<FONT color=green> Logout Successfully"); 
 				test.log(LogStatus.INFO, "******************************************************** ");
-				//driver.close();
+				driver.close();
 			}
 			else{
 				test.log(LogStatus.PASS, "<FONT color=Red> Logout was unsuccessfull"); 
