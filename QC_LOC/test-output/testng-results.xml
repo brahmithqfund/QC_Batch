@@ -2,27 +2,27 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2119646" started-at="2019-02-19T05:51:54Z" finished-at="2019-02-19T06:27:13Z">
+  <suite name="Default suite" duration-ms="75476" started-at="2019-02-19T06:40:08Z" finished-at="2019-02-19T06:41:24Z">
     <groups>
       <group name="Janaki_NEOD">
         <method signature="QCStore.JQC_LOC_Refinance_Latefee_Payment_Txn()[pri:322, instance:tests.QCStore@71423665]" name="JQC_LOC_Refinance_Latefee_Payment_Txn" class="tests.QCStore"/>
       </group> <!-- Janaki_NEOD -->
     </groups>
-    <test name="Default test" duration-ms="2119646" started-at="2019-02-19T05:51:54Z" finished-at="2019-02-19T06:27:13Z">
+    <test name="Default test" duration-ms="75476" started-at="2019-02-19T06:40:08Z" finished-at="2019-02-19T06:41:24Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@71423665]" name="setup" is-config="true" duration-ms="101" started-at="2019-02-19T05:51:54Z" finished-at="2019-02-19T05:51:54Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@71423665]" name="setup" is-config="true" duration-ms="108" started-at="2019-02-19T06:40:08Z" finished-at="2019-02-19T06:40:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@71423665]" name="killProcess" is-config="true" duration-ms="5005" started-at="2019-02-19T05:51:54Z" finished-at="2019-02-19T05:51:59Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@71423665]" name="killProcess" is-config="true" duration-ms="5004" started-at="2019-02-19T06:40:08Z" finished-at="2019-02-19T06:40:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="JQC_LOC_Refinance_Latefee_Payment_Txn()[pri:322, instance:tests.QCStore@71423665]" name="JQC_LOC_Refinance_Latefee_Payment_Txn" duration-ms="2114307" started-at="2019-02-19T05:51:59Z" finished-at="2019-02-19T06:27:13Z">
+        <test-method status="PASS" signature="JQC_LOC_Refinance_Latefee_Payment_Txn()[pri:322, instance:tests.QCStore@71423665]" name="JQC_LOC_Refinance_Latefee_Payment_Txn" duration-ms="70174" started-at="2019-02-19T06:40:13Z" finished-at="2019-02-19T06:41:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JQC_LOC_Refinance_Latefee_Payment_Txn -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@71423665]" name="getResult" is-config="true" duration-ms="216" started-at="2019-02-19T06:27:13Z" finished-at="2019-02-19T06:27:13Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@71423665]" name="getResult" is-config="true" duration-ms="175" started-at="2019-02-19T06:41:23Z" finished-at="2019-02-19T06:41:24Z">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@71423665]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-19T06:27:13Z" finished-at="2019-02-19T06:27:13Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@71423665]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-19T06:41:23Z" finished-at="2019-02-19T06:41:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
