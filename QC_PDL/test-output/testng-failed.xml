@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="1stBatch"/>
+      </run>
+    </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
-          <include name="AQC_EPP_Redeposit"/>
           <include name="getResult"/>
-          <include name="AQC_EPP_Return"/>
           <include name="setup"/>
-          <include name="AQC_EPPDeposit"/>
-          <include name="AQC_EPP_refund"/>
+          <include name="QC_Refinance_StepSameVoidURP_Txn"/>
+          <include name="QC_Refinance_StepSameURP_Txn"/>
           <include name="endReport"/>
-          <include name="AQC_EPP_clear"/>
-          <include name="AQC_EPP_nsfPayment"/>
-          <include name="JQC_AgeStore_Deposit_PrePayment_Txn"/>
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

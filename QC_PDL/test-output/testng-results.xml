@@ -1,30 +1,473 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="6" failed="1" ignored="17" total="24" passed="0">
+<testng-results skipped="0" failed="2" ignored="57" total="77" passed="18">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="71800" started-at="2019-02-08T09:11:35Z" finished-at="2019-02-08T09:12:47Z">
+  <suite name="Suite" duration-ms="25811735" started-at="2019-02-18T13:30:24Z" finished-at="2019-02-18T20:40:36Z">
     <groups>
+      <group name="1stBatch">
+        <method signature="QCStore.QC_AgeStore_Void_Txn()[pri:110, instance:tests.QCStore@527740a2]" name="QC_AgeStore_Void_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_Deposit_GraceDays_Txn()[pri:112, instance:tests.QCStore@527740a2]" name="QC_Deposit_GraceDays_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_Deposit_Menu_Txn()[pri:111, instance:tests.QCStore@527740a2]" name="QC_Deposit_Menu_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_EppDepositClear_Refund_Txn()[pri:160, instance:tests.QCStore@527740a2]" name="QC_EppDepositClear_Refund_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_Epp_Check_Deposit_Clear_Txn()[pri:159, instance:tests.QCStore@527740a2]" name="QC_Epp_Check_Deposit_Clear_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_Epp_Deposit_Void_Txn()[pri:157, instance:tests.QCStore@527740a2]" name="QC_Epp_Deposit_Void_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_Epp_PrePayment_Return_Txn()[pri:161, instance:tests.QCStore@527740a2]" name="QC_Epp_PrePayment_Return_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_Epp_PrePayment_Txn()[pri:158, instance:tests.QCStore@527740a2]" name="QC_Epp_PrePayment_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_Epp_Return_NSFPayment_Txn()[pri:162, instance:tests.QCStore@527740a2]" name="QC_Epp_Return_NSFPayment_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_Epp_Return_ReDeposit_Txn()[pri:163, instance:tests.QCStore@527740a2]" name="QC_Epp_Return_ReDeposit_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_FutureDeposit_DropDown()[pri:113, instance:tests.QCStore@527740a2]" name="QC_FutureDeposit_DropDown" class="tests.QCStore"/>
+        <method signature="QCStore.QC_NewLoan_Promotion_Txn()[pri:100, instance:tests.QCStore@527740a2]" name="QC_NewLoan_Promotion_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_NewLoan_Void_Txn()[pri:109, instance:tests.QCStore@527740a2]" name="QC_NewLoan_Void_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_OpenLoan_NewLoan_Txn()[pri:108, instance:tests.QCStore@527740a2]" name="QC_OpenLoan_NewLoan_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_PartialPayment_RefundVoid_Txn()[pri:170, instance:tests.QCStore@527740a2]" name="QC_PartialPayment_RefundVoid_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_RefinanceStepDown_Txn()[pri:102, instance:tests.QCStore@527740a2]" name="QC_RefinanceStepDown_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_RefinanceStepDown_Void_Txn()[pri:103, instance:tests.QCStore@527740a2]" name="QC_RefinanceStepDown_Void_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_Refinance_StepSameURP_Txn()[pri:198, instance:tests.QCStore@527740a2]" name="QC_Refinance_StepSameURP_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_Refinance_StepSameVoidURP_Txn()[pri:199, instance:tests.QCStore@527740a2]" name="QC_Refinance_StepSameVoidURP_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_Void_FullReturnPayment_Txn()[pri:169, instance:tests.QCStore@527740a2]" name="QC_Void_FullReturnPayment_Txn" class="tests.QCStore"/>
+      </group> <!-- 1stBatch -->
     </groups>
-    <test name="Default test" duration-ms="71800" started-at="2019-02-08T09:11:35Z" finished-at="2019-02-08T09:12:47Z">
+    <test name="Test" duration-ms="25811735" started-at="2019-02-18T13:30:24Z" finished-at="2019-02-18T20:40:36Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@20398b7c]" name="setup" is-config="true" duration-ms="447" started-at="2019-02-08T09:11:35Z" finished-at="2019-02-08T09:11:36Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="98" started-at="2019-02-18T13:30:24Z" finished-at="2019-02-18T13:30:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@20398b7c]" name="killProcess" is-config="true" duration-ms="5052" started-at="2019-02-08T09:11:36Z" finished-at="2019-02-08T09:11:41Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5010" started-at="2019-02-18T13:30:24Z" finished-at="2019-02-18T13:30:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="FAIL" signature="JQC_AgeStore_Deposit_PrePayment_Txn()[pri:0, instance:tests.QCStore@20398b7c]" name="JQC_AgeStore_Deposit_PrePayment_Txn" duration-ms="35650" started-at="2019-02-08T09:11:41Z" finished-at="2019-02-08T09:12:16Z">
-          <exception class="java.lang.NullPointerException">
+        <test-method status="PASS" signature="QC_NewLoan_Promotion_Txn()[pri:100, instance:tests.QCStore@527740a2]" name="QC_NewLoan_Promotion_Txn" duration-ms="392468" started-at="2019-02-18T13:30:29Z" finished-at="2019-02-18T13:37:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_NewLoan_Promotion_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="208" started-at="2019-02-18T13:37:02Z" finished-at="2019-02-18T13:37:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_NewLoan_Promotion_Txn status=SUCCESS method=QCStore.QC_NewLoan_Promotion_Txn()[pri:100, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T13:37:02Z" finished-at="2019-02-18T13:37:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5012" started-at="2019-02-18T13:37:02Z" finished-at="2019-02-18T13:37:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_RefinanceStepDown_Txn()[pri:102, instance:tests.QCStore@527740a2]" name="QC_RefinanceStepDown_Txn" duration-ms="1507955" started-at="2019-02-18T13:37:07Z" finished-at="2019-02-18T14:02:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_RefinanceStepDown_Txn -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T14:02:15Z" finished-at="2019-02-18T14:02:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="65" started-at="2019-02-18T14:02:15Z" finished-at="2019-02-18T14:02:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_RefinanceStepDown_Txn status=SUCCESS method=QCStore.QC_RefinanceStepDown_Txn()[pri:102, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5014" started-at="2019-02-18T14:02:15Z" finished-at="2019-02-18T14:02:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_RefinanceStepDown_Void_Txn()[pri:103, instance:tests.QCStore@527740a2]" name="QC_RefinanceStepDown_Void_Txn" duration-ms="1457052" started-at="2019-02-18T14:02:20Z" finished-at="2019-02-18T14:26:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_RefinanceStepDown_Void_Txn -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T14:26:37Z" finished-at="2019-02-18T14:26:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="44" started-at="2019-02-18T14:26:37Z" finished-at="2019-02-18T14:26:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_RefinanceStepDown_Void_Txn status=SUCCESS method=QCStore.QC_RefinanceStepDown_Void_Txn()[pri:103, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5013" started-at="2019-02-18T14:26:37Z" finished-at="2019-02-18T14:26:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_OpenLoan_NewLoan_Txn()[pri:108, instance:tests.QCStore@527740a2]" name="QC_OpenLoan_NewLoan_Txn" duration-ms="417268" started-at="2019-02-18T14:26:42Z" finished-at="2019-02-18T14:33:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_OpenLoan_NewLoan_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="38" started-at="2019-02-18T14:33:39Z" finished-at="2019-02-18T14:33:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_OpenLoan_NewLoan_Txn status=SUCCESS method=QCStore.QC_OpenLoan_NewLoan_Txn()[pri:108, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T14:33:39Z" finished-at="2019-02-18T14:33:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5014" started-at="2019-02-18T14:33:39Z" finished-at="2019-02-18T14:33:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_NewLoan_Void_Txn()[pri:109, instance:tests.QCStore@527740a2]" name="QC_NewLoan_Void_Txn" duration-ms="551781" started-at="2019-02-18T14:33:44Z" finished-at="2019-02-18T14:42:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_NewLoan_Void_Txn -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T14:42:56Z" finished-at="2019-02-18T14:42:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="40" started-at="2019-02-18T14:42:56Z" finished-at="2019-02-18T14:42:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_NewLoan_Void_Txn status=SUCCESS method=QCStore.QC_NewLoan_Void_Txn()[pri:109, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5021" started-at="2019-02-18T14:42:56Z" finished-at="2019-02-18T14:43:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_AgeStore_Void_Txn()[pri:110, instance:tests.QCStore@527740a2]" name="QC_AgeStore_Void_Txn" duration-ms="1016743" started-at="2019-02-18T14:43:01Z" finished-at="2019-02-18T14:59:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_AgeStore_Void_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="42" started-at="2019-02-18T14:59:58Z" finished-at="2019-02-18T14:59:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_AgeStore_Void_Txn status=SUCCESS method=QCStore.QC_AgeStore_Void_Txn()[pri:110, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T14:59:58Z" finished-at="2019-02-18T14:59:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5017" started-at="2019-02-18T14:59:58Z" finished-at="2019-02-18T15:00:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_Deposit_Menu_Txn()[pri:111, instance:tests.QCStore@527740a2]" name="QC_Deposit_Menu_Txn" duration-ms="963678" started-at="2019-02-18T15:00:03Z" finished-at="2019-02-18T15:16:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_Deposit_Menu_Txn -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="2" started-at="2019-02-18T15:16:07Z" finished-at="2019-02-18T15:16:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="36" started-at="2019-02-18T15:16:07Z" finished-at="2019-02-18T15:16:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_Deposit_Menu_Txn status=SUCCESS method=QCStore.QC_Deposit_Menu_Txn()[pri:111, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5017" started-at="2019-02-18T15:16:07Z" finished-at="2019-02-18T15:16:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_Deposit_GraceDays_Txn()[pri:112, instance:tests.QCStore@527740a2]" name="QC_Deposit_GraceDays_Txn" duration-ms="1179150" started-at="2019-02-18T15:16:12Z" finished-at="2019-02-18T15:35:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_Deposit_GraceDays_Txn -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T15:35:51Z" finished-at="2019-02-18T15:35:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="34" started-at="2019-02-18T15:35:51Z" finished-at="2019-02-18T15:35:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_Deposit_GraceDays_Txn status=SUCCESS method=QCStore.QC_Deposit_GraceDays_Txn()[pri:112, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5014" started-at="2019-02-18T15:35:51Z" finished-at="2019-02-18T15:35:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_FutureDeposit_DropDown()[pri:113, instance:tests.QCStore@527740a2]" name="QC_FutureDeposit_DropDown" duration-ms="1393477" started-at="2019-02-18T15:35:56Z" finished-at="2019-02-18T15:59:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_FutureDeposit_DropDown -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T15:59:09Z" finished-at="2019-02-18T15:59:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="37" started-at="2019-02-18T15:59:09Z" finished-at="2019-02-18T15:59:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_FutureDeposit_DropDown status=SUCCESS method=QCStore.QC_FutureDeposit_DropDown()[pri:113, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5012" started-at="2019-02-18T15:59:09Z" finished-at="2019-02-18T15:59:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_Epp_Deposit_Void_Txn()[pri:157, instance:tests.QCStore@527740a2]" name="QC_Epp_Deposit_Void_Txn" duration-ms="1603408" started-at="2019-02-18T15:59:14Z" finished-at="2019-02-18T16:25:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_Epp_Deposit_Void_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="32" started-at="2019-02-18T16:25:58Z" finished-at="2019-02-18T16:25:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_Epp_Deposit_Void_Txn status=SUCCESS method=QCStore.QC_Epp_Deposit_Void_Txn()[pri:157, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T16:25:58Z" finished-at="2019-02-18T16:25:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5015" started-at="2019-02-18T16:25:58Z" finished-at="2019-02-18T16:26:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_Epp_PrePayment_Txn()[pri:158, instance:tests.QCStore@527740a2]" name="QC_Epp_PrePayment_Txn" duration-ms="1816725" started-at="2019-02-18T16:26:03Z" finished-at="2019-02-18T16:56:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_Epp_PrePayment_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="42" started-at="2019-02-18T16:56:20Z" finished-at="2019-02-18T16:56:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_Epp_PrePayment_Txn status=SUCCESS method=QCStore.QC_Epp_PrePayment_Txn()[pri:158, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T16:56:20Z" finished-at="2019-02-18T16:56:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5011" started-at="2019-02-18T16:56:20Z" finished-at="2019-02-18T16:56:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_Epp_Check_Deposit_Clear_Txn()[pri:159, instance:tests.QCStore@527740a2]" name="QC_Epp_Check_Deposit_Clear_Txn" duration-ms="1830545" started-at="2019-02-18T16:56:25Z" finished-at="2019-02-18T17:26:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_Epp_Check_Deposit_Clear_Txn -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="1" started-at="2019-02-18T17:26:55Z" finished-at="2019-02-18T17:26:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="39" started-at="2019-02-18T17:26:55Z" finished-at="2019-02-18T17:26:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_Epp_Check_Deposit_Clear_Txn status=SUCCESS method=QCStore.QC_Epp_Check_Deposit_Clear_Txn()[pri:159, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5010" started-at="2019-02-18T17:26:55Z" finished-at="2019-02-18T17:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_EppDepositClear_Refund_Txn()[pri:160, instance:tests.QCStore@527740a2]" name="QC_EppDepositClear_Refund_Txn" duration-ms="2092572" started-at="2019-02-18T17:27:00Z" finished-at="2019-02-18T18:01:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_EppDepositClear_Refund_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="47" started-at="2019-02-18T18:01:53Z" finished-at="2019-02-18T18:01:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_EppDepositClear_Refund_Txn status=SUCCESS method=QCStore.QC_EppDepositClear_Refund_Txn()[pri:160, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T18:01:53Z" finished-at="2019-02-18T18:01:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5010" started-at="2019-02-18T18:01:53Z" finished-at="2019-02-18T18:01:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_Epp_PrePayment_Return_Txn()[pri:161, instance:tests.QCStore@527740a2]" name="QC_Epp_PrePayment_Return_Txn" duration-ms="1721606" started-at="2019-02-18T18:01:58Z" finished-at="2019-02-18T18:30:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_Epp_PrePayment_Return_Txn -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T18:30:39Z" finished-at="2019-02-18T18:30:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="61" started-at="2019-02-18T18:30:39Z" finished-at="2019-02-18T18:30:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_Epp_PrePayment_Return_Txn status=SUCCESS method=QCStore.QC_Epp_PrePayment_Return_Txn()[pri:161, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5012" started-at="2019-02-18T18:30:40Z" finished-at="2019-02-18T18:30:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_Epp_Return_NSFPayment_Txn()[pri:162, instance:tests.QCStore@527740a2]" name="QC_Epp_Return_NSFPayment_Txn" duration-ms="1763692" started-at="2019-02-18T18:30:45Z" finished-at="2019-02-18T19:00:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_Epp_Return_NSFPayment_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="49" started-at="2019-02-18T19:00:08Z" finished-at="2019-02-18T19:00:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_Epp_Return_NSFPayment_Txn status=SUCCESS method=QCStore.QC_Epp_Return_NSFPayment_Txn()[pri:162, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T19:00:08Z" finished-at="2019-02-18T19:00:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5013" started-at="2019-02-18T19:00:08Z" finished-at="2019-02-18T19:00:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_Epp_Return_ReDeposit_Txn()[pri:163, instance:tests.QCStore@527740a2]" name="QC_Epp_Return_ReDeposit_Txn" duration-ms="1777157" started-at="2019-02-18T19:00:13Z" finished-at="2019-02-18T19:29:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_Epp_Return_ReDeposit_Txn -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="1" started-at="2019-02-18T19:29:50Z" finished-at="2019-02-18T19:29:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="56" started-at="2019-02-18T19:29:50Z" finished-at="2019-02-18T19:29:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_Epp_Return_ReDeposit_Txn status=SUCCESS method=QCStore.QC_Epp_Return_ReDeposit_Txn()[pri:163, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5017" started-at="2019-02-18T19:29:50Z" finished-at="2019-02-18T19:29:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_Void_FullReturnPayment_Txn()[pri:169, instance:tests.QCStore@527740a2]" name="QC_Void_FullReturnPayment_Txn" duration-ms="1667868" started-at="2019-02-18T19:29:55Z" finished-at="2019-02-18T19:57:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_Void_FullReturnPayment_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="57" started-at="2019-02-18T19:57:43Z" finished-at="2019-02-18T19:57:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_Void_FullReturnPayment_Txn status=SUCCESS method=QCStore.QC_Void_FullReturnPayment_Txn()[pri:169, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T19:57:43Z" finished-at="2019-02-18T19:57:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5011" started-at="2019-02-18T19:57:43Z" finished-at="2019-02-18T19:57:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_PartialPayment_RefundVoid_Txn()[pri:170, instance:tests.QCStore@527740a2]" name="QC_PartialPayment_RefundVoid_Txn" duration-ms="1126772" started-at="2019-02-18T19:57:48Z" finished-at="2019-02-18T20:16:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_PartialPayment_RefundVoid_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="53" started-at="2019-02-18T20:16:35Z" finished-at="2019-02-18T20:16:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_PartialPayment_RefundVoid_Txn status=SUCCESS method=QCStore.QC_PartialPayment_RefundVoid_Txn()[pri:170, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T20:16:35Z" finished-at="2019-02-18T20:16:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5015" started-at="2019-02-18T20:16:35Z" finished-at="2019-02-18T20:16:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="FAIL" signature="QC_Refinance_StepSameURP_Txn()[pri:198, instance:tests.QCStore@527740a2]" name="QC_Refinance_StepSameURP_Txn" duration-ms="730490" started-at="2019-02-18T20:16:40Z" finished-at="2019-02-18T20:28:51Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at tests.QCStore.getScreenhot(QCStore.java:4886)
-at tests.QCStore.JQC_AgeStore_Deposit_PrePayment_Txn(QCStore.java:2804)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at tests.QCRefinance.refinanceStepSame(QCRefinance.java:730)
+at tests.QCStore.QC_Refinance_StepSameURP_Txn(QCStore.java:1429)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
@@ -48,80 +491,48 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- JQC_AgeStore_Deposit_PrePayment_Txn -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@20398b7c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-08T09:12:16Z" finished-at="2019-02-08T09:12:16Z">
+        </test-method> <!-- QC_Refinance_StepSameURP_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="637" started-at="2019-02-18T20:28:51Z" finished-at="2019-02-18T20:28:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_Refinance_StepSameURP_Txn status=FAILURE method=QCStore.QC_Refinance_StepSameURP_Txn()[pri:198, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T20:28:51Z" finished-at="2019-02-18T20:28:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@20398b7c]" name="getResult" is-config="true" duration-ms="2" started-at="2019-02-08T09:12:16Z" finished-at="2019-02-08T09:12:16Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=JQC_AgeStore_Deposit_PrePayment_Txn status=FAILURE method=QCStore.JQC_AgeStore_Deposit_PrePayment_Txn()[pri:0, instance:tests.QCStore@20398b7c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at tests.QCStore.getScreenhot(QCStore.java:4886)
-at tests.QCStore.getResult(QCStore.java:4902)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@20398b7c]" name="killProcess" is-config="true" duration-ms="5016" started-at="2019-02-08T09:12:16Z" finished-at="2019-02-08T09:12:21Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5023" started-at="2019-02-18T20:28:51Z" finished-at="2019-02-18T20:28:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="SKIP" signature="AQC_EPPDeposit()[pri:16, instance:tests.QCStore@20398b7c]" name="AQC_EPPDeposit" duration-ms="0" started-at="2019-02-08T09:12:21Z" finished-at="2019-02-08T09:12:21Z">
-          <exception class="java.lang.NullPointerException">
+        <test-method status="FAIL" signature="QC_Refinance_StepSameVoidURP_Txn()[pri:199, instance:tests.QCStore@527740a2]" name="QC_Refinance_StepSameVoidURP_Txn" duration-ms="698566" started-at="2019-02-18T20:28:56Z" finished-at="2019-02-18T20:40:35Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at tests.QCStore.getScreenhot(QCStore.java:4886)
-at tests.QCStore.getResult(QCStore.java:4902)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at tests.QCRefinance.refinanceStepSame(QCRefinance.java:730)
+at tests.QCStore.QC_Refinance_StepSameVoidURP_Txn(QCStore.java:1487)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -143,531 +554,26 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AQC_EPPDeposit -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@20398b7c]" name="getResult" is-config="true" duration-ms="363" started-at="2019-02-08T09:12:21Z" finished-at="2019-02-08T09:12:22Z">
+        </test-method> <!-- QC_Refinance_StepSameVoidURP_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="721" started-at="2019-02-18T20:40:35Z" finished-at="2019-02-18T20:40:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=QCStore.AQC_EPPDeposit()[pri:16, instance:tests.QCStore@20398b7c] output={null}]]]>
+                <![CDATA[[TestResult name=QC_Refinance_StepSameVoidURP_Txn status=FAILURE method=QCStore.QC_Refinance_StepSameVoidURP_Txn()[pri:199, instance:tests.QCStore@527740a2] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at tests.QCStore.getResult(QCStore.java:4912)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:536)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@20398b7c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-08T09:12:21Z" finished-at="2019-02-08T09:12:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@20398b7c]" name="killProcess" is-config="true" duration-ms="5013" started-at="2019-02-08T09:12:22Z" finished-at="2019-02-08T09:12:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="SKIP" signature="AQC_EPP_clear()[pri:18, instance:tests.QCStore@20398b7c]" name="AQC_EPP_clear" duration-ms="0" started-at="2019-02-08T09:12:27Z" finished-at="2019-02-08T09:12:27Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at tests.QCStore.getScreenhot(QCStore.java:4886)
-at tests.QCStore.getResult(QCStore.java:4902)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AQC_EPP_clear -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@20398b7c]" name="endReport" is-config="true" duration-ms="1" started-at="2019-02-08T09:12:27Z" finished-at="2019-02-08T09:12:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@20398b7c]" name="getResult" is-config="true" duration-ms="27" started-at="2019-02-08T09:12:27Z" finished-at="2019-02-08T09:12:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=QCStore.AQC_EPP_clear()[pri:18, instance:tests.QCStore@20398b7c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at tests.QCStore.getResult(QCStore.java:4912)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:536)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@20398b7c]" name="killProcess" is-config="true" duration-ms="5012" started-at="2019-02-08T09:12:27Z" finished-at="2019-02-08T09:12:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="SKIP" signature="AQC_EPP_refund()[pri:19, instance:tests.QCStore@20398b7c]" name="AQC_EPP_refund" duration-ms="0" started-at="2019-02-08T09:12:32Z" finished-at="2019-02-08T09:12:32Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at tests.QCStore.getScreenhot(QCStore.java:4886)
-at tests.QCStore.getResult(QCStore.java:4902)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AQC_EPP_refund -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@20398b7c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-08T09:12:32Z" finished-at="2019-02-08T09:12:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@20398b7c]" name="getResult" is-config="true" duration-ms="24" started-at="2019-02-08T09:12:32Z" finished-at="2019-02-08T09:12:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=QCStore.AQC_EPP_refund()[pri:19, instance:tests.QCStore@20398b7c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at tests.QCStore.getResult(QCStore.java:4912)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:536)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@20398b7c]" name="killProcess" is-config="true" duration-ms="5014" started-at="2019-02-08T09:12:32Z" finished-at="2019-02-08T09:12:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="SKIP" signature="AQC_EPP_Return()[pri:20, instance:tests.QCStore@20398b7c]" name="AQC_EPP_Return" duration-ms="0" started-at="2019-02-08T09:12:37Z" finished-at="2019-02-08T09:12:37Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at tests.QCStore.getScreenhot(QCStore.java:4886)
-at tests.QCStore.getResult(QCStore.java:4902)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AQC_EPP_Return -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@20398b7c]" name="endReport" is-config="true" duration-ms="1" started-at="2019-02-08T09:12:37Z" finished-at="2019-02-08T09:12:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@20398b7c]" name="getResult" is-config="true" duration-ms="24" started-at="2019-02-08T09:12:37Z" finished-at="2019-02-08T09:12:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=QCStore.AQC_EPP_Return()[pri:20, instance:tests.QCStore@20398b7c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at tests.QCStore.getResult(QCStore.java:4912)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:536)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@20398b7c]" name="killProcess" is-config="true" duration-ms="5013" started-at="2019-02-08T09:12:37Z" finished-at="2019-02-08T09:12:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="SKIP" signature="AQC_EPP_nsfPayment()[pri:21, instance:tests.QCStore@20398b7c]" name="AQC_EPP_nsfPayment" duration-ms="0" started-at="2019-02-08T09:12:42Z" finished-at="2019-02-08T09:12:42Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at tests.QCStore.getScreenhot(QCStore.java:4886)
-at tests.QCStore.getResult(QCStore.java:4902)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AQC_EPP_nsfPayment -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@20398b7c]" name="getResult" is-config="true" duration-ms="21" started-at="2019-02-08T09:12:42Z" finished-at="2019-02-08T09:12:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=QCStore.AQC_EPP_nsfPayment()[pri:21, instance:tests.QCStore@20398b7c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at tests.QCStore.getResult(QCStore.java:4912)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:536)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@20398b7c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-08T09:12:42Z" finished-at="2019-02-08T09:12:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@20398b7c]" name="killProcess" is-config="true" duration-ms="5020" started-at="2019-02-08T09:12:42Z" finished-at="2019-02-08T09:12:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="SKIP" signature="AQC_EPP_Redeposit()[pri:22, instance:tests.QCStore@20398b7c]" name="AQC_EPP_Redeposit" duration-ms="0" started-at="2019-02-08T09:12:47Z" finished-at="2019-02-08T09:12:47Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at tests.QCStore.getScreenhot(QCStore.java:4886)
-at tests.QCStore.getResult(QCStore.java:4902)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AQC_EPP_Redeposit -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@20398b7c]" name="getResult" is-config="true" duration-ms="21" started-at="2019-02-08T09:12:47Z" finished-at="2019-02-08T09:12:47Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=QCStore.AQC_EPP_Redeposit()[pri:22, instance:tests.QCStore@20398b7c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at tests.QCStore.getResult(QCStore.java:4912)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:536)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@20398b7c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-08T09:12:47Z" finished-at="2019-02-08T09:12:47Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T20:40:35Z" finished-at="2019-02-18T20:40:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- tests.QCStore -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

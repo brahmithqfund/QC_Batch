@@ -9,3 +9,5 @@ W
 'src/test/java/tests/AObjects.properties,6\b\6b7e93440d570d871bcabb6a7242204cd62aee33
 P
  src/test/java/tests/QCStore.java,f\1\f1f5f4816296e60d7232d0a00b509d48935fb3a4
+Z
+*src/main/java/tests/ASignContractPage.java,d\d\dd5f7a4450c42b898bb62e0525d275b1f722e5d1

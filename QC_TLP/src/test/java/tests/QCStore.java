@@ -109,7 +109,7 @@ public class QCStore {
 	public static String day;
 	
 
-	@Test(priority = 101)
+	//@Test(priority = 101, groups="Brahmith")
 	public static void QC_TLP_NewLoan_Txn() throws Exception {
 		try {
 			// test =
@@ -161,7 +161,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority=103)
+	//@Test(priority=103,groups="Brahmith")
 	public static void QC_NewLoan_Promotion_Txn() throws Exception {
 		try {
 
@@ -211,7 +211,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 104)
+	//@Test(priority = 104,groups="Brahmith")
 	public static void QC_NewLoan_Void_Txn() throws Exception {
 		try {
 			// test =
@@ -265,7 +265,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 105)
+	//@Test(priority = 105,groups="Brahmith")
 	public static void QC_AgeStore_Void_Txn() throws Exception {
 		try {
 			// test =
@@ -327,7 +327,124 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 118)
+	//@Test(priority = 116,groups="Brahmith")
+	public static void QC_TLP_Buyback_Txn() throws Exception {
+		try {
+			test = reports.startTest((prop.getProperty("QC_TLP_Buyback_Txn_scenario")),
+					"Login->Borrower Registratino->New Loan->AgeStore->Pay Off the balance");
+
+			// test =
+			// extent.createTest(prop.getProperty("QC_Store_AgeStore_Deposit_Menu_Txn_file_name"));
+
+			FileName = prop.getProperty("QC_TLP_Buyback_Txn_file_name") + ".xls";
+
+			TestData = new ExcelNew(System.getProperty("user.dir")
+					+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
+
+			int lastrow = TestData.getLastRow("Start");
+			String sheetName = "Start";
+
+			System.out.println(lastrow);
+			for (int row = 2; row <= lastrow; row++) {
+
+				String RunFlag = TestData.getCellData(sheetName, "Run", row);
+				// System.out.println(RunFlag);
+				if (RunFlag.equals("Y")) {
+
+					// AppURL = TestData.getCellData(sheetName, "AppURL", row);
+					String SSN = TestData.getCellData(sheetName, "SSN", row);
+
+					System.out.println(AppURL);
+
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCCSRNewLoan.newLoan(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+					QCCSRLoginLogout.login(SSN, AppURL);
+
+					QCPayment.payment(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					 QCCSRLoginLogout.login(SSN, AppURL);
+					 QCCSRHistory.history(SSN, AppURL);
+						QCCSRLoginLogout.logout(SSN, AppURL);
+				}
+			}
+		}
+
+		catch (Exception e) {
+			System.out.println("QC_Installmentpayment_Void_Txn");
+			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
+			// start scenario 1 " , ExtentColor.RED));
+			test.log(LogStatus.ERROR, "Unable to start scenario QC_Installmentpayment_Void_Txn ");
+
+		}
+	}
+
+	//@Test(priority = 117,groups="Brahmith")
+	public static void QC_TLP_Buyback_Void_Txn() throws Exception {
+		try {
+			test = reports.startTest((prop.getProperty("QC_TLP_Buyback_Void_Txn_scenario")),
+					"Login->Borrower Registratino->New Loan->AgeStore->Payment Pay Off the balance-> Void");
+
+			// test =
+			// extent.createTest(prop.getProperty("QC_Store_AgeStore_Deposit_Menu_Txn_file_name"));
+
+			FileName = prop.getProperty("QC_TLP_Buyback_Void_Txn_file_name") + ".xls";
+
+			TestData = new ExcelNew(System.getProperty("user.dir")
+					+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
+
+			int lastrow = TestData.getLastRow("Start");
+			String sheetName = "Start";
+
+			System.out.println(lastrow);
+			for (int row = 2; row <= lastrow; row++) {
+
+				String RunFlag = TestData.getCellData(sheetName, "Run", row);
+				// System.out.println(RunFlag);
+				if (RunFlag.equals("Y")) {
+
+					// AppURL = TestData.getCellData(sheetName, "AppURL", row);
+					String SSN = TestData.getCellData(sheetName, "SSN", row);
+
+					System.out.println(AppURL);
+
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCCSRNewLoan.newLoan(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+					QCCSRLoginLogout.login(SSN, AppURL);
+
+					QCPayment.payment(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCVoid.qcVoid(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					 QCCSRLoginLogout.login(SSN, AppURL);
+					 QCCSRHistory.history(SSN, AppURL);
+						QCCSRLoginLogout.logout(SSN, AppURL);
+				}
+			}
+		}
+
+		catch (Exception e) {
+			System.out.println("QC_Installmentpayment_Void_Txn");
+			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
+			// start scenario 1 " , ExtentColor.RED));
+			test.log(LogStatus.ERROR, "Unable to start scenario QC_Installmentpayment_Void_Txn ");
+
+		}
+	}
+
+	@Test(priority = 118,groups="Brahmith")
 	public static void QC_Installmentpayment_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Installmentpayment_Txn_scenario")),
@@ -385,7 +502,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 119)
+	@Test(priority = 119,groups="Brahmith")
 	public static void QC_Installmentpayment_Void_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Installmentpayment_Void_Txn_scenario")),
@@ -446,7 +563,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 120)
+	@Test(priority = 120,groups="Brahmith")
 	public static void QC_PayAnyotherAmount_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Payanyotheramount_Txn_scenario")),
@@ -504,7 +621,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 121)
+	@Test(priority = 121,groups="Brahmith")
 	public static void QC_PayAnyotherAmount_Void_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Payanyotheramount_Void_Txn_scenario")),
@@ -564,124 +681,8 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 116)
-	public static void QC_TLP_Buyback_Txn() throws Exception {
-		try {
-			test = reports.startTest((prop.getProperty("QC_TLP_Buyback_Txn_scenario")),
-					"Login->Borrower Registratino->New Loan->AgeStore->Pay Off the balance");
-
-			// test =
-			// extent.createTest(prop.getProperty("QC_Store_AgeStore_Deposit_Menu_Txn_file_name"));
-
-			FileName = prop.getProperty("QC_TLP_Buyback_Txn_file_name") + ".xls";
-
-			TestData = new ExcelNew(System.getProperty("user.dir")
-					+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
-
-			int lastrow = TestData.getLastRow("Start");
-			String sheetName = "Start";
-
-			System.out.println(lastrow);
-			for (int row = 2; row <= lastrow; row++) {
-
-				String RunFlag = TestData.getCellData(sheetName, "Run", row);
-				// System.out.println(RunFlag);
-				if (RunFlag.equals("Y")) {
-
-					// AppURL = TestData.getCellData(sheetName, "AppURL", row);
-					String SSN = TestData.getCellData(sheetName, "SSN", row);
-
-					System.out.println(AppURL);
-
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCCSRNewLoan.newLoan(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
-
-					QCPayment.payment(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					 QCCSRLoginLogout.login(SSN, AppURL);
-					 QCCSRHistory.history(SSN, AppURL);
-						QCCSRLoginLogout.logout(SSN, AppURL);
-				}
-			}
-		}
-
-		catch (Exception e) {
-			System.out.println("QC_Installmentpayment_Void_Txn");
-			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
-			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario QC_Installmentpayment_Void_Txn ");
-
-		}
-	}
-
-	@Test(priority = 117)
-	public static void QC_TLP_Buyback_Void_Txn() throws Exception {
-		try {
-			test = reports.startTest((prop.getProperty("QC_TLP_Buyback_Void_Txn_scenario")),
-					"Login->Borrower Registratino->New Loan->AgeStore->Payment Pay Off the balance-> Void");
-
-			// test =
-			// extent.createTest(prop.getProperty("QC_Store_AgeStore_Deposit_Menu_Txn_file_name"));
-
-			FileName = prop.getProperty("QC_TLP_Buyback_Void_Txn_file_name") + ".xls";
-
-			TestData = new ExcelNew(System.getProperty("user.dir")
-					+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
-
-			int lastrow = TestData.getLastRow("Start");
-			String sheetName = "Start";
-
-			System.out.println(lastrow);
-			for (int row = 2; row <= lastrow; row++) {
-
-				String RunFlag = TestData.getCellData(sheetName, "Run", row);
-				// System.out.println(RunFlag);
-				if (RunFlag.equals("Y")) {
-
-					// AppURL = TestData.getCellData(sheetName, "AppURL", row);
-					String SSN = TestData.getCellData(sheetName, "SSN", row);
-
-					System.out.println(AppURL);
-
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCCSRNewLoan.newLoan(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
-
-					QCPayment.payment(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCVoid.qcVoid(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					 QCCSRLoginLogout.login(SSN, AppURL);
-					 QCCSRHistory.history(SSN, AppURL);
-						QCCSRLoginLogout.logout(SSN, AppURL);
-				}
-			}
-		}
-
-		catch (Exception e) {
-			System.out.println("QC_Installmentpayment_Void_Txn");
-			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
-			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario QC_Installmentpayment_Void_Txn ");
-
-		}
-	}
-
-	@Test(priority = 131)
+	
+	@Test(priority = 131,groups="Brahmith")
 	public static void QC_TLP_Writeoff_Recovery_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Writeoff_Recovery_Txn_scenario")),
@@ -742,7 +743,7 @@ public class QCStore {
 
 		}
 	}
-	@Test(priority = 132)
+	@Test(priority = 132,groups="Brahmith")
 	public static void QC_TLP_Writeoff_Recovery_Void_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Writeoff_Recovery_Void_Txn_scenario")),
@@ -2033,7 +2034,7 @@ public class QCStore {
 				}}}
 		
 
-	@BeforeClass
+	@BeforeClass(alwaysRun = true)
 	public void setup() throws IOException {
 
 		try {
@@ -2045,7 +2046,7 @@ public class QCStore {
 			BufferedReader Areader;
 			try{ 
 				reader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_ILP/src/test/java/tests/Objects.properties"));
+						new FileReader("D:/QC_Batch/QC_TLP/src/test/java/tests/Objects.properties"));
 				prop = new Properties();
 				prop.load(reader);
 				reader.close();
@@ -2060,7 +2061,7 @@ public class QCStore {
 			
 			catch(Exception e)
 			{
-				test.log(LogStatus.ERROR, e);
+				
 				System.out.println("Object proprties file not found");
 			}
 			
@@ -2080,7 +2081,7 @@ public class QCStore {
 			
 			catch(Exception e)
 			{
-				test.log(LogStatus.ERROR, e);
+			
 				System.out.println("Object proprties file not found");
 			}
 			
@@ -2100,7 +2101,7 @@ public class QCStore {
 			
 			catch(Exception e)
 			{
-				test.log(LogStatus.ERROR, e);
+			
 				System.out.println("Object proprties file not found");
 			}
 			
@@ -2138,7 +2139,7 @@ public class QCStore {
 
 	}
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void killProcess() throws Exception {
 
 		try {
@@ -2167,7 +2168,7 @@ public class QCStore {
 		return destination;
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void getResult(ITestResult result) throws Exception {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			test.log(LogStatus.FAIL, "Test Case Failed is " + result.getName());
@@ -2188,7 +2189,7 @@ public class QCStore {
 
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 
 	public void endReport() {
 
