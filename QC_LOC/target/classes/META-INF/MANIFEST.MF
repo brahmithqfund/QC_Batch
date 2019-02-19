@@ -1,14 +1,5 @@
 Manifest-Version: 1.0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> QCH1.1
 Built-By: shashidhar.g
 Build-Jdk: 1.8.0_171
-=======
-Built-By: ratikanta.s
-Build-Jdk: 1.8.0_181
->>>>>>> 1972bf3646397afbbf80dcfbe62670c8d24d9529
 Created-By: Maven Integration for Eclipse
 
