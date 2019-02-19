@@ -2,41 +2,41 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="75476" started-at="2019-02-19T06:40:08Z" finished-at="2019-02-19T06:41:24Z">
+  <suite name="Default suite" duration-ms="68203" started-at="2019-02-19T11:45:55Z" finished-at="2019-02-19T11:47:03Z">
     <groups>
-      <group name="Janaki_NEOD">
-        <method signature="QCStore.JQC_LOC_Refinance_Latefee_Payment_Txn()[pri:322, instance:tests.QCStore@71423665]" name="JQC_LOC_Refinance_Latefee_Payment_Txn" class="tests.QCStore"/>
-      </group> <!-- Janaki_NEOD -->
+      <group name="Ratikanta_NEOD">
+        <method signature="QCStore.RQC_LOC_ManualDefault_Txn_Testdata()[pri:201, instance:tests.QCStore@71423665]" name="RQC_LOC_ManualDefault_Txn_Testdata" class="tests.QCStore"/>
+      </group> <!-- Ratikanta_NEOD -->
     </groups>
-    <test name="Default test" duration-ms="75476" started-at="2019-02-19T06:40:08Z" finished-at="2019-02-19T06:41:24Z">
+    <test name="Default test" duration-ms="68203" started-at="2019-02-19T11:45:55Z" finished-at="2019-02-19T11:47:03Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@71423665]" name="setup" is-config="true" duration-ms="108" started-at="2019-02-19T06:40:08Z" finished-at="2019-02-19T06:40:08Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@71423665]" name="setup" is-config="true" duration-ms="100" started-at="2019-02-19T11:45:55Z" finished-at="2019-02-19T11:45:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@71423665]" name="killProcess" is-config="true" duration-ms="5004" started-at="2019-02-19T06:40:08Z" finished-at="2019-02-19T06:40:13Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@71423665]" name="killProcess" is-config="true" duration-ms="5005" started-at="2019-02-19T11:45:55Z" finished-at="2019-02-19T11:46:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="JQC_LOC_Refinance_Latefee_Payment_Txn()[pri:322, instance:tests.QCStore@71423665]" name="JQC_LOC_Refinance_Latefee_Payment_Txn" duration-ms="70174" started-at="2019-02-19T06:40:13Z" finished-at="2019-02-19T06:41:23Z">
+        <test-method status="PASS" signature="RQC_LOC_ManualDefault_Txn_Testdata()[pri:201, instance:tests.QCStore@71423665]" name="RQC_LOC_ManualDefault_Txn_Testdata" duration-ms="62896" started-at="2019-02-19T11:46:00Z" finished-at="2019-02-19T11:47:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- JQC_LOC_Refinance_Latefee_Payment_Txn -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@71423665]" name="getResult" is-config="true" duration-ms="175" started-at="2019-02-19T06:41:23Z" finished-at="2019-02-19T06:41:24Z">
+        </test-method> <!-- RQC_LOC_ManualDefault_Txn_Testdata -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@71423665]" name="endReport" is-config="true" duration-ms="1" started-at="2019-02-19T11:47:03Z" finished-at="2019-02-19T11:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@71423665]" name="getResult" is-config="true" duration-ms="185" started-at="2019-02-19T11:47:03Z" finished-at="2019-02-19T11:47:03Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=JQC_LOC_Refinance_Latefee_Payment_Txn status=SUCCESS method=QCStore.JQC_LOC_Refinance_Latefee_Payment_Txn()[pri:322, instance:tests.QCStore@71423665] output={null}]]]>
+                <![CDATA[[TestResult name=RQC_LOC_ManualDefault_Txn_Testdata status=SUCCESS method=QCStore.RQC_LOC_ManualDefault_Txn_Testdata()[pri:201, instance:tests.QCStore@71423665] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@71423665]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-19T06:41:23Z" finished-at="2019-02-19T06:41:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
       </class> <!-- tests.QCStore -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
