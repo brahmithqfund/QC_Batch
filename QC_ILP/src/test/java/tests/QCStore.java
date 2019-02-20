@@ -3149,9 +3149,9 @@ public class QCStore {
 				Rprop = new Properties();
 				Rprop.load(Rreader);
 				Rreader.close();
-				csr_url=prop.getProperty("CSR_URL");
-				csrloginpage=prop.getProperty("Login_Page");
-				AdminURL=prop.getProperty("ADMIN_URL");
+				csr_url=Rprop.getProperty("CSR_URL");
+				csrloginpage=Rprop.getProperty("Login_Page");
+				AdminURL=Rprop.getProperty("ADMIN_URL");
 				String Rfilename = Rprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
 

@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value="Ratikanta" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="http://192.168.2.203"/>
+			<item value="Ratikanta"/>
+			<item value="ADMIN_URL"/>
 			<item value="ratikanta"/>
+			<item value="URL"/>
+			<item value="E:\QC_Batch\QC_ILP\RTestData\QCStore\RTestData_Monthly"/>
+			<item value="http://192.168.2.203"/>
 			<item value="//@Test"/>
 			<item value="Rprop"/>
-			<item value="QC_Store_NewLoan_Test_data_sheet_path"/>
-			<item value="@Test"/>
-			<item value="Brahmith"/>
-			<item value="Ratikanta"/>
 		</list>
 		<list key="replacehistory">
 			<item value="//@Test"/>

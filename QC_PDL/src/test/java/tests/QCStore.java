@@ -4799,7 +4799,7 @@ public class QCStore {
 			
 			catch(Exception e)
 			{
-				test.log(LogStatus.ERROR, e);
+				
 				System.out.println("Object proprties file not found");
 			}
 			
@@ -4819,7 +4819,7 @@ public class QCStore {
 			
 			catch(Exception e)
 			{
-				test.log(LogStatus.ERROR, e);
+				
 				System.out.println("Object proprties file not found");
 			}
 			
@@ -4839,7 +4839,7 @@ public class QCStore {
 			
 			catch(Exception e)
 			{
-				test.log(LogStatus.ERROR, e);
+				
 				System.out.println("Object proprties file not found");
 			}
 			
@@ -4859,7 +4859,7 @@ public class QCStore {
 			
 			catch(Exception e)
 			{
-				test.log(LogStatus.ERROR, e);
+				
 				System.out.println("Object proprties file not found");
 			}
 		

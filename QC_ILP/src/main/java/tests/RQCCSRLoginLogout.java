@@ -59,7 +59,7 @@ public class RQCCSRLoginLogout extends QCStore
 						//test.log(LogStatus.INFO, "Opened the CSR URL " +AppURL);
 						test.log(LogStatus.INFO,"CSR login has started");
 
-						test.log(LogStatus.INFO,"Opened the CSR URL " +AppURL);
+						test.log(LogStatus.INFO,"Opened the CSR URL " +csr_url);
 
 
 						//test.log(LogStatus.INFO, "CSR Application is launched " );
