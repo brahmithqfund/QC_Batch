@@ -337,15 +337,15 @@ public class QCStore {
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCEncryptionDetails.readEncryptionDetails(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					// QCCSRLoginLogout.adminLogin(driver, SSN, AppURL);
+				
 					QCAdminEncryption.getEncryption(driver, SSN, AppURL);
-					// QCCSRLoginLogout.adminLogout(driver,SSN, AppURL);
+					
 					QCCSRLoginLogout.login(SSN, AppURL);
-					// QCVoid.qcVoid(SSN, AppURL);
+					
 
 					QCAgeStoreVoid.ageStoreVoid(SSN, AppURL);
 
-					// QCCSRHistory.history(SSN, AppURL);
+				
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					 QCCSRLoginLogout.login(SSN, AppURL);
 					 QCCSRHistory.history(SSN, AppURL);
@@ -950,7 +950,7 @@ public class QCStore {
 					// AppURL = TestData.getCellData(sheetName, "AppURL", row);
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 
-					/*QCCSRLoginLogout.login(SSN, AppURL);
+					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
@@ -961,7 +961,7 @@ public class QCStore {
 					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRTLPConversion.conversion(SSN, SSN);
-					QCCSRLoginLogout.logout(SSN, AppURL);*/
+					QCCSRLoginLogout.logout(SSN, AppURL);
 					 QCCSRLoginLogout.login(SSN, AppURL);
 					 QCCSRHistory_Conversion.historyconversion(SSN, SSN);
 						QCCSRLoginLogout.logout(SSN, AppURL);

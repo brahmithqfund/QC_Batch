@@ -4,15 +4,15 @@
   <test thread-count="5" name="Test">
     <groups>
   <run>
-   <!-- <include name="EOD"/>-->
+ <include name="EOD"/>
      <!--  <include name="Rebate"/>   -->
-   <include name="1stBatch"/>   
+    <!--  <include name="1stBatch"/>   -->
   </run>
   </groups>
     <classes>
 
       <class name="tests.QCStore"/>
-  
+   
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

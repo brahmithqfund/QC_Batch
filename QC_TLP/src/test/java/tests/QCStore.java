@@ -444,7 +444,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 118,groups="Brahmith")
+	//@Test(priority = 118,groups="Brahmith")
 	public static void QC_Installmentpayment_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Installmentpayment_Txn_scenario")),
