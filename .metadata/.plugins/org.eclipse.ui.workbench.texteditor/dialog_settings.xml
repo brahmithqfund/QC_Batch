@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<item value="Janaki" key="selection"/>
 =======
 		<item value="QC_Store_extent_report_path" key="selection"/>
@@ -23,11 +24,15 @@
 =======
 		<item value=",groups=&quot;Janaki&quot;" key="selection"/>
 >>>>>>> feb1
+=======
+		<item value="//@Test" key="selection"/>
+>>>>>>> jan21.1
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -77,6 +82,21 @@
 		<list key="replacehistory">
 			<item value="@Test("/>
 			<item value="Jprop."/>
+=======
+			<item value="@Test"/>
+			<item value="//@Test"/>
+			<item value="colle"/>
+			<item value="writeoff"/>
+			<item value="collec"/>
+			<item value="QC_Store_extent_report_file_name"/>
+			<item value="QC_Store_extent_report_path"/>
+			<item value="QC_Store_extent_report_path+"/>
+		</list>
+		<list key="replacehistory">
+			<item value="//@Test"/>
+			<item value="@Test"/>
+			<item value="Vprop."/>
+>>>>>>> jan21.1
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

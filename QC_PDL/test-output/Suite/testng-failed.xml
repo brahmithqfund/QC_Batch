@@ -10,22 +10,12 @@
     <classes>
       <class name="tests.QCStore">
         <methods>
-          <include name="QC_Epp_Check_Deposit_Clear_Txn"/>
-          <include name="setup"/>
-          <include name="QC_Epp_Return_NSFPayment_Txn"/>
-          <include name="endReport"/>
-          <include name="killProcess"/>
-          <include name="QC_EppDepositClear_Refund_Txn"/>
-          <include name="QC_PartialPayment_RefundVoid_Txn"/>
-          <include name="QC_Epp_PrePayment_Return_Txn"/>
-          <include name="QC_OpenLoan_NewLoan_Txn"/>
           <include name="getResult"/>
-          <include name="QC_Epp_Deposit_Void_Txn"/>
+          <include name="setup"/>
           <include name="QC_Refinance_StepSameVoidURP_Txn"/>
           <include name="QC_Refinance_StepSameURP_Txn"/>
-          <include name="QC_Void_FullReturnPayment_Txn"/>
-          <include name="QC_RefinanceStepDown_Void_Txn"/>
-          <include name="QC_Epp_Return_ReDeposit_Txn"/>
+          <include name="endReport"/>
+          <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->
     </classes>

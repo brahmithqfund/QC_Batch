@@ -47,7 +47,7 @@ public class QCReturnCheck extends QCStore{
 					{
 						
 						
-						String StoreID = TestData.getCellData(sheetName,"StoreID",row);
+						String store_id = "1709";
 						String ReasonForReturn = TestData.getCellData(sheetName,"ReasonForReturn",row);
 						String Esign_CollateralType = TestData.getCellData(sheetName,"Esign_CollateralType",row);
 						String ProductID = TestData.getCellData(sheetName, "ProductID", row);
@@ -103,8 +103,8 @@ public class QCReturnCheck extends QCStore{
 							WebElement e3=driver.findElement(By.name("requestBean.locationNbr"));
 							e3.click();
 							Thread.sleep(2000);
-							e3.sendKeys(StoreID);
-							test.log(LogStatus.PASS, "Store ID is entered: "+StoreID);
+							e3.sendKeys(store_id);
+							test.log(LogStatus.PASS, "Store ID is entered: "+store_id);
 							Thread.sleep(1000);
 							driver.findElement(By.name("submit")).click();   
 							test.log(LogStatus.PASS, "Clicked on Submit Button");
@@ -216,8 +216,8 @@ public class QCReturnCheck extends QCStore{
 
 							driver.switchTo().frame("main");
 							
-							driver.findElement(By.name("requestBean.locationNbr")).sendKeys(StoreID);
-							test.log(LogStatus.PASS, "Store ID is entered: "+StoreID);
+							driver.findElement(By.name("requestBean.locationNbr")).sendKeys(store_id);
+							test.log(LogStatus.PASS, "Store ID is entered: "+store_id);
 							
 							for( String winHandle1 : driver.getWindowHandles())
 							{

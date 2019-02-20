@@ -192,11 +192,12 @@ public class QCStore {
 
 	public static String AdminURL;
 	
+	
 
 	
 //Brahmith Transactions	
 
-	@Test(priority=4)
+	//@Test(priority=4 , groups="Brahmith")
 	public static void QC_NewLoan_Promotion_Txn() throws Exception {
 		try {
 
@@ -245,7 +246,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 7)
+	//@Test(priority = 7, groups="Brahmith")
 	public static void QC_NewLoan_Void_Txn() throws Exception {
 		try {
 			// test =
@@ -300,7 +301,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 54)
+	//@Test(priority = 54, groups="Brahmith")
 	public static void QC_AgeStore_Void_Txn() throws Exception {
 		try {
 			// test =
@@ -340,15 +341,15 @@ public class QCStore {
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCEncryptionDetails.readEncryptionDetails(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					// QCCSRLoginLogout.adminLogin(driver, SSN, AppURL);
+				
 					QCAdminEncryption.getEncryption(driver, SSN, AppURL);
-					// QCCSRLoginLogout.adminLogout(driver,SSN, AppURL);
+					
 					QCCSRLoginLogout.login(SSN, AppURL);
-					// QCVoid.qcVoid(SSN, AppURL);
+					
 
 					QCAgeStoreVoid.ageStoreVoid(SSN, AppURL);
 
-					// QCCSRHistory.history(SSN, AppURL);
+				
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					 QCCSRLoginLogout.login(SSN, AppURL);
 					 QCCSRHistory.history(SSN, AppURL);
@@ -366,7 +367,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 21)
+	//@Test(priority = 21, groups="Brahmith")
 	public static void QC_Installmentpayment_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Installmentpayment_Txn_Scenario")),
@@ -424,7 +425,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 22)
+	//@Test(priority = 22, groups="Brahmith")
 	public static void QC_Installmentpayment_Void_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Installmentpayment_Void_Txn_Scenario")),
@@ -485,7 +486,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 23)
+	//@Test(priority = 23, groups="Brahmith")
 	public static void QC_PayAnyotherAmount_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Payanyotheramount_Txn_Scenario")),
@@ -543,7 +544,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 24)
+	//@Test(priority = 24, groups="Brahmith")
 	public static void QC_PayAnyotherAmount_Void_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Payanyotheramount_Void_Txn_Scenario")),
@@ -603,7 +604,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 31)
+	//@Test(priority = 31, groups="Brahmith")
 	public static void QC_ILP_Return_Menu_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Return_Menu_Txn_Scenario")),
@@ -667,7 +668,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 32)
+	//@Test(priority = 32, groups="Brahmith")
 	public static void QC_ILP_clear_Menu_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_clear_Menu_Txn_Scenario")),
@@ -731,7 +732,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 35)
+	//@Test(priority = 35, groups="Brahmith")
 	public static void QC_ILP_Deposit_Return_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Deposit_Return_Txn_Scenario")),
@@ -797,7 +798,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 55)
+	//@Test(priority = 55, groups="Brahmith")
 	public static void QC_ILP_NewLoanInstallmentDeposit_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_NewLoanInstallmentDeposit_Txn_Scenario")),
@@ -863,7 +864,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 47)
+	//@Test(priority = 47, groups="Brahmith")
 	public static void QC_InstallPayment_Ref_Rescind_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_InstallPayment_Ref_Rescind_Txn_Scenario")),
@@ -926,7 +927,7 @@ public class QCStore {
 		}
 	}
 
-@Test(priority = 53)
+@Test(priority = 53, groups="Brahmith")
 	public static void QC_NewLoan_TLPConversion_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_NewLoan_TLPConversion_Txn_Scenario")),
@@ -982,7 +983,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 51)
+	//@Test(priority = 51, groups="Brahmith")
 	public static void QC_LessInterest_VoidFullPayment_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_LessInterest_VoidFullPayment_Txn_Scenario")),
@@ -1046,7 +1047,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 16)
+	//@Test(priority = 16, groups="Brahmith")
 	public static void QC_ILP_Buyback_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Buyback_Txn_scenario")),
@@ -1103,7 +1104,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 17)
+	//@Test(priority = 17, groups="Brahmith")
 	public static void QC_ILP_Buyback_Void_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Buyback_Void_Txn_scenario")),
@@ -3077,8 +3078,12 @@ public class QCStore {
 
 	
 	
+<<<<<<< HEAD
 	
 	@BeforeClass(alwaysRun=true)
+=======
+	@BeforeClass(alwaysRun = true)
+>>>>>>> jan21.1
 	public void setup() throws IOException {
 
 		try {
@@ -3194,7 +3199,11 @@ public class QCStore {
 
 	}
 
+<<<<<<< HEAD
 	@BeforeMethod(alwaysRun=true)
+=======
+	@BeforeMethod(alwaysRun = true)
+>>>>>>> jan21.1
 	public void killProcess() throws Exception {
 
 		try {
@@ -3223,7 +3232,11 @@ public class QCStore {
 		return destination;
 	}
 
+<<<<<<< HEAD
 	@AfterMethod(alwaysRun=true)
+=======
+	@AfterMethod(alwaysRun = true)
+>>>>>>> jan21.1
 	public void getResult(ITestResult result) throws Exception {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			test.log(LogStatus.FAIL, "Test Case Failed is " + result.getName());
@@ -3244,7 +3257,11 @@ public class QCStore {
 
 	}
 
+<<<<<<< HEAD
 	//@AfterMethod
+=======
+	@AfterMethod(alwaysRun = true)
+>>>>>>> jan21.1
 
 	public void endReport() {
 

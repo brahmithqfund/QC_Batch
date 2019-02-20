@@ -85,14 +85,17 @@ public class QCAdminStoreSetup extends QCStore
 		//Click Login Button
 
 		driver.findElement(By.name("login")).click();
+		Thread.sleep(3000);
 
 		test.log(LogStatus.PASS, "Clicked on Submit button");
 		
 		driver.switchTo().defaultContent();
 
 		driver.switchTo().frame("topFrame");
+		
 
 		driver.findElement(locator(prop.getProperty("admin_store_setup_tab"))).click(); 
+		Thread.sleep(3000);
 
 		test.log(LogStatus.PASS, "Clicked on Store tab");
 	

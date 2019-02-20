@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #Tue Feb 19 18:18:17 IST 2019
 l=Installed plugins\: AS-RUNTIME
 ct=jbt
@@ -11,6 +12,13 @@ ct=jbt
 d=1550581295092
 c=0
 >>>>>>> feb1
+=======
+#Tue Feb 19 18:52:49 IST 2019
+l=Installed plugins\: AS-RUNTIME
+ct=jbt
+d=1550582569118
+c=0
+>>>>>>> jan21.1
 cmp=usage
 a=installed
 cl=AS-RUNTIME
