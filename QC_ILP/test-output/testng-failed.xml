@@ -1,33 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
-    <groups>
-      <run>
-        <include name="Janaki"/>
-      </run>
-    </groups>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="tests.QCStore">
         <methods>
-<<<<<<< HEAD
-          <include name="JQC_ILP_Deposit_MidDay_Txn"/>
-          <include name="JQC_ILP_Deposit_Menu_Txn"/>
-          <include name="JQC_ILP_Deposit_dropdown_Txn"/>
-          <include name="JQC_ILP_GraceDays_Deposit_MidDay_Txn"/>
-          <include name="JQC_ILP_GraceDays_Deposit_dropdown_Txn"/>
-          <include name="JQC_ILP_GraceDays_Deposit_Menu_Txn"/>
-          <include name="JQC_ILP_SignaturLoan_Default_Txn"/>
-=======
-          <include name="QC_ILP_clear_Menu_Txn"/>
-          <include name="QC_ILP_Return_Menu_Txn"/>
+          <include name="RQC_Bankruptcy_Discharge_Txn_Testdata"/>
+          <include name="RQC_WriteOffRecovery_Txn_Testdata"/>
+          <include name="RQC_WriteOffRecovery_Void_Txn_Testdata"/>
+          <include name="RQC_DefaultPayment_Txn_Testdata"/>
           <include name="getResult"/>
+          <include name="RQC_DefaultPayment_Void_Txn_Testdata"/>
           <include name="setup"/>
-          <include name="endReport"/>
+          <include name="RQC_Bankruptcy_Dismiss_Txn_Testdata"/>
+          <include name="RQC_Default_Refinance_Txn_Testdata"/>
+          <include name="RQC_Default_TLPConversion_Txn_Testdata"/>
           <include name="killProcess"/>
->>>>>>> f50b11208812b9a3da18b28f508ffb930f9f5fc9
         </methods>
       </class> <!-- tests.QCStore -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

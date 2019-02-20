@@ -8,8 +8,6 @@
           <include name="getResult"/>
           <include name="setup"/>
           <include name="Deposit_Dropdown"/>
-          <include name="endReport"/>
-          <include name="JQC_LOC_Refinance_Latefee_Payment_Txn"/>
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->

@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<item value="Janaki" key="selection"/>
 =======
 		<item value="QC_Store_extent_report_path" key="selection"/>
@@ -27,11 +28,15 @@
 =======
 		<item value="//@Test" key="selection"/>
 >>>>>>> jan21.1
+=======
+		<item value="Ratikanta" key="selection"/>
+>>>>>>> feb1.1
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -97,12 +102,26 @@
 			<item value="@Test"/>
 			<item value="Vprop."/>
 >>>>>>> jan21.1
+=======
+			<item value="Ratikanta"/>
+			<item value="ADMIN_URL"/>
+			<item value="ratikanta"/>
+			<item value="URL"/>
+			<item value="E:\QC_Batch\QC_ILP\RTestData\QCStore\RTestData_Monthly"/>
+			<item value="http://192.168.2.203"/>
+			<item value="//@Test"/>
+			<item value="Rprop"/>
+		</list>
+		<list key="replacehistory">
+			<item value="//@Test"/>
+>>>>>>> feb1.1
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -130,5 +149,9 @@
 		<item value="652" key="DIALOG_X_ORIGIN"/>
 		<item value="356" key="DIALOG_Y_ORIGIN"/>
 >>>>>>> feb1
+=======
+		<item value="960" key="DIALOG_X_ORIGIN"/>
+		<item value="492" key="DIALOG_Y_ORIGIN"/>
+>>>>>>> feb1.1
 	</section>
 </section>

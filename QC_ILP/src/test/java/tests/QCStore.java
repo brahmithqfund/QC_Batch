@@ -191,13 +191,19 @@ public class QCStore {
 	public static String FirstName;
 
 	public static String AdminURL;
+	public static String csr_url;
+	public static String csrloginpage;
 	
 	
 
 	
 //Brahmith Transactions	
 
+<<<<<<< HEAD
 	//@Test(priority=4 , groups="Brahmith")
+=======
+	//@Test(priority=4)
+>>>>>>> feb1.1
 	public static void QC_NewLoan_Promotion_Txn() throws Exception {
 		try {
 
@@ -246,7 +252,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	//@Test(priority = 7, groups="Brahmith")
+=======
+	//@Test(priority = 7)
+>>>>>>> feb1.1
 	public static void QC_NewLoan_Void_Txn() throws Exception {
 		try {
 			// test =
@@ -301,7 +311,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	//@Test(priority = 54, groups="Brahmith")
+=======
+	//@Test(priority = 54)
+>>>>>>> feb1.1
 	public static void QC_AgeStore_Void_Txn() throws Exception {
 		try {
 			// test =
@@ -367,7 +381,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	//@Test(priority = 21, groups="Brahmith")
+=======
+	//@Test(priority = 21)
+>>>>>>> feb1.1
 	public static void QC_Installmentpayment_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Installmentpayment_Txn_Scenario")),
@@ -425,7 +443,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	//@Test(priority = 22, groups="Brahmith")
+=======
+	//@Test(priority = 22)
+>>>>>>> feb1.1
 	public static void QC_Installmentpayment_Void_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Installmentpayment_Void_Txn_Scenario")),
@@ -486,7 +508,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	//@Test(priority = 23, groups="Brahmith")
+=======
+	//@Test(priority = 23)
+>>>>>>> feb1.1
 	public static void QC_PayAnyotherAmount_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Payanyotheramount_Txn_Scenario")),
@@ -544,7 +570,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	//@Test(priority = 24, groups="Brahmith")
+=======
+	//@Test(priority = 24)
+>>>>>>> feb1.1
 	public static void QC_PayAnyotherAmount_Void_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Payanyotheramount_Void_Txn_Scenario")),
@@ -604,7 +634,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	//@Test(priority = 31, groups="Brahmith")
+=======
+	//@Test(priority = 31)
+>>>>>>> feb1.1
 	public static void QC_ILP_Return_Menu_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Return_Menu_Txn_Scenario")),
@@ -668,7 +702,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	//@Test(priority = 32, groups="Brahmith")
+=======
+	//@Test(priority = 32)
+>>>>>>> feb1.1
 	public static void QC_ILP_clear_Menu_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_clear_Menu_Txn_Scenario")),
@@ -732,7 +770,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	//@Test(priority = 35, groups="Brahmith")
+=======
+	//@Test(priority = 35)
+>>>>>>> feb1.1
 	public static void QC_ILP_Deposit_Return_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Deposit_Return_Txn_Scenario")),
@@ -798,7 +840,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	//@Test(priority = 55, groups="Brahmith")
+=======
+	//@Test(priority = 55)
+>>>>>>> feb1.1
 	public static void QC_ILP_NewLoanInstallmentDeposit_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_NewLoanInstallmentDeposit_Txn_Scenario")),
@@ -864,7 +910,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	//@Test(priority = 47, groups="Brahmith")
+=======
+	//@Test(priority = 47)
+>>>>>>> feb1.1
 	public static void QC_InstallPayment_Ref_Rescind_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_InstallPayment_Ref_Rescind_Txn_Scenario")),
@@ -927,7 +977,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 @Test(priority = 53, groups="Brahmith")
+=======
+//@Test(priority = 53)
+>>>>>>> feb1.1
 	public static void QC_NewLoan_TLPConversion_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_NewLoan_TLPConversion_Txn_Scenario")),
@@ -983,7 +1037,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	//@Test(priority = 51, groups="Brahmith")
+=======
+	//@Test(priority = 51)
+>>>>>>> feb1.1
 	public static void QC_LessInterest_VoidFullPayment_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_LessInterest_VoidFullPayment_Txn_Scenario")),
@@ -1047,7 +1105,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	//@Test(priority = 16, groups="Brahmith")
+=======
+	//@Test(priority = 16)
+>>>>>>> feb1.1
 	public static void QC_ILP_Buyback_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Buyback_Txn_scenario")),
@@ -1104,7 +1166,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	//@Test(priority = 17, groups="Brahmith")
+=======
+	//@Test(priority = 17)
+>>>>>>> feb1.1
 	public static void QC_ILP_Buyback_Void_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Buyback_Void_Txn_scenario")),
@@ -1167,7 +1233,7 @@ public class QCStore {
 
 	
 	//Janaki Transactions edited by Janaki
-	@Test(priority=0,enabled = true,groups="Janaki")
+	//@Test(priority=0,enabled = true,groups="Janaki")
 		public static void JQC_ILP_Deposit_Menu_Txn() throws Exception {
 			try
 			{			
@@ -1219,7 +1285,7 @@ public class QCStore {
 
 			}
 		}
-		@Test(priority=1,enabled = true,groups="Janaki")
+		//@Test(priority=1,enabled = true,groups="Janaki")
 		public static void JQC_ILP_Deposit_dropdown_Txn() throws Exception {
 			try
 			{			
@@ -1271,7 +1337,7 @@ public class QCStore {
 
 			}
 		}
-		@Test(priority=2,enabled = true,groups="Janaki")
+		//@Test(priority=2,enabled = true,groups="Janaki")
 		public static void JQC_ILP_GraceDays_Deposit_Menu_Txn() throws Exception {
 			try
 			{			
@@ -1325,7 +1391,7 @@ public class QCStore {
 
 			}
 		}
-		@Test(priority=3,enabled = true,groups="Janaki")
+		//@Test(priority=3,enabled = true,groups="Janaki")
 		public static void JQC_ILP_GraceDays_Deposit_MidDay_Txn() throws Exception {
 					
 				test=reports.startTest(Jprop.getProperty("QC_ILP_GraceDays_Deposit_MidDay_Txn"),"Login->Borrower Registratino->New Loan with Promotion->Age Store->Deposit through MidDay");
@@ -1369,7 +1435,7 @@ public class QCStore {
 				}
 			
 		}
-		@Test(priority=4,enabled = true,groups="Janaki")
+		//@Test(priority=4,enabled = true,groups="Janaki")
 		public static void JQC_ILP_Deposit_MidDay_Txn() throws Exception {
 			try
 			{			
@@ -1421,7 +1487,7 @@ public class QCStore {
 
 			}
 		}
-		@Test(priority=5,enabled = true,groups="Janaki")
+		//@Test(priority=5,enabled = true,groups="Janaki")
 		public static void JQC_ILP_GraceDays_Deposit_dropdown_Txn() throws Exception {
 			try
 			{			
@@ -1476,7 +1542,7 @@ public class QCStore {
 			}
 		}
 		//Date:07/06/2018
-		@Test(priority=6,enabled=true,groups="Janaki_EOD_set1")
+		//@Test(priority=6,enabled=true,groups="Janaki_EOD_set1")
 		public static void JQC_ILP_Deceased_Txn() throws Exception {
 			
 			test=reports.startTest(Jprop.getProperty("QC_ILP_Deceased_Txn"),"Login->Borrower Registratino->New Loan ->Deceased");
@@ -1523,7 +1589,7 @@ public class QCStore {
 			 
 		}
 		//Date:07/06/2018
-		@Test(priority=8,enabled = true,groups="Janaki_EOD_set1")
+		//@Test(priority=8,enabled = true,groups="Janaki_EOD_set1")
 		public static void JQC_ILP_Deposit_EOD_Txn() throws Exception {
 			try
 			{			
@@ -1581,7 +1647,7 @@ public class QCStore {
 			}
 		}
 		//Date:01/11/2018
-		@Test(priority=9,enabled = true,groups="Janaki_EOD_set2")
+		//@Test(priority=9,enabled = true,groups="Janaki_EOD_set2")
 		public static void JQC_ILP_GraceDays_Deposit_EOD_Txn() throws Exception {
 			try
 			{			
@@ -1641,7 +1707,7 @@ public class QCStore {
 
 			}
 		}
-		@Test(priority=7,enabled = true,groups="Janaki")
+		//@Test(priority=7,enabled = true,groups="Janaki")
 		public static void JQC_ILP_SignaturLoan_Default_Txn() throws Exception {
 			try
 			{			
@@ -1697,11 +1763,11 @@ public class QCStore {
 	
 //RATIKANTA transactions	
 
-		//@Test(priority=1)
+		@Test(priority=1,groups="Ratikanta_ILP")
 		  public static void RQC_Bankruptcy_WORecovery_Txn_Testdata() throws Exception {
 			  try
 			  {
-				  test=reports.startTest(("ILP_Scenario_No.40"),"Login->Borrower Registration->New Loan->Bankruptcy in Admin Portal-->AgeStore to Due date-->WriteOff Recovery");
+				  test=reports.startTest(("QC_Bankruptcy_WORecovery"),"Login->Borrower Registration->New Loan->Bankruptcy in Admin Portal-->AgeStore to Due date-->WriteOff Recovery");
 				  String FileName= "QC_Bankruptcy_WORecovery_Txn_Testdata.xls";
 				  //String FileName= Rprop.getProperty("QC_DefaultPayment_Txn_Testdata_Scenario")+".xls";
 				  			//ExcelNew TestData;
@@ -1770,11 +1836,11 @@ public class QCStore {
 		  }    
 		
 		
-		//@Test(priority=2)
+		@Test(priority=2,groups="Ratikanta_ILP")
 		  public static void RQC_Bankruptcy_Discharge_Txn_Testdata() throws Exception {
 			  try
 			  {
-				  test=reports.startTest(("ILP_Scenario_No.42"),"Login->Borrower Registration->New Loan->Bankruptcy in Admin Portal-->AgeStore to Due date-->Discharge");
+				  test=reports.startTest(("QC_Bankruptcy_Discharge"),"Login->Borrower Registration->New Loan->Bankruptcy in Admin Portal-->AgeStore to Due date-->Discharge");
 				  String FileName= "QC_Bankruptcy_Discharge_Txn_Testdata.xls";
 				  //String FileName= Rprop.getProperty("QC_DefaultPayment_Txn_Testdata_Scenario")+".xls";
 				  			//ExcelNew TestData;
@@ -1838,11 +1904,11 @@ public class QCStore {
 		  }    
 		
 		
-		//@Test(priority=3)
+		@Test(priority=3,groups="Ratikanta_ILP")
 		  public static void RQC_Bankruptcy_Dismiss_Txn_Testdata() throws Exception {
 			  try
 			  {
-				  test=reports.startTest(("ILP_Scenario_No.41"),"Login->Borrower Registration->New Loan->Bankruptcy in Admin Portal-->AgeStore to Due date-->Dismiss");
+				  test=reports.startTest(("QC_Bankruptcy_Dismiss"),"Login->Borrower Registration->New Loan->Bankruptcy in Admin Portal-->AgeStore to Due date-->Dismiss");
 				  String FileName= "QC_Bankruptcy_Dismiss_Txn_Testdata.xls";
 				  //String FileName= Rprop.getProperty("QC_DefaultPayment_Txn_Testdata_Scenario")+".xls";
 				  			//ExcelNew TestData;
@@ -1905,11 +1971,11 @@ public class QCStore {
 			  }
 		  }    
 
-		 //@Test(priority=4)
+		 @Test(priority=4,groups="Ratikanta_ILP")
 			  public static void RQC_Default_Refinance_Txn_Testdata() throws Exception {
 				  try
 				  {
-					  test=reports.startTest(("ILP_Scenario_No.48"),"Login->Borrower Registration->New Loan->Age the Store installment wise to make a loan Default->Refinance");
+					  test=reports.startTest(("QC_Default_Refinance"),"Login->Borrower Registration->New Loan->Age the Store installment wise to make a loan Default->Refinance");
 					  String FileName= "QC_Default_Refinance_Txn_Testdata.xls";
 					  //String FileName= Rprop.getProperty("QC_DefaultPayment_Txn_Testdata_Scenario")+".xls";
 					  			//ExcelNew TestData;
@@ -1979,11 +2045,11 @@ public class QCStore {
 		
 
 		
-	 	 //@Test(priority=5)
+	 	 @Test(priority=5,groups="Ratikanta_ILP")
 		  public static void RQC_DefaultPayment_Txn_Testdata() throws Exception {
 			  try
 			  {
-				  test=reports.startTest(("ILP_Scenario_No.36"),"Login->Borrower Registration->New Loan->Age the Store installment wise to make a loan Default->DefaultPayment");
+				  test=reports.startTest(("QC_DefaultPayment"),"Login->Borrower Registration->New Loan->Age the Store installment wise to make a loan Default->DefaultPayment");
 				  String FileName= "QC_DefaultPayment_Txn_Testdata.xls";
 				  //String FileName= Rprop.getProperty("QC_DefaultPayment_Txn_Testdata_Scenario")+".xls";
 				  			//ExcelNew TestData;
@@ -2052,11 +2118,11 @@ public class QCStore {
 		  }
 		  
 		  
-		  //@Test(priority=6)
+		  @Test(priority=6,groups="Ratikanta_ILP")
 		  public static void RQC_DefaultPayment_Void_Txn_Testdata() throws Exception {
 			  try
 			  {
-				  test=reports.startTest(("ILP_Scenario_No.37"),"Login->Borrower Registration->New Loan->Age the Store installment wise to make a loan Default->DefaultPayment-->Void");
+				  test=reports.startTest(("QC_DefaultPayment_Void"),"Login->Borrower Registration->New Loan->Age the Store installment wise to make a loan Default->DefaultPayment-->Void");
 				  String FileName= "QC_DefaultPayment_Void_Txn_Testdata.xls";
 				  //String FileName= Rprop.getProperty("QC_DefaultPayment_Txn_Testdata_Scenario")+".xls";
 				  			//ExcelNew TestData;
@@ -2127,11 +2193,11 @@ public class QCStore {
 		
 		
 		  
-		//@Test(priority=7)
+		@Test(priority=7,groups="Ratikanta_ILP")
 		  public static void RQC_WriteOffRecovery_Txn_Testdata() throws Exception {
 			  try
 			  {
-				  test=reports.startTest(("ILP_Scenario_No.38"),"Login->Borrower Registration->New Loan->Age the Store Duedate-->WriteOff-->WriteOff Recovery");
+				  test=reports.startTest(("QC_WriteOffRecovery"),"Login->Borrower Registration->New Loan->Age the Store Duedate-->WriteOff-->WriteOff Recovery");
 				  String FileName= "QC_WriteOffRecovery_Txn_Testdata.xls";
 				  //String FileName= Rprop.getProperty("QC_DefaultPayment_Txn_Testdata_Scenario")+".xls";
 				  			//ExcelNew TestData;
@@ -2193,11 +2259,11 @@ public class QCStore {
 			  }
 		  }    
 		  
-		//@Test(priority=8)
+		@Test(priority=8,groups="Ratikanta_ILP")
 			  public static void RQC_WriteOffRecovery_Void_Txn_Testdata() throws Exception {
 				  try
 				  {
-					  test=reports.startTest(("ILP_Scenario_No.39"),"Login->Borrower Registration->New Loan->Age the Store Duedate-->WriteOff-->WriteOff Recovery-->Void");
+					  test=reports.startTest(("QC_WriteOffRecovery_Void"),"Login->Borrower Registration->New Loan->Age the Store Duedate-->WriteOff-->WriteOff Recovery-->Void");
 					  String FileName= "QC_WriteOffRecovery_Void_Txn_Testdata.xls";
 					  //String FileName= Rprop.getProperty("QC_DefaultPayment_Txn_Testdata_Scenario")+".xls";
 					  			//ExcelNew TestData;
@@ -2260,11 +2326,11 @@ public class QCStore {
 				  }
 			  }    
 		
-	         //@Test(priority=9)
+	         @Test(priority=9,groups="Ratikanta_ILP")
 			  public static void RQC_Default_TLPConversion_Txn_Testdata() throws Exception {
 				  try
 				  {
-					  test=reports.startTest(("ILP_Scenario_No.54"),"Login->Borrower Registration->New Loan->Age the Store installment wise to make a loan Default->TLPConversion");
+					  test=reports.startTest(("QC_Default_TLPConversion"),"Login->Borrower Registration->New Loan->Age the Store installment wise to make a loan Default->TLPConversion");
 					  String FileName= "QC_Default_TLPConversion_Txn_Testdata.xls";
 					  //String FileName= Rprop.getProperty("QC_DefaultPayment_Txn_Testdata_Scenario")+".xls";
 					  			//ExcelNew TestData;
@@ -3144,13 +3210,18 @@ public class QCStore {
 				Rreader = new BufferedReader(
 
 						new FileReader("E:/QC_Batch/QC_ILP/src/test/java/tests/RObjects.properties"));
+				        
 			
-			String Rfilename = Rprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+			
 
 						
 				Rprop = new Properties();
 				Rprop.load(Rreader);
 				Rreader.close();
+				csr_url=Rprop.getProperty("CSR_URL");
+				csrloginpage=Rprop.getProperty("Login_Page");
+				AdminURL=Rprop.getProperty("ADMIN_URL");
+				String Rfilename = Rprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
 
 				reports = new ExtentReports(
