@@ -5642,7 +5642,6 @@ public class QCStore {
 
 
 
-
 		////@Test(priority=417,enabled=false,groups={"EOD1"})
 		public void DrawAndEOD() throws Exception{
 			FileName="QC_LOC_Draw_EOD.xls";
@@ -6358,7 +6357,7 @@ public class QCStore {
 					String SSN = TestData.getCellData(sheetName,"SSN",row); 
 
 					ACSRLoginLogout.login(SSN,AppURL);
-					//ACSRBorrowerRegistration.borrowerReg(SSN,AppURL);
+					ACSRBorrowerRegistration.borrowerReg(SSN,AppURL);
 					ACSRLoginLogout.logout();
 
 					ACSRLoginLogout.login(SSN,AppURL);
@@ -6374,7 +6373,6 @@ public class QCStore {
 
 //Shashi scenarios
 
-		////@Test(priority=500,enabled=true)
 
 		@Test(priority=500,enabled=true,groups="Shashi")
 
@@ -6414,7 +6412,7 @@ public class QCStore {
 				}}}
 		
 
-		   // @Test(priority=501,enabled=true,groups="Shashi")
+		    @Test(priority=501,enabled=true,groups="Shashi")
 
 	    public void Deposit_Dropdown_Void() throws Exception{
 				FileName="QC_LOC_Deposit_DropDown_Void.xls";
@@ -6454,7 +6452,7 @@ public class QCStore {
 					}}}
 			
 
-		   // @Test(priority=502,enabled=true,groups="Shashi")
+		   @Test(priority=502,enabled=true,groups="Shashi")
 
 		public void SQC_LOC_Deposit_Bulk() throws Exception{
 				FileName="QC_LOC_Deposit_Bulk.xls";
@@ -6491,7 +6489,7 @@ public class QCStore {
 					}}}
 			
 
-		//@Test(priority=503,enabled=true,groups="Shashi")
+		@Test(priority=503,enabled=true,groups="Shashi")
 
 		public void SQC_LOC_Deposit_Bulk_Void() throws Exception{
 			FileName="QC_LOC_Deposit_Bulk_Void.xls";
@@ -6531,7 +6529,7 @@ public class QCStore {
 				}}}
 		
 
-		//  @Test(priority=504,enabled=true,groups="Shashi")
+		  @Test(priority=504,enabled=true,groups="Shashi")
 
 		public void MidDay_Deposit() throws Exception{
 				FileName="QC_LOC_MidDay_Deposit.xls";
@@ -6573,7 +6571,7 @@ public class QCStore {
 			
 		
 
-			//@Test(priority=505,enabled=true,groups="Shashi")
+			@Test(priority=505,enabled=true,groups="Shashi")
 
 		public void MidDay_Void_Deposit() throws Exception{
 				FileName="QC_LOC_MidDay_Void_Deposit.xls";
@@ -6615,7 +6613,7 @@ public class QCStore {
 			
 
 
-			//@Test(priority=506,enabled=true,groups="Shashi")
+			@Test(priority=506,enabled=true,groups="Shashi")
 
 		public void SQC_LOC_LessMinPayment_Deposit() throws Exception{
 				FileName="QC_LOC_LessMinPayment_Deposit.xls";
@@ -7177,7 +7175,7 @@ public class QCStore {
 		  
 	  }
 
-	
+//''''''''''''''''''''''''''''''''''''''''''''''''''''''//''''''''''''''''''''''''''''''''''''''''''''''''''''''//	
 	
 	@BeforeClass(alwaysRun = true)
 	public void setup() throws IOException {
