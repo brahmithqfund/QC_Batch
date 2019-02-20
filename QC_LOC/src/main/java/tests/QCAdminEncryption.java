@@ -50,7 +50,7 @@ public class QCAdminEncryption extends QCStore
 
 				//test.log(LogStatus.INFO, MarkupHelper.createLabel("Admin Application is launched", ExtentColor.BLUE));
 				test.log(LogStatus.INFO, "********Admin Application is launched********");
-				if(prop.getProperty("login_method").equalsIgnoreCase("local"))
+				if(Jprop.getProperty("login_method").equalsIgnoreCase("local"))
 				{
 					driver = new InternetExplorerDriver();
 				}
