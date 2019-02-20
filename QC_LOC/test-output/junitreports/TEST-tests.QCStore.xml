@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testsuite skipped="0" hostname="Ratikanta-pc" name="tests.QCStore" tests="1" failures="0" timestamp="18 Feb 2019 20:05:01 GMT" time="1323.074" errors="0">
   <testcase name="JQC_LOC_Refinance_CABPayment_Return_Txn" time="1323.074" classname="tests.QCStore"/>
 =======
@@ -97,4 +98,14 @@
     <skipped/>
   </testcase> <!-- Clear_Return_EODTwice -->
 >>>>>>> jan21.1
+=======
+<testsuite skipped="0" hostname="qtlsys2-124" name="tests.QCStore" tests="7" failures="0" timestamp="19 Feb 2019 13:50:00 GMT" time="8110.385" errors="0">
+  <testcase name="Deposit_Dropdown" time="1013.133" classname="tests.QCStore"/>
+  <testcase name="Deposit_Dropdown_Void" time="1172.793" classname="tests.QCStore"/>
+  <testcase name="SQC_LOC_Deposit_Bulk" time="1004.677" classname="tests.QCStore"/>
+  <testcase name="SQC_LOC_Deposit_Bulk_Void" time="1192.929" classname="tests.QCStore"/>
+  <testcase name="MidDay_Deposit" time="1243.942" classname="tests.QCStore"/>
+  <testcase name="MidDay_Void_Deposit" time="1433.836" classname="tests.QCStore"/>
+  <testcase name="SQC_LOC_LessMinPayment_Deposit" time="1049.075" classname="tests.QCStore"/>
+>>>>>>> QCH1.1
 </testsuite> <!-- tests.QCStore -->

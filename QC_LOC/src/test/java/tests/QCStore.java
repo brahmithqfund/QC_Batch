@@ -6135,8 +6135,11 @@ public class QCStore {
 
 
 
+<<<<<<< HEAD
 
 <<<<<<< HEAD
+=======
+>>>>>>> QCH1.1
 		////@Test(priority=417,enabled=false,groups={"EOD1"})
 =======
 		@Test(priority=417,enabled=false,groups={"EOD1"})
@@ -6923,7 +6926,7 @@ public class QCStore {
 					String SSN = TestData.getCellData(sheetName,"SSN",row); 
 
 					ACSRLoginLogout.login(SSN,AppURL);
-					//ACSRBorrowerRegistration.borrowerReg(SSN,AppURL);
+					ACSRBorrowerRegistration.borrowerReg(SSN,AppURL);
 					ACSRLoginLogout.logout();
 
 					ACSRLoginLogout.login(SSN,AppURL);
@@ -6940,7 +6943,6 @@ public class QCStore {
 //Shashi scenarios
 <<<<<<< HEAD
 
-		////@Test(priority=500,enabled=true)
 
 		@Test(priority=500,enabled=true,groups="Shashi")
 
@@ -6987,7 +6989,7 @@ public class QCStore {
 		
 <<<<<<< HEAD
 
-		   // @Test(priority=501,enabled=true,groups="Shashi")
+		    @Test(priority=501,enabled=true,groups="Shashi")
 
 =======
 		
@@ -7033,7 +7035,7 @@ public class QCStore {
 			
 <<<<<<< HEAD
 
-		   // @Test(priority=502,enabled=true,groups="Shashi")
+		   @Test(priority=502,enabled=true,groups="Shashi")
 
 =======
 					
@@ -7076,7 +7078,7 @@ public class QCStore {
 			
 <<<<<<< HEAD
 
-		//@Test(priority=503,enabled=true,groups="Shashi")
+		@Test(priority=503,enabled=true,groups="Shashi")
 
 =======
 						
@@ -7121,7 +7123,7 @@ public class QCStore {
 		
 <<<<<<< HEAD
 
-		//  @Test(priority=504,enabled=true,groups="Shashi")
+		  @Test(priority=504,enabled=true,groups="Shashi")
 
 =======
 						
@@ -7169,7 +7171,7 @@ public class QCStore {
 		
 <<<<<<< HEAD
 
-			//@Test(priority=505,enabled=true,groups="Shashi")
+			@Test(priority=505,enabled=true,groups="Shashi")
 
 =======
 			@Test(priority=505,enabled=true)
@@ -7215,7 +7217,7 @@ public class QCStore {
 
 <<<<<<< HEAD
 
-			//@Test(priority=506,enabled=true,groups="Shashi")
+			@Test(priority=506,enabled=true,groups="Shashi")
 
 =======
 			@Test(priority=506,enabled=true)
@@ -7808,7 +7810,7 @@ public class QCStore {
 		  
 	  }
 
-	
+//''''''''''''''''''''''''''''''''''''''''''''''''''''''//''''''''''''''''''''''''''''''''''''''''''''''''''''''//	
 	
 	@BeforeClass(alwaysRun = true)
 	public void setup() throws IOException {

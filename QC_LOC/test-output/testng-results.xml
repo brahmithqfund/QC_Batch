@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
@@ -47,21 +48,137 @@
     <test name="Test" duration-ms="969487" started-at="2019-02-19T05:07:00Z" finished-at="2019-02-19T05:23:09Z">
       <class name="tests.QCStore">
         <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="setup" is-config="true" duration-ms="127" started-at="2019-02-19T05:07:00Z" finished-at="2019-02-19T05:07:00Z">
+=======
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="8110511" started-at="2019-02-19T11:34:49Z" finished-at="2019-02-19T13:50:00Z">
+    <groups>
+      <group name="Shashi">
+        <method signature="QCStore.Deposit_Dropdown()[pri:500, instance:tests.QCStore@71423665]" name="Deposit_Dropdown" class="tests.QCStore"/>
+        <method signature="QCStore.Deposit_Dropdown_Void()[pri:501, instance:tests.QCStore@71423665]" name="Deposit_Dropdown_Void" class="tests.QCStore"/>
+        <method signature="QCStore.MidDay_Deposit()[pri:504, instance:tests.QCStore@71423665]" name="MidDay_Deposit" class="tests.QCStore"/>
+        <method signature="QCStore.MidDay_Void_Deposit()[pri:505, instance:tests.QCStore@71423665]" name="MidDay_Void_Deposit" class="tests.QCStore"/>
+        <method signature="QCStore.SQC_LOC_Deposit_Bulk()[pri:502, instance:tests.QCStore@71423665]" name="SQC_LOC_Deposit_Bulk" class="tests.QCStore"/>
+        <method signature="QCStore.SQC_LOC_Deposit_Bulk_Void()[pri:503, instance:tests.QCStore@71423665]" name="SQC_LOC_Deposit_Bulk_Void" class="tests.QCStore"/>
+        <method signature="QCStore.SQC_LOC_LessMinPayment_Deposit()[pri:506, instance:tests.QCStore@71423665]" name="SQC_LOC_LessMinPayment_Deposit" class="tests.QCStore"/>
+      </group> <!-- Shashi -->
+    </groups>
+    <test name="Default test" duration-ms="8110511" started-at="2019-02-19T11:34:49Z" finished-at="2019-02-19T13:50:00Z">
+      <class name="tests.QCStore">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@71423665]" name="setup" is-config="true" duration-ms="101" started-at="2019-02-19T11:34:49Z" finished-at="2019-02-19T11:34:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="killProcess" is-config="true" duration-ms="5020" started-at="2019-02-19T05:07:00Z" finished-at="2019-02-19T05:07:05Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@71423665]" name="killProcess" is-config="true" duration-ms="5018" started-at="2019-02-19T11:34:50Z" finished-at="2019-02-19T11:34:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="Deposit_Dropdown()[pri:500, instance:tests.QCStore@6d7b4f4c]" name="Deposit_Dropdown" duration-ms="963614" started-at="2019-02-19T05:07:05Z" finished-at="2019-02-19T05:23:08Z">
+        <test-method status="PASS" signature="Deposit_Dropdown()[pri:500, instance:tests.QCStore@71423665]" name="Deposit_Dropdown" duration-ms="1007459" started-at="2019-02-19T11:34:55Z" finished-at="2019-02-19T11:51:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Deposit_Dropdown -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@6d7b4f4c]" name="getResult" is-config="true" duration-ms="711" started-at="2019-02-19T05:23:08Z" finished-at="2019-02-19T05:23:09Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@71423665]" name="getResult" is-config="true" duration-ms="744" started-at="2019-02-19T11:51:42Z" finished-at="2019-02-19T11:51:43Z">
           <params>
             <param index="0">
               <value>
+                <![CDATA[[TestResult name=Deposit_Dropdown status=SUCCESS method=QCStore.Deposit_Dropdown()[pri:500, instance:tests.QCStore@71423665] output={null}]]]>
+              </value>
+            </param>
+          </params>
+>>>>>>> QCH1.1
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@71423665]" name="killProcess" is-config="true" duration-ms="5025" started-at="2019-02-19T11:51:43Z" finished-at="2019-02-19T11:51:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="Deposit_Dropdown_Void()[pri:501, instance:tests.QCStore@71423665]" name="Deposit_Dropdown_Void" duration-ms="1167161" started-at="2019-02-19T11:51:48Z" finished-at="2019-02-19T12:11:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Deposit_Dropdown_Void -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@71423665]" name="getResult" is-config="true" duration-ms="648" started-at="2019-02-19T12:11:15Z" finished-at="2019-02-19T12:11:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Deposit_Dropdown_Void status=SUCCESS method=QCStore.Deposit_Dropdown_Void()[pri:501, instance:tests.QCStore@71423665] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@71423665]" name="killProcess" is-config="true" duration-ms="5026" started-at="2019-02-19T12:11:16Z" finished-at="2019-02-19T12:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="SQC_LOC_Deposit_Bulk()[pri:502, instance:tests.QCStore@71423665]" name="SQC_LOC_Deposit_Bulk" duration-ms="999052" started-at="2019-02-19T12:11:21Z" finished-at="2019-02-19T12:28:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SQC_LOC_Deposit_Bulk -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@71423665]" name="getResult" is-config="true" duration-ms="599" started-at="2019-02-19T12:28:00Z" finished-at="2019-02-19T12:28:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SQC_LOC_Deposit_Bulk status=SUCCESS method=QCStore.SQC_LOC_Deposit_Bulk()[pri:502, instance:tests.QCStore@71423665] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@71423665]" name="killProcess" is-config="true" duration-ms="5019" started-at="2019-02-19T12:28:00Z" finished-at="2019-02-19T12:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="SQC_LOC_Deposit_Bulk_Void()[pri:503, instance:tests.QCStore@71423665]" name="SQC_LOC_Deposit_Bulk_Void" duration-ms="1187288" started-at="2019-02-19T12:28:05Z" finished-at="2019-02-19T12:47:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SQC_LOC_Deposit_Bulk_Void -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@71423665]" name="getResult" is-config="true" duration-ms="614" started-at="2019-02-19T12:47:53Z" finished-at="2019-02-19T12:47:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SQC_LOC_Deposit_Bulk_Void status=SUCCESS method=QCStore.SQC_LOC_Deposit_Bulk_Void()[pri:503, instance:tests.QCStore@71423665] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@71423665]" name="killProcess" is-config="true" duration-ms="5027" started-at="2019-02-19T12:47:53Z" finished-at="2019-02-19T12:47:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="MidDay_Deposit()[pri:504, instance:tests.QCStore@71423665]" name="MidDay_Deposit" duration-ms="1238180" started-at="2019-02-19T12:47:58Z" finished-at="2019-02-19T13:08:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MidDay_Deposit -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@71423665]" name="getResult" is-config="true" duration-ms="602" started-at="2019-02-19T13:08:36Z" finished-at="2019-02-19T13:08:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MidDay_Deposit status=SUCCESS method=QCStore.MidDay_Deposit()[pri:504, instance:tests.QCStore@71423665] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@71423665]" name="killProcess" is-config="true" duration-ms="5035" started-at="2019-02-19T13:08:37Z" finished-at="2019-02-19T13:08:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="MidDay_Void_Deposit()[pri:505, instance:tests.QCStore@71423665]" name="MidDay_Void_Deposit" duration-ms="1428190" started-at="2019-02-19T13:08:42Z" finished-at="2019-02-19T13:32:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MidDay_Void_Deposit -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@71423665]" name="getResult" is-config="true" duration-ms="613" started-at="2019-02-19T13:32:30Z" finished-at="2019-02-19T13:32:31Z">
+          <params>
+            <param index="0">
+              <value>
+<<<<<<< HEAD
                 <![CDATA[[TestResult name=Deposit_Dropdown status=SUCCESS method=QCStore.Deposit_Dropdown()[pri:500, instance:tests.QCStore@6d7b4f4c] output={null}]]]>
 >>>>>>> QCH1.1
 =======
@@ -126,12 +243,16 @@
               <value>
                 <![CDATA[[TestResult name=LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn status=SUCCESS method=QCStore.LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn()[pri:67, instance:tests.QCStore@527740a2] output={null}]]]>
 >>>>>>> jan21.1
+=======
+                <![CDATA[[TestResult name=MidDay_Void_Deposit status=SUCCESS method=QCStore.MidDay_Void_Deposit()[pri:505, instance:tests.QCStore@71423665] output={null}]]]>
+>>>>>>> QCH1.1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -162,14 +283,32 @@
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=LOC_ACHDeposit_EODs_Return_Txn status=SUCCESS method=QCStore.LOC_ACHDeposit_EODs_Return_Txn()[pri:68, instance:tests.QCStore@527740a2] output={null}]]]>
+=======
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@71423665]" name="killProcess" is-config="true" duration-ms="5044" started-at="2019-02-19T13:32:31Z" finished-at="2019-02-19T13:32:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="SQC_LOC_LessMinPayment_Deposit()[pri:506, instance:tests.QCStore@71423665]" name="SQC_LOC_LessMinPayment_Deposit" duration-ms="1043441" started-at="2019-02-19T13:32:36Z" finished-at="2019-02-19T13:49:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SQC_LOC_LessMinPayment_Deposit -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@71423665]" name="getResult" is-config="true" duration-ms="600" started-at="2019-02-19T13:49:59Z" finished-at="2019-02-19T13:50:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SQC_LOC_LessMinPayment_Deposit status=SUCCESS method=QCStore.SQC_LOC_LessMinPayment_Deposit()[pri:506, instance:tests.QCStore@71423665] output={null}]]]>
+>>>>>>> QCH1.1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
 >>>>>>> jan21.1
+=======
+>>>>>>> QCH1.1
       </class> <!-- tests.QCStore -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
