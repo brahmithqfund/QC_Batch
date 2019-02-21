@@ -3078,12 +3078,10 @@ public class QCStore {
 
 	
 	
-<<<<<<< HEAD
+
 	
 	@BeforeClass(alwaysRun=true)
-=======
-	@BeforeClass(alwaysRun = true)
->>>>>>> jan21.1
+
 	public void setup() throws IOException {
 
 		try {
@@ -3199,11 +3197,9 @@ public class QCStore {
 
 	}
 
-<<<<<<< HEAD
+
 	@BeforeMethod(alwaysRun=true)
-=======
-	@BeforeMethod(alwaysRun = true)
->>>>>>> jan21.1
+
 	public void killProcess() throws Exception {
 
 		try {
@@ -3232,11 +3228,9 @@ public class QCStore {
 		return destination;
 	}
 
-<<<<<<< HEAD
+
 	@AfterMethod(alwaysRun=true)
-=======
-	@AfterMethod(alwaysRun = true)
->>>>>>> jan21.1
+
 	public void getResult(ITestResult result) throws Exception {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			test.log(LogStatus.FAIL, "Test Case Failed is " + result.getName());
@@ -3257,11 +3251,9 @@ public class QCStore {
 
 	}
 
-<<<<<<< HEAD
-	//@AfterMethod
-=======
+
 	@AfterMethod(alwaysRun = true)
->>>>>>> jan21.1
+
 
 	public void endReport() {
 

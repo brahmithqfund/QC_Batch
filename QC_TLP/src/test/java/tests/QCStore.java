@@ -563,7 +563,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 120,groups="Brahmith")
+	//@Test(priority = 120,groups="Brahmith")
 	public static void QC_PayAnyotherAmount_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Payanyotheramount_Txn_scenario")),
@@ -621,7 +621,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 121,groups="Brahmith")
+	//@Test(priority = 121,groups="Brahmith")
 	public static void QC_PayAnyotherAmount_Void_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Payanyotheramount_Void_Txn_scenario")),
@@ -682,7 +682,7 @@ public class QCStore {
 	}
 
 	
-	@Test(priority = 131,groups="Brahmith")
+	//@Test(priority = 131,groups="Brahmith")
 	public static void QC_TLP_Writeoff_Recovery_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Writeoff_Recovery_Txn_scenario")),
@@ -743,7 +743,7 @@ public class QCStore {
 
 		}
 	}
-	@Test(priority = 132,groups="Brahmith")
+	//@Test(priority = 132,groups="Brahmith")
 	public static void QC_TLP_Writeoff_Recovery_Void_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Writeoff_Recovery_Void_Txn_scenario")),
@@ -809,7 +809,7 @@ public class QCStore {
 	}
 //Janaki Scenarios
 	
-	@Test(priority=204,enabled = true,groups="Janaki")
+	//@Test(priority=204,enabled = true,groups="Janaki")
 		public static void JQC_TLP_Deposit_Menu_Txn() throws Exception {
 			try
 			{			
@@ -864,7 +864,7 @@ public class QCStore {
 
 			}
 		}
-		@Test(priority=203,enabled = true,groups="Janaki")
+		//@Test(priority=203,enabled = true,groups="Janaki")
 		public static void JQC_TLP_Deposit_dropdown_Txn() throws Exception {
 			try
 			{			
@@ -919,7 +919,7 @@ public class QCStore {
 
 			}
 		}
-		@Test(priority=202,enabled = true,groups="Janaki")
+		//@Test(priority=202,enabled = true,groups="Janaki")
 		public static void JQC_TLP_GraceDays_Deposit_Menu_Txn() throws Exception {
 			try
 			{			
@@ -976,7 +976,7 @@ public class QCStore {
 
 			}
 		}
-		@Test(priority=201,enabled = true,groups="Janaki")
+		//@Test(priority=201,enabled = true,groups="Janaki")
 		public static void JQC_TLP_GraceDays_Deposit_MidDay_Txn() throws Exception {
 			try
 			{			
@@ -1033,7 +1033,7 @@ public class QCStore {
 
 			}
 		}
-		@Test(priority=200,enabled = true,groups="Janaki")
+		//@Test(priority=200,enabled = true,groups="Janaki")
 		public static void JQC_TLP_Deposit_MidDay_Txn() throws Exception {
 			try
 			{			
@@ -1088,7 +1088,7 @@ public class QCStore {
 
 			}
 		}
-		@Test(priority=205,enabled = true,groups="Janaki")
+		//@Test(priority=205,enabled = true,groups="Janaki")
 		public static void JQC_TLP_GraceDays_Deposit_dropdown_Txn() throws Exception {
 			try
 			{			
@@ -1146,7 +1146,7 @@ public class QCStore {
 			}
 		}
 		//Date: 01/02/2018
-		@Test(priority=206,enabled=true,groups="Janaki_EOD_set12")
+		//@Test(priority=206,enabled=true,groups="Janaki_EOD_set12")
 
 		public static void JQC_TLP_Deceased_Txn() throws Exception {
 			try
@@ -1208,7 +1208,7 @@ public class QCStore {
 			}
 			 
 		}
-		@Test(priority=207,enabled=true,groups="Janaki")
+		//@Test(priority=207,enabled=true,groups="Janaki")
 		  public static void JQC_DefaultPayment_Txn_Testdata() throws Exception {
 			  try
 			  {
@@ -1264,7 +1264,7 @@ public class QCStore {
 		  }
 		  
 		  
-		 	@Test(priority=208,enabled=true,groups="Janaki")
+		 	//@Test(priority=208,enabled=true,groups="Janaki")
 		 	public static void JQC_DefaultPayment_Void_Txn_Testdata() throws Exception {
 			  try
 			  {
@@ -1327,7 +1327,7 @@ public class QCStore {
 			  }
 		  } 
 		 //Date: 01/02/2018	
-		@Test(priority=209,enabled = true,groups="Janaki_EOD_set1")
+		//@Test(priority=209,enabled = true,groups="Janaki_EOD_set1")
 		public static void JQC_TLP_Deposit_EOD_Txn() throws Exception {
 			try
 			{			
@@ -1389,7 +1389,7 @@ public class QCStore {
 			}
 		}
 		//Date:01/11/2018
-		@Test(priority=210,enabled = true,groups="Janaki_EOD_set2")
+		//@Test(priority=210,enabled = true,groups="Janaki_EOD_set2")
 	 	public static void JQC_TLP_GraceDays_Deposit_EOD_Txn() throws Exception {
 			try
 			{			
@@ -1454,7 +1454,7 @@ public class QCStore {
 		
 		//Anoop scenariso
 		
-		@Test(priority=310,enabled=false)
+		//@Test(priority=310,enabled=false)
 		//This is date dependent so needs to run on 01/02/2018
 		public void TLP_bankruptcyDismiss() throws Exception{
 
@@ -1504,7 +1504,7 @@ public class QCStore {
 				}}}
 			
 		
-		@Test(priority=309,enabled=false)
+		//@Test(priority=309,enabled=false)
 		//This is date dependent so needs to run on 01/02/2018
 		public void TLP_bankruptcyWriteOff() throws Exception{
 
@@ -1556,7 +1556,7 @@ public class QCStore {
 		
 		
 		
-		@Test(priority=300,enabled=false)
+		//@Test(priority=300,enabled=false)
 		//Date will be /03/12/218
 		public void TLP_RefinanceStepDownVoid() throws Exception{
 
@@ -1608,7 +1608,7 @@ public class QCStore {
 				}}}
 		
 		
-		@Test(priority=310,enabled=false)
+		//@Test(priority=310,enabled=false)
 	//Date will be /03/12/218
 		public void TLP_RefinanceStepDown() throws Exception{
 
@@ -1656,7 +1656,7 @@ public class QCStore {
 				}}}
 		
 		
-		@Test(priority=308,enabled=false)
+		//@Test(priority=308,enabled=false)
 
 		public void TLP_ProcessAutoClear() throws Exception{
 
@@ -1709,7 +1709,7 @@ public class QCStore {
 				}}}
 		
 		
-		@Test(priority=306,enabled=false)
+		//@Test(priority=306,enabled=false)
 
 		public void TLP_ProcessClearFromMenu() throws Exception{
 
@@ -1761,7 +1761,7 @@ public class QCStore {
 					test.log(LogStatus.INFO, "****Test Scenario for Process Clear from menu is pass******");
 				}}}
 		
-		@Test(priority=307,enabled=false)
+		//@Test(priority=307,enabled=false)
 
 		public void TLP_ProcessClear() throws Exception{
 
@@ -1815,7 +1815,7 @@ public class QCStore {
 		
 		
 		
-		@Test(priority=305,enabled=true)
+		//@Test(priority=305,enabled=true)
 
 		public void TLP_RefinanceStepSame_Void() throws Exception{
 
@@ -1868,7 +1868,7 @@ public class QCStore {
 				}}}
 
 		
-		@Test(priority=304,enabled=false)
+		//@Test(priority=304,enabled=false)
 
 		public void TLP_RefinanceStepSame() throws Exception{
 
@@ -1921,7 +1921,7 @@ public class QCStore {
 
 		
 		
-		@Test(priority=303,enabled=false)
+		//@Test(priority=303,enabled=false)
 
 		public void TLP_agerescind() throws Exception{
 			test=reports.startTest("QC_NewLoan_AgeRescind","Login-->Age the loan to rescind days--->Rescind loan");
@@ -1964,7 +1964,7 @@ public class QCStore {
 				}}}
 		
 		
-		@Test(priority=302,enabled=false)
+		//@Test(priority=302,enabled=false)
 
 		public void TLP_rescindloan() throws Exception{
 			test=reports.startTest("TLP_rescindloan","Loan->NewLoan-->Rescind");
@@ -2003,7 +2003,7 @@ public class QCStore {
 			}}
 		
 		
-		@Test(priority=301,enabled=false)
+		//@Test(priority=301,enabled=false)
 		public void newLoan() throws Exception{
 			FileName="QC_TLP_NewLoan.xls";
 			test=reports.startTest("QC_TLP_NewLoan","Login-->Home screen--> Inactive customer--> New Loan");
@@ -2036,11 +2036,9 @@ public class QCStore {
 				}}}
 		
 
-<<<<<<< HEAD
+
 	@BeforeClass(alwaysRun=true)
-=======
-	@BeforeClass(alwaysRun = true)
->>>>>>> jan21.1
+
 	public void setup() throws IOException {
 
 		try {
@@ -2074,11 +2072,9 @@ public class QCStore {
 
 			try{ 
 				Jreader = new BufferedReader(
-<<<<<<< HEAD
-						new FileReader("D:/QC_Batch/QC_TLP/src/test/java/tests/JObjects.properties"));
-=======
+
 						new FileReader("E:/QC_Batch/QC_TLP/src/test/java/tests/JObjects.properties"));
->>>>>>> feb1
+
 				Jprop = new Properties();
 				Jprop.load(Jreader);
 				Jreader.close();
@@ -2091,11 +2087,7 @@ public class QCStore {
 			
 			catch(Exception e)
 			{
-<<<<<<< HEAD
-				
-=======
-			
->>>>>>> jan21.1
+
 				System.out.println("Object proprties file not found");
 			}
 			
@@ -2153,11 +2145,9 @@ public class QCStore {
 
 	}
 
-<<<<<<< HEAD
-	@BeforeMethod(alwaysRun=true)
-=======
+
 	@BeforeMethod(alwaysRun = true)
->>>>>>> jan21.1
+
 	public void killProcess() throws Exception {
 
 		try {
@@ -2186,11 +2176,9 @@ public class QCStore {
 		return destination;
 	}
 
-<<<<<<< HEAD
-	@AfterMethod(alwaysRun=true)
-=======
+
 	@AfterMethod(alwaysRun = true)
->>>>>>> jan21.1
+
 	public void getResult(ITestResult result) throws Exception {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			test.log(LogStatus.FAIL, "Test Case Failed is " + result.getName());
@@ -2211,11 +2199,9 @@ public class QCStore {
 
 	}
 
-<<<<<<< HEAD
-	//@AfterMethod
-=======
+
 	@AfterMethod(alwaysRun = true)
->>>>>>> jan21.1
+
 
 	public void endReport() {
 

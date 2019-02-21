@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="QC_FutureDeposit_EOD_Txn">QC_FutureDeposit_EOD_Txn</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="QC_Void_FullReturnPayment_Txn">QC_Void_FullReturnPayment_Txn</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -125,9 +125,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="QC_FutureDeposit_EOD_Txn">
-                  </a> <!-- QC_FutureDeposit_EOD_Txn -->
-                  <span class="method-name">QC_FutureDeposit_EOD_Txn</span>
+                  <a name="QC_Void_FullReturnPayment_Txn">
+                  </a> <!-- QC_Void_FullReturnPayment_Txn -->
+                  <span class="method-name">QC_Void_FullReturnPayment_Txn</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -146,6 +146,7 @@
     &lt;groups&gt;
       &lt;run&gt;
         &lt;include name=&quot;EOD&quot;/&gt;
+        &lt;include name=&quot;1stBatch&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
@@ -174,10 +175,10 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">EOD</span>
+              <span class="test-group-name">1stBatch</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">QC_FutureDeposit_EOD_Txn</span>
+                <span class="method-in-group-name">QC_Void_FullReturnPayment_Txn</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -199,14 +200,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'QC_FutureDeposit_EOD_Txn')
+data.setCell(0, 1, 'QC_Void_FullReturnPayment_Txn')
 data.setCell(0, 2, 'tests.QCStore')
-data.setCell(0, 3, 249593);
+data.setCell(0, 3, 1600246);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 26 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -221,18 +222,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.QCStore</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">QC_Refinance_StepDownURP_Txn</span>
-                <br/>
-                <span class="ignored-method-name">QC_Refinance_StepDownVoidURP_Txn</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -248,19 +240,15 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">killProcess</span>
-                <span class="method-start">125 ms</span>
+                <span class="method-start">105 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">QC_FutureDeposit_EOD_Txn</span>
-                <span class="method-start">5136 ms</span>
+                <span class="method-name">QC_Void_FullReturnPayment_Txn</span>
+                <span class="method-start">5116 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">endReport</span>
-                <span class="method-start">254732 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=QC_FutureDeposit_EOD_Txn status=SUCCESS method=QCStore.QC_FutureDeposit_EOD_Txn()[p...)</span>
-                <span class="method-start">254732 ms</span>
+                <span class="method-name">getResult([TestResult name=QC_Void_FullReturnPayment_Txn status=SUCCESS method=QCStore.QC_Void_FullReturnPayme...)</span>
+                <span class="method-start">1605363 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
