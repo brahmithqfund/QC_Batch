@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testsuite skipped="0" hostname="Ratikanta-pc" name="tests.QCStore" tests="1" failures="0" timestamp="18 Feb 2019 20:05:01 GMT" time="1323.074" errors="0">
   <testcase name="JQC_LOC_Refinance_CABPayment_Return_Txn" time="1323.074" classname="tests.QCStore"/>
 =======
@@ -101,6 +102,10 @@
 =======
 <testsuite skipped="0" hostname="Ratikanta-pc" name="tests.QCStore" tests="3" failures="0" timestamp="19 Feb 2019 20:17:42 GMT" time="76.394" errors="2">
   <testcase name="getResult" time="5.197" classname="tests.QCStore">
+=======
+<testsuite skipped="0" hostname="Ratikanta-pc" name="tests.QCStore" tests="3" failures="0" timestamp="21 Feb 2019 09:21:39 GMT" time="2260.494" errors="2">
+  <testcase name="getResult" time="5.204" classname="tests.QCStore">
+>>>>>>> feb1.1
     <error type="org.openqa.selenium.NoSuchSessionException" message="Session ID is null. Using WebDriver after calling quit()?
 Build info: version: &#039;3.14.0&#039;, revision: &#039;aacccce0&#039;, time: &#039;2018-08-02T20:19:58.91Z&#039;
 System info: host: &#039;RATIKANTA-PC&#039;, ip: &#039;192.168.2.66&#039;, os.name: &#039;Windows 7&#039;, os.arch: &#039;amd64&#039;, os.version: &#039;6.1&#039;, java.version: &#039;1.8.0_181&#039;
@@ -147,8 +152,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
     </error>
   </testcase> <!-- getResult -->
-  <testcase name="JQC_LOC_Refinance_EOD_Payment_Txn" time="71.146" classname="tests.QCStore"/>
-  <testcase name="Deposit_Dropdown" time="0.051" classname="tests.QCStore">
+  <testcase name="RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Void_Txn_Testdata" time="2255.246" classname="tests.QCStore"/>
+  <testcase name="Deposit_Dropdown" time="0.044" classname="tests.QCStore">
     <error type="java.lang.NullPointerException">
       <![CDATA[java.lang.NullPointerException
 at tests.SCSRLoginLogout.login(SCSRLoginLogout.java:34)

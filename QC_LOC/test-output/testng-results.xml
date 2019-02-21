@@ -8,45 +8,45 @@
 >>>>>>> feb1.1
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="76520" started-at="2019-02-19T20:16:25Z" finished-at="2019-02-19T20:17:42Z">
+  <suite name="Default suite" duration-ms="2260610" started-at="2019-02-21T08:43:58Z" finished-at="2019-02-21T09:21:39Z">
     <groups>
       <group name="Shashi">
         <method signature="QCStore.Deposit_Dropdown()[pri:500, instance:tests.QCStore@71423665]" name="Deposit_Dropdown" class="tests.QCStore"/>
       </group> <!-- Shashi -->
-      <group name="Janaki_EOD">
-        <method signature="QCStore.JQC_LOC_Refinance_EOD_Payment_Txn()[pri:323, instance:tests.QCStore@71423665]" name="JQC_LOC_Refinance_EOD_Payment_Txn" class="tests.QCStore"/>
-      </group> <!-- Janaki_EOD -->
+      <group name="Ratikanta_NEOD">
+        <method signature="QCStore.RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Void_Txn_Testdata()[pri:210, instance:tests.QCStore@71423665]" name="RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Void_Txn_Testdata" class="tests.QCStore"/>
+      </group> <!-- Ratikanta_NEOD -->
     </groups>
-    <test name="Default test" duration-ms="76520" started-at="2019-02-19T20:16:25Z" finished-at="2019-02-19T20:17:42Z">
+    <test name="Default test" duration-ms="2260610" started-at="2019-02-21T08:43:58Z" finished-at="2019-02-21T09:21:39Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@71423665]" name="setup" is-config="true" duration-ms="101" started-at="2019-02-19T20:16:25Z" finished-at="2019-02-19T20:16:25Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@71423665]" name="setup" is-config="true" duration-ms="96" started-at="2019-02-21T08:43:58Z" finished-at="2019-02-21T08:43:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@71423665]" name="killProcess" is-config="true" duration-ms="5003" started-at="2019-02-19T20:16:25Z" finished-at="2019-02-19T20:16:30Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@71423665]" name="killProcess" is-config="true" duration-ms="5004" started-at="2019-02-21T08:43:58Z" finished-at="2019-02-21T08:44:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="JQC_LOC_Refinance_EOD_Payment_Txn()[pri:323, instance:tests.QCStore@71423665]" name="JQC_LOC_Refinance_EOD_Payment_Txn" duration-ms="66145" started-at="2019-02-19T20:16:30Z" finished-at="2019-02-19T20:17:37Z">
+        <test-method status="PASS" signature="RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Void_Txn_Testdata()[pri:210, instance:tests.QCStore@71423665]" name="RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Void_Txn_Testdata" duration-ms="2250244" started-at="2019-02-21T08:44:03Z" finished-at="2019-02-21T09:21:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- JQC_LOC_Refinance_EOD_Payment_Txn -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@71423665]" name="getResult" is-config="true" duration-ms="188" started-at="2019-02-19T20:17:37Z" finished-at="2019-02-19T20:17:37Z">
+        </test-method> <!-- RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Void_Txn_Testdata -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@71423665]" name="getResult" is-config="true" duration-ms="198" started-at="2019-02-21T09:21:34Z" finished-at="2019-02-21T09:21:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=JQC_LOC_Refinance_EOD_Payment_Txn status=SUCCESS method=QCStore.JQC_LOC_Refinance_EOD_Payment_Txn()[pri:323, instance:tests.QCStore@71423665] output={null}]]]>
+                <![CDATA[[TestResult name=RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Void_Txn_Testdata status=SUCCESS method=QCStore.RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Void_Txn_Testdata()[pri:210, instance:tests.QCStore@71423665] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@71423665]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-02-19T20:17:37Z" finished-at="2019-02-19T20:17:42Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@71423665]" name="killProcess" is-config="true" duration-ms="5002" started-at="2019-02-21T09:21:34Z" finished-at="2019-02-21T09:21:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="FAIL" signature="Deposit_Dropdown()[pri:500, instance:tests.QCStore@71423665]" name="Deposit_Dropdown" duration-ms="51" started-at="2019-02-19T20:17:42Z" finished-at="2019-02-19T20:17:42Z">
+        <test-method status="FAIL" signature="Deposit_Dropdown()[pri:500, instance:tests.QCStore@71423665]" name="Deposit_Dropdown" duration-ms="44" started-at="2019-02-21T09:21:39Z" finished-at="2019-02-21T09:21:39Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -83,7 +83,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Deposit_Dropdown -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@71423665]" name="getResult" is-config="true" duration-ms="6" started-at="2019-02-19T20:17:42Z" finished-at="2019-02-19T20:17:42Z">
+        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@71423665]" name="getResult" is-config="true" duration-ms="2" started-at="2019-02-21T09:21:39Z" finished-at="2019-02-21T09:21:39Z">
           <params>
             <param index="0">
               <value>

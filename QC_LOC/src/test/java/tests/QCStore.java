@@ -2517,10 +2517,14 @@ public class QCStore {
 	  
 	 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 	////@Test(priority=202, groups="Ratikanta_NEOD")
 =======
 	@Test(priority=202)
 >>>>>>> jan21.1
+=======
+	//@Test(priority=202, groups="Ratikanta_NEOD")
+>>>>>>> feb1.1
 	  public static void RQC_LOC_Deposit_Return_ManualDefault_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -2599,10 +2603,14 @@ public class QCStore {
 	  
 	 		  
 <<<<<<< HEAD
+<<<<<<< HEAD
 	////@Test(priority=203, groups="Ratikanta_NEOD")
 =======
 	@Test(priority=203)
 >>>>>>> jan21.1
+=======
+	//@Test(priority=203, groups="Ratikanta_NEOD")
+>>>>>>> feb1.1
 	  public static void RQC_LOC_Deposit_Return_2ndDeposit_Clear_3rdDeposit_Return_Default_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -2698,10 +2706,14 @@ public class QCStore {
 	  
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	////@Test(priority=204, groups="Ratikanta_NEOD")
 =======
 	@Test(priority=204)
 >>>>>>> jan21.1
+=======
+	//@Test(priority=204, groups="Ratikanta_NEOD")
+>>>>>>> feb1.1
 	  public static void RQC_LOC_2missedPayment_Default_EOD_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -2780,10 +2792,14 @@ public class QCStore {
 	  
 	  
 <<<<<<< HEAD
+<<<<<<< HEAD
 	////@Test(priority=205, groups="Ratikanta_NEOD")
 =======
 	@Test(priority=205)
 >>>>>>> jan21.1
+=======
+	//@Test(priority=205, groups="Ratikanta_NEOD")
+>>>>>>> feb1.1
 	  public static void RQC_LOC_Default_DefaultPayment_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -2885,10 +2901,14 @@ public class QCStore {
 	  } 
 	  
 <<<<<<< HEAD
+<<<<<<< HEAD
 	////@Test(priority=206, groups="Ratikanta_NEOD")
 =======
 	@Test(priority=206)
 >>>>>>> jan21.1
+=======
+	//@Test(priority=206, groups="Ratikanta_NEOD")
+>>>>>>> feb1.1
 	  public static void RQC_LOC_Default_DefaultPayment_Void_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -2971,10 +2991,14 @@ public class QCStore {
 
 	  
 <<<<<<< HEAD
+<<<<<<< HEAD
 	////@Test(priority=207, groups="Ratikanta_NEOD")
 =======
 	@Test(priority=207)
 >>>>>>> jan21.1
+=======
+	//@Test(priority=207, groups="Ratikanta_NEOD")
+>>>>>>> feb1.1
 	  public static void RQC_LOC_Default_PartialDefaultPayment_Void_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -3057,10 +3081,14 @@ public class QCStore {
 	  } 
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 	////@Test(priority=208, groups="Ratikanta_NEOD")
 =======
 	@Test(priority=208)
 >>>>>>> jan21.1
+=======
+	//@Test(priority=208, groups="Ratikanta_NEOD")
+>>>>>>> feb1.1
 	  public static void RQC_LOC_Default_DefaultPayment_Return_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -3146,10 +3174,14 @@ public class QCStore {
 	  }   
 	  
 <<<<<<< HEAD
+<<<<<<< HEAD
 	////@Test(priority=209, groups="Ratikanta_NEOD")
 =======
 	@Test(priority=209)
 >>>>>>> jan21.1
+=======
+	//@Test(priority=209, groups="Ratikanta_NEOD")
+>>>>>>> feb1.1
 	  public static void RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -3237,10 +3269,14 @@ public class QCStore {
 	
 	  
 <<<<<<< HEAD
+<<<<<<< HEAD
 	////@Test(priority=210, groups="Ratikanta_NEOD")
 =======
 	@Test(priority=210)
 >>>>>>> jan21.1
+=======
+	@Test(priority=210, groups="Ratikanta_NEOD")
+>>>>>>> feb1.1
 	  public static void RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Void_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -3324,10 +3360,14 @@ public class QCStore {
 	  
 	  
 <<<<<<< HEAD
+<<<<<<< HEAD
 	  ////@Test(priority=211, groups="Ratikanta_NEOD")
 =======
 	  @Test(priority=211)
 >>>>>>> jan21.1
+=======
+	  //@Test(priority=211, groups="Ratikanta_NEOD")
+>>>>>>> feb1.1
 	  public static void RQC_LOC_PayOff_Closure_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -3401,10 +3441,14 @@ public class QCStore {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	  ////@Test(priority=212, groups="Ratikanta_NEOD")
 =======
 	  @Test(priority=212)
 >>>>>>> jan21.1
+=======
+	  //@Test(priority=212, groups="Ratikanta_NEOD")
+>>>>>>> feb1.1
 	  public static void RQC_LOC_Payment_PayOff_Closure_Void_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -3483,10 +3527,14 @@ public class QCStore {
 	  } 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	////@Test(priority=213, groups="Ratikanta_NEOD")
 =======
 	@Test(priority=213)
 >>>>>>> jan21.1
+=======
+	//@Test(priority=213, groups="Ratikanta_NEOD")
+>>>>>>> feb1.1
 	  public static void RQC_LOC_PayOff_Closure_PayoffReturn_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -3567,10 +3615,14 @@ public class QCStore {
 	  } 
 	  
 <<<<<<< HEAD
+<<<<<<< HEAD
 	////@Test(priority=214, groups="Ratikanta_NEOD")
 =======
 	@Test(priority=214)
 >>>>>>> jan21.1
+=======
+	//@Test(priority=214, groups="Ratikanta_NEOD")
+>>>>>>> feb1.1
 	  public static void RQC_LOC_PayOff_Agestore180days_AutoClosure_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -3619,7 +3671,7 @@ public class QCStore {
 							                              //RCSRLoginLogout.logout();
 							   RCSRLoginLogout.login(SSN, AppURL);
 							   RQCAgeStoreGraceDays.ageStoreGraceDays2ndTime(SSN, AppURL);
-							   //RQCAgeStoreGraceDays.age180day(SSN, AppURL);
+							                              //RQCAgeStoreGraceDays.age180day(SSN, AppURL);
 							   RCSRLoginLogout.login(SSN, AppURL);
 							   RQCCSRAutoClosure.autoclosure(SSN, AppURL);
 							   RCSRLoginLogout.login(SSN, AppURL);
@@ -3650,10 +3702,14 @@ public class QCStore {
 	  
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 	////@Test(priority=215, groups="EOD")
 =======
 	@Test(priority=215)
 >>>>>>> jan21.1
+=======
+	//@Test(priority=215, groups="Ratikanta_EOD")
+>>>>>>> feb1.1
 	  public static void RQC_LOC_ManualDefault_EOD_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -3732,10 +3788,14 @@ public class QCStore {
 	
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 	////@Test(priority=216, groups="Ratikanta_NEOD")
 =======
 	@Test(priority=216)
 >>>>>>> jan21.1
+=======
+	//@Test(priority=216, groups="Ratikanta_EOD")
+>>>>>>> feb1.1
 	  public static void RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata() throws Exception {
 		  try
 		  {
@@ -5383,9 +5443,13 @@ public class QCStore {
 			}
 		}
 <<<<<<< HEAD
+<<<<<<< HEAD
 		@Test(priority=323,enabled = true)
 =======
 		@Test(priority=323,enabled = true, groups="Janaki_EOD")
+>>>>>>> feb1.1
+=======
+		//@Test(priority=323,enabled = true, groups="Janaki_EOD")
 >>>>>>> feb1.1
 		public static void JQC_LOC_Refinance_EOD_Payment_Txn() throws Exception {
 			try

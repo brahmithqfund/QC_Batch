@@ -104,13 +104,13 @@
 >>>>>>> jan21.1
 =======
 			<item value="Ratikanta"/>
+			<item value="prop"/>
+			<item value="janaki"/>
+			<item value="RATIKANTA"/>
 			<item value="ADMIN_URL"/>
 			<item value="ratikanta"/>
 			<item value="URL"/>
 			<item value="E:\QC_Batch\QC_ILP\RTestData\QCStore\RTestData_Monthly"/>
-			<item value="http://192.168.2.203"/>
-			<item value="//@Test"/>
-			<item value="Rprop"/>
 		</list>
 		<list key="replacehistory">
 			<item value="//@Test"/>
