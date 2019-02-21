@@ -10,10 +10,18 @@
 .recommenders/
 .sonarlint/
 RemoteSystemsTempFiles/
+<<<<<<< HEAD
 .xmi
-*.log*
+.snap
+<<<<<<< HEAD
+.log
 .zip
-*.metadata/*
-*.xmi*
-*.snap*
+.metadata/*
+=======
+>>>>>>> feb1
 
+=======
+*.xmi
+.snap
+.metadata/*
+>>>>>>> jan21.1
