@@ -6,7 +6,14 @@
   <run>
    <!-- <include name="EOD"/>-->
      <!--  <include name="Rebate"/>   -->
+<<<<<<< HEAD
    <include name="1stBatch"/>   
+=======
+  <!--  <include name="1stBatch"/> -->   
+   <!-- <include name="Janaki"/>  -->
+  <!--  <include name="Janaki1"/>  -->
+    <include name="Anoop"/> 
+>>>>>>> feb1
   </run>
   </groups>
     <classes>
