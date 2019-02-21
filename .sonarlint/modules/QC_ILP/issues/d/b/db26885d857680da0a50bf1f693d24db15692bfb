@@ -1,39 +1,0 @@
-
-?squid:S1148e"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-ssquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹û÷×ûÿÿÿÿ
-V
-squid:S106q";Replace this usage of System.out or System.err by a logger.(µñÌ¸øÿÿÿÿ
-Asquid:S1166c"%Either log or rethrow this exception.(ñ“Š±üÿÿÿÿ
-Isquid:UselessParenthesesCheckr"!Remove those useless parentheses.(‰Œ€e
-ssquid:S00117&"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°ý¨‰úÿÿÿÿ
-bsquid:S1192"FDefine a constant instead of duplicating this literal "Login" 3 times.(÷º¢°üÿÿÿÿ
-gsquid:CommentedOutCodeLine?"<This block of commented-out lines of code should be removed.(õÝ×Íúÿÿÿÿ
-hsquid:CommentedOutCodeLine†"<This block of commented-out lines of code should be removed.(”›Ùøÿÿÿÿÿ
-V
-squid:S106";Replace this usage of System.out or System.err by a logger.(£ñð”ýÿÿÿÿ
-ssquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹û÷×ûÿÿÿÿ
-V
-squid:S106!";Replace this usage of System.out or System.err by a logger.(ÞÛõ±üÿÿÿÿ
-bsquid:CommentedOutCodeLine8"<This block of commented-out lines of code should be removed.(´ì¬§
-Bsquid:S1166„"%Either log or rethrow this exception.(¼Ôîàùÿÿÿÿ
-@squid:S1148Š"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-Wsquid:UselessImportCheck
-"3Remove this unused import 'org.openqa.selenium.By'.(ÿŠÞ›
-ssquid:S001177"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö£È½úÿÿÿÿ
-V
-squid:S106+";Replace this usage of System.out or System.err by a logger.(¦¼¦ãúÿÿÿÿ
-Asquid:S1172j"*Remove this unused method parameter "SSN".(ø¸íÈ
-i
-squid:S1341"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(úäìÅÿÿÿÿÿ
-V
-squid:S106)";Replace this usage of System.out or System.err by a logger.(©ø…­úÿÿÿÿ
-Q
-squid:S106t";Replace this usage of System.out or System.err by a logger.(˜ã†¹
-nsquid:S00117j"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø¸íÈ
-gsquid:S11321"KMove the "local" string literal on the left side of this string comparison.(úäìÅÿÿÿÿÿ
-nsquid:S00117j"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø¸íÈ
-Nsquid:S13137"2Make this IP "192.168.1.182" address configurable.(Ö£È½úÿÿÿÿ
-Q
-squid:S106-";Replace this usage of System.out or System.err by a logger.(ÕŒô•
-ssquid:S00117,"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö¼Õ÷üÿÿÿÿ
-nsquid:S00117 "VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ïñ©

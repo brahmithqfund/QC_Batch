@@ -1,54 +1,0 @@
-
-Psquid:S1197Î"8Move the array designator from the variable to the type.(±èºÚ
-esquid:S1192"NDefine a constant instead of duplicating this literal "ReturnPosting" 3 times.(Á•Ãˆ
-fsquid:S1192E"JDefine a constant instead of duplicating this literal "mainFrame" 9 times.(ËøÇªýÿÿÿÿ
-asquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¥ÿäj
-gsquid:CommentedOutCodeLine)"<This block of commented-out lines of code should be removed.(„ŽèÀüÿÿÿÿ
-bsquid:CommentedOutCodeLineW"<This block of commented-out lines of code should be removed.(Ÿ•¿
-hsquid:CommentedOutCodeLineª"<This block of commented-out lines of code should be removed.(¦œüóûÿÿÿÿ
-csquid:CommentedOutCodeLineÍ"<This block of commented-out lines of code should be removed.(ÛÅú©
-hsquid:CommentedOutCodeLine„"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
-d
-squid:S134@"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(¦ª¦Å
-j
-squid:S134“"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(¥ÑÈ°ÿÿÿÿÿ
-W
-squid:S106Ï";Replace this usage of System.out or System.err by a logger.(þß˜‚ûÿÿÿÿ
-W
-squid:S106Ò";Replace this usage of System.out or System.err by a logger.(Œ…ëÀùÿÿÿÿ
-R
-squid:S106è";Replace this usage of System.out or System.err by a logger.(ª‹ñÿ
-bsquid:S1132@"KMove the "CHECK" string literal on the left side of this string comparison.(¦ª¦Å
-fsquid:S1132“"IMove the "ACH" string literal on the left side of this string comparison.(¥ÑÈ°ÿÿÿÿÿ
-Osquid:S1135‰"2Complete the task associated to this TODO comment.(ÕÌ®þÿÿÿÿ
-?squid:S1481""(Remove this unused "PIN" local variable.(¿âÐ¬
-Isquid:S1172"-Remove this unused method parameter "AppURL".(ÈðäÖøÿÿÿÿ
-Bsquid:S1166ˆ"%Either log or rethrow this exception.(ñ“Š±üÿÿÿÿ
-Nsquid:S1854""7Remove this useless assignment to local variable "PIN".(¿âÐ¬
-ssquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÈðäÖøÿÿÿÿ
-ssquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÈðäÖøÿÿÿÿ
-nsquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ïñ©
-nsquid:S00117""VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿âÐ¬
-msquid:S00117#"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( Õ›)
-nsquid:S00117$"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íô²Ž
-ssquid:S00117%"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º÷»éþÿÿÿÿ
-osquid:S00117Î"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±èºÚ
-osquid:S00117Ñ"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Í­Ì°
-nsquid:S00117Ó"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨‰•t
-osquid:S00117Ô"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í¾Ï†
-osquid:S00117å"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½÷ÈÃ
-nsquid:S00117æ"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò©¯B
-tsquid:S00117ç"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·™½Âùÿÿÿÿ
-msquid:UselessImportCheck"IRemove this unused import 'org.openqa.selenium.support.ui.WebDriverWait'.(¥÷ó
-ksquid:UselessImportCheck"GRemove this unused import 'com.relevantcodes.extentreports.ExtentTest'.(ÞÁÝÌ
-Ysquid:UselessImportCheck	"5Remove this unused import 'org.openqa.selenium.Keys'.(§ŽÕ
-wsquid:UselessImportCheck"NRemove this unused import 'org.openqa.selenium.support.ui.ExpectedConditions'.(û€Èéúÿÿÿÿ
-[squid:UselessImportCheck"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ
-^squid:UselessImportCheck":Remove this unused import 'java.util.concurrent.TimeUnit'.(Æ™þ
-ssquid:UselessImportCheck"JRemove this unused import 'org.openqa.selenium.ie.InternetExplorerDriver'.(íí‡ÿÿÿÿÿ
-nsquid:UselessImportCheck"JRemove this unused import 'com.relevantcodes.extentreports.ExtentReports'.(èþÛÑ
-lsquid:UselessImportCheck
-"HRemove this unused import 'org.openqa.selenium.NoAlertPresentException'.(²Â•ä
-Zsquid:UselessImportCheck"6Remove this unused import 'org.openqa.selenium.Alert'.(Àã¥‰
-Usquid:UselessImportCheck"1Remove this unused import 'java.text.DateFormat'.(÷Œá¼
-@squid:S1148Š"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
