@@ -246,7 +246,7 @@ public class JQCEODDeposit extends QCStore{
 						test.log(LogStatus.PASS, "Captured Store number is"+encryption_store_no);
 						String mainwindow=driver.getWindowHandle();
 
-						QCAdminEncryption.getEncryption(driver,SSN, AppURL); 
+						JQCAdminEncryption.getEncryption(driver,SSN, AppURL); 
 
 
 

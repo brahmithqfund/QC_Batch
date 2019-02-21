@@ -4799,14 +4799,14 @@ public class QCStore {
 			
 			catch(Exception e)
 			{
-				test.log(LogStatus.ERROR, e);
+				
 				System.out.println("Object proprties file not found");
 			}
 			
 
 			try{ 
 				Jreader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_PDL/src/test/java/tests/JObjects.properties"));
+						new FileReader("E:/QC_Batch/QC_PDL/src/test/java/tests/JObjects.properties"));
 				Jprop = new Properties();
 				Jprop.load(Jreader);
 				Jreader.close();
@@ -4819,7 +4819,7 @@ public class QCStore {
 			
 			catch(Exception e)
 			{
-				test.log(LogStatus.ERROR, e);
+				
 				System.out.println("Object proprties file not found");
 			}
 			
@@ -4839,7 +4839,7 @@ public class QCStore {
 			
 			catch(Exception e)
 			{
-				test.log(LogStatus.ERROR, e);
+				
 				System.out.println("Object proprties file not found");
 			}
 			
@@ -4859,7 +4859,7 @@ public class QCStore {
 			
 			catch(Exception e)
 			{
-				test.log(LogStatus.ERROR, e);
+				
 				System.out.println("Object proprties file not found");
 			}
 		

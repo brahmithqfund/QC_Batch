@@ -2070,6 +2070,7 @@ public class QCStore {
 			try{ 
 				Jreader = new BufferedReader(
 
+
 						new FileReader("E:/QC_Batch/QC_TLP/src/test/java/tests/JObjects.properties"));
 
 				Jprop = new Properties();
