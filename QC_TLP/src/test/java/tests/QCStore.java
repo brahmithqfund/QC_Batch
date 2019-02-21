@@ -2036,11 +2036,9 @@ public class QCStore {
 				}}}
 		
 
-<<<<<<< HEAD
+
 	@BeforeClass(alwaysRun=true)
-=======
-	@BeforeClass(alwaysRun = true)
->>>>>>> jan21.1
+
 	public void setup() throws IOException {
 
 		try {
@@ -2074,11 +2072,9 @@ public class QCStore {
 
 			try{ 
 				Jreader = new BufferedReader(
-<<<<<<< HEAD
-						new FileReader("D:/QC_Batch/QC_TLP/src/test/java/tests/JObjects.properties"));
-=======
+
 						new FileReader("E:/QC_Batch/QC_TLP/src/test/java/tests/JObjects.properties"));
->>>>>>> feb1
+
 				Jprop = new Properties();
 				Jprop.load(Jreader);
 				Jreader.close();
@@ -2091,11 +2087,7 @@ public class QCStore {
 			
 			catch(Exception e)
 			{
-<<<<<<< HEAD
-				
-=======
-			
->>>>>>> jan21.1
+
 				System.out.println("Object proprties file not found");
 			}
 			
@@ -2153,11 +2145,9 @@ public class QCStore {
 
 	}
 
-<<<<<<< HEAD
+
 	@BeforeMethod(alwaysRun=true)
-=======
-	@BeforeMethod(alwaysRun = true)
->>>>>>> jan21.1
+
 	public void killProcess() throws Exception {
 
 		try {
@@ -2186,11 +2176,9 @@ public class QCStore {
 		return destination;
 	}
 
-<<<<<<< HEAD
+
 	@AfterMethod(alwaysRun=true)
-=======
-	@AfterMethod(alwaysRun = true)
->>>>>>> jan21.1
+
 	public void getResult(ITestResult result) throws Exception {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			test.log(LogStatus.FAIL, "Test Case Failed is " + result.getName());
@@ -2211,11 +2199,9 @@ public class QCStore {
 
 	}
 
-<<<<<<< HEAD
-	//@AfterMethod
-=======
+
 	@AfterMethod(alwaysRun = true)
->>>>>>> jan21.1
+
 
 	public void endReport() {
 

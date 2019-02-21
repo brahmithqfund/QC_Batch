@@ -2745,11 +2745,9 @@ public class QCStore {
 
 	//Janaki scenarios
 	
-<<<<<<< HEAD
+
 	@Test(priority=0,enabled=true,groups="Janaki")
-=======
-	//@Test(priority=0,enabled=true)
->>>>>>> jan21.1
+
 		public static void JQC_AgeStore_Deposit_PrePayment_Txn() throws Exception {
 			try
 			{
@@ -4802,7 +4800,7 @@ public class QCStore {
 			
 			catch(Exception e)
 			{
-				test.log(LogStatus.ERROR, e);
+				
 				System.out.println("Object proprties file not found");
 			}
 			
@@ -4822,7 +4820,7 @@ public class QCStore {
 			
 			catch(Exception e)
 			{
-				test.log(LogStatus.ERROR, e);
+				
 				System.out.println("Object proprties file not found");
 			}
 			
@@ -4842,7 +4840,7 @@ public class QCStore {
 			
 			catch(Exception e)
 			{
-				test.log(LogStatus.ERROR, e);
+				
 				System.out.println("Object proprties file not found");
 			}
 			
@@ -4862,7 +4860,7 @@ public class QCStore {
 			
 			catch(Exception e)
 			{
-				test.log(LogStatus.ERROR, e);
+				
 				System.out.println("Object proprties file not found");
 			}
 		
