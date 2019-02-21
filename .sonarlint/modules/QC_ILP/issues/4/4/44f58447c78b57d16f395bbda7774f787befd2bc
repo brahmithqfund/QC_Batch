@@ -1,12 +1,0 @@
-
-ssquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©ª«Âüÿÿÿÿ
-ssquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©ª«Âüÿÿÿÿ
-gsquid:CommentedOutCodeLineN"<This block of commented-out lines of code should be removed.(ý…‚çýÿÿÿÿ
-ssquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„¾˜ þÿÿÿÿ
-nsquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ïñ©
-n
-squid:S135"YReduce the total number of break and continue statements in this loop to use at most one.(žŸÒ	
-<squid:S1166F"%Either log or rethrow this exception.(¬Ù¨Í
-nsquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûŒõ·
-Isquid:S1172"-Remove this unused method parameter "AppURL".(©ª«Âüÿÿÿÿ
-Asquid:S00108F")Either remove or fill this block of code.(¬Ù¨Í
