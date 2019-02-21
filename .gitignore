@@ -10,14 +10,10 @@
 .recommenders/
 .sonarlint/
 RemoteSystemsTempFiles/
-
 .xmi
-
-
-.log
+*.log*
 .zip
-.metadata/*
-
-*.xmi
-*.snap
+*.metadata/*
+*.xmi*
+*.snap*
 
