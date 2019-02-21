@@ -136,6 +136,7 @@ public class ACSRACHDeposit extends QCStore {
 				test.log(LogStatus.INFO, "<FONT color=green>  ****Scheduler completed******");
 				test.log(LogStatus.INFO, "Logout Successfully");
 				test.log(LogStatus.INFO, "************************************************************");
+				driver.close();
 				//CSRLoginLogout.login();
 
 			}}}
