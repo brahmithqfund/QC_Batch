@@ -4809,7 +4809,7 @@ public class QCStore {
 
 			try{ 
 				Jreader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_PDL/src/test/java/tests/JObjects.properties"));
+						new FileReader("E:/QC_Batch/QC_PDL/src/test/java/tests/JObjects.properties"));
 				Jprop = new Properties();
 				Jprop.load(Jreader);
 				Jreader.close();

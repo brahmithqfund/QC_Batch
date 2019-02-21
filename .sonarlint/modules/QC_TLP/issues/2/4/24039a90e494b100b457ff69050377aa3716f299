@@ -1,26 +1,0 @@
-
-fsquid:S1192@"JDefine a constant instead of duplicating this literal "mainFrame" 5 times.(ËøÇªıÿÿÿÿ
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(»ßö¨şÿÿÿÿ
-t
-squid:S135"YReduce the total number of break and continue statements in this loop to use at most one.(˜³õäøÿÿÿÿ
-i
-squid:S134""NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(¹‘éÿÿÿÿÿ
-`squid:S1132_"IMove the "ACH" string literal on the left side of this string comparison.(ƒÛÕá
-gsquid:S1132~"PMove the "DEBIT CARD" string literal on the left side of this string comparison.(Ô¾·…
-Osquid:S1135¤"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ
-isquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(›çóº
-Dsquid:S1172"-Remove this unused method parameter "AppURL".(›çóº
-Bsquid:S1166£"%Either log or rethrow this exception.(ñ“Š±üÿÿÿÿ
-nsquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›çóº
-nsquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›çóº
-nsquid:S00117!"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ïñ©
-ssquid:S00117%"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰Ùìàûÿÿÿÿ
-ssquid:S00117'"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊÊâıÿÿÿÿ
-nsquid:S00117)"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã–Ò
-ssquid:S00117*"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü¶„Îşÿÿÿÿ
-ssquid:S00117+"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İøúÇıÿÿÿÿ
-ssquid:S001172"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ‘¡Üøÿÿÿÿ
-nsquid:S00117W"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊŠ«Ò
-lsquid:UselessImportCheck"HRemove this unused import 'org.openqa.selenium.NoAlertPresentException'.(²Â•ä
-Zsquid:UselessImportCheck"6Remove this unused import 'org.openqa.selenium.Alert'.(Àã¥‰
-@squid:S1148¥"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
