@@ -2069,11 +2069,9 @@ public class QCStore {
 
 			try{ 
 				Jreader = new BufferedReader(
-<<<<<<< HEAD
-						new FileReader("D:/QC_Batch/QC_TLP/src/test/java/tests/JObjects.properties"));
-=======
+
 						new FileReader("E:/QC_Batch/QC_TLP/src/test/java/tests/JObjects.properties"));
->>>>>>> feb1
+
 				Jprop = new Properties();
 				Jprop.load(Jreader);
 				Jreader.close();
