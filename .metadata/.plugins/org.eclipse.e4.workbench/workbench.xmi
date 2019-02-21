@@ -73,14 +73,14 @@
           <tags>persp.showIn:org.eclipse.tm.terminal.view.ui.TerminalsView</tags>
           <tags>persp.actionSet:org.eclipse.wst.ws.explorer.explorer</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_neL8sTREEemwfNuwzI4jXg" selectedElement="_neL8sjREEemwfNuwzI4jXg" horizontal="true">
-            <children xsi:type="basic:PartStack" xmi:id="_neL8sjREEemwfNuwzI4jXg" elementId="topLeft" containerData="1477" selectedElement="_neL8szREEemwfNuwzI4jXg">
+            <children xsi:type="basic:PartStack" xmi:id="_neL8sjREEemwfNuwzI4jXg" elementId="topLeft" containerData="1221" selectedElement="_neL8szREEemwfNuwzI4jXg">
               <tags>active</tags>
               <children xsi:type="advanced:Placeholder" xmi:id="_neL8szREEemwfNuwzI4jXg" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_ndTMFzREEemwfNuwzI4jXg"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_neL8tDREEemwfNuwzI4jXg" elementId="org.eclipse.ui.views.ResourceNavigator" toBeRendered="false" ref="_ndTMGDREEemwfNuwzI4jXg"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_neL8tTREEemwfNuwzI4jXg" elementId="org.eclipse.jdt.ui.TypeHierarchy" toBeRendered="false" ref="_ndTMGTREEemwfNuwzI4jXg"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_neL8tjREEemwfNuwzI4jXg" elementId="org.eclipse.jdt.ui.PackagesView" toBeRendered="false" ref="_neCywDREEemwfNuwzI4jXg"/>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_neL8tzREEemwfNuwzI4jXg" containerData="8523" selectedElement="_neL8uDREEemwfNuwzI4jXg">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_neL8tzREEemwfNuwzI4jXg" containerData="8779" selectedElement="_neL8uDREEemwfNuwzI4jXg">
               <children xsi:type="basic:PartSashContainer" xmi:id="_neL8uDREEemwfNuwzI4jXg" containerData="7000" selectedElement="_neL8uTREEemwfNuwzI4jXg" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_neL8uTREEemwfNuwzI4jXg" elementId="org.eclipse.ui.editorss" containerData="7000" ref="_ndJa4DREEemwfNuwzI4jXg"/>
                 <children xsi:type="basic:PartStack" xmi:id="_neL8ujREEemwfNuwzI4jXg" elementId="topRight" containerData="3000" selectedElement="_neL8uzREEemwfNuwzI4jXg">
@@ -393,7 +393,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_nQNLEjREEemwfNuwzI4jXg" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_r204JzXJEemzh_YdXvdlXw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_m_BVLjREEemwfNuwzI4jXg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_XI2XxzXKEemjccPPXhnijQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_m_BVLjREEemwfNuwzI4jXg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_nQNLEzREEemwfNuwzI4jXg" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -426,7 +426,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_nQNLFzREEemwfNuwzI4jXg" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_r204MTXJEemzh_YdXvdlXw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_m_BU1TREEemwfNuwzI4jXg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_XI2X0TXKEemjccPPXhnijQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_m_BU1TREEemwfNuwzI4jXg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ssbf4DXIEemJwYz8dxGgVg" elementId="org.eclipse.jdt.ui.CompilationUnitEditor" visible="false">
         <tags>Draggable</tags>
