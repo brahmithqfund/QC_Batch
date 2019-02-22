@@ -2,11 +2,13 @@ package tests;
 //This class contains methods for login and logout functionality
 
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.relevantcodes.extentreports.LogStatus;
 
@@ -28,6 +30,7 @@ public class ACSRLoginLogout extends QCStore{
 					String uname=TestData.getCellData(sheetName,"UserName",row);
 					passwrd=TestData.getCellData(sheetName,"Password",row);
 					Storeid=TestData.getCellData(sheetName,"StoreID",row);
+					String x=Aprop.getProperty("login_method");
 					if(Aprop.getProperty("login_method").equalsIgnoreCase("local"))
 					{
 						driver = new InternetExplorerDriver();
@@ -40,8 +43,13 @@ public class ACSRLoginLogout extends QCStore{
 						 driver = new RemoteWebDriver(new URL(Node), cap);	
 					}
 					//driver.get(AppURL);
-					driver.get("https://qcuat.qfund.net/cc/demoIndex.do");
-					test.log(LogStatus.PASS, "Application Launched with URL ");
+					   
+					    wait = new WebDriverWait(driver, 40000);
+						driver.manage().window().maximize();
+						driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+					
+						driver.get("http://192.168.2.203/cc/demoIndex.do");
+					    test.log(LogStatus.PASS, "Application Launched with URL ");
 					
 					String passwordId = "loginRequestBean.password";
 					String StoreId = "loginRequestBean.locNbr";
@@ -59,7 +67,7 @@ public class ACSRLoginLogout extends QCStore{
 
 					test.log(LogStatus.INFO, "<FONT color=green> Login Sucessfully");
 					test.log(LogStatus.INFO, "******************************************************** ");
-				
+				Thread.sleep(4000);
 				}	
 
 			}

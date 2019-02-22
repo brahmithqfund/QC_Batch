@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 204c31dbc0e0b4ef5ce1fe20208426e8612bfd9b
 <testsuite hostname="Ratikanta-pc" ignored="1" name="Test" tests="1" failures="0" timestamp="18 Feb 2019 07:34:43 GMT" time="30.005" errors="0">
@@ -21,6 +22,86 @@
   <testcase name="LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn" time="999.235" classname="tests.QCStore"/>
   <testcase name="LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn" time="112.349" classname="tests.QCStore"/>
   <testcase name="LOC_ACHDeposit_EODs_Return_Txn" time="8.747" classname="tests.QCStore"/>
+=======
+<testsuite hostname="qtlsys2-124" ignored="101" name="Test" tests="13" failures="5" timestamp="21 Feb 2019 05:54:56 GMT" time="1008.155" errors="0">
+  <testcase name="@AfterMethod getResult" time="0.0" classname="tests.QCStore">
+    <failure type="org.openqa.selenium.NoSuchSessionException" message="Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &amp;apos;3.14.0&amp;apos;, revision: &amp;apos;aacccce0&amp;apos;, time: &amp;apos;2018-08-02T20:19:58.91Z&amp;apos;
+System info: host: &amp;apos;QTLSYS2-124&amp;apos;, ip: &amp;apos;192.168.2.124&amp;apos;, os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.8.0_171&amp;apos;
+Driver info: driver.version: RemoteWebDriver">
+      <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'QTLSYS2-124', ip: '192.168.2.124', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+at tests.QCStore.getScreenhot(QCStore.java:7378)
+at tests.QCStore.getResult(QCStore.java:7394)
+... Removed 28 stack frames]]>
+    </failure>
+  </testcase> <!-- @AfterMethod getResult -->
+  <testcase name="MinLocAmounts" time="112.519" classname="tests.QCStore"/>
+  <testcase name="MaxLocAmounts" time="85.941" classname="tests.QCStore"/>
+  <testcase name="ILP_maxloanCount" time="47.784" classname="tests.QCStore">
+    <failure type="java.lang.NullPointerException">
+      <![CDATA[java.lang.NullPointerException
+at tests.ExcelNew.getLastRow(ExcelNew.java:84)
+at tests.LOCMaxloanCount.newLoan(LOCMaxloanCount.java:77)
+at tests.QCStore.ILP_maxloanCount(QCStore.java:5981)
+... Removed 25 stack frames]]>
+    </failure>
+  </testcase> <!-- ILP_maxloanCount -->
+  <testcase name="NewLoanWeekly_Duedatevalidation" time="0.054" classname="tests.QCStore"/>
+  <testcase name="NewLoanSemiMonthly_Duedatevalidation" time="45.7" classname="tests.QCStore">
+    <failure type="java.lang.NullPointerException">
+      <![CDATA[java.lang.NullPointerException
+at tests.ExcelNew.getLastRow(ExcelNew.java:84)
+at tests.LOCMaxloanCount.newLoan(LOCMaxloanCount.java:77)
+at tests.QCStore.NewLoanSemiMonthly_Duedatevalidation(QCStore.java:6045)
+... Removed 25 stack frames]]>
+    </failure>
+  </testcase> <!-- NewLoanSemiMonthly_Duedatevalidation -->
+  <testcase name="NewLoanMonthly_Duedatevalidation" time="46.673" classname="tests.QCStore">
+    <failure type="java.lang.NullPointerException">
+      <![CDATA[java.lang.NullPointerException
+at tests.ExcelNew.getLastRow(ExcelNew.java:84)
+at tests.LOCMaxloanCount.newLoan(LOCMaxloanCount.java:77)
+at tests.QCStore.NewLoanMonthly_Duedatevalidation(QCStore.java:6074)
+... Removed 25 stack frames]]>
+    </failure>
+  </testcase> <!-- NewLoanMonthly_Duedatevalidation -->
+  <testcase name="NewLoanBiweeklyPaymentDuedate" time="46.675" classname="tests.QCStore">
+    <failure type="java.lang.NullPointerException">
+      <![CDATA[java.lang.NullPointerException
+at tests.ExcelNew.getLastRow(ExcelNew.java:84)
+at tests.LOCMaxloanCount.newLoan(LOCMaxloanCount.java:77)
+at tests.QCStore.NewLoanBiweeklyPaymentDuedate(QCStore.java:6103)
+... Removed 25 stack frames]]>
+    </failure>
+  </testcase> <!-- NewLoanBiweeklyPaymentDuedate -->
+  <testcase name="NewLoanWeekly" time="141.736" classname="tests.QCStore"/>
+  <testcase name="NewLoanSemiMonthly" time="122.781" classname="tests.QCStore"/>
+  <testcase name="NewLoanMonthly" time="115.54" classname="tests.QCStore"/>
+  <testcase name="NewLoanBiweekly" time="167.796" classname="tests.QCStore"/>
+  <testcase name="AReviseCredit_IncreaseIncome" time="0.001" classname="tests.QCStore">
+    <failure type="java.io.FileNotFoundException" message="D:\QC_Batch\QC_LOC\TestData\QCStore\ALOC\QC_ AReviseCredit_IncreaseIncome.xls (The system cannot find the file specified)">
+      <![CDATA[java.io.FileNotFoundException: D:\QC_Batch\QC_LOC\TestData\QCStore\ALOC\QC_ AReviseCredit_IncreaseIncome.xls (The system cannot find the file specified)
+at java.io.FileInputStream.open0(Native Method)
+at java.io.FileInputStream.open(FileInputStream.java:195)
+at java.io.FileInputStream.<init>(FileInputStream.java:138)
+at java.io.FileInputStream.<init>(FileInputStream.java:93)
+at tests.ExcelNew.<init>(ExcelNew.java:35)
+at tests.QCStore.AReviseCredit_IncreaseIncome(QCStore.java:6237)
+... Removed 25 stack frames]]>
+    </failure>
+  </testcase> <!-- AReviseCredit_IncreaseIncome -->
+  <testcase name="AReviseCredit_PayofffIncreaseIncome" time="0.0" classname="tests.QCStore">
+    <skipped/>
+  </testcase> <!-- AReviseCredit_PayofffIncreaseIncome -->
+>>>>>>> QCH1.1
   <testcase name="JQC_LOC_Refinance_StepSame_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_Refinance_StepSame_Txn -->
@@ -66,9 +147,6 @@
   <testcase name="DrawAndEOD" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- DrawAndEOD -->
-  <testcase name="MaxLocAmounts" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- MaxLocAmounts -->
   <testcase name="JQC_LOC_GreaterThan_MinPayment_Void_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_GreaterThan_MinPayment_Void_Txn -->
@@ -84,9 +162,6 @@
   <testcase name="JQC_LOC_New_Loan_GraceDay_Rescind_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_New_Loan_GraceDay_Rescind_Txn -->
-  <testcase name="MinLocAmounts" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- MinLocAmounts -->
   <testcase name="EODOnDueDate" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- EODOnDueDate -->
@@ -108,9 +183,6 @@
   <testcase name="LOC_Payment_Void_PayOff_Void_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- LOC_Payment_Void_PayOff_Void_Txn -->
-  <testcase name="NewLoanWeekly" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- NewLoanWeekly -->
   <testcase name="JQC_LOC_New_Loan_Void_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_New_Loan_Void_Txn -->
@@ -126,12 +198,12 @@
   <testcase name="LOC_monthly_NextPay_NotOn_End_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- LOC_monthly_NextPay_NotOn_End_Txn -->
+  <testcase name="LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn -->
   <testcase name="JQC_LOC_DueDate_LessThan_MinPayment_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_DueDate_LessThan_MinPayment_Txn -->
-  <testcase name="NewLoanSemiMonthly" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- NewLoanSemiMonthly -->
   <testcase name="JQC_LOC_LessThan_MinPayment_Viod_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_LessThan_MinPayment_Viod_Txn -->
@@ -153,24 +225,12 @@
   <testcase name="RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata -->
-  <testcase name="NewLoanMonthly_Duedatevalidation" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- NewLoanMonthly_Duedatevalidation -->
-  <testcase name="ILP_maxloanCount" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- ILP_maxloanCount -->
-  <testcase name="NewLoanSemiMonthly_Duedatevalidation" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- NewLoanSemiMonthly_Duedatevalidation -->
   <testcase name="RQC_LOC_Default_DefaultPayment_Txn_Testdata" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- RQC_LOC_Default_DefaultPayment_Txn_Testdata -->
   <testcase name="LOC_Payment_Draw_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- LOC_Payment_Draw_Txn -->
-  <testcase name="AReviseCredit_PayofffIncreaseIncome" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- AReviseCredit_PayofffIncreaseIncome -->
   <testcase name="RQC_LOC_PayOff_Closure_PayoffReturn_Txn_Testdata" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- RQC_LOC_PayOff_Closure_PayoffReturn_Txn_Testdata -->
@@ -180,6 +240,9 @@
   <testcase name="LOC_Writeoff" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- LOC_Writeoff -->
+  <testcase name="LOC_Deposit_Return_Writeoff" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- LOC_Deposit_Return_Writeoff -->
   <testcase name="JQC_LOC_New_Loan_After_RescindDays_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_New_Loan_After_RescindDays_Txn -->
@@ -273,24 +336,24 @@
   <testcase name="LOC_Payment_GraceDays_PayOff_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- LOC_Payment_GraceDays_PayOff_Txn -->
+  <testcase name="LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn -->
   <testcase name="LOC_Biweekly_NextPay_NotOn_End_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- LOC_Biweekly_NextPay_NotOn_End_Txn -->
   <testcase name="LOC_PayOff_On_DueDate_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- LOC_PayOff_On_DueDate_Txn -->
-  <testcase name="NewLoanBiweeklyPaymentDuedate" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- NewLoanBiweeklyPaymentDuedate -->
-  <testcase name="NewLoanBiweekly" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- NewLoanBiweekly -->
   <testcase name="JQC_LOC_Payment_void_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_Payment_void_Txn -->
   <testcase name="LOC_Bankrupt_Writeoff_Dismissed" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- LOC_Bankrupt_Writeoff_Dismissed -->
+  <testcase name="LOC_ACHDeposit_EODs_Return_Txn" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- LOC_ACHDeposit_EODs_Return_Txn -->
   <testcase name="JQC_LOC_GreaterThan_MinPayment_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_GreaterThan_MinPayment_Txn -->
@@ -300,12 +363,6 @@
   <testcase name="SQC_LOC_Deposit_Bulk" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- SQC_LOC_Deposit_Bulk -->
-  <testcase name="NewLoanWeekly_Duedatevalidation" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- NewLoanWeekly_Duedatevalidation -->
-  <testcase name="NewLoanMonthly" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- NewLoanMonthly -->
   <testcase name="LOC_PartialWriteoffRecoveryVoid" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- LOC_PartialWriteoffRecoveryVoid -->
@@ -324,9 +381,6 @@
   <testcase name="JQC_LOC_DueDate_GreaterThan_MinPayment_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_DueDate_GreaterThan_MinPayment_Txn -->
-  <testcase name="AReviseCredit_IncreaseIncome" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- AReviseCredit_IncreaseIncome -->
   <testcase name="MidDay_Deposit" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- MidDay_Deposit -->
@@ -351,6 +405,7 @@
   <testcase name="JQC_LOC_Refinance_CABPayment_Return_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_Refinance_CABPayment_Return_Txn -->
+<<<<<<< HEAD
 >>>>>>> jan21.1
 =======
 <testsuite hostname="qtlsys2-124" ignored="0" name="Test" tests="2" failures="1" timestamp="19 Feb 2019 08:59:19 GMT" time="912.976" errors="0">
@@ -478,4 +533,6 @@ at tests.QCStore.SQC_LOC_Deposit_Bulk(QCStore.java:6485)
 >>>>>>> QCH1.1
 =======
 >>>>>>> 204c31dbc0e0b4ef5ce1fe20208426e8612bfd9b
+=======
+>>>>>>> QCH1.1
 </testsuite> <!-- Test -->

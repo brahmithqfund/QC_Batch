@@ -2746,7 +2746,13 @@ public class QCStore {
 
 	//Janaki scenarios
 	
+<<<<<<< HEAD
 	@Test(priority=0,enabled=true,groups="Janaki")
+=======
+
+	@Test(priority=0,enabled=true,groups="Janaki")
+
+>>>>>>> QCH1.1
 		public static void JQC_AgeStore_Deposit_PrePayment_Txn() throws Exception {
 			try
 			{
