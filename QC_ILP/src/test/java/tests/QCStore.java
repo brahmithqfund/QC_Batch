@@ -3013,6 +3013,7 @@ public class QCStore {
 		}
 	}
 
+
 	@BeforeClass(alwaysRun = true)
 	public void setup() throws IOException {
 
@@ -3122,7 +3123,7 @@ public class QCStore {
 
 	}
 
-	@BeforeMethod(alwaysRun = true)
+@BeforeMethod(alwaysRun = true)
 
 	public void killProcess() throws Exception {
 

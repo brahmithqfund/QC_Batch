@@ -121,6 +121,7 @@ public class QCStore {
 	private static Object rescind;
 
 
+
 	// Brahmith scenarios
 
 		@Test(priority = 113, groups = { "1st Batch" })
@@ -174,7 +175,9 @@ public class QCStore {
 			}
 		}
 
+
 		@Test(priority = 114, groups = { "1st Batch" })
+
 
 		public static void LOC_NewLoan_MaxLOC_Txn() throws Exception {
 			try {
@@ -223,7 +226,9 @@ public class QCStore {
 			}
 		}
 
+
 		@Test(priority = 105, groups = { "1st Batch" })
+
 
 		public static void LOC_Biweekly_NextPay_NotOn_End_Txn() throws Exception {
 			try {
@@ -273,7 +278,9 @@ public class QCStore {
 			}
 		}
 
+
 		@Test(priority = 16, groups = { "1st Batch" })
+
 
 		public static void LOC_monthly_NextPay_NotOn_End_Txn() throws Exception {
 			try {
@@ -322,10 +329,12 @@ public class QCStore {
 			}
 		}
 
+
 		@Test(priority = 107, groups = { "1st Batch" })
 
 		public static void LOC_semimonthly_NextPay_NotOn_End_Txn() throws Exception {
 			try {
+
 
 				test = reports.startTest(prop.getProperty("LOC_semimonthly_NextPay_NotOn_End_Txn_scenario"),
 						"Login->Borrower Registratino->New LOC for a semimonthly Customer with income to validate LOC Amt ");
@@ -371,7 +380,9 @@ public class QCStore {
 			}
 		}
 
+
 		@Test(priority = 108, groups = { "1st Batch" })
+
 
 		public static void LOC_weekly_NextPay_NotOn_End_Txn() throws Exception {
 			try {
@@ -398,6 +409,7 @@ public class QCStore {
 
 						System.out.println(AppURL);
 
+<<<<<<< HEAD
 						QCCSRLoginLogout.login(SSN, AppURL);
 						QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 						QCCSRLoginLogout.logout(SSN, AppURL);
@@ -408,6 +420,59 @@ public class QCStore {
 						QCCSRHistory.history(SSN, AppURL);
 						QCCSRLoginLogout.logout(SSN, AppURL);
 					}
+=======
+		catch (Exception e) {
+
+			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
+			// start scenario 1 " , ExtentColor.RED));
+			test.log(LogStatus.ERROR, "Unable to start scenario LOC_Biweekly_Nextpay_Txn ");
+
+		}
+	}
+
+	@Test(priority = 134, groups = { "1st Batch" })
+	public static void LOC_PayOff_after_RescindPeriod_Txn() throws Exception {
+		try {
+
+			test = reports.startTest(prop.getProperty("LOC_PayOff_after_RescindPeriod_Txn_scenario"),
+					"Login->Borrower Registratino->New LOC – Payoff after Rescind Period ");
+
+			FileName = prop.getProperty("LOC_PayOff_after_RescindPeriod_Txn_file_name") + ".xls";
+
+			TestData = new ExcelNew(System.getProperty("user.dir")
+					+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
+
+			String sheetName = "Start";
+			int lastrow = TestData.getLastRow("Start");
+			System.out.println(lastrow);
+			for (int row = 2; row <= lastrow; row++) {
+
+				String RunFlag = TestData.getCellData(sheetName, "Run", row);
+				// System.out.println(RunFlag);
+				if (RunFlag.equals("Y")) {
+
+					// AppURL = TestData.getCellData(sheetName, "AppURL", row);
+					String SSN = TestData.getCellData(sheetName, "SSN", row);
+
+					System.out.println(AppURL);
+
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCCSRNewLoan.newLoan(SSN, SSN);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
+
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCPayOff.payoff(SSN, AppURL);
+
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCCSRHistory.history(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+>>>>>>> jan21.1
 				}
 			}
 
@@ -420,7 +485,9 @@ public class QCStore {
 			}
 		}
 
+
 		@Test(priority = 134, groups = { "1st Batch" })
+
 
 		public static void LOC_PayOff_after_RescindPeriod_Txn() throws Exception {
 			try {
@@ -475,6 +542,27 @@ public class QCStore {
 
 			}
 		}
+<<<<<<< HEAD
+=======
+	}
+
+	@Test(priority = 136, groups = { "1st Batch" })
+	public static void LOC_Payment_PayOff_Txn() throws Exception {
+		try {
+
+			test = reports.startTest(prop.getProperty("LOC_Payment_PayOff_Txn_scenario"),
+					"Login->Borrower Registratino->New LOC – Payment -> DueDate->Payoff ");
+
+			FileName = prop.getProperty("LOC_Payment_PayOff_Txn_file_name") + ".xls";
+
+			TestData = new ExcelNew(System.getProperty("user.dir")
+					+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
+
+			String sheetName = "Start";
+			int lastrow = TestData.getLastRow("Start");
+			System.out.println(lastrow);
+			for (int row = 2; row <= lastrow; row++) {
+>>>>>>> jan21.1
 
 		@Test(priority = 135, groups = { "1st Batch" })
 
@@ -498,8 +586,14 @@ public class QCStore {
 					// System.out.println(RunFlag);
 					if (RunFlag.equals("Y")) {
 
+<<<<<<< HEAD
 						// AppURL = TestData.getCellData(sheetName, "AppURL", row);
 						String SSN = TestData.getCellData(sheetName, "SSN", row);
+=======
+	@Test(priority = 137, groups = { "1st Batch" })
+	public static void LOC_Payment_GraceDays_PayOff_Txn() throws Exception {
+		try {
+>>>>>>> jan21.1
 
 						System.out.println(AppURL);
 
@@ -541,7 +635,13 @@ public class QCStore {
 				test = reports.startTest(prop.getProperty("LOC_Payment_PayOff_Txn_scenario"),
 						"Login->Borrower Registratino->New LOC – Payment -> DueDate->Payoff ");
 
+<<<<<<< HEAD
 				FileName = prop.getProperty("LOC_Payment_PayOff_Txn_file_name") + ".xls";
+=======
+	@Test(priority = 138, groups = { "1st Batch" })
+	public static void LOC_Payment_Void_PayOff_Txn() throws Exception {
+		try {
+>>>>>>> jan21.1
 
 				TestData = new ExcelNew(System.getProperty("user.dir")
 						+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
@@ -593,6 +693,14 @@ public class QCStore {
 
 			}
 		}
+<<<<<<< HEAD
+=======
+	}
+
+	@Test(priority = 139, groups = { "1st Batch" })
+	public static void LOC_Payment_Return_PayOff_Txn() throws Exception {
+		try {
+>>>>>>> jan21.1
 
 		@Test(priority = 137, groups = { "1st Batch" })
 
@@ -656,7 +764,13 @@ public class QCStore {
 			}
 		}
 
+<<<<<<< HEAD
 		@Test(priority = 138, groups = { "1st Batch" })
+=======
+	@Test(priority = 140, groups = { "1st Batch" })
+	public static void LOC_PayOff_RescindPeriod_void_Txn() throws Exception {
+		try {
+>>>>>>> jan21.1
 
 		public static void LOC_Payment_Void_PayOff_Txn() throws Exception {
 			try {
@@ -716,6 +830,17 @@ public class QCStore {
 
 			}
 		}
+<<<<<<< HEAD
+=======
+	}
+
+	@Test(priority = 141, groups = { "1st Batch" })
+	public static void LOC_Payment_PayOff_Void_Txn() throws Exception {
+		try {
+
+			test = reports.startTest(prop.getProperty("LOC_Payment_PayOff_Void_Txn_scenario"),
+					"Login->Borrower Registratino->New LOC – Payment -> DueDate->PayPayoff->Void ");
+>>>>>>> jan21.1
 
 		@Test(priority = 139, groups = { "1st Batch" })
 
@@ -756,8 +881,14 @@ public class QCStore {
 						QCPayment.payment(SSN, SSN);
 						QCCSRLoginLogout.logout(SSN, AppURL);
 
+<<<<<<< HEAD
 						QCCSRLoginLogout.login(SSN, AppURL);
 						QCInternalTransfer.internalTransfer(SSN, SSN);
+=======
+	@Test(priority = 142, groups = { "1st Batch" })
+	public static void LOC_Payment_Gracedays_PayOff_Void_Txn() throws Exception {
+		try {
+>>>>>>> jan21.1
 
 						QCCSRLoginLogout.login(SSN, AppURL);
 						QCCashMgmtDeposit.cashmgmtDeposit(SSN, AppURL);
@@ -795,7 +926,13 @@ public class QCStore {
 				test = reports.startTest(prop.getProperty("LOC_PayOff_RescindPeriod_void_Txn_scenario"),
 						"Login->Borrower Registratino->New LOC – Payoff after Rescind Period->Void ");
 
+<<<<<<< HEAD
 				FileName = prop.getProperty("LOC_PayOff_RescindPeriod_void_Txn_file_name") + ".xls";
+=======
+	@Test(priority = 143, groups = { "1st Batch" })
+	public static void LOC_Payment_Void_PayOff_Void_Txn() throws Exception {
+		try {
+>>>>>>> jan21.1
 
 				TestData = new ExcelNew(System.getProperty("user.dir")
 						+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
@@ -846,7 +983,13 @@ public class QCStore {
 			}
 		}
 
+<<<<<<< HEAD
 		@Test(priority = 141, groups = { "1st Batch" })
+=======
+	@Test(priority = 144, groups = { "1st Batch" })
+	public static void LOC_PayOff_Return_Txn() throws Exception {
+		try {
+>>>>>>> jan21.1
 
 		public static void LOC_Payment_PayOff_Void_Txn() throws Exception {
 			try {
@@ -910,7 +1053,13 @@ public class QCStore {
 			}
 		}
 
+<<<<<<< HEAD
 		@Test(priority = 142, groups = { "1st Batch" })
+=======
+	@Test(priority = 145, groups = { "1st Batch" })
+	public static void LOC_Payment_PayOff_Return_Txn() throws Exception {
+		try {
+>>>>>>> jan21.1
 
 		public static void LOC_Payment_Gracedays_PayOff_Void_Txn() throws Exception {
 			try {
@@ -975,7 +1124,13 @@ public class QCStore {
 			}
 		}
 
+<<<<<<< HEAD
 		@Test(priority = 143, groups = { "1st Batch" })
+=======
+	@Test(priority = 155, groups = { "1st Batch" })
+	public static void LOC_Draw_Txn() throws Exception {
+		try {
+>>>>>>> jan21.1
 
 		public static void LOC_Payment_Void_PayOff_Void_Txn() throws Exception {
 			try {
@@ -1040,7 +1195,13 @@ public class QCStore {
 			}
 		}
 
+<<<<<<< HEAD
 		@Test(priority = 144, groups = { "1st Batch" })
+=======
+	@Test(priority = 156, groups = { "1st Batch" })
+	public static void LOC_Payment_Draw_Txn() throws Exception {
+		try {
+>>>>>>> jan21.1
 
 		public static void LOC_PayOff_Return_Txn() throws Exception {
 			try {
@@ -1083,9 +1244,15 @@ public class QCStore {
 						QCCSRLoginLogout.login(SSN, AppURL);
 						QCInternalTransfer.internalTransfer(SSN, SSN);
 
+<<<<<<< HEAD
 						QCCSRLoginLogout.login(SSN, AppURL);
 						QCCashMgmtDeposit.cashmgmtDeposit(SSN, SSN);
 						QCCSRLoginLogout.logout(SSN, AppURL);
+=======
+	@Test(priority = 157, groups = { "1st Batch" })
+	public static void LOC_PayOff_Draw_Txn() throws Exception {
+		try {
+>>>>>>> jan21.1
 
 						QCCSRLoginLogout.adminLogin(SSN, SSN);
 						QCAdminCCKReturn.cckreturn(SSN, AppURL);
@@ -1127,8 +1294,14 @@ public class QCStore {
 					// System.out.println(RunFlag);
 					if (RunFlag.equals("Y")) {
 
+<<<<<<< HEAD
 						// AppURL = TestData.getCellData(sheetName, "AppURL", row);
 						String SSN = TestData.getCellData(sheetName, "SSN", row);
+=======
+	@Test(priority = 158, groups = { "1st Batch" })
+	public static void LOC_Draw_Void_Txn() throws Exception {
+		try {
+>>>>>>> jan21.1
 
 						System.out.println(AppURL);
 
@@ -1181,7 +1354,13 @@ public class QCStore {
 				test = reports.startTest(prop.getProperty("LOC_Draw_Txn_scenario"),
 						"Login->Borrower Registratino->New LOC –>Draw ");
 
+<<<<<<< HEAD
 				FileName = prop.getProperty("LOC_Draw_Txn_file_name") + ".xls";
+=======
+	@Test(priority = 159, groups = { "1st Batch" })
+	public static void LOC_Payment_Draw_Void_Txn() throws Exception {
+		try {
+>>>>>>> jan21.1
 
 				TestData = new ExcelNew(System.getProperty("user.dir")
 						+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
@@ -1229,7 +1408,13 @@ public class QCStore {
 			}
 		}
 
+<<<<<<< HEAD
 		@Test(priority = 156, groups = { "1st Batch" })
+=======
+	@Test(priority = 160, groups = { "1st Batch" })
+	public static void LOC_PayOff_Draw_Void_Txn() throws Exception {
+		try {
+>>>>>>> jan21.1
 
 		public static void LOC_Payment_Draw_Txn() throws Exception {
 			try {
@@ -1289,7 +1474,13 @@ public class QCStore {
 			}
 		}
 
+<<<<<<< HEAD
 		@Test(priority = 157, groups = { "1st Batch" })
+=======
+	@Test(priority = 164, groups = { "1st Batch" })
+	public static void LOC_Deposit_Return_PayOff_Txn() throws Exception {
+		try {
+>>>>>>> jan21.1
 
 		public static void LOC_PayOff_Draw_Txn() throws Exception {
 			try {
@@ -1348,6 +1539,7 @@ public class QCStore {
 			}
 		}
 
+<<<<<<< HEAD
 		@Test(priority = 158, groups = { "1st Batch" })
 
 		public static void LOC_Draw_Void_Txn() throws Exception {
@@ -1407,6 +1599,11 @@ public class QCStore {
 		}
 
 		@Test(priority = 159, groups = { "1st Batch" })
+=======
+	// @Test(priority = 66,groups = { "EOD" })
+	public static void LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn() throws Exception {
+		try {
+>>>>>>> jan21.1
 
 		public static void LOC_Payment_Draw_Void_Txn() throws Exception {
 			try {
@@ -1469,7 +1666,13 @@ public class QCStore {
 			}
 		}
 
+<<<<<<< HEAD
 		@Test(priority = 160, groups = { "1st Batch" })
+=======
+	@Test(priority = 67,groups = { "EOD" })
+	public static void LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn() throws Exception {
+		try {
+>>>>>>> jan21.1
 
 		public static void LOC_PayOff_Draw_Void_Txn() throws Exception {
 			try {
@@ -1594,9 +1797,16 @@ public class QCStore {
 			}
 		}
 
+<<<<<<< HEAD
 		@Test(priority = 168, groups = { "EOD" })
 
 		public static void LOC_ACHDeposit_EODs_Return_Txn() throws Exception {
+=======
+	
+
+	//@Test(priority = 68, groups = { "EOD" })
+	public static void LOC_ACHDeposit_EODs_Return_Txn() throws Exception {
+>>>>>>> jan21.1
 			try {
 
 				test = reports.startTest(prop.getProperty("LOC_ACHDeposit_EODs_Return_Txn_scenario"),
@@ -1759,9 +1969,15 @@ public class QCStore {
 			}
 		}
 
+<<<<<<< HEAD
 		@Test(priority = 166, groups = { "EOD" })
 
 		public static void LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn() throws Exception {
+=======
+		
+		//@Test(priority = 69, groups = { "EOD2" })
+	public static void LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn() throws Exception {
+>>>>>>> jan21.1
 			try {
 
 				test = reports.startTest(prop.getProperty("LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn_scenario"),
@@ -1859,9 +2075,17 @@ public class QCStore {
 				test.log(LogStatus.ERROR, "Unable to start scenario LOC_Biweekly_Nextpay_Txn ");
 
 			}
+<<<<<<< HEAD
 		}
 
 		@Test(priority = 167, groups = { "EOD" })
+=======
+		}	
+		
+	@Test(priority = 70, groups = { "EOD2" })
+	public static void LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn() throws Exception {
+		try {
+>>>>>>> jan21.1
 
 		public static void LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn() throws Exception {
 			try {
@@ -1944,11 +2168,20 @@ public class QCStore {
 						QCCSRLoginLogout.login(SSN, AppURL);
 						QCDrawerAssign.drawerAssign(SSN, AppURL);
 
+<<<<<<< HEAD
 						QCCSRLoginLogout.logout(SSN, AppURL);
 
 						QCCSRLoginLogout.login(SSN, AppURL);
 						QCCSRHistory.history(SSN, AppURL);
 						QCCSRLoginLogout.logout(SSN, AppURL);
+=======
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCRedeposit.redeposit(SSN, SSN);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCCSRHistory.history(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+>>>>>>> jan21.1
 
 					}
 				}
@@ -1962,6 +2195,7 @@ public class QCStore {
 
 			}
 		}
+<<<<<<< HEAD
 
 		@Test(priority = 169, groups = { "EOD2" })
 
@@ -1977,6 +2211,1425 @@ public class QCStore {
 
 				String sheetName = "Start";
 				int lastrow = TestData.getLastRow("Start");
+=======
+	}
+	//Ratikanta scenarios
+	
+
+	  @Test(priority=201, groups="Ratikanta_NEOD")
+	  public static void RQC_LOC_ManualDefault_Txn_Testdata() throws Exception {
+		  try
+		  {
+			  test=reports.startTest(("New LOC - Manual Default"),"Login->Borrower Registration->New Loan->Age the Store Duedate->Manual Default");
+			  String FileName= "QC_LOC_ManualDefault_Txn_Testdata.xls";
+			  //String FileName= Rprop.getProperty("QC_DefaultPayment_Txn_Testdata_Scenario")+".xls";
+			  			//ExcelNew TestData;
+			  			TestData = new ExcelNew(System.getProperty("user.dir")+Rprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+		 	  		  
+			  	//test=reports.startTest("Lend Nation Smoke_testing","Lend Nation Application test report");
+
+
+			  	//String FileName= "Registration_Lend_Nation.xls";
+			  		//Excel TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/LendNation/"+FileName);  		 
+			  		//int lastrow=TestData.getLastRow("Start");
+			  			int lastrow=TestData.getLastRow("Start");
+			  		String sheetName="Start";
+			  		//int lastrow=TestData.getLastRow("Borrower");
+			  		System.out.println(lastrow);
+			  		for(int row=2;row<=lastrow;row++)
+			  		{
+			  			
+			  			
+			  			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+			  			//System.out.println(RunFlag);
+			  		if(RunFlag.equals("Y"))
+			  		{	
+			  			//driver.get(appUrl);
+			  			//test.log(LogStatus.INFO, "Application is launched");
+			  			//driver.manage().window().maximize();
+			  				//String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+			  				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+			  				
+			  				System.out.println(AppURL);
+				
+			  	   RCSRLoginLogout.login(SSN, AppURL);		
+				   RQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+				   RCSRLoginLogout.logout();
+				   RCSRLoginLogout.login(SSN, AppURL);
+				   RQCCSRNewLoan.newLoan(SSN, AppURL);
+				   RCSRLoginLogout.logout();
+				   RCSRLoginLogout.login(SSN, AppURL);
+				   RQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+				   RCSRLoginLogout.login(SSN, AppURL);
+			  	   RQCCSR_LOC_ManualDefault.manualdefault(SSN, AppURL);	
+			  	   RCSRLoginLogout.login(SSN, AppURL);
+			  	   RQCCSRHistory.history(SSN, AppURL);
+			  	   RCSRLoginLogout.logout();
+			  				
+							 
+				
+				
+				 
+				 
+			
+		}
+		}
+		  }
+		  
+		  
+		  
+		  
+		  catch(Exception e)
+		  {
+			  System.out.println("under catch of Test" +e);
+				test.log(LogStatus.ERROR, "Unable to start scenarios " );
+
+		  }
+	  }
+	  
+	 	
+	@Test(priority=202, groups="Ratikanta_NEOD")
+	  public static void RQC_LOC_Deposit_Return_ManualDefault_Txn_Testdata() throws Exception {
+		  try
+		  {
+			  test=reports.startTest(("New LOC - Deposit - Return- Manual Default"),"Login->Borrower Registration->New Loan-->Duedate-->Deposit-->Return-->Manual Default");
+			  String FileName= "QC_LOC_Deposit_Return_ManualDefault_Txn_Testdata.xls";
+			  //String FileName= Rprop.getProperty("QC_DefaultPayment_Txn_Testdata_Scenario")+".xls";
+			  			//ExcelNew TestData;
+			  			TestData = new ExcelNew(System.getProperty("user.dir")+Rprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+			  		  
+			  	//test=reports.startTest("Lend Nation Smoke_testing","Lend Nation Application test report");
+
+
+			  	//String FileName= "Registration_Lend_Nation.xls";
+			  		//Excel TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/LendNation/"+FileName);  		 
+			  		//int lastrow=TestData.getLastRow("Start");
+			  			int lastrow=TestData.getLastRow("Start");
+			  		String sheetName="Start";
+			  		//int lastrow=TestData.getLastRow("Borrower");
+			  		System.out.println(lastrow);
+			  		for(int row=2;row<=lastrow;row++)
+			  		{
+			  			
+			  			
+			  			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+			  			//System.out.println(RunFlag);
+			  		if(RunFlag.equals("Y"))
+			  		{	
+			  			//driver.get(appUrl);
+			  			//test.log(LogStatus.INFO, "Application is launched");
+			  			//driver.manage().window().maximize();
+			  				String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+			  				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+			  				
+			  				System.out.println(AppURL);
+				
+			  				   RCSRLoginLogout.login(SSN, AppURL);		
+							   RQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCCSRNewLoan.newLoan(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);			  							  				
+						  	   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCCSR_Deposit.deposit(SSN, AppURL);
+			  				   RQCCSRReturnPosting.returnposting(SSN, AppURL);
+			  				   RQCAdminACHReturn.achreturn(SSN, AppURL);
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCCSR_LOC_ManualDefault.manualdefault(SSN, AppURL);	
+						  	   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCCSRHistory.history(SSN, AppURL);
+						  	   RCSRLoginLogout.logout();
+							   
+							   
+							
+				
+				
+				 
+				 
+			
+		}
+		}
+		  }
+		  
+		  
+		  
+		  
+		  catch(Exception e)
+		  {
+			  System.out.println("under catch of Test" +e);
+				test.log(LogStatus.ERROR, "Unable to start scenarios " );
+
+		  }
+	  } 
+
+	  
+	 		  
+	@Test(priority=203, groups="Ratikanta_NEOD")
+	  public static void RQC_LOC_Deposit_Return_2ndDeposit_Clear_3rdDeposit_Return_Default_Txn_Testdata() throws Exception {
+		  try
+		  {
+			  test=reports.startTest(("New LOC-Deposit-Return-Deposit-Clear-Deposit-Return-Default(EOD/Auto EOD)"),"Login->Borrower Registration->New Loan-->Duedate-->Deposit-->Return-->2nd Deposit-->Clear-->3rd Deposit-->Return-->EOD");
+			  String FileName= "QC_LOC_Deposit_Return_2ndDeposit_Clear_3rdDeposit_Return_Default_Txn_Testdata.xls";
+			  //String FileName= Rprop.getProperty("QC_DefaultPayment_Txn_Testdata_Scenario")+".xls";
+			  			//ExcelNew TestData;
+			  			TestData = new ExcelNew(System.getProperty("user.dir")+Rprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+			  		  
+			  	//test=reports.startTest("Lend Nation Smoke_testing","Lend Nation Application test report");
+
+
+			  	//String FileName= "Registration_Lend_Nation.xls";
+			  		//Excel TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/LendNation/"+FileName);  		 
+			  		//int lastrow=TestData.getLastRow("Start");
+			  			int lastrow=TestData.getLastRow("Start");
+			  		String sheetName="Start";
+			  		//int lastrow=TestData.getLastRow("Borrower");
+			  		System.out.println(lastrow);
+			  		for(int row=2;row<=lastrow;row++)
+			  		{
+			  			
+			  			
+			  			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+			  			//System.out.println(RunFlag);
+			  		if(RunFlag.equals("Y"))
+			  		{	
+			  			//driver.get(appUrl);
+			  			//test.log(LogStatus.INFO, "Application is launched");
+			  			//driver.manage().window().maximize();
+			  				String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+			  				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+			  				
+			  				System.out.println(AppURL);
+	
+			  				   
+			  				   
+			  				   RCSRLoginLogout.login(SSN, AppURL);		
+							   RQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCCSRNewLoan.newLoan(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);			  							  				
+						  	   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCCSR_Deposit.deposit(SSN, AppURL);					  	   
+			  				   RQCCSRReturnPosting.returnposting(SSN, AppURL);
+			  				   RQCAdminACHReturn.achreturn(SSN, AppURL);
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+						  	   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCCSR_Deposit.deposit(SSN, AppURL);
+						  	   RCSRLoginLogout.login(SSN, AppURL);
+			  				   //RQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
+						  	   RQCAgeStoreGraceDays.ageStoreGraceDays2ndTime(SSN, AppURL);
+			  				   RQCCSRReturnPosting.returnposting(SSN, AppURL);
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCCSRACHClear.achclear(SSN, AppURL);
+			  				   RCSRLoginLogout.logout();
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+						  	   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCCSR_Deposit.deposit(SSN, AppURL);					  	   
+			  				   RQCCSRReturnPosting.returnposting(SSN, AppURL);
+			  				   RQCAdminACHReturn.achreturn(SSN, AppURL);
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+			  				                   //RQCAgeStoreGraceDays.ageStoreGraceDays2ndTime(SSN, AppURL);
+			  				   RQCAgeStoreGraceDays.ageStoreGraceDays3rdTime(SSN, AppURL);
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCCSREOD_Default.eoddefault(SSN, AppURL);
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCCSRHistory.history(SSN, AppURL);
+						  	   RCSRLoginLogout.logout();
+			  				  
+			  			
+		}
+		}
+		  }
+		  
+		  
+		  
+		  
+		  catch(Exception e)
+		  {
+			  System.out.println("under catch of Test" +e);
+				test.log(LogStatus.ERROR, "Unable to start scenarios " );
+
+		  }
+	  } 
+	  
+
+	@Test(priority=204, groups="Ratikanta_NEOD")
+	  public static void RQC_LOC_2missedPayment_Default_EOD_Txn_Testdata() throws Exception {
+		  try
+		  {
+			  test=reports.startTest(("New LOC-Deposit-Return-2nd Deposit-Clear-3rd Deposit–Return-Default(EOD/Auto EOD)"),"Login->Borrower Registration->Signature Loan-->2missed Payment-->Default_EOD/AutoEOD");
+			  String FileName= "QC_LOC_2missedPayment_Default_EOD_Txn_Testdata.xls";
+			  //String FileName= Rprop.getProperty("QC_DefaultPayment_Txn_Testdata_Scenario")+".xls";
+			  			//ExcelNew TestData;
+			  			TestData = new ExcelNew(System.getProperty("user.dir")+Rprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+			  		  
+			  	//test=reports.startTest("Lend Nation Smoke_testing","Lend Nation Application test report");
+
+
+			  	//String FileName= "Registration_Lend_Nation.xls";
+			  		//Excel TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/LendNation/"+FileName);  		 
+			  		//int lastrow=TestData.getLastRow("Start");
+			  			int lastrow=TestData.getLastRow("Start");
+			  		String sheetName="Start";
+			  		//int lastrow=TestData.getLastRow("Borrower");
+			  		System.out.println(lastrow);
+			  		for(int row=2;row<=lastrow;row++)
+			  		{
+			  			
+			  			
+			  			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+			  			//System.out.println(RunFlag);
+			  		if(RunFlag.equals("Y"))
+			  		{	
+			  			//driver.get(appUrl);
+			  			//test.log(LogStatus.INFO, "Application is launched");
+			  			//driver.manage().window().maximize();
+			  				String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+			  				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+			  				
+			  				System.out.println(AppURL);
+	
+			  				   
+			  				   
+			  				   RCSRLoginLogout.login(SSN, AppURL);		
+							   RQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCCSRSignatureLoan.signatureloan(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);	
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+						  	   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCAgeStoreGraceDays.ageStoreGraceDays2ndTime(SSN, AppURL);
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCCSREOD_Default.eoddefault(SSN, AppURL);
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCCSRHistory.history(SSN, AppURL);
+						  	   RCSRLoginLogout.logout();
+		  				  
+			  			
+		}
+		}
+		  }
+		  
+		  
+		  
+		  
+		  catch(Exception e)
+		  {
+			  System.out.println("under catch of Test" +e);
+				test.log(LogStatus.ERROR, "Unable to start scenarios " );
+
+		  }
+	  } 	  
+	  
+	  
+	  
+	@Test(priority=205, groups="Ratikanta_NEOD")
+	  public static void RQC_LOC_Default_DefaultPayment_Txn_Testdata() throws Exception {
+		  try
+		  {
+			  test=reports.startTest(("Default - Default Payment"),"Login->Borrower Registration->New Loan-->Age Store to Duedate-->Deposit-->Age store to 2 Gracedays-->reurn-->Age to 2nd due date-->Default-->Default Payment");
+			  String FileName= "QC_LOC_Default_DefaultPayment_Txn_Testdata.xls";
+			  //String FileName= Rprop.getProperty("QC_DefaultPayment_Txn_Testdata_Scenario")+".xls";
+			  			//ExcelNew TestData;
+			  			TestData = new ExcelNew(System.getProperty("user.dir")+Rprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+			  		  
+			  	//test=reports.startTest("Lend Nation Smoke_testing","Lend Nation Application test report");
+
+
+			  	//String FileName= "Registration_Lend_Nation.xls";
+			  		//Excel TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/LendNation/"+FileName);  		 
+			  		//int lastrow=TestData.getLastRow("Start");
+			  			int lastrow=TestData.getLastRow("Start");
+			  		String sheetName="Start";
+			  		//int lastrow=TestData.getLastRow("Borrower");
+			  		System.out.println(lastrow);
+			  		for(int row=2;row<=lastrow;row++)
+			  		{
+			  			
+			  			
+			  			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+			  			//System.out.println(RunFlag);
+			  		if(RunFlag.equals("Y"))
+			  		{	
+			  			//driver.get(appUrl);
+			  			//test.log(LogStatus.INFO, "Application is launched");
+			  			//driver.manage().window().maximize();
+			  				String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+			  				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+			  				
+			  				System.out.println(AppURL);
+			  				
+			  				//Old
+				
+			  				   /*RCSRLoginLogout.login(SSN, AppURL);		
+							   RQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCCSRNewLoan.newLoan(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);			  							  				
+						  	   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCCSR_Deposit.deposit(SSN, AppURL);
+			  				   RQCCSRReturnPosting.returnposting(SSN, AppURL);
+			  				   RQCAdminACHReturn.achreturn(SSN, AppURL);
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);*/
+			  				   //RCSRLoginLogout.login(SSN, AppURL);
+			  				   //RQCCSRDefaultPayment.sdefaultpayment(SSN, AppURL);
+			  				
+			  				//New
+			  				
+			  				   RCSRLoginLogout.login(SSN, AppURL);		
+							   RQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCCSRNewLoan.newLoan(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);			  							  				
+						  	   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCCSR_Deposit.deposit(SSN, AppURL);	
+						  	   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);						  	   
+			  				   RQCCSRReturnPosting.returnposting(SSN, AppURL);
+			  				   RQCAdminACHReturn.achreturn(SSN, AppURL);			  				   			  				   
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+						  	   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCAgeStoreGraceDays.ageStoreGraceDays2ndTime(SSN, AppURL);
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCCSRDefaultPayment.sdefaultpayment(SSN, AppURL);
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCCSRHistory.history(SSN, AppURL);
+						  	   RCSRLoginLogout.logout();
+							   
+			  				   
+			  				   
+			  			
+		}
+		}
+		  }
+		  
+		  
+		  
+		  
+		  catch(Exception e)
+		  {
+			  System.out.println("under catch of Test" +e);
+				test.log(LogStatus.ERROR, "Unable to start scenarios " );
+
+		  }
+	  } 
+	  
+	@Test(priority=206, groups="Ratikanta_NEOD")
+	  public static void RQC_LOC_Default_DefaultPayment_Void_Txn_Testdata() throws Exception {
+		  try
+		  {
+			  test=reports.startTest(("Default - Default Payment - Void"),"Login->Borrower Registration->New Loan-->Age Store to Duedate-->Deposit-->Age store to 2 Grace days-->reurn-->Age to 2nd due date-->Default-->Default Payment-->Void");
+			  String FileName= "QC_LOC_Default_DefaultPayment_Void_Txn_Testdata.xls";
+			  //String FileName= Rprop.getProperty("QC_DefaultPayment_Txn_Testdata_Scenario")+".xls";
+			  			//ExcelNew TestData;
+			  			TestData = new ExcelNew(System.getProperty("user.dir")+Rprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+			  		  
+			  	//test=reports.startTest("Lend Nation Smoke_testing","Lend Nation Application test report");
+
+
+			  	//String FileName= "Registration_Lend_Nation.xls";
+			  		//Excel TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/LendNation/"+FileName);  		 
+			  		//int lastrow=TestData.getLastRow("Start");
+			  			int lastrow=TestData.getLastRow("Start");
+			  		String sheetName="Start";
+			  		//int lastrow=TestData.getLastRow("Borrower");
+			  		System.out.println(lastrow);
+			  		for(int row=2;row<=lastrow;row++)
+			  		{
+			  			
+			  			
+			  			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+			  			//System.out.println(RunFlag);
+			  		if(RunFlag.equals("Y"))
+			  		{	
+			  			//driver.get(appUrl);
+			  			//test.log(LogStatus.INFO, "Application is launched");
+			  			//driver.manage().window().maximize();
+			  				String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+			  				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+			  				
+			  				System.out.println(AppURL);
+				
+			  				   RCSRLoginLogout.login(SSN, AppURL);		
+							   RQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCCSRNewLoan.newLoan(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);			  							  				
+						  	   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCCSR_Deposit.deposit(SSN, AppURL);	
+						  	   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);						  	   
+			  				   RQCCSRReturnPosting.returnposting(SSN, AppURL);
+			  				   RQCAdminACHReturn.achreturn(SSN, AppURL);			  				   			  				   
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+						  	   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCAgeStoreGraceDays.ageStoreGraceDays2ndTime(SSN, AppURL);
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCCSRDefaultPayment.sdefaultpayment(SSN, AppURL);
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCCSRDefault_Void.defaultvoid(SSN, AppURL);
+			  				                //RCSRLoginLogout.logout();
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCCSRHistory.history(SSN, AppURL);
+						  	   RCSRLoginLogout.logout();
+							   
+			  				   
+			  				   
+			  			
+		}
+		}
+		  }
+		  
+		  
+		  
+		  
+		  catch(Exception e)
+		  {
+			  System.out.println("under catch of Test" +e);
+				test.log(LogStatus.ERROR, "Unable to start scenarios " );
+
+		  }
+	  } 
+
+	  
+	@Test(priority=207, groups="Ratikanta_NEOD")
+	  public static void RQC_LOC_Default_PartialDefaultPayment_Void_Txn_Testdata() throws Exception {
+		  try
+		  {
+			  test=reports.startTest(("Default - Partial Default Payment - Void"),"Login->Borrower Registration->New Loan-->Age Store to Duedate-->Deposit-->Age store to 2 Grace days-->reurn-->Age to 2nd due date-->Default-->PartialDefault Payment-->Void");
+			  String FileName= "QC_LOC_Default_PartialDefaultPayment_Void_Txn_Testdata.xls";
+			  //String FileName= Rprop.getProperty("QC_DefaultPayment_Txn_Testdata_Scenario")+".xls";
+			  			//ExcelNew TestData;
+			  			TestData = new ExcelNew(System.getProperty("user.dir")+Rprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+			  		  
+			  	//test=reports.startTest("Lend Nation Smoke_testing","Lend Nation Application test report");
+
+
+			  	//String FileName= "Registration_Lend_Nation.xls";
+			  		//Excel TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/LendNation/"+FileName);  		 
+			  		//int lastrow=TestData.getLastRow("Start");
+			  			int lastrow=TestData.getLastRow("Start");
+			  		String sheetName="Start";
+			  		//int lastrow=TestData.getLastRow("Borrower");
+			  		System.out.println(lastrow);
+			  		for(int row=2;row<=lastrow;row++)
+			  		{
+			  			
+			  			
+			  			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+			  			//System.out.println(RunFlag);
+			  		if(RunFlag.equals("Y"))
+			  		{	
+			  			//driver.get(appUrl);
+			  			//test.log(LogStatus.INFO, "Application is launched");
+			  			//driver.manage().window().maximize();
+			  				String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+			  				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+			  				
+			  				System.out.println(AppURL);
+				
+			  				   RCSRLoginLogout.login(SSN, AppURL);		
+							   RQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCCSRNewLoan.newLoan(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);			  							  				
+						  	   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCCSR_Deposit.deposit(SSN, AppURL);	
+						  	   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);						  	   
+			  				   RQCCSRReturnPosting.returnposting(SSN, AppURL);
+			  				   RQCAdminACHReturn.achreturn(SSN, AppURL);			  				   			  				   
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+						  	   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCAgeStoreGraceDays.ageStoreGraceDays2ndTime(SSN, AppURL);			  				  		  				   
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCCSRPartialDefaultPayment.partialdefaultpayment(SSN, AppURL);
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCCSRDefault_Void.defaultvoid(SSN, AppURL);
+			  				                                //RCSRLoginLogout.logout();
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCCSRHistory.history(SSN, AppURL);
+						  	   RCSRLoginLogout.logout();
+			  				  
+							   
+			  				   
+			  				   
+			  			
+		}
+		}
+		  }
+		  
+		  
+		  
+		  
+		  catch(Exception e)
+		  {
+			  System.out.println("under catch of Test" +e);
+				test.log(LogStatus.ERROR, "Unable to start scenarios " );
+
+		  }
+	  } 
+	
+	@Test(priority=208, groups="Ratikanta_NEOD")
+	  public static void RQC_LOC_Default_DefaultPayment_Return_Txn_Testdata() throws Exception {
+		  try
+		  {
+			  test=reports.startTest(("Default - Default Payment(ACH/CCK/MO) - Return"),"Login->Borrower Registration->New Loan-->Age Store to Duedate-->Deposit-->Age store to 2 Grace days-->reurn-->Age to 2nd due date-->Default-->Default Payment-->Return");
+			  String FileName= "QC_LOC_Default_DefaultPayment_Return_Txn_Testdata.xls";
+			  //String FileName= Rprop.getProperty("QC_DefaultPayment_Txn_Testdata_Scenario")+".xls";
+			  			//ExcelNew TestData;
+			  			TestData = new ExcelNew(System.getProperty("user.dir")+Rprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+			  		  
+			  	//test=reports.startTest("Lend Nation Smoke_testing","Lend Nation Application test report");
+
+
+			  	//String FileName= "Registration_Lend_Nation.xls";
+			  		//Excel TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/LendNation/"+FileName);  		 
+			  		//int lastrow=TestData.getLastRow("Start");
+			  			int lastrow=TestData.getLastRow("Start");
+			  		String sheetName="Start";
+			  		//int lastrow=TestData.getLastRow("Borrower");
+			  		System.out.println(lastrow);
+			  		for(int row=2;row<=lastrow;row++)
+			  		{
+			  			
+			  			
+			  			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+			  			//System.out.println(RunFlag);
+			  		if(RunFlag.equals("Y"))
+			  		{	
+			  			//driver.get(appUrl);
+			  			//test.log(LogStatus.INFO, "Application is launched");
+			  			//driver.manage().window().maximize();
+			  				String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+			  				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+			  				
+			  				System.out.println(AppURL);
+				
+			  				   RCSRLoginLogout.login(SSN, AppURL);		
+							   RQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCCSRNewLoan.newLoan(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);			  							  				
+						  	   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCCSR_Deposit.deposit(SSN, AppURL);	
+						  	   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);						  	   
+			  				   RQCCSRReturnPosting.returnposting(SSN, AppURL);
+			  				   RQCAdminACHReturn.achreturn(SSN, AppURL);			  				   			  				   
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+						  	   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCAgeStoreGraceDays.ageStoreGraceDays2ndTime(SSN, AppURL);
+			  				   
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCCSRDefaultPayment_CCK_Return.defaultpaymentreturn(SSN, AppURL);
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCCSRInternalTransfer.internaltransfer(SSN, AppURL);
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCCSRCashMgmtDeposit.cashmgmtdeposit(SSN, AppURL);
+			  				   RCSRLoginLogout.logout();
+			  				   RQCAdminCCKReturn.cckreturn(SSN, AppURL);
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCCSRHistory.history(SSN, AppURL);
+						  	   RCSRLoginLogout.logout();
+							   
+			  				   
+			  				   
+			  			
+		}
+		}
+		  }
+		  
+		  
+		  
+		  
+		  catch(Exception e)
+		  {
+			  System.out.println("under catch of Test" +e);
+				test.log(LogStatus.ERROR, "Unable to start scenarios " );
+
+		  }
+	  }   
+	  
+	@Test(priority=209, groups="Ratikanta_NEOD")
+	  public static void RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Txn_Testdata() throws Exception {
+		  try
+		  {
+			  test=reports.startTest(("Default - Partial Default Payment - Full Default payment"),"Login->Borrower Registration->New Loan-->Age Store to Duedate-->Deposit-->reurn-->Age to 2nd due date-->Default-->PartialDefault Payment-->Full DefaultPayment");
+			  String FileName= "QC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Txn_Testdata.xls";
+			  //String FileName= Rprop.getProperty("QC_DefaultPayment_Txn_Testdata_Scenario")+".xls";
+			  			//ExcelNew TestData;
+			  			TestData = new ExcelNew(System.getProperty("user.dir")+Rprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+			  		  
+			  	//test=reports.startTest("Lend Nation Smoke_testing","Lend Nation Application test report");
+
+
+			  	//String FileName= "Registration_Lend_Nation.xls";
+			  		//Excel TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/LendNation/"+FileName);  		 
+			  		//int lastrow=TestData.getLastRow("Start");
+			  			int lastrow=TestData.getLastRow("Start");
+			  		String sheetName="Start";
+			  		//int lastrow=TestData.getLastRow("Borrower");
+			  		System.out.println(lastrow);
+			  		for(int row=2;row<=lastrow;row++)
+			  		{
+			  			
+			  			
+			  			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+			  			//System.out.println(RunFlag);
+			  		if(RunFlag.equals("Y"))
+			  		{	
+			  			//driver.get(appUrl);
+			  			//test.log(LogStatus.INFO, "Application is launched");
+			  			//driver.manage().window().maximize();
+			  				String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+			  				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+			  				
+			  				System.out.println(AppURL);
+				
+			  				  
+			  				   RCSRLoginLogout.login(SSN, AppURL);		
+							   RQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCCSRNewLoan.newLoan(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);			  							  				
+						  	   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCCSR_Deposit.deposit(SSN, AppURL);	
+						  	   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);						  	   
+			  				   RQCCSRReturnPosting.returnposting(SSN, AppURL);
+			  				   RQCAdminACHReturn.achreturn(SSN, AppURL);			  				   			  				   
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+						  	   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCAgeStoreGraceDays.ageStoreGraceDays2ndTime(SSN, AppURL);	
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCCSRPartialDefaultPayment.partialdefaultpayment(SSN, AppURL);
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCCSRDefaultPayment.sdefaultpayment(SSN, AppURL);
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCCSRHistory.history(SSN, AppURL);
+						  	   RCSRLoginLogout.logout();
+			  				   
+			  				  
+			  				   
+			  				  
+							   
+			  				   
+			  				   
+			  			
+		}
+		}
+		  }
+		  
+		  
+		  
+		  
+		  catch(Exception e)
+		  {
+			  System.out.println("under catch of Test" +e);
+				test.log(LogStatus.ERROR, "Unable to start scenarios " );
+
+		  }
+	  } 
+	
+	
+	  
+	@Test(priority=210, groups="Ratikanta_NEOD")
+	  public static void RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Void_Txn_Testdata() throws Exception {
+		  try
+		  {
+			  test=reports.startTest(("Default - Partial Default Payment - Full Default payment - Void"),"Login->Borrower Registration->New Loan-->Age Store to Duedate-->Deposit-->reurn-->Age to 2nd due date-->Default-->PartialDefault Payment-->Full DefaultPayment-->Void");
+			  String FileName= "QC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Void_Txn_Testdata.xls";
+			  //String FileName= Rprop.getProperty("QC_DefaultPayment_Txn_Testdata_Scenario")+".xls";
+			  			//ExcelNew TestData;
+			  			TestData = new ExcelNew(System.getProperty("user.dir")+Rprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+			  		  
+			  	//test=reports.startTest("Lend Nation Smoke_testing","Lend Nation Application test report");
+
+
+			  	//String FileName= "Registration_Lend_Nation.xls";
+			  		//Excel TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/LendNation/"+FileName);  		 
+			  		//int lastrow=TestData.getLastRow("Start");
+			  			int lastrow=TestData.getLastRow("Start");
+			  		String sheetName="Start";
+			  		//int lastrow=TestData.getLastRow("Borrower");
+			  		System.out.println(lastrow);
+			  		for(int row=2;row<=lastrow;row++)
+			  		{
+			  			
+			  			
+			  			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+			  			//System.out.println(RunFlag);
+			  		if(RunFlag.equals("Y"))
+			  		{	
+			  			//driver.get(appUrl);
+			  			//test.log(LogStatus.INFO, "Application is launched");
+			  			//driver.manage().window().maximize();
+			  				String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+			  				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+			  				
+			  				System.out.println(AppURL);
+				
+			  				   
+			  				   RCSRLoginLogout.login(SSN, AppURL);		
+							   RQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCCSRNewLoan.newLoan(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);			  							  				
+						  	   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCCSR_Deposit.deposit(SSN, AppURL);	
+						  	   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);						  	   
+			  				   RQCCSRReturnPosting.returnposting(SSN, AppURL);
+			  				   RQCAdminACHReturn.achreturn(SSN, AppURL);			  				   			  				   
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+						  	   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCAgeStoreGraceDays.ageStoreGraceDays2ndTime(SSN, AppURL);	
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCCSRPartialDefaultPayment.partialdefaultpayment(SSN, AppURL);
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCCSRDefaultPayment.sdefaultpayment(SSN, AppURL);		  				   
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCCSRDefault_Void.defaultvoid(SSN, AppURL);
+			  				                //RCSRLoginLogout.logout();
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCCSRHistory.history(SSN, AppURL);
+						  	   RCSRLoginLogout.logout();
+			  			
+		}
+		}
+		  }
+		  
+		  
+		  
+		  
+		  catch(Exception e)
+		  {
+			  System.out.println("under catch of Test" +e);
+				test.log(LogStatus.ERROR, "Unable to start scenarios " );
+
+		  }
+	  } 
+
+	  
+	  
+	  @Test(priority=211, groups="Ratikanta_NEOD")
+	  public static void RQC_LOC_PayOff_Closure_Txn_Testdata() throws Exception {
+		  try
+		  {
+			  test=reports.startTest(("New LOC – Payoff – LOC Closure"),"Login->Borrower Registration->New Loan-->Age Store to Gracedays-->PayOff-->Closure");
+			  String FileName= "QC_LOC_PayOff_Closure_Txn_Testdata.xls";
+			  //String FileName= Rprop.getProperty("QC_DefaultPayment_Txn_Testdata_Scenario")+".xls";
+			  			//ExcelNew TestData;
+			  			TestData = new ExcelNew(System.getProperty("user.dir")+Rprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+			  		  
+			  	//test=reports.startTest("Lend Nation Smoke_testing","Lend Nation Application test report");
+
+
+			  	//String FileName= "Registration_Lend_Nation.xls";
+			  		//Excel TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/LendNation/"+FileName);  		 
+			  		//int lastrow=TestData.getLastRow("Start");
+			  			int lastrow=TestData.getLastRow("Start");
+			  		String sheetName="Start";
+			  		//int lastrow=TestData.getLastRow("Borrower");
+			  		System.out.println(lastrow);
+			  		for(int row=2;row<=lastrow;row++)
+			  		{
+			  			
+			  			
+			  			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+			  			//System.out.println(RunFlag);
+			  		if(RunFlag.equals("Y"))
+			  		{	
+			  			//driver.get(appUrl);
+			  			//test.log(LogStatus.INFO, "Application is launched");
+			  			//driver.manage().window().maximize();
+			  				String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+			  				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+			  				
+			  				System.out.println(AppURL);
+				
+			  				   RCSRLoginLogout.login(SSN, AppURL);		
+							   RQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCCSRNewLoan.newLoan(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);							   
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCPayOff.payoff(SSN, AppURL);
+							                         //RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCCSR_LOCClosure.locclosure(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCCSRHistory.history(SSN, AppURL);
+						  	   RCSRLoginLogout.logout();
+							  
+						   
+							   
+						  	 
+		}
+		}
+		  }
+		  
+		  
+		  
+		  
+		  catch(Exception e)
+		  {
+			  System.out.println("under catch of Test" +e);
+				test.log(LogStatus.ERROR, "Unable to start scenarios " );
+
+		  }
+	  } 
+
+
+	  @Test(priority=212, groups="Ratikanta_NEOD")
+	  public static void RQC_LOC_Payment_PayOff_Closure_Void_Txn_Testdata() throws Exception {
+		  try
+		  {
+			  test=reports.startTest(("New LOC – Payment – Payoff – LOC Closure – Void"),"Login->Borrower Registration->New Loan-->Age Store to Gracedays-->Payment-->PayOff-->Closure-->Void");
+			  String FileName= "QC_LOC_Payment_PayOff_Closure_Void_Txn_Testdata.xls";
+			  //String FileName= Rprop.getProperty("QC_DefaultPayment_Txn_Testdata_Scenario")+".xls";
+			  			//ExcelNew TestData;
+			  			TestData = new ExcelNew(System.getProperty("user.dir")+Rprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+			  		  
+			  	//test=reports.startTest("Lend Nation Smoke_testing","Lend Nation Application test report");
+
+
+			  	//String FileName= "Registration_Lend_Nation.xls";
+			  		//Excel TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/LendNation/"+FileName);  		 
+			  		//int lastrow=TestData.getLastRow("Start");
+			  			int lastrow=TestData.getLastRow("Start");
+			  		String sheetName="Start";
+			  		//int lastrow=TestData.getLastRow("Borrower");
+			  		System.out.println(lastrow);
+			  		for(int row=2;row<=lastrow;row++)
+			  		{
+			  			
+			  			
+			  			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+			  			//System.out.println(RunFlag);
+			  		if(RunFlag.equals("Y"))
+			  		{	
+			  			//driver.get(appUrl);
+			  			//test.log(LogStatus.INFO, "Application is launched");
+			  			//driver.manage().window().maximize();
+			  				String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+			  				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+			  				
+			  				System.out.println(AppURL);
+				
+			  				   RCSRLoginLogout.login(SSN, AppURL);		
+							   RQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCCSRNewLoan.newLoan(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCPayment.payment(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCPayOff.payoff(SSN, AppURL);
+							                           //RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCCSR_LOCClosure.locclosure(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCCSR_LOC_VoidClosure.locvoidclosure(SSN, AppURL);
+							                             //RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCCSRHistory.history(SSN, AppURL);
+						  	   RCSRLoginLogout.logout();
+							  
+						   
+							   
+						  	 
+		}
+		}
+		  }
+		  
+		  
+		  
+		  
+		  catch(Exception e)
+		  {
+			  System.out.println("under catch of Test" +e);
+				test.log(LogStatus.ERROR, "Unable to start scenarios " );
+
+		  }
+	  } 
+
+	@Test(priority=213, groups="Ratikanta_NEOD")
+	  public static void RQC_LOC_PayOff_Closure_PayoffReturn_Txn_Testdata() throws Exception {
+		  try
+		  {
+			  test=reports.startTest(("New LOC – Payoff – LOC Closure – Payoff return"),"Login->Borrower Registration->New Loan-->Age Store to Gracedays-->PayOff-->Closure-->PayoffReturn(Internal Transfer-->Cmg Deposit-->Return)");
+			  String FileName= "QC_LOC_PayOff_Closure_PayoffReturn_Txn_Testdata.xls";
+			  //String FileName= Rprop.getProperty("QC_DefaultPayment_Txn_Testdata_Scenario")+".xls";
+			  			//ExcelNew TestData;
+			  			TestData = new ExcelNew(System.getProperty("user.dir")+Rprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+			  		  
+			  	//test=reports.startTest("Lend Nation Smoke_testing","Lend Nation Application test report");
+
+
+			  	//String FileName= "Registration_Lend_Nation.xls";
+			  		//Excel TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/LendNation/"+FileName);  		 
+			  		//int lastrow=TestData.getLastRow("Start");
+			  			int lastrow=TestData.getLastRow("Start");
+			  		String sheetName="Start";
+			  		//int lastrow=TestData.getLastRow("Borrower");
+			  		System.out.println(lastrow);
+			  		for(int row=2;row<=lastrow;row++)
+			  		{
+			  			
+			  			
+			  			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+			  			//System.out.println(RunFlag);
+			  		if(RunFlag.equals("Y"))
+			  		{	
+			  			//driver.get(appUrl);
+			  			//test.log(LogStatus.INFO, "Application is launched");
+			  			//driver.manage().window().maximize();
+			  				String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+			  				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+			  				
+			  				System.out.println(AppURL);
+				
+			  				   RCSRLoginLogout.login(SSN, AppURL);		
+							   RQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCCSRNewLoan.newLoan(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);							   
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCCSR_CashierCheck_Payoff.cashiercheckpayoff(SSN, AppURL);							   
+							                         //RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCCSR_LOCClosure.locclosure(SSN, AppURL);
+							   RCSRLoginLogout.logout();							   
+							   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCCSRInternalTransfer.internaltransfer(SSN, AppURL);
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCCSRCashMgmtDeposit.cashmgmtdeposit(SSN, AppURL);
+			  				   RCSRLoginLogout.logout();
+			  				   RQCAdminCCKReturn.cckreturn(SSN, AppURL);	
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCCSRHistory.history(SSN, AppURL);
+						  	   RCSRLoginLogout.logout();
+			  				   
+							   
+							  
+						   
+							   
+						  	 
+		}
+		}
+		  }
+		  
+		  
+		  
+		  
+		  catch(Exception e)
+		  {
+			  System.out.println("under catch of Test" +e);
+				test.log(LogStatus.ERROR, "Unable to start scenarios " );
+
+		  }
+	  } 
+	  
+	@Test(priority=214, groups="Ratikanta_NEOD")
+	  public static void RQC_LOC_PayOff_Agestore180days_AutoClosure_Txn_Testdata() throws Exception {
+		  try
+		  {
+			  test=reports.startTest(("New LOC – Payoff – Age the store to 180 days – Auto Closure"),"Login->Borrower Registration->New Loan-->Age Store to Gracedays-->PayOff-->Age Store to 180 days-->AutoClosure");
+			  String FileName= "QC_LOC_PayOff_Agestore180days_AutoClosure_Txn_Testdata.xls";
+			  //String FileName= Rprop.getProperty("QC_DefaultPayment_Txn_Testdata_Scenario")+".xls";
+			  			//ExcelNew TestData;
+			  			TestData = new ExcelNew(System.getProperty("user.dir")+Rprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+			  		  
+			  	//test=reports.startTest("Lend Nation Smoke_testing","Lend Nation Application test report");
+
+
+			  	//String FileName= "Registration_Lend_Nation.xls";
+			  		//Excel TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/LendNation/"+FileName);  		 
+			  		//int lastrow=TestData.getLastRow("Start");
+			  			int lastrow=TestData.getLastRow("Start");
+			  		String sheetName="Start";
+			  		//int lastrow=TestData.getLastRow("Borrower");
+			  		System.out.println(lastrow);
+			  		for(int row=2;row<=lastrow;row++)
+			  		{
+			  			
+			  			
+			  			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+			  			//System.out.println(RunFlag);
+			  		if(RunFlag.equals("Y"))
+			  		{	
+			  			//driver.get(appUrl);
+			  			//test.log(LogStatus.INFO, "Application is launched");
+			  			//driver.manage().window().maximize();
+			  				String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+			  				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+			  				
+			  				System.out.println(AppURL);
+				
+			  				  /* RCSRLoginLogout.login(SSN, AppURL);		
+							   RQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCCSRNewLoan.newLoan(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);							   							  							   							   
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCPayOff.payoff(SSN, AppURL);
+							                              //RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCAgeStoreGraceDays.ageStoreGraceDays2ndTime(SSN, AppURL);*/
+							       //RQCAgeStoreGraceDays.age180day(SSN, AppURL);
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCCSRAutoClosure.autoclosure(SSN, AppURL);
+							   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCCSRHistory.history(SSN, AppURL);
+						  	   RCSRLoginLogout.logout();
+							   
+							   
+							   
+							  
+							  
+						   
+							   
+						  	 
+		}
+		}
+		  }
+		  
+		  
+		  
+		  
+		  catch(Exception e)
+		  {
+			  System.out.println("under catch of Test" +e);
+				//test.log(LogStatus.ERROR, "Unable to start scenarios " );
+
+		  }
+	  } 
+	  
+	
+	@Test(priority=215, groups="Ratikanta_EOD")
+	  public static void RQC_LOC_ManualDefault_EOD_Txn_Testdata() throws Exception {
+		  try
+		  {
+			  test=reports.startTest(("New LOC - Manual Default – EOD on Payment Due Date"),"Login->Borrower Registration->New Loan-->Manual Default-->AgeStore to Duedate-->EOD");
+			  String FileName= "QC_LOC_ManualDefault_EOD_Txn_Testdata.xls";
+			  //String FileName= Rprop.getProperty("QC_DefaultPayment_Txn_Testdata_Scenario")+".xls";
+			  			//ExcelNew TestData;
+			  			TestData = new ExcelNew(System.getProperty("user.dir")+Rprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+			  		  
+			  	//test=reports.startTest("Lend Nation Smoke_testing","Lend Nation Application test report");
+
+
+			  	//String FileName= "Registration_Lend_Nation.xls";
+			  		//Excel TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/LendNation/"+FileName);  		 
+			  		//int lastrow=TestData.getLastRow("Start");
+			  			int lastrow=TestData.getLastRow("Start");
+			  		String sheetName="Start";
+			  		//int lastrow=TestData.getLastRow("Borrower");
+			  		System.out.println(lastrow);
+			  		for(int row=2;row<=lastrow;row++)
+			  		{
+			  			
+			  			
+			  			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+			  			//System.out.println(RunFlag);
+			  		if(RunFlag.equals("Y"))
+			  		{	
+			  			//driver.get(appUrl);
+			  			//test.log(LogStatus.INFO, "Application is launched");
+			  			//driver.manage().window().maximize();
+			  				String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+			  				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+			  				
+			  				System.out.println(AppURL);
+				
+			  				   RCSRLoginLogout.login(SSN, AppURL);		
+							   RQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCCSRNewLoan.newLoan(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);					  							  
+						  	   RQCCSR_LOC_ManualDefault.manualdefault(SSN, AppURL);
+						  	   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCEODDeposit.eodDeposit(SSN, AppURL);
+			  				   RQCAdminStoreSetup.storeSetup(SSN, AppURL);
+			  				   RCSRLoginLogout.login(SSN, AppURL);			  				   
+			  				   RQCSafeAssign.safeAssign(SSN, AppURL);
+			  				   RQCDrawerAssign.drawerAssign(SSN, AppURL);
+			  				   RCSRLoginLogout.logout();
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCCSRHistory.history(SSN, AppURL);
+						  	   RCSRLoginLogout.logout();
+							 
+				
+				
+				 
+				 
+			
+		}
+		}
+		  }
+		  
+		  
+		  
+		  
+		  catch(Exception e)
+		  {
+			  System.out.println("under catch of Test" +e);
+				test.log(LogStatus.ERROR, "Unable to start scenarios " );
+
+		  }
+	  } 
+	
+	
+	@Test(priority=216, groups="Ratikanta_EOD")
+	  public static void RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata() throws Exception {
+		  try
+		  {
+			  test=reports.startTest(("New LOC - Deposit - Return- 2nd Deposit - Return - Default(EOD/Auto EOD)"),"Login->Borrower Registration->New Loan-->Duedate-->Deposit-->Return-->2nd Deposit-->Return-->EOD-->Verify Status as Default");
+			  String FileName= "QC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata.xls";
+			  //String FileName= Rprop.getProperty("QC_DefaultPayment_Txn_Testdata_Scenario")+".xls";
+			  			//ExcelNew TestData;
+			  			TestData = new ExcelNew(System.getProperty("user.dir")+Rprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+			  		  
+			  	//test=reports.startTest("Lend Nation Smoke_testing","Lend Nation Application test report");
+
+
+			  	//String FileName= "Registration_Lend_Nation.xls";
+			  		//Excel TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/LendNation/"+FileName);  		 
+			  		//int lastrow=TestData.getLastRow("Start");
+			  			int lastrow=TestData.getLastRow("Start");
+			  		String sheetName="Start";
+			  		//int lastrow=TestData.getLastRow("Borrower");
+			  		System.out.println(lastrow);
+			  		for(int row=2;row<=lastrow;row++)
+			  		{
+			  			
+			  			
+			  			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+			  			//System.out.println(RunFlag);
+			  		if(RunFlag.equals("Y"))
+			  		{	
+			  			//driver.get(appUrl);
+			  			//test.log(LogStatus.INFO, "Application is launched");
+			  			//driver.manage().window().maximize();
+			  				String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+			  				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+			  				
+			  				System.out.println(AppURL);
+				
+			  				   RCSRLoginLogout.login(SSN, AppURL);		
+							   RQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+							   RQCCSRNewLoan.newLoan(SSN, AppURL);
+							   RCSRLoginLogout.logout();
+							   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);			  							  				
+						  	   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCCSR_Deposit.deposit(SSN, AppURL);	
+						  	   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);						  	   
+			  				   RQCCSRReturnPosting.returnposting(SSN, AppURL);
+			  				   RQCAdminACHReturn.achreturn(SSN, AppURL);			  				   			  				   
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);						  	       			  				       	  				   
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCCSR_Deposit.deposit(SSN, AppURL);
+						  	   RQCCSRReturnPosting.returnposting(SSN, AppURL);
+			  				   RQCAdminACHReturn.achreturn(SSN, AppURL);							  	   						  	  
+			  				                  /*RCSRLoginLogout.login(SSN, AppURL);
+			  				                     RQCEODDeposit.eodDeposit(SSN, AppURL);
+			  				                     RQCAdminStoreSetup.storeSetup(SSN, AppURL);
+			  				                     RCSRLoginLogout.login(SSN, AppURL);			  				   
+			  				                     RQCSafeAssign.safeAssign(SSN, AppURL);
+			  				                     RQCDrawerAssign.drawerAssign(SSN, AppURL);
+			  				                    RCSRLoginLogout.logout();*/
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCAgeStoreGraceDays.ageStoreGraceDays2ndTime(SSN, AppURL);			  				   
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+			  				   RQCCSREOD_Default.eoddefault(SSN, AppURL);
+			  				   RCSRLoginLogout.login(SSN, AppURL);
+						  	   RQCCSRHistory.history(SSN, AppURL);
+						  	   RCSRLoginLogout.logout();
+
+							   
+							   
+							
+				
+				
+				 
+				 
+			
+		}
+		}
+		  }
+		  
+		  
+		  
+		  
+		  catch(Exception e)
+		  {
+			  System.out.println("under catch of Test" +e);
+				test.log(LogStatus.ERROR, "Unable to start scenarios " );
+
+		  }
+	  } 
+//============================================================================================================	  
+	 @Test(priority=202)
+	  public static void RQC_DefaultPayment_Void_Txn_Testdata() throws Exception {
+		  try
+		  {
+			  test=reports.startTest(("ILP_Scenario_No.37"),"Login->Borrower Registration->New Loan->Age the Store installment wise to make a loan Default->DefaultPayment-->Void");
+			  String FileName= "QC_DefaultPayment_Void_Txn_Testdata.xls";
+			  //String FileName= Rprop.getProperty("QC_DefaultPayment_Txn_Testdata_Scenario")+".xls";
+			  			//ExcelNew TestData;
+			  			TestData = new ExcelNew(System.getProperty("user.dir")+Rprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+			  		  
+			  	//test=reports.startTest("Lend Nation Smoke_testing","Lend Nation Application test report");
+
+
+			  	//String FileName= "Registration_Lend_Nation.xls";
+			  		//Excel TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/LendNation/"+FileName);  		 
+			  		//int lastrow=TestData.getLastRow("Start");
+			  			int lastrow=TestData.getLastRow("Start");
+			  		String sheetName="Start";
+			  		//int lastrow=TestData.getLastRow("Borrower");
+			  		System.out.println(lastrow);
+			  		for(int row=2;row<=lastrow;row++)
+			  		{
+			  			
+			  			
+			  			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+			  			//System.out.println(RunFlag);
+			  		if(RunFlag.equals("Y"))
+			  		{	
+			  			//driver.get(appUrl);
+			  			//test.log(LogStatus.INFO, "Application is launched");
+			  			//driver.manage().window().maximize();
+			  				String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+			  				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+			  				
+			  				System.out.println(AppURL);
+				 //RQCRCSRLoginLogout.login(SSN, AppURL);
+				 RCSRLoginLogout.login(SSN, AppURL);
+				 RQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+				 //RQCRCSRLoginLogout.logout(SSN, AppURL);
+				 RCSRLoginLogout.logout();
+				 RCSRLoginLogout.login(SSN, AppURL);
+				 RQCCSRNewLoan.newLoan(SSN, AppURL);
+				 RCSRLoginLogout.login(SSN, AppURL);
+				 RQCCSRDefault.sdefault(SSN, AppURL);
+				 RCSRLoginLogout.login(SSN, AppURL);
+				 RQCAgeStoreGraceDays.ageStoreGraceDays(SSN,AppURL);	
+				 RCSRLoginLogout.login(SSN, AppURL);
+				
+				
+				 
+							 
+				 
+			
+		}
+		}
+		  }
+		  
+		  
+		  
+		  
+		  catch(Exception e)
+		  {
+			  System.out.println("under catch of Test" +e);
+				test.log(LogStatus.ERROR, "Unable to start scenarios " );
+
+		  }
+	  }  
+	  
+	
+	  
+//Janaki's (Ratikanta) scenarios
+	  
+	  @Test(priority=301,enabled = true, groups="Janaki_NEOD")
+		public static void JQC_LOC_New_Loan_Void_Txn() throws Exception {
+			try
+			{			
+				
+				test=reports.startTest(Jprop.getProperty("QC_LOC_New_Loan_Void_Txn"),"Login->Borrower Registratino->New Loan ->Void");
+				//test=reports.startTest(("QC_LOC_New_Loan_Void_Txn"),"Login->Borrower Registratino->New Loan ->Void");
+				
+				FileName= Jprop.getProperty("QC_LOC_New_Loan_Void_Txn_file_name")+".xls";
+				//FileName= "QC_LOC_ManualDefault_Txn_Testdata.xls";
+
+				TestData = new ExcelNew(System.getProperty("user.dir")+Jprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+				
+
+				int lastrow=TestData.getLastRow("Start");
+				String sheetName="Start";
+>>>>>>> jan21.1
 				System.out.println(lastrow);
 				for (int row = 2; row <= lastrow; row++) {
 
@@ -2011,11 +3664,21 @@ public class QCStore {
 						QCAdminStoreSetup.storeSetup(SSN, AppURL);
 						QCCSRLoginLogout.adminLogout(driver, SSN, AppURL);
 
+<<<<<<< HEAD
 						QCCSRLoginLogout.login(SSN, AppURL);
 						QCSafeAssign.safeAssign(SSN, AppURL);
 						QCCSRLoginLogout.logout(SSN, AppURL);
 						QCCSRLoginLogout.login(SSN, AppURL);
 						QCDrawerAssign.drawerAssign(SSN, AppURL);
+=======
+			}
+		}
+		@Test(priority=302,enabled = true, groups="Janaki_NEOD")
+		public static void JQC_LOC_New_Loan_Rescind_Txn() throws Exception {
+			try
+			{			
+				test=reports.startTest(Jprop.getProperty("QC_LOC_New_Loan_Rescind_Txn"),"Login->Borrower Registratino->New Loan ->Rescind");
+>>>>>>> jan21.1
 
 						QCCSRLoginLogout.logout(SSN, AppURL);
 
@@ -2066,6 +3729,14 @@ public class QCStore {
 
 			}
 		}
+<<<<<<< HEAD
+=======
+		@Test(priority=303,enabled = true, groups="Janaki_NEOD")
+		public static void JQC_LOC_New_Loan_Void_GraceDay_Txn() throws Exception {
+			try
+			{			
+				test=reports.startTest(Jprop.getProperty("QC_LOC_New_Loan_Void_GraceDay_Txn"),"Login->Borrower Registratino->New Loan ->GraceDays_Void");
+>>>>>>> jan21.1
 
 		@Test(priority = 170, groups = { "EOD2" })
 
@@ -2168,6 +3839,14 @@ public class QCStore {
 
 			}
 		}
+<<<<<<< HEAD
+=======
+		@Test(priority=304,enabled = true, groups="Janaki_NEOD")
+		public static void JQC_LOC_New_Loan_GraceDay_Rescind_Txn() throws Exception {
+			try
+			{			
+				test=reports.startTest(Jprop.getProperty("QC_LOC_New_Loan_GraceDay_Rescind_Txn"),"Login->Borrower Registratino->New Loan ->GraceDays_Rescind");
+>>>>>>> jan21.1
 
 //Ratikanta Scenarios
 		
@@ -2232,6 +3911,14 @@ public class QCStore {
 
 			}
 		}
+<<<<<<< HEAD
+=======
+		@Test(priority=305,enabled = true, groups="Janaki_NEOD")
+		public static void JQC_LOC_New_Loan_After_RescindDays_Txn() throws Exception {
+			try
+			{			
+				test=reports.startTest(Jprop.getProperty("QC_LOC_New_Loan_After_RescindDays_Txn"),"Login->Borrower Registratino->New Loan ->GraceDays_Rescind");
+>>>>>>> jan21.1
 
 		@Test(priority=202, groups="Ratikanta_NEOD")
 		public static void RQC_LOC_Deposit_Return_ManualDefault_Txn_Testdata() throws Exception {
@@ -2297,6 +3984,14 @@ public class QCStore {
 
 			}
 		}
+<<<<<<< HEAD
+=======
+		@Test(priority=306,enabled = true, groups="Janaki_NEOD")
+		public static void JQC_LOC_Payment_After_Rescind_Txn() throws Exception {
+			try
+			{			
+				test=reports.startTest(Jprop.getProperty("QC_LOC_Payment_After_Rescind_Txn"),"Login->Borrower Registratino->New Loan ->GraceDays_Rescind");
+>>>>>>> jan21.1
 
 		@Test(priority=203, groups="Ratikanta_NEOD")
 		public static void RQC_LOC_Deposit_Return_2ndDeposit_Clear_3rdDeposit_Return_Default_Txn_Testdata()
@@ -2386,6 +4081,14 @@ public class QCStore {
 
 			}
 		}
+<<<<<<< HEAD
+=======
+		@Test(priority=307,enabled = true, groups="Janaki_NEOD")
+		public static void JQC_LOC_Payment_OnDueDate_Txn() throws Exception {
+			try
+			{			
+				test=reports.startTest(Jprop.getProperty("QC_LOC_Payment_OnDueDate_Txn"),"Login->Borrower Registratino->New Loan ->GraceDays_Rescind");
+>>>>>>> jan21.1
 
 		@Test(priority=204, groups="Ratikanta_NEOD")
 		public static void RQC_LOC_2missedPayment_Default_EOD_Txn_Testdata() throws Exception {
@@ -2456,6 +4159,16 @@ public class QCStore {
 
 			}
 		}
+<<<<<<< HEAD
+=======
+			
+		@Test(priority=308,enabled = true, groups="Janaki_NEOD")
+		
+		public static void JQC_LOC_LessThan_MinPayment_Txn() throws Exception {
+			try
+			{			
+				test=reports.startTest(Jprop.getProperty("QC_LOC_LessThan_MinPayment_Txn"),"Login->Borrower Registratino->New Loan ->GraceDays_Rescind");
+>>>>>>> jan21.1
 
 		@Test(priority=205, groups="Ratikanta_NEOD")
 		public static void RQC_LOC_Default_DefaultPayment_Txn_Testdata() throws Exception {
@@ -2552,6 +4265,7 @@ public class QCStore {
 			}
 		}
 
+<<<<<<< HEAD
 		@Test(priority=206, groups="Ratikanta_NEOD")
 		public static void RQC_LOC_Default_DefaultPayment_Void_Txn_Testdata() throws Exception {
 			try {
@@ -2563,6 +4277,10 @@ public class QCStore {
 				// ExcelNew TestData;
 				TestData = new ExcelNew(System.getProperty("user.dir")
 						+ Rprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
+=======
+		@Test(priority=309,enabled = true, groups="Janaki_NEOD")
+		
+>>>>>>> jan21.1
 
 				// test=reports.startTest("Lend Nation Smoke_testing","Lend Nation
 				// Application test report");
@@ -2626,6 +4344,7 @@ public class QCStore {
 			}
 		}
 
+<<<<<<< HEAD
 		@Test(priority=207, groups="Ratikanta_NEOD")
 		public static void RQC_LOC_Default_PartialDefaultPayment_Void_Txn_Testdata() throws Exception {
 			try {
@@ -2637,6 +4356,15 @@ public class QCStore {
 				// ExcelNew TestData;
 				TestData = new ExcelNew(System.getProperty("user.dir")
 						+ Rprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
+=======
+		@Test(priority=310,enabled = true, groups="Janaki_NEOD")
+		public static void JQC_LOC_DueDate_GreaterThan_MinPayment_Txn() throws Exception {
+			try
+			{			
+				test=reports.startTest(Jprop.getProperty("QC_LOC_DueDate_GreaterThan_MinPayment_Txn"),"Login->Borrower Registratino->New Loan ->GraceDays_Rescind");
+
+				FileName= Jprop.getProperty("QC_LOC_DueDate_GreaterThan_MinPayment_Txn_file_name")+".xls";
+>>>>>>> jan21.1
 
 				// test=reports.startTest("Lend Nation Smoke_testing","Lend Nation
 				// Application test report");
@@ -2700,6 +4428,7 @@ public class QCStore {
 			}
 		}
 
+<<<<<<< HEAD
 		@Test(priority=208, groups="Ratikanta_NEOD")
 		public static void RQC_LOC_Default_DefaultPayment_Return_Txn_Testdata() throws Exception {
 			try {
@@ -2711,6 +4440,15 @@ public class QCStore {
 				// ExcelNew TestData;
 				TestData = new ExcelNew(System.getProperty("user.dir")
 						+ Rprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
+=======
+		@Test(priority=311,enabled = true, groups="Janaki_NEOD")
+		public static void JQC_LOC_DueDate_LessThan_MinPayment_Txn() throws Exception {
+			try
+			{			
+				test=reports.startTest(Jprop.getProperty("QC_LOC_DueDate_LessThan_MinPayment_Txn"),"Login->Borrower Registratino->New Loan ->GraceDays_Rescind");
+
+				FileName= Jprop.getProperty("QC_LOC_DueDate_LessThan_MinPayment_Txn_file_name")+".xls";
+>>>>>>> jan21.1
 
 				// test=reports.startTest("Lend Nation Smoke_testing","Lend Nation
 				// Application test report");
@@ -2777,6 +4515,14 @@ public class QCStore {
 
 			}
 		}
+<<<<<<< HEAD
+=======
+		@Test(priority=312,enabled = true, groups="Janaki_NEOD")
+		public static void JQC_LOC_Payment_void_Txn() throws Exception {
+			try
+			{			
+				test=reports.startTest(Jprop.getProperty("QC_LOC_Payment_void_Txn"),"Login->Borrower Registratino->New Loan ->GraceDays_Rescind");
+>>>>>>> jan21.1
 
 		@Test(priority=209, groups="Ratikanta_NEOD")
 		public static void RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Txn_Testdata() throws Exception {
@@ -2850,6 +4596,15 @@ public class QCStore {
 
 			}
 		}
+<<<<<<< HEAD
+=======
+		
+		@Test(priority=313,enabled = true, groups="Janaki_NEOD")
+		public static void JQC_LOC_Payment_void_NextBusinessDay_Txn() throws Exception {
+			try
+			{			
+				test=reports.startTest(Jprop.getProperty("QC_LOC_Payment_void_NextBusinessDay_Txn"),"Login->Borrower Registratino->New Loan ->Payment -> void on NextBusinessDay");
+>>>>>>> jan21.1
 
 		@Test(priority=210, groups="Ratikanta_NEOD")
 		public static void RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Void_Txn_Testdata() throws Exception {
@@ -2927,6 +4682,7 @@ public class QCStore {
 			}
 		}
 
+<<<<<<< HEAD
 		@Test(priority=211, groups="Ratikanta_NEOD")
 		public static void RQC_LOC_PayOff_Closure_Txn_Testdata() throws Exception {
 			try {
@@ -2938,6 +4694,15 @@ public class QCStore {
 				// ExcelNew TestData;
 				TestData = new ExcelNew(System.getProperty("user.dir")
 						+ Rprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
+=======
+		@Test(priority=314,enabled = true, groups="Janaki_NEOD")
+		public static void JQC_LOC_LessThan_MinPayment_Viod_Txn() throws Exception {
+			try
+			{			
+				test=reports.startTest(Jprop.getProperty("QC_LOC_LessThan_MinPayment_Void_Txn"),"Login->Borrower Registratino->New Loan ->MinPayment --> Void");
+
+				FileName= Jprop.getProperty("QC_LOC_LessThan_MinPayment_Void_Txn_file_name")+".xls";
+>>>>>>> jan21.1
 
 				// test=reports.startTest("Lend Nation Smoke_testing","Lend Nation
 				// Application test report");
@@ -2991,6 +4756,15 @@ public class QCStore {
 
 			}
 		}
+<<<<<<< HEAD
+=======
+		@Test(priority=315,enabled = true, groups="Janaki_NEOD")
+		public static void JQC_LOC_GreaterThan_MinPayment_Void_Txn() throws Exception {
+			
+			try
+			{			
+				test=reports.startTest(Jprop.getProperty("QC_LOC_GreaterThan_MinPayment_Void_Txn"),"Login->Borrower Registratino->New Loan ->GreaterThanMinPayment --> Void");
+>>>>>>> jan21.1
 
 		@Test(priority=212, groups="Ratikanta_NEOD")
 		public static void RQC_LOC_Payment_PayOff_Closure_Void_Txn_Testdata() throws Exception {
@@ -3062,6 +4836,15 @@ public class QCStore {
 
 			}
 		}
+<<<<<<< HEAD
+=======
+		
+		@Test(priority=316,enabled = true, groups="Janaki_NEOD")
+		public static void JQC_LOC_LessThan_MinPayment_Return_Txn() throws Exception {
+			try
+			{			
+				test=reports.startTest(Jprop.getProperty("QC_LOC_LessThan_MinPayment_Return_Txn"),"Login->Borrower Registratino->New Loan ->MinPayment --> return");
+>>>>>>> jan21.1
 
 		@Test(priority=213, groups="Ratikanta_NEOD")
 		public static void RQC_LOC_PayOff_Closure_PayoffReturn_Txn_Testdata() throws Exception {
@@ -3200,6 +4983,14 @@ public class QCStore {
 
 			}
 		}
+<<<<<<< HEAD
+=======
+		@Test(priority=317,enabled = true, groups="Janaki_NEOD")
+		public static void JQC_LOC_GreaterThan_MinPayment_Return_Txn() throws Exception {
+			try
+			{			
+				test=reports.startTest(Jprop.getProperty("QC_LOC_GreaterThan_MinPayment_Return_Txn"),"Login->Borrower Registratino->New Loan ->GreaterThan-> MinPayment-> Return");
+>>>>>>> jan21.1
 
 		@Test(priority=215, groups="Ratikanta_EOD")
 		public static void RQC_LOC_ManualDefault_EOD_Txn_Testdata() throws Exception {
@@ -3353,6 +5144,7 @@ public class QCStore {
 			}
 		}
 
+<<<<<<< HEAD
 		// ============================================================================================================
 		//@Test(priority=202)
 		public static void RQC_DefaultPayment_Void_Txn_Testdata() throws Exception {
@@ -3401,6 +5193,13 @@ public class QCStore {
 						RCSRLoginLogout.login(SSN, AppURL);
 						RQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
 						RCSRLoginLogout.login(SSN, AppURL);
+=======
+		@Test(priority=318,enabled = true, groups="Janaki_NEOD")
+		public static void JQC_LOC_Refinance_StepSame_Txn() throws Exception {
+			try
+			{			
+				test=reports.startTest(Jprop.getProperty("QC_LOC_Refinance_StepSame_Txn"),"Login->Borrower Registratino->New Loan ->Refinance_StepSame");
+>>>>>>> jan21.1
 
 					}
 				}
@@ -3470,6 +5269,15 @@ public class QCStore {
 
 			}
 		}
+<<<<<<< HEAD
+=======
+		
+		@Test(priority=319,enabled = true, groups="Janaki_NEOD")
+		public static void JQC_LOC_Refinance_StepUp_Txn() throws Exception {
+			try
+			{			
+				test=reports.startTest(Jprop.getProperty("QC_LOC_Refinance_StepUp_Txn"),"Login->Borrower Registratino->New Loan ->Refinance_StepUp");
+>>>>>>> jan21.1
 
 		@Test(priority=302,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_New_Loan_Rescind_Txn() throws Exception {
@@ -3521,6 +5329,15 @@ public class QCStore {
 
 			}
 		}
+<<<<<<< HEAD
+=======
+		
+		@Test(priority=320,enabled = true, groups="Janaki_NEOD")
+		public static void JQC_LOC_Refinance_CABPayment_Return_Txn() throws Exception {
+			try
+			{			
+				test=reports.startTest(Jprop.getProperty("QC_LOC_Refinance_CABPayment_Return_Txn"),"Login->Borrower Registratino->New Loan ->Refinance_CABPayment_Return");
+>>>>>>> jan21.1
 
 		@Test(priority=303,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_New_Loan_Void_GraceDay_Txn() throws Exception {
@@ -3578,6 +5395,14 @@ public class QCStore {
 
 			}
 		}
+<<<<<<< HEAD
+=======
+		@Test(priority=321,enabled = true, groups="Janaki_NEOD")
+		public static void JQC_LOC_Refinance_Stepdown_Txn() throws Exception {
+			try
+			{			
+				test=reports.startTest(Jprop.getProperty("QC_LOC_Refinance_Stepdown_Txn"),"Login->Borrower Registratino->New Loan ->Refinance_Stepdown");
+>>>>>>> jan21.1
 
 		@Test(priority=304,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_New_Loan_GraceDay_Rescind_Txn() throws Exception {
@@ -3631,6 +5456,15 @@ public class QCStore {
 
 			}
 		}
+<<<<<<< HEAD
+=======
+		
+	 @Test(priority=322,enabled = true, groups="Janaki_NEOD")
+		public static void JQC_LOC_Refinance_Latefee_Payment_Txn() throws Exception {
+			try
+			{			
+				test=reports.startTest(Jprop.getProperty("QC_LOC_Refinance_Latefee_Payment_Txn"),"Login->Borrower Registratino->New Loan ->Refinance_Latefee_Payment");
+>>>>>>> jan21.1
 
 		@Test(priority=305,enabled = true, groups="Janaki_NEOD")
 		public static void JQC_LOC_New_Loan_After_RescindDays_Txn() throws Exception {
@@ -5273,12 +7107,22 @@ public class QCStore {
 			test = reports.startTest("QC_LOC_payment_Draw",
 					"New LOC--> Payment-->Draw(LOC Increment amt)-->EOD on Payment Due Date");
 
+<<<<<<< HEAD
 			TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/ALOC/" + FileName);
 			String sheetName = "Start";
 			int lastrow = TestData.getLastRow("Start");
 			System.out.println(lastrow);
 			for (int row = 2; row <= lastrow; row++) {
 				String RunFlag = TestData.getCellData(sheetName, "Run", row);
+=======
+			}
+		}
+		@Test(priority=323,enabled = true, groups="Janaki_EOD")
+		public static void JQC_LOC_Refinance_EOD_Payment_Txn() throws Exception {
+			try
+			{			
+				test=reports.startTest(Jprop.getProperty("QC_LOC_Refinance_EOD_Payment_Txn"),"Login->Borrower Registratino->New Loan ->Refinance_EOD_Payment");
+>>>>>>> jan21.1
 
 				if (RunFlag.equals("Y")) {
 					String AppURL = TestData.getCellData(sheetName, "AppURL", row);
@@ -5330,6 +7174,7 @@ public class QCStore {
 
 		@Test(priority = 417, enabled = false, groups = { "EOD1" })
 
+<<<<<<< HEAD
 		public void DrawAndEOD() throws Exception {
 			FileName = "QC_LOC_Draw_EOD.xls";
 			test = reports.startTest("QC_LOC_Draw_EOD", "New LOC-->Draw(LOC Increment amt)-->EOD on Payment Due Date");
@@ -5337,6 +7182,16 @@ public class QCStore {
 			TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/ALOC/" + FileName);
 			String sheetName = "Start";
 			int lastrow = TestData.getLastRow("Start");
+=======
+		@Test(priority=427,enabled=true,groups={"EOD3"})
+		public void PaymentDepositEODReDeposit() throws Exception{
+			FileName="QC_PaymentDepositEODReDeposit.xls";
+			test=reports.startTest("QC_PaymentDepositEODReDeposit","LOC-->Payment less than Min Payment Amt -->Deposit -->EOD-->Return-->Redeposit");
+
+			TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/QCStore/ALOC/"+FileName);
+			String sheetName="Start";
+			int lastrow=TestData.getLastRow("Start");
+>>>>>>> jan21.1
 			System.out.println(lastrow);
 			for (int row = 2; row <= lastrow; row++) {
 				String RunFlag = TestData.getCellData(sheetName, "Run", row);
@@ -5389,9 +7244,20 @@ public class QCStore {
 			FileName = "QC_LOC_Deposit_EOD.xls";
 			test = reports.startTest("QC_LOC_Deposit_EOD", "New LOC -->Deposit--> EOD on Payment Due Date");
 
+<<<<<<< HEAD
 			TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/ALOC/" + FileName);
 			String sheetName = "Start";
 			int lastrow = TestData.getLastRow("Start");
+=======
+		@Test(priority=426,enabled=false,groups={"EOD3"})
+		public void DepositEODReDeposit() throws Exception{
+			FileName="QC_DepositEODReDeposit.xls";
+			test=reports.startTest("QC_DepositEODReDeposit","LOC – Deposit-->EOD-->Return-->Redeposit");
+
+			TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/QCStore/ALOC/"+FileName);
+			String sheetName="Start";
+			int lastrow=TestData.getLastRow("Start");
+>>>>>>> jan21.1
 			System.out.println(lastrow);
 			for (int row = 2; row <= lastrow; row++) {
 				String RunFlag = TestData.getCellData(sheetName, "Run", row);
@@ -5441,9 +7307,20 @@ public class QCStore {
 			FileName = "QC_LOC_PayOff_EOD.xls";
 			test = reports.startTest("QC_LOC_PayOff_EOD", "New LOC -->Payoff--> EOD on Payment Due Date");
 
+<<<<<<< HEAD
 			TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/ALOC/" + FileName);
 			String sheetName = "Start";
 			int lastrow = TestData.getLastRow("Start");
+=======
+		@Test(priority=425,enabled=false,groups={"NonEOD"})
+		public void AReviseCredit_PayofffIncreaseIncome() throws Exception{
+			FileName="QC_Payoff_AReviseCreditincreaseincome.xls";
+			test=reports.startTest("QC_Payoff_AReviseCreditincreaseincome"," New LOC-->Payoff-->Auto closure-->Increase Income-->LOC-->Revise credit ");
+
+			TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/QCStore/ALOC/"+FileName);
+			String sheetName="Start";
+			int lastrow=TestData.getLastRow("Start");
+>>>>>>> jan21.1
 			System.out.println(lastrow);
 			for (int row = 2; row <= lastrow; row++) {
 				String RunFlag = TestData.getCellData(sheetName, "Run", row);
@@ -5549,6 +7426,7 @@ public class QCStore {
 			}
 		}
 
+<<<<<<< HEAD
 		@Test(priority = 414, enabled = false, groups = { "EOD1" })
 
 		public void HigherPaymentAndEod() throws Exception {
@@ -5559,6 +7437,16 @@ public class QCStore {
 			TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/ALOC/" + FileName);
 			String sheetName = "Start";
 			int lastrow = TestData.getLastRow("Start");
+=======
+		@Test(priority=424,enabled=false,groups={"NonEOD"})
+		public void AReviseCredit_IncreaseIncome() throws Exception{
+			FileName="QC_ AReviseCredit_IncreaseIncome.xls";
+			test=reports.startTest("QC_ AReviseCredit_IncreaseIncome"," New LOC-->Increase Income-Revise credit ");
+
+			TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/QCStore/ALOC/"+FileName);
+			String sheetName="Start";
+			int lastrow=TestData.getLastRow("Start");
+>>>>>>> jan21.1
 			System.out.println(lastrow);
 			for (int row = 2; row <= lastrow; row++) {
 				String RunFlag = TestData.getCellData(sheetName, "Run", row);
@@ -5606,7 +7494,22 @@ public class QCStore {
 			}
 		}
 
+<<<<<<< HEAD
 		@Test(priority = 413, enabled = false, groups = { "EOD1" })
+=======
+		@Test(priority=423,enabled=false,groups={"EOD3"})
+		public void SignatureNewLoan_EODTwice() throws Exception{
+			FileName="QC_LOC_SignatureLoan_EOD.xls";
+			test=reports.startTest("QC_LOC_SignatureLoan_EOD","New LOC for signature collateral –-> EOD on Payment Due Date- Age the store to 10 days-->EOD on 2nd Payment Due Date) ");
+
+			TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/QCStore/ALOC/"+FileName);
+			String sheetName="Start";
+			int lastrow=TestData.getLastRow("Start");
+			System.out.println(lastrow);
+			for(int row=2;row<=lastrow;row++)
+			{
+				String RunFlag = TestData.getCellData(sheetName,"Run",row);
+>>>>>>> jan21.1
 
 		public void PaymentAndEod() throws Exception {
 			FileName = "QC_LOC_Payment_EOD.xls";
@@ -5664,9 +7567,16 @@ public class QCStore {
 
 		@Test(priority = 412, enabled = false, groups = { "EOD1" })
 
+<<<<<<< HEAD
 		public void EODOnDueDate() throws Exception {
 			FileName = "QC_LOC_EODDuedate.xls";
 			test = reports.startTest("QC_LOC_EODDuedate", "New LOC – EOD on Payment Due Date");
+=======
+		@Test(priority=422,enabled=false,groups={"EOD3"})
+		public void Clear_Return_EODTwice() throws Exception{
+			FileName="QC_LOC_clearReturnEODTwice.xls";
+			test=reports.startTest("QC_LOC_clearReturnEODTwice","New LOC – EOD on Payment Due Date(including collateral Deposit) - Age the store - clear -EOD on 2nd Payment Due Date(including collateral Deposit) - Age the store - Return - EOD on 3nd Payment Due Date(including collateral Deposit) ");
+>>>>>>> jan21.1
 
 			TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/ALOC/" + FileName);
 			String sheetName = "Start";
@@ -5779,9 +7689,16 @@ public class QCStore {
 			FileName = "QC_LOC_MaxLoan.xls";
 			test = reports.startTest("QC_LOC_MaxLoan_Count ", "Login-->Borrower-->Max loan count");
 
+<<<<<<< HEAD
 			TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/ALOC/" + FileName);
 			String sheetName = "Start";
 			int lastrow = TestData.getLastRow("Start");
+=======
+		@Test(priority=421,enabled=false,groups={"EOD2"})
+		public void Deposit_DrawEODTwice() throws Exception{
+			FileName="QC_LOC_Draw_EODTwice.xls";
+			test=reports.startTest("QC_LOC_Draw_EODTwice","New LOC-->EOD on Payment Due Date(including collateral Deposit)-->Age the store-->Draw -EOD on 2nd Payment Due Date(including collate ral Deposit)");
+>>>>>>> jan21.1
 
 			for (int row = 2; row <= lastrow; row++) {
 				String RunFlag = TestData.getCellData(sheetName, "Run", row);
@@ -5905,10 +7822,17 @@ public class QCStore {
 
 		@Test(priority = 493, enabled = true, groups = { "NonEOD" })
 
+<<<<<<< HEAD
 		public void NewLoanBiweeklyPaymentDuedate() throws Exception {
 			FileName = "QC_LOC_EndDate_Biweekly_Duedate.xls";
 			test = reports.startTest("QC_LOC_EndDate_Biweekly",
 					"New LOC for a customer with pay frequency Biweekly and next pay date on End of the month  to validate Payment Due Date and Statement Date");
+=======
+		@Test(priority=420,enabled=false,groups={"EOD2"})
+		public void DepositEODTwice() throws Exception{
+			FileName="QC_LOC_DepositEODTwice.xls";
+			test=reports.startTest("QC_LOC_DepositEODTwice","New LOC-->EOD on Payment Due Date(including collateral Deposit)-->EOD on 2nd Payment Due Date(including collateral Deposit)");
+>>>>>>> jan21.1
 
 			TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/ALOC/" + FileName);
 			String sheetName = "Start";
@@ -5996,10 +7920,17 @@ public class QCStore {
 
 		@Test(priority = 496, enabled = true, groups = { "NonEOD" })
 
+<<<<<<< HEAD
 		public void NewLoanMonthly() throws Exception {
 			FileName = "QC_LOC_NewLoan_monthly.xls";
 			test = reports.startTest("QC_LOC_NewLoan_monthly",
 					"New LOC for a customer with pay frequency monthly to validate LOC Eligible Amt");
+=======
+		@Test(priority=419,enabled=false,groups={"EOD2"})
+		public void PaymentdrawVoidEOD() throws Exception{
+			FileName="QC_LOC_paymentDraw_Void_EOD.xls";
+			test=reports.startTest("QC_LOC_paymentDraw_Void_EOD","New LOC--> Payment-->Draw(LOC Increment amt)--->Void-->EOD on Payment Due Date");
+>>>>>>> jan21.1
 
 			TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/ALOC/" + FileName);
 			String sheetName = "Start";
@@ -6061,8 +7992,15 @@ public class QCStore {
 		@Test(priority = 498, enabled = true, groups = { "NonEOD" })
 		public void AReviseCredit_IncreaseIncome() throws Exception {
 
+<<<<<<< HEAD
 			FileName = "QC_ AReviseCredit_IncreaseIncome.xls";
 			test = reports.startTest("QC_ AReviseCredit_IncreaseIncome", " New LOC-->Increase Income-Revise credit ");
+=======
+		@Test(priority=418,enabled=false,groups={"EOD2"})
+		public void PaymentAndDraw() throws Exception{
+			FileName="QC_LOC_payment_Draw.xls";
+			test=reports.startTest("QC_LOC_payment_Draw","New LOC--> Payment-->Draw(LOC Increment amt)-->EOD on Payment Due Date");
+>>>>>>> jan21.1
 
 			TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/ALOC/" + FileName);
 			String sheetName = "Start";
@@ -6122,11 +8060,18 @@ public class QCStore {
 			}
 		}
 
+<<<<<<< HEAD
 		@Test(priority = 499, enabled = true, groups = { "NonEOD" })
 		public void AReviseCredit_PayofffIncreaseIncome() throws Exception {
 			FileName = "QC_Payoff_AReviseCreditincreaseincome.xls";
 			test = reports.startTest("QC_Payoff_AReviseCreditincreaseincome",
 					" New LOC-->Payoff-->Auto closure-->Increase Income-->LOC-->Revise credit ");
+=======
+		@Test(priority=417,enabled=false,groups={"EOD1"})
+		public void DrawAndEOD() throws Exception{
+			FileName="QC_LOC_Draw_EOD.xls";
+			test=reports.startTest("QC_LOC_Draw_EOD","New LOC-->Draw(LOC Increment amt)-->EOD on Payment Due Date");
+>>>>>>> jan21.1
 
 			TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/ALOC/" + FileName);
 			String sheetName = "Start";
@@ -6165,9 +8110,16 @@ public class QCStore {
 					AQCCSRNewLoan.newLoan(SSN, AppURL);
 					ACSRLoginLogout.logout();
 
+<<<<<<< HEAD
 					ACSRLoginLogout.login(SSN, AppURL);
 					AReviseCredit.revisecredit(SSN, AppURL);
 					ACSRLoginLogout.logout();
+=======
+		@Test(priority=416,enabled=false,groups={"EOD1"})
+		public void DepositAndEOD() throws Exception{
+			FileName="QC_LOC_Deposit_EOD.xls";
+			test=reports.startTest("QC_LOC_Deposit_EOD","New LOC -->Deposit--> EOD on Payment Due Date");
+>>>>>>> jan21.1
 
 					ACSRLoginLogout.login(SSN, AppURL);
 					ABorrowerEdit.borrowerIncreaseNet(SSN, AppURL);
@@ -6207,9 +8159,16 @@ public class QCStore {
 
 		@Test(priority = 500, enabled = true, groups = "Shashi")
 
+<<<<<<< HEAD
 		public void Deposit_Dropdown() throws Exception {
 			FileName = "QC_LOC_Deposit_Dropdown.xls";
 			test = reports.startTest("QC_LOC_Deposit_DropDown");
+=======
+		@Test(priority=415,enabled=false,groups={"EOD1"})
+		public void PayOFFandEod() throws Exception{
+			FileName="QC_LOC_PayOff_EOD.xls";
+			test=reports.startTest("QC_LOC_PayOff_EOD","New LOC -->Payoff--> EOD on Payment Due Date");
+>>>>>>> jan21.1
 
 			TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/SLOC/" + FileName);
 			String sheetName = "Start";
@@ -6283,9 +8242,16 @@ public class QCStore {
 
 		@Test(priority = 502, enabled = true, groups = "Shashi")
 
+<<<<<<< HEAD
 		public void SQC_LOC_Deposit_Bulk() throws Exception {
 			FileName = "QC_LOC_Deposit_Bulk.xls";
 			test = reports.startTest("QC_LOC_Deposit_Bulk");
+=======
+		@Test(priority=414,enabled=false,groups={"EOD1"})
+		public void VoidandEod() throws Exception{
+			FileName="QC_LOC_Void_EOD.xls";
+			test=reports.startTest("QC_LOC_Void_EOD","New LOC-->Payment --> Void --> EOD on payment Due Date");
+>>>>>>> jan21.1
 
 			TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/SLOC/" + FileName);
 			String sheetName = "Start";
@@ -6358,9 +8324,16 @@ public class QCStore {
 
 		@Test(priority = 504, enabled = true, groups = "Shashi")
 
+<<<<<<< HEAD
 		public void MidDay_Deposit() throws Exception {
 			FileName = "QC_LOC_MidDay_Deposit.xls";
 			test = reports.startTest("QC_LOC_MidDay_Deposit");
+=======
+		@Test(priority=414,enabled=false,groups={"EOD1"})
+		public void HigherPaymentAndEod() throws Exception{
+			FileName="QC_LOC_MorePayment_EOD.xls";
+			test=reports.startTest("QC_LOC_MorePayment_EOD","New LOC-->Payment More than Min Payment Amt after Rescind Period -->EOD on Payment Due Date");
+>>>>>>> jan21.1
 
 			TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/SLOC/" + FileName);
 			String sheetName = "Start";
@@ -6436,9 +8409,16 @@ public class QCStore {
 
 		@Test(priority = 506, enabled = true, groups = "Shashi")
 
+<<<<<<< HEAD
 		public void SQC_LOC_LessMinPayment_Deposit() throws Exception {
 			FileName = "QC_LOC_LessMinPayment_Deposit.xls";
 			test = reports.startTest("QC_LOC_LessMinPayment_Deposit");
+=======
+		@Test(priority=413,enabled=false,groups={"EOD1"})
+		public void PaymentAndEod() throws Exception{
+			FileName="QC_LOC_Payment_EOD.xls";
+			test=reports.startTest("QC_LOC_Payment_EOD","New LOC-->Payment less than Min Payment Amt after Rescind Period -->EOD on Payment Due Date");
+>>>>>>> jan21.1
 
 			TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/SLOC/" + FileName);
 			String sheetName = "Start";
@@ -6499,6 +8479,7 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
+<<<<<<< HEAD
 					VQCCSRLoginLogout.login(SSN, AppURL);
 					VQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					VCSRLoginLogout.logout(SSN, AppURL);
@@ -6514,6 +8495,12 @@ public class QCStore {
 					VQCCSRLoginLogout.login(SSN, AppURL);
 					// VQC_LOC_History.history(SSN, AppURL);
 					VCSRLoginLogout.logout(SSN, AppURL);
+=======
+		@Test(priority=412,enabled=false,groups={"EOD1"})
+		public void EODOnDueDate() throws Exception{
+			FileName="QC_LOC_EODDuedate.xls";
+			test=reports.startTest("QC_LOC_EODDuedate","New LOC – EOD on Payment Due Date");
+>>>>>>> jan21.1
 
 				}
 			}
@@ -6542,7 +8529,15 @@ public class QCStore {
 					// String AppURL = TestData.getCellData(sheetName,"AppURL",row);
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 
+<<<<<<< HEAD
 					System.out.println(AppURL);
+=======
+		//------------------------------------------------------------------------------------------------------------------------------------------------------------
+		@Test(priority=411,enabled=false,groups={"NonEOD"})
+		public void MinLocAmounts() throws Exception{
+			FileName="QC_LOC_NewLoan_monthly_MinAmount.xls";
+			test=reports.startTest("LOC_Scenario_NO.16(Minamount)","New LOC for  Minimum amount LOC amts to validate Minimum Payment Amt");
+>>>>>>> jan21.1
 
 					VQCCSRLoginLogout.login(SSN, AppURL);
 					VQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
@@ -6583,7 +8578,14 @@ public class QCStore {
 			test = reports.startTest("VQC_PartialWriteoffRecovery",
 					"Login-->New LOC - Write off -  Partial Write off recovery");
 
+<<<<<<< HEAD
 			TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/VLOC/" + FileName);
+=======
+		@Test(priority=410,enabled=false,groups={"NonEOD"})
+		public void MaxLocAmounts() throws Exception{
+			FileName="QC_LOC_NewLoan_monthly_Maxamount.xls";
+			test=reports.startTest("LOC_Scenario_NO.16(Max amount)","New LOC for  Max amount LOC amts to validate Minimum Payment Amt");
+>>>>>>> jan21.1
 
 			int lastrow = TestData.getLastRow("Start");
 			String sheetName = "Start";
@@ -6625,7 +8627,11 @@ public class QCStore {
 
 		}
 
+<<<<<<< HEAD
 		@Test(priority = 603, enabled = true)
+=======
+		@Test(priority=409,enabled=false,groups={"NonEOD"})
+>>>>>>> jan21.1
 
 		public static void LOC_PartialWriteoffRecoveryVoid() throws Exception {
 
@@ -6675,8 +8681,15 @@ public class QCStore {
 					// VQC_LOC_History.history(SSN, AppURL);
 					VCSRLoginLogout.logout(SSN, AppURL);
 
+<<<<<<< HEAD
 				}
 			}
+=======
+		@Test(priority=408,enabled=false,groups={"NonEOD"})
+		public void NewLoanWeekly_Duedatevalidation() throws Exception{
+			FileName="QC_LOC_NewLoan_Weekly_Duedate.xls";
+			test=reports.startTest("LOC_Scenario_NO.12","New LOC for a customer with pay frequency Weekly and next pay date on End of the month  to validate Payment Due Date and Statement Date");
+>>>>>>> jan21.1
 
 		}
 
@@ -6684,8 +8697,29 @@ public class QCStore {
 
 		public static void LOC_Bankrupt_Writeoff() throws Exception {
 
+<<<<<<< HEAD
 			FileName = "LOC _Bankrupt_Write off.xls";
 			test = reports.startTest("VQC_Bankrupt_Writeoff", "Login-->New LOC - Bankrupt Write off");
+=======
+					ACSRLoginLogout.login(SSN,AppURL);
+					LOCMaxloanCount.newLoan(SSN, AppURL);
+					ACSRLoginLogout.logout();
+					test.log(LogStatus.INFO, "****Test Scenario for Weekly pay frequence new loan and Due date validation is pass******");
+				}}}
+
+		@Test(priority=407,enabled=false,groups={"NonEOD"})
+		public void NewLoanSemiMonthly_Duedatevalidation() throws Exception{
+			FileName="QC_LOC_NewLoan_Semimonthly_Duedate.xls";
+			test=reports.startTest("LOC_Scenario_NO.11","New LOC for a customer with pay frequency Semi – monthly and next pay date on End of the month  to validate Payment Due Date and Statement Date");
+
+			TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/QCStore/ALOC/"+FileName);
+			String sheetName="Start";
+			int lastrow=TestData.getLastRow("Start");
+			System.out.println(lastrow);
+			for(int row=2;row<=lastrow;row++)
+			{
+				String RunFlag = TestData.getCellData(sheetName,"Run",row);
+>>>>>>> jan21.1
 
 			TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/VLOC/" + FileName);
 
@@ -6702,7 +8736,14 @@ public class QCStore {
 					// String AppURL = TestData.getCellData(sheetName,"AppURL",row);
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 
+<<<<<<< HEAD
 					System.out.println(AppURL);
+=======
+		@Test(priority=406,enabled=false,groups={"NonEOD"})
+		public void NewLoanMonthly_Duedatevalidation() throws Exception{
+			FileName="QC_LOC_NewLoan_monthly_Duedate.xls";
+			test=reports.startTest("LOC_Scenario_NO.10","New LOC for a customer with pay frequency monthly and next pay date on End of the month  to validate Payment Due Date and Statement Date");
+>>>>>>> jan21.1
 
 					VQCCSRLoginLogout.login(SSN, AppURL);
 					VQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
@@ -6733,7 +8774,14 @@ public class QCStore {
 
 		@Test(priority = 605, enabled = true)
 
+<<<<<<< HEAD
 		public static void LOC_Bankrupt_Writeoff_Dismissed() throws Exception {
+=======
+		@Test(priority=405,enabled=false,groups={"NonEOD"})
+		public void NewLoanBiweeklyPaymentDuedate() throws Exception{
+			FileName="QC_LOC_NewLoan_Biweekly_Duedate.xls";
+			test=reports.startTest("LOC_Scenario_NO.09","New LOC for a customer with pay frequency Biweekly and next pay date on End of the month  to validate Payment Due Date and Statement Date");
+>>>>>>> jan21.1
 
 			FileName = "LOC_Bankrupt_Writeoff_Dismissed.xls";
 			test = reports.startTest("VQC_Bankrupt_Writeoff_Dismissed",
@@ -6756,12 +8804,19 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
+<<<<<<< HEAD
 					VQCCSRLoginLogout.login(SSN, AppURL);
 					VQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					VCSRLoginLogout.logout(SSN, AppURL);
 					VQCCSRLoginLogout.login(SSN, AppURL);
 					VQCCSRNewLoan.newLoan(SSN, AppURL);
 					VCSRLoginLogout.logout(SSN, AppURL);
+=======
+		@Test(priority=404,enabled=false,groups={"NonEOD"})
+		public void NewLoanWeekly() throws Exception{
+			FileName="QC_LOC_NewLoan_Weekly.xls";
+			test=reports.startTest("LOC_Scenario_NO.04","New LOC for a customer with pay frequency Weekly to validate LOC Eligible Amt");
+>>>>>>> jan21.1
 
 					VQCCSRLoginLogout.login(SSN, AppURL);
 					VQCCSRBankruptcy.bankruptcy(SSN, AppURL);
@@ -6787,7 +8842,14 @@ public class QCStore {
 			FileName = "LOC_Deposit_Return_Writeoff.xls";
 			test = reports.startTest(" VQC_Deposit-Return-Writeoff", "Login-->New LOC - Deposit - Return- Write off");
 
+<<<<<<< HEAD
 			TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/VLOC/" + FileName);
+=======
+		@Test(priority=403,enabled=false,groups={"NonEOD"})
+		public void NewLoanSemiMonthly() throws Exception{
+			FileName="QC_LOC_NewLoan_Semimonthly.xls";
+			test=reports.startTest("LOC_Scenario_NO.03","New LOC for a customer with pay frequency Semi monthly to validate LOC Eligible Amt");
+>>>>>>> jan21.1
 
 			int lastrow = TestData.getLastRow("Start");
 			String sheetName = "Start";
@@ -6830,7 +8892,14 @@ public class QCStore {
 
 		}
 
+<<<<<<< HEAD
 		@Test(priority = 607, enabled = true)
+=======
+		@Test(priority=402,enabled=false,groups={"NonEOD"})
+		public void NewLoanMonthly() throws Exception{
+			FileName="QC_LOC_NewLoan_monthly.xls";
+			test=reports.startTest("LOC_Scenario_NO.02","New LOC for a customer with pay frequency monthly to validate LOC Eligible Amt");
+>>>>>>> jan21.1
 
 		public static void LOC_Deposit2_Return_Writeoff() throws Exception {
 
@@ -6840,21 +8909,45 @@ public class QCStore {
 
 			TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/VLOC/" + FileName);
 
+<<<<<<< HEAD
 			int lastrow = TestData.getLastRow("Start");
 			String sheetName = "Start";
 			// int lastrow=TestData.getLastRow("Borrower");
+=======
+					ACSRLoginLogout.login(SSN,AppURL);
+					AQCCSRNewLoan.newLoan(SSN, AppURL);
+					ACSRLoginLogout.logout();
+					test.log(LogStatus.INFO, "****Test Scenario for Monthly pay frequence new loan is pass******");
+				}}}
+
+		@Test(priority=401,enabled=true,groups={"NonEOD"})
+		public void NewLoanBiweekly() throws Exception{
+			FileName="QC_LOC_NewLoan_Biweekly.xls";
+			test=reports.startTest("LOC_Scenario_NO.01","New LOC for a customer with pay frequency Biweekly to validate LOC Eligible Amt");
+
+			TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/QCStore/ALOC/"+FileName);
+			String sheetName="Start";
+			int lastrow=TestData.getLastRow("Start");
+>>>>>>> jan21.1
 			System.out.println(lastrow);
 			for (int row = 2; row <= lastrow; row++) {
 
+<<<<<<< HEAD
 				String RunFlag = TestData.getCellData(sheetName, "Run", row);
 				// System.out.println(RunFlag);
 				if (RunFlag.equals("Y")) {
 
 					String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
+=======
+//Shashi scenarios
+
+		
+>>>>>>> jan21.1
 
 					System.out.println(AppURL);
 
+<<<<<<< HEAD
 					VQCCSRLoginLogout.login(SSN, AppURL);
 					VQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					VCSRLoginLogout.logout(SSN, AppURL);
@@ -6869,6 +8962,43 @@ public class QCStore {
 					VCSRLoginLogout.logout(SSN, AppURL);
 					VQCCSRReturnPosting.returnposting(SSN, AppURL);
 					VQCAdminACHReturn.achreturn(SSN, AppURL);
+=======
+		public void Deposit_Dropdown() throws Exception{
+			FileName="QC_LOC_Deposit_Dropdown.xls";
+			test=reports.startTest("QC_LOC_Deposit_DropDown");
+
+			 TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/QCStore/SLOC/"+FileName);
+			String sheetName="Start";
+			int lastrow=TestData.getLastRow("Start");
+			System.out.println(lastrow);
+			for(int row=2;row<=lastrow;row++)
+			{
+				String RunFlag = TestData.getCellData(sheetName,"Run",row);
+
+				if(RunFlag.equals("Y"))
+				{	
+					String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+					String SSN = TestData.getCellData(sheetName,"SSN",row); 
+					
+					SCSRLoginLogout.login(SSN,AppURL);
+					SCSRBorrowerRegistration.borrowerReg(SSN,AppURL);
+					SCSRLoginLogout.logout();
+					SCSRLoginLogout.login(SSN,AppURL);
+					SQCCSRNewLoan.newLoan(SSN, AppURL);
+				    SCSRLoginLogout.logout();
+					SCSRLoginLogout.login(SSN,AppURL);
+					SQCAgeStoreDueDate.ageStoreDueDate(SSN,AppURL);
+					SCSRLoginLogout.login(SSN,AppURL);
+					SQCDepositDropdown.depositDropDown(SSN,AppURL);
+					SCSRLoginLogout.logout();
+					SCSRLoginLogout.login(SSN,AppURL);
+					SQC_LOC_History.history(SSN,AppURL);
+					SCSRLoginLogout.logout();
+					
+					test.log(LogStatus.INFO, "****Test Scenario for Deposit_DropDown_Sucsessfully******");
+				}}}
+		
+>>>>>>> jan21.1
 
 					VQCCSRLoginLogout.login(SSN, AppURL);
 					VQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
@@ -6877,6 +9007,7 @@ public class QCStore {
 					VCSRLoginLogout.logout(SSN, AppURL);
 					VQCCSRLoginLogout.login(SSN, AppURL);
 
+<<<<<<< HEAD
 					VQCCSR_Deposit.deposit(SSN, AppURL);
 					VCSRLoginLogout.logout(SSN, AppURL);
 					VQCCSRReturnPosting.returnposting(SSN, AppURL);
@@ -6884,6 +9015,122 @@ public class QCStore {
 					VQCCSRLoginLogout.login(SSN, AppURL);
 					VQCCSRWriteOff.writeoff(SSN, AppURL);
 					VCSRLoginLogout.logout(SSN, AppURL);
+=======
+	    public void Deposit_Dropdown_Void() throws Exception{
+				FileName="QC_LOC_Deposit_DropDown_Void.xls";
+				test=reports.startTest("QC_LOC_Deposit_DropDown_Void");
+
+				 TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/QCStore/SLOC/"+FileName);
+				String sheetName="Start";
+				int lastrow=TestData.getLastRow("Start");
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+
+					if(RunFlag.equals("Y"))
+					{	
+						String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+						String SSN = TestData.getCellData(sheetName,"SSN",row); 
+						
+						SCSRLoginLogout.login(SSN,AppURL);
+						SCSRBorrowerRegistration.borrowerReg(SSN,AppURL);
+						SCSRLoginLogout.logout();
+						SCSRLoginLogout.login(SSN,AppURL);
+						SQCCSRNewLoan.newLoan(SSN, AppURL);
+						SCSRLoginLogout.logout();
+						SCSRLoginLogout.login(SSN,AppURL);
+						SQCAgeStoreDueDate.ageStoreDueDate(SSN,AppURL);
+						SCSRLoginLogout.login(SSN,AppURL);
+						SQCDepositDropdown.depositDropDown(SSN,AppURL);
+						SCSRLoginLogout.logout();
+						SCSRLoginLogout.login(SSN,AppURL);
+						SQCVoid.qcVoid(SSN,AppURL);
+						SCSRLoginLogout.logout();
+						SCSRLoginLogout.login(SSN,AppURL);
+						SQC_LOC_History.history(SSN,AppURL);
+						SCSRLoginLogout.logout();
+						test.log(LogStatus.INFO, "****Test Scenario for Deposit_DropDown_Void_Sucsessfully******");
+					}}}
+			
+
+		   // @Test(priority=502,enabled=true,groups="Shashi")
+
+		public void SQC_LOC_Deposit_Bulk() throws Exception{
+				FileName="QC_LOC_Deposit_Bulk.xls";
+				test=reports.startTest("QC_LOC_Deposit_Bulk");
+
+				 TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/QCStore/SLOC/"+FileName);
+				String sheetName="Start";
+				int lastrow=TestData.getLastRow("Start");
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+
+					if(RunFlag.equals("Y"))
+					{	
+						String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+						String SSN = TestData.getCellData(sheetName,"SSN",row); 
+						
+						SCSRLoginLogout.login(SSN,AppURL);
+						SCSRBorrowerRegistration.borrowerReg(SSN,AppURL);
+						SCSRLoginLogout.logout();
+						SCSRLoginLogout.login(SSN,AppURL);
+						SQCCSRNewLoan.newLoan(SSN, AppURL);
+						SCSRLoginLogout.logout();
+						SCSRLoginLogout.login(SSN,AppURL);
+						SQCAgeStoreDueDate.ageStoreDueDate(SSN,AppURL);
+						SCSRLoginLogout.login(SSN,AppURL);
+						SQCDepositMenu.depositMenu(SSN,AppURL);
+						SCSRLoginLogout.logout();
+						SCSRLoginLogout.login(SSN,AppURL);
+						SQC_LOC_History.history(SSN,AppURL);
+						SCSRLoginLogout.logout();
+						test.log(LogStatus.INFO, "****Test Scenario for Deposit_Bulk (Menu)_Sucsessfully******");
+					}}}
+			
+
+		@Test(priority=503,enabled=true,groups="Shashi")
+
+		public void SQC_LOC_Deposit_Bulk_Void() throws Exception{
+			FileName="QC_LOC_Deposit_Bulk_Void.xls";
+			test=reports.startTest("QC_LOC_Deposit_Bulk_Void");
+
+			 TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/QCStore/SLOC/"+FileName);
+			String sheetName="Start";
+			int lastrow=TestData.getLastRow("Start");
+			System.out.println(lastrow);
+			for(int row=2;row<=lastrow;row++)
+			{
+				String RunFlag = TestData.getCellData(sheetName,"Run",row);
+
+				if(RunFlag.equals("Y"))
+				{	
+					String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+					String SSN = TestData.getCellData(sheetName,"SSN",row); 
+					
+					SCSRLoginLogout.login(SSN,AppURL);
+					SCSRBorrowerRegistration.borrowerReg(SSN,AppURL);
+					SCSRLoginLogout.logout();
+					SCSRLoginLogout.login(SSN,AppURL);
+					SQCCSRNewLoan.newLoan(SSN, AppURL);
+					SCSRLoginLogout.logout();
+					SCSRLoginLogout.login(SSN,AppURL);
+					SQCAgeStoreDueDate.ageStoreDueDate(SSN,AppURL);
+					SCSRLoginLogout.login(SSN,AppURL);
+					SQCDepositMenu.depositMenu(SSN,AppURL);
+					SCSRLoginLogout.logout();
+					SCSRLoginLogout.login(SSN,AppURL);
+					SQCVoid.qcVoid(SSN,AppURL);
+					SCSRLoginLogout.logout();
+					SCSRLoginLogout.login(SSN,AppURL);
+					SQC_LOC_History.history(SSN,AppURL);
+					SCSRLoginLogout.logout();
+					test.log(LogStatus.INFO, "****Test Scenario for Deposit_Bulk (Menu)_Void_Sucsessfully******");
+				}}}
+		
+>>>>>>> jan21.1
 
 					VQCCSRLoginLogout.login(SSN, AppURL);
 					// VQC_LOC_History.history(SSN, AppURL);
@@ -6893,6 +9140,7 @@ public class QCStore {
 			}
 		}
 
+<<<<<<< HEAD
 		@Test(priority = 608, enabled = true)
 
 		public static void LOC_WriteoffRecoveryReturn() throws Exception {
@@ -6908,6 +9156,134 @@ public class QCStore {
 			// int lastrow=TestData.getLastRow("Borrower");
 			System.out.println(lastrow);
 			for (int row = 2; row <= lastrow; row++) {
+=======
+		public void MidDay_Deposit() throws Exception{
+				FileName="QC_LOC_MidDay_Deposit.xls";
+				test=reports.startTest("QC_LOC_MidDay_Deposit");
+
+				 TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/QCStore/SLOC/"+FileName);
+				String sheetName="Start";
+				int lastrow=TestData.getLastRow("Start");
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+
+					if(RunFlag.equals("Y"))
+					{	
+						String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+						String SSN = TestData.getCellData(sheetName,"SSN",row); 
+						
+						SCSRLoginLogout.login(SSN,AppURL);
+						SCSRBorrowerRegistration.borrowerReg(SSN,AppURL);
+						SCSRLoginLogout.logout();
+						SCSRLoginLogout.login(SSN,AppURL);
+						SQCCSRNewLoan.newLoan(SSN, AppURL);
+						SCSRLoginLogout.logout();
+						SCSRLoginLogout.login(SSN,AppURL);
+						SQCAgeStoreDueDate.ageStoreDueDate(SSN,AppURL);
+						SCSRLoginLogout.login(SSN,AppURL);
+					    SCSRMidDayDeposit.middeposit(SSN,AppURL);
+					    SCSRLoginLogout.logout();
+					    SCSRLoginLogout.login(SSN,AppURL);
+						SQC_LOC_History.history(SSN,AppURL);
+						SCSRLoginLogout.logout();
+					   
+					    
+						test.log(LogStatus.INFO, "****Test Scenario for MidDay_Deposit_Sucsessfully******");
+					}}}
+			
+
+			
+		
+
+			@Test(priority=505,enabled=true,groups="Shashi")
+
+		public void MidDay_Void_Deposit() throws Exception{
+				FileName="QC_LOC_MidDay_Void_Deposit.xls";
+				test=reports.startTest("QC_LOC_MidDay_Void_Deposit");
+
+				 TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/QCStore/SLOC/"+FileName);
+				String sheetName="Start";
+				int lastrow=TestData.getLastRow("Start");
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+
+					if(RunFlag.equals("Y"))
+					{	
+						String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+						String SSN = TestData.getCellData(sheetName,"SSN",row); 
+						
+						SCSRLoginLogout.login(SSN,AppURL);
+						SCSRBorrowerRegistration.borrowerReg(SSN,AppURL);
+						SCSRLoginLogout.logout();
+						SCSRLoginLogout.login(SSN,AppURL);
+						SQCCSRNewLoan.newLoan(SSN, AppURL);
+						SCSRLoginLogout.logout();
+						SCSRLoginLogout.login(SSN,AppURL);
+						SQCAgeStoreDueDate.ageStoreDueDate(SSN,AppURL);
+						SCSRLoginLogout.login(SSN,AppURL);
+					    SCSRMidDayDeposit.middeposit(SSN,AppURL);
+					    SCSRLoginLogout.logout();
+					    SCSRLoginLogout.login(SSN,AppURL);
+					    SQCVoid.qcVoid(SSN,AppURL);
+					    SCSRLoginLogout.logout();
+					    SCSRLoginLogout.login(SSN,AppURL);
+						SQC_LOC_History.history(SSN,AppURL);
+						SCSRLoginLogout.logout();
+					    
+						test.log(LogStatus.INFO, "****<FONT color=green style=Arial>Test Scenario for MidDay_Void_Deposit_Sucsessfully******");
+					}}}
+			
+
+
+			@Test(priority=506,enabled=true,groups="Shashi")
+
+		public void SQC_LOC_LessMinPayment_Deposit() throws Exception{
+				FileName="QC_LOC_LessMinPayment_Deposit.xls";
+				test=reports.startTest("QC_LOC_LessMinPayment_Deposit");
+
+				 TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/QCStore/SLOC/"+FileName);
+				String sheetName="Start";
+				int lastrow=TestData.getLastRow("Start");
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+
+					if(RunFlag.equals("Y"))
+					{	
+						String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+						String SSN = TestData.getCellData(sheetName,"SSN",row); 
+						
+						SCSRLoginLogout.login(SSN,AppURL);
+						SCSRBorrowerRegistration.borrowerReg(SSN,AppURL);
+						SCSRLoginLogout.logout();
+						SCSRLoginLogout.login(SSN,AppURL);
+						SQCCSRNewLoan.newLoan(SSN, AppURL);
+					    SCSRLoginLogout.logout();
+						SCSRLoginLogout.login(SSN,AppURL);
+						SQCAgeStoreDueDate.ageStoreDueDate(SSN,AppURL);
+						SCSRLoginLogout.login(SSN,AppURL);
+						SLOCPayments.payment(SSN,AppURL);
+						SCSRLoginLogout.logout();
+						SCSRLoginLogout.login(SSN,AppURL);
+						SQCDepositDropdown.depositDropDown(SSN,AppURL);
+						SCSRLoginLogout.logout();
+						SCSRLoginLogout.login(SSN,AppURL);
+						SQC_LOC_History.history(SSN,AppURL);
+						SCSRLoginLogout.logout();
+						test.log(LogStatus.INFO, "****Test Scenario for LessMinPaymentAmt_Deposit Sucsessfully******");
+					}}}
+			
+					
+		
+//V Jyothi scenarios
+
+		@Test(priority=0,enabled=true)
+>>>>>>> jan21.1
 
 				String RunFlag = TestData.getCellData(sheetName, "Run", row);
 				// System.out.println(RunFlag);
@@ -6950,12 +9326,350 @@ public class QCStore {
 				}
 			}
 
+<<<<<<< HEAD
+=======
+	@Test(priority=601,enabled=true)
+	public static void LOC_WriteoffRecovery() throws Exception {
+		
+			  
+			  FileName="LOC_WriteoffRecovery.xls";
+				test=reports.startTest("VQC_WriteoffRecovery","Login-->New LOC - Write off - Write off recovery--Void");
+
+				 TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/QCStore/VLOC/"+FileName);
+
+		int lastrow=TestData.getLastRow("Start");
+		String sheetName="Start";
+		//int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for(int row=2;row<=lastrow;row++)
+		{
+			
+			
+			
+			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+			//System.out.println(RunFlag);
+		if(RunFlag.equals("Y"))
+		{	
+			
+				//String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+				
+				System.out.println(AppURL);
+		
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCCSRNewLoan.newLoan(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCCSRWriteOff.writeoff(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCCSRWriteOffRecovery_Partial.writeoffrecovery(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+			
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCVoid.qcVoid(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				//VQC_LOC_History.history(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				
+>>>>>>> jan21.1
 		}
 
+<<<<<<< HEAD
 		@BeforeClass(alwaysRun = true)
 		public void setup() throws IOException {
 
 			try {
+=======
+	
+	
+	@Test(priority=602,enabled=true)
+	public static void LOC_PartialWriteoffRecovery() throws Exception {
+		
+			  
+			  FileName="LOC_PartialWriteoffRecovery.xls";
+				test=reports.startTest("VQC_PartialWriteoffRecovery","Login-->New LOC - Write off -  Partial Write off recovery");
+
+				 TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/QCStore/VLOC/"+FileName);
+
+		int lastrow=TestData.getLastRow("Start");
+		String sheetName="Start";
+		//int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for(int row=2;row<=lastrow;row++)
+		{
+			
+			
+			
+			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+			//System.out.println(RunFlag);
+		if(RunFlag.equals("Y"))
+		{	
+			
+				//String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+				
+				System.out.println(AppURL);
+		 
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCCSRNewLoan.newLoan(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCCSRWriteOff.writeoff(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCCSRWriteOffRecovery_Partial.writeoffrecovery(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				//VQC_LOC_History.history(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+		}
+		}
+		  
+	  }
+
+	@Test(priority=603,enabled=true)
+	public static void LOC_PartialWriteoffRecoveryVoid() throws Exception {
+		
+			  
+			  FileName="LOC_PartialWriteoffRecoveryVoid.xls";
+				test=reports.startTest("VQC_PartialWriteoffRecoveryVoid","Login-->New LOC - Write off -  Partial Write off recovery—Void");
+
+				 TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/QCStore/VLOC/"+FileName);
+
+		int lastrow=TestData.getLastRow("Start");
+		String sheetName="Start";
+		//int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for(int row=2;row<=lastrow;row++)
+		{
+			
+			
+			
+			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+			//System.out.println(RunFlag);
+		if(RunFlag.equals("Y"))
+		{	
+			
+				//String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+				
+				System.out.println(AppURL);
+		 
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCCSRNewLoan.newLoan(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCCSRWriteOff.writeoff(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCCSRWriteOffRecovery_Partial.writeoffrecovery(SSN, AppURL);
+				//VQCCSRWriteOffRecovery.writeoffrecovery(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCVoid.qcVoid(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				//VQC_LOC_History.history(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				
+			
+		}
+		}
+		  
+	  }
+
+	@Test(priority=604,enabled=true)
+	public static void LOC_Bankrupt_Writeoff() throws Exception {
+		
+			  
+			  FileName="LOC _Bankrupt_Write off.xls";
+				test=reports.startTest("VQC_Bankrupt_Writeoff","Login-->New LOC - Bankrupt Write off");
+
+				 TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/QCStore/VLOC/"+FileName);
+
+		int lastrow=TestData.getLastRow("Start");
+		String sheetName="Start";
+		//int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for(int row=2;row<=lastrow;row++)
+		{
+			
+			
+			
+			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+			//System.out.println(RunFlag);
+		if(RunFlag.equals("Y"))
+		{	
+			
+				//String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+				
+				System.out.println(AppURL);
+		 
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCCSRNewLoan.newLoan(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+			
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCCSRBankruptcy.bankruptcy(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				//VQCCSRLoginLogout.login(SSN, AppURL);
+				VAdminLoginForBankruptcy.bankruptcy(driver, SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCCSRHistory.history(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				//VQC_LOC_History.history(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				//VQC_LOC_History.history(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				
+			
+		}
+		}
+		  
+	  }
+
+	@Test(priority=605,enabled=true)
+	public static void LOC_Bankrupt_Writeoff_Dismissed() throws Exception {
+		
+			  
+			  FileName="LOC_Bankrupt_Writeoff_Dismissed.xls";
+				test=reports.startTest("VQC_Bankrupt_Writeoff_Dismissed","Login-->New LOC - Bankrupt Write off - Dismissed/Discharged");
+
+				 TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/QCStore/VLOC/"+FileName);
+
+		int lastrow=TestData.getLastRow("Start");
+		String sheetName="Start";
+		//int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for(int row=2;row<=lastrow;row++)
+		{
+			
+			
+			
+			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+			//System.out.println(RunFlag);
+		if(RunFlag.equals("Y"))
+		{	
+			
+				//String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+				
+				System.out.println(AppURL);
+		 
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCCSRNewLoan.newLoan(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+			
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCCSRBankruptcy.bankruptcy(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				//VQCCSRLoginLogout.login(SSN, AppURL);
+				VAdminLoginForBankruptcy.bankruptcy(driver, SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCCSRHistory.history(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VDismissed_Admin.Dismissed(driver, SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				//VQC_LOC_History.history(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				
+			
+		}
+		}
+		  
+	  }
+
+	// @Test(priority=606,enabled=true)
+	public static void  LOC_Deposit_Return_Writeoff() throws Exception {
+		
+			  
+			  FileName="LOC_Deposit_Return_Writeoff.xls";
+				test=reports.startTest(" VQC_Deposit-Return-Writeoff","Login-->New LOC - Deposit - Return- Write off");
+
+				 TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/QCStore/VLOC/"+FileName);
+
+		int lastrow=TestData.getLastRow("Start");
+		String sheetName="Start";
+		//int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for(int row=2;row<=lastrow;row++)
+		{
+			
+			
+			
+			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+			//System.out.println(RunFlag);
+		if(RunFlag.equals("Y"))
+		{	
+			
+				//String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+				
+				System.out.println(AppURL);
+		 
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCCSRNewLoan.newLoan(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCCSR_Deposit.deposit(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRReturnPosting.returnposting(SSN, AppURL);
+				VQCAdminACHReturn.achreturn(SSN, AppURL);			
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCCSRWriteOff.writeoff(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				//VQC_LOC_History.history(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+					
+			
+		}
+		}
+		  
+	  }
+>>>>>>> jan21.1
 
 				// prop=prop.getProperty("user.dir")+"/Tests/Objects.properties";
 				BufferedReader reader;
@@ -6979,7 +9693,138 @@ public class QCStore {
 							System.getProperty("user.dir") + prop.getProperty("QC_Store_extent_report_path") + Bfilename,
 							true);
 
+<<<<<<< HEAD
 				}
+=======
+	@Test(priority=607,enabled=true)
+	public static void  LOC_Deposit2_Return_Writeoff() throws Exception {
+		
+			  
+			  FileName="LOC_Deposit2_Return_Writeoff.xls";
+				test=reports.startTest(" VQC_Deposit2_Return_Writeoff","Login-->New LOC - Deposit - Return- 2nd Deposit - Return - Write off");
+
+				 TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/QCStore/VLOC/"+FileName);
+
+		int lastrow=TestData.getLastRow("Start");
+		String sheetName="Start";
+		//int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for(int row=2;row<=lastrow;row++) 
+		{
+			
+			
+			
+			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+			//System.out.println(RunFlag);
+		if(RunFlag.equals("Y"))
+		{	
+			
+				//String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+				
+				System.out.println(AppURL);
+		 
+
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCCSRNewLoan.newLoan(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCCSR_Deposit.deposit(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRReturnPosting.returnposting(SSN, AppURL);
+				VQCAdminACHReturn.achreturn(SSN, AppURL);
+				
+		        VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				
+				
+				VQCCSR_Deposit.deposit(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRReturnPosting.returnposting(SSN, AppURL);
+				VQCAdminACHReturn.achreturn(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCCSRWriteOff.writeoff(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				//VQC_LOC_History.history(SSN, AppURL);
+				VQCCSRHistory.history(SSN, SSN);				
+				VCSRLoginLogout.logout(SSN, AppURL);
+		}
+	}
+	}
+	@Test(priority=608,enabled=true)
+	public static void LOC_WriteoffRecoveryReturn() throws Exception {
+		
+			  
+			  FileName="LOC_WriteoffRecoveryReturn.xls";
+				test=reports.startTest("VQC_WriteoffRecoveryReturn","Login-->New LOC - Write off - Write off recovery--Return");
+
+				 TestData = new ExcelNew(System.getProperty("user.dir")+"/TestData/QCStore/VLOC/"+FileName);
+
+		int lastrow=TestData.getLastRow("Start");
+		String sheetName="Start";
+		//int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for(int row=2;row<=lastrow;row++)
+		{
+			
+			
+			
+			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+			//System.out.println(RunFlag);
+		if(RunFlag.equals("Y"))
+		{	
+			
+				//String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+				
+				System.out.println(AppURL);
+		 
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCCSRNewLoan.newLoan(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+				         
+				VQCCSRLoginLogout.login(SSN, AppURL);
+	      		VQCCSRWriteOff.writeoff(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCCSRWriteOffRecovery.writeoffrecovery(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+			    VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCInternalTransfer.internalTransfer(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCCashMgmtDeposit.cashmgmtDeposit(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCAdminCCKReturn.cckreturn(SSN, AppURL);
+				
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				//VQC_LOC_History.history(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				
+		}
+		}
+		  
+	  }
+>>>>>>> jan21.1
 
 				catch (Exception e) {
 

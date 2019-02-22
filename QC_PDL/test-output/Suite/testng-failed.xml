@@ -4,7 +4,12 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
+<<<<<<< HEAD
         <include name="Janaki"/>
+=======
+        <include name="EOD"/>
+        <include name="1stBatch"/>
+>>>>>>> jan21.1
       </run>
     </groups>
     <classes>
@@ -14,9 +19,7 @@
 <<<<<<< HEAD
           <include name="getResult"/>
           <include name="setup"/>
-          <include name="QC_Refinance_StepSameVoidURP_Txn"/>
-          <include name="QC_Refinance_StepSameURP_Txn"/>
-          <include name="endReport"/>
+          <include name="QC_Void_FullReturnPayment_Txn"/>
           <include name="killProcess"/>
 =======
 =======

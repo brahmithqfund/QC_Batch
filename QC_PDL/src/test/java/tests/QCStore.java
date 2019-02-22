@@ -95,7 +95,11 @@ public class QCStore {
 
 	public static String NextDueDate;
 
+<<<<<<< HEAD
 	@Test(priority = 100, groups = { "1stBatch" })
+=======
+	//@Test(priority = 100,groups = { "1stBatch" })
+>>>>>>> jan21.1
 	public static void QC_NewLoan_Promotion_Txn() throws Exception {
 		try {
 			// test =
@@ -148,7 +152,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority = 108, groups = { "1stBatch" })
+=======
+	//@Test(priority = 108,groups = { "1stBatch" })
+>>>>>>> jan21.1
 	public static void QC_OpenLoan_NewLoan_Txn() throws Exception {
 		try {
 			// test =
@@ -202,7 +210,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority = 109, groups = { "1stBatch" })
+=======
+	//@Test(priority = 109,groups = { "1stBatch" })
+>>>>>>> jan21.1
 	public static void QC_NewLoan_Void_Txn() throws Exception {
 		try {
 			// test =
@@ -255,7 +267,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority = 110, groups = { "1stBatch" })
+=======
+	//@Test(priority = 110,groups = { "1stBatch" })
+>>>>>>> jan21.1
 	public static void QC_AgeStore_Void_Txn() throws Exception {
 		try {
 			// test =
@@ -318,7 +334,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority = 111, groups = { "1stBatch" })
+=======
+//@Test(priority =111,groups = { "1stBatch" })
+>>>>>>> jan21.1
 	public static void QC_Deposit_Menu_Txn() throws Exception {
 		try {
 			test = reports.startTest("QC_Deposit_Menu_Txn",
@@ -378,7 +398,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority = 112, groups = { "1stBatch" })
+=======
+	//@Test(priority = 112,groups = { "1stBatch" })
+>>>>>>> jan21.1
 	public static void QC_Deposit_GraceDays_Txn() throws Exception {
 		try {
 			// test =
@@ -440,7 +464,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority = 113, groups = { "1stBatch" })
+=======
+	//@Test(priority = 113,groups = { "1stBatch" })
+>>>>>>> jan21.1
 	public static void QC_FutureDeposit_DropDown() throws Exception {
 		try {
 			// test =
@@ -503,7 +531,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority = 157, groups = { "1stBatch" })
+=======
+	//@Test(priority = 157,groups = { "1stBatch" })
+>>>>>>> jan21.1
 	public static void QC_Epp_Deposit_Void_Txn() throws Exception {
 		try {
 			// test =
@@ -566,7 +598,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority = 158, groups = { "1stBatch" })
+=======
+	//@Test(priority = 158,groups = { "1stBatch" })
+>>>>>>> jan21.1
 	public static void QC_Epp_PrePayment_Txn() throws Exception {
 		try {
 			// test =
@@ -631,7 +667,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority = 159, groups = { "1stBatch" })
+=======
+	//@Test(priority = 159,groups = { "1stBatch" })
+>>>>>>> jan21.1
 	public static void QC_Epp_Check_Deposit_Clear_Txn() throws Exception {
 		try {
 			// test =
@@ -698,7 +738,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority = 160, groups = { "1stBatch" })
+=======
+	//@Test(priority = 160,groups = { "1stBatch" })
+>>>>>>> jan21.1
 	public static void QC_EppDepositClear_Refund_Txn() throws Exception {
 		try {
 			// test =
@@ -770,7 +814,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority = 161, groups = { "1stBatch" })
+=======
+	//@Test(priority = 161,groups = { "1stBatch" })
+>>>>>>> jan21.1
 	public static void QC_Epp_PrePayment_Return_Txn() throws Exception {
 		try {
 			// test =
@@ -840,7 +888,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority = 162, groups = { "1stBatch" })
+=======
+	//@Test(priority = 162,groups = { "1stBatch" })
+>>>>>>> jan21.1
 	public static void QC_Epp_Return_NSFPayment_Txn() throws Exception {
 		try {
 			// test =
@@ -910,7 +962,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority = 163, groups = { "1stBatch" })
+=======
+	//@Test(priority = 163,groups = { "1stBatch" })
+>>>>>>> jan21.1
 	public static void QC_Epp_Return_ReDeposit_Txn() throws Exception {
 		try {
 			// test =
@@ -1075,7 +1131,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority = 170, groups = { "1stBatch" })
+=======
+	//@Test(priority = 170,groups = { "1stBatch" })
+>>>>>>> jan21.1
 	public static void QC_PartialPayment_RefundVoid_Txn() throws Exception {
 		try {
 			// test =
@@ -1153,7 +1213,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority = 102, groups = { "1stBatch" })
+=======
+	//@Test(priority = 102,groups = { "1stBatch" })
+>>>>>>> jan21.1
 	public static void QC_RefinanceStepDown_Txn() throws Exception {
 		try {
 			// test =
@@ -1214,7 +1278,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority = 103, groups = { "1stBatch" })
+=======
+//@Test(priority = 103,groups = { "1stBatch" })
+>>>>>>> jan21.1
 	public static void QC_RefinanceStepDown_Void_Txn() throws Exception {
 		try {
 			// test =
@@ -1277,7 +1345,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 201, groups = { "Rebate" })
+	//@Test(priority = 201, groups = { "Rebate" })
 	public static void QC_Refinance_StepDownURP_Txn() throws Exception {
 		try {
 			// test =
@@ -1338,7 +1406,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 202, groups = { "Rebate" })
+	//@Test(priority = 202, groups = { "Rebate" })
 	public static void QC_Refinance_StepDownVoidURP_Txn() throws Exception {
 		try {
 			// test =
@@ -1400,7 +1468,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 198, groups = { "1stBatch" })
+	//@Test(priority = 198, groups = { "1stBatch" })
 	public static void QC_Refinance_StepSameURP_Txn() throws Exception {
 		try {
 			// test =
@@ -1459,7 +1527,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 199, groups = { "1stBatch" })
+	//@Test(priority = 199, groups = { "1stBatch" })
 	public static void QC_Refinance_StepSameVoidURP_Txn() throws Exception {
 		try {
 			// test =
@@ -1520,7 +1588,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 281, groups = { "EOD" })
+	//@Test(priority = 281, groups = { "EOD" })
 	public static void QC_EOD_Deposit_Txn() throws Exception {
 		try {
 			// test =
@@ -1587,7 +1655,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 282, groups = { "EOD" })
+	//@Test(priority = 282, groups = { "EOD" })
 	public static void QC_GraceDays_EODDeposit_Txn() throws Exception {
 		try {
 			// test =
@@ -1657,7 +1725,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 283, groups = { "EOD" })
+	//@Test(priority = 283, groups = { "EOD" })
 	public static void QC_FutureDeposit_EOD_Txn() throws Exception {
 		try {
 			// test =
@@ -1730,6 +1798,7 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	// Anoop scenarios
 	// aNOOP SCNEARIOS
 	@Test(priority = 22, enabled = true, groups = "Anoop")
@@ -1751,6 +1820,30 @@ public class QCStore {
 
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRBorrowerRegistration.borrowerReg(SSN, AppURL);
+=======
+	//Anoop scenarios
+	//aNOOP SCNEARIOS
+	////@Test(priority=22,enabled=true)
+
+	public void AQC_EPP_Redeposit() throws Exception{
+
+		FileName="QC_EPP_Redeposit.xls";
+		test=reports.startTest("QC_EPP_Redeposit","EPP --> EPP payment ---> Deposit-->Return-->Redeposit");
+		TestData = new ExcelNew(System.getProperty("user.dir")+ Aprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+		String sheetName="Start";
+		int lastrow=TestData.getLastRow("Start");
+	
+		for(int row=2;row<=lastrow;row++)
+		{
+			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+			if(RunFlag.equals("Y"))
+			{	
+				String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+
+				ACSRLoginLogout.login(SSN,AppURL);
+				ACSRBorrowerRegistration.borrowerReg(SSN,AppURL);
+>>>>>>> jan21.1
 				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRNewLoanPage.newLoan(SSN, AppURL);
@@ -1792,7 +1885,11 @@ public class QCStore {
 
 	@Test(priority = 21, enabled = true, groups = "Anoop")
 
+<<<<<<< HEAD
 	public void AQC_EPP_nsfPayment() throws Exception {
+=======
+	////@Test(priority=21,enabled=true)
+>>>>>>> jan21.1
 
 		FileName = "QC_EPP_nsfPayment.xls";
 		test = reports.startTest("QC_EPP_nsfPayment", "EPP --> EPP payment ---> Deposit-->Return-->NsfPayment");
@@ -1848,7 +1945,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority = 20, enabled = true, groups = "Anoop")
+=======
+	////@Test(priority=20,enabled=true)
+>>>>>>> jan21.1
 
 	public void AQC_EPP_Return() throws Exception {
 
@@ -1905,7 +2006,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority = 19, enabled = true, groups = "Anoop")
+=======
+	////@Test(priority=19,enabled=true)
+>>>>>>> jan21.1
 
 	public void AQC_EPP_refund() throws Exception {
 
@@ -1965,7 +2070,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority = 18, enabled = true, groups = "Anoop")
+=======
+	////@Test(priority=18,enabled=true)
+>>>>>>> jan21.1
 
 	public void AQC_EPP_clear() throws Exception {
 
@@ -2015,7 +2124,11 @@ public class QCStore {
 
 	@Test(priority = 17, enabled = true, groups = "Anoop")
 
+<<<<<<< HEAD
 	public void AQC_EPP_Prepayment() throws Exception {
+=======
+	////@Test(priority=17,enabled=false)
+>>>>>>> jan21.1
 
 		FileName = "QC_EPP_Prepayment.xls";
 		test = reports.startTest("QC_EPP_Prepayment", "EPP -->EPP payment--> Deposit---> prepayment");
@@ -2060,7 +2173,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority = 16, enabled = true, groups = "Anoop")
+=======
+	////@Test(priority=16,enabled=true)
+>>>>>>> jan21.1
 
 	public void AQC_EPPDeposit() throws Exception {
 
@@ -2101,8 +2218,20 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 				test.log(LogStatus.INFO, "****Test Scenario for EPP deposit is pass******");
 			}
+<<<<<<< HEAD
 		}
 	}
+=======
+		}}
+
+
+	//This test case is for borrower registration and new loan processing
+	////@Test(priority=13,enabled=false)
+	public void borrowregNewloan() throws Exception{
+		FileName=  "QC_BorrowerRegistration_NewLoan.xls";
+		test=reports.startTest("QC_BorrowerRegistration_NewLoan","Login-->Home Screen-->Borrower Registration-->New Loan");
+
+>>>>>>> jan21.1
 
 	// This test case is for borrower registration and new loan processing
 	@Test(priority = 13, enabled = true, groups = "Anoop")
@@ -2128,6 +2257,17 @@ public class QCStore {
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRNewLoanPage.newLoan(SSN, AppURL);
 				ACSRLoginLogout.logout();
+<<<<<<< HEAD
+=======
+			}}}
+
+	// This test case is to check status for the customer and apply loan for inactive customers 
+	////@Test(priority=2,enabled=false)
+	public void inactiveNewloan() throws Exception
+	{	 
+		FileName=  "QC_NewLoan_InactiveCustomer.xls";
+		test=reports.startTest("QC_NewLoan_InactiveCustomer","Login-->Home Screen-->In active customer-->New Loan");
+>>>>>>> jan21.1
 
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCCSRHistory.history(SSN, AppURL);
@@ -2160,6 +2300,21 @@ public class QCStore {
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRNewLoanInactivecust.newLoanInact(SSN, AppURL);
 				ACSRLoginLogout.logout();
+<<<<<<< HEAD
+=======
+			
+			}
+		}}
+	//This test case is to check customer max loan count
+	/* Make sure that  "ESign_LoanAmt" column having an amount 50 and for pdl max loan count for customer
+    	10 and maximum loan 500
+	 */ 
+	////@Test(priority=6,enabled=false)
+
+	public void maxloanCount() throws Exception{
+		FileName=  "QC_MaxLoanCount_Testdata.xls";
+		test=reports.startTest("QC_MaxLoanCount","Login-->Borrower-->Max loan count");
+>>>>>>> jan21.1
 
 			}
 		}
@@ -2214,7 +2369,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority = 4, enabled = true, groups = "Anoop")
+=======
+	////@Test(priority=4,enabled=false)
+>>>>>>> jan21.1
 
 	public void rescindloan() throws Exception {
 		test = reports.startTest("QC_NewLoan_Rescind", "BorrowerRegistration-->New Loan->Rescind");
@@ -2248,9 +2407,13 @@ public class QCStore {
 
 				test.log(LogStatus.INFO, "****Test Scenario for  loan rescind  is pass******");
 
+<<<<<<< HEAD
 			}
 		}
 	}
+=======
+	////@Test(priority=5,enabled=false)
+>>>>>>> jan21.1
 
 	@Test(priority = 5, enabled = true, groups = "Anoop")
 
@@ -2292,11 +2455,19 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	// Ach deposit from drop down
 	@Test(priority = 3, enabled = true, groups = "Anoop")
 	public void Achdeposit() throws Exception {
 		test = reports.startTest("QC_NewLoan_Deposit", "Login-->Age the stote up to due date--->Perform deposit");
 		FileName = "QC_BorrowerReg_NewLoan_AchDeposit_Txn_Testdata.xls";
+=======
+	//Ach deposit from drop down
+	////@Test(priority=3,enabled=false)
+	public void Achdeposit() throws Exception{
+		test=reports.startTest("QC_NewLoan_Deposit","Login-->Age the stote up to due date--->Perform deposit");
+		FileName=  "QC_BorrowerReg_NewLoan_AchDeposit_Txn_Testdata.xls";
+>>>>>>> jan21.1
 
 		TestData = new ExcelNew(
 				System.getProperty("user.dir") + Aprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
@@ -2332,6 +2503,7 @@ public class QCStore {
 
 	// ACH deposit from safe
 	/* Give this test case as 0 priority mandatory */
+<<<<<<< HEAD
 	@Test(priority = 0, enabled = true, groups = "Anoop")
 	public void middayDeposit() throws Exception {
 		FileName = "QC_BorrowerReg_NewLoan_MidDayDeposit_Txn_Testdata.xls";
@@ -2342,6 +2514,16 @@ public class QCStore {
 				System.getProperty("user.dir") + Aprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
+=======
+	////@Test(priority=0,enabled=false)
+	public void middayDeposit() throws Exception{
+		FileName="QC_BorrowerReg_NewLoan_MidDayDeposit_Txn_Testdata.xls";
+		test=reports.startTest("QC_NewLoan_MiddayDeposit","Login-->Age the stote up to due date--->Perform Mid day deposit");
+
+		 TestData = new ExcelNew(System.getProperty("user.dir")+ Aprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+		String sheetName="Start";
+		int lastrow=TestData.getLastRow("Start");
+>>>>>>> jan21.1
 		System.out.println(lastrow);
 		for (int row = 2; row <= lastrow; row++) {
 			String RunFlag = TestData.getCellData(sheetName, "Run", row);
@@ -2370,8 +2552,13 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	// Adding 5 days to due date and perform midday deposit
 	@Test(priority = 7, enabled = true, groups = "Anoop")
+=======
+	//Adding 5 days to due date and perform midday deposit
+	////@Test(priority=7,enabled=false)
+>>>>>>> jan21.1
 
 	public void GracedaysMiddayDeposit() throws Exception {
 
@@ -2410,8 +2597,13 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	// Adding 5 days to due date and perform deposit from deposit menu
 	@Test(priority = 8, enabled = true, groups = "Anoop")
+=======
+	//Adding 5 days to due date and perform  deposit from deposit menu
+	////@Test(priority=8,enabled=false)
+>>>>>>> jan21.1
 
 	public void GracedaysDepositMenu() throws Exception {
 
@@ -2446,6 +2638,7 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 
 				test.log(LogStatus.INFO, "****Test Scenario for GraceDays DepositMenu  is pass******");
+<<<<<<< HEAD
 			}
 		}
 	}
@@ -2453,6 +2646,11 @@ public class QCStore {
 	// Age the store to 3 days and perform partial payment and age the store to
 	// due date and perform re finance step up
 	@Test(priority = 9, enabled = true, groups = "Anoop")
+=======
+			}}}
+	//Age the store to 3 days and perform partial payment and age the store to due date and perform re finance step up
+	////@Test(priority=9,enabled=false)
+>>>>>>> jan21.1
 
 	public void RefinanceStepup() throws Exception {
 
@@ -2499,9 +2697,14 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	// Age the store to 3 days and perform partial payment and age the store to
 	// due date and perform re finance step same
 	@Test(priority = 10, enabled = true, groups = "Anoop")
+=======
+	//Age the store to 3 days and perform partial payment and age the store to due date and perform re finance step same
+	////@Test(priority=10,enabled=false)
+>>>>>>> jan21.1
 
 	public void RefinanceStepSame() throws Exception {
 
@@ -2546,7 +2749,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority = 11, enabled = true, groups = "Anoop")
+=======
+	////@Test(priority=11,enabled=false)
+>>>>>>> jan21.1
 
 	public void RefinanceStepupVoid() throws Exception {
 
@@ -2594,7 +2801,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority = 12, enabled = true, groups = "Anoop")
+=======
+	////@Test(priority=12,enabled=false)
+>>>>>>> jan21.1
 
 	public void RefinanceStepSameVoid() throws Exception {
 
@@ -2637,10 +2848,18 @@ public class QCStore {
 				AQCCSRHistory.history(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
+<<<<<<< HEAD
 				test.log(LogStatus.INFO, "****Test Scenario for Refinance Step Same void is pass******");
 			}
 		}
 	}
+=======
+	//This needs to be 0 or top priority
+	////@Test(priority=1,enabled=false)
+	public void futureMidayDeposit() throws Exception{
+		FileName="QC_AgeStoretoduedate_FutureDeposit_MiddayDeposit.xls";
+		test=reports.startTest("QC_Future MidDay Deposit","Loan-->Age the store upto duedate--> perform future deposit—->age the store uptofuture deposit date--->perform Deposit(Mid Day)");
+>>>>>>> jan21.1
 
 	// This needs to be 0 or top priority
 	@Test(priority = 1, enabled = true, groups = "Anoop")
@@ -2684,8 +2903,14 @@ public class QCStore {
 
 				test.log(LogStatus.INFO, "****Test Scenario for future MidDay Deposit  is pass******");
 			}
+<<<<<<< HEAD
 		}
 	}
+=======
+		}}
+
+	////@Test(priority=14,enabled=false)
+>>>>>>> jan21.1
 
 	@Test(priority = 14, enabled = true, groups = "Anoop")
 
@@ -2735,7 +2960,11 @@ public class QCStore {
 
 	@Test(priority = 15, enabled = true, groups = "Anoop")
 
+<<<<<<< HEAD
 	public void rebateStepupVoid() throws Exception {
+=======
+	////@Test(priority=15,enabled=false)
+>>>>>>> jan21.1
 
 		FileName = "QC__RefinanceStepUp_rebate_Void.xls";
 		test = reports.startTest("QC_RefinanceStepUp_rebate_Void",
@@ -2779,8 +3008,65 @@ public class QCStore {
 				test.log(LogStatus.INFO,
 						"****Test Scenario for Refinance Stepup loan under rebate period and void is pass******");
 			}
+<<<<<<< HEAD
 		}
 	}
+=======
+		}}
+
+	//Janaki scenarios
+	
+
+	//@Test(priority=0,enabled=true,groups="Janaki")
+
+
+
+		public static void JQC_AgeStore_Deposit_PrePayment_Txn() throws Exception {
+			try
+			{
+				test=reports.startTest((Jprop.getProperty("QC_PrePayment_Txn")),"Login->Borrower Registratino->New Loan->AgeStore->ACH/Check Deposit-> AgeStore-> PrePayment");
+
+				FileName= Jprop.getProperty("QC_PrePayment_Txn_TestData_file_name")+".xls";
+
+				TestData = new ExcelNew(System.getProperty("user.dir")+Jprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+
+				int lastrow=TestData.getLastRow("Start");
+				String sheetName="Start";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+
+
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+
+					if(RunFlag.equals("Y"))
+					{	
+
+						String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+						String SSN = TestData.getCellData(sheetName,"SSN",row); 
+
+						System.out.println(AppURL);
+
+						JQCCSRLoginLogout.login(SSN, AppURL);
+						JQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+						JQCCSRLoginLogout.logout(SSN, AppURL);
+						JQCCSRLoginLogout.login(SSN, AppURL);
+						JQCCSRNewLoan.newLoan(SSN, AppURL);
+						JQCCSRLoginLogout.logout(SSN, AppURL);
+						JQCCSRLoginLogout.login(SSN, AppURL);
+						JQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+						JQCCSRLoginLogout.login(SSN, AppURL);
+						JQCDepositDropdown.depositDropDown(SSN, AppURL);
+						JQCCSRLoginLogout.logout(SSN, AppURL);
+						JQCCSRLoginLogout.login(SSN, AppURL);
+						JQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
+						JQCCSRLoginLogout.login(SSN, AppURL);
+						JQCPrePayment.prePayment(SSN, AppURL);
+						JQCCSRLoginLogout.logout(SSN, AppURL);	
+						JQCCSRLoginLogout.login(SSN, AppURL);
+				JQCCSRHistory.history(SSN, AppURL);
+				JQCCSRLoginLogout.logout(SSN, AppURL);
+>>>>>>> jan21.1
 
 	// Janaki scenarios
 
@@ -2793,8 +3079,16 @@ public class QCStore {
 
 			FileName = Jprop.getProperty("QC_PrePayment_Txn_TestData_file_name") + ".xls";
 
+<<<<<<< HEAD
 			TestData = new ExcelNew(System.getProperty("user.dir")
 					+ Jprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
+=======
+		//@Test(priority=402,enabled=true,groups="Janaki")
+		public static void JQC_AgeStore_Deposit_PrePayment_Void_Txn() throws Exception {
+			try
+			{
+				test=reports.startTest((Jprop.getProperty("QC_PrePayment_Void_Txn")),"Login->Borrower Registratino->New Loan->AgeStore->ACH/Check Deposit-> AgeStore-> PrePayment-> Void");
+>>>>>>> jan21.1
 
 			int lastrow = TestData.getLastRow("Start");
 			String sheetName = "Start";
@@ -2843,8 +3137,18 @@ public class QCStore {
 
 			test.log(LogStatus.ERROR, "Unable to start scenario JQC_AgeStore_Deposit_PrePayment_Txn ");
 
+<<<<<<< HEAD
 		}
 	}
+=======
+			}
+		}  
+		//@Test(priority=403,enabled=true,groups="Janaki")
+		public static void JQC_AgeStore_Deposit_ClearDropdown_Txn() throws Exception {
+			try
+			{
+				test=reports.startTest((Jprop.getProperty("QC_Clear_Dropdown_Txn")),"Login->Borrower Registratino->New Loan->AgeStore->ACH/Check Deposit-> AgeStore-> Clear");
+>>>>>>> jan21.1
 
 	@Test(priority = 402, enabled = true, groups = "Janaki")
 	public static void JQC_AgeStore_Deposit_PrePayment_Void_Txn() throws Exception {
@@ -2910,8 +3214,18 @@ public class QCStore {
 
 			test.log(LogStatus.ERROR, "Unable to start scenario JQC_AgeStore_Deposit_PrePaymentVoid_Txn ");
 
+<<<<<<< HEAD
 		}
 	}
+=======
+			}
+		} 
+		//@Test(priority=404,enabled=true,groups="Janaki")
+		public static void JQC_AgeStore_Deposit_ClearMenu_Txn() throws Exception {
+			try
+			{
+				test=reports.startTest((Jprop.getProperty("QC_Clear_Menu_Txn")),"Login->Borrower Registratino->New Loan->AgeStore->ACH/Check Deposit-> AgeStore-> Clear");
+>>>>>>> jan21.1
 
 	@Test(priority = 403, enabled = true, groups = "Janaki")
 	public static void JQC_AgeStore_Deposit_ClearDropdown_Txn() throws Exception {
@@ -2977,7 +3291,17 @@ public class QCStore {
 			String screenshotPath = getScreenhot(driver, "QC_AgeStore_Deposit_ClearDropdown_Txn");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
+<<<<<<< HEAD
 			test.log(LogStatus.ERROR, "Unable to start scenario JQC_AgeStore_Deposit_ClearDropdown_Txn ");
+=======
+			}
+		} 
+		//@Test(priority=405,enabled=true,groups="Janaki")
+		public static void JQC_AgeStore_Deposit_AutoClear_Txn() throws Exception {
+			try
+			{
+				test=reports.startTest((Jprop.getProperty("QC_AutoClear_Txn")),"Login->Borrower Registratino->New Loan->AgeStore->ACH/Check Deposit-> AgeStore-> AutoClear");
+>>>>>>> jan21.1
 
 		}
 	}
@@ -3048,6 +3372,7 @@ public class QCStore {
 
 			test.log(LogStatus.ERROR, "Unable to start scenario JQC_AgeStore_Deposit_ClearMenu_Txn ");
 
+<<<<<<< HEAD
 		}
 	}
 
@@ -3056,6 +3381,15 @@ public class QCStore {
 		try {
 			test = reports.startTest((Jprop.getProperty("QC_AutoClear_Txn")),
 					"Login->Borrower Registratino->New Loan->AgeStore->ACH/Check Deposit-> AgeStore-> AutoClear");
+=======
+			}
+		} 
+		//@Test(priority=410,enabled=false)
+		public static void JQC_AgeStore_DCDeposit_Txn() throws Exception {
+			try
+			{
+				test=reports.startTest((Jprop.getProperty("QC_DCDeposit_Dropdown_Txn")),"Login->Borrower Registratino->New Loan->AgeStore->DC Deposit");
+>>>>>>> jan21.1
 
 			// test =
 			// extent.createTest(Jprop.getProperty("QC_Store_AgeStore_Deposit_Menu_Txn_file_name"));
@@ -3123,7 +3457,15 @@ public class QCStore {
 			test.log(LogStatus.ERROR, "Unable to start scenario JQC_AgeStore_Deposit_AutoClear_Txn ");
 
 		}
+<<<<<<< HEAD
 	}
+=======
+		//@Test(priority=411,enabled=false)
+		public static void JQC_AgeStore_DCDeposit_Menu_Txn() throws Exception {
+			try
+			{
+				test=reports.startTest((Jprop.getProperty("QC_DCDeposit_Menu_Txn")),"Login->Borrower Registratino->New Loan->AgeStore->DC Deposit");
+>>>>>>> jan21.1
 
 	@Test(priority = 410, enabled = false)
 	public static void JQC_AgeStore_DCDeposit_Txn() throws Exception {
@@ -3179,7 +3521,15 @@ public class QCStore {
 			test.log(LogStatus.ERROR, "Unable to start scenario JQC_AgeStore_DCDeposit_Txn ");
 
 		}
+<<<<<<< HEAD
 	}
+=======
+		//@Test(priority=412,enabled=false)
+		public static void JQC_AgeStore_GraceDays_DCDeposit_Dropdown_Txn() throws Exception {
+			try
+			{
+				test=reports.startTest((Jprop.getProperty("QC_GraceDays_DCDeposit_Dropdown_Txn")),"Login->Borrower Registratino->New Loan->AgeStore->DC Deposit");
+>>>>>>> jan21.1
 
 	@Test(priority = 411, enabled = false)
 	public static void JQC_AgeStore_DCDeposit_Menu_Txn() throws Exception {
@@ -3235,7 +3585,15 @@ public class QCStore {
 			test.log(LogStatus.ERROR, "Unable to start scenario JQC_AgeStore_DCDeposit_Menu_Txn");
 
 		}
+<<<<<<< HEAD
 	}
+=======
+		//@Test(priority=413,enabled=false)
+		public static void JQC_AgeStore_GraceDays_DCDeposit_Menu_Txn() throws Exception {
+			try
+			{
+				test=reports.startTest((Jprop.getProperty("QC_GraceDays_DCDeposit_Menu_Txn")),"Login->Borrower Registratino->New Loan->AgeStore->DC Deposit");
+>>>>>>> jan21.1
 
 	@Test(priority = 412, enabled = false)
 	public static void JQC_AgeStore_GraceDays_DCDeposit_Dropdown_Txn() throws Exception {
@@ -3296,7 +3654,15 @@ public class QCStore {
 			test.log(LogStatus.ERROR, "Unable to start scenario JQC_AgeStore_GraceDays_DCDeposit_Txn");
 
 		}
+<<<<<<< HEAD
 	}
+=======
+		//@Test(priority=409,enabled=true,groups="Janaki")
+		public static void JQC_AgeStore_ACHReturn_Refinance_Rescind_Txn() throws Exception {
+			try
+			{
+				test=reports.startTest((Jprop.getProperty("QC_ACHReturn_Refinance_Rescind_Txn")),"Login->Borrower Registratino->New Loan->AgeStore->Deposit->ACHReturn->Refinance->Rescind");
+>>>>>>> jan21.1
 
 	@Test(priority = 413, enabled = false)
 	public static void JQC_AgeStore_GraceDays_DCDeposit_Menu_Txn() throws Exception {
@@ -3354,7 +3720,15 @@ public class QCStore {
 			test.log(LogStatus.ERROR, "Unable to start scenario JQC_AgeStore_GraceDays_DCDeposit_Menu_Txn ");
 
 		}
+<<<<<<< HEAD
 	}
+=======
+		//@Test(priority=408,enabled=true,groups="Janaki")
+		public static void JQC_AgeStore_NSFPosting_Refinance_Rescind_Txn() throws Exception {
+			try
+			{
+				test=reports.startTest((Jprop.getProperty("QC_NSFPosting_Refinance_Rescind_Txn")),"Login->Borrower Registratino->New Loan->AgeStore->Deposit->NSFPosting->Refinance->Rescind");
+>>>>>>> jan21.1
 
 	@Test(priority = 409, enabled = true, groups = "Janaki")
 	public static void JQC_AgeStore_ACHReturn_Refinance_Rescind_Txn() throws Exception {
@@ -3426,7 +3800,25 @@ public class QCStore {
 			test.log(LogStatus.ERROR, "Unable to start scenario JQC_AgeStore_ACHReturn_Refinance_Rescind_Txn");
 
 		}
+<<<<<<< HEAD
 	}
+=======
+		//@Test(priority=406,enabled=true,groups="Janaki")
+		public static void JQC_AgeStore_PrePayment_Return_Txn() throws Exception {
+			try
+			{
+				test=reports.startTest((Jprop.getProperty("QC_PrePayment_Return_Txn")),"Login->Borrower Registratino->New Loan->AgeStore->Deposit->AgeStore -> Pre-payment -> AgeStore -> Return");
+				FileName= Jprop.getProperty("QC_PrePayment_Return_Txn_file_name")+".xls";
+				TestData = new ExcelNew(System.getProperty("user.dir")+Jprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+
+				int lastrow=TestData.getLastRow("Start");
+				String sheetName="Start";
+				System.out.println(lastrow);
+				for(int row=2;row<=lastrow;row++)
+				{
+
+					String RunFlag = TestData.getCellData(sheetName,"Run",row);
+>>>>>>> jan21.1
 
 	@Test(priority = 408, enabled = true, groups = "Janaki")
 	public static void JQC_AgeStore_NSFPosting_Refinance_Rescind_Txn() throws Exception {
@@ -3488,6 +3880,16 @@ public class QCStore {
 				}
 			}
 		}
+<<<<<<< HEAD
+=======
+		//@Test(priority=407,enabled=true,groups="Janaki")
+		public static void JQC_AgeStore_PrePayment_Clear_Txn() throws Exception {
+			try
+			{
+				test=reports.startTest((Jprop.getProperty("QC_PrePayment_Clear_Txn")),"Login->Borrower Registratino->New Loan->AgeStore->Deposit->AgeStore -> Pre-payment -> AgeStore -> Clear");
+				FileName= Jprop.getProperty("QC_PrePayment_Clear_Txn_file_name")+".xls";
+				TestData = new ExcelNew(System.getProperty("user.dir")+Jprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+>>>>>>> jan21.1
 
 		catch (Exception e) {
 			System.out.println("QC_AgeStore_NSFPosting_Refinance_Rescind_Txn");
@@ -3712,7 +4114,15 @@ public class QCStore {
 			test.log(LogStatus.ERROR, "Unable to start scenario JQC_Deposit_Return_Refinance_Txn_file_name");
 
 		}
+<<<<<<< HEAD
 	}
+=======
+		//@Test(priority=410,enabled=true,groups="Janaki")
+		public static void JQC_AgeStore_Deposit_Return_Refinance_Txn() throws Exception {
+			try
+			{
+				test=reports.startTest((Jprop.getProperty("QC_Deposit_Return_Refinance_Txn")),"Login->Borrower Registratino->New Loan->AgeStore->Return->Deposit->Return->Refinance");
+>>>>>>> jan21.1
 
 	@Test(priority = 411, enabled = true, groups = "Janaki")
 	public static void JQC_AgeStore_Deposit_Return_Refinance_Void_Txn() throws Exception {
@@ -4465,6 +4875,16 @@ public class QCStore {
 				}
 			}
 		}
+<<<<<<< HEAD
+=======
+		//@Test(priority=411,enabled=true,groups="Janaki")
+		public static void JQC_AgeStore_Deposit_Return_Refinance_Void_Txn() throws Exception {
+			try
+			{
+				test=reports.startTest((Jprop.getProperty("QC_Deposit_Return_Refinance_Void_Txn")),"Login->Borrower Registratino->New Loan->AgeStore->Return->Deposit->Return->Refinance-> Void");
+
+				FileName= Jprop.getProperty("QC_Deposit_Return_Refinance_Void_Txn_file_name")+".xls";
+>>>>>>> jan21.1
 
 		catch (Exception e) {
 			System.out.println("under catch of Test");
@@ -4534,6 +4954,16 @@ public class QCStore {
 				}
 			}
 		}
+<<<<<<< HEAD
+=======
+		//@Test(priority=412,enabled=true,groups="Janaki")
+		public static void JQC_AgeStore_Refinance_Rescind_Txn() throws Exception {
+			try
+			{
+				test=reports.startTest((Jprop.getProperty("QC_Refinance_Rescind_Txn")),"Login->Borrower Registratino->New Loan->AgeStore->Return->Deposit->Return->Refinance");
+
+				FileName= Jprop.getProperty("QC_Refinance_Rescind_Txn_file_name")+".xls";
+>>>>>>> jan21.1
 
 		catch (Exception e) {
 			System.out.println("under catch of Test");
@@ -4611,7 +5041,83 @@ public class QCStore {
 			test.log(LogStatus.ERROR, "Unable to start scenarios ");
 
 		}
+<<<<<<< HEAD
 	}
+=======
+		//@Test(priority=413,enabled=true,groups="Janaki")
+			public static void JQC_AgeStore_Redeposit_Prepayment_Void_Prepayment_Return_Txn() throws Exception {
+				try
+				{
+					test=reports.startTest((Jprop.getProperty("QC_Redeposit_Prepayment_Void_Return_Txn")),"Login->Borrower Registratino->New Loan->AgeStore->Deposit->Return->ReDeposite->Prepayment->Void->Prepayment->Return");
+
+					FileName= Jprop.getProperty("QC_Redeposit_Prepayment_Void_Return_Txn_file_name")+".xls";
+
+					TestData = new ExcelNew(System.getProperty("user.dir")+Jprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+
+					int lastrow=TestData.getLastRow("Start");
+					String sheetName="Start";
+					System.out.println(lastrow);
+					for(int row=2;row<=lastrow;row++)
+						
+					{
+
+
+						String RunFlag = TestData.getCellData(sheetName,"Run",row);
+
+						if(RunFlag.equals("Y"))
+						{	
+
+							String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+							String SSN = TestData.getCellData(sheetName,"SSN",row); 
+							String adminURL = TestData.getCellData(sheetName,"AdminURL",row);
+							System.out.println(AppURL);
+							System.out.println(adminURL);
+
+							JQCCSRLoginLogout.login(SSN, AppURL);
+							JQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+							JQCCSRLoginLogout.logout(SSN, AppURL);
+							JQCCSRLoginLogout.login(SSN, AppURL);
+							JQCCSRNewLoan.newLoan(SSN, AppURL);
+							JQCCSRLoginLogout.logout(SSN, AppURL);
+							JQCCSRLoginLogout.login(SSN, AppURL);
+							JQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+							JQCCSRLoginLogout.login(SSN, AppURL);
+							JQCDepositDropdown.depositDropDown(SSN, AppURL);
+							JQCCSRLoginLogout.logout(SSN, AppURL);
+							JQCCSRLoginLogout.login(SSN, AppURL);
+							JQCInternalTransfer.InternalTransfer(SSN, AppURL);
+							
+							JQCCSRLoginLogout.login(SSN, AppURL);
+							JQCCmgDeposit.CmgDeposit(SSN, AppURL);
+							JQCCSRLoginLogout.logout(SSN, AppURL);
+							JQCAdminLoginLogout.login(SSN, AppURL);
+							JQC_EPP_Return.qcReturn(SSN, AppURL);
+							JQCAdminLoginLogout.logout(SSN, AppURL);
+							JQCCSRLoginLogout.login(SSN, AppURL);
+							JQCRedeposit.redeposit(SSN, AppURL);
+							JQCCSRLoginLogout.logout(SSN, AppURL);
+							JQCCSRLoginLogout.login(SSN, AppURL);
+							JQCPrePayment.prePayment(SSN, AppURL);
+							JQCCSRLoginLogout.logout(SSN, AppURL);
+							JQCCSRLoginLogout.login(SSN, AppURL);
+							JQCPrePaymentVoid.prePaymentVoid(SSN, AppURL);
+							JQCCSRLoginLogout.logout(SSN, AppURL);
+							JQCCSRLoginLogout.login(SSN, AppURL);
+							JQCPrePayment.prePayment(SSN, AppURL);
+							JQCCSRLoginLogout.logout(SSN, AppURL);
+							JQCCSRLoginLogout.login(SSN, AppURL);
+							JQCInternalTransfer.InternalTransfer(SSN, AppURL);
+							
+							JQCCSRLoginLogout.login(SSN, AppURL);
+							JQCCmgDeposit.CmgDeposit(SSN, AppURL);
+							JQCCSRLoginLogout.logout(SSN, AppURL);
+							JQCAdminLoginLogout.login(SSN, AppURL);
+							JQC_EPP_Return.qcReturn(SSN, AppURL);
+							JQCAdminLoginLogout.logout(SSN, AppURL);
+							JQCCSRLoginLogout.login(SSN, AppURL);
+					JQCCSRHistory.history(SSN, AppURL);
+					JQCCSRLoginLogout.logout(SSN, AppURL);
+>>>>>>> jan21.1
 
 	@Test(priority = 420, enabled = true, groups = "Janaki")
 	public static void JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata() throws Exception {
@@ -4637,6 +5143,34 @@ public class QCStore {
 					String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 
+<<<<<<< HEAD
+=======
+				}
+			}
+		
+		//@Test(priority=414,enabled=true,groups="Janaki")
+		public static void JQC_Return_ReDeposit_Clear_Txn() throws Exception {
+			  try
+			  {
+					 test=reports.startTest(Jprop.getProperty("QC_Return_ReDeposit_Clear_Txn_Testdata"),"Login->Borrower Registratino->New Loan with Promotion->JQC_Return_ReDeposit_Clear_Txn");
+					 FileName= Jprop.getProperty("QC_Return_ReDeposit_Clear_Txn_Testdata_file_name")+".xls";			
+				TestData = new ExcelNew(System.getProperty("user.dir")+Jprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+
+				int lastrow=3;
+			String sheetName="Start";
+			System.out.println(lastrow);
+			for(int row=2;row<=lastrow;row++)
+			{
+				
+				
+				String RunFlag = TestData.getCellData(sheetName,"Run",row);
+			if(RunFlag.equals("Y"))
+			{	
+				
+					String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+					String SSN = TestData.getCellData(sheetName,"SSN",row); 
+					
+>>>>>>> jan21.1
 					System.out.println(AppURL);
 
 					JQCCSRLoginLogout.login(SSN, AppURL);
@@ -4663,7 +5197,58 @@ public class QCStore {
 					JQCCSRLoginLogout.login(SSN, AppURL);
 					JQCCSRPrePayment.prepayment(SSN, AppURL);
 					JQCCSRLoginLogout.login(SSN, AppURL);
+<<<<<<< HEAD
 					JQCCSRWOVoid.writeoffvoid(SSN, AppURL);
+=======
+					JQCCSRHistory.history(SSN, AppURL);
+					JQCCSRLoginLogout.logout(SSN, AppURL);
+					
+			}
+			}
+			  }
+			 
+			  catch(Exception e)
+			  {
+				  System.out.println("under catch of Test");
+					//test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to start scenario 1 " , ExtentColor.RED));
+				  String screenshotPath = getScreenhot(driver, "QC_Return_ReDeposit_Clear_Txn");
+					test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
+					
+				  test.log(LogStatus.ERROR,"Unable to start scenario JQC_Return_ReDeposit_Clear_Txn ");
+
+
+			  }
+		  }
+		//@Test(priority=415,enabled=false)
+		public static void  JQC_NewLoan_Veritec_Txn() throws Exception {
+			  try
+			  {
+					//test = extent.createTest(Jprop.getProperty("QC_Store_BorrowerRegistration_NewLoan_Promotion_Txn_file_name"));
+					 test=reports.startTest(Jprop.getProperty("QC_NewLoan_Veritec_Txn_file_name"),"Login->Borrower Registratino->New Loan with Veritec");
+
+			  FileName= Jprop.getProperty("QC_NewLoan_Veritec_Txn_file_name")+".xls";
+				
+				TestData = new ExcelNew(System.getProperty("user.dir")+Jprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+
+				int lastrow=3;
+			String sheetName="Start";
+			//int lastrow=TestData.getLastRow("Borrower");
+			System.out.println(lastrow);
+			for(int row=2;row<=lastrow;row++)
+			{
+				
+				
+				String RunFlag = TestData.getCellData(sheetName,"Run",row);
+				//System.out.println(RunFlag);
+			if(RunFlag.equals("Y"))
+			{	
+				
+					String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+					String SSN = TestData.getCellData(sheetName,"SSN",row); 
+					
+					System.out.println(AppURL);
+			 
+>>>>>>> jan21.1
 					JQCCSRLoginLogout.login(SSN, AppURL);
 					JQCCSRPrePayment.prepayment(SSN, AppURL);
 					JQCCSRLoginLogout.login(SSN, AppURL);
@@ -4676,8 +5261,692 @@ public class QCStore {
 					JQCCSRLoginLogout.login(SSN, AppURL);
 					JQCCSRHistory.history(SSN, AppURL);
 					JQCCSRLoginLogout.logout(SSN, AppURL);
+<<<<<<< HEAD
 
 				}
+=======
+				
+			}
+			}
+			  }
+			 
+			  catch(Exception e)
+			  {
+				  System.out.println("under catch of Test");
+					//test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to start scenario 1 " , ExtentColor.RED));
+				  String screenshotPath = getScreenhot(driver, "QC_NewLoan_Veritec_Txn");
+					test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
+					
+				  test.log(LogStatus.ERROR,"Unable to start scenario JQC_NewLoan_Veritec_Txn ");
+
+
+			  }
+		  }
+		
+
+		
+		//@Test(priority=416,enabled=true,groups="Janaki")
+	  public static void JQC_BuyBack_Txn_Testdata() throws Exception {
+		  try
+		  {
+			  test=reports.startTest((Jprop.getProperty("QC_BuyBack_Txn_Testdata_Scenario")),"Login->Borrower Registration->New Loan->AgeStore to Duedate->BuyBack");
+			  String FileName= Jprop.getProperty("QC_BuyBack_Txn_Testdata")+".xls";
+			  			//ExcelNew TestData;
+			  			TestData = new ExcelNew(System.getProperty("user.dir")+Jprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+		
+			  			int lastrow=TestData.getLastRow("Start");
+			  		String sheetName="Start";
+			  		System.out.println(lastrow);
+			  		for(int row=2;row<=lastrow;row++)
+			  		{
+			  			
+			  			
+			  			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+			  			//System.out.println(RunFlag);
+			  		if(RunFlag.equals("Y"))
+			  		{	
+			  			
+			  				String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+			  				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+			  				
+			  				System.out.println(AppURL);
+		 
+				 JQCCSRLoginLogout.login(SSN, AppURL);
+				 JQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+				 JQCCSRLoginLogout.logout(SSN, AppURL);
+				 JQCCSRLoginLogout.login(SSN, AppURL);
+				 JQCCSRNewLoan.newLoan(SSN, AppURL);
+				 JQCCSRLoginLogout.logout(SSN, AppURL);
+				 JQCCSRLoginLogout.login(SSN, AppURL);
+				 JQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+				 JQCCSRLoginLogout.login(SSN, AppURL);
+				 JQCCSRBuyBack.buyback(SSN, AppURL);
+				 JQCCSRLoginLogout.logout(SSN, AppURL);
+				 JQCCSRLoginLogout.login(SSN, AppURL);
+					JQCCSRHistory.history(SSN, AppURL);
+					JQCCSRLoginLogout.logout(SSN, AppURL);
+				 
+		}
+		}
+		  }
+	 
+		  catch(Exception e)
+		  {
+			  System.out.println("under catch of Test");
+			  String screenshotPath = getScreenhot(driver, "QC_BuyBack_Txn_Testdata");
+				test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
+				
+			  test.log(LogStatus.ERROR, "Unable to start scenarios " );
+
+		  }
+	  
+
+	  }
+
+	  
+	  
+	 
+		  //@Test(priority=417,enabled=true,groups="Janaki")
+		  public static void JQC_BuyBack_Void_Txn_Testdata() throws Exception {
+			  try
+			  {
+				  test=reports.startTest((Jprop.getProperty("QC_BuyBack_Void_Txn_Testdata_Scenario")),"Login->Borrower Registration->New Loan->AgeStore to Duedate->BuyBack-->Void");
+				  String FileName= Jprop.getProperty("QC_BuyBack_Void_Txn_Testdata")+".xls";
+				  			//ExcelNew TestData;
+				  			TestData = new ExcelNew(System.getProperty("user.dir")+Jprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+				
+				  			int lastrow=TestData.getLastRow("Start");
+				  		String sheetName="Start";
+				  		System.out.println(lastrow);
+				  		for(int row=2;row<=lastrow;row++)
+				  		{
+				  			
+				  			
+				  			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+				  			//System.out.println(RunFlag);
+				  		if(RunFlag.equals("Y"))
+				  		{	
+				  			
+				  				String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+				  				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+				  				
+				  				System.out.println(AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+					 JQCCSRLoginLogout.logout(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSRNewLoan.newLoan(SSN, AppURL);
+					 JQCCSRLoginLogout.logout(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);		
+				  	 JQCCSRLoginLogout.login(SSN, AppURL);			
+					 JQCCSRBuyBack.buyback(SSN, AppURL);
+					 JQCCSRLoginLogout.logout(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSRBuyBackVoid.buybackvoid(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+						JQCCSRHistory.history(SSN, AppURL);
+						JQCCSRLoginLogout.logout(SSN, AppURL);
+					
+					 
+					 
+				
+			}
+			}
+			  }
+			  
+			  
+			  
+			  
+			  catch(Exception e)
+			  {
+				  System.out.println("under catch of Test");
+				  String screenshotPath = getScreenhot(driver, "QC_BuyBack_Void_Txn_Testdata");
+					test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
+					
+				  test.log(LogStatus.ERROR, "Unable to start scenarios " );
+
+			  }
+		  }
+		  
+		 //@Test(priority=418,enabled=true,groups="Janaki")
+		  public static void JQC_BuyBack_Rebate_Txn_Testdata() throws Exception {
+			  try
+			  {
+				  test=reports.startTest((Jprop.getProperty("QC_BuyBack_Rebate_Txn_Testdata_Scenario")),"Login->Borrower Registration->New Loan->AgeStore->BuyBack Rebate");
+				  String FileName= Jprop.getProperty("QC_BuyBack_Rebate_Txn_Testdata")+".xls";
+				  			//ExcelNew TestData;
+				  			TestData = new ExcelNew(System.getProperty("user.dir")+Jprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+				
+				  			int lastrow=TestData.getLastRow("Start");
+				  		String sheetName="Start";
+				  		System.out.println(lastrow);
+				  		for(int row=2;row<=lastrow;row++)
+				  		{
+				  			
+				  			
+				  			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+				  			//System.out.println(RunFlag);
+				  		if(RunFlag.equals("Y"))
+				  		{	
+				  			
+				  				String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+				  				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+				  				
+				  				System.out.println(AppURL);
+			 
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+					 JQCCSRLoginLogout.logout(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSRNewLoan.newLoan(SSN, AppURL);
+					 JQCCSRLoginLogout.logout(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCAgeStoreGraceDays.ageStoreGraceDays(SSN,AppURL);				 
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSRBuyBackRebate.buybackrebate(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+						JQCCSRHistory.history(SSN, AppURL);
+						JQCCSRLoginLogout.logout(SSN, AppURL);
+					
+			}
+			}
+			  }
+
+			  catch(Exception e)
+			  {
+				  System.out.println("under catch of Test");
+				  String screenshotPath = getScreenhot(driver, "QC_BuyBack_Rebate_Txn_Testdata");
+					test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
+					
+				  test.log(LogStatus.ERROR, "Unable to start scenarios " );
+
+			  }
+		  }
+
+		 //@Test(priority=419,enabled=true,groups="Janaki")
+		  public static void JQC_BuyBack_Rebate_Void_Txn_Testdata() throws Exception {
+			  try
+			  {
+				  test=reports.startTest((Jprop.getProperty("QC_BuyBack_Rebate_Void_Txn_Testdata_Scenario")),"Login->Borrower Registration->New Loan->AgeStore-->BuyBack Rebate-->Void");
+				  String FileName= Jprop.getProperty("QC_BuyBack_Rebate_Void_Txn_Testdata")+".xls";
+				  			//ExcelNew TestData;
+				  			TestData = new ExcelNew(System.getProperty("user.dir")+Jprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+				  		  
+				  	
+				  			int lastrow=TestData.getLastRow("Start");
+				  		String sheetName="Start";
+				  		System.out.println(lastrow);
+				  		for(int row=2;row<=lastrow;row++)
+				  		{
+				  			
+				  			
+				  			String RunFlag = TestData.getCellData(sheetName,"Run",row);
+				  			//System.out.println(RunFlag);
+				  		if(RunFlag.equals("Y"))
+				  		{	
+				  				String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+				  				String SSN = TestData.getCellData(sheetName,"SSN",row); 
+				  				
+				  				System.out.println(AppURL);
+		  
+			 
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+					 JQCCSRLoginLogout.logout(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSRNewLoan.newLoan(SSN, AppURL);
+					 JQCCSRLoginLogout.logout(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCAgeStoreGraceDays.ageStoreGraceDays(SSN,AppURL);			
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSRBuyBackRebate.buybackrebate(SSN, AppURL);
+				   	 JQCCSRLoginLogout.login(SSN, AppURL);
+				   	 JQCCSRBuyBackVoid.buybackvoid(SSN, AppURL);
+				   	JQCCSRLoginLogout.login(SSN, AppURL);
+					JQCCSRHistory.history(SSN, AppURL);
+					JQCCSRLoginLogout.logout(SSN, AppURL);
+		
+			}
+			}
+			  }
+			  
+			  
+			  
+			  
+			  catch(Exception e)
+			  {
+				  System.out.println("under catch of Test");
+				  String screenshotPath = getScreenhot(driver, "QC_BuyBack_Rebate_Void_Txn_Testdata");
+					test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
+					
+				  test.log(LogStatus.ERROR, "Unable to start scenarios " );
+
+			  }
+		  }
+			  
+		//@Test(priority=425,enabled=true,groups="Janaki")
+		  public static void JQC_EPP_Txn_Testdata() throws Exception {
+			  try
+			  {
+				  test=reports.startTest((Jprop.getProperty("QC_EPP_Txn_Testdata_Scenario")),"Login->Borrower Registration->New Loan->AgeStore to Duedate->EPP");
+	               String FileName= Jprop.getProperty("QC_EPP_Txn_Testdata")+".xls";
+				//ExcelNew TestData;
+				TestData = new ExcelNew(System.getProperty("user.dir")+Jprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+		  		 
+			int lastrow=TestData.getLastRow("Start");
+				//int lastrow=3;
+			String sheetName="Start";
+			System.out.println(lastrow);
+			for(int row=2;row<=lastrow;row++)
+			{
+				
+				
+				String RunFlag = TestData.getCellData(sheetName,"Run",row);
+				//System.out.println(RunFlag);
+			if(RunFlag.equals("Y"))
+			{	
+
+					String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+					String SSN = TestData.getCellData(sheetName,"SSN",row); 
+					
+					System.out.println(AppURL);
+			 
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+					 JQCCSRLoginLogout.logout(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSRNewLoan.newLoan(SSN, AppURL);
+					 JQCCSRLoginLogout.logout(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSREPP.epp(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+						JQCCSRHistory.history(SSN, AppURL);
+						JQCCSRLoginLogout.logout(SSN, AppURL);
+			}
+			}
+			  }
+			  
+			  
+			  
+			  
+			  catch(Exception e)
+			  {
+				  System.out.println("under catch of Test");
+				  String screenshotPath = getScreenhot(driver, "QC_EPP_Txn_Testdata");
+					test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
+					
+				  test.log(LogStatus.ERROR, "Unable to start scenarios " );
+
+			  }
+		  }
+					
+		  
+		//@Test(priority=421,enabled=true,groups="Janaki")
+		  public static void JQC_Deposit_Return_EPP_Txn_Testdata() throws Exception {
+			  try
+			  {
+				  test=reports.startTest((Jprop.getProperty("QC_Deposit_Return_EPP_Txn_Scenario")),"Login->Borrower Registration->New Loan->AgeStore to Duedate->EPP->Deposit->Return");
+				  String FileName= Jprop.getProperty("QC_Deposit_Return_EPP_Txn_Testdata")+".xls";
+				//ExcelNew TestData;
+				TestData = new ExcelNew(System.getProperty("user.dir")+Jprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);		 
+			int lastrow=TestData.getLastRow("Start");
+				//int lastrow=3;
+			String sheetName="Start";
+			System.out.println(lastrow);
+			for(int row=2;row<=lastrow;row++)
+			{
+				
+				
+				String RunFlag = TestData.getCellData(sheetName,"Run",row);
+				//System.out.println(RunFlag);
+			if(RunFlag.equals("Y"))
+			{
+					String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+					String SSN = TestData.getCellData(sheetName,"SSN",row); 
+					
+					System.out.println(AppURL);
+			 
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+					 JQCCSRLoginLogout.logout(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSRNewLoan.newLoan(SSN, AppURL);
+					 JQCCSRLoginLogout.logout(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSREPP.epp(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCDepositDropdown.depositDropDown(SSN, AppURL);
+					 JQCCSRLoginLogout.logout(SSN, AppURL);			 
+					
+					
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCInternalTransfer.InternalTransfer(SSN, AppURL);
+					 
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCmgDeposit.CmgDeposit(SSN, AppURL);
+					 JQCCSRLoginLogout.logout(SSN, AppURL);
+					 JQCAdminLoginLogout.login(SSN, AppURL);
+					 JQCCSRReturnPosting.ReturnPosting(SSN, AppURL);
+					 JQCAdminLoginLogout.logout(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+						JQCCSRHistory.history(SSN, AppURL);
+						JQCCSRLoginLogout.logout(SSN, AppURL);
+		
+			}
+			}
+			  }
+			  
+			  
+			  
+			  
+			  catch(Exception e)
+			  {
+				  System.out.println("under catch of Test");
+				  String screenshotPath = getScreenhot(driver, "QC_Deposit_Return_EPP_Txn_Testdata");
+					test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
+					
+				  test.log(LogStatus.ERROR, "Unable to start scenarios " );
+
+			  }
+		  }  
+		
+		  
+		  //@Test(priority=422,enabled=true,groups="Janaki")
+		  public static void JQC_EPP_AgestoreInstallmentwise_EPPPayment_Txn_Testdata() throws Exception {
+			  try
+			  {
+				  test=reports.startTest((Jprop.getProperty("QC_EPP_AgestoreInstallmentwise_EPPPayment_Txn_Testdata_Scenario")),"Login->Borrower Registration->New Loan->AgeStore to Duedate->EPP-->Agestore Installmentwise-->EPP Payment");
+				  String FileName= Jprop.getProperty("QC_EPP_AgestoreInstallmentwise_EPPPayment_Txn_Testdata")+".xls";
+				//ExcelNew TestData;
+				TestData = new ExcelNew(System.getProperty("user.dir")+Jprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);		 
+			int lastrow=TestData.getLastRow("Start");
+				//int lastrow=3;
+			String sheetName="Start";
+			System.out.println(lastrow);
+			for(int row=2;row<=lastrow;row++)
+			{
+				
+				
+				String RunFlag = TestData.getCellData(sheetName,"Run",row);
+				//System.out.println(RunFlag);
+			if(RunFlag.equals("Y"))
+			{	
+			
+					String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+					String SSN = TestData.getCellData(sheetName,"SSN",row); 
+					
+					System.out.println(AppURL);
+			 
+					JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+					 JQCCSRLoginLogout.logout(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSRNewLoan.newLoan(SSN, AppURL);
+					 JQCCSRLoginLogout.logout(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSREPP.epp(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSREPP_Payment.epppayment(SSN, AppURL);//1
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSREPP_Payment.epppayment(SSN, AppURL);//2
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSREPP_Payment.epppayment(SSN, AppURL);//3
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSREPP_Payment.epppayment(SSN, AppURL);//4
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSRHistory.history(SSN, AppURL);
+					 JQCCSRLoginLogout.logout(SSN, AppURL);
+		
+			}
+			}
+			  }
+			  
+			  
+			  
+			  
+			  catch(Exception e)
+			  {
+				  System.out.println("under catch of Test");
+				  String screenshotPath = getScreenhot(driver, "QC_EPP_AgestoreInstallmentwise_EPPPayment_Txn_Testdata");
+					test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
+					
+				  test.log(LogStatus.ERROR, "Unable to start scenarios " );
+
+			  }
+		  }  
+
+		  //@Test(priority=423,enabled=true,groups="Janaki1")
+		  public static void JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata() throws Exception {
+			  try
+			  {
+				  test=reports.startTest((Jprop.getProperty("QC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata_Scenario")),"Login->Borrower Registration->New Loan->AgeStore to Duedate->Chk deposit-->Internal Transfer-->Cashmgmt Deposit-->Writeoff-->WriteoffRecovery-->Void");
+				  String FileName= Jprop.getProperty("QC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata")+".xls";
+				//ExcelNew TestData;
+				TestData = new ExcelNew(System.getProperty("user.dir")+Jprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+		 		 
+			int lastrow=TestData.getLastRow("Start");
+			String sheetName="Start";
+			System.out.println(lastrow);
+			for(int row=2;row<=lastrow;row++)
+			{
+				
+				
+				String RunFlag = TestData.getCellData(sheetName,"Run",row);
+				//System.out.println(RunFlag);
+			if(RunFlag.equals("Y"))
+			{	
+					String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+					String SSN = TestData.getCellData(sheetName,"SSN",row); 
+					
+					System.out.println(AppURL);
+			 
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+					 JQCCSRLoginLogout.logout(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSRNewLoan.newLoan(SSN, AppURL);
+					 JQCCSRLoginLogout.logout(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCDepositDropdown.depositDropDown(SSN, AppURL);
+					 JQCCSRLoginLogout.logout(SSN, AppURL);				 			
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCInternalTransfer.InternalTransfer(SSN, AppURL);
+					 
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCmgDeposit.CmgDeposit(SSN, AppURL);
+					 JQCCSRLoginLogout.logout(SSN, AppURL);
+					 JQCAdminLoginLogout.login(SSN, AppURL);
+					 JQCAdminLoginLogout.login(SSN, AppURL);
+					 JQCCSRReturnPosting.ReturnPosting(SSN, AppURL);
+					 JQCAdminLoginLogout.logout(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSRWriteOff.writeoff(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSRWriteOffRecovery.writeoffrecovery(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSRWOVoid.writeoffvoid(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+						JQCCSRHistory.history(SSN, AppURL);
+						JQCCSRLoginLogout.logout(SSN, AppURL);
+								 
+					 
+				
+			}
+			}
+			  }
+			  
+			  
+			  
+			  
+			  catch(Exception e)
+			  {
+				  System.out.println("under catch of Test");
+				  String screenshotPath = getScreenhot(driver, "QC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata");
+					test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
+					
+				  test.log(LogStatus.ERROR, "Unable to start scenarios " );
+
+			  }
+		  }  
+
+
+		  //@Test(priority=424,enabled=false)
+		  public static void JQC_ACH_PartialWORecovery_FullWORecovery_Void_Txn_Testdata() throws Exception {
+			  try
+			  {
+				  test=reports.startTest((Jprop.getProperty("QC_ACH_PartialWORecovery_FullWORecovery_Void_Txn_Testdata_Scenario")),"Login->Borrower Registration->New Loan->AgeStore to Duedate->ACH deposit-->ACHReturn-->Writeoff-->WriteoffRecovery-->Void");
+				  String FileName= Jprop.getProperty("QC_ACH_PartialWORecovery_FullWORecovery_Void_Txn_Testdata")+".xls";
+				//ExcelNew TestData;
+				TestData = new ExcelNew(System.getProperty("user.dir")+Jprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+
+				int lastrow=TestData.getLastRow("Start");
+			String sheetName="Start";
+			System.out.println(lastrow);
+			for(int row=2;row<=lastrow;row++)
+			{
+				
+				
+				String RunFlag = TestData.getCellData(sheetName,"Run",row);
+				//System.out.println(RunFlag);
+			if(RunFlag.equals("Y"))
+			{	
+					String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+					String SSN = TestData.getCellData(sheetName,"SSN",row); 
+					
+					System.out.println(AppURL);
+					String NextDueDate="01/31/2018";
+					
+					 /*JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+					 JQCCSRLoginLogout.logout(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSRNewLoan.newLoan(SSN, AppURL);
+					 JQCCSRLoginLogout.logout(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCDepositDropdown.depositDropDown(SSN, AppURL);				 
+					 JQCCSRLoginLogout.logout(SSN, AppURL);*/
+					 JQCAdminLoginLogout.login(SSN, AppURL);
+					 JQCACHProcessing.ACHProcess(SSN, NextDueDate);
+					 JQCAdminLoginLogout.logout(SSN, AppURL);				 
+					 /*JQCAdminACHReturn.achreturn(SSN, AppURL);				 
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSRWriteOff.writeoff(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSRWriteOffRecovery.writeoffrecovery(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSRWOVoid.writeoffvoid(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+						JQCCSRHistory.history(SSN, AppURL);
+						JQCCSRLoginLogout.logout(SSN, AppURL);*/
+								 
+					 
+				
+			}
+			}
+			  }
+			  
+			  
+			  
+			  
+			  catch(Exception e)
+			  {
+				  System.out.println("under catch of Test");
+				  String screenshotPath = getScreenhot(driver, "QC_ACH_PartialWORecovery_FullWORecovery_Void_Txn_Testdata");
+					test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
+					
+				  test.log(LogStatus.ERROR, "Unable to start scenarios " );
+
+			  }
+		  }  
+		
+		
+		 //@Test(priority=420,enabled=true,groups="Janaki")
+		  public static void JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata() throws Exception {
+			  try
+			  {
+				  test=reports.startTest((Jprop.getProperty("QC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata_Scenario")),"Login->Borrower Registration->New Loan->AgeStore to Duedate->Chk deposi-->Return-->Redeposit-->Payment-->Void-->Payment-->Clear");
+				  String FileName= Jprop.getProperty("QC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata")+".xls";
+				//ExcelNew TestData;
+				TestData = new ExcelNew(System.getProperty("user.dir")+Jprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName);
+				int lastrow=TestData.getLastRow("Start");
+				//int lastrow=3;
+			String sheetName="Start";
+			System.out.println(lastrow);
+			for(int row=2;row<=lastrow;row++)
+			{
+				
+				
+				String RunFlag = TestData.getCellData(sheetName,"Run",row);
+				//System.out.println(RunFlag);
+			if(RunFlag.equals("Y"))
+			{	
+				
+					String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
+					String SSN = TestData.getCellData(sheetName,"SSN",row); 
+					
+					System.out.println(AppURL);
+			 
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+					 JQCCSRLoginLogout.logout(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSRNewLoan.newLoan(SSN, AppURL);
+					 JQCCSRLoginLogout.logout(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCDepositDropdown.depositDropDown(SSN, AppURL);
+					 JQCCSRLoginLogout.logout(SSN, AppURL);				 			
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCInternalTransfer.InternalTransfer(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCmgDeposit.CmgDeposit(SSN, AppURL);
+					 JQCCSRLoginLogout.logout(SSN, AppURL);
+					 JQCAdminLoginLogout.login(SSN, AppURL);
+					 JQCCSRReturnPosting.ReturnPosting(SSN, AppURL);
+					 JQCAdminLoginLogout.logout(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSRRedeposit.redeposit(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSRPrePayment.prepayment(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSRWOVoid.writeoffvoid(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSRPrePayment.prepayment(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCInternalTransfer.InternalTransfer(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCmgDeposit.CmgDeposit(SSN, AppURL);
+					 JQCCSRLoginLogout.logout(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+					 JQCCSRClearCheck.clearcheck(SSN, AppURL);
+					 JQCCSRLoginLogout.login(SSN, AppURL);
+						JQCCSRHistory.history(SSN, AppURL);
+						JQCCSRLoginLogout.logout(SSN, AppURL);
+					
+			}
+>>>>>>> jan21.1
 			}
 		}
 
@@ -4718,9 +5987,16 @@ public class QCStore {
 						true);
 
 			}
+<<<<<<< HEAD
 
 			catch (Exception e) {
 
+=======
+			
+			catch(Exception e)
+			{
+			
+>>>>>>> jan21.1
 				System.out.println("Object proprties file not found");
 			}
 
@@ -4737,9 +6013,16 @@ public class QCStore {
 						true);
 
 			}
+<<<<<<< HEAD
 
 			catch (Exception e) {
 
+=======
+			
+			catch(Exception e)
+			{
+			
+>>>>>>> jan21.1
 				System.out.println("Object proprties file not found");
 			}
 
@@ -4756,9 +6039,16 @@ public class QCStore {
 						true);
 
 			}
+<<<<<<< HEAD
 
 			catch (Exception e) {
 
+=======
+			
+			catch(Exception e)
+			{
+				
+>>>>>>> jan21.1
 				System.out.println("Object proprties file not found");
 			}
 
@@ -4775,9 +6065,16 @@ public class QCStore {
 						true);
 
 			}
+<<<<<<< HEAD
 
 			catch (Exception e) {
 
+=======
+			
+			catch(Exception e)
+			{
+				
+>>>>>>> jan21.1
 				System.out.println("Object proprties file not found");
 			}
 

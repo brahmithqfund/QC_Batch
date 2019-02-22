@@ -260,7 +260,7 @@ public class QCCSRWriteOff extends QCStore {
 						driver.findElement(By.name("Button3")).click();
 						test.log(LogStatus.PASS, "Clicked on Search button");
 						//wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("name=requestBean.installmentType")));
-						Thread.sleep(10000);									
+						Thread.sleep(15000);									
 						//driver.findElement(By.xpath("//*[@id='"+loan_nbr+"']/td[19]/input[4]")).click();
 						driver.findElement(By.xpath("//input[@name='myButton' and @class='sortbuttons']")).click();
 						test.log(LogStatus.PASS, "Clicked on Go button");

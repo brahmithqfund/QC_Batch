@@ -1,33 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+=======
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+>>>>>>> jan21.1
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="255067" started-at="2019-02-19T12:55:50Z" finished-at="2019-02-19T13:00:05Z">
+  <suite name="Suite" duration-ms="1605677" started-at="2019-02-20T07:01:43Z" finished-at="2019-02-20T07:28:29Z">
     <groups>
-      <group name="EOD">
-        <method signature="QCStore.QC_FutureDeposit_EOD_Txn()[pri:283, instance:tests.QCStore@6d7b4f4c]" name="QC_FutureDeposit_EOD_Txn" class="tests.QCStore"/>
-      </group> <!-- EOD -->
+      <group name="1stBatch">
+        <method signature="QCStore.QC_Void_FullReturnPayment_Txn()[pri:169, instance:tests.QCStore@6d7b4f4c]" name="QC_Void_FullReturnPayment_Txn" class="tests.QCStore"/>
+      </group> <!-- 1stBatch -->
     </groups>
-    <test name="Test" duration-ms="255067" started-at="2019-02-19T12:55:50Z" finished-at="2019-02-19T13:00:05Z">
+    <test name="Test" duration-ms="1605677" started-at="2019-02-20T07:01:43Z" finished-at="2019-02-20T07:28:29Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="setup" is-config="true" duration-ms="119" started-at="2019-02-19T12:55:50Z" finished-at="2019-02-19T12:55:50Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="setup" is-config="true" duration-ms="100" started-at="2019-02-20T07:01:43Z" finished-at="2019-02-20T07:01:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="killProcess" is-config="true" duration-ms="5011" started-at="2019-02-19T12:55:50Z" finished-at="2019-02-19T12:55:56Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="killProcess" is-config="true" duration-ms="5011" started-at="2019-02-20T07:01:43Z" finished-at="2019-02-20T07:01:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="QC_FutureDeposit_EOD_Txn()[pri:283, instance:tests.QCStore@6d7b4f4c]" name="QC_FutureDeposit_EOD_Txn" duration-ms="249593" started-at="2019-02-19T12:55:56Z" finished-at="2019-02-19T13:00:05Z">
+        <test-method status="PASS" signature="QC_Void_FullReturnPayment_Txn()[pri:169, instance:tests.QCStore@6d7b4f4c]" name="QC_Void_FullReturnPayment_Txn" duration-ms="1600246" started-at="2019-02-20T07:01:49Z" finished-at="2019-02-20T07:28:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- QC_FutureDeposit_EOD_Txn -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@6d7b4f4c]" name="getResult" is-config="true" duration-ms="327" started-at="2019-02-19T13:00:05Z" finished-at="2019-02-19T13:00:05Z">
+        </test-method> <!-- QC_Void_FullReturnPayment_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@6d7b4f4c]" name="getResult" is-config="true" duration-ms="302" started-at="2019-02-20T07:28:29Z" finished-at="2019-02-20T07:28:29Z">
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
                 <![CDATA[[TestResult name=QC_FutureDeposit_EOD_Txn status=SUCCESS method=QCStore.QC_FutureDeposit_EOD_Txn()[pri:283, instance:tests.QCStore@6d7b4f4c] output={null}]]]>
 =======
 =======
@@ -64,12 +69,16 @@
 >>>>>>> 2595ff094730e8fabc91b1e4a6f764cef5b2e41a
 =======
 >>>>>>> 204c31dbc0e0b4ef5ce1fe20208426e8612bfd9b
+=======
+                <![CDATA[[TestResult name=QC_Void_FullReturnPayment_Txn status=SUCCESS method=QCStore.QC_Void_FullReturnPayment_Txn()[pri:169, instance:tests.QCStore@6d7b4f4c] output={null}]]]>
+>>>>>>> jan21.1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-19T13:00:05Z" finished-at="2019-02-19T13:00:05Z">
@@ -80,6 +89,8 @@
 >>>>>>> 2595ff094730e8fabc91b1e4a6f764cef5b2e41a
 =======
 >>>>>>> 204c31dbc0e0b4ef5ce1fe20208426e8612bfd9b
+=======
+>>>>>>> jan21.1
       </class> <!-- tests.QCStore -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

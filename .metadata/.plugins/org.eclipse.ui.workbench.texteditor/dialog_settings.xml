@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="@Test" key="selection"/>
+		<item value="QC_PayAnyotherAmount_Txn() throws Exception" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="QC_PayAnyotherAmount_Txn() throws Exception"/>
 			<item value="// @Test"/>
 			<item value="Janaki"/>
 			<item value="Ratikanta"/>
@@ -15,7 +16,6 @@
 			<item value="Janaki&apos;s (Ratikanta)"/>
 			<item value="JQC_LOC_Refinance_StepSame_Txn"/>
 			<item value="JQC_LOC_GreaterThan_MinPayment_Return_Txn"/>
-			<item value="janaki"/>
 		</list>
 		<list key="replacehistory">
 			<item value="@Test"/>

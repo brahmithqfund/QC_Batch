@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 204c31dbc0e0b4ef5ce1fe20208426e8612bfd9b
 <testsuite skipped="0" hostname="Ratikanta-pc" name="tests.QCStore" tests="1" failures="0" timestamp="18 Feb 2019 20:05:01 GMT" time="1323.074" errors="0">
@@ -25,6 +26,10 @@
   <testcase name="LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn" time="1005.027" classname="tests.QCStore"/>
   <testcase name="LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn" time="117.980" classname="tests.QCStore"/>
   <testcase name="LOC_ACHDeposit_EODs_Return_Txn" time="14.381" classname="tests.QCStore"/>
+=======
+<testsuite skipped="26" hostname="QTLSYS2-238" name="tests.QCStore" tests="27" failures="0" timestamp="22 Feb 2019 04:32:35 GMT" time="549.280" errors="0">
+  <testcase name="LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn" time="549.280" classname="tests.QCStore"/>
+>>>>>>> jan21.1
   <testcase name="NewLoanBiweeklyPaymentDuedate" classname="tests.QCStore">
     <skipped/>
 =======
@@ -310,6 +315,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
     <skipped/>
   </testcase> <!-- Clear_Return_EODTwice -->
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> jan21.1
 =======
 <testsuite skipped="0" hostname="qtlsys2-124" name="tests.QCStore" tests="7" failures="0" timestamp="19 Feb 2019 13:50:00 GMT" time="8110.385" errors="0">
@@ -328,4 +334,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
     <skipped/>
   </testcase> <!-- DrawAndEOD -->
 >>>>>>> QCH1.1
+=======
+>>>>>>> jan21.1
 </testsuite> <!-- tests.QCStore -->
