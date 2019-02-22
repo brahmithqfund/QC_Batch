@@ -4,24 +4,12 @@
 
 #Visual Studio files
 
-*.index
+
 *.png
 .metadata/
 .recommenders/
 .sonarlint/
 RemoteSystemsTempFiles/
-<<<<<<< HEAD
 .xmi
 .snap
-<<<<<<< HEAD
-.log
-.zip
-.metadata/*
-=======
->>>>>>> feb1
 
-=======
-*.xmi
-.snap
-.metadata/*
->>>>>>> jan21.1

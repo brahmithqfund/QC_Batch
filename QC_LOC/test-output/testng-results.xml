@@ -2,6 +2,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 204c31dbc0e0b4ef5ce1fe20208426e8612bfd9b
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
@@ -184,6 +187,7 @@
 =======
                 <![CDATA[[TestResult name=RQC_LOC_ManualDefault_Txn_Testdata status=SUCCESS method=QCStore.RQC_LOC_ManualDefault_Txn_Testdata()[pri:201, instance:tests.QCStore@71423665] output={null}]]]>
 >>>>>>> feb1.1
+<<<<<<< HEAD
 =======
 <testng-results skipped="0" failed="0" ignored="110" total="113" passed="3">
   <reporter-output>
@@ -246,6 +250,8 @@
 =======
                 <![CDATA[[TestResult name=MidDay_Void_Deposit status=SUCCESS method=QCStore.MidDay_Void_Deposit()[pri:505, instance:tests.QCStore@71423665] output={null}]]]>
 >>>>>>> QCH1.1
+=======
+>>>>>>> 204c31dbc0e0b4ef5ce1fe20208426e8612bfd9b
               </value>
             </param>
           </params>
@@ -256,6 +262,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 204c31dbc0e0b4ef5ce1fe20208426e8612bfd9b
         <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@71423665]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T20:05:01Z" finished-at="2019-02-18T20:05:01Z">
 =======
         <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-19T05:23:08Z" finished-at="2019-02-19T05:23:08Z">
@@ -265,6 +274,7 @@
         </test-method> <!-- endReport -->
 =======
 >>>>>>> feb1.1
+<<<<<<< HEAD
 =======
         <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5022" started-at="2019-02-19T13:36:13Z" finished-at="2019-02-19T13:36:18Z">
           <reporter-output>
@@ -308,6 +318,8 @@
 >>>>>>> jan21.1
 =======
 >>>>>>> QCH1.1
+=======
+>>>>>>> 204c31dbc0e0b4ef5ce1fe20208426e8612bfd9b
       </class> <!-- tests.QCStore -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

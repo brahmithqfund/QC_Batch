@@ -1,20 +1,0 @@
-
-i
-squid:S1343"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(¡»¢üùÿÿÿÿ
-Qsquid:S11413"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
-Asquid:S1166:"%Either log or rethrow this exception.(¼Ôîàùÿÿÿÿ
-nsquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Š ‘Â
-nsquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ïñ©
-nsquid:S00117""VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºãú¯
-Wsquid:UselessImportCheck"3Remove this unused import 'org.openqa.selenium.By'.(ÿŠÞ›
-rsquid:S1192&"VDefine a constant instead of duplicating this literal "repayment_method_type" 4 times.(»¶ ‚øÿÿÿÿ
-msquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€û±
-ssquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½Éü—ÿÿÿÿÿ
-nsquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Š ‘Â
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Šøî¿þÿÿÿÿ
-i
-squid:S134A"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(ÖŽˆÓûÿÿÿÿ
-gsquid:CommentedOutCodeLineC"<This block of commented-out lines of code should be removed.(«Ù¢üüÿÿÿÿ
-Fsquid:S00108;")Either remove or fill this block of code.(ÒÌâ–øÿÿÿÿ
-gsquid:CommentedOutCodeLine+"<This block of commented-out lines of code should be removed.(›ŠŠáüÿÿÿÿ
-bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(íÐ²ß

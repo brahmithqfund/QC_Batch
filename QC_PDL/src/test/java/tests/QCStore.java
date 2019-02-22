@@ -1293,7 +1293,7 @@ public class QCStore {
 
 					//String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					/*QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
@@ -1308,7 +1308,7 @@ public class QCStore {
 					QCAgeStoreGraceDays.ageStoreGraceDays2ndTime(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCRefinance.refinanceStepDown(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);*/
 					 QCCSRLoginLogout.login(SSN, AppURL);
 					 QCCSRHistory.history(SSN, AppURL);
 					 QCCSRLoginLogout.logout(SSN, AppURL);
@@ -1665,14 +1665,15 @@ public class QCStore {
 
 					//String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
-					QCCSRLoginLogout.login(SSN, AppURL);
+
+					/*QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
-					QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+					QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);*/
 
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCFutureDeposit.futureDeposit(SSN, AppURL);
@@ -1681,7 +1682,7 @@ public class QCStore {
 
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCEODDeposit.eodDeposit(SSN, AppURL);
-				
+					// QCCSRLoginLogout.logout(SSN, AppURL);
 					QCAdminStoreSetup.storeSetup(SSN, AppURL);
 					QCCSRLoginLogout.adminLogout(driver, SSN, AppURL);
 
@@ -1711,7 +1712,7 @@ public class QCStore {
 
 	//Anoop scenarios
 	//aNOOP SCNEARIOS
-	//@Test(priority=22,enabled=true)
+	@Test(priority=22,enabled=true,groups="Anoop")
 
 	public void AQC_EPP_Redeposit() throws Exception{
 
@@ -1770,7 +1771,7 @@ public class QCStore {
 		}}
 
 
-	//@Test(priority=21,enabled=true)
+	@Test(priority=21,enabled=true,groups="Anoop")
 
 	public void AQC_EPP_nsfPayment() throws Exception{
 
@@ -1828,7 +1829,7 @@ public class QCStore {
 			}
 		}}
 
-	//@Test(priority=20,enabled=true)
+	@Test(priority=20,enabled=true,groups="Anoop")
 
 	public void AQC_EPP_Return() throws Exception{
 
@@ -1885,7 +1886,7 @@ public class QCStore {
 			}
 		}}
 
-	//@Test(priority=19,enabled=true)
+	@Test(priority=19,enabled=true,groups="Anoop")
 
 	public void AQC_EPP_refund() throws Exception{
 
@@ -1945,7 +1946,7 @@ public class QCStore {
 			}
 		}}
 
-	//@Test(priority=18,enabled=true)
+	@Test(priority=18,enabled=true,groups="Anoop")
 
 	public void AQC_EPP_clear() throws Exception{
 
@@ -1993,7 +1994,7 @@ public class QCStore {
 		}}
 
 
-	//@Test(priority=17,enabled=false)
+	@Test(priority=17,enabled=true,groups="Anoop")
 
 	public void AQC_EPP_Prepayment() throws Exception{
 
@@ -2040,7 +2041,7 @@ public class QCStore {
 			}
 		}}
 
-	//@Test(priority=16,enabled=true)
+	@Test(priority=16,enabled=true,groups="Anoop")
 
 	public void AQC_EPPDeposit() throws Exception{
 
@@ -2086,7 +2087,7 @@ public class QCStore {
 
 
 	//This test case is for borrower registration and new loan processing
-	//@Test(priority=13,enabled=false)
+	@Test(priority=13,enabled=true,groups="Anoop")
 	public void borrowregNewloan() throws Exception{
 		FileName=  "QC_BorrowerRegistration_NewLoan.xls";
 		test=reports.startTest("QC_BorrowerRegistration_NewLoan","Login-->Home Screen-->Borrower Registration-->New Loan");
@@ -2117,7 +2118,7 @@ public class QCStore {
 			}}}
 
 	// This test case is to check status for the customer and apply loan for inactive customers 
-	//@Test(priority=2,enabled=false)
+	@Test(priority=2,enabled=true,groups="Anoop")
 	public void inactiveNewloan() throws Exception
 	{	 
 		FileName=  "QC_NewLoan_InactiveCustomer.xls";
@@ -2149,7 +2150,7 @@ public class QCStore {
 	/* Make sure that  "ESign_LoanAmt" column having an amount 50 and for pdl max loan count for customer
     	10 and maximum loan 500
 	 */ 
-	//@Test(priority=6,enabled=false)
+	@Test(priority=6,enabled=true,groups="Anoop")
 
 	public void maxloanCount() throws Exception{
 		FileName=  "QC_MaxLoanCount_Testdata.xls";
@@ -2194,7 +2195,7 @@ public class QCStore {
 
 			}}}
 
-	//@Test(priority=4,enabled=false)
+	@Test(priority=4,enabled=true,groups="Anoop")
 
 	public void rescindloan() throws Exception{
 		test=reports.startTest("QC_NewLoan_Rescind","BorrowerRegistration-->New Loan->Rescind");
@@ -2232,7 +2233,7 @@ public class QCStore {
 			}
 		}}
 
-	//@Test(priority=5,enabled=false)
+	@Test(priority=5,enabled=true,groups="Anoop")
 
 	public void agerescindtest() throws Exception{
 		test=reports.startTest("QC_NewLoan_AgeStore_Rescind","Login-->Age the loan to rescind days--->Rescind loan");
@@ -2273,7 +2274,7 @@ public class QCStore {
 			}}}
 
 	//Ach deposit from drop down
-	//@Test(priority=3,enabled=false)
+	@Test(priority=3,enabled=true,groups="Anoop")
 	public void Achdeposit() throws Exception{
 		test=reports.startTest("QC_NewLoan_Deposit","Login-->Age the stote up to due date--->Perform deposit");
 		FileName=  "QC_BorrowerReg_NewLoan_AchDeposit_Txn_Testdata.xls";
@@ -2310,7 +2311,7 @@ public class QCStore {
 			}}}
 	//ACH deposit from safe
 	/* Give this test case as 0 priority mandatory */
-	//@Test(priority=0,enabled=false)
+	@Test(priority=0,enabled=true,groups="Anoop")
 	public void middayDeposit() throws Exception{
 		FileName="QC_BorrowerReg_NewLoan_MidDayDeposit_Txn_Testdata.xls";
 		test=reports.startTest("QC_NewLoan_MiddayDeposit","Login-->Age the stote up to due date--->Perform Mid day deposit");
@@ -2347,7 +2348,7 @@ public class QCStore {
 			}}}
 
 	//Adding 5 days to due date and perform midday deposit
-	//@Test(priority=7,enabled=false)
+	@Test(priority=7,enabled=true,groups="Anoop")
 
 	public void GracedaysMiddayDeposit() throws Exception{
 
@@ -2385,7 +2386,7 @@ public class QCStore {
 			}}}
 
 	//Adding 5 days to due date and perform  deposit from deposit menu
-	//@Test(priority=8,enabled=false)
+	@Test(priority=8,enabled=true,groups="Anoop")
 
 	public void GracedaysDepositMenu() throws Exception{
 
@@ -2422,7 +2423,7 @@ public class QCStore {
 				test.log(LogStatus.INFO, "****Test Scenario for GraceDays DepositMenu  is pass******");
 			}}}
 	//Age the store to 3 days and perform partial payment and age the store to due date and perform re finance step up
-	//@Test(priority=9,enabled=false)
+	@Test(priority=9,enabled=true,groups="Anoop")
 
 	public void RefinanceStepup() throws Exception{
 
@@ -2468,7 +2469,7 @@ public class QCStore {
 			}}}
 
 	//Age the store to 3 days and perform partial payment and age the store to due date and perform re finance step same
-	//@Test(priority=10,enabled=false)
+	@Test(priority=10,enabled=true,groups="Anoop")
 
 	public void RefinanceStepSame() throws Exception{
 
@@ -2511,7 +2512,7 @@ public class QCStore {
 				test.log(LogStatus.INFO, "****Test Scenario for Refinance StepSame  is pass******");
 			}}}
 
-	//@Test(priority=11,enabled=false)
+	@Test(priority=11,enabled=true,groups="Anoop")
 
 	public void RefinanceStepupVoid() throws Exception{
 
@@ -2557,7 +2558,7 @@ public class QCStore {
 				test.log(LogStatus.INFO, "****Test Scenario for Refinance Step up Void  is pass******");
 			}}}
 
-	//@Test(priority=12,enabled=false)
+	@Test(priority=12,enabled=true,groups="Anoop")
 
 	public void RefinanceStepSameVoid() throws Exception{
 
@@ -2604,7 +2605,7 @@ public class QCStore {
 			}}}
 
 	//This needs to be 0 or top priority
-	//@Test(priority=1,enabled=false)
+	@Test(priority=1,enabled=true,groups="Anoop")
 	public void futureMidayDeposit() throws Exception{
 		FileName="QC_AgeStoretoduedate_FutureDeposit_MiddayDeposit.xls";
 		test=reports.startTest("QC_Future MidDay Deposit","Loan-->Age the store upto duedate--> perform future deposit—->age the store uptofuture deposit date--->perform Deposit(Mid Day)");
@@ -2647,7 +2648,7 @@ public class QCStore {
 			}
 		}}
 
-	//@Test(priority=14,enabled=false)
+	@Test(priority=14,enabled=true,groups="Anoop")
 
 	public void rebateStepup() throws Exception{
 
@@ -2694,7 +2695,7 @@ public class QCStore {
 		}}
 
 
-	//@Test(priority=15,enabled=false)
+	@Test(priority=15,enabled=true,groups="Anoop")
 
 	public void rebateStepupVoid() throws Exception{
 
@@ -2745,11 +2746,7 @@ public class QCStore {
 
 	//Janaki scenarios
 	
-<<<<<<< HEAD
 	@Test(priority=0,enabled=true,groups="Janaki")
-=======
-	//@Test(priority=0,enabled=true)
->>>>>>> jan21.1
 		public static void JQC_AgeStore_Deposit_PrePayment_Txn() throws Exception {
 			try
 			{
@@ -4849,7 +4846,7 @@ public class QCStore {
 
 			try{ 
 				Areader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_PDL/src/test/java/tests/AObjects.properties"));
+						new FileReader("E:/QC_Batch/QC_PDL/src/test/java/tests/AObjects.properties"));
 				Aprop = new Properties();
 				Aprop.load(Areader);
 				Areader.close();

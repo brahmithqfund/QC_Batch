@@ -11,6 +11,7 @@
       <class name="tests.QCStore">
         <methods>
 <<<<<<< HEAD
+<<<<<<< HEAD
           <include name="getResult"/>
           <include name="setup"/>
           <include name="QC_Refinance_StepSameVoidURP_Txn"/>
@@ -18,6 +19,8 @@
           <include name="endReport"/>
           <include name="killProcess"/>
 =======
+=======
+>>>>>>> 204c31dbc0e0b4ef5ce1fe20208426e8612bfd9b
           <include name="JQC_AgeStore_Refinance_Rescind_Txn"/>
           <include name="setup"/>
           <include name="JQC_AgeStore_Deposit_AutoClear_Txn"/>
@@ -43,7 +46,10 @@
           <include name="JQC_AgeStore_PrePayment_Return_Txn"/>
           <include name="JQC_AgeStore_Redeposit_Prepayment_Void_Prepayment_Return_Txn"/>
           <include name="JQC_BuyBack_Rebate_Void_Txn_Testdata"/>
+<<<<<<< HEAD
 >>>>>>> 2595ff094730e8fabc91b1e4a6f764cef5b2e41a
+=======
+>>>>>>> 204c31dbc0e0b4ef5ce1fe20208426e8612bfd9b
         </methods>
       </class> <!-- tests.QCStore -->
     </classes>

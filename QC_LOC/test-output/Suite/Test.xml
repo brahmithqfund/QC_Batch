@@ -3,6 +3,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 204c31dbc0e0b4ef5ce1fe20208426e8612bfd9b
 <testsuite hostname="Ratikanta-pc" ignored="1" name="Test" tests="1" failures="0" timestamp="18 Feb 2019 07:34:43 GMT" time="30.005" errors="0">
   <testcase name="RQC_LOC_ManualDefault_Txn_Testdata" time="24.199" classname="tests.QCStore"/>
 =======
@@ -12,6 +15,7 @@
   <testcase name="LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn -->
+<<<<<<< HEAD
 =======
 <testsuite hostname="QTLSYS2-238" ignored="110" name="Test" tests="3" failures="0" timestamp="19 Feb 2019 13:36:28 GMT" time="1137.527" errors="0">
   <testcase name="LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn" time="999.235" classname="tests.QCStore"/>
@@ -472,4 +476,6 @@ at tests.QCStore.SQC_LOC_Deposit_Bulk(QCStore.java:6485)
     <skipped/>
   </testcase> <!-- SQC_LOC_Deposit_Bulk_Void -->
 >>>>>>> QCH1.1
+=======
+>>>>>>> 204c31dbc0e0b4ef5ce1fe20208426e8612bfd9b
 </testsuite> <!-- Test -->

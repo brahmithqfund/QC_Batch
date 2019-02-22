@@ -37,7 +37,7 @@ public class QCEncryptionDetails extends QCStore{
 				for(int row=2;row<=lastrow;row++)
 				{		
 					String RegSSN = TestData.getCellData(sheetName,"SSN",row);
-					encryption_store_no="1709";
+					encryption_store_no=TestData.getCellData(sheetName,"StoreID",row);
 					if(SSN.equals(RegSSN))
 					{
 

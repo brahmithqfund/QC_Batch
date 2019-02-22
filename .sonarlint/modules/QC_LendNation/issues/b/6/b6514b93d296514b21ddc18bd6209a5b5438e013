@@ -1,15 +1,0 @@
-
-i
-squid:S134_"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(ÖëùÓûÿÿÿÿ
-bsquid:CommentedOutCodeLinea"<This block of commented-out lines of code should be removed.(¸Å´
-ssquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä“Ú‹ıÿÿÿÿ
-bsquid:CommentedOutCodeLineC"<This block of commented-out lines of code should be removed.(¶Öâø
-ssquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½Éü—ÿÿÿÿÿ
-ssquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä“Ú‹ıÿÿÿÿ
-nsquid:S00117$"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ƒ¹¢
-bsquid:CommentedOutCodeLine("<This block of commented-out lines of code should be removed.(œÍÑÇ
-nsquid:S00117!"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ïñ©
-gsquid:CommentedOutCodeLine
-"<This block of commented-out lines of code should be removed.(Šøî¿şÿÿÿÿ
-msquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€û±
-bsquid:CommentedOutCodeLine5"<This block of commented-out lines of code should be removed.(…¶Üš

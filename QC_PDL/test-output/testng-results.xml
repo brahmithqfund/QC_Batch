@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
@@ -29,6 +30,8 @@
               <value>
                 <![CDATA[[TestResult name=QC_FutureDeposit_EOD_Txn status=SUCCESS method=QCStore.QC_FutureDeposit_EOD_Txn()[pri:283, instance:tests.QCStore@6d7b4f4c] output={null}]]]>
 =======
+=======
+>>>>>>> 204c31dbc0e0b4ef5ce1fe20208426e8612bfd9b
 <testng-results skipped="0" failed="0" ignored="76" total="77" passed="1">
   <reporter-output>
   </reporter-output>
@@ -57,7 +60,10 @@
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata status=SUCCESS method=QCStore.JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata()[pri:423, instance:tests.QCStore@527740a2] output={null}]]]>
+<<<<<<< HEAD
 >>>>>>> 2595ff094730e8fabc91b1e4a6f764cef5b2e41a
+=======
+>>>>>>> 204c31dbc0e0b4ef5ce1fe20208426e8612bfd9b
               </value>
             </param>
           </params>
@@ -65,12 +71,15 @@
           </reporter-output>
         </test-method> <!-- getResult -->
 <<<<<<< HEAD
+<<<<<<< HEAD
         <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-19T13:00:05Z" finished-at="2019-02-19T13:00:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
 =======
 >>>>>>> 2595ff094730e8fabc91b1e4a6f764cef5b2e41a
+=======
+>>>>>>> 204c31dbc0e0b4ef5ce1fe20208426e8612bfd9b
       </class> <!-- tests.QCStore -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
