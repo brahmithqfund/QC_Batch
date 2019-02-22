@@ -1571,173 +1571,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 168, groups = { "EOD" })
-	public static void LOC_ACHDeposit_EODs_Return_Txn() throws Exception {
-		try {
-
-			test = reports.startTest(prop.getProperty("LOC_ACHDeposit_EODs_Return_Txn_scenario"),
-					"Login->Borrower Registratino->New LOC – EOD on Payment Due Date(including collateral Deposit) – Clear – EOD on 2nd Payment Due Date(including collateral Deposit) – Clear -  EOD on 3rd Payment Due Date(including collateral Deposit) – Clear -  EOD on 4th Payment Due Date(including collateral Deposit) – Return(Loan in Delinquent) – Draw ");
-			FileName = prop.getProperty("LOC_ACHDeposit_EODs_Return_Txn_file_name") + ".xls";
-
-			TestData = new ExcelNew(System.getProperty("user.dir")
-					+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
-
-			String sheetName = "Start";
-			int lastrow = TestData.getLastRow("Start");
-			System.out.println(lastrow);
-			for (int row = 2; row <= lastrow; row++) {
-
-				String RunFlag = TestData.getCellData(sheetName, "Run", row);
-				// System.out.println(RunFlag);
-				if (RunFlag.equals("Y")) {
-
-					// AppURL = TestData.getCellData(sheetName, "AppURL", row);
-					String SSN = TestData.getCellData(sheetName, "SSN", row);
-
-					System.out.println(AppURL);
-
-					
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCCSRNewLoan.newLoan(SSN, SSN);
-					 QCCSRLoginLogout.logout(SSN, AppURL); 
-							 System.out.println("first EOD"); // first EOD 
-							 QCCSRLoginLogout.login(SSN,AppURL); 
-					 QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCDepositDropdown.depositDropDown(SSN, SSN);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCEODDeposit.eodDeposit(SSN, AppURL);
-					  
-					  QCAdminStoreSetup.storeSetup(SSN, AppURL);
-					QCCSRLoginLogout.adminLogout(driver, SSN, AppURL);
-					
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCSafeAssign.safeAssign(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCDrawerAssign.drawerAssign(SSN, AppURL);
-					
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					
-					QCCSRLoginLogout.adminLogin(SSN, SSN);
-					QCCSRReturnPosting.returnposting(SSN, SSN);
-					
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCClearDropdown.clearDropDown(SSN, SSN);
-					QCCSRLoginLogout.logout(SSN, AppURL); // second EOD
-					System.out.println("second EOD");
-					QCCSRLoginLogout.login(SSN, AppURL);
-					  QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
-					 QCCSRLoginLogout.login(SSN, AppURL);
-					QCDepositDropdown.depositDropDown(SSN, SSN);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					 
-
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCEODDeposit.eodDeposit(SSN, AppURL);
-
-					QCAdminStoreSetup.storeSetup(SSN, AppURL);
-					QCCSRLoginLogout.adminLogout(driver, SSN, AppURL);
-
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCSafeAssign.safeAssign(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCDrawerAssign.drawerAssign(SSN, AppURL);
-
-					QCCSRLoginLogout.logout(SSN, AppURL);
-
-					QCCSRLoginLogout.adminLogin(SSN, SSN);
-					QCCSRReturnPosting.returnposting(SSN, SSN);
-
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCClearDropdown.clearDropDown(SSN, SSN);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-
-					// third EOD
-					System.out.println("third EOD");
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCDepositDropdown.depositDropDown(SSN, SSN);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCEODDeposit.eodDeposit(SSN, AppURL);
-
-					QCAdminStoreSetup.storeSetup(SSN, AppURL);
-					QCCSRLoginLogout.adminLogout(driver, SSN, AppURL);
-
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCSafeAssign.safeAssign(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCDrawerAssign.drawerAssign(SSN, AppURL);
-
-					QCCSRLoginLogout.logout(SSN, AppURL);
-
-					QCCSRLoginLogout.adminLogin(SSN, SSN);
-					QCCSRReturnPosting.returnposting(SSN, SSN);
-
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCClearDropdown.clearDropDown(SSN, SSN);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-
-					// fourth EOD
-					System.out.println("fourth EOD");
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCDepositDropdown.depositDropDown(SSN, SSN);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCEODDeposit.eodDeposit(SSN, AppURL);
-
-					QCAdminStoreSetup.storeSetup(SSN, AppURL);
-					QCCSRLoginLogout.adminLogout(driver, SSN, AppURL);
-
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCSafeAssign.safeAssign(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCDrawerAssign.drawerAssign(SSN, AppURL);
-
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					System.out.println("Return");
-					QCCSRLoginLogout.adminLogin(SSN, SSN);
-					QCCSRReturnPosting.returnposting(SSN, SSN);
-
-					QCCSRLoginLogout.adminLogin(SSN, SSN);
-					QCAdminACHReturn.achreturn(SSN, SSN);
-
-					QCCSRLoginLogout.login(SSN, AppURL);
-
-					QCDraw.draw(SSN, SSN);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCCSRHistory.history(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-
-				}
-			}
-		}
-
-		catch (Exception e) {
-
-			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
-			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario LOC_Biweekly_Nextpay_Txn ");
-
-		}
-	}
-
-	 @Test(priority = 166,groups = { "EOD" })
+	// @Test(priority = 66,groups = { "EOD" })
 	public static void LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn() throws Exception {
 		try {
 
@@ -1833,12 +1667,13 @@ public class QCStore {
 
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
+			test.log(LogStatus.ERROR,e);
 			test.log(LogStatus.ERROR, "Unable to start scenario LOC_Biweekly_Nextpay_Txn ");
 
 		}
 	}
 
-	@Test(priority = 167,groups = { "EOD" })
+	@Test(priority = 67,groups = { "EOD" })
 	public static void LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn() throws Exception {
 		try {
 
@@ -1934,113 +1769,287 @@ public class QCStore {
 
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
+			test.log(LogStatus.ERROR,e);
 			test.log(LogStatus.ERROR, "Unable to start scenario LOC_Biweekly_Nextpay_Txn ");
 
 		}
 	}
 
-	@Test(priority = 169, groups = { "EOD2" })
-	public static void LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn() throws Exception {
-		try {
+	
 
-			test = reports.startTest(prop.getProperty("LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn_scenario"),
-					"LOC – Deposit – EOD – Return – EOD on 2nd Payment Due Date - Deafult - ReDeposit");
-			FileName = prop.getProperty("LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn_file_name") + ".xls";
+	//@Test(priority = 68, groups = { "EOD" })
+	public static void LOC_ACHDeposit_EODs_Return_Txn() throws Exception {
+			try {
 
-			TestData = new ExcelNew(System.getProperty("user.dir")
-					+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
+				test = reports.startTest(prop.getProperty("LOC_ACHDeposit_EODs_Return_Txn_scenario"),
+						"Login->Borrower Registratino->New LOC – EOD on Payment Due Date(including collateral Deposit) – Clear – EOD on 2nd Payment Due Date(including collateral Deposit) – Clear -  EOD on 3rd Payment Due Date(including collateral Deposit) – Clear -  EOD on 4th Payment Due Date(including collateral Deposit) – Return(Loan in Delinquent) – Draw ");
+				FileName = prop.getProperty("LOC_ACHDeposit_EODs_Return_Txn_file_name") + ".xls";
 
-			String sheetName = "Start";
-			int lastrow = TestData.getLastRow("Start");
-			System.out.println(lastrow);
-			for (int row = 2; row <= lastrow; row++) {
+				TestData = new ExcelNew(System.getProperty("user.dir")
+						+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 
-				String RunFlag = TestData.getCellData(sheetName, "Run", row);
-				// System.out.println(RunFlag);
-				if (RunFlag.equals("Y")) {
+				String sheetName = "Start";
+				int lastrow = TestData.getLastRow("Start");
+				System.out.println(lastrow);
+				for (int row = 2; row <= lastrow; row++) {
 
-					// AppURL = TestData.getCellData(sheetName, "AppURL", row);
-					String SSN = TestData.getCellData(sheetName, "SSN", row);
+					String RunFlag = TestData.getCellData(sheetName, "Run", row);
+					// System.out.println(RunFlag);
+					if (RunFlag.equals("Y")) {
 
-					System.out.println(AppURL);
+						// AppURL = TestData.getCellData(sheetName, "AppURL", row);
+						String SSN = TestData.getCellData(sheetName, "SSN", row);
 
-					/*QCCSRLoginLogout.login(SSN, AppURL);
-					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);*/
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCCSRNewLoan.newLoan(SSN, SSN);
-					QCCSRLoginLogout.logout(SSN, AppURL);
+						System.out.println(AppURL);
 
-					// first EOD
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCDepositDropdown.depositDropDown(SSN, SSN);
-					QCCSRLoginLogout.logout(SSN, AppURL);
+						
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+						QCCSRLoginLogout.logout(SSN, AppURL);
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCCSRNewLoan.newLoan(SSN, SSN);
+						 QCCSRLoginLogout.logout(SSN, AppURL); 
+								 System.out.println("first EOD"); // first EOD 
+								 QCCSRLoginLogout.login(SSN,AppURL); 
+						 QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCDepositDropdown.depositDropDown(SSN, SSN);
+						QCCSRLoginLogout.logout(SSN, AppURL);
+						
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCEODDeposit.eodDeposit(SSN, AppURL);
+						  
+						  QCAdminStoreSetup.storeSetup(SSN, AppURL);
+						QCCSRLoginLogout.adminLogout(driver, SSN, AppURL);
+						
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCSafeAssign.safeAssign(SSN, AppURL);
+						QCCSRLoginLogout.logout(SSN, AppURL);
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCDrawerAssign.drawerAssign(SSN, AppURL);
+						
+						QCCSRLoginLogout.logout(SSN, AppURL);
+						
+						QCCSRLoginLogout.adminLogin(SSN, SSN);
+						QCCSRReturnPosting.returnposting(SSN, SSN);
+						
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCClearDropdown.clearDropDown(SSN, SSN);
+						QCCSRLoginLogout.logout(SSN, AppURL); // second EOD
+						System.out.println("second EOD");
+						QCCSRLoginLogout.login(SSN, AppURL);
+						  QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
+						 QCCSRLoginLogout.login(SSN, AppURL);
+						QCDepositDropdown.depositDropDown(SSN, SSN);
+						QCCSRLoginLogout.logout(SSN, AppURL);
+						 
 
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCEODDeposit.eodDeposit(SSN, AppURL);
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCEODDeposit.eodDeposit(SSN, AppURL);
 
-					QCAdminStoreSetup.storeSetup(SSN, AppURL);
-					QCCSRLoginLogout.adminLogout(driver, SSN, AppURL);
+						QCAdminStoreSetup.storeSetup(SSN, AppURL);
+						QCCSRLoginLogout.adminLogout(driver, SSN, AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCSafeAssign.safeAssign(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCDrawerAssign.drawerAssign(SSN, AppURL);
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCSafeAssign.safeAssign(SSN, AppURL);
+						QCCSRLoginLogout.logout(SSN, AppURL);
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCDrawerAssign.drawerAssign(SSN, AppURL);
 
-					QCCSRLoginLogout.logout(SSN, AppURL);
+						QCCSRLoginLogout.logout(SSN, AppURL);
 
-					QCCSRLoginLogout.adminLogin(SSN, SSN);
-					QCCSRReturnPosting.returnposting(SSN, SSN);
+						QCCSRLoginLogout.adminLogin(SSN, SSN);
+						QCCSRReturnPosting.returnposting(SSN, SSN);
 
-					QCCSRLoginLogout.adminLogin(SSN, SSN);
-					QCAdminACHReturn.achreturn(SSN, SSN);
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCClearDropdown.clearDropDown(SSN, SSN);
+						QCCSRLoginLogout.logout(SSN, AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
+						// third EOD
+						System.out.println("third EOD");
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCDepositDropdown.depositDropDown(SSN, SSN);
+						QCCSRLoginLogout.logout(SSN, AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCEODDeposit.eodDeposit(SSN, AppURL);
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCEODDeposit.eodDeposit(SSN, AppURL);
 
-					QCAdminStoreSetup.storeSetup(SSN, AppURL);
-					QCCSRLoginLogout.adminLogout(driver, SSN, AppURL);
+						QCAdminStoreSetup.storeSetup(SSN, AppURL);
+						QCCSRLoginLogout.adminLogout(driver, SSN, AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCSafeAssign.safeAssign(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCDrawerAssign.drawerAssign(SSN, AppURL);
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCSafeAssign.safeAssign(SSN, AppURL);
+						QCCSRLoginLogout.logout(SSN, AppURL);
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCDrawerAssign.drawerAssign(SSN, AppURL);
 
-					QCCSRLoginLogout.logout(SSN, AppURL);
+						QCCSRLoginLogout.logout(SSN, AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCDefaultStatus.defaultStatus(SSN, SSN);
-					QCCSRLoginLogout.logout(SSN, AppURL);
+						QCCSRLoginLogout.adminLogin(SSN, SSN);
+						QCCSRReturnPosting.returnposting(SSN, SSN);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCRedeposit.redeposit(SSN, SSN);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCCSRHistory.history(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCClearDropdown.clearDropDown(SSN, SSN);
+						QCCSRLoginLogout.logout(SSN, AppURL);
 
+						// fourth EOD
+						System.out.println("fourth EOD");
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCDepositDropdown.depositDropDown(SSN, SSN);
+						QCCSRLoginLogout.logout(SSN, AppURL);
+
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCEODDeposit.eodDeposit(SSN, AppURL);
+
+						QCAdminStoreSetup.storeSetup(SSN, AppURL);
+						QCCSRLoginLogout.adminLogout(driver, SSN, AppURL);
+
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCSafeAssign.safeAssign(SSN, AppURL);
+						QCCSRLoginLogout.logout(SSN, AppURL);
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCDrawerAssign.drawerAssign(SSN, AppURL);
+
+						QCCSRLoginLogout.logout(SSN, AppURL);
+						System.out.println("Return");
+						QCCSRLoginLogout.adminLogin(SSN, SSN);
+						QCCSRReturnPosting.returnposting(SSN, SSN);
+
+						QCCSRLoginLogout.adminLogin(SSN, SSN);
+						QCAdminACHReturn.achreturn(SSN, SSN);
+
+						QCCSRLoginLogout.login(SSN, AppURL);
+
+						QCDraw.draw(SSN, SSN);
+						QCCSRLoginLogout.logout(SSN, AppURL);
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCCSRHistory.history(SSN, AppURL);
+						QCCSRLoginLogout.logout(SSN, AppURL);
+
+					}
 				}
+			}
+
+			catch (Exception e) {
+
+				// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
+				// start scenario 1 " , ExtentColor.RED));
+				test.log(LogStatus.ERROR,e);
+				test.log(LogStatus.ERROR, "Unable to start scenario LOC_Biweekly_Nextpay_Txn ");
+
 			}
 		}
 
-		catch (Exception e) {
+		
+		//@Test(priority = 69, groups = { "EOD2" })
+	public static void LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn() throws Exception {
+			try {
 
-			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
-			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, e);
-			test.log(LogStatus.ERROR, "Unable to start scenario LOC_Biweekly_Nextpay_Txn ");
+				test = reports.startTest(prop.getProperty("LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn_scenario"),
+						"LOC – Deposit – EOD – Return – EOD on 2nd Payment Due Date - Deafult - ReDeposit");
+				FileName = prop.getProperty("LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn_file_name") + ".xls";
 
-		}
-	}
+				TestData = new ExcelNew(System.getProperty("user.dir")
+						+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 
-	@Test(priority = 170, groups = { "EOD2" })
+				String sheetName = "Start";
+				int lastrow = TestData.getLastRow("Start");
+				System.out.println(lastrow);
+				for (int row = 2; row <= lastrow; row++) {
+
+					String RunFlag = TestData.getCellData(sheetName, "Run", row);
+					// System.out.println(RunFlag);
+					if (RunFlag.equals("Y")) {
+
+						// AppURL = TestData.getCellData(sheetName, "AppURL", row);
+						String SSN = TestData.getCellData(sheetName, "SSN", row);
+
+						System.out.println(AppURL);
+
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+						QCCSRLoginLogout.logout(SSN, AppURL);
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCCSRNewLoan.newLoan(SSN, SSN);
+						QCCSRLoginLogout.logout(SSN, AppURL);
+
+						// first EOD
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCDepositDropdown.depositDropDown(SSN, SSN);
+						QCCSRLoginLogout.logout(SSN, AppURL);
+
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCEODDeposit.eodDeposit(SSN, AppURL);
+
+						QCAdminStoreSetup.storeSetup(SSN, AppURL);
+						QCCSRLoginLogout.adminLogout(driver, SSN, AppURL);
+
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCSafeAssign.safeAssign(SSN, AppURL);
+						QCCSRLoginLogout.logout(SSN, AppURL);
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCDrawerAssign.drawerAssign(SSN, AppURL);
+
+						QCCSRLoginLogout.logout(SSN, AppURL);
+
+						QCCSRLoginLogout.adminLogin(SSN, SSN);
+						QCCSRReturnPosting.returnposting(SSN, SSN);
+
+						QCCSRLoginLogout.adminLogin(SSN, SSN);
+						QCAdminACHReturn.achreturn(SSN, SSN);
+
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
+
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCEODDeposit.eodDeposit(SSN, AppURL);
+
+						QCAdminStoreSetup.storeSetup(SSN, AppURL);
+						QCCSRLoginLogout.adminLogout(driver, SSN, AppURL);
+
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCSafeAssign.safeAssign(SSN, AppURL);
+						QCCSRLoginLogout.logout(SSN, AppURL);
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCDrawerAssign.drawerAssign(SSN, AppURL);
+
+						QCCSRLoginLogout.logout(SSN, AppURL);
+
+					/*	QCCSRLoginLogout.login(SSN, AppURL);
+						QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
+	*/
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCDefaultStatus.defaultStatus(SSN, SSN);
+						QCCSRLoginLogout.logout(SSN, AppURL);
+
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCRedeposit.redeposit(SSN, SSN);
+						QCCSRLoginLogout.logout(SSN, AppURL);
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCCSRHistory.history(SSN, AppURL);
+						QCCSRLoginLogout.logout(SSN, AppURL);
+
+					}
+				}
+			}
+
+			catch (Exception e) {
+
+				// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
+				// start scenario 1 " , ExtentColor.RED));
+				test.log(LogStatus.ERROR,e);
+				test.log(LogStatus.ERROR, "Unable to start scenario LOC_Biweekly_Nextpay_Txn ");
+
+			}
+		}	
+		
+	@Test(priority = 70, groups = { "EOD2" })
 	public static void LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn() throws Exception {
 		try {
 
@@ -2065,7 +2074,7 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+				QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
@@ -2117,9 +2126,6 @@ public class QCStore {
 
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
-					/*QCCSRLoginLogout.login(SSN, AppURL);
-					QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);*/
-
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCRedeposit.redeposit(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
@@ -2135,11 +2141,11 @@ public class QCStore {
 
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
+			test.log(LogStatus.ERROR,e);
 			test.log(LogStatus.ERROR, "Unable to start scenario LOC_Biweekly_Nextpay_Txn ");
 
 		}
 	}
-
 	//Ratikanta scenarios
 	
 
