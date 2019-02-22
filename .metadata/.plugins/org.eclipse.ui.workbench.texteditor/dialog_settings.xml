@@ -9,23 +9,15 @@
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
 			<item value="janaki"/>
-			<item value="Ratikanta"/>
-			<item value="prop"/>
-			<item value="RATIKANTA"/>
-			<item value="ADMIN_URL"/>
-			<item value="ratikanta"/>
-			<item value="URL"/>
-			<item value="E:\QC_Batch\QC_ILP\RTestData\QCStore\RTestData_Monthly"/>
 		</list>
 		<list key="replacehistory">
-			<item value="//@Test"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
-		<item value="960" key="DIALOG_X_ORIGIN"/>
-		<item value="492" key="DIALOG_Y_ORIGIN"/>
+		<item value="520" key="DIALOG_X_ORIGIN"/>
+		<item value="247" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

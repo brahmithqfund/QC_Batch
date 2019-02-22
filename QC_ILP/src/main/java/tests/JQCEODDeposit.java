@@ -231,12 +231,12 @@ public class JQCEODDeposit extends QCStore{
 					Thread.sleep(1000);
 					driver.switchTo().defaultContent();
 					driver.switchTo().frame("mainFrame");
-					driver.findElement(locator(prop.getProperty("daily_processing_start_eod"))).click();
+					driver.findElement(locator(Jprop.getProperty("daily_processing_start_eod"))).click();
 					test.log(LogStatus.PASS, "Clicked on Start EOD processing");
 					Thread.sleep(500);
 					try{
-						String trans_nbr=driver.findElement(locator(prop.getProperty("daily_processing_trans_nbr"))).getText();	
-						String trans_store=driver.findElement(locator(prop.getProperty("daily_processing_store_nbr"))).getText();	
+						String trans_nbr=driver.findElement(locator(Jprop.getProperty("daily_processing_trans_nbr"))).getText();	
+						String trans_store=driver.findElement(locator(Jprop.getProperty("daily_processing_store_nbr"))).getText();	
 						String transnbr[]=trans_nbr.split(":");
 						encryption_transaction_nbr=transnbr[1];
 						String transstr[]=trans_store.split(":");
@@ -245,7 +245,7 @@ public class JQCEODDeposit extends QCStore{
 						test.log(LogStatus.PASS, "Captured Store number is"+encryption_store_no);
 						String mainwindow=driver.getWindowHandle();
 
-						QCAdminEncryption.getEncryption(driver,SSN, AppURL); 
+						JQCAdminEncryption.getEncryption(driver,SSN, AppURL); 
 
 
 
@@ -254,9 +254,9 @@ public class JQCEODDeposit extends QCStore{
 						driver.switchTo().defaultContent();
 						driver.switchTo().frame("mainFrame");
 						test.log(LogStatus.PASS, "Control switched to CSR page to enter Encryption key");
-						driver.findElement(locator(prop.getProperty("daily_processing_ean_key"))).sendKeys(Eankey);
+						driver.findElement(locator(Jprop.getProperty("daily_processing_ean_key"))).sendKeys(Eankey);
 						test.log(LogStatus.PASS, "Entered the Encryption Key"+Eankey);
-						driver.findElement(locator(prop.getProperty("daily_processing_yes_btn"))).click();
+						driver.findElement(locator(Jprop.getProperty("daily_processing_yes_btn"))).click();
 						test.log(LogStatus.PASS, "Clicked on Yes button");
 					}
 				
@@ -265,11 +265,11 @@ public class JQCEODDeposit extends QCStore{
 						
 					}
 					try{
-						driver.findElement(locator(prop.getProperty("safe_balance_count_of_dollars_coins"))).sendKeys(CountofDollarCoins);
+						driver.findElement(locator(Jprop.getProperty("safe_balance_count_of_dollars_coins"))).sendKeys(CountofDollarCoins);
 						test.log(LogStatus.PASS, "Entered in Count of Dollar coins field as "+CountofDollarCoins);
-						driver.findElement(locator(prop.getProperty("safe_balance_EOD_comments"))).sendKeys("Test EOD");
+						driver.findElement(locator(Jprop.getProperty("safe_balance_EOD_comments"))).sendKeys("Test EOD");
 						test.log(LogStatus.PASS, "Entered comment in Count of EOD comment field as :Test EOD");
-						driver.findElement(locator(prop.getProperty("safe_balance_safe_bal_btn"))).click();
+						driver.findElement(locator(Jprop.getProperty("safe_balance_safe_bal_btn"))).click();
 						test.log(LogStatus.PASS, "Clicked on Safe balance button");
 					}
 					
@@ -280,10 +280,10 @@ public class JQCEODDeposit extends QCStore{
 
 						try{
 							Thread.sleep(2000);
-							driver.findElement(locator(prop.getProperty("over_or_short_comments"))).sendKeys("test");
+							driver.findElement(locator(Jprop.getProperty("over_or_short_comments"))).sendKeys("test");
 							test.log(LogStatus.PASS, "Entered comment Over/short comment field as :test");
 							Thread.sleep(1500);
-							driver.findElement(locator(prop.getProperty("over_or_short_next_btn"))).click();
+							driver.findElement(locator(Jprop.getProperty("over_or_short_next_btn"))).click();
 							test.log(LogStatus.PASS, "Clicked next under Over/short ");
 						}
 						catch(Exception e)
@@ -292,24 +292,24 @@ public class JQCEODDeposit extends QCStore{
 						}
 
 						Thread.sleep(500);
-						driver.findElement(locator(prop.getProperty("deposit_next_btn"))).click();
+						driver.findElement(locator(Jprop.getProperty("deposit_next_btn"))).click();
 						//driver.findElement(By.xpath("/html/body/form/table/tbody/tr[1]/td/table/tbody/tr/td/table/tbody/tr[2]/td[2]/table/tbody/tr[3]/td[2]/input[3]")).click();
 
 						test.log(LogStatus.PASS, "Clicked next under Deposit section ");
 						try{
-							driver.findElement(locator(prop.getProperty("deposit_checkbox"))).click();
+							driver.findElement(locator(Jprop.getProperty("deposit_checkbox"))).click();
 							test.log(LogStatus.PASS, "Selected checkbox under Deposit section ");
 						}
 						catch(Exception e)
 						{
 
 						}
-						driver.findElement(locator(prop.getProperty("EOD_deposit_next_btn"))).click();
+						driver.findElement(locator(Jprop.getProperty("EOD_deposit_next_btn"))).click();
 						test.log(LogStatus.PASS, "Clicked next under EOD Deposit section ");
-						driver.findElement(locator(prop.getProperty("deposit_verify_finish_btn"))).click();
+						driver.findElement(locator(Jprop.getProperty("deposit_verify_finish_btn"))).click();
 						test.log(LogStatus.PASS, "Clicked next under Deposit verify section ");
 						Thread.sleep(500);
-						driver.findElement(locator(prop.getProperty("EOD_ok_btn"))).click();
+						driver.findElement(locator(Jprop.getProperty("EOD_ok_btn"))).click();
 						test.log(LogStatus.PASS, "Clicked ok button");
 						test.log(LogStatus.PASS, "EODDeposit Completed successfully");
 						test.log(LogStatus.PASS, "******************************************************************************");

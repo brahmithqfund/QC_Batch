@@ -44,7 +44,7 @@ public class RQCCSRLoginLogout extends QCStore
 				for(int row=2;row<=lastrow;row++)
 				{		
 					String RegSSN = TestData.getCellData(sheetName,"SSN",row);
-					//String csr_url = TestData.getCellData(sheetName,"AppURL",row);
+					String csr_url = TestData.getCellData(sheetName,"AppURL",row);
 
 					String username = TestData.getCellData(sheetName,"UserName",row);
 					String password = TestData.getCellData(sheetName,"Password",row);
@@ -59,13 +59,13 @@ public class RQCCSRLoginLogout extends QCStore
 						//test.log(LogStatus.INFO, "Opened the CSR URL " +AppURL);
 						test.log(LogStatus.INFO,"CSR login has started");
 
-						test.log(LogStatus.INFO,"Opened the CSR URL " +csr_url);
+						test.log(LogStatus.INFO,"Opened the CSR URL " +AppURL);
 
 
 						//test.log(LogStatus.INFO, "CSR Application is launched " );
 						test.log(LogStatus.INFO,"CSR Application is launched");
 
-						if(Rprop.getProperty("login_method").equalsIgnoreCase("local"))
+						if(prop.getProperty("login_method").equalsIgnoreCase("local"))
 						{
 							driver = new InternetExplorerDriver();
 						}

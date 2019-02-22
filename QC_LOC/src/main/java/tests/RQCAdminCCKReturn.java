@@ -50,7 +50,7 @@ public class RQCAdminCCKReturn extends QCStore {
 					
 					test.log(LogStatus.INFO,"Admin Application is launched For Return Posting");
 
-					if(Rprop.getProperty("login_method").equalsIgnoreCase("local"))
+					if(prop.getProperty("login_method").equalsIgnoreCase("local"))
 					{
 						driver = new InternetExplorerDriver();
 					}

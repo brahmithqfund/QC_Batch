@@ -1,35 +1,0 @@
-
-isquid:S1192t"RDefine a constant instead of duplicating this literal "deposit_check_box" 3 times.(“Ö¶¼
-osquid:S1192w"SDefine a constant instead of duplicating this literal "finish_ach_deposit" 3 times.(êþçºþÿÿÿÿ
-‡squid:S1192z"pDefine a constant instead of duplicating this literal "********************************************** " 3 times.(êøžœ
-isquid:S1192x"MDefine a constant instead of duplicating this literal "Clicked on  " 3 times.(é«ˆôûÿÿÿÿ
-bsquid:S1192p"KDefine a constant instead of duplicating this literal "ACH_submit" 3 times.(¤Â˜£
-}squid:S1192y"aDefine a constant instead of duplicating this literal " Deposit from CSR is successfull" 3 times.(öÝæ»øÿÿÿÿ
-ksquid:S1192x"ODefine a constant instead of duplicating this literal "Deposit button" 3 times.(é«ˆôûÿÿÿÿ
-fsquid:S1192@"JDefine a constant instead of duplicating this literal "mainFrame" 6 times.(ËøÇªýÿÿÿÿ
-hsquid:CommentedOutCodeLineÐ"<This block of commented-out lines of code should be removed.(»ßö¨þÿÿÿÿ
-t
-squid:S135"YReduce the total number of break and continue statements in this loop to use at most one.(˜³õäøÿÿÿÿ
-i
-squid:S134""NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(¹‘éŽÿÿÿÿÿ
-Rsquid:S1141•"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
-`squid:S1132_"IMove the "ACH" string literal on the left side of this string comparison.(ƒÛÕá
-bsquid:S1132~"KMove the "CHECK" string literal on the left side of this string comparison.(òÿÇ§
-hsquid:S1132§"PMove the "DEBIT CARD" string literal on the left side of this string comparison.(Ô¾·…
-Osquid:S1135Í"2Complete the task associated to this TODO comment.(ÕÌ®þÿÿÿÿ
-isquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(›çóº
-Dsquid:S1172"-Remove this unused method parameter "AppURL".(›çóº
-=squid:S1166œ"%Either log or rethrow this exception.(¬Ù¨Í
-Bsquid:S1166Ì"%Either log or rethrow this exception.(ñ“Š±üÿÿÿÿ
-nsquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›çóº
-nsquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›çóº
-nsquid:S00117!"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ïñ©
-ssquid:S00117%"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰Ùìàûÿÿÿÿ
-ssquid:S00117'"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊÊâýÿÿÿÿ
-nsquid:S00117)"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã–Ò
-ssquid:S00117*"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü¶„Îþÿÿÿÿ
-ssquid:S00117+"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÝøúÇýÿÿÿÿ
-ssquid:S001172"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ‘¡Üøÿÿÿÿ
-nsquid:S00117W"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹Õ‡â
-^squid:UselessImportCheck":Remove this unused import 'java.util.concurrent.TimeUnit'.(Æ™þ
-@squid:S1148Î"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ

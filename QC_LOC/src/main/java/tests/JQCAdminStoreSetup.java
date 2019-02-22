@@ -54,7 +54,7 @@ public class JQCAdminStoreSetup extends QCStore
 				
 
 
-					if(Jprop.getProperty("login_method").equalsIgnoreCase("local"))
+					if(prop.getProperty("login_method").equalsIgnoreCase("local"))
 					{
 						driver = new InternetExplorerDriver();
 					}

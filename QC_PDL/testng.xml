@@ -6,7 +6,22 @@
   <run>
    <!-- <include name="EOD"/>-->
      <!--  <include name="Rebate"/>   -->
-   <include name="1stBatch"/>   
+  <!--  <include name="1stBatch"/> -->   
+<<<<<<< HEAD
+<<<<<<< HEAD
+   <include name="Janaki"/> 
+=======
+    <!--  <include name="1stBatch"/>   -->
+>>>>>>> jan21.1
+=======
+   <!-- <include name="Janaki"/>  -->
+   <include name="Janaki1"/> 
+>>>>>>> 2595ff094730e8fabc91b1e4a6f764cef5b2e41a
+=======
+   <!-- <include name="Janaki"/>  -->
+  <!--  <include name="Janaki1"/>  -->
+    <include name="Anoop"/> 
+>>>>>>> 204c31dbc0e0b4ef5ce1fe20208426e8612bfd9b
   </run>
   </groups>
     <classes>
