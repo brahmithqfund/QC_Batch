@@ -5,33 +5,26 @@
   <groups>
   <run>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
  <!-- <include name="EOD"/>  -->
   <!-- <include name="Ratikanta_NEOD"/> --> 
-=======
-  <include name="EOD"/>  
- <!-- <include name="Ratikanta_NEOD"/> -->
->>>>>>> jan21.1
+
   <!-- <include name="Janaki_NEOD"/>  -->
-=======
+
   <!-- <include name="EOD"/>  -->
   <!--<include name="Ratikanta_NEOD"/>  -->
   <!--<include name="Ratikanta_EOD"/>  -->
   <include name="Janaki_NEOD"/> 
->>>>>>> feb1.1
+
    <!--<include name="Janaki_EOD"/>  --> 
 
  <!--<include name="EOD"/> -->
 
    <!-- <include name="EOD2"/>-->
  <!-- <include name="1st Batch"/>-->
-<<<<<<< HEAD
+
    <include name="NonEOD"/>
  <!--  <include name="Shashi"/> -->
-=======
- <!-- <include name="Shashi"/>-->
->>>>>>> jan21.1
+
   </run>
   </groups>
   
