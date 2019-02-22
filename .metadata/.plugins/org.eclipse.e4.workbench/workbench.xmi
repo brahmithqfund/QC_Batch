@@ -81,11 +81,11 @@
               <children xsi:type="advanced:Placeholder" xmi:id="_neL8tjREEemwfNuwzI4jXg" elementId="org.eclipse.jdt.ui.PackagesView" toBeRendered="false" ref="_neCywDREEemwfNuwzI4jXg"/>
             </children>
             <children xsi:type="basic:PartSashContainer" xmi:id="_neL8tzREEemwfNuwzI4jXg" containerData="8779" selectedElement="_neL8uDREEemwfNuwzI4jXg">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_neL8uDREEemwfNuwzI4jXg" containerData="7000" selectedElement="_neL8uTREEemwfNuwzI4jXg" horizontal="true">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_neL8uDREEemwfNuwzI4jXg" containerData="7000" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_neL8uTREEemwfNuwzI4jXg" elementId="org.eclipse.ui.editorss" containerData="7000" ref="_ndJa4DREEemwfNuwzI4jXg"/>
-                <children xsi:type="basic:PartStack" xmi:id="_neL8ujREEemwfNuwzI4jXg" elementId="topRight" containerData="3000" selectedElement="_neL8uzREEemwfNuwzI4jXg">
-                  <children xsi:type="advanced:Placeholder" xmi:id="_neL8uzREEemwfNuwzI4jXg" elementId="org.eclipse.ui.views.ContentOutline" ref="_neCyzDREEemwfNuwzI4jXg"/>
-                  <children xsi:type="advanced:Placeholder" xmi:id="_neL8vDREEemwfNuwzI4jXg" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" ref="_neCyzTREEemwfNuwzI4jXg"/>
+                <children xsi:type="basic:PartStack" xmi:id="_neL8ujREEemwfNuwzI4jXg" elementId="topRight" toBeRendered="false" containerData="3000">
+                  <children xsi:type="advanced:Placeholder" xmi:id="_neL8uzREEemwfNuwzI4jXg" elementId="org.eclipse.ui.views.ContentOutline" toBeRendered="false" ref="_neCyzDREEemwfNuwzI4jXg"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_neL8vDREEemwfNuwzI4jXg" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" toBeRendered="false" ref="_neCyzTREEemwfNuwzI4jXg"/>
                 </children>
               </children>
               <children xsi:type="basic:PartStack" xmi:id="_neL8vTREEemwfNuwzI4jXg" elementId="bottomRight" containerData="3000" selectedElement="_neL8xTREEemwfNuwzI4jXg">
@@ -310,11 +310,16 @@
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_nk4akTREEemwfNuwzI4jXg" elementId="org.eclipse.ui.views.ContentOutline"/>
+      <toolbar xmi:id="_nk4akTREEemwfNuwzI4jXg" elementId="org.eclipse.ui.views.ContentOutline" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_neCyzTREEemwfNuwzI4jXg" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Task List" iconURI="platform:/plugin/org.eclipse.mylyn.tasks.ui/icons/eview16/task-list.gif" tooltip="" closeable="true">
       <tags>View</tags>
       <tags>categoryTag:Mylyn</tags>
+      <menus xmi:id="_OOcIoDZmEem31csgIAH6jg" elementId="org.eclipse.mylyn.tasks.ui.views.tasks">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_OOcIoTZmEem31csgIAH6jg" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_RVI6kDRHEemmpI-jWHDIyQ" elementId="org.testng.eclipse.ResultView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Results of running class QCStore" iconURI="platform:/plugin/org.testng.eclipse/icons/full/main16/testng_blur.gif" tooltip="" closeable="true">
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view FailureRunView.tab.title.ratio=&quot;500&quot; HierarchyRunView.tab.title.ratio=&quot;500&quot; orientation=&quot;2&quot; page=&quot;0&quot;/>"/>
@@ -393,7 +398,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_nQNLEjREEemwfNuwzI4jXg" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_qCq9cDXKEemjefcAjHhKxQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_m_BVLjREEemwfNuwzI4jXg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_MlsCJzZmEem31csgIAH6jg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_m_BVLjREEemwfNuwzI4jXg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_nQNLEzREEemwfNuwzI4jXg" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -426,7 +431,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_nQNLFzREEemwfNuwzI4jXg" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_qCq9ejXKEemjefcAjHhKxQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_m_BU1TREEemwfNuwzI4jXg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_MlsCMTZmEem31csgIAH6jg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_m_BU1TREEemwfNuwzI4jXg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ssbf4DXIEemJwYz8dxGgVg" elementId="org.eclipse.jdt.ui.CompilationUnitEditor" visible="false">
         <tags>Draggable</tags>
@@ -459,10 +464,10 @@
       <children xsi:type="menu:ToolControl" xmi:id="_nbNhODREEemwfNuwzI4jXg" elementId="org.eclipse.ui.StatusLine" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.StandardTrim">
         <tags>stretch</tags>
       </children>
-      <children xsi:type="menu:ToolControl" xmi:id="_nbXSMDREEemwfNuwzI4jXg" elementId="org.eclipse.ui.HeapStatus" toBeRendered="false" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.StandardTrim">
+      <children xsi:type="menu:ToolControl" xmi:id="_nbgcIDREEemwfNuwzI4jXg" elementId="org.eclipse.ui.ProgressBar" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.StandardTrim">
         <tags>Draggable</tags>
       </children>
-      <children xsi:type="menu:ToolControl" xmi:id="_nbgcIDREEemwfNuwzI4jXg" elementId="org.eclipse.ui.ProgressBar" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.StandardTrim">
+      <children xsi:type="menu:ToolControl" xmi:id="_nbXSMDREEemwfNuwzI4jXg" elementId="org.eclipse.ui.HeapStatus" toBeRendered="false" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.StandardTrim">
         <tags>Draggable</tags>
       </children>
     </trimBars>
