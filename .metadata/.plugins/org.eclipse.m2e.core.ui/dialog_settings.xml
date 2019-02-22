@@ -14,6 +14,12 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="E:\QC_Batch\QC_PDL"/>
+			<item value="E:\QC_Batch\QC_TLP"/>
+			<item value="E:\QC_PDL"/>
+			<item value="E:\QC_Batch\QC_LOC"/>
+			<item value="E:\QC_Batch\QC_LendNation"/>
+			<item value="E:\QC_Batch\QC_ILP"/>
 			<item value="D:\QC_Batch\QC_TLP"/>
 			<item value="D:\QC_Batch\QC_PDL"/>
 			<item value="D:\QC_Batch\QC_LOC"/>
