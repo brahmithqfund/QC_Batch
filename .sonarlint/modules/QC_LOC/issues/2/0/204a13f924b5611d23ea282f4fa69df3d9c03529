@@ -1,19 +1,0 @@
-
-7squid:S2068." Remove this hard-coded password.(¾”íĞ
-]squid:S1192"FDefine a constant instead of duplicating this literal "Login" 3 times.(ºÊã¤
-Nsquid:S1313&"2Make this IP "192.168.2.124" address configurable.(‹èûÿÿÿÿ
-bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(€‘¼û
-bsquid:CommentedOutCodeLine'"<This block of commented-out lines of code should be removed.(´ì¬§
-gsquid:CommentedOutCodeLineO"<This block of commented-out lines of code should be removed.(¥“ä‡ıÿÿÿÿ
-gsquid:S1132 "KMove the "local" string literal on the left side of this string comparison.(úäìÅÿÿÿÿÿ
-Isquid:S1172"-Remove this unused method parameter "AppURL".(¦ªÒöşÿÿÿÿ
-Asquid:S1166Z"%Either log or rethrow this exception.(¼Ôîàùÿÿÿÿ
-squid:S1845C"wRename method "logout" to prevent any misunderstanding/clash with field "logout" defined in superclass "tests.QCStore".(¨ñíÇ
-csquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(¦ªÒöşÿÿÿÿ
-ssquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦ªÒöşÿÿÿÿ
-ssquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦ªÒöşÿÿÿÿ
-nsquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ïñ©
-ssquid:S00117&"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹èûÿÿÿÿ
-nsquid:S00117/"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜˆêË
-ssquid:S001170"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éÍÌÿÿÿÿÿ
-?squid:S1148\"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ

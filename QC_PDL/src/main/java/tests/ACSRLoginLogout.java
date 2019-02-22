@@ -30,8 +30,6 @@ public class ACSRLoginLogout extends QCStore{
 					String uname=TestData.getCellData(sheetName,"UserName",row);
 					passwrd=TestData.getCellData(sheetName,"Password",row);
 					String Storeid=TestData.getCellData(sheetName,"StoreID",row);
-
-					//driver.get(AppURL);
 					if(Aprop.getProperty("login_method").equalsIgnoreCase("local"))
 					{
 						driver = new InternetExplorerDriver();
@@ -46,9 +44,10 @@ public class ACSRLoginLogout extends QCStore{
 					 wait = new WebDriverWait(driver, 40000);
 
 					driver.manage().window().maximize();
-					driver.manage().timeouts().implicitlyWait(05, TimeUnit.SECONDS);
+					driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 				
-					driver.get("https://qcuat.qfund.net/cc/demoIndex.do");
+					//driver.get("https://qcuat.qfund.net/cc/demoIndex.do");
+					driver.get(AppURL);
 					test.log(LogStatus.PASS, "Application Launched");
 					// String usenameId = "loginRequestBean.userId";
 					String passwordId = "loginRequestBean.password";
@@ -67,7 +66,8 @@ public class ACSRLoginLogout extends QCStore{
 
 					test.log(LogStatus.INFO, "<FONT color=green> Login Sucessfully");
 					test.log(LogStatus.INFO, "******************************************************** ");
-
+					Thread.sleep(5000);
+					break;
 				}	
 
 			}
@@ -85,7 +85,7 @@ public class ACSRLoginLogout extends QCStore{
 			if(driver.getTitle().contains("Login")){
 				//test.log(LogStatus.PASS, "<FONT color=green> Logout Successfully"); 
 				test.log(LogStatus.INFO, "******************************************************** ");
-				driver.close();
+				driver.quit();
 			}
 			else{
 				test.log(LogStatus.PASS, "<FONT color=Red> Logout was unsuccessfull"); 

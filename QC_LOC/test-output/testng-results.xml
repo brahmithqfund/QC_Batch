@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 204c31dbc0e0b4ef5ce1fe20208426e8612bfd9b
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+=======
 <testng-results skipped="1" failed="5" ignored="101" total="114" passed="7">
+>>>>>>> QCH1.1
   <reporter-output>
   </reporter-output>
   <suite name="Suite" duration-ms="1008155" started-at="2019-02-21T05:38:08Z" finished-at="2019-02-21T05:54:56Z">
@@ -39,12 +51,47 @@
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=MinLocAmounts status=SUCCESS method=QCStore.MinLocAmounts()[pri:487, instance:tests.QCStore@527740a2] output={null}]]]>
+=======
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="675680" started-at="2019-02-22T05:49:50Z" finished-at="2019-02-22T06:01:05Z">
+    <groups>
+      <group name="Shashi">
+        <method signature="QCStore.Deposit_Dropdown()[pri:500, instance:tests.QCStore@71423665]" name="Deposit_Dropdown" class="tests.QCStore"/>
+      </group> <!-- Shashi -->
+      <group name="Janaki_NEOD">
+        <method signature="QCStore.JQC_LOC_New_Loan_Rescind_Txn()[pri:302, instance:tests.QCStore@71423665]" name="JQC_LOC_New_Loan_Rescind_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.JQC_LOC_New_Loan_Void_Txn()[pri:301, instance:tests.QCStore@71423665]" name="JQC_LOC_New_Loan_Void_Txn" class="tests.QCStore"/>
+      </group> <!-- Janaki_NEOD -->
+    </groups>
+    <test name="Default test" duration-ms="675680" started-at="2019-02-22T05:49:50Z" finished-at="2019-02-22T06:01:05Z">
+      <class name="tests.QCStore">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@71423665]" name="setup" is-config="true" duration-ms="99" started-at="2019-02-22T05:49:50Z" finished-at="2019-02-22T05:49:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@71423665]" name="killProcess" is-config="true" duration-ms="5004" started-at="2019-02-22T05:49:50Z" finished-at="2019-02-22T05:49:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="JQC_LOC_New_Loan_Void_Txn()[pri:301, instance:tests.QCStore@71423665]" name="JQC_LOC_New_Loan_Void_Txn" duration-ms="343439" started-at="2019-02-22T05:49:55Z" finished-at="2019-02-22T05:55:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JQC_LOC_New_Loan_Void_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@71423665]" name="getResult" is-config="true" duration-ms="204" started-at="2019-02-22T05:55:38Z" finished-at="2019-02-22T05:55:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JQC_LOC_New_Loan_Void_Txn status=SUCCESS method=QCStore.JQC_LOC_New_Loan_Void_Txn()[pri:301, instance:tests.QCStore@71423665] output={null}]]]>
+>>>>>>> feb1.1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5032" started-at="2019-02-21T05:40:06Z" finished-at="2019-02-21T05:40:11Z">
           <reporter-output>
           </reporter-output>
@@ -58,17 +105,40 @@
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=MaxLocAmounts status=SUCCESS method=QCStore.MaxLocAmounts()[pri:488, instance:tests.QCStore@527740a2] output={null}]]]>
+=======
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@71423665]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-02-22T05:55:39Z" finished-at="2019-02-22T05:55:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="JQC_LOC_New_Loan_Rescind_Txn()[pri:302, instance:tests.QCStore@71423665]" name="JQC_LOC_New_Loan_Rescind_Txn" duration-ms="316765" started-at="2019-02-22T05:55:44Z" finished-at="2019-02-22T06:01:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JQC_LOC_New_Loan_Rescind_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@71423665]" name="getResult" is-config="true" duration-ms="85" started-at="2019-02-22T06:01:00Z" finished-at="2019-02-22T06:01:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JQC_LOC_New_Loan_Rescind_Txn status=SUCCESS method=QCStore.JQC_LOC_New_Loan_Rescind_Txn()[pri:302, instance:tests.QCStore@71423665] output={null}]]]>
+>>>>>>> feb1.1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5048" started-at="2019-02-21T05:41:38Z" finished-at="2019-02-21T05:41:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
         <test-method status="FAIL" signature="ILP_maxloanCount()[pri:489, instance:tests.QCStore@527740a2]" name="ILP_maxloanCount" duration-ms="47784" started-at="2019-02-21T05:41:43Z" finished-at="2019-02-21T05:42:31Z">
+=======
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@71423665]" name="killProcess" is-config="true" duration-ms="5010" started-at="2019-02-22T06:01:00Z" finished-at="2019-02-22T06:01:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="FAIL" signature="Deposit_Dropdown()[pri:500, instance:tests.QCStore@71423665]" name="Deposit_Dropdown" duration-ms="44" started-at="2019-02-22T06:01:05Z" finished-at="2019-02-22T06:01:05Z">
+>>>>>>> feb1.1
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -105,6 +175,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- ILP_maxloanCount -->
         <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="1395" started-at="2019-02-21T05:42:31Z" finished-at="2019-02-21T05:42:32Z">
           <params>
@@ -307,10 +378,40 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
+<<<<<<< HEAD
+                <![CDATA[[TestResult name=Deposit_Dropdown status=SUCCESS method=QCStore.Deposit_Dropdown()[pri:500, instance:tests.QCStore@6d7b4f4c] output={null}]]]>
+>>>>>>> QCH1.1
+=======
+                <![CDATA[[TestResult name=RQC_LOC_ManualDefault_Txn_Testdata status=SUCCESS method=QCStore.RQC_LOC_ManualDefault_Txn_Testdata()[pri:201, instance:tests.QCStore@71423665] output={null}]]]>
+>>>>>>> feb1.1
+<<<<<<< HEAD
+=======
+<testng-results skipped="0" failed="0" ignored="110" total="113" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="1137527" started-at="2019-02-19T13:17:30Z" finished-at="2019-02-19T13:36:28Z">
+=======
+<testng-results skipped="0" failed="0" ignored="106" total="107" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="549390" started-at="2019-02-22T04:23:25Z" finished-at="2019-02-22T04:32:35Z">
+>>>>>>> jan21.1
+    <groups>
+      <group name="EOD">
+        <method signature="QCStore.LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn()[pri:67, instance:tests.QCStore@527740a2]" name="LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn" class="tests.QCStore"/>
+      </group> <!-- EOD -->
+    </groups>
+    <test name="Test" duration-ms="549390" started-at="2019-02-22T04:23:25Z" finished-at="2019-02-22T04:32:35Z">
+      <class name="tests.QCStore">
+<<<<<<< HEAD
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="121" started-at="2019-02-19T13:17:30Z" finished-at="2019-02-19T13:17:30Z">
+=======
                 <![CDATA[[TestResult name=NewLoanWeekly status=SUCCESS method=QCStore.NewLoanWeekly()[pri:494, instance:tests.QCStore@527740a2] output={null}]]]>
               </value>
             </param>
           </params>
+>>>>>>> QCH1.1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
@@ -323,6 +424,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- NewLoanSemiMonthly -->
         <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="589" started-at="2019-02-21T05:49:51Z" finished-at="2019-02-21T05:49:51Z">
+=======
+        </test-method> <!-- Deposit_Dropdown -->
+        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@71423665]" name="getResult" is-config="true" duration-ms="4" started-at="2019-02-22T06:01:05Z" finished-at="2019-02-22T06:01:05Z">
+>>>>>>> feb1.1
           <params>
             <param index="0">
               <value>
@@ -342,21 +447,69 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- NewLoanMonthly -->
         <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="591" started-at="2019-02-21T05:51:52Z" finished-at="2019-02-21T05:51:52Z">
+=======
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="92" started-at="2019-02-22T04:23:25Z" finished-at="2019-02-22T04:23:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5040" started-at="2019-02-22T04:23:25Z" finished-at="2019-02-22T04:23:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn()[pri:67, instance:tests.QCStore@527740a2]" name="LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn" duration-ms="544041" started-at="2019-02-22T04:23:30Z" finished-at="2019-02-22T04:32:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="199" started-at="2019-02-22T04:32:34Z" finished-at="2019-02-22T04:32:35Z">
+>>>>>>> jan21.1
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
+                <![CDATA[[TestResult name=LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn status=SUCCESS method=QCStore.LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn()[pri:67, instance:tests.QCStore@527740a2] output={null}]]]>
+<<<<<<< HEAD
+>>>>>>> jan21.1
+=======
+                <![CDATA[[TestResult name=MidDay_Void_Deposit status=SUCCESS method=QCStore.MidDay_Void_Deposit()[pri:505, instance:tests.QCStore@71423665] output={null}]]]>
+>>>>>>> QCH1.1
+=======
+>>>>>>> 204c31dbc0e0b4ef5ce1fe20208426e8612bfd9b
+=======
                 <![CDATA[[TestResult name=NewLoanMonthly status=SUCCESS method=QCStore.NewLoanMonthly()[pri:496, instance:tests.QCStore@527740a2] output={null}]]]>
+>>>>>>> QCH1.1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 204c31dbc0e0b4ef5ce1fe20208426e8612bfd9b
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@71423665]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-18T20:05:01Z" finished-at="2019-02-18T20:05:01Z">
+=======
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-19T05:23:08Z" finished-at="2019-02-19T05:23:08Z">
+>>>>>>> QCH1.1
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+=======
+>>>>>>> feb1.1
+<<<<<<< HEAD
+=======
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5022" started-at="2019-02-19T13:36:13Z" finished-at="2019-02-19T13:36:18Z">
+=======
         <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5019" started-at="2019-02-21T05:51:52Z" finished-at="2019-02-21T05:51:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
         <test-method status="PASS" signature="NewLoanBiweekly()[pri:497, instance:tests.QCStore@527740a2]" name="NewLoanBiweekly" duration-ms="167796" started-at="2019-02-21T05:51:57Z" finished-at="2019-02-21T05:54:45Z">
+>>>>>>> QCH1.1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NewLoanBiweekly -->
@@ -543,12 +696,26 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <param index="0">
               <value>
                 <![CDATA[[TestResult name={null} status=CREATED method=QCStore.AReviseCredit_PayofffIncreaseIncome()[pri:499, instance:tests.QCStore@527740a2] output={null}]]]>
+=======
+>>>>>>> jan21.1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> jan21.1
+=======
+>>>>>>> QCH1.1
+=======
+>>>>>>> 204c31dbc0e0b4ef5ce1fe20208426e8612bfd9b
+=======
+>>>>>>> QCH1.1
+=======
+>>>>>>> jan21.1
       </class> <!-- tests.QCStore -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

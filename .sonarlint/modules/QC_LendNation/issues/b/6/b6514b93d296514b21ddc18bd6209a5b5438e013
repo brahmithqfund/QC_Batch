@@ -1,15 +1,15 @@
 
+msquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€û±
 i
 squid:S134_"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(ÖëùÓûÿÿÿÿ
-bsquid:CommentedOutCodeLinea"<This block of commented-out lines of code should be removed.(¸Å´
-ssquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä“Ú‹ýÿÿÿÿ
-bsquid:CommentedOutCodeLineC"<This block of commented-out lines of code should be removed.(¶Öâø
-ssquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½Éü—ÿÿÿÿÿ
-ssquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä“Ú‹ýÿÿÿÿ
-nsquid:S00117$"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ƒ¹¢
 bsquid:CommentedOutCodeLine("<This block of commented-out lines of code should be removed.(œÍÑÇ
-nsquid:S00117!"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ïñ©
+ssquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä“Ú‹ýÿÿÿÿ
+ssquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä“Ú‹ýÿÿÿÿ
 gsquid:CommentedOutCodeLine
 "<This block of commented-out lines of code should be removed.(Šøî¿þÿÿÿÿ
-msquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€û±
+nsquid:S00117!"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ïñ©
+bsquid:CommentedOutCodeLinea"<This block of commented-out lines of code should be removed.(¸Å´
+bsquid:CommentedOutCodeLineC"<This block of commented-out lines of code should be removed.(¶Öâø
+nsquid:S00117$"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ƒ¹¢
 bsquid:CommentedOutCodeLine5"<This block of commented-out lines of code should be removed.(…¶Üš
+ssquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½Éü—ÿÿÿÿÿ

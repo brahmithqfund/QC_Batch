@@ -362,7 +362,7 @@ public class QCPrePayment extends QCStore{
 								driver.findElement(By.name("Submit22")).click();
 								test.log(LogStatus.PASS, " cliked on finish pre-payment button");
 								Thread.sleep(5000);
-						//		if(driver.findElement(By.xpath("//input[@name='checkyes']")).isDisplayed())
+								if(driver.findElement(By.xpath("//input[@name='checkyes']")).isDisplayed())
 								{
 
 									test.log(LogStatus.PASS, ESign_CollateralType+" Pre-Payement from CSR is successfull");

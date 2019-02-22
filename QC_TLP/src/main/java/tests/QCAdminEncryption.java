@@ -46,13 +46,13 @@ public class QCAdminEncryption extends QCStore
 				String AdminURL = TestData.getCellData(sheetName,"AdminURL",row);
 			
 				String Tran_cd = TestData.getCellData(sheetName,"Tran_cd",row);
-				encryption_store_no=TestData.getCellData(sheetName,"StoreID",row);
+				encryption_store_no="1710";
 				
 
 
 				//test.log(LogStatus.INFO, MarkupHelper.createLabel("Admin Application is launched", ExtentColor.BLUE));
 				test.log(LogStatus.INFO, "********Admin Application is launched********");
-				if(Jprop.getProperty("login_method").equalsIgnoreCase("local"))
+				if(prop.getProperty("login_method").equalsIgnoreCase("local"))
 				{
 					driver = new InternetExplorerDriver();
 				}

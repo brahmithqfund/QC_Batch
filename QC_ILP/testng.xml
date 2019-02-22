@@ -2,7 +2,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
-<<<<<<< HEAD
    <groups>
   <run>
  <!-- <include name="Janaki"/>  -->
@@ -11,15 +10,6 @@
   </run>
   </groups>
    <classes>
-=======
-     <groups>
-  <run>
- <include name="Brahmith"/> 
-   
-  </run>
-  </groups>
-  <classes>
->>>>>>> jan21.1
       <class name="tests.QCStore"/>
     </classes>
   </test> <!-- Test -->

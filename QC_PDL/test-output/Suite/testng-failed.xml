@@ -4,18 +4,55 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
+<<<<<<< HEAD
+        <include name="Janaki"/>
+=======
+        <include name="EOD"/>
         <include name="1stBatch"/>
+>>>>>>> jan21.1
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
+<<<<<<< HEAD
+<<<<<<< HEAD
           <include name="getResult"/>
           <include name="setup"/>
-          <include name="QC_Refinance_StepSameVoidURP_Txn"/>
-          <include name="QC_Refinance_StepSameURP_Txn"/>
-          <include name="endReport"/>
+          <include name="QC_Void_FullReturnPayment_Txn"/>
           <include name="killProcess"/>
+=======
+=======
+>>>>>>> 204c31dbc0e0b4ef5ce1fe20208426e8612bfd9b
+          <include name="JQC_AgeStore_Refinance_Rescind_Txn"/>
+          <include name="setup"/>
+          <include name="JQC_AgeStore_Deposit_AutoClear_Txn"/>
+          <include name="JQC_AgeStore_PrePayment_Clear_Txn"/>
+          <include name="JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata"/>
+          <include name="JQC_AgeStore_Deposit_Return_Refinance_Void_Txn"/>
+          <include name="JQC_AgeStore_Deposit_Return_Refinance_Txn"/>
+          <include name="JQC_AgeStore_NSFPosting_Refinance_Rescind_Txn"/>
+          <include name="JQC_AgeStore_Deposit_PrePayment_Void_Txn"/>
+          <include name="JQC_EPP_Txn_Testdata"/>
+          <include name="JQC_EPP_AgestoreInstallmentwise_EPPPayment_Txn_Testdata"/>
+          <include name="JQC_BuyBack_Txn_Testdata"/>
+          <include name="killProcess"/>
+          <include name="JQC_AgeStore_ACHReturn_Refinance_Rescind_Txn"/>
+          <include name="JQC_AgeStore_Deposit_ClearMenu_Txn"/>
+          <include name="JQC_BuyBack_Rebate_Txn_Testdata"/>
+          <include name="getResult"/>
+          <include name="JQC_BuyBack_Void_Txn_Testdata"/>
+          <include name="JQC_Deposit_Return_EPP_Txn_Testdata"/>
+          <include name="JQC_AgeStore_Deposit_ClearDropdown_Txn"/>
+          <include name="JQC_Return_ReDeposit_Clear_Txn"/>
+          <include name="JQC_AgeStore_Deposit_PrePayment_Txn"/>
+          <include name="JQC_AgeStore_PrePayment_Return_Txn"/>
+          <include name="JQC_AgeStore_Redeposit_Prepayment_Void_Prepayment_Return_Txn"/>
+          <include name="JQC_BuyBack_Rebate_Void_Txn_Testdata"/>
+<<<<<<< HEAD
+>>>>>>> 2595ff094730e8fabc91b1e4a6f764cef5b2e41a
+=======
+>>>>>>> 204c31dbc0e0b4ef5ce1fe20208426e8612bfd9b
         </methods>
       </class> <!-- tests.QCStore -->
     </classes>
