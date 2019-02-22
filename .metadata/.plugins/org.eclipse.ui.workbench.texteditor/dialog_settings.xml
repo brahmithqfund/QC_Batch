@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="Ratikanta" key="selection"/>
+		<item value="Janaki" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="Janaki"/>
 			<item value="Ratikanta"/>
 			<item value="prop"/>
 			<item value="janaki"/>
@@ -15,7 +16,6 @@
 			<item value="ADMIN_URL"/>
 			<item value="ratikanta"/>
 			<item value="URL"/>
-			<item value="E:\QC_Batch\QC_ILP\RTestData\QCStore\RTestData_Monthly"/>
 		</list>
 		<list key="replacehistory">
 			<item value="//@Test"/>
