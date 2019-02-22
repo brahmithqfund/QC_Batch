@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testsuite hostname="Ratikanta-pc" ignored="0" name="Default test" tests="1" failures="0" timestamp="18 Feb 2019 20:05:01 GMT" time="1323.184" errors="0">
   <testcase name="JQC_LOC_Refinance_CABPayment_Return_Txn" time="1317.868" classname="tests.QCStore"/>
 =======
@@ -11,6 +12,25 @@
     <failure type="java.lang.NullPointerException">
       <![CDATA[java.lang.NullPointerException
 at tests.QCStore.getResult(QCStore.java:7372)
+=======
+<testsuite hostname="Ratikanta-pc" ignored="0" name="Default test" tests="3" failures="1" timestamp="22 Feb 2019 06:01:05 GMT" time="675.68" errors="0">
+  <testcase name="@AfterMethod getResult" time="0.004" classname="tests.QCStore">
+    <failure type="org.openqa.selenium.NoSuchSessionException" message="Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &amp;apos;3.14.0&amp;apos;, revision: &amp;apos;aacccce0&amp;apos;, time: &amp;apos;2018-08-02T20:19:58.91Z&amp;apos;
+System info: host: &amp;apos;RATIKANTA-PC&amp;apos;, ip: &amp;apos;192.168.2.66&amp;apos;, os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.8.0_181&amp;apos;
+Driver info: driver.version: RemoteWebDriver">
+      <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'RATIKANTA-PC', ip: '192.168.2.66', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+at tests.QCStore.getScreenhot(QCStore.java:7373)
+at tests.QCStore.getResult(QCStore.java:7389)
+>>>>>>> feb1.1
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -42,7 +62,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
     </failure>
   </testcase> <!-- @AfterMethod getResult -->
+<<<<<<< HEAD
   <testcase name="@AfterMethod getResult" time="0.039" classname="tests.QCStore">
+=======
+  <testcase name="JQC_LOC_New_Loan_Void_Txn" time="343.439" classname="tests.QCStore"/>
+  <testcase name="JQC_LOC_New_Loan_Rescind_Txn" time="316.765" classname="tests.QCStore"/>
+  <testcase name="Deposit_Dropdown" time="0.044" classname="tests.QCStore">
+>>>>>>> feb1.1
     <failure type="java.lang.NullPointerException">
       <![CDATA[java.lang.NullPointerException
 at tests.QCStore.getResult(QCStore.java:7372)
