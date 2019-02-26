@@ -5,7 +5,7 @@
   <groupId>QC</groupId>
   <artifactId>QC_ILP</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  `<configuration>
+  <configuration>
                   <suiteXmlFiles>
                      <suiteXmlFile>D:/QC_Batch/QC_ILP/testng.xml</suiteXmlFile>
                   </suiteXmlFiles>
