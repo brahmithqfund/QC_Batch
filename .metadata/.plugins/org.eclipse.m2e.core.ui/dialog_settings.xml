@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\QC_Batch\QC_ILP"/>
+			<item value="D:\QC_Batch\QC_LOC"/>
 			<item value="D:\QC_Batch\QC_TLP"/>
 			<item value="D:\QC_Batch\QC_PDL"/>
-			<item value="D:\QC_Batch\QC_LOC"/>
 			<item value="D:\QC_Batch\QC_LendNation"/>
-			<item value="D:\QC_Batch\QC_ILP"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
