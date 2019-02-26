@@ -1568,7 +1568,7 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 66,groups = { "EOD" })
+	@Test(priority = 66,groups = { "EOD" })
 	public static void LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn() throws Exception {
 		try {
 
@@ -1772,7 +1772,7 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 68, groups = { "EOD" })
+	@Test(priority = 68, groups = { "EOD" })
 	public static void LOC_ACHDeposit_EODs_Return_Txn() throws Exception {
 		try {
 
@@ -1937,7 +1937,7 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 69, groups = { "EOD2" })
+	@Test(priority = 69, groups = { "EOD2" })
 	public static void LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn() throws Exception {
 		try {
 
@@ -3385,7 +3385,7 @@ public class QCStore {
 
 	// Janaki's (Ratikanta) scenarios
 
-	// @Test(priority=301,enabled = true, groups="Janaki_NEOD")
+	@Test(priority=301,enabled = true, groups="Janaki_NEOD")
 	public static void JQC_LOC_New_Loan_Void_Txn() throws Exception {
 		try {
 
@@ -3441,7 +3441,7 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority=302,enabled = true, groups="Janaki_NEOD")
+	@Test(priority=302,enabled = true, groups="Janaki_NEOD")
 	public static void JQC_LOC_New_Loan_Rescind_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_New_Loan_Rescind_Txn"),
@@ -3492,7 +3492,7 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority=303,enabled = true, groups="Janaki_NEOD")
+	@Test(priority=303,enabled = true, groups="Janaki_NEOD")
 	public static void JQC_LOC_New_Loan_Void_GraceDay_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_New_Loan_Void_GraceDay_Txn"),
@@ -3549,7 +3549,7 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority=304,enabled = true, groups="Janaki_NEOD")
+	@Test(priority=304,enabled = true, groups="Janaki_NEOD")
 	public static void JQC_LOC_New_Loan_GraceDay_Rescind_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_New_Loan_GraceDay_Rescind_Txn"),
@@ -3602,7 +3602,7 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority=305,enabled = true, groups="Janaki_NEOD")
+	@Test(priority=305,enabled = true, groups="Janaki_NEOD")
 	public static void JQC_LOC_New_Loan_After_RescindDays_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_New_Loan_After_RescindDays_Txn"),
@@ -3654,7 +3654,7 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority=306,enabled = true, groups="Janaki_NEOD")
+	@Test(priority=306,enabled = true, groups="Janaki_NEOD")
 	public static void JQC_LOC_Payment_After_Rescind_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_Payment_After_Rescind_Txn"),
@@ -3707,7 +3707,7 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority=307,enabled = true, groups="Janaki_NEOD")
+	@Test(priority=307,enabled = true, groups="Janaki_NEOD")
 	public static void JQC_LOC_Payment_OnDueDate_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_Payment_OnDueDate_Txn"),
@@ -3760,7 +3760,7 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority=308,enabled = true, groups="Janaki_NEOD")
+	@Test(priority=308,enabled = true, groups="Janaki_NEOD")
 
 	public static void JQC_LOC_LessThan_MinPayment_Txn() throws Exception {
 		try {
@@ -3814,7 +3814,7 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 309, enabled = true, groups = "Janaki_NEOD")
+	@Test(priority = 309, enabled = true, groups = "Janaki_NEOD")
 
 	public static void JQC_LOC_GreaterThan_MinPayment_Txn() throws Exception {
 		try {
@@ -6438,7 +6438,7 @@ public class QCStore {
 
 	// V Jyothi scenarios
 
-	@Test(priority = 0, enabled = true)
+	@Test(priority = 600, enabled = true,groups = "Jyothi")
 
 	public static void LOC_Writeoff() throws Exception {
 
@@ -6475,7 +6475,7 @@ public class QCStore {
 				VQCCSRWriteOff.writeoff(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 				VQCCSRLoginLogout.login(SSN, AppURL);
-				// VQC_LOC_History.history(SSN, AppURL);
+				VQCCSRHistory.history(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 
 			}
@@ -6483,7 +6483,7 @@ public class QCStore {
 
 	}
 
-	@Test(priority = 601, enabled = true)
+	@Test(priority = 601, enabled = true,groups = "Jyothi")
 
 	public static void LOC_WriteoffRecovery() throws Exception {
 
@@ -6530,7 +6530,7 @@ public class QCStore {
 				VQCVoid.qcVoid(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 				VQCCSRLoginLogout.login(SSN, AppURL);
-				// VQC_LOC_History.history(SSN, AppURL);
+				VQCCSRHistory.history(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 
 			}
@@ -6538,7 +6538,7 @@ public class QCStore {
 
 	}
 
-	@Test(priority = 602, enabled = true)
+	@Test(priority = 602, enabled = true,groups = "Jyothi")
 
 	public static void LOC_PartialWriteoffRecovery() throws Exception {
 
@@ -6581,14 +6581,14 @@ public class QCStore {
 				VQCCSRWriteOffRecovery_Partial.writeoffrecovery(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 				VQCCSRLoginLogout.login(SSN, AppURL);
-				// VQC_LOC_History.history(SSN, AppURL);
+				VQCCSRHistory.history(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 			}
 		}
 
 	}
 
-	@Test(priority = 603, enabled = true)
+	@Test(priority = 603, enabled = true,groups = "Jyothi")
 
 	public static void LOC_PartialWriteoffRecoveryVoid() throws Exception {
 
@@ -6629,13 +6629,13 @@ public class QCStore {
 				VQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
 				VQCCSRLoginLogout.login(SSN, AppURL);
 				VQCCSRWriteOffRecovery_Partial.writeoffrecovery(SSN, AppURL);
-				// VQCCSRWriteOffRecovery.writeoffrecovery(SSN, AppURL);
+				
 				VCSRLoginLogout.logout(SSN, AppURL);
 				VQCCSRLoginLogout.login(SSN, AppURL);
 				VQCVoid.qcVoid(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 				VQCCSRLoginLogout.login(SSN, AppURL);
-				// VQC_LOC_History.history(SSN, AppURL);
+				VQCCSRHistory.history(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 
 			}
@@ -6643,7 +6643,7 @@ public class QCStore {
 
 	}
 
-	@Test(priority = 604, enabled = true)
+	@Test(priority = 604, enabled = true,groups = "Jyothi")
 
 	public static void LOC_Bankrupt_Writeoff() throws Exception {
 
@@ -6680,13 +6680,10 @@ public class QCStore {
 				// VQCCSRLoginLogout.login(SSN, AppURL);
 				VAdminLoginForBankruptcy.bankruptcy(driver, SSN, AppURL);
 				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQC_LOC_History.history(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
 				VQCCSRHistory.history(SSN, AppURL);
-				VCSRLoginLogout.logout(SSN, AppURL);
-				VQCCSRLoginLogout.login(SSN, AppURL);
-				// VQC_LOC_History.history(SSN, AppURL);
-				VCSRLoginLogout.logout(SSN, AppURL);
-				VQCCSRLoginLogout.login(SSN, AppURL);
-				// VQC_LOC_History.history(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 
 			}
@@ -6694,7 +6691,7 @@ public class QCStore {
 
 	}
 
-	@Test(priority = 605, enabled = true)
+	@Test(priority = 605, enabled = true,groups = "Jyothi")
 
 	public static void LOC_Bankrupt_Writeoff_Dismissed() throws Exception {
 
@@ -6729,14 +6726,14 @@ public class QCStore {
 				VQCCSRLoginLogout.login(SSN, AppURL);
 				VQCCSRBankruptcy.bankruptcy(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
-				// VQCCSRLoginLogout.login(SSN, AppURL);
+				
 				VAdminLoginForBankruptcy.bankruptcy(driver, SSN, AppURL);
 				VQCCSRLoginLogout.login(SSN, AppURL);
-				VQCCSRHistory.history(SSN, AppURL);
+				VQC_LOC_History.history(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 				VDismissed_Admin.Dismissed(driver, SSN, AppURL);
 				VQCCSRLoginLogout.login(SSN, AppURL);
-				// VQC_LOC_History.history(SSN, AppURL);
+				VQCCSRHistory.history(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 
 			}
@@ -6744,7 +6741,7 @@ public class QCStore {
 
 	}
 
-	@Test(priority = 606, enabled = true)
+	@Test(priority = 606, enabled = true,groups = "Jyothi")
 	public static void LOC_Deposit_Return_Writeoff() throws Exception {
 
 		FileName = "LOC_Deposit_Return_Writeoff.xls";
@@ -6785,7 +6782,7 @@ public class QCStore {
 				VQCCSRWriteOff.writeoff(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 				VQCCSRLoginLogout.login(SSN, AppURL);
-				// VQC_LOC_History.history(SSN, AppURL);
+				VQCCSRHistory.history(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 
 			}
@@ -6793,7 +6790,7 @@ public class QCStore {
 
 	}
 
-	@Test(priority = 607, enabled = true)
+	@Test(priority = 607, enabled = true,groups = "Jyothi")
 
 	public static void LOC_Deposit2_Return_Writeoff() throws Exception {
 
@@ -6849,14 +6846,13 @@ public class QCStore {
 				VCSRLoginLogout.logout(SSN, AppURL);
 
 				VQCCSRLoginLogout.login(SSN, AppURL);
-				// VQC_LOC_History.history(SSN, AppURL);
-				VQCCSRHistory.history(SSN, SSN);
+				VQCCSRHistory.history(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 			}
 		}
 	}
 
-	@Test(priority = 608, enabled = true)
+	@Test(priority = 608, enabled = true,groups = "Jyothi")
 
 	public static void LOC_WriteoffRecoveryReturn() throws Exception {
 
@@ -6907,7 +6903,7 @@ public class QCStore {
 				VQCAdminCCKReturn.cckreturn(SSN, AppURL);
 
 				VQCCSRLoginLogout.login(SSN, AppURL);
-				// VQC_LOC_History.history(SSN, AppURL);
+				VQCCSRHistory.history(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 
 			}

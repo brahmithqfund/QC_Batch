@@ -13,7 +13,7 @@
   <!-- <include name="EOD"/>  -->
   <!--<include name="Ratikanta_NEOD"/>  -->
   <!--<include name="Ratikanta_EOD"/>  -->
-  <include name="Janaki_NEOD"/> 
+  <!--<include name="Janaki_NEOD"/> --> 
 
    <!--<include name="Janaki_EOD"/>  --> 
 
@@ -24,6 +24,7 @@
 
    <include name="NonEOD"/>
  <!--  <include name="Shashi"/> -->
+ <!--  <include name="Jyothi"/> -->
 
   </run>
   </groups>

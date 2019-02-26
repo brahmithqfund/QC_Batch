@@ -9,13 +9,13 @@
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
 			<item value="// @Test"/>
+			<item value="jyothi"/>
 			<item value="LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn"/>
 			<item value="QC_PayAnyotherAmount_Txn() throws Exception"/>
 			<item value="Janaki"/>
 			<item value="Ratikanta"/>
 			<item value="JQC_LOC_Refinance_StepUp_Txn"/>
 			<item value="Janaki&apos;s (Ratikanta)"/>
-			<item value="JQC_LOC_Refinance_StepSame_Txn"/>
 		</list>
 		<list key="replacehistory">
 			<item value="@Test"/>
