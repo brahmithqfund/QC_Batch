@@ -8,11 +8,17 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD"/>
-			<item value="&gt;&gt;&gt;&gt;&gt;&gt;&gt; QCH1.1"/>
-			<item value="janaki"/>
+			<item value="Janaki1"/>
+			<item value="Janaki2"/>
+			<item value="ach"/>
+			<item value="QC_NSFPosting_Refinance_Rescind"/>
+			<item value="QC_PrePayment_Clear"/>
+			<item value="QC_PrePayment_Return"/>
+			<item value="transaction date"/>
+			<item value="QC_DefaultPayment_Void"/>
 		</list>
 		<list key="replacehistory">
+			<item value="Janaki"/>
 			<item value=""/>
 		</list>
 	</section>
@@ -20,7 +26,7 @@
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
-		<item value="563" key="DIALOG_X_ORIGIN"/>
-		<item value="119" key="DIALOG_Y_ORIGIN"/>
+		<item value="750" key="DIALOG_X_ORIGIN"/>
+		<item value="356" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>
