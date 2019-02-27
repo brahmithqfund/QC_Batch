@@ -31,7 +31,7 @@ public class AQCAdminStoreSetup extends QCStore
 			{
 				String UserName = TestData.getCellData(sheetName,"AdminUserName",row);
 				String Password = TestData.getCellData(sheetName,"AdminPassword",row);
-				String AdminURL = TestData.getCellData(sheetName,"AdminURL",row);
+				//String AdminURL = TestData.getCellData(sheetName,"AdminURL",row);
 				String StoreID = TestData.getCellData(sheetName,"StoreID",row);
 
 				if(prop.getProperty("login_method").equalsIgnoreCase("local"))
@@ -45,14 +45,13 @@ public class AQCAdminStoreSetup extends QCStore
 					 DesiredCapabilities cap = DesiredCapabilities.internetExplorer();
 					 driver = new RemoteWebDriver(new URL(Node), cap);	
 				}
-				wait = new WebDriverWait(driver, 40000);
-
-				driver.manage().window().maximize();
-				driver.manage().timeouts().implicitlyWait(05, TimeUnit.SECONDS);
-
-				driver.get(AdminURL);
-			
-				test.log(LogStatus.INFO, "Opened the Admin URL" + AdminURL);
+				
+				 wait = new WebDriverWait(driver, 40000);
+					driver.manage().window().maximize();
+					driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+				
+					driver.get("http://192.168.2.203/cc/adminIndex.do");
+				    test.log(LogStatus.PASS, "Application Launched with URL ");
 
 				driver.findElement(By.name("loginRequestBean.userId")).sendKeys(UserName);
 

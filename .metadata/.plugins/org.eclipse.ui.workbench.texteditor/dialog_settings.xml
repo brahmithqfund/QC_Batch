@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="@Test" key="selection"/>
+		<item value="login_method" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="login_method"/>
+			<item value="Anoop_EOD1"/>
+			<item value="QC_Store_extent_report_path"/>
 			<item value="// @Test"/>
 			<item value="LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn"/>
 			<item value="QC_PayAnyotherAmount_Txn() throws Exception"/>
 			<item value="Janaki"/>
 			<item value="Ratikanta"/>
-			<item value="JQC_LOC_Refinance_StepUp_Txn"/>
-			<item value="Janaki&apos;s (Ratikanta)"/>
-			<item value="JQC_LOC_Refinance_StepSame_Txn"/>
 		</list>
 		<list key="replacehistory">
 			<item value="@Test"/>

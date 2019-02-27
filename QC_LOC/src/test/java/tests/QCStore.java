@@ -4712,7 +4712,7 @@ public class QCStore {
 
 	// Anoop scenarios
 
-	@Test(priority = 427, enabled = true, groups = { "EOD3" })
+	@Test(priority = 427, enabled = false, groups = { "EOD3" })
 
 	public void PaymentDepositEODReDeposit() throws Exception {
 		FileName = "QC_PaymentDepositEODReDeposit.xls";
@@ -5569,7 +5569,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 413, enabled = false, groups = { "EOD1" })
+	@Test(priority = 413, enabled = false, groups = { "Anoop_EOD1" })
 
 	public void PaymentAndEod() throws Exception {
 		FileName = "QC_LOC_Payment_EOD.xls";
@@ -5625,7 +5625,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 412, enabled = false, groups = { "EOD1" })
+	@Test(priority = 412, enabled = true, groups = { "Anoop_EOD1" })
 
 	public void EODOnDueDate() throws Exception {
 		FileName = "QC_LOC_EODDuedate.xls";
