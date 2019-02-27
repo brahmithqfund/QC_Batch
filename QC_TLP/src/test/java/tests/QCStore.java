@@ -1135,7 +1135,7 @@ public class QCStore {
 	}
 
 	// Date: 01/02/2018
-	@Test(priority = 206, enabled = true, groups = "Janaki_EOD_set12")
+	@Test(priority = 206, enabled = true, groups = "Janaki_EOD_set1")
 
 	public static void JQC_TLP_Deceased_Txn() throws Exception {
 		try {
@@ -1383,7 +1383,7 @@ public class QCStore {
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 					System.out.println(AppURL);
 
-					JQCCSRLoginLogout.login(SSN, AppURL);
+					/*JQCCSRLoginLogout.login(SSN, AppURL);
 					JQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					JQCCSRLoginLogout.logout(SSN, AppURL);
 					JQCCSRLoginLogout.login(SSN, AppURL);
@@ -1400,7 +1400,7 @@ public class QCStore {
 					JQCAdminLoginLogout.logout(SSN, AppURL);
 					JQCCSRLoginLogout.login(SSN, AppURL);
 					JQCSafeAssign.safeAssign(SSN, AppURL);
-					JQCCSRLoginLogout.logout(SSN, AppURL);
+					JQCCSRLoginLogout.logout(SSN, AppURL);*/
 					JQCCSRLoginLogout.login(SSN, AppURL);
 					JQCDrawerAssign.drawerAssign(SSN, AppURL);
 					JQCCSRLoginLogout.logout(SSN, AppURL);

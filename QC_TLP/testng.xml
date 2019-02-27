@@ -4,7 +4,7 @@
   <test thread-count="5" name="Test">
    <groups>
   <run>
- <!--  <include name="Janaki"/> -->  
+  <!--  <include name="Janaki"/> -->  
    <!-- <include name="Janaki_EOD_set1"/> -->
    <include name="Janaki_EOD_set2"/>  
   </run>
