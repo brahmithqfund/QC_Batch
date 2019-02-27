@@ -1,4 +1,7 @@
 eclipse.preferences.version=1
 org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<launchPerspectives/>\r\n
+<<<<<<< HEAD
 preferredDetailPanes=DefaultDetailPane\:DefaultDetailPane|
+=======
+>>>>>>> dbf04da162a9d10be8af26cb26f3a2432f816848
 preferredTargets=default\:default|
