@@ -6,10 +6,6 @@
 
 
 *.png
-.metadata/
-.recommenders/
-.sonarlint/
-RemoteSystemsTempFiles/
 .xmi
 .snap
 
