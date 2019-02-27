@@ -138,7 +138,7 @@ public class JQCPrePayment extends QCStore{
 									    //do what you normally would if you didn't have the alert.
 									}
 								 Thread.sleep(5000);
-								 if(driver.findElement(By.xpath("//*[contains(text(),'Successfully.')]")).isDisplayed())
+								 if(driver.findElement(By.xpath("//*[contains(text(),'Successfully.')]")).isDisplayed()||driver.findElement(By.xpath("//*[contains(text(),'successfull.')]")).isDisplayed())
 								 	{
 							
 									 test.log(LogStatus.PASS, ESign_CollateralType+" Pre-Payement from CSR is successfull");
@@ -228,8 +228,7 @@ public class JQCPrePayment extends QCStore{
 										 test.log(LogStatus.PASS, ESign_CollateralType+" Pre-Payement from CSR is successfull");
 										 test.log(LogStatus.PASS, "********************************************** ");
 										 
-									 	}else
-									 {
+									 	}else{
 											
 										 test.log(LogStatus.INFO, ESign_CollateralType+" Pre-Payement from CSR is successfull");
 										 test.log(LogStatus.PASS, "********************************************** ");
