@@ -6,6 +6,10 @@
       <run>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        <include name="EOD"/>
+>>>>>>> jan21.1
         <include name="1stBatch"/>
 =======
         <include name="Janaki"/>
@@ -22,6 +26,7 @@
 <<<<<<< HEAD
           <include name="getResult"/>
           <include name="setup"/>
+<<<<<<< HEAD
           <include name="QC_Refinance_StepSameVoidURP_Txn"/>
           <include name="QC_Refinance_StepSameURP_Txn"/>
           <include name="endReport"/>
@@ -44,6 +49,9 @@
 >>>>>>> 2595ff094730e8fabc91b1e4a6f764cef5b2e41a
 =======
 >>>>>>> 204c31dbc0e0b4ef5ce1fe20208426e8612bfd9b
+=======
+          <include name="QC_Void_FullReturnPayment_Txn"/>
+>>>>>>> jan21.1
           <include name="killProcess"/>
           <include name="JQC_AgeStore_ACHReturn_Refinance_Rescind_Txn"/>
           <include name="JQC_AgeStore_Deposit_ClearMenu_Txn"/>

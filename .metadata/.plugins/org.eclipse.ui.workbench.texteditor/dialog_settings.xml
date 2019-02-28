@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value="login_method" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+<<<<<<< HEAD
 			<item value="Janaki1"/>
 			<item value="Janaki2"/>
 			<item value="ach"/>
@@ -19,6 +20,19 @@
 		</list>
 		<list key="replacehistory">
 			<item value="Janaki"/>
+=======
+			<item value="login_method"/>
+			<item value="Anoop_EOD1"/>
+			<item value="QC_Store_extent_report_path"/>
+			<item value="// @Test"/>
+			<item value="LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn"/>
+			<item value="QC_PayAnyotherAmount_Txn() throws Exception"/>
+			<item value="Janaki"/>
+			<item value="Ratikanta"/>
+		</list>
+		<list key="replacehistory">
+			<item value="@Test"/>
+>>>>>>> 142a91c5653888e6feab1178c6b3bfd7b13dd4e3
 			<item value=""/>
 		</list>
 	</section>
@@ -26,7 +40,12 @@
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
+<<<<<<< HEAD
 		<item value="750" key="DIALOG_X_ORIGIN"/>
 		<item value="356" key="DIALOG_Y_ORIGIN"/>
+=======
+		<item value="932" key="DIALOG_X_ORIGIN"/>
+		<item value="269" key="DIALOG_Y_ORIGIN"/>
+>>>>>>> 142a91c5653888e6feab1178c6b3bfd7b13dd4e3
 	</section>
 </section>
