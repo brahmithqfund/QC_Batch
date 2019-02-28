@@ -14,3 +14,5 @@ W
 'src/test/java/tests/JObjects.properties,8\0\80cc7a1d4a27a98d5470617f02e4ff852bf81b78
 W
 'src/test/java/tests/RObjects.properties,2\f\2ffc316d9bca65b43d134906576dbb6891380eca
+‚
+Rtarget/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst,8\a\8ae396f369da14bb5c0973286facff8fb2c70d56
