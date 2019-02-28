@@ -1,0 +1,15 @@
+
+gsquid:CommentedOutCodeLine
+"<This block of commented-out lines of code should be removed.(Šøî¿þÿÿÿÿ
+bsquid:CommentedOutCodeLine("<This block of commented-out lines of code should be removed.(œÍÑÇ
+bsquid:CommentedOutCodeLine5"<This block of commented-out lines of code should be removed.(…¶Üš
+bsquid:CommentedOutCodeLineC"<This block of commented-out lines of code should be removed.(¶Öâø
+bsquid:CommentedOutCodeLinea"<This block of commented-out lines of code should be removed.(¸Å´
+i
+squid:S134_"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(ÖëùÓûÿÿÿÿ
+ssquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä“Ú‹ýÿÿÿÿ
+ssquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä“Ú‹ýÿÿÿÿ
+msquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€û±
+ssquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½Éü—ÿÿÿÿÿ
+nsquid:S00117!"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ïñ©
+nsquid:S00117$"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ƒ¹¢
