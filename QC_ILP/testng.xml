@@ -8,8 +8,15 @@
    <!-- <include name="Janaki"/>  -->
    <!-- <include name="Janaki_EOD_set1"/> --> 
    <!-- <include name="Janaki_EOD_set2"/> --> 
+  
    <!-- Brahmith group--> 
    <!-- <include name="Brahmith"/>  -->
+
+
+   <!-- Anoop group-->  
+    <include name="Anoop"/>  
+
+
   </run>
   </groups>
    <classes>
