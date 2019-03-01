@@ -1414,7 +1414,7 @@ public class QCStore {
 
 	// Anoop scenariso
 
-	@Test(priority = 310,enabled=true,groups="Anoop")
+	@Test(priority = 310, enabled = false)
 	// This is date dependent so needs to run on 01/02/2018
 	public void TLP_bankruptcyDismiss() throws Exception {
 
@@ -1465,7 +1465,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 309,enabled=true,groups="Anoop")
+	@Test(priority = 309, enabled = false)
 	// This is date dependent so needs to run on 01/02/2018
 	public void TLP_bankruptcyWriteOff() throws Exception {
 
@@ -1515,7 +1515,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 300,enabled=true,groups="Anoop")
+	@Test(priority = 300, enabled = false)
 	// Date will be /03/12/218
 	public void TLP_RefinanceStepDownVoid() throws Exception {
 
@@ -1568,7 +1568,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 310,enabled=true,groups="Anoop")
+	@Test(priority = 310, enabled = false)
 	// Date will be /03/12/218
 	public void TLP_RefinanceStepDown() throws Exception {
 
@@ -1617,7 +1617,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 308,enabled=true,groups="Anoop")
+	@Test(priority = 308, enabled = false)
 
 	public void TLP_ProcessAutoClear() throws Exception {
 
@@ -1670,7 +1670,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 306,enabled=true,groups="Anoop")
+	@Test(priority = 306, enabled = false)
 
 	public void TLP_ProcessClearFromMenu() throws Exception {
 
@@ -1723,7 +1723,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 307,enabled=true,groups="Anoop")
+	@Test(priority = 307, enabled = false)
 
 	public void TLP_ProcessClear() throws Exception {
 
@@ -1776,7 +1776,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 305,enabled=true,groups="Anoop")
+	@Test(priority = 305, enabled = true)
 
 	public void TLP_RefinanceStepSame_Void() throws Exception {
 
@@ -1830,7 +1830,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 304,enabled=true,groups="Anoop")
+	@Test(priority = 304, enabled = false)
 
 	public void TLP_RefinanceStepSame() throws Exception {
 
@@ -1882,7 +1882,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 303,enabled=true,groups="Anoop")
+	@Test(priority = 303, enabled = false)
 
 	public void TLP_agerescind() throws Exception {
 		test = reports.startTest("QC_NewLoan_AgeRescind", "Login-->Age the loan to rescind days--->Rescind loan");
@@ -1925,7 +1925,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 302,enabled=true,groups="Anoop")
+	@Test(priority = 302, enabled = false)
 
 	public void TLP_rescindloan() throws Exception {
 		test = reports.startTest("TLP_rescindloan", "Loan->NewLoan-->Rescind");
@@ -1964,7 +1964,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 301,enabled=true,groups="Anoop")
+	@Test(priority = 301, enabled = false)
 	public void newLoan() throws Exception {
 		FileName = "QC_TLP_NewLoan.xls";
 		test = reports.startTest("QC_TLP_NewLoan", "Login-->Home screen--> Inactive customer--> New Loan");
