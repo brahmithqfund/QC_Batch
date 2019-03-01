@@ -2,6 +2,7 @@ package tests;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -10,6 +11,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.relevantcodes.extentreports.LogStatus;
 
@@ -42,9 +44,15 @@ public class AadminOpen extends QCStore
 					 DesiredCapabilities cap = DesiredCapabilities.internetExplorer();
 					 driver = new RemoteWebDriver(new URL(Node), cap);	
 				}
-				driver.get(AdminURL);
-
-				test.log(LogStatus.INFO, "Opened the Admin URL" + AdminURL);
+				//driver.get(AdminURL);
+				  wait = new WebDriverWait(driver, 40000);
+					driver.manage().window().maximize();
+					driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+				
+					driver.get("http://192.168.2.203/cc/adminIndex.do");
+				    test.log(LogStatus.PASS, "Application Launched with URL ");
+				
+				    test.log(LogStatus.INFO, "Opened the Admin URL" + AdminURL);
 
 				driver.findElement(By.name("loginRequestBean.userId")).sendKeys(UserName);
 

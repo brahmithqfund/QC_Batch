@@ -4,20 +4,15 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="NonEOD"/>
+        <include name="Anoop_EOD1"/>
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
-          <include name="AReviseCredit_PayofffIncreaseIncome"/>
-          <include name="NewLoanBiweeklyPaymentDuedate"/>
           <include name="getResult"/>
           <include name="setup"/>
-          <include name="NewLoanMonthly_Duedatevalidation"/>
-          <include name="ILP_maxloanCount"/>
-          <include name="NewLoanSemiMonthly_Duedatevalidation"/>
-          <include name="AReviseCredit_IncreaseIncome"/>
+          <include name="EODOnDueDate"/>
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->

@@ -2,27 +2,27 @@
 <testng-results skipped="0" failed="0" ignored="76" total="77" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="1311035" started-at="2019-02-27T09:09:28Z" finished-at="2019-02-27T09:31:19Z">
+  <suite name="Suite" duration-ms="1018365" started-at="2019-03-01T04:27:53Z" finished-at="2019-03-01T04:44:51Z">
     <groups>
       <group name="Janaki1">
         <method signature="QCStore.JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata()[pri:423, instance:tests.QCStore@527740a2]" name="JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata" class="tests.QCStore"/>
       </group> <!-- Janaki1 -->
     </groups>
-    <test name="Test" duration-ms="1311035" started-at="2019-02-27T09:09:28Z" finished-at="2019-02-27T09:31:19Z">
+    <test name="Test" duration-ms="1018365" started-at="2019-03-01T04:27:53Z" finished-at="2019-03-01T04:44:51Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="156" started-at="2019-02-27T09:09:28Z" finished-at="2019-02-27T09:09:28Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="74" started-at="2019-03-01T04:27:53Z" finished-at="2019-03-01T04:27:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5023" started-at="2019-02-27T09:09:28Z" finished-at="2019-02-27T09:09:33Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5012" started-at="2019-03-01T04:27:53Z" finished-at="2019-03-01T04:27:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata()[pri:423, instance:tests.QCStore@527740a2]" name="JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata" duration-ms="1305700" started-at="2019-02-27T09:09:33Z" finished-at="2019-02-27T09:31:18Z">
+        <test-method status="PASS" signature="JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata()[pri:423, instance:tests.QCStore@527740a2]" name="JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata" duration-ms="1013060" started-at="2019-03-01T04:27:58Z" finished-at="2019-03-01T04:44:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="156" started-at="2019-02-27T09:31:18Z" finished-at="2019-02-27T09:31:19Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="207" started-at="2019-03-01T04:44:51Z" finished-at="2019-03-01T04:44:51Z">
           <params>
             <param index="0">
               <value>
