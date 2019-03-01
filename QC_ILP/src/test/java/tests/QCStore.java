@@ -191,7 +191,7 @@ public class QCStore {
 
 	// Brahmith Transactions
 
-	// @Test(priority=4)
+	 @Test(priority=4, groups = "Brahmith")
 
 	public static void QC_NewLoan_Promotion_Txn() throws Exception {
 		try {
@@ -241,7 +241,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 7)
+	@Test(priority = 7, groups = "Brahmith")
 
 	public static void QC_NewLoan_Void_Txn() throws Exception {
 		try {
@@ -297,7 +297,7 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 54)
+	 @Test(priority = 54, groups = "Brahmith")
 
 	public static void QC_AgeStore_Void_Txn() throws Exception {
 		try {
@@ -364,7 +364,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 21)
+	@Test(priority = 21, groups = "Brahmith")
 
 	public static void QC_Installmentpayment_Txn() throws Exception {
 		try {
@@ -423,7 +423,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 22)
+	@Test(priority = 22, groups = "Brahmith")
 
 	public static void QC_Installmentpayment_Void_Txn() throws Exception {
 		try {
@@ -485,7 +485,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 23)
+	@Test(priority = 23, groups = "Brahmith")
 
 	public static void QC_PayAnyotherAmount_Txn() throws Exception {
 		try {
@@ -544,7 +544,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 24)
+	@Test(priority = 24, groups = "Brahmith")
 
 	public static void QC_PayAnyotherAmount_Void_Txn() throws Exception {
 		try {
@@ -605,7 +605,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 31)
+	@Test(priority = 31, groups = "Brahmith")
 
 	public static void QC_ILP_Return_Menu_Txn() throws Exception {
 		try {
@@ -669,7 +669,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 32)
+	@Test(priority = 32, groups = "Brahmith")
 
 	public static void QC_ILP_clear_Menu_Txn() throws Exception {
 		try {
@@ -734,7 +734,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 35)
+	@Test(priority = 35, groups = "Brahmith")
 
 	public static void QC_ILP_Deposit_Return_Txn() throws Exception {
 		try {
@@ -801,7 +801,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 55)
+	@Test(priority = 55, groups = "Brahmith")
 
 	public static void QC_ILP_NewLoanInstallmentDeposit_Txn() throws Exception {
 		try {
@@ -867,7 +867,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 47)
+	@Test(priority = 47, groups = "Brahmith")
 
 	public static void QC_InstallPayment_Ref_Rescind_Txn() throws Exception {
 		try {
@@ -931,7 +931,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 53)
+	@Test(priority = 53, groups = "Brahmith")
 
 	public static void QC_NewLoan_TLPConversion_Txn() throws Exception {
 		try {
@@ -988,7 +988,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 51)
+	@Test(priority = 51, groups = "Brahmith")
 
 	public static void QC_LessInterest_VoidFullPayment_Txn() throws Exception {
 		try {
@@ -1053,7 +1053,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 16)
+	@Test(priority = 16, groups = "Brahmith")
 
 	public static void QC_ILP_Buyback_Txn() throws Exception {
 		try {
@@ -1111,7 +1111,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 17)
+	@Test(priority = 17, groups = "Brahmith")
 
 	public static void QC_ILP_Buyback_Void_Txn() throws Exception {
 		try {

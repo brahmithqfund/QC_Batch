@@ -2,11 +2,7 @@
 <launchConfiguration type="org.testng.eclipse.launchconfig">
 <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.testng.remote.RemoteTestNG"/>
-<<<<<<< HEAD
-<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="QC_TLP"/>
-=======
-<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="QC_LOC"/>
->>>>>>> 142a91c5653888e6feab1178c6b3bfd7b13dd4e3
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="QC_ILP"/>
 <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
 <mapAttribute key="org.testng.eclipse.ALL_CLASS_METHODS"/>
 <listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">
