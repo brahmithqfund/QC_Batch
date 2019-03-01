@@ -1,32 +1,21 @@
 package tests;
 
-import java.awt.Rectangle;
-import java.awt.Robot;
-import java.awt.Toolkit;
-import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
 
-import javax.imageio.ImageIO;
-
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -106,7 +95,7 @@ public class QCStore {
 	public static String appdate;
 	public static String day;
 
-	// @Test(priority = 101, groups="Brahmith")
+	@Test(priority = 101, groups="Brahmith")
 	public static void QC_TLP_NewLoan_Txn() throws Exception {
 		try {
 			// test =
@@ -159,7 +148,7 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority=103,groups="Brahmith")
+	@Test(priority=103,groups="Brahmith")
 	public static void QC_NewLoan_Promotion_Txn() throws Exception {
 		try {
 
@@ -210,7 +199,7 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 104,groups="Brahmith")
+	@Test(priority = 104,groups="Brahmith")
 	public static void QC_NewLoan_Void_Txn() throws Exception {
 		try {
 			// test =
@@ -265,7 +254,7 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 105,groups="Brahmith")
+	@Test(priority = 105,groups="Brahmith")
 	public static void QC_AgeStore_Void_Txn() throws Exception {
 		try {
 			// test =
@@ -328,7 +317,7 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 116,groups="Brahmith")
+	@Test(priority = 116,groups="Brahmith")
 	public static void QC_TLP_Buyback_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Buyback_Txn_scenario")),
@@ -385,7 +374,7 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 117,groups="Brahmith")
+	@Test(priority = 117,groups="Brahmith")
 	public static void QC_TLP_Buyback_Void_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Buyback_Void_Txn_scenario")),
@@ -445,7 +434,7 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 118,groups="Brahmith")
+	@Test(priority = 118,groups="Brahmith")
 	public static void QC_Installmentpayment_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Installmentpayment_Txn_scenario")),
@@ -564,7 +553,7 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 120,groups="Brahmith")
+	@Test(priority = 120,groups="Brahmith")
 	public static void QC_PayAnyotherAmount_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Payanyotheramount_Txn_scenario")),
@@ -622,7 +611,7 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 121,groups="Brahmith")
+	@Test(priority = 121,groups="Brahmith")
 	public static void QC_PayAnyotherAmount_Void_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Payanyotheramount_Void_Txn_scenario")),
@@ -682,7 +671,7 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 131,groups="Brahmith")
+	@Test(priority = 131,groups="Brahmith")
 	public static void QC_TLP_Writeoff_Recovery_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Writeoff_Recovery_Txn_scenario")),
@@ -744,7 +733,7 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 132,groups="Brahmith")
+	@Test(priority = 132,groups="Brahmith")
 	public static void QC_TLP_Writeoff_Recovery_Void_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Writeoff_Recovery_Void_Txn_scenario")),
@@ -1826,7 +1815,6 @@ public class QCStore {
 
 				ACSRLoginLogout.login(SSN, AppURL);
 				ATLP_Refinance_StepSame.StepSame(SSN, AppURL);
-				;
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);

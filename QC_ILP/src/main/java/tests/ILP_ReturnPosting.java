@@ -23,7 +23,8 @@ public class ILP_ReturnPosting extends QCStore{
 				String RegSSN = TestData.getCellData(sheetName,"SSN",row);
 				if(SSN.equals(RegSSN))
 				{
-					String  StoreID=TestData.getCellData(sheetName,"StoreID",row);
+					//String  StoreID=TestData.getCellData(sheetName,"StoreID",row);
+					String  StoreID="1705";
 					String  ReasonForReturn=TestData.getCellData(sheetName,"ReasonForReturn",row);
 					Thread.sleep(1000);
 					driver.switchTo().frame("topFrame");

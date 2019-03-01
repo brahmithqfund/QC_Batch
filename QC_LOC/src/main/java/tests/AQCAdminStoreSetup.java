@@ -50,8 +50,8 @@ public class AQCAdminStoreSetup extends QCStore
 					driver.manage().window().maximize();
 					driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 				
-					driver.get("http://192.168.2.203/cc/adminIndex.do");
-				    test.log(LogStatus.PASS, "Application Launched with URL ");
+					driver.get(prop.getProperty("adminURL"));
+					test.log(LogStatus.PASS, "Application Launched with URL"+prop.getProperty("adminURL"));
 
 				driver.findElement(By.name("loginRequestBean.userId")).sendKeys(UserName);
 
@@ -164,7 +164,7 @@ public class AQCAdminStoreSetup extends QCStore
 
 				test.log(LogStatus.PASS, "Store Setup is successful");
 				test.log(LogStatus.PASS, "***********************************************");
-				//driver.close();
+				driver.close();
 
 
 				break;

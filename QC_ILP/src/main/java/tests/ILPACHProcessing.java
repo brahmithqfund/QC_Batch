@@ -23,8 +23,8 @@ public class ILPACHProcessing extends QCStore {
 			for(int row=2;row<=lastrow;row++)
 				{		
 					String RegSSN = TestData.getCellData(sheetName,"SSN",row);
-					String StoreID = TestData.getCellData(sheetName,"StoreID",row);
-					
+					//String StoreID = TestData.getCellData(sheetName,"StoreID",row);
+					String StoreID="1705";
 					if(SSN.equals(RegSSN))
 					{
 							

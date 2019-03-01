@@ -95,7 +95,7 @@ public class QCStore {
 
 	public static String NextDueDate;
 
-	@Test(priority = 100,groups = { "1stBatch" })
+	@Test(priority = 100, groups = { "1stBatch" })
 	public static void QC_NewLoan_Promotion_Txn() throws Exception {
 		try {
 			// test =
@@ -148,7 +148,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 108,groups = { "1stBatch" })
+	@Test(priority = 108, groups = { "1stBatch" })
 	public static void QC_OpenLoan_NewLoan_Txn() throws Exception {
 		try {
 			// test =
@@ -202,7 +202,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 109,groups = { "1stBatch" })
+	@Test(priority = 109, groups = { "1stBatch" })
 	public static void QC_NewLoan_Void_Txn() throws Exception {
 		try {
 			// test =
@@ -255,7 +255,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 110,groups = { "1stBatch" })
+	@Test(priority = 110, groups = { "1stBatch" })
 	public static void QC_AgeStore_Void_Txn() throws Exception {
 		try {
 			// test =
@@ -318,7 +318,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority =111,groups = { "1stBatch" })
+	@Test(priority = 111, groups = { "1stBatch" })
 	public static void QC_Deposit_Menu_Txn() throws Exception {
 		try {
 			test = reports.startTest("QC_Deposit_Menu_Txn",
@@ -378,7 +378,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 112,groups = { "1stBatch" })
+	@Test(priority = 112, groups = { "1stBatch" })
 	public static void QC_Deposit_GraceDays_Txn() throws Exception {
 		try {
 			// test =
@@ -440,7 +440,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 113,groups = { "1stBatch" })
+	@Test(priority = 113, groups = { "1stBatch" })
 	public static void QC_FutureDeposit_DropDown() throws Exception {
 		try {
 			// test =
@@ -503,7 +503,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 157,groups = { "1stBatch" })
+	@Test(priority = 157, groups = { "1stBatch" })
 	public static void QC_Epp_Deposit_Void_Txn() throws Exception {
 		try {
 			// test =
@@ -566,7 +566,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 158,groups = { "1stBatch" })
+	@Test(priority = 158, groups = { "1stBatch" })
 	public static void QC_Epp_PrePayment_Txn() throws Exception {
 		try {
 			// test =
@@ -631,7 +631,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 159,groups = { "1stBatch" })
+	@Test(priority = 159, groups = { "1stBatch" })
 	public static void QC_Epp_Check_Deposit_Clear_Txn() throws Exception {
 		try {
 			// test =
@@ -698,7 +698,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 160,groups = { "1stBatch" })
+	@Test(priority = 160, groups = { "1stBatch" })
 	public static void QC_EppDepositClear_Refund_Txn() throws Exception {
 		try {
 			// test =
@@ -770,7 +770,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 161,groups = { "1stBatch" })
+	@Test(priority = 161, groups = { "1stBatch" })
 	public static void QC_Epp_PrePayment_Return_Txn() throws Exception {
 		try {
 			// test =
@@ -840,7 +840,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 162,groups = { "1stBatch" })
+	@Test(priority = 162, groups = { "1stBatch" })
 	public static void QC_Epp_Return_NSFPayment_Txn() throws Exception {
 		try {
 			// test =
@@ -910,7 +910,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 163,groups = { "1stBatch" })
+	@Test(priority = 163, groups = { "1stBatch" })
 	public static void QC_Epp_Return_ReDeposit_Txn() throws Exception {
 		try {
 			// test =
@@ -1075,7 +1075,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 170,groups = { "1stBatch" })
+	@Test(priority = 170, groups = { "1stBatch" })
 	public static void QC_PartialPayment_RefundVoid_Txn() throws Exception {
 		try {
 			// test =
@@ -1153,7 +1153,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 102,groups = { "1stBatch" })
+	@Test(priority = 102, groups = { "1stBatch" })
 	public static void QC_RefinanceStepDown_Txn() throws Exception {
 		try {
 			// test =
@@ -1214,7 +1214,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 103,groups = { "1stBatch" })
+	@Test(priority = 103, groups = { "1stBatch" })
 	public static void QC_RefinanceStepDown_Void_Txn() throws Exception {
 		try {
 			// test =

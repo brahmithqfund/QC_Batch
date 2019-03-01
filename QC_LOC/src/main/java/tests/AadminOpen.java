@@ -49,8 +49,8 @@ public class AadminOpen extends QCStore
 					driver.manage().window().maximize();
 					driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 				
-					driver.get("http://192.168.2.203/cc/adminIndex.do");
-				    test.log(LogStatus.PASS, "Application Launched with URL ");
+					driver.get(prop.getProperty("adminURL"));
+					test.log(LogStatus.PASS, "Application Launched with URL"+prop.getProperty("adminURL"));
 				
 				    test.log(LogStatus.INFO, "Opened the Admin URL" + AdminURL);
 

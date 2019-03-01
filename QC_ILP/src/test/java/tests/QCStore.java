@@ -2284,7 +2284,8 @@ public class QCStore {
 		test = reports.startTest("QC_Loan_Refinance_Void",
 				"Loan->Age store for 12 days->Make Payment less than interest amount->Age Store for 10 Days->Refinance->Void Refinance");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/ACSR/ILP_BiWeekly/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 
@@ -2338,7 +2339,8 @@ public class QCStore {
 		test = reports.startTest("ILP_Scenario_NO.34",
 				"Loan -->Age the store upto duedate --> perform deposit--> age the store -->ACH Auto clear");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/ACSR/ILP_BiWeekly/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 
@@ -2391,7 +2393,8 @@ public class QCStore {
 		test = reports.startTest("QC_Loan_deposit_AutoClear",
 				"Loan -->Age the store upto duedate --> perform deposit--> age the store -->Check Auto clear");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/ACSR/ILP_BiWeekly/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 
@@ -2440,7 +2443,8 @@ public class QCStore {
 		test = reports.startTest("QC_Loan_deposit_ClearFromDropDown",
 				"Loan -->Age the store upto duedate --> perform deposit--> age the store -->process Clear from drop Down");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/ACSR/ILP_BiWeekly/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 
@@ -2488,7 +2492,8 @@ public class QCStore {
 		test = reports.startTest("QC_ILP_StepDown_Void",
 				"Login-->Age the Store_payment_Age store to Duedate_Refinance Step Down Void");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/ACSR/ILP_SemiMonthly/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 
@@ -2540,7 +2545,8 @@ public class QCStore {
 		test = reports.startTest("ILP_Scenario_NO.26",
 				"Login-->Age the Store_payment_Age store to Duedate_Refinance Step Down");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/ACSR/ILP_SemiMonthly/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 
@@ -2588,7 +2594,8 @@ public class QCStore {
 		test = reports.startTest("QC_Loan_Stepsame_Void",
 				"Login-->Age the Store_payment_Age store to Duedate_Refinance Step Same Void");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/ACSR/ILP_BiWeekly/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 
@@ -2615,7 +2622,6 @@ public class QCStore {
 				QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
 				ACSRLoginLogout.login(SSN, AppURL);
 				ILP_Refinance_StepSame.StepSame(SSN, AppURL);
-				;
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
@@ -2639,7 +2645,8 @@ public class QCStore {
 		test = reports.startTest("QC_Loan_Stepsame",
 				"Login-->Age the Store_payment_Age store to Duedate_Refinance Step Same");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/ACSR/ILP_BiWeekly/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 
@@ -2687,7 +2694,8 @@ public class QCStore {
 		test = reports.startTest("QC_Loan_StepUP_Void",
 				"Login-->Age the Store_payment_Age store to Duedate_Refinance Step Up void");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/ACSR/ILP_BiWeekly/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 
@@ -2739,7 +2747,8 @@ public class QCStore {
 		test = reports.startTest("QC_Loan_StepUP",
 				"Login-->Age the Store_payment_Age store to Duedate_Refinance Stepup");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/ACSR/ILP_BiWeekly/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 
@@ -2789,7 +2798,8 @@ public class QCStore {
 		test = reports.startTest("QC_Loan_Redeposit",
 				"Loan->Age store till first installment due date->Check Deposit->Age store for 2 days->Return Check->Age store for 2 days->Redeposit");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/ACSR/ILP_SemiMonthly/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 
@@ -2839,7 +2849,8 @@ public class QCStore {
 		test = reports.startTest("QC_AgeStore_Rescind Loan", "Login-->Age the loan to rescind days--->Rescind loan");
 		FileName = "QC_NewLoan_AgeRescind.xls";
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/ACSR/ILP_BiWeekly/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 
@@ -2879,7 +2890,8 @@ public class QCStore {
 		test = reports.startTest("QC_Rescind", "Loan->Rescind");
 		FileName = "QC_NewLoan_Rescind.xls";
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/ACSR/ILP_BiWeekly/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);
@@ -2916,7 +2928,8 @@ public class QCStore {
 		FileName = "QC_MaxLoanCount.xls";
 		test = reports.startTest("QC_MaxLoanCount", "Login-->Borrower-->Max loan count");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/ACSR/ILP_BiWeekly/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 
@@ -2959,7 +2972,8 @@ public class QCStore {
 		FileName = "QC_NewLoan_InactiveCustomer.xls";
 		test = reports.startTest("QC_NewLoan_InactiveCustomer", "Login-->Home Screen-->In active customer-->New Loan");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/ACSR/ILP_BiWeekly/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		for (int row = 2; row <= lastrow; row++) {
@@ -2988,7 +3002,8 @@ public class QCStore {
 		test = reports.startTest("QC_BorrowerRegistration_NewLoan",
 				"Login-->Home Screen-->Borrower Registration-->New Loan");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/ATestData/CSR/ILP_BiWeekly/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 

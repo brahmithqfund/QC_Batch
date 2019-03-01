@@ -64,9 +64,8 @@ public class QCAdminEncryption extends QCStore
 				wait = new WebDriverWait(driver, 40000);
 
 			
-				driver.get(AdminURL);
-				//test.log(LogStatus.INFO, MarkupHelper.createLabel("Opened the Admin URL"+ AdminURL, ExtentColor.BLUE));
-				test.log(LogStatus.INFO, "Opened the Admin URL" + AdminURL);
+				driver.get(prop.getProperty("adminURL"));
+				test.log(LogStatus.PASS, "Application Launched with URL"+prop.getProperty("adminURL"));
 
 				//test.log(LogStatus.INFO, MarkupHelper.createLabel("Reading encryption details from Admin has initiated"+ AdminURL, ExtentColor.BLUE));
 				test.log(LogStatus.INFO, "Reading encryption details from Admin has initiated"+ AdminURL);
