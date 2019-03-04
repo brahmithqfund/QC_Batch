@@ -26,6 +26,7 @@ public class JQCCSRHistory extends QCStore{
 	public static String ACH_amount;
 	public static String ACH_ABA_code;
 	public static String ACH_check_acc_no;
+	public static String ACH_effective_date;
 	public static String ach_history_ach_type;
 	public static String ach_history_ach_effective_date;
 	public static String ach_history_ach_transaction;
@@ -185,7 +186,7 @@ System.out.println(columnname+"_TxnHistory_FieldValue");
 			       loc_history_Statement_Closing_Date=TestData.getCellData(sheetName_calc,columnname+"_Statement_FieldValue",10);
 			       
 	 //ACH collateral details from sheet
-			      /*if(ESign_CollateralType.equals("ACH"))
+			      if(ESign_CollateralType.equals("ACH"))
 			      {
 				    	//To read from Excel
 			    	  ACH_type=TestData.getCellData(sheetName_calc,columnname+"_ACHHistory_FieldValue",2);
@@ -194,9 +195,10 @@ System.out.println(columnname+"_TxnHistory_FieldValue");
 				       ACH_amount=TestData.getCellData(sheetName_calc,columnname+"_ACHHistory_FieldValue",5);
 				       ACH_ABA_code=TestData.getCellData(sheetName_calc,columnname+"_ACHHistory_FieldValue",6);
 				       ACH_check_acc_no=TestData.getCellData(sheetName_calc,columnname+"_ACHHistory_FieldValue",7);
+				       ACH_effective_date=TestData.getCellData(sheetName_calc,columnname+"_ACHHistory_FieldValue",8);
 				       
 			
-			      }*/
+			      }
 
 			     
 						
@@ -427,6 +429,7 @@ System.out.println(columnname+"_TxnHistory_FieldValue");
 								ach_history_ach_amt= driver.findElement(locator(Jprop.getProperty("ach_history_ach_amt"))).getText();
 								ach_history_ach_ABA_code= driver.findElement(locator(Jprop.getProperty("ach_history_ach_ABA_code"))).getText();
 								ach_history_ach_check_acc_no= driver.findElement(locator(Jprop.getProperty("ach_history_ach_check_acc_no"))).getText();
+								//ach_history_ach_effective_date= driver.findElement(locator(Jprop.getProperty("ach_history_ach_effective_date"))).getText();
 					      }
 						
 
@@ -951,7 +954,7 @@ System.out.println(columnname+"_TxnHistory_FieldValue");
 							
 							//ACH validations
 				
-							/*if(ESign_CollateralType.equals("ACH"))
+							if(ESign_CollateralType.equals("ACH"))
 							{
 								if(ACH_type.equalsIgnoreCase(ach_history_ach_type))
 								{
@@ -1009,11 +1012,20 @@ System.out.println(columnname+"_TxnHistory_FieldValue");
 									test.log(LogStatus.FAIL, "ACH_check_acc_no->Expected value:"+Bank_ChkgAcctNbr +"; not equals to Actual value:"+ach_history_ach_check_acc_no);
 	
 								}
+								if(ACH_effective_date.equalsIgnoreCase(ach_history_ach_effective_date))
+								{
+									test.log(LogStatus.PASS, "ACH_effective_date->Expected value:"+ACH_effective_date +"; == Actual value:"+ach_history_ach_effective_date);
+								}
+								else
+								{
+									test.log(LogStatus.FAIL, "ACH_effective_date->Expected value:"+ACH_effective_date +"; not equals to Actual value:"+ach_history_ach_effective_date);
+	
+								}
 					
 								
 								
 								
-							}	*/
+							}	
 							
 							//Details verification		
 							if(loc_history_transaction.equalsIgnoreCase(loc_history_transaction_test))

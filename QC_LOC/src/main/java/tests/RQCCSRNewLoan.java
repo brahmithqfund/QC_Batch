@@ -3,11 +3,9 @@ package tests;
 import java.util.List;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebElement;
-
-
 import com.relevantcodes.extentreports.LogStatus;
 public class RQCCSRNewLoan extends QCStore{
 	public static String State;
@@ -18,13 +16,11 @@ public class RQCCSRNewLoan extends QCStore{
 	public static String ESign_Checks;
 	public static String CouponNbr;
 	public static String ChkgAcctNbr;
-	public static String ESign_CheckNbr;
 	public static String AllowPromotion;
 	public static String ESign_Preference;
 	public static String ESign_CourtesyCallConsent;
 	public static String ESign_DisbType;
 	public static String ESign_LoanAmt;
-	public static String ESign_CollateralType;
 	public static Object stateProductType;
 	public static Object stateProduct;
 	public static String StoreID;
@@ -78,10 +74,9 @@ public class RQCCSRNewLoan extends QCStore{
 		for(int row=2;row<=lastrow;row++)
 		{	
 			String RegSSN = TestData.getCellData(sheetName,"SSN",row);
-		
-		
-			if (SSN.equals(RegSSN)) {
-		
+
+			if(SSN.equals(RegSSN))
+			{		
 				State = TestData.getCellData(sheetName,"StateID",row);
 				ProductID=TestData.getCellData(sheetName,"ProductID",row);
 
@@ -93,11 +88,11 @@ public class RQCCSRNewLoan extends QCStore{
 				stateProduct=State+" "+ProductID;
 				stateProductType=State+" "+ProductType;
 				ESign_CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
+
 				ESign_LoanAmt = TestData.getCellData(sheetName,"ESign_LoanAmt",row);
 				ChkgAcctNbr = TestData.getCellData(sheetName,"ChkgAcctNbr",row);
 				ESign_DisbType = TestData.getCellData(sheetName,"ESign_DisbType",row);
 				ESign_CourtesyCallConsent = TestData.getCellData(sheetName,"ESign_CourtesyCallConsent",row);
-				
 				AllowPromotion = TestData.getCellData(sheetName,"Allow Promotion",row);
 				CouponNbr = TestData.getCellData(sheetName,"CouponNbr",row);
 				ESign_Preference = TestData.getCellData(sheetName,"ESign_Preference",row);
@@ -120,91 +115,101 @@ public class RQCCSRNewLoan extends QCStore{
 				SSN3 = SSN.substring(5,9);
 
 				
-				Thread.sleep(5000);
+				Thread.sleep(3000);
 				driver.switchTo().frame("topFrame");
-				driver.findElement(locator(Rprop.getProperty("transactions_tab"))).click();			
+				driver.findElement(locator(Jprop.getProperty("transactions_tab"))).click();			
 				test.log(LogStatus.PASS, "Clicked on Loan Transactions");
 
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");
-				Thread.sleep(2000);
-				driver.findElement(locator(Rprop.getProperty("csr_new_loan_link"))).click();			
+
+				driver.findElement(locator(Jprop.getProperty("csr_new_loan_link"))).click();			
 				test.log(LogStatus.PASS, "Clicked on New Loan");		
 				driver.switchTo().frame("main");	
 				Thread.sleep(1000);
 				driver.findElement(By.name("ssn1")).sendKeys(SSN1);
 				test.log(LogStatus.PASS, "SSN1 is entered: "+SSN1);
-				driver.findElement(locator(Rprop.getProperty("CSR_SSN_second_field"))).sendKeys(SSN2);
+				driver.findElement(locator(Jprop.getProperty("CSR_SSN_second_field"))).sendKeys(SSN2);
 				test.log(LogStatus.PASS, "SSN2 is entered: "+SSN2);
-				driver.findElement(locator(Rprop.getProperty("CSR_SSN_third_field"))).sendKeys(SSN3);
+				driver.findElement(locator(Jprop.getProperty("CSR_SSN_third_field"))).sendKeys(SSN3);
 				test.log(LogStatus.PASS, "SSN3 is entered: "+SSN3);
-				driver.findElement(locator(Rprop.getProperty("csr_new_loan_submit_button"))).click();
+				driver.findElement(locator(Jprop.getProperty("csr_new_loan_submit_button"))).click();
 				test.log(LogStatus.PASS, "Click on submit Button");		
 				
-					driver.switchTo().defaultContent();
-					driver.switchTo().frame("mainFrame");
-					driver.switchTo().frame("main");
-					driver.findElement(locator(Rprop.getProperty("csr_new_loan_go_button"))).click();
-					test.log(LogStatus.PASS, "Click on GO Button");
+				driver.switchTo().defaultContent();
+				driver.switchTo().frame("mainFrame");
+				driver.switchTo().frame("main");
+				driver.findElement(locator(Jprop.getProperty("csr_new_loan_go_button"))).click();
+				test.log(LogStatus.PASS, "Click on GO Button");
 
-					driver.switchTo().defaultContent();
-					driver.switchTo().frame("mainFrame");
-					driver.switchTo().frame("main");
-					//	Selection of Product based on the Name provided in Test Data
-					if(driver.findElement(By.id("LoanButtonId")).isEnabled())
+				driver.switchTo().defaultContent();
+				driver.switchTo().frame("mainFrame");
+				driver.switchTo().frame("main");
+				Thread.sleep(2000);
+				//	Selection of Product based on the Name provided in Test Data
+				if(driver.findElement(By.id("LoanButtonId")).isEnabled())
+				{
+
+					WebElement htmltable=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table"));
+					rows=htmltable.findElements(By.tagName("tr"));
+					count=0;							
+					count=driver.findElements(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr")).size();	
+					System.out.println("current row num "+count);	
+					System.out.println(" rows num "+ rows.size());
+					test.log(LogStatus.PASS, "New Loan button is enabled");
+					if(ProductID.equals("LOC"))
 					{
+						LOC();
 
-						WebElement htmltable=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table"));
-						rows=htmltable.findElements(By.tagName("tr"));
-						count=0;							
-						count=driver.findElements(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr")).size();	
-						System.out.println("current row num "+count);	
-						System.out.println(" rows num "+ rows.size());
-						test.log(LogStatus.PASS, "New Loan button is enabled");
-						if(ProductID.equals("LOC"))
-						{
-							LOC();
-
-						}
-						
-
-																																				
 					}
-
-				
-			}
-
+					
+				}
+				else{
+					test.log(LogStatus.FAIL, "New Loan button is Disabled");
+				}
 		}
-			
-		
-			
+
 	}
+}
+public static void LOC() throws InterruptedException
+{
+	if(ProductID.equals("LOC"))
+	{					
+		rnum=rnum+1;
+		if(State.equals("KS")){					
+			try{								//*[@id="riskViewBdy"]/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[3]/td[2]/input
+				driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[3]/td[2]/input")).click();
+			}	
+			catch(Exception e){
+				test.log(LogStatus.PASS, "CustomerReached maximum Loan amounts");
+				//CSRLoginLogout.logout();
+
+			}}
+					
+	}
+	test.log(LogStatus.PASS, "Product selected as "+stateProduct);
+	
+	LOCamount=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[3]/td[5]/table/tbody/tr[1]/td[2]")).getText();
+	test.log(LogStatus.PASS, "LOC amount is : "+LOCamount);
+	String interesrrate=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[4]/td[5]/table/tbody/tr[2]/td[2]")).getText();
+	test.log(LogStatus.PASS, "Interest rate is : "+interesrrate);
+	String minAmountDue=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[4]/td[5]/table/tbody/tr[3]/td[2]")).getText();
+	test.log(LogStatus.PASS, "Minimum amount due is : "+minAmountDue);
+	 Statementdate=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[4]/td[5]/table/tbody/tr[4]/td[2]")).getText();
+	test.log(LogStatus.PASS, "Statement date is : "+Statementdate);
+	String MinLOCamount=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[4]/td[5]/table/tbody/tr[5]/td[2]")).getText();
+	test.log(LogStatus.PASS, "Minimum LOC amount is : "+MinLOCamount);
+	String MaxLOCamount=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[4]/td[5]/table/tbody/tr[6]/td[2]")).getText();
+	test.log(LogStatus.PASS, "Maximum Loc amount is : "+MaxLOCamount);
 
 
-	public static void LOC() throws InterruptedException
-	{
-		if(ProductID.equals("LOC"))
-		{					
-			rnum=rnum+1;
-			if(State.equals("KS")){
-				try{								
-					driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[3]/td[2]/input")).click();
-				}	
-				catch(Exception e){
-					test.log(LogStatus.PASS, "CustomerReached maximum Loan amounts");
-					RCSRLoginLogout.logout();
-
-				}}
-						
-		}
-		test.log(LogStatus.PASS, "Product selected as "+stateProduct);
-		
-		String LOCamount=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[3]/td[5]/table/tbody/tr[1]/td[2]")).getText();
-		test.log(LogStatus.PASS, "LOC amount is : "+LOCamount);
-		Thread.sleep(5000);
-		driver.findElement(By.id("LoanButtonId")).click();
-		test.log(LogStatus.PASS, "Clicked on loan button");
-
+	Thread.sleep(2000);	
+	JavascriptExecutor jse = (JavascriptExecutor)driver;
+	jse.executeScript("window.scrollBy(0,-250)", "");
+	
+	driver.findElement(By.id("LoanButtonId")).click();
+	test.log(LogStatus.PASS, "Clicked on loan button");
+		Thread.sleep(1000);
 		driver.findElement(By.name("advanceRequestBean.paymentCollateralType")).sendKeys(ESign_CollateralType);
 		test.log(LogStatus.PASS, "Collateral Type is enterted as "+ESign_CollateralType);
 		if(!(ESign_LoanAmt.isEmpty()))
@@ -212,8 +217,16 @@ public class RQCCSRNewLoan extends QCStore{
 			driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr[1]/td/table[2]/tbody/tr/td/table/tbody/tr[13]/td[3]/input")).sendKeys(ESign_LoanAmt);
 			test.log(LogStatus.PASS, "Loan amount is enterted as "+ESign_LoanAmt);
 		}
+		Due_Date1=driver.findElement(By.name("stmtDueDate1")).getAttribute("value");		
+		Due_Date2=driver.findElement(By.name("stmtDueDate2")).getAttribute("value");
+		Due_Date3=driver.findElement(By.name("stmtDueDate3")).getAttribute("value");
+		Duedate_confirm_text3=Due_Date1+"/"+Due_Date2+"/"+Due_Date3;
+		test.log(LogStatus.PASS, "Due date is "+Duedate_confirm_text3);
 		
-		driver.findElement(By.name("advanceRequestBean.disbursementType")).sendKeys(ESign_DisbType);		                                      
+		String LOCamount2=driver.findElement(By.xpath("//*[@id='errorMessage']/form[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[3]/td/table/tbody/tr[7]/td[2]/input")).getAttribute("value");
+		test.log(LogStatus.PASS, "LOC amount is : "+LOCamount2);
+		
+		driver.findElement(By.xpath("//*[@id='advanceRequestBean.disbursementType']")).sendKeys(ESign_DisbType);
 		test.log(LogStatus.PASS, "Disb Type is enterted as "+ESign_DisbType);
 
 		driver.findElement(By.name("advanceRequestBean.courtesyCallFlag")).sendKeys(ESign_CourtesyCallConsent);
@@ -248,20 +261,16 @@ public class RQCCSRNewLoan extends QCStore{
 					//do what you normally would if you didn't have the alert.
 				}
 			}
-
 		}
 
 
 		//'''''''''''''''''''''''''''''''''''''''''''''''//'''''''''''''''''''''''''''''''''''''''''''''//
-	
-
-		
 
 		if (ESign_CollateralType.equals("ACH"))
 		{
-			driver.findElement(By.name("advanceRequestBean.disbAmtFirst")).sendKeys(LOCamount);
+			driver.findElement(By.name("advanceRequestBean.disbAmtFirst")).sendKeys(LOCamount2);
 			
-			test.log(LogStatus.PASS, "Disb amount enterd  as "+LOCamount);
+			test.log(LogStatus.PASS, "Disb amount enterd  as "+LOCamount2);
 			
 			driver.findElement(By.name("requestBean.password")).sendKeys(ESign_Password);
 			test.log(LogStatus.PASS, "ESign_Checks is selected as "+ESign_Password);
@@ -296,8 +305,8 @@ public class RQCCSRNewLoan extends QCStore{
 			driver.findElement(By.xpath("//*[@id='errorMessage']/form[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[3]/td/table[1]/tbody/tr[17]/td[2]/div[1]/input[3]")).click();
 			test.log(LogStatus.PASS, "Clicked on add card button ");
 			Thread.sleep(30000);
-			driver.findElement(By.name("advanceRequestBean.disbAmtFirst")).sendKeys(LOCamount);			
-			test.log(LogStatus.PASS, "Disb amount enterd  as "+LOCamount);
+			driver.findElement(By.name("advanceRequestBean.disbAmtFirst")).sendKeys(LOCamount2);			
+			test.log(LogStatus.PASS, "Disb amount enterd  as "+LOCamount2);
 			driver.findElement(By.name("requestBean.password")).sendKeys(ESign_Password);
 			test.log(LogStatus.PASS, "ESign_Checks is selected as "+ESign_Password);
 			driver.findElement(By.name("finishadvance")).click();
@@ -322,23 +331,23 @@ public class RQCCSRNewLoan extends QCStore{
 		driver.switchTo().frame("mainFrame");
 		driver.switchTo().frame("main");
 		Thread.sleep(4000);
-		//*[@id="confirmMsg"]/b[1]    //*[@id="confirmMsg"]/b[2]
+		
 		String confirm_text1=driver.findElement(By.xpath("//*[@id='confirmMsg']/b[1]")).getText();
 		String confirm_text2=driver.findElement(By.xpath("//*[@id='confirmMsg']/b[2]")).getText();
-		//String confirm_text3=driver.findElement(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr/td/table[1]/tbody/tr[4]/td[2]/table/tbody/tr[4]/td")).getText();
 		
-		test.log(LogStatus.PASS, "confirm text is  "+confirm_text1+"Will revice an amount of"+confirm_text2);
+		
+		test.log(LogStatus.PASS, "confirm text is  "+confirm_text1+"Will revice an amount of"+confirm_text2+"With Due date"+Duedate_confirm_text3);
 		
 	
 		
 		driver.findElement(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr[3]/td/table/tbody/tr[2]/td/input[1]")).click();
 		
 		test.log(LogStatus.PASS, "click on Yes button ");
-	Thread.sleep(3000);
+		Thread.sleep(5000);
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame("mainFrame");
 		driver.switchTo().frame("main");
-		if(driver.findElement(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td/b[3]")).getText().contains("confirm_text1")){
+		if(driver.findElement(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td")).getText().contains("successfully")){
 			test.log(LogStatus.PASS, "<FONT color=green style=Arial> New Loan is Completed Successfully");
 		}
 		else

@@ -5,6 +5,7 @@
   <groups>
   <run>
 
+<<<<<<< HEAD
   <!--  Brahmith scenarios   -->  
  <!--    <include name="EOD"/>   -->
    <!-- <include name="EOD2"/>-->
@@ -27,6 +28,29 @@
  
   <!--  Shashi scenarios  -->
   <!-- <include name="NonEOD"/>--> 
+=======
+
+ <!-- <include name="EOD"/>  -->
+ 
+ 
+   <include name="Ratikanta_NEOD"/> 
+   <!--<include name="Ratikanta_EOD"/>--> 
+
+   <!--<include name="Janaki_NEOD"/>-->
+   <!--<include name="Janaki_EOD"/>-->
+  
+  
+   <!-- <include name="EOD"/>  -->
+   
+
+   <!--<include name="Janaki_EOD"/>  --> 
+
+ <!--<include name="EOD"/> -->
+
+   <!-- <include name="EOD2"/>-->
+ <!-- <include name="1st Batch"/>-->
+   <!-- <include name="NonEOD"/> -->
+>>>>>>> feb1.1
  <!--  <include name="Shashi"/> -->
  
 
@@ -40,3 +64,7 @@
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+
+
+
+

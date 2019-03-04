@@ -2,12 +2,17 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
+<<<<<<< HEAD
 		<item value="@Befor" key="selection"/>
+=======
+		<item value="@Test" key="selection"/>
+>>>>>>> 52141e78668e0a1d7be317a02730c4658cd4f55e
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+<<<<<<< HEAD
 			<item value="@Befor"/>
 			<item value="anoop"/>
 			<item value="//@Test"/>
@@ -16,18 +21,27 @@
 			<item value="killed"/>
 			<item value="after"/>
 			<item value="Ratikanta"/>
+=======
+			<item value="//@Test"/>
+			<item value="// @Test"/>
+			<item value="===="/>
+			<item value="QC_Store_NewLoan_Test_data_sheet_path=/TestData/QCStore/RLOC_BiWeekly/"/>
+			<item value="QC_DefaultPayment_Txn_Scenario"/>
+			<item value="ratikanta"/>
+			<item value="Janaki"/>
+			<item value="priority=205"/>
+>>>>>>> 52141e78668e0a1d7be317a02730c4658cd4f55e
 		</list>
 		<list key="replacehistory">
 			<item value="@Test"/>
 			<item value="//@Test"/>
-			<item value="Aprop."/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
-		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
-		<item value="772" key="DIALOG_X_ORIGIN"/>
-		<item value="149" key="DIALOG_Y_ORIGIN"/>
+		<item value="785" key="DIALOG_X_ORIGIN"/>
+		<item value="458" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>
