@@ -1,5 +1,6 @@
 package tests;
 
+import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.concurrent.TimeUnit;
@@ -7,6 +8,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 /*import com.aventstack.extentreports.Status;
@@ -47,7 +50,20 @@ public class RQCAdminEncryption extends QCStore
 
 				//test.log(LogStatus.INFO, MarkupHelper.createLabel("Admin Application is launched", ExtentColor.BLUE));
 				test.log(LogStatus.INFO, "********Admin Application is launched********");
-				driver = new InternetExplorerDriver();
+				if(Rprop.getProperty("login_method").equalsIgnoreCase("local"))
+				{
+					driver = new InternetExplorerDriver();
+				}
+				else
+				{
+					String Node = "http://192.168.2.164:5555/wd/hub";
+					 //String Node2 = "http://192.168.0.238:5566/wd/hub";
+					 DesiredCapabilities cap = DesiredCapabilities.internetExplorer();
+					 driver = new RemoteWebDriver(new URL(Node), cap);	
+				}
+				wait = new WebDriverWait(driver, 40000);
+				
+				
 				//wait = new WebDriverWait(driver, 40000);
 
 			

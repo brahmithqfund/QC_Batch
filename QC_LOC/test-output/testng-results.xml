@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" ignored="101" total="102" passed="0">
   <reporter-output>
   </reporter-output>
@@ -106,6 +107,39 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
+=======
+<testng-results skipped="0" failed="0" ignored="113" total="114" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="1524740" started-at="2019-03-01T11:34:06Z" finished-at="2019-03-01T11:59:31Z">
+    <groups>
+      <group name="Janaki_EOD">
+        <method signature="QCStore.JQC_LOC_Refinance_EOD_Payment_Txn()[pri:323, instance:tests.QCStore@527740a2]" name="JQC_LOC_Refinance_EOD_Payment_Txn" class="tests.QCStore"/>
+      </group> <!-- Janaki_EOD -->
+    </groups>
+    <test name="Test" duration-ms="1524740" started-at="2019-03-01T11:34:06Z" finished-at="2019-03-01T11:59:31Z">
+      <class name="tests.QCStore">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="90" started-at="2019-03-01T11:34:06Z" finished-at="2019-03-01T11:34:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5003" started-at="2019-03-01T11:34:06Z" finished-at="2019-03-01T11:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="JQC_LOC_Refinance_EOD_Payment_Txn()[pri:323, instance:tests.QCStore@527740a2]" name="JQC_LOC_Refinance_EOD_Payment_Txn" duration-ms="1519420" started-at="2019-03-01T11:34:11Z" finished-at="2019-03-01T11:59:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JQC_LOC_Refinance_EOD_Payment_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="210" started-at="2019-03-01T11:59:31Z" finished-at="2019-03-01T11:59:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JQC_LOC_Refinance_EOD_Payment_Txn status=SUCCESS method=QCStore.JQC_LOC_Refinance_EOD_Payment_Txn()[pri:323, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+>>>>>>> feb1.1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->

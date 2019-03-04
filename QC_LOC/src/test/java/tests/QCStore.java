@@ -1564,7 +1564,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 66,groups = { "EOD" })
+	@Test(priority = 66, groups = { "EOD" })
 	public static void LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn() throws Exception {
 		try {
 
@@ -3381,7 +3381,7 @@ public class QCStore {
 
 	// Janaki's (Ratikanta) scenarios
 
-	@Test(priority=301,enabled = true, groups="Janaki_NEOD")
+	@Test(priority = 301, enabled = true, groups = "Janaki_NEOD")
 	public static void JQC_LOC_New_Loan_Void_Txn() throws Exception {
 		try {
 
@@ -3437,7 +3437,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority=302,enabled = true, groups="Janaki_NEOD")
+	@Test(priority = 302, enabled = true, groups = "Janaki_NEOD")
 	public static void JQC_LOC_New_Loan_Rescind_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_New_Loan_Rescind_Txn"),
@@ -3488,7 +3488,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority=303,enabled = true, groups="Janaki_NEOD")
+	@Test(priority = 303, enabled = true, groups = "Janaki_NEOD")
 	public static void JQC_LOC_New_Loan_Void_GraceDay_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_New_Loan_Void_GraceDay_Txn"),
@@ -3545,7 +3545,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority=304,enabled = true, groups="Janaki_NEOD")
+	@Test(priority = 304, enabled = true, groups = "Janaki_NEOD")
 	public static void JQC_LOC_New_Loan_GraceDay_Rescind_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_New_Loan_GraceDay_Rescind_Txn"),
@@ -3598,7 +3598,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority=305,enabled = true, groups="Janaki_NEOD")
+	@Test(priority = 305, enabled = true, groups = "Janaki_NEOD")
 	public static void JQC_LOC_New_Loan_After_RescindDays_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_New_Loan_After_RescindDays_Txn"),
@@ -3650,7 +3650,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority=306,enabled = true, groups="Janaki_NEOD")
+	@Test(priority = 306, enabled = true, groups = "Janaki_NEOD")
 	public static void JQC_LOC_Payment_After_Rescind_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_Payment_After_Rescind_Txn"),
@@ -3703,7 +3703,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority=307,enabled = true, groups="Janaki_NEOD")
+	@Test(priority = 307, enabled = true, groups = "Janaki_NEOD")
 	public static void JQC_LOC_Payment_OnDueDate_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_Payment_OnDueDate_Txn"),
@@ -3756,7 +3756,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority=308,enabled = true, groups="Janaki_NEOD")
+	@Test(priority = 308, enabled = true, groups = "Janaki_NEOD")
 
 	public static void JQC_LOC_LessThan_MinPayment_Txn() throws Exception {
 		try {
@@ -4708,7 +4708,7 @@ public class QCStore {
 
 	// Anoop scenarios
 
-	@Test(priority = 427, enabled=true, groups = "Anoop_EOD3")
+	@Test(priority = 427, enabled = true, groups = "Anoop_EOD3")
 
 	public void PaymentDepositEODReDeposit() throws Exception {
 		FileName = "QC_PaymentDepositEODReDeposit.xls";
@@ -4778,7 +4778,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 426, enabled=true, groups = "Anoop_EOD3")
+	@Test(priority = 426, enabled = true, groups = "Anoop_EOD3")
 
 	public void DepositEODReDeposit() throws Exception {
 		FileName = "QC_DepositEODReDeposit.xls";
@@ -4840,7 +4840,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 423, enabled=true, groups = "Anoop_EOD3")
+	@Test(priority = 423, enabled = true, groups = "Anoop_EOD3")
 
 	public void SignatureNewLoan_EODTwice() throws Exception {
 		FileName = "QC_LOC_SignatureLoan_EOD.xls";
@@ -4907,7 +4907,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 422, enabled=true, groups =  "Anoop_EOD3")
+	@Test(priority = 422, enabled = true, groups = "Anoop_EOD3")
 
 	public void Clear_Return_EODTwice() throws Exception {
 		FileName = "QC_LOC_clearReturnEODTwice.xls";
@@ -4997,7 +4997,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 421, enabled=true, groups = "Anoop_EOD2")
+	@Test(priority = 421, enabled = true, groups = "Anoop_EOD2")
 
 	public void Deposit_DrawEODTwice() throws Exception {
 		FileName = "QC_LOC_Draw_EODTwice.xls";
@@ -5077,7 +5077,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 420, enabled=true, groups = "Anoop_EOD2")
+	@Test(priority = 420, enabled = true, groups = "Anoop_EOD2")
 
 	public void DepositEODTwice() throws Exception {
 		FileName = "QC_LOC_DepositEODTwice.xls";
@@ -5145,7 +5145,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 419, enabled=true, groups = "Anoop_EOD2")
+	@Test(priority = 419, enabled = true, groups = "Anoop_EOD2")
 
 	public void PaymentdrawVoidEOD() throws Exception {
 		FileName = "QC_LOC_paymentDraw_Void_EOD.xls";
@@ -5210,7 +5210,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 418, enabled=true, groups = "Anoop_EOD2")
+	@Test(priority = 418, enabled = true, groups = "Anoop_EOD2")
 
 	public void PaymentAndDraw() throws Exception {
 		FileName = "QC_LOC_payment_Draw.xls";
@@ -5271,7 +5271,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 417, enabled=true, groups = "Anoop_EOD1")
+	@Test(priority = 417, enabled = true, groups = "Anoop_EOD1")
 
 	public void DrawAndEOD() throws Exception {
 		FileName = "QC_LOC_Draw_EOD.xls";
@@ -5325,7 +5325,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 416,enabled=true, groups = "Anoop_EOD1")
+	@Test(priority = 416, enabled = true, groups = "Anoop_EOD1")
 
 	public void DepositAndEOD() throws Exception {
 		FileName = "QC_LOC_Deposit_EOD.xls";
@@ -5376,7 +5376,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 415,enabled=true, groups = "Anoop_EOD1")
+	@Test(priority = 415, enabled = true, groups = "Anoop_EOD1")
 
 	public void PayOFFandEod() throws Exception {
 		FileName = "QC_LOC_PayOff_EOD.xls";
@@ -5430,7 +5430,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 414, enabled=true, groups ="Anoop_EOD1")
+	@Test(priority = 414, enabled = true, groups = "Anoop_EOD1")
 
 	public void VoidandEod() throws Exception {
 		FileName = "QC_LOC_Void_EOD.xls";
@@ -5488,7 +5488,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 414, enabled=true, groups = "Anoop_EOD1")
+	@Test(priority = 414, enabled = true, groups = "Anoop_EOD1")
 
 	public void HigherPaymentAndEod() throws Exception {
 		FileName = "QC_LOC_MorePayment_EOD.xls";
@@ -5544,7 +5544,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 413, enabled=true, groups ="Anoop_EOD1")
+	@Test(priority = 413, enabled = true, groups = "Anoop_EOD1")
 
 	public void PaymentAndEod() throws Exception {
 		FileName = "QC_LOC_Payment_EOD.xls";
@@ -5599,7 +5599,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 412, enabled=true, groups = "Anoop_EOD1")
+	@Test(priority = 412, enabled = true, groups = "Anoop_EOD1")
 
 	public void EODOnDueDate() throws Exception {
 		FileName = "QC_LOC_EODDuedate.xls";

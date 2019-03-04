@@ -7,7 +7,7 @@
         <methods>
           <include name="getResult"/>
           <include name="setup"/>
-          <include name="SQC_LOC_Deposit_Bulk_Void"/>
+          <include name="JQC_LOC_GreaterThan_MinPayment_Txn"/>
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->

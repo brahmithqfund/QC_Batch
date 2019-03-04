@@ -67,7 +67,7 @@ public class RAdminLoginForDischarged extends QCStore{
 
 				test.log(LogStatus.INFO,"Admin Application is launched");
 
-				if(prop.getProperty("login_method").equalsIgnoreCase("local"))
+				if(Rprop.getProperty("login_method").equalsIgnoreCase("local"))
 				{
 					driver = new InternetExplorerDriver();
 				}

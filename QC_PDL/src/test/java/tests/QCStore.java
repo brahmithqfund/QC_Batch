@@ -95,7 +95,7 @@ public class QCStore {
 
 	public static String NextDueDate;
 
-	//@Test(priority = 100, groups = { "1stBatch" })
+	@Test(priority = 100, groups = { "1stBatch" })
 	public static void QC_NewLoan_Promotion_Txn() throws Exception {
 		try {
 			// test =
@@ -148,7 +148,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 108, groups = { "1stBatch" })
+	@Test(priority = 108, groups = { "1stBatch" })
 	public static void QC_OpenLoan_NewLoan_Txn() throws Exception {
 		try {
 			// test =
@@ -202,7 +202,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 109, groups = { "1stBatch" })
+	@Test(priority = 109, groups = { "1stBatch" })
 	public static void QC_NewLoan_Void_Txn() throws Exception {
 		try {
 			// test =
@@ -255,7 +255,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 110, groups = { "1stBatch" })
+	@Test(priority = 110, groups = { "1stBatch" })
 	public static void QC_AgeStore_Void_Txn() throws Exception {
 		try {
 			// test =
@@ -318,7 +318,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 111, groups = { "1stBatch" })
+	@Test(priority = 111, groups = { "1stBatch" })
 	public static void QC_Deposit_Menu_Txn() throws Exception {
 		try {
 			test = reports.startTest("QC_Deposit_Menu_Txn",
@@ -378,7 +378,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 112, groups = { "1stBatch" })
+	@Test(priority = 112, groups = { "1stBatch" })
 	public static void QC_Deposit_GraceDays_Txn() throws Exception {
 		try {
 			// test =
@@ -440,7 +440,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 113, groups = { "1stBatch" })
+	@Test(priority = 113, groups = { "1stBatch" })
 	public static void QC_FutureDeposit_DropDown() throws Exception {
 		try {
 			// test =
@@ -503,7 +503,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 157, groups = { "1stBatch" })
+	@Test(priority = 157, groups = { "1stBatch" })
 	public static void QC_Epp_Deposit_Void_Txn() throws Exception {
 		try {
 			// test =
@@ -566,7 +566,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 158, groups = { "1stBatch" })
+	@Test(priority = 158, groups = { "1stBatch" })
 	public static void QC_Epp_PrePayment_Txn() throws Exception {
 		try {
 			// test =
@@ -631,7 +631,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 159, groups = { "1stBatch" })
+	@Test(priority = 159, groups = { "1stBatch" })
 	public static void QC_Epp_Check_Deposit_Clear_Txn() throws Exception {
 		try {
 			// test =
@@ -698,7 +698,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 160, groups = { "1stBatch" })
+	@Test(priority = 160, groups = { "1stBatch" })
 	public static void QC_EppDepositClear_Refund_Txn() throws Exception {
 		try {
 			// test =
@@ -770,7 +770,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 161, groups = { "1stBatch" })
+	@Test(priority = 161, groups = { "1stBatch" })
 	public static void QC_Epp_PrePayment_Return_Txn() throws Exception {
 		try {
 			// test =
@@ -840,7 +840,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 162, groups = { "1stBatch" })
+	@Test(priority = 162, groups = { "1stBatch" })
 	public static void QC_Epp_Return_NSFPayment_Txn() throws Exception {
 		try {
 			// test =
@@ -910,7 +910,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 163, groups = { "1stBatch" })
+	@Test(priority = 163, groups = { "1stBatch" })
 	public static void QC_Epp_Return_ReDeposit_Txn() throws Exception {
 		try {
 			// test =
@@ -983,7 +983,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 169, groups = { "1stBatch" })
+	@Test(priority = 169, groups = { "1stBatch" })
 	public static void QC_Void_FullReturnPayment_Txn() throws Exception {
 		try {
 			// test =
@@ -1075,7 +1075,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 170, groups = { "1stBatch" })
+	@Test(priority = 170, groups = { "1stBatch" })
 	public static void QC_PartialPayment_RefundVoid_Txn() throws Exception {
 		try {
 			// test =
@@ -1153,7 +1153,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 102, groups = { "1stBatch" })
+	@Test(priority = 102, groups = { "1stBatch" })
 	public static void QC_RefinanceStepDown_Txn() throws Exception {
 		try {
 			// test =
@@ -1214,7 +1214,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 103, groups = { "1stBatch" })
+	@Test(priority = 103, groups = { "1stBatch" })
 	public static void QC_RefinanceStepDown_Void_Txn() throws Exception {
 		try {
 			// test =
@@ -1277,7 +1277,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 201, groups = { "Rebate" })
+	@Test(priority = 201, groups = { "Rebate" })
 	public static void QC_Refinance_StepDownURP_Txn() throws Exception {
 		try {
 			// test =
@@ -1336,7 +1336,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 202, groups = { "Rebate" })
+	@Test(priority = 202, groups = { "Rebate" })
 	public static void QC_Refinance_StepDownVoidURP_Txn() throws Exception {
 		try {
 			// test =
@@ -1398,7 +1398,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 198, groups = { "1stBatch" })
+	@Test(priority = 198, groups = { "1stBatch" })
 	public static void QC_Refinance_StepSameURP_Txn() throws Exception {
 		try {
 			// test =
@@ -1457,7 +1457,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 199, groups = { "1stBatch" })
+	@Test(priority = 199, groups = { "1stBatch" })
 	public static void QC_Refinance_StepSameVoidURP_Txn() throws Exception {
 		try {
 			// test =
@@ -1518,7 +1518,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 281, groups = { "EOD" })
+	@Test(priority = 281, groups = { "EOD" })
 	public static void QC_EOD_Deposit_Txn() throws Exception {
 		try {
 			// test =
@@ -1585,7 +1585,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 282, groups = { "EOD" })
+	@Test(priority = 282, groups = { "EOD" })
 	public static void QC_GraceDays_EODDeposit_Txn() throws Exception {
 		try {
 			// test =
@@ -1655,7 +1655,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 283, groups = { "EOD" })
+	@Test(priority = 283, groups = { "EOD" })
 	public static void QC_FutureDeposit_EOD_Txn() throws Exception {
 		try {
 			// test =
@@ -2779,7 +2779,7 @@ public class QCStore {
 
 	// Janaki scenarios
 
-	//@Test(priority = 0, enabled = true, groups = "Janaki")
+	@Test(priority = 0, enabled = true, groups = "Janaki")
 
 	public static void JQC_AgeStore_Deposit_PrePayment_Txn() throws Exception {
 		try {
@@ -2841,7 +2841,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 402, enabled = true, groups = "Janaki")
+	@Test(priority = 402, enabled = true, groups = "Janaki")
 	public static void JQC_AgeStore_Deposit_PrePayment_Void_Txn() throws Exception {
 		try {
 			test = reports.startTest((Jprop.getProperty("QC_PrePayment_Void_Txn")),
@@ -2908,7 +2908,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 403, enabled = true, groups = "Janaki")
+	@Test(priority = 403, enabled = true, groups = "Janaki")
 	public static void JQC_AgeStore_Deposit_ClearDropdown_Txn() throws Exception {
 		try {
 			test = reports.startTest((Jprop.getProperty("QC_Clear_Dropdown_Txn")),
@@ -2977,7 +2977,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 404, enabled = true, groups = "Janaki")
+	@Test(priority = 404, enabled = true, groups = "Janaki")
 	public static void JQC_AgeStore_Deposit_ClearMenu_Txn() throws Exception {
 		try {
 			test = reports.startTest((Jprop.getProperty("QC_Clear_Menu_Txn")),
@@ -3046,7 +3046,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 405, enabled = true, groups = "Janaki")
+	@Test(priority = 405, enabled = true, groups = "Janaki")
 	public static void JQC_AgeStore_Deposit_AutoClear_Txn() throws Exception {
 		try {
 			test = reports.startTest((Jprop.getProperty("QC_AutoClear_Txn")),
@@ -3120,7 +3120,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 410, enabled = false)
+	@Test(priority = 410, enabled = false)
 	public static void JQC_AgeStore_DCDeposit_Txn() throws Exception {
 		try {
 			test = reports.startTest((Jprop.getProperty("QC_DCDeposit_Dropdown_Txn")),
@@ -3176,7 +3176,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 411, enabled = false)
+	@Test(priority = 411, enabled = false)
 	public static void JQC_AgeStore_DCDeposit_Menu_Txn() throws Exception {
 		try {
 			test = reports.startTest((Jprop.getProperty("QC_DCDeposit_Menu_Txn")),
@@ -3232,7 +3232,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 412, enabled = false)
+	@Test(priority = 412, enabled = false)
 	public static void JQC_AgeStore_GraceDays_DCDeposit_Dropdown_Txn() throws Exception {
 		try {
 			test = reports.startTest((Jprop.getProperty("QC_GraceDays_DCDeposit_Dropdown_Txn")),
@@ -3293,7 +3293,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 413, enabled = false)
+	@Test(priority = 413, enabled = false)
 	public static void JQC_AgeStore_GraceDays_DCDeposit_Menu_Txn() throws Exception {
 		try {
 			test = reports.startTest((Jprop.getProperty("QC_GraceDays_DCDeposit_Menu_Txn")),
@@ -3351,7 +3351,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 409, enabled = true, groups = "Janaki")
+	@Test(priority = 409, enabled = true, groups = "Janaki")
 	public static void JQC_AgeStore_ACHReturn_Refinance_Rescind_Txn() throws Exception {
 		try {
 			test = reports.startTest((Jprop.getProperty("QC_ACHReturn_Refinance_Rescind_Txn")),
@@ -3423,7 +3423,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 408, enabled = true, groups = "Janaki")
+	@Test(priority = 408, enabled = true, groups = "Janaki")
 	public static void JQC_AgeStore_NSFPosting_Refinance_Rescind_Txn() throws Exception {
 		try {
 			test = reports.startTest((Jprop.getProperty("QC_NSFPosting_Refinance_Rescind_Txn")),
@@ -3496,7 +3496,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 406, enabled = true, groups = "Janaki")
+	@Test(priority = 406, enabled = true, groups = "Janaki")
 	public static void JQC_AgeStore_PrePayment_Return_Txn() throws Exception {
 		try {
 			test = reports.startTest((Jprop.getProperty("QC_PrePayment_Return_Txn")),
@@ -3566,7 +3566,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 407, enabled = true, groups = "Janaki")
+	@Test(priority = 407, enabled = true, groups = "Janaki")
 	public static void JQC_AgeStore_PrePayment_Clear_Txn() throws Exception {
 		try {
 			test = reports.startTest((Jprop.getProperty("QC_PrePayment_Clear_Txn")),
@@ -3631,7 +3631,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 410, enabled = true, groups = "Janaki")
+	@Test(priority = 410, enabled = true, groups = "Janaki")
 	public static void JQC_AgeStore_Deposit_Return_Refinance_Txn() throws Exception {
 		try {
 			test = reports.startTest((Jprop.getProperty("QC_Deposit_Return_Refinance_Txn")),
@@ -3709,7 +3709,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 411, enabled = true, groups = "Janaki")
+	@Test(priority = 411, enabled = true, groups = "Janaki")
 	public static void JQC_AgeStore_Deposit_Return_Refinance_Void_Txn() throws Exception {
 		try {
 			test = reports.startTest((Jprop.getProperty("QC_Deposit_Return_Refinance_Void_Txn")),
@@ -3790,7 +3790,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 412, enabled = true, groups = "Janaki")
+	@Test(priority = 412, enabled = true, groups = "Janaki")
 	public static void JQC_AgeStore_Refinance_Rescind_Txn() throws Exception {
 		try {
 			test = reports.startTest((Jprop.getProperty("QC_Refinance_Rescind_Txn")),
@@ -3852,7 +3852,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 413, enabled = true, groups = "Janaki")
+	@Test(priority = 413, enabled = true, groups = "Janaki")
 	public static void JQC_AgeStore_Redeposit_Prepayment_Void_Prepayment_Return_Txn() throws Exception {
 		try {
 			test = reports.startTest((Jprop.getProperty("QC_Redeposit_Prepayment_Void_Return_Txn")),
@@ -3940,7 +3940,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 414, enabled = true, groups = "Janaki")
+	@Test(priority = 414, enabled = true, groups = "Janaki")
 	public static void JQC_Return_ReDeposit_Clear_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_Return_ReDeposit_Clear_Txn_Testdata"),
@@ -4015,7 +4015,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 415, enabled = false)
+	@Test(priority = 415, enabled = false)
 	public static void JQC_NewLoan_Veritec_Txn() throws Exception {
 		try {
 			// test =
@@ -4071,7 +4071,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 416, enabled = true, groups = "Janaki")
+	@Test(priority = 416, enabled = true, groups = "Janaki")
 	public static void JQC_BuyBack_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest((Jprop.getProperty("QC_BuyBack_Txn_Testdata_Scenario")),
@@ -4125,7 +4125,7 @@ public class QCStore {
 
 	}
 
-	//@Test(priority = 417, enabled = true, groups = "Janaki")
+	@Test(priority = 417, enabled = true, groups = "Janaki")
 	public static void JQC_BuyBack_Void_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest((Jprop.getProperty("QC_BuyBack_Void_Txn_Testdata_Scenario")),
@@ -4179,7 +4179,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 418, enabled = true, groups = "Janaki")
+	@Test(priority = 418, enabled = true, groups = "Janaki")
 	public static void JQC_BuyBack_Rebate_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest((Jprop.getProperty("QC_BuyBack_Rebate_Txn_Testdata_Scenario")),
@@ -4231,7 +4231,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 419, enabled = true, groups = "Janaki")
+	@Test(priority = 419, enabled = true, groups = "Janaki")
 	public static void JQC_BuyBack_Rebate_Void_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest((Jprop.getProperty("QC_BuyBack_Rebate_Void_Txn_Testdata_Scenario")),
@@ -4284,7 +4284,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 425, enabled = true, groups = "Janaki")
+	@Test(priority = 425, enabled = true, groups = "Janaki")
 	public static void JQC_EPP_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest((Jprop.getProperty("QC_EPP_Txn_Testdata_Scenario")),
@@ -4336,7 +4336,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 421, enabled = true, groups = "Janaki")
+	@Test(priority = 421, enabled = true, groups = "Janaki")
 	public static void JQC_Deposit_Return_EPP_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest((Jprop.getProperty("QC_Deposit_Return_EPP_Txn_Scenario")),
@@ -4402,7 +4402,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 422, enabled = true, groups = "Janaki")
+	@Test(priority = 422, enabled = true, groups = "Janaki")
 	public static void JQC_EPP_AgestoreInstallmentwise_EPPPayment_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(
@@ -4471,7 +4471,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 423, enabled = true, groups = "Janaki1")
+	@Test(priority = 423, enabled = true, groups = "Janaki1")
 	public static void JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(
@@ -4540,7 +4540,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 424, enabled = false)
+	@Test(priority = 424, enabled = false)
 	public static void JQC_ACH_PartialWORecovery_FullWORecovery_Void_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(
@@ -4608,7 +4608,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 420, enabled = true, groups = "Janaki")
+	@Test(priority = 420, enabled = true, groups = "Janaki")
 	public static void JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <groups>
+  <run>
+
+
+ <!-- <include name="EOD"/>  -->
+ 
+ 
+  <include name="Ratikanta_NEOD"/>
+   <!--<include name="Ratikanta_EOD"/>--> 
+
+  <!--<include name="Janaki_NEOD"/> --> 
+  <!--<include name="Janaki_EOD"/> -->  
+  
+  
+   <!-- <include name="EOD"/>  -->
+   
+
+   <!--<include name="Janaki_EOD"/>  --> 
+
+ <!--<include name="EOD"/> -->
+
+   <!-- <include name="EOD2"/>-->
+ <!-- <include name="1st Batch"/>-->
+   <!-- <include name="NonEOD"/> -->
+ <!--  <include name="Shashi"/> -->
+  </run>
+  </groups>
+  
+    <classes>
+      <class name="tests.QCStore"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+
+

@@ -4,7 +4,11 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
+<<<<<<< HEAD
         <include name="Anoop_EOD1"/>
+=======
+        <include name="Janaki_NEOD"/>
+>>>>>>> feb1.1
       </run>
     </groups>
     <classes>
@@ -12,7 +16,11 @@
         <methods>
           <include name="getResult"/>
           <include name="setup"/>
+<<<<<<< HEAD
           <include name="EODOnDueDate"/>
+=======
+          <include name="JQC_LOC_GreaterThan_MinPayment_Txn"/>
+>>>>>>> feb1.1
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->
