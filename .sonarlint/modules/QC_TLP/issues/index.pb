@@ -50,8 +50,20 @@ W
 'src/main/java/tests/JQCDepositMenu.java,2\4\24039a90e494b100b457ff69050377aa3716f299
 V
 &src/main/java/tests/JQCCSRDefault.java,b\1\b18828de96c369817e3438894cb34d824c274ffb
+<<<<<<< HEAD
 >>>>>>> b50e5c7425055cd846c0596a6552686c8ed2cba5
 <<<<<<< HEAD
 =======
 >>>>>>> master
 >>>>>>> 1972bf3646397afbbf80dcfbe62670c8d24d9529
+=======
+Y
+)src/main/java/tests/QCCSRLoginLogout.java,d\0\d07f293e802f0a9e0edd2acade039fa607996a7d
+^
+.src/main/java/tests/QCCSRWriteOffRecovery.java,3\f\3faac3465cdef68991a5595762c15be10870ed05
+V
+&src/main/java/tests/QCCSRWriteOff.java,7\b\7b8f3f11b73089ce88909d52e8fdb977543f39b4
+:
+
+testng.xml,5\2\522a7a4e21649af06297e31a9e33f13bb4fd3022
+>>>>>>> jan21.1

@@ -4,7 +4,7 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="Shashi"/>
+        <include name="Janaki_NEOD"/>
       </run>
     </groups>
     <classes>
@@ -12,8 +12,7 @@
         <methods>
           <include name="getResult"/>
           <include name="setup"/>
-          <include name="Deposit_Dropdown"/>
-          <include name="endReport"/>
+          <include name="JQC_LOC_GreaterThan_MinPayment_Txn"/>
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->

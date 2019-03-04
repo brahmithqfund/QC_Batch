@@ -148,7 +148,7 @@ public class RQCAdminCCKReturn extends QCStore {
 			
 			test.log(LogStatus.PASS, "Clicked on Submit");
 			
-			Thread.sleep(5000);
+			Thread.sleep(8000);
 			
 			driver.findElement(By.name("requestBean.chkName")).click();
 			

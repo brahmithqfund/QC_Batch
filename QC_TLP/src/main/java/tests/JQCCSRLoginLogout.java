@@ -64,7 +64,7 @@ public class JQCCSRLoginLogout extends QCStore
 
 
 						test.log(LogStatus.INFO, "CSR Application is launched " );
-						if(prop.getProperty("login_method").equalsIgnoreCase("local"))
+						if(Jprop.getProperty("login_method").equalsIgnoreCase("local"))
 						{
 							driver = new InternetExplorerDriver();
 						}

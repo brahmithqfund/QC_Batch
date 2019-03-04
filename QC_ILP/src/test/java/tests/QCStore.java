@@ -185,12 +185,14 @@ public class QCStore {
 	public static String FirstName;
 
 	public static String AdminURL;
+
 	public static String csr_url;
 	public static String csrloginpage;
 
 	// Brahmith Transactions
 
-	// @Test(priority=4)
+	 @Test(priority=4)
+
 	public static void QC_NewLoan_Promotion_Txn() throws Exception {
 		try {
 
@@ -239,7 +241,8 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 7)
+	@Test(priority = 7)
+
 	public static void QC_NewLoan_Void_Txn() throws Exception {
 		try {
 			// test =
@@ -294,7 +297,8 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 54)
+	 @Test(priority = 54)
+
 	public static void QC_AgeStore_Void_Txn() throws Exception {
 		try {
 			// test =
@@ -360,7 +364,8 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 21)
+	@Test(priority = 21)
+
 	public static void QC_Installmentpayment_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Installmentpayment_Txn_Scenario")),
@@ -418,7 +423,8 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 22)
+	@Test(priority = 22)
+
 	public static void QC_Installmentpayment_Void_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Installmentpayment_Void_Txn_Scenario")),
@@ -479,7 +485,8 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 23)
+	@Test(priority = 23)
+
 	public static void QC_PayAnyotherAmount_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Payanyotheramount_Txn_Scenario")),
@@ -537,7 +544,8 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 24)
+	@Test(priority = 24)
+
 	public static void QC_PayAnyotherAmount_Void_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Payanyotheramount_Void_Txn_Scenario")),
@@ -597,7 +605,8 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 31)
+	@Test(priority = 31)
+
 	public static void QC_ILP_Return_Menu_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Return_Menu_Txn_Scenario")),
@@ -660,7 +669,8 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 32)
+	@Test(priority = 32)
+
 	public static void QC_ILP_clear_Menu_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_clear_Menu_Txn_Scenario")),
@@ -724,7 +734,8 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 35)
+	@Test(priority = 35)
+
 	public static void QC_ILP_Deposit_Return_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Deposit_Return_Txn_Scenario")),
@@ -790,7 +801,8 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 55)
+	@Test(priority = 55)
+
 	public static void QC_ILP_NewLoanInstallmentDeposit_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_NewLoanInstallmentDeposit_Txn_Scenario")),
@@ -855,7 +867,8 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 47)
+	@Test(priority = 47)
+
 	public static void QC_InstallPayment_Ref_Rescind_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_InstallPayment_Ref_Rescind_Txn_Scenario")),
@@ -918,7 +931,8 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 53)
+	@Test(priority = 53)
+
 	public static void QC_NewLoan_TLPConversion_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_NewLoan_TLPConversion_Txn_Scenario")),
@@ -974,7 +988,8 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 51)
+	@Test(priority = 51)
+
 	public static void QC_LessInterest_VoidFullPayment_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_LessInterest_VoidFullPayment_Txn_Scenario")),
@@ -1038,7 +1053,8 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 16)
+	@Test(priority = 16)
+
 	public static void QC_ILP_Buyback_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Buyback_Txn_scenario")),
@@ -1095,7 +1111,8 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 17)
+	@Test(priority = 17)
+
 	public static void QC_ILP_Buyback_Void_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_ILP_Buyback_Void_Txn_scenario")),
@@ -1156,7 +1173,9 @@ public class QCStore {
 	}
 
 	// Janaki Transactions edited by Janaki
-	// @Test(priority=0,enabled = true,groups="Janaki")
+
+	@Test(priority = 0, enabled = true, groups = "Janaki")
+
 	public static void JQC_ILP_Deposit_Menu_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_ILP_Deposit_Menu_Txn"),
@@ -1206,7 +1225,8 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority=1,enabled = true,groups="Janaki")
+	@Test(priority = 1, enabled = true, groups = "Janaki")
+
 	public static void JQC_ILP_Deposit_dropdown_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_ILP_Deposit_dropdown_Txn"),
@@ -1256,7 +1276,8 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority=2,enabled = true,groups="Janaki")
+	@Test(priority = 2, enabled = true, groups = "Janaki")
+
 	public static void JQC_ILP_GraceDays_Deposit_Menu_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_ILP_GraceDays_Deposit_Menu_Txn"),
@@ -1308,7 +1329,8 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority=3,enabled = true,groups="Janaki")
+	@Test(priority = 3, enabled = true, groups = "Janaki")
+
 	public static void JQC_ILP_GraceDays_Deposit_MidDay_Txn() throws Exception {
 
 		test = reports.startTest(Jprop.getProperty("QC_ILP_GraceDays_Deposit_MidDay_Txn"),
@@ -1352,7 +1374,8 @@ public class QCStore {
 
 	}
 
-	// @Test(priority=4,enabled = true,groups="Janaki")
+	@Test(priority = 4, enabled = true, groups = "Janaki")
+
 	public static void JQC_ILP_Deposit_MidDay_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_ILP_Deposit_MidDay_Txn"),
@@ -1402,7 +1425,8 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority=5,enabled = true,groups="Janaki")
+	@Test(priority = 5, enabled = true, groups = "Janaki")
+
 	public static void JQC_ILP_GraceDays_Deposit_dropdown_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_ILP_GraceDays_Deposit_dropdown_Txn"),
@@ -1455,7 +1479,9 @@ public class QCStore {
 	}
 
 	// Date:07/06/2018
-	// @Test(priority=6,enabled=true,groups="Janaki_EOD_set1")
+
+	@Test(priority = 6, enabled = true, groups = "Janaki_EOD_set1")
+
 	public static void JQC_ILP_Deceased_Txn() throws Exception {
 
 		test = reports.startTest(Jprop.getProperty("QC_ILP_Deceased_Txn"),
@@ -1500,7 +1526,9 @@ public class QCStore {
 	}
 
 	// Date:07/06/2018
-	// @Test(priority=8,enabled = true,groups="Janaki_EOD_set1")
+
+	@Test(priority = 8, enabled = true, groups = "Janaki_EOD_set1")
+
 	public static void JQC_ILP_Deposit_EOD_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_ILP_Deposit_EOD_Txn"),
@@ -1557,7 +1585,9 @@ public class QCStore {
 	}
 
 	// Date:01/11/2018
-	// @Test(priority=9,enabled = true,groups="Janaki_EOD_set2")
+
+	@Test(priority = 9, enabled = true, groups = "Janaki_EOD_set2")
+
 	public static void JQC_ILP_GraceDays_Deposit_EOD_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_ILP_GraceDays_Deposit_EOD_Txn"),
@@ -1615,7 +1645,8 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority=7,enabled = true,groups="Janaki")
+	@Test(priority = 7, enabled = true, groups = "Janaki")
+
 	public static void JQC_ILP_SignaturLoan_Default_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_ILP_SignaturLoan_Default_Txn"),
@@ -1671,6 +1702,7 @@ public class QCStore {
 	public static void RQC_Bankruptcy_WORecovery_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_Bankruptcy_WORecovery"),
+
 					"Login->Borrower Registration->New Loan->Bankruptcy in Admin Portal-->AgeStore to Due date-->WriteOff Recovery");
 			String FileName = "QC_Bankruptcy_WORecovery_Txn_Testdata.xls";
 			// String FileName=
@@ -1702,6 +1734,7 @@ public class QCStore {
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 
 					System.out.println(AppURL);
+					
 					RQCCSRLoginLogout.login(SSN, AppURL);
 					RQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					RQCCSRLoginLogout.logout(SSN, AppURL);
@@ -1725,6 +1758,8 @@ public class QCStore {
 
 		catch (Exception e) {
 			System.out.println("under catch of Test" + e);
+			String screenshotPath = getScreenhot(driver, "RQC_Bankruptcy_WORecovery_Txn");
+			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 			test.log(LogStatus.ERROR, "Unable to start scenarios ");
 
 		}
@@ -1734,6 +1769,7 @@ public class QCStore {
 	public static void RQC_Bankruptcy_Discharge_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_Bankruptcy_Discharge"),
+
 					"Login->Borrower Registration->New Loan->Bankruptcy in Admin Portal-->AgeStore to Due date-->Discharge");
 			String FileName = "QC_Bankruptcy_Discharge_Txn_Testdata.xls";
 			// String FileName=
@@ -1788,6 +1824,8 @@ public class QCStore {
 
 		catch (Exception e) {
 			System.out.println("under catch of Test" + e);
+			String screenshotPath = getScreenhot(driver, "RQC_Bankruptcy_Discharge_Txn");
+			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 			test.log(LogStatus.ERROR, "Unable to start scenarios ");
 
 		}
@@ -1797,6 +1835,7 @@ public class QCStore {
 	public static void RQC_Bankruptcy_Dismiss_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_Bankruptcy_Dismiss"),
+
 					"Login->Borrower Registration->New Loan->Bankruptcy in Admin Portal-->AgeStore to Due date-->Dismiss");
 			String FileName = "QC_Bankruptcy_Dismiss_Txn_Testdata.xls";
 			// String FileName=
@@ -1851,6 +1890,8 @@ public class QCStore {
 
 		catch (Exception e) {
 			System.out.println("under catch of Test" + e);
+			String screenshotPath = getScreenhot(driver, "RQC_Bankruptcy_Dismiss_Txn");
+			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 			test.log(LogStatus.ERROR, "Unable to start scenarios ");
 
 		}
@@ -1860,6 +1901,7 @@ public class QCStore {
 	public static void RQC_Default_Refinance_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_Default_Refinance"),
+
 					"Login->Borrower Registration->New Loan->Age the Store installment wise to make a loan Default->Refinance");
 			String FileName = "QC_Default_Refinance_Txn_Testdata.xls";
 			// String FileName=
@@ -1914,6 +1956,8 @@ public class QCStore {
 
 		catch (Exception e) {
 			System.out.println("under catch of Test" + e);
+			String screenshotPath = getScreenhot(driver, "RQC_Default_Refinance_Txn");
+			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 			test.log(LogStatus.ERROR, "Unable to start scenarios ");
 
 		}
@@ -1923,6 +1967,7 @@ public class QCStore {
 	public static void RQC_DefaultPayment_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_DefaultPayment"),
+
 					"Login->Borrower Registration->New Loan->Age the Store installment wise to make a loan Default->DefaultPayment");
 			String FileName = "QC_DefaultPayment_Txn_Testdata.xls";
 			// String FileName=
@@ -1978,6 +2023,8 @@ public class QCStore {
 
 		catch (Exception e) {
 			System.out.println("under catch of Test" + e);
+			String screenshotPath = getScreenhot(driver, "RQC_DefaultPayment_Txn");
+			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 			test.log(LogStatus.ERROR, "Unable to start scenarios ");
 
 		}
@@ -1987,6 +2034,7 @@ public class QCStore {
 	public static void RQC_DefaultPayment_Void_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_DefaultPayment_Void"),
+
 					"Login->Borrower Registration->New Loan->Age the Store installment wise to make a loan Default->DefaultPayment-->Void");
 			String FileName = "QC_DefaultPayment_Void_Txn_Testdata.xls";
 			// String FileName=
@@ -2042,6 +2090,8 @@ public class QCStore {
 
 		catch (Exception e) {
 			System.out.println("under catch of Test" + e);
+			String screenshotPath = getScreenhot(driver, "RQC_DefaultPayment_Void_Txn");
+			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 			test.log(LogStatus.ERROR, "Unable to start scenarios ");
 
 		}
@@ -2051,6 +2101,7 @@ public class QCStore {
 	public static void RQC_WriteOffRecovery_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_WriteOffRecovery"),
+
 					"Login->Borrower Registration->New Loan->Age the Store Duedate-->WriteOff-->WriteOff Recovery");
 			String FileName = "QC_WriteOffRecovery_Txn_Testdata.xls";
 			// String FileName=
@@ -2104,6 +2155,8 @@ public class QCStore {
 
 		catch (Exception e) {
 			System.out.println("under catch of Test" + e);
+			String screenshotPath = getScreenhot(driver, "RQC_WriteOffRecovery_Txn");
+			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 			test.log(LogStatus.ERROR, "Unable to start scenarios ");
 
 		}
@@ -2113,6 +2166,7 @@ public class QCStore {
 	public static void RQC_WriteOffRecovery_Void_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_WriteOffRecovery_Void"),
+
 					"Login->Borrower Registration->New Loan->Age the Store Duedate-->WriteOff-->WriteOff Recovery-->Void");
 			String FileName = "QC_WriteOffRecovery_Void_Txn_Testdata.xls";
 			// String FileName=
@@ -2167,6 +2221,8 @@ public class QCStore {
 
 		catch (Exception e) {
 			System.out.println("under catch of Test" + e);
+			String screenshotPath = getScreenhot(driver, "RQC_WriteOffRecovery_Void_Txn");
+			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 			test.log(LogStatus.ERROR, "Unable to start scenarios ");
 
 		}
@@ -2176,6 +2232,7 @@ public class QCStore {
 	public static void RQC_Default_TLPConversion_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_Default_TLPConversion"),
+
 					"Login->Borrower Registration->New Loan->Age the Store installment wise to make a loan Default->TLPConversion");
 			String FileName = "QC_Default_TLPConversion_Txn_Testdata.xls";
 			// String FileName=
@@ -2229,6 +2286,8 @@ public class QCStore {
 
 		catch (Exception e) {
 			System.out.println("under catch of Test" + e);
+			String screenshotPath = getScreenhot(driver, "RQC_Default_TLPConversion_Txn");
+			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 			test.log(LogStatus.ERROR, "Unable to start scenarios ");
 
 		}
@@ -2634,6 +2693,7 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 				// test.log(LogStatus.INFO, "****Test Scenario for Refinance
 				// Step Same is pass******");
+
 			}
 		}
 	}
@@ -3082,6 +3142,7 @@ public class QCStore {
 	}
 
 	@BeforeMethod(alwaysRun = true)
+
 	public void killProcess() throws Exception {
 
 		try {
@@ -3111,6 +3172,7 @@ public class QCStore {
 	}
 
 	@AfterMethod(alwaysRun = true)
+
 	public void getResult(ITestResult result) throws Exception {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			test.log(LogStatus.FAIL, "Test Case Failed is " + result.getName());
@@ -3131,7 +3193,7 @@ public class QCStore {
 
 	}
 
-	// @AfterMethod
+	@AfterMethod(alwaysRun = true)
 
 	public void endReport() {
 

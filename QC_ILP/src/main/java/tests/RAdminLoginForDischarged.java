@@ -45,7 +45,7 @@ public class RAdminLoginForDischarged extends QCStore{
 				{
 				String AdminUserName = TestData.getCellData(sheetName,"AdminUserName",row);
 				String AdminPassword = TestData.getCellData(sheetName,"AdminPassword",row);
-				//String AdminURL = TestData.getCellData(sheetName,"AdminURL",row);
+				String AdminURL = TestData.getCellData(sheetName,"AdminURL",row);
 				String PIN = TestData.getCellData(sheetName,"PIN",row);
 				String Trancd = TestData.getCellData(sheetName,"Trancd",row);
 				String StoreID = TestData.getCellData(sheetName,"StoreID",row);
@@ -67,7 +67,7 @@ public class RAdminLoginForDischarged extends QCStore{
 
 				test.log(LogStatus.INFO,"Admin Application is launched");
 
-				if(prop.getProperty("login_method").equalsIgnoreCase("local"))
+				if(Rprop.getProperty("login_method").equalsIgnoreCase("local"))
 				{
 					driver = new InternetExplorerDriver();
 				}

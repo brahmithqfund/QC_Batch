@@ -107,7 +107,7 @@ public class JQCCSRLoginLogout extends QCStore
 				        driver.findElement(locator(Jprop.getProperty("csr_login_button"))).click();
 				        test.log(LogStatus.PASS, "Clicked on login button");
 				        
-				       Thread.sleep(5000);
+				       Thread.sleep(6000);
 				       break;
 }
 					

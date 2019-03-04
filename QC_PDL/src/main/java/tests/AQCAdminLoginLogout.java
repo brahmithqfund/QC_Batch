@@ -44,8 +44,8 @@ public class AQCAdminLoginLogout extends QCStore {
 						 driver = new RemoteWebDriver(new URL(Node), cap);	
 					}
 
-					//driver.get(admin_url);
-					driver.get("https://qcuat.qfund.net/cc/adminIndex.do");
+					driver.get(admin_url);
+					//driver.get("https://qcuat.qfund.net/cc/adminIndex.do");
 					driver.findElement(By.name("loginRequestBean.userId")).sendKeys(uname);
 
 					test.log(LogStatus.PASS, "Username is entered: "+uname);
