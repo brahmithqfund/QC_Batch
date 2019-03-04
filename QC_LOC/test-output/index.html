@@ -128,30 +128,14 @@
                   <a name="EODOnDueDate">
                   </a> <!-- EODOnDueDate -->
                   <span class="method-name">EODOnDueDate</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: Unable to find elements on closed window (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;QTLSYS2-48&apos;, ip: &apos;192.168.2.48&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:25421/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: 01d49606-d4d9-45a8-add3-8935b97e146e
-*** Element info: {Using=css selector, value=frame[name=&apos;bottom&apos;],iframe[name=&apos;bottom&apos;]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:349)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElements(By.java:441)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:310)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:874)
-	at tests.ACSRBorrowerRegistration.borrowerReg(ACSRBorrowerRegistration.java:106)
-	at tests.QCStore.EODOnDueDate(QCStore.java:5646)
-... Removed 29 stack frames
+                  <div class="stack-trace">java.io.FileNotFoundException: D:\QC_Batch\QC_LOC\TestData\QCStore\ALOC\QC_LOC_EODDuedate.xls (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
+	at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
+	at tests.ExcelNew.&lt;init&gt;(ExcelNew.java:35)
+	at tests.QCStore.EODOnDueDate(QCStore.java:5634)
+... Removed 25 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -226,12 +210,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'EODOnDueDate')
 data.setCell(0, 2, 'tests.QCStore')
-data.setCell(0, 3, 10176);
+data.setCell(0, 3, 23);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 23 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -416,9 +400,9 @@ return data;
                 <br/>
                 <span class="ignored-method-name">LOC_Bankrupt_Writeoff_Dismissed</span>
                 <br/>
-                <span class="ignored-method-name">LOC_PayOff_Return_Txn</span>
-                <br/>
                 <span class="ignored-method-name">SQC_LOC_Deposit_Bulk</span>
+                <br/>
+                <span class="ignored-method-name">LOC_PayOff_Return_Txn</span>
                 <br/>
                 <span class="ignored-method-name">NewLoanWeekly_Duedatevalidation</span>
                 <br/>
@@ -471,19 +455,19 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">killProcess</span>
-                <span class="method-start">106 ms</span>
+                <span class="method-start">112 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">EODOnDueDate</span>
-                <span class="method-start">5126 ms</span>
+                <span class="method-start">5136 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">getResult([TestResult name=EODOnDueDate status=FAILURE method=QCStore.EODOnDueDate()[pri:412, instance:tests.Q...)</span>
-                <span class="method-start">15305 ms</span>
+                <span class="method-start">5175 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
