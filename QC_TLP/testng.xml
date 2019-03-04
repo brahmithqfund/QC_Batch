@@ -4,12 +4,16 @@
   <test thread-count="5" name="Test">
    <groups>
   <run>
+  
+  <!-- Brahmith group-->
+   <!-- <include name="Brahmith"/> --> 
+   
   <!-- Janaki's group-->
    <!-- <include name="Janaki"/>  --> 
    <!-- <include name="Janaki_EOD_set1"/> -->
    
  	<!-- Anoop group-->
-   <include name="Anoop"/>
+  <!--  <include name="Anoop"/> -->
 
   </run>
   </groups>
