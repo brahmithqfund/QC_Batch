@@ -4,13 +4,13 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="Janaki1"/>
+        <include name="Anoop"/>
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
-          <include name="JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata"/>
+          <include name="AQC_EPP_Redeposit"/>
           <include name="getResult"/>
           <include name="setup"/>
           <include name="killProcess"/>
