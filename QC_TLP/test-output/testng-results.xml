@@ -1,36 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="23" total="24" passed="1">
+<testng-results skipped="0" failed="0" ignored="33" total="35" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="715192" started-at="2019-03-01T12:36:28Z" finished-at="2019-03-01T12:48:23Z">
+  <suite name="Suite" duration-ms="2403137" started-at="2019-03-04T11:10:00Z" finished-at="2019-03-04T11:50:04Z">
     <groups>
-      <group name="Janaki_EOD_set1">
-        <method signature="QCStore.JQC_TLP_Deposit_EOD_Txn()[pri:209, instance:tests.QCStore@527740a2]" name="JQC_TLP_Deposit_EOD_Txn" class="tests.QCStore"/>
-      </group> <!-- Janaki_EOD_set1 -->
+      <group name="Brahmith1">
+        <method signature="QCStore.QC_TLP_Writeoff_Recovery_Txn()[pri:131, instance:tests.QCStore@527740a2]" name="QC_TLP_Writeoff_Recovery_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_TLP_Writeoff_Recovery_Void_Txn()[pri:132, instance:tests.QCStore@527740a2]" name="QC_TLP_Writeoff_Recovery_Void_Txn" class="tests.QCStore"/>
+      </group> <!-- Brahmith1 -->
     </groups>
-    <test name="Test" duration-ms="715192" started-at="2019-03-01T12:36:28Z" finished-at="2019-03-01T12:48:23Z">
+    <test name="Test" duration-ms="2403137" started-at="2019-03-04T11:10:00Z" finished-at="2019-03-04T11:50:04Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="75" started-at="2019-03-01T12:36:28Z" finished-at="2019-03-01T12:36:28Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="77" started-at="2019-03-04T11:10:00Z" finished-at="2019-03-04T11:10:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5009" started-at="2019-03-01T12:36:28Z" finished-at="2019-03-01T12:36:33Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5009" started-at="2019-03-04T11:10:01Z" finished-at="2019-03-04T11:10:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="JQC_TLP_Deposit_EOD_Txn()[pri:209, instance:tests.QCStore@527740a2]" name="JQC_TLP_Deposit_EOD_Txn" duration-ms="709911" started-at="2019-03-01T12:36:33Z" finished-at="2019-03-01T12:48:23Z">
+        <test-method status="PASS" signature="QC_TLP_Writeoff_Recovery_Txn()[pri:131, instance:tests.QCStore@527740a2]" name="QC_TLP_Writeoff_Recovery_Txn" duration-ms="1193260" started-at="2019-03-04T11:10:06Z" finished-at="2019-03-04T11:29:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- JQC_TLP_Deposit_EOD_Txn -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="1" started-at="2019-03-01T12:48:23Z" finished-at="2019-03-01T12:48:23Z">
+        </test-method> <!-- QC_TLP_Writeoff_Recovery_Txn -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-04T11:29:59Z" finished-at="2019-03-04T11:29:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="181" started-at="2019-03-01T12:48:23Z" finished-at="2019-03-01T12:48:23Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="204" started-at="2019-03-04T11:29:59Z" finished-at="2019-03-04T11:29:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=JQC_TLP_Deposit_EOD_Txn status=SUCCESS method=QCStore.JQC_TLP_Deposit_EOD_Txn()[pri:209, instance:tests.QCStore@527740a2] output={null}]]]>
+                <![CDATA[[TestResult name=QC_TLP_Writeoff_Recovery_Txn status=SUCCESS method=QCStore.QC_TLP_Writeoff_Recovery_Txn()[pri:131, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5013" started-at="2019-03-04T11:29:59Z" finished-at="2019-03-04T11:30:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_TLP_Writeoff_Recovery_Void_Txn()[pri:132, instance:tests.QCStore@527740a2]" name="QC_TLP_Writeoff_Recovery_Void_Txn" duration-ms="1199515" started-at="2019-03-04T11:30:04Z" finished-at="2019-03-04T11:50:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_TLP_Writeoff_Recovery_Void_Txn -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-04T11:50:04Z" finished-at="2019-03-04T11:50:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="45" started-at="2019-03-04T11:50:04Z" finished-at="2019-03-04T11:50:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_TLP_Writeoff_Recovery_Void_Txn status=SUCCESS method=QCStore.QC_TLP_Writeoff_Recovery_Void_Txn()[pri:132, instance:tests.QCStore@527740a2] output={null}]]]>
               </value>
             </param>
           </params>

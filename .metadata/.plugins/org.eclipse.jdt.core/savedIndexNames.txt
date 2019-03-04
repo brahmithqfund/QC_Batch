@@ -1,4 +1,5 @@
 INDEX VERSION 1.127+E:\QC_Batch\.metadata\.plugins\org.eclipse.jdt.core
+<<<<<<< HEAD
 518545357.index
 1095603785.index
 1770271979.index
@@ -31,6 +32,41 @@ INDEX VERSION 1.127+E:\QC_Batch\.metadata\.plugins\org.eclipse.jdt.core
 3061353336.index
 1952388078.index
 1438851372.index
+=======
+1170435207.index
+770534083.index
+2001531999.index
+2825085678.index
+885762076.index
+2103131397.index
+2136293731.index
+3999643898.index
+2269670246.index
+4215730529.index
+3760264562.index
+1995732525.index
+2674710526.index
+3669389876.index
+3942214617.index
+2800558102.index
+2352149356.index
+2158917571.index
+3590793.index
+1075794691.index
+2546612568.index
+1886439468.index
+71335191.index
+386718192.index
+2269993412.index
+1626384957.index
+4136960813.index
+2637943071.index
+2296497421.index
+35670723.index
+275202965.index
+2085492421.index
+1239098091.index
+>>>>>>> janaki1.1
 2048548144.index
 2776299132.index
 3071216579.index
