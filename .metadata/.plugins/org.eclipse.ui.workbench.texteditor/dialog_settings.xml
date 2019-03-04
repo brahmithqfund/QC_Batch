@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="Anoop" key="selection"/>
+		<item value="" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value=" //@Test"/>
 			<item value="anoop"/>
 			<item value="prop.getProperty"/>
 			<item value="//anoop"/>
@@ -15,9 +16,9 @@
 			<item value="@Test"/>
 			<item value="prop."/>
 			<item value="@Before"/>
-			<item value="killed the process"/>
 		</list>
 		<list key="replacehistory">
+			<item value="@Test"/>
 			<item value="//@Test"/>
 			<item value="Aprop."/>
 		</list>

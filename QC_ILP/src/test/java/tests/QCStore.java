@@ -191,7 +191,7 @@ public class QCStore {
 
 	// Brahmith Transactions
 
-	 //@Test(priority=4, groups = "Brahmith")
+	@Test(priority=4, groups = "Brahmith")
 
 	public static void QC_NewLoan_Promotion_Txn() throws Exception {
 		try {
@@ -297,7 +297,7 @@ public class QCStore {
 		}
 	}
 
-	 //@Test(priority = 54, groups = "Brahmith")
+	@Test(priority = 54, groups = "Brahmith")
 
 	public static void QC_AgeStore_Void_Txn() throws Exception {
 		try {
