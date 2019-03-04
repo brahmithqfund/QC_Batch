@@ -44,8 +44,8 @@ public class AQCAdminLoginLogout extends QCStore {
 						 driver = new RemoteWebDriver(new URL(Node), cap);	
 					}
 
-					driver.get(prop.getProperty("adminURL"));
-					test.log(LogStatus.PASS, "Application Launched with URL"+prop.getProperty("adminURL"));
+					driver.get(Aprop.getProperty("adminURL"));
+					test.log(LogStatus.PASS, "Application Launched with URL"+Aprop.getProperty("adminURL"));
 				
 					driver.findElement(By.name("loginRequestBean.userId")).sendKeys(uname);
 
@@ -56,7 +56,7 @@ public class AQCAdminLoginLogout extends QCStore {
 
 					driver.findElement(By.name("login")).click();
 					test.log(LogStatus.PASS, "Clicked on login button");  
-					//Thread.sleep(3000);
+					Thread.sleep(3000);
 					break;
 				}
 			}

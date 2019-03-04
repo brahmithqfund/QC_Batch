@@ -27,5 +27,3 @@ f
 chromedriver.exe,d\0\d0b49ae29587435df3e9988b34c286a37d9a89d9
 B
 IEDriverServer.exe,9\1\91c8366e22f75cf182379d0c621025823649da39
-O
-src/main/java/tests/forGit.java,2\b\2b3cb32075403ccb5a4525d20121fbaef00691a0

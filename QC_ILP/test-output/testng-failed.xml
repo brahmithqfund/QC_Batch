@@ -4,15 +4,15 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="Janaki2"/>
+        <include name="Anoop"/>
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
+          <include name="ILP_borrowregNewloan"/>
           <include name="getResult"/>
           <include name="setup"/>
-          <include name="JQC_ILP_GraceDays_Deposit_MidDay_Txn"/>
           <include name="endReport"/>
           <include name="killProcess"/>
         </methods>

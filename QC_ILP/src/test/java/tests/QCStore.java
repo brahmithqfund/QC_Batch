@@ -2276,7 +2276,7 @@ public class QCStore {
 
 	// Anoop Transactions
 
-	 //@Test(priority=14,enabled=true,groups="Anoop")
+	 @Test(priority=14,enabled=true,groups="Anoop")
 
 	public void ILP_voidRefinance() throws Exception {
 
@@ -2331,7 +2331,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority=11,enabled=true,groups="Anoop")
+	@Test(priority=11,enabled=true,groups="Anoop")
 
 	public void ILP_ACHAutoClear() throws Exception {
 
@@ -2385,7 +2385,7 @@ public class QCStore {
 		}
 	}
 
-	 //@Test(priority=12,enabled=true,groups="Anoop")
+	 @Test(priority=12,enabled=true,groups="Anoop")
 
 	public void ILP_CheckAutoClear() throws Exception {
 
@@ -2435,7 +2435,7 @@ public class QCStore {
 		}
 	}
 
-	 //@Test(priority=10,enabled=true,groups="Anoop")
+	 @Test(priority=10,enabled=true,groups="Anoop")
 
 	public void ILP_ProcessClear() throws Exception {
 
@@ -2484,7 +2484,7 @@ public class QCStore {
 		}
 	}
 
-	 //@Test(priority=0,enabled=true,groups="Anoop")
+	 @Test(priority=0,enabled=true,groups="Anoop")
 	// This is date dependency make it 03/12/2018
 	public void ILP_RefinanceStepDown_void() throws Exception {
 
@@ -2537,7 +2537,7 @@ public class QCStore {
 		}
 	}
 
- //@Test(priority=15,enabled=true,groups="Anoop")
+ @Test(priority=15,enabled=true,groups="Anoop")
 	// This is date dependency make it 03/12/2018
 	public void ILP_RefinanceStepDown() throws Exception {
 
@@ -2586,7 +2586,7 @@ public class QCStore {
 		}
 	}
 
- //@Test(priority=9,enabled=true,groups="Anoop")
+ @Test(priority=9,enabled=true,groups="Anoop")
 
 	public void ILP_RefinanceStepSame_Void() throws Exception {
 
@@ -2637,7 +2637,7 @@ public class QCStore {
 		}
 	}
 
-	 //@Test(priority=7,enabled=true,groups="Anoop")
+	 @Test(priority=7,enabled=true,groups="Anoop")
 
 	public void ILP_RefinanceStepSame() throws Exception {
 
@@ -2673,7 +2673,6 @@ public class QCStore {
 				QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
 				ACSRLoginLogout.login(SSN, AppURL);
 				ILP_Refinance_StepSame.StepSame(SSN, AppURL);
-				;
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
@@ -2686,7 +2685,7 @@ public class QCStore {
 		}
 	}
 
-	 //@Test(priority=8,enabled=true,groups="Anoop")
+	 @Test(priority=8,enabled=true,groups="Anoop")
 
 	public void ILP_RefinanceStepUpVoid() throws Exception {
 
@@ -2739,7 +2738,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority=6,enabled=true,groups="Anoop")
+	@Test(priority=6,enabled=true,groups="Anoop")
 
 	public void ILP_RefinanceStepup() throws Exception {
 
@@ -2790,7 +2789,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority=1,enabled=true,groups="Anoop")
+	@Test(priority=1,enabled=true,groups="Anoop")
 
 	public void ILP_Redeposit() throws Exception {
 
@@ -2843,7 +2842,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority=5,enabled=true,groups="Anoop")
+	@Test(priority=5,enabled=true,groups="Anoop")
 
 	public void ILP_agerescindtest() throws Exception {
 		test = reports.startTest("QC_AgeStore_Rescind Loan", "Login-->Age the loan to rescind days--->Rescind loan");
@@ -2884,7 +2883,7 @@ public class QCStore {
 		}
 	}
 
-//@Test(priority=4,enabled=true,groups="Anoop")
+@Test(priority=4,enabled=true,groups="Anoop")
 
 	public void ILP_rescindloan() throws Exception {
 		test = reports.startTest("QC_Rescind", "Loan->Rescind");
@@ -2922,7 +2921,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority=3,enabled=true,groups="Anoop")
+	@Test(priority=3,enabled=true,groups="Anoop")
 
 	public void ILP_maxloanCount() throws Exception {
 		FileName = "QC_MaxLoanCount.xls";
@@ -2967,7 +2966,7 @@ public class QCStore {
 
 	}
 
-	 //@Test(priority=2,enabled=true,groups="Anoop")
+	 @Test(priority=2,enabled=true,groups="Anoop")
 	public void ILP_inactiveNewloan() throws Exception {
 		FileName = "QC_NewLoan_InactiveCustomer.xls";
 		test = reports.startTest("QC_NewLoan_InactiveCustomer", "Login-->Home Screen-->In active customer-->New Loan");

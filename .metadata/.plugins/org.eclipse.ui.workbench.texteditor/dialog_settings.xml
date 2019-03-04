@@ -9,13 +9,13 @@
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
 			<item value="anoop"/>
+			<item value="prop.getProperty"/>
+			<item value="//anoop"/>
+			<item value="build"/>
 			<item value="@Test"/>
 			<item value="prop."/>
 			<item value="@Before"/>
 			<item value="killed the process"/>
-			<item value="Aprop"/>
-			<item value="Anoop"/>
-			<item value="QC_Store_NewLoan_Test_data_sheet_path"/>
 		</list>
 		<list key="replacehistory">
 			<item value="//@Test"/>
