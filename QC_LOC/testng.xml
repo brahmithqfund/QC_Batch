@@ -12,8 +12,6 @@
  <!-- <include name="1st Batch"/>-->
  
   <!--  Janaki scenarios  -->
- <!-- <include name="Janaki"/>  -->
-  <!--  <include name="Janaki1"/>  --> 
     <!-- <include name="Janaki_NEOD"/>  -->
        <!--<include name="Janaki_EOD"/>  --> 
 
@@ -28,9 +26,10 @@
  
   <!--  Shashi scenarios  -->
   <!-- <include name="NonEOD"/>--> 
-<!--  <include name="Shashi"/> -->
- 
+  <!--  <include name="Shashi"/> -->
+  <!-- <include name="EOD"/>  -->
 
+ 
   <!--  Jyothi scenarios -->
 
 

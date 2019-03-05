@@ -28,12 +28,13 @@ public class ATLPACHProcessing extends QCStore {
 					if(SSN.equals(RegSSN))
 					{
 							
-			       Thread.sleep(1000);
 					test.log(LogStatus.INFO, "ACH Processing through from Admin has initiated");
+					Thread.sleep(4000);
 					driver.switchTo().defaultContent();	
-			        wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("topFrame")));
+			        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("topFrame")));
 					driver.switchTo().frame("topFrame");
-					driver.findElement(locator(Aprop.getProperty("admin_ACH_transaction"))).click();		
+					//driver.findElement(locator(Aprop.getProperty("admin_ACH_transaction"))).click();	
+					driver.findElement(By.id("500000")).click();
 					test.log(LogStatus.PASS, "Clicked on Transactions");
 					Thread.sleep(1000);
 					driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);

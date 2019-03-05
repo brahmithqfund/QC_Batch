@@ -3,6 +3,10 @@
 >>>>>>>=jan21.1
 PROBLEMS_FILTERS_MIGRATE=true
 eclipse.preferences.version=1
+<<<<<<< HEAD
 platformState=1487326882157
+=======
+platformState=1487326882120
+>>>>>>> janaki1.1
 quickStart=false
 tipsAndTricks=true
