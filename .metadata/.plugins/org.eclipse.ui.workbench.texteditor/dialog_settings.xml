@@ -2,23 +2,24 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="login_method" key="selection"/>
+		<item value="@Test" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="login_method"/>
-			<item value="Anoop_EOD1"/>
-			<item value="QC_Store_extent_report_path"/>
+			<item value="//@Test"/>
+			<item value="@Test"/>
 			<item value="// @Test"/>
-			<item value="LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn"/>
-			<item value="QC_PayAnyotherAmount_Txn() throws Exception"/>
-			<item value="Janaki"/>
-			<item value="Ratikanta"/>
+			<item value="QC_Store_ILP_NewLoan_Promotion_Txn_scenario"/>
+			<item value="draw option"/>
+			<item value="check_status-&gt;Expected v"/>
+			<item value="heck_status-&gt;Expected value:Void ; not equals t"/>
+			<item value="login_method"/>
 		</list>
 		<list key="replacehistory">
 			<item value="@Test"/>
+			<item value="//@Test"/>
 			<item value=""/>
 		</list>
 	</section>

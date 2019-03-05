@@ -4,19 +4,18 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="Janaki"/>
+        <include name="Brahmith"/>
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
-          <include name="JQC_ILP_Deposit_MidDay_Txn"/>
-          <include name="JQC_ILP_Deposit_Menu_Txn"/>
-          <include name="JQC_ILP_Deposit_dropdown_Txn"/>
-          <include name="JQC_ILP_GraceDays_Deposit_MidDay_Txn"/>
-          <include name="JQC_ILP_GraceDays_Deposit_dropdown_Txn"/>
-          <include name="JQC_ILP_GraceDays_Deposit_Menu_Txn"/>
-          <include name="JQC_ILP_SignaturLoan_Default_Txn"/>
+          <include name="QC_ILP_clear_Menu_Txn"/>
+          <include name="QC_ILP_Return_Menu_Txn"/>
+          <include name="getResult"/>
+          <include name="setup"/>
+          <include name="endReport"/>
+          <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->
     </classes>

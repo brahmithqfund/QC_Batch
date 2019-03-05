@@ -105,7 +105,7 @@ public class QCStore {
 	public static String age_Date3;
 	public static String appdate;
 	public static String day;
-	//@Test(priority = 101, groups="Brahmith")
+	@Test(priority = 101, groups="Brahmith")
 		public static void QC_TLP_NewLoan_Txn() throws Exception {
 			try {
 				// test =
@@ -157,7 +157,7 @@ public class QCStore {
 			}
 		}
 
-		//@Test(priority=103,groups="Brahmith")
+		@Test(priority=103,groups="Brahmith")
 		public static void QC_NewLoan_Promotion_Txn() throws Exception {
 			try {
 
@@ -207,7 +207,7 @@ public class QCStore {
 			}
 		}
 
-		//@Test(priority = 104,groups="Brahmith")
+		@Test(priority = 104,groups="Brahmith")
 		public static void QC_NewLoan_Void_Txn() throws Exception {
 			try {
 				// test =
@@ -261,7 +261,7 @@ public class QCStore {
 			}
 		}
 
-		//@Test(priority = 105,groups="Brahmith")
+		@Test(priority = 105,groups="Brahmith")
 		public static void QC_AgeStore_Void_Txn() throws Exception {
 			try {
 				// test =
@@ -323,7 +323,7 @@ public class QCStore {
 			}
 		}
 
-		//@Test(priority = 116,groups="Brahmith")
+		@Test(priority = 116,groups="Brahmith")
 		public static void QC_TLP_Buyback_Txn() throws Exception {
 			try {
 				test = reports.startTest((prop.getProperty("QC_TLP_Buyback_Txn_scenario")),
@@ -380,7 +380,7 @@ public class QCStore {
 			}
 		}
 
-		//@Test(priority = 117,groups="Brahmith")
+		@Test(priority = 117,groups="Brahmith")
 		public static void QC_TLP_Buyback_Void_Txn() throws Exception {
 			try {
 				test = reports.startTest((prop.getProperty("QC_TLP_Buyback_Void_Txn_scenario")),
@@ -440,7 +440,7 @@ public class QCStore {
 			}
 		}
 
-		//@Test(priority = 118,groups="Brahmith")
+		@Test(priority = 118,groups="Brahmith")
 		public static void QC_Installmentpayment_Txn() throws Exception {
 			try {
 				test = reports.startTest((prop.getProperty("QC_TLP_Installmentpayment_Txn_scenario")),
@@ -559,7 +559,7 @@ public class QCStore {
 			}
 		}
 
-		//@Test(priority = 120,groups="Brahmith")
+		@Test(priority = 120,groups="Brahmith")
 		public static void QC_PayAnyotherAmount_Txn() throws Exception {
 			try {
 				test = reports.startTest((prop.getProperty("QC_TLP_Payanyotheramount_Txn_scenario")),
@@ -617,7 +617,7 @@ public class QCStore {
 			}
 		}
 
-		//@Test(priority = 121,groups="Brahmith")
+		@Test(priority = 121,groups="Brahmith")
 		public static void QC_PayAnyotherAmount_Void_Txn() throws Exception {
 			try {
 				test = reports.startTest((prop.getProperty("QC_TLP_Payanyotheramount_Void_Txn_scenario")),
@@ -678,7 +678,7 @@ public class QCStore {
 		}
 
 		
-		//@Test(priority = 131,groups="Brahmith")
+		@Test(priority = 131,groups="Brahmith")
 		public static void QC_TLP_Writeoff_Recovery_Txn() throws Exception {
 			try {
 				test = reports.startTest((prop.getProperty("QC_TLP_Writeoff_Recovery_Txn_scenario")),
@@ -739,7 +739,7 @@ public class QCStore {
 
 			}
 		}
-		//@Test(priority = 132,groups="Brahmith")
+		@Test(priority = 132,groups="Brahmith")
 		public static void QC_TLP_Writeoff_Recovery_Void_Txn() throws Exception {
 			try {
 				test = reports.startTest((prop.getProperty("QC_TLP_Writeoff_Recovery_Void_Txn_scenario")),
@@ -2113,7 +2113,7 @@ public class QCStore {
 
 			try {
 
-				Runtime.getRuntime().exec("taskkill /F /IM IEDriverServer.exe");
+				//Runtime.getRuntime().exec("taskkill /F /IM IEDriverServer.exe");
 
 				Thread.sleep(5000); // Allow OS to kill the process
 				System.out.println("killed the process in TLP");

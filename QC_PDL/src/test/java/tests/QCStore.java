@@ -1010,7 +1010,7 @@ public class QCStore {
 					// row);
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					/*QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
@@ -1057,7 +1057,7 @@ public class QCStore {
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCNSFPayment.nsfpayment(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);*/
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
@@ -1628,7 +1628,7 @@ public class QCStore {
 
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCEODDeposit.eodDeposit(SSN, AppURL);
-					// QCCSRLoginLogout.logout(SSN, AppURL);
+					
 					QCAdminStoreSetup.storeSetup(SSN, AppURL);
 					QCCSRLoginLogout.adminLogout(driver, SSN, AppURL);
 

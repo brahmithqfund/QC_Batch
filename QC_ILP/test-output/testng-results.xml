@@ -1,38 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="25" total="26" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="1204324" started-at="2019-02-19T06:23:43Z" finished-at="2019-02-19T06:43:47Z">
+  <suite name="Suite" duration-ms="2559427" started-at="2019-03-04T08:57:49Z" finished-at="2019-03-04T09:40:28Z">
     <groups>
-      <group name="Janaki_EOD_set2">
-        <method signature="QCStore.JQC_ILP_GraceDays_Deposit_EOD_Txn()[pri:9, instance:tests.QCStore@527740a2]" name="JQC_ILP_GraceDays_Deposit_EOD_Txn" class="tests.QCStore"/>
-      </group> <!-- Janaki_EOD_set2 -->
+      <group name="Brahmith">
+        <method signature="QCStore.QC_ILP_Deposit_Return_Txn()[pri:35, instance:tests.QCStore@6d7b4f4c]" name="QC_ILP_Deposit_Return_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_ILP_Return_Menu_Txn()[pri:31, instance:tests.QCStore@6d7b4f4c]" name="QC_ILP_Return_Menu_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_ILP_clear_Menu_Txn()[pri:32, instance:tests.QCStore@6d7b4f4c]" name="QC_ILP_clear_Menu_Txn" class="tests.QCStore"/>
+      </group> <!-- Brahmith -->
     </groups>
-    <test name="Test" duration-ms="1204324" started-at="2019-02-19T06:23:43Z" finished-at="2019-02-19T06:43:47Z">
+    <test name="Test" duration-ms="2559427" started-at="2019-03-04T08:57:49Z" finished-at="2019-03-04T09:40:28Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="78" started-at="2019-02-19T06:23:43Z" finished-at="2019-02-19T06:23:43Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="setup" is-config="true" duration-ms="108" started-at="2019-03-04T08:57:49Z" finished-at="2019-03-04T08:57:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5008" started-at="2019-02-19T06:23:43Z" finished-at="2019-02-19T06:23:48Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="killProcess" is-config="true" duration-ms="5013" started-at="2019-03-04T08:57:49Z" finished-at="2019-03-04T08:57:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="JQC_ILP_GraceDays_Deposit_EOD_Txn()[pri:9, instance:tests.QCStore@527740a2]" name="JQC_ILP_GraceDays_Deposit_EOD_Txn" duration-ms="1199004" started-at="2019-02-19T06:23:48Z" finished-at="2019-02-19T06:43:47Z">
+        <test-method status="PASS" signature="QC_ILP_Return_Menu_Txn()[pri:31, instance:tests.QCStore@6d7b4f4c]" name="QC_ILP_Return_Menu_Txn" duration-ms="949826" started-at="2019-03-04T08:57:54Z" finished-at="2019-03-04T09:13:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- JQC_ILP_GraceDays_Deposit_EOD_Txn -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="219" started-at="2019-02-19T06:43:47Z" finished-at="2019-02-19T06:43:47Z">
+        </test-method> <!-- QC_ILP_Return_Menu_Txn -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="endReport" is-config="true" duration-ms="1" started-at="2019-03-04T09:13:44Z" finished-at="2019-03-04T09:13:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@6d7b4f4c]" name="getResult" is-config="true" duration-ms="213" started-at="2019-03-04T09:13:44Z" finished-at="2019-03-04T09:13:44Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=JQC_ILP_GraceDays_Deposit_EOD_Txn status=SUCCESS method=QCStore.JQC_ILP_GraceDays_Deposit_EOD_Txn()[pri:9, instance:tests.QCStore@527740a2] output={null}]]]>
+                <![CDATA[[TestResult name=QC_ILP_Return_Menu_Txn status=SUCCESS method=QCStore.QC_ILP_Return_Menu_Txn()[pri:31, instance:tests.QCStore@6d7b4f4c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="killProcess" is-config="true" duration-ms="5041" started-at="2019-03-04T09:13:44Z" finished-at="2019-03-04T09:13:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_ILP_clear_Menu_Txn()[pri:32, instance:tests.QCStore@6d7b4f4c]" name="QC_ILP_clear_Menu_Txn" duration-ms="837981" started-at="2019-03-04T09:13:49Z" finished-at="2019-03-04T09:27:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_ILP_clear_Menu_Txn -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="endReport" is-config="true" duration-ms="1" started-at="2019-03-04T09:27:47Z" finished-at="2019-03-04T09:27:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@6d7b4f4c]" name="getResult" is-config="true" duration-ms="77" started-at="2019-03-04T09:27:47Z" finished-at="2019-03-04T09:27:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_ILP_clear_Menu_Txn status=SUCCESS method=QCStore.QC_ILP_clear_Menu_Txn()[pri:32, instance:tests.QCStore@6d7b4f4c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="killProcess" is-config="true" duration-ms="5048" started-at="2019-03-04T09:27:47Z" finished-at="2019-03-04T09:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_ILP_Deposit_Return_Txn()[pri:35, instance:tests.QCStore@6d7b4f4c]" name="QC_ILP_Deposit_Return_Txn" duration-ms="756052" started-at="2019-03-04T09:27:52Z" finished-at="2019-03-04T09:40:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_ILP_Deposit_Return_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@6d7b4f4c]" name="getResult" is-config="true" duration-ms="45" started-at="2019-03-04T09:40:28Z" finished-at="2019-03-04T09:40:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_ILP_Deposit_Return_Txn status=SUCCESS method=QCStore.QC_ILP_Deposit_Return_Txn()[pri:35, instance:tests.QCStore@6d7b4f4c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-04T09:40:28Z" finished-at="2019-03-04T09:40:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
       </class> <!-- tests.QCStore -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

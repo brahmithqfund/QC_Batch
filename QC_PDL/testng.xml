@@ -4,19 +4,18 @@
   <test thread-count="5" name="Test">
     <groups>
   <run>
-   <!-- <include name="EOD"/>-->
-     <!--  <include name="Rebate"/>   -->
-
-   <include name="1stBatch"/>  
+   <!--  Brahmith scenarios   -->  
+    <!-- <include name="EOD"/>-->
+  <!--    <include name="Rebate"/> --> 
+  <include name="1stBatch"/> 
+ 
+  <!--  Janaki scenarios  -->
  <!-- <include name="Janaki"/>  -->
   <!--  <include name="Janaki1"/>  --> 
 
-  <!--  <include name="Janaki1"/>  -->
+  <!--  Anoop scenarios -->
    <!--  <include name="Anoop"/> -->
-
-
-
-  </run>
+</run>
   </groups>
     <classes>
 

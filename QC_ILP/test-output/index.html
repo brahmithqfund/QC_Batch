@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>E:\QC_Batch\QC_ILP\testng.xml</span>
+                    <span>D:\QC_Batch\QC_ILP\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="JQC_ILP_GraceDays_Deposit_EOD_Txn">JQC_ILP_GraceDays_Deposit_EOD_Txn</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="QC_ILP_Deposit_Return_Txn">QC_ILP_Deposit_Return_Txn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="QC_ILP_Return_Menu_Txn">QC_ILP_Return_Menu_Txn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="QC_ILP_clear_Menu_Txn">QC_ILP_clear_Menu_Txn</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -125,9 +135,23 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="JQC_ILP_GraceDays_Deposit_EOD_Txn">
-                  </a> <!-- JQC_ILP_GraceDays_Deposit_EOD_Txn -->
-                  <span class="method-name">JQC_ILP_GraceDays_Deposit_EOD_Txn</span>
+                  <a name="QC_ILP_Deposit_Return_Txn">
+                  </a> <!-- QC_ILP_Deposit_Return_Txn -->
+                  <span class="method-name">QC_ILP_Deposit_Return_Txn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="QC_ILP_Return_Menu_Txn">
+                  </a> <!-- QC_ILP_Return_Menu_Txn -->
+                  <span class="method-name">QC_ILP_Return_Menu_Txn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="QC_ILP_clear_Menu_Txn">
+                  </a> <!-- QC_ILP_clear_Menu_Txn -->
+                  <span class="method-name">QC_ILP_clear_Menu_Txn</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +159,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">E:\QC_Batch\QC_ILP\testng.xml</span>
+            <span class="header-content">D:\QC_Batch\QC_ILP\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,7 +169,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;groups&gt;
       &lt;run&gt;
-        &lt;include name=&quot;Janaki_EOD_set2&quot;/&gt;
+        &lt;include name=&quot;Brahmith&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
@@ -174,10 +198,18 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">Janaki_EOD_set2</span>
+              <span class="test-group-name">Brahmith</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">JQC_ILP_GraceDays_Deposit_EOD_Txn</span>
+                <span class="method-in-group-name">QC_ILP_Deposit_Return_Txn</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">QC_ILP_Return_Menu_Txn</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">QC_ILP_clear_Menu_Txn</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -197,16 +229,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'JQC_ILP_GraceDays_Deposit_EOD_Txn')
+data.setCell(0, 1, 'QC_ILP_Return_Menu_Txn')
 data.setCell(0, 2, 'tests.QCStore')
-data.setCell(0, 3, 1199004);
+data.setCell(0, 3, 949826);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'QC_ILP_clear_Menu_Txn')
+data.setCell(1, 2, 'tests.QCStore')
+data.setCell(1, 3, 837981);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'QC_ILP_Deposit_Return_Txn')
+data.setCell(2, 2, 'tests.QCStore')
+data.setCell(2, 3, 756052);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 minutes</span>
+              <span class="suite-total-time">Total running time: 42 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -221,64 +261,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">25 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.QCStore</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">QC_PayAnyotherAmount_Void_Txn</span>
-                <br/>
-                <span class="ignored-method-name">QC_AgeStore_Void_Txn</span>
-                <br/>
-                <span class="ignored-method-name">QC_ILP_Deposit_Return_Txn</span>
-                <br/>
-                <span class="ignored-method-name">JQC_ILP_GraceDays_Deposit_dropdown_Txn</span>
-                <br/>
-                <span class="ignored-method-name">QC_PayAnyotherAmount_Txn</span>
-                <br/>
-                <span class="ignored-method-name">QC_NewLoan_Void_Txn</span>
-                <br/>
-                <span class="ignored-method-name">JQC_ILP_SignaturLoan_Default_Txn</span>
-                <br/>
-                <span class="ignored-method-name">JQC_ILP_Deposit_MidDay_Txn</span>
-                <br/>
-                <span class="ignored-method-name">QC_NewLoan_Promotion_Txn</span>
-                <br/>
-                <span class="ignored-method-name">QC_Installmentpayment_Txn</span>
-                <br/>
-                <span class="ignored-method-name">QC_LessInterest_VoidFullPayment_Txn</span>
-                <br/>
-                <span class="ignored-method-name">QC_ILP_Buyback_Void_Txn</span>
-                <br/>
-                <span class="ignored-method-name">QC_ILP_Buyback_Txn</span>
-                <br/>
-                <span class="ignored-method-name">JQC_ILP_GraceDays_Deposit_Menu_Txn</span>
-                <br/>
-                <span class="ignored-method-name">QC_ILP_clear_Menu_Txn</span>
-                <br/>
-                <span class="ignored-method-name">QC_ILP_NewLoanInstallmentDeposit_Txn</span>
-                <br/>
-                <span class="ignored-method-name">QC_Installmentpayment_Void_Txn</span>
-                <br/>
-                <span class="ignored-method-name">QC_ILP_Return_Menu_Txn</span>
-                <br/>
-                <span class="ignored-method-name">JQC_ILP_Deposit_Menu_Txn</span>
-                <br/>
-                <span class="ignored-method-name">QC_InstallPayment_Ref_Rescind_Txn</span>
-                <br/>
-                <span class="ignored-method-name">JQC_ILP_Deposit_dropdown_Txn</span>
-                <br/>
-                <span class="ignored-method-name">JQC_ILP_GraceDays_Deposit_MidDay_Txn</span>
-                <br/>
-                <span class="ignored-method-name">QC_NewLoan_TLPConversion_Txn</span>
-                <br/>
-                <span class="ignored-method-name">JQC_ILP_Deceased_Txn</span>
-                <br/>
-                <span class="ignored-method-name">JQC_ILP_Deposit_EOD_Txn</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -294,15 +279,51 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">killProcess</span>
-                <span class="method-start">93 ms</span>
+                <span class="method-start">115 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">JQC_ILP_GraceDays_Deposit_EOD_Txn</span>
-                <span class="method-start">5101 ms</span>
+                <span class="method-name">QC_ILP_Return_Menu_Txn</span>
+                <span class="method-start">5128 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=JQC_ILP_GraceDays_Deposit_EOD_Txn status=SUCCESS method=QCStore.JQC_ILP_GraceDays_D...)</span>
-                <span class="method-start">1204105 ms</span>
+                <span class="method-name">endReport</span>
+                <span class="method-start">954955 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=QC_ILP_Return_Menu_Txn status=SUCCESS method=QCStore.QC_ILP_Return_Menu_Txn()[pri:3...)</span>
+                <span class="method-start">954956 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">killProcess</span>
+                <span class="method-start">955171 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">QC_ILP_clear_Menu_Txn</span>
+                <span class="method-start">960212 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endReport</span>
+                <span class="method-start">1798194 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=QC_ILP_clear_Menu_Txn status=SUCCESS method=QCStore.QC_ILP_clear_Menu_Txn()[pri:32,...)</span>
+                <span class="method-start">1798195 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">killProcess</span>
+                <span class="method-start">1798272 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">QC_ILP_Deposit_Return_Txn</span>
+                <span class="method-start">1803320 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endReport</span>
+                <span class="method-start">2559373 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=QC_ILP_Deposit_Return_Txn status=SUCCESS method=QCStore.QC_ILP_Deposit_Return_Txn()...)</span>
+                <span class="method-start">2559373 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
