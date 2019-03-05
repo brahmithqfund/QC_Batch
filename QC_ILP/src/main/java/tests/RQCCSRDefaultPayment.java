@@ -124,9 +124,12 @@ public class RQCCSRDefaultPayment extends QCStore {
 							Thread.sleep(8000);
 							Thread.sleep(8000);
 							 driver.findElement(By.name("checkno")).click();
-	                           test.log(LogStatus.PASS, "Clicked on No");
-	                           test.log(LogStatus.PASS, "Default Payment Transaction Completed Successfully");					
-							 driver.close();
+							Thread.sleep(8000);
+							Thread.sleep(5000);
+	                        test.log(LogStatus.PASS, "Clicked on Do you want another transaction for this customer : No");
+	                        test.log(LogStatus.PASS, "Default Payment Transaction Completed Successfully");		
+	                        Thread.sleep(500);
+							driver.close();
 						
 					}
 						else 

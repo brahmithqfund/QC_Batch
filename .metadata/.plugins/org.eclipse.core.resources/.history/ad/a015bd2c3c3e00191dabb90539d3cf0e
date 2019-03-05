@@ -10,8 +10,17 @@
 #for Age Store and Void-------------------------------------->QC_AgeStore_Void_Txn
 #for Age Store and Deposit (EOD)-------------------------------------->QC_AgeStore_Deposit_Menu_Txn
 
-login_method=nlocal
-QC_Store_NewLoan_Test_data_sheet_path=/ATestData/QCStore/PDL/
+login_method=local
+
+
+csrURL=http://192.168.2.203/cc/demoIndex.do
+adminURL=http://192.168.2.203/cc/adminIndex.do
+
+QC_Store_NewLoan_Test_data_sheet_path=/ATestData/CSR/ILP_BiWeekly/
+#QC_Store_NewLoan_Test_data_sheet_path=/ATestData/CSR/ILP_SemiMonthly/
+#QC_Store_NewLoan_Test_data_sheet_path=/ATestData/CSR/ILP_Monthly/
+#QC_Store_NewLoan_Test_data_sheet_path=/ATestData/CSR/ILP_Weekly/
+
 
 QC_Store_QC_OpenLoan_NewLoan_Txn_Txn_file_name=QC_OpenLoan_NewLoan_Txn
 QC_Store_NewLoan_Void_Txn_file_name=QC_NewLoan_Void_Txn

@@ -2,6 +2,7 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Suite" duration-ms="814321" started-at="2019-03-05T05:09:57Z" finished-at="2019-03-05T05:23:32Z">
     <groups>
       <group name="1stBatch">
@@ -27,6 +28,33 @@
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=QC_Refinance_StepSameVoidURP_Txn status=SUCCESS method=QCStore.QC_Refinance_StepSameVoidURP_Txn()[pri:199, instance:tests.QCStore@6d7b4f4c] output={null}]]]>
+=======
+  <suite name="Suite" duration-ms="54072" started-at="2019-03-04T10:16:57Z" finished-at="2019-03-04T10:17:51Z">
+    <groups>
+      <group name="Anoop">
+        <method signature="QCStore.AQC_EPP_Redeposit()[pri:22, instance:tests.QCStore@6d7b4f4c]" name="AQC_EPP_Redeposit" class="tests.QCStore"/>
+      </group> <!-- Anoop -->
+    </groups>
+    <test name="Test" duration-ms="54072" started-at="2019-03-04T10:16:57Z" finished-at="2019-03-04T10:17:51Z">
+      <class name="tests.QCStore">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="setup" is-config="true" duration-ms="93" started-at="2019-03-04T10:16:57Z" finished-at="2019-03-04T10:16:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="killProcess" is-config="true" duration-ms="5013" started-at="2019-03-04T10:16:57Z" finished-at="2019-03-04T10:17:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="AQC_EPP_Redeposit()[pri:22, instance:tests.QCStore@6d7b4f4c]" name="AQC_EPP_Redeposit" duration-ms="48719" started-at="2019-03-04T10:17:02Z" finished-at="2019-03-04T10:17:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AQC_EPP_Redeposit -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@6d7b4f4c]" name="getResult" is-config="true" duration-ms="231" started-at="2019-03-04T10:17:51Z" finished-at="2019-03-04T10:17:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AQC_EPP_Redeposit status=SUCCESS method=QCStore.AQC_EPP_Redeposit()[pri:22, instance:tests.QCStore@6d7b4f4c] output={null}]]]>
+>>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
               </value>
             </param>
           </params>

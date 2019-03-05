@@ -4,14 +4,22 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
+<<<<<<< HEAD
         <include name="Brahmith"/>
+=======
+        <include name="Anoop"/>
+>>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
+<<<<<<< HEAD
           <include name="QC_ILP_clear_Menu_Txn"/>
           <include name="QC_ILP_Return_Menu_Txn"/>
+=======
+          <include name="ILP_borrowregNewloan"/>
+>>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
           <include name="getResult"/>
           <include name="setup"/>
           <include name="endReport"/>

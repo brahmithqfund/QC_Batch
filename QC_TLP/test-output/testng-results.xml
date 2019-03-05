@@ -1,43 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="33" total="35" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1091792" started-at="2019-02-21T04:35:36Z" finished-at="2019-02-21T04:53:47Z">
+  <suite name="Suite" duration-ms="2403137" started-at="2019-03-04T11:10:00Z" finished-at="2019-03-04T11:50:04Z">
     <groups>
-      <group name="Brahmith">
-        <method signature="QCStore.QC_Installmentpayment_Void_Txn()[pri:119, instance:tests.QCStore@71423665]" name="QC_Installmentpayment_Void_Txn" class="tests.QCStore"/>
-      </group> <!-- Brahmith -->
+      <group name="Brahmith1">
+        <method signature="QCStore.QC_TLP_Writeoff_Recovery_Txn()[pri:131, instance:tests.QCStore@527740a2]" name="QC_TLP_Writeoff_Recovery_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_TLP_Writeoff_Recovery_Void_Txn()[pri:132, instance:tests.QCStore@527740a2]" name="QC_TLP_Writeoff_Recovery_Void_Txn" class="tests.QCStore"/>
+      </group> <!-- Brahmith1 -->
     </groups>
-    <test name="Default test" duration-ms="1091792" started-at="2019-02-21T04:35:36Z" finished-at="2019-02-21T04:53:47Z">
+    <test name="Test" duration-ms="2403137" started-at="2019-03-04T11:10:00Z" finished-at="2019-03-04T11:50:04Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@71423665]" name="setup" is-config="true" duration-ms="94" started-at="2019-02-21T04:35:36Z" finished-at="2019-02-21T04:35:36Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="77" started-at="2019-03-04T11:10:00Z" finished-at="2019-03-04T11:10:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@71423665]" name="killProcess" is-config="true" duration-ms="5011" started-at="2019-02-21T04:35:36Z" finished-at="2019-02-21T04:35:41Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5009" started-at="2019-03-04T11:10:01Z" finished-at="2019-03-04T11:10:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="QC_Installmentpayment_Void_Txn()[pri:119, instance:tests.QCStore@71423665]" name="QC_Installmentpayment_Void_Txn" duration-ms="1086460" started-at="2019-02-21T04:35:41Z" finished-at="2019-02-21T04:53:47Z">
+        <test-method status="PASS" signature="QC_TLP_Writeoff_Recovery_Txn()[pri:131, instance:tests.QCStore@527740a2]" name="QC_TLP_Writeoff_Recovery_Txn" duration-ms="1193260" started-at="2019-03-04T11:10:06Z" finished-at="2019-03-04T11:29:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- QC_Installmentpayment_Void_Txn -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@71423665]" name="getResult" is-config="true" duration-ms="213" started-at="2019-02-21T04:53:47Z" finished-at="2019-02-21T04:53:47Z">
+        </test-method> <!-- QC_TLP_Writeoff_Recovery_Txn -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-04T11:29:59Z" finished-at="2019-03-04T11:29:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="204" started-at="2019-03-04T11:29:59Z" finished-at="2019-03-04T11:29:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=QC_Installmentpayment_Void_Txn status=SUCCESS method=QCStore.QC_Installmentpayment_Void_Txn()[pri:119, instance:tests.QCStore@71423665] output={null}]]]>
+                <![CDATA[[TestResult name=QC_TLP_Writeoff_Recovery_Txn status=SUCCESS method=QCStore.QC_TLP_Writeoff_Recovery_Txn()[pri:131, instance:tests.QCStore@527740a2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@71423665]" name="endReport" is-config="true" duration-ms="0" started-at="2019-02-21T04:53:47Z" finished-at="2019-02-21T04:53:47Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5013" started-at="2019-03-04T11:29:59Z" finished-at="2019-03-04T11:30:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_TLP_Writeoff_Recovery_Void_Txn()[pri:132, instance:tests.QCStore@527740a2]" name="QC_TLP_Writeoff_Recovery_Void_Txn" duration-ms="1199515" started-at="2019-03-04T11:30:04Z" finished-at="2019-03-04T11:50:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_TLP_Writeoff_Recovery_Void_Txn -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-04T11:50:04Z" finished-at="2019-03-04T11:50:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="45" started-at="2019-03-04T11:50:04Z" finished-at="2019-03-04T11:50:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_TLP_Writeoff_Recovery_Void_Txn status=SUCCESS method=QCStore.QC_TLP_Writeoff_Recovery_Void_Txn()[pri:132, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
       </class> <!-- tests.QCStore -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

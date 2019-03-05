@@ -2,7 +2,6 @@ package tests;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -10,16 +9,13 @@ import java.util.Date;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
-
 import org.openqa.selenium.By;
-
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -1568,7 +1564,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority = 66,groups = { "EOD" })
+=======
+	@Test(priority = 66, groups = { "EOD" })
+>>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 	public static void LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn() throws Exception {
 		try {
 
@@ -1937,7 +1937,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	 @Test(priority = 69, groups = { "EOD2" })
+=======
+	@Test(priority = 69, groups = { "EOD2" })
+>>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 	public static void LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn() throws Exception {
 		try {
 
@@ -3385,7 +3389,11 @@ public class QCStore {
 
 	// Janaki's (Ratikanta) scenarios
 
+<<<<<<< HEAD
 	@Test(priority=301,enabled = true, groups="Janaki_NEOD")
+=======
+	@Test(priority = 301, enabled = true, groups = "Janaki_NEOD")
+>>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 	public static void JQC_LOC_New_Loan_Void_Txn() throws Exception {
 		try {
 
@@ -3441,7 +3449,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority=302,enabled = true, groups="Janaki_NEOD")
+=======
+	@Test(priority = 302, enabled = true, groups = "Janaki_NEOD")
+>>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 	public static void JQC_LOC_New_Loan_Rescind_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_New_Loan_Rescind_Txn"),
@@ -3492,7 +3504,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority=303,enabled = true, groups="Janaki_NEOD")
+=======
+	@Test(priority = 303, enabled = true, groups = "Janaki_NEOD")
+>>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 	public static void JQC_LOC_New_Loan_Void_GraceDay_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_New_Loan_Void_GraceDay_Txn"),
@@ -3549,7 +3565,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority=304,enabled = true, groups="Janaki_NEOD")
+=======
+	@Test(priority = 304, enabled = true, groups = "Janaki_NEOD")
+>>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 	public static void JQC_LOC_New_Loan_GraceDay_Rescind_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_New_Loan_GraceDay_Rescind_Txn"),
@@ -3602,7 +3622,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority=305,enabled = true, groups="Janaki_NEOD")
+=======
+	@Test(priority = 305, enabled = true, groups = "Janaki_NEOD")
+>>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 	public static void JQC_LOC_New_Loan_After_RescindDays_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_New_Loan_After_RescindDays_Txn"),
@@ -3654,7 +3678,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority=306,enabled = true, groups="Janaki_NEOD")
+=======
+	@Test(priority = 306, enabled = true, groups = "Janaki_NEOD")
+>>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 	public static void JQC_LOC_Payment_After_Rescind_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_Payment_After_Rescind_Txn"),
@@ -3707,7 +3735,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority=307,enabled = true, groups="Janaki_NEOD")
+=======
+	@Test(priority = 307, enabled = true, groups = "Janaki_NEOD")
+>>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 	public static void JQC_LOC_Payment_OnDueDate_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_Payment_OnDueDate_Txn"),
@@ -3760,7 +3792,11 @@ public class QCStore {
 		}
 	}
 
+<<<<<<< HEAD
 	@Test(priority=308,enabled = true, groups="Janaki_NEOD")
+=======
+	@Test(priority = 308, enabled = true, groups = "Janaki_NEOD")
+>>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 
 	public static void JQC_LOC_LessThan_MinPayment_Txn() throws Exception {
 		try {
@@ -4712,14 +4748,15 @@ public class QCStore {
 
 	// Anoop scenarios
 
-	@Test(priority = 427, enabled = false, groups = { "EOD3" })
+	@Test(priority = 427, enabled = true, groups = "Anoop_EOD3")
 
 	public void PaymentDepositEODReDeposit() throws Exception {
 		FileName = "QC_PaymentDepositEODReDeposit.xls";
 		test = reports.startTest("QC_PaymentDepositEODReDeposit",
 				"LOC-->Payment less than Min Payment Amt -->Deposit -->EOD-->Return-->Redeposit");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/ALOC/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + Aprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);
@@ -4752,8 +4789,6 @@ public class QCStore {
 				AQCCSR_Deposit.deposit(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
-				AadminOpen.storeSetup(SSN, AppURL);
-				AQCAdminLoginLogout.logout(SSN, AppURL);
 				// EOD Process
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCEODDeposit.eodDeposit(SSN, AppURL);
@@ -4783,13 +4818,14 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 426, enabled = false, groups = { "EOD3" })
+	@Test(priority = 426, enabled = true, groups = "Anoop_EOD3")
 
 	public void DepositEODReDeposit() throws Exception {
 		FileName = "QC_DepositEODReDeposit.xls";
 		test = reports.startTest("QC_DepositEODReDeposit", "LOC – Deposit-->EOD-->Return-->Redeposit");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/ALOC/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + Aprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);
@@ -4815,8 +4851,6 @@ public class QCStore {
 				AQCCSR_Deposit.deposit(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
-				AadminOpen.storeSetup(SSN, AppURL);
-				AQCAdminLoginLogout.logout(SSN, AppURL);
 				// EOD Process
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCEODDeposit.eodDeposit(SSN, AppURL);
@@ -4846,14 +4880,15 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 423, enabled = false, groups = { "EOD3" })
+	@Test(priority = 423, enabled = true, groups = "Anoop_EOD3")
 
 	public void SignatureNewLoan_EODTwice() throws Exception {
 		FileName = "QC_LOC_SignatureLoan_EOD.xls";
 		test = reports.startTest("QC_LOC_SignatureLoan_EOD",
 				"New LOC for signature collateral –-> EOD on Payment Due Date- Age the store to 10 days-->EOD on 2nd Payment Due Date) ");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/ALOC/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + Aprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);
@@ -4875,8 +4910,6 @@ public class QCStore {
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
 
-				AadminOpen.storeSetup(SSN, AppURL);
-				AQCAdminLoginLogout.logout(SSN, AppURL);
 				// EOD Process
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCEODDeposit.eodDeposit(SSN, AppURL);
@@ -4896,8 +4929,6 @@ public class QCStore {
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
 
-				AadminOpen.storeSetup(SSN, AppURL);
-				AQCAdminLoginLogout.logout(SSN, AppURL);
 				// EOD Process
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCEODDeposit.eodDeposit(SSN, AppURL);
@@ -4916,14 +4947,15 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 422, enabled = false, groups = { "EOD3" })
+	@Test(priority = 422, enabled = true, groups = "Anoop_EOD3")
 
 	public void Clear_Return_EODTwice() throws Exception {
 		FileName = "QC_LOC_clearReturnEODTwice.xls";
 		test = reports.startTest("QC_LOC_clearReturnEODTwice",
 				"New LOC – EOD on Payment Due Date(including collateral Deposit) - Age the store - clear -EOD on 2nd Payment Due Date(including collateral Deposit) - Age the store - Return - EOD on 3nd Payment Due Date(including collateral Deposit) ");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/ALOC/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + Aprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);
@@ -4949,8 +4981,6 @@ public class QCStore {
 				AQCCSR_Deposit.deposit(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
-				AadminOpen.storeSetup(SSN, AppURL);
-				AQCAdminLoginLogout.logout(SSN, AppURL);
 				// EOD Process
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCEODDeposit.eodDeposit(SSN, AppURL);
@@ -4978,8 +5008,6 @@ public class QCStore {
 				AQCCSR_Deposit.deposit(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
-				AadminOpen.storeSetup(SSN, AppURL);
-				AQCAdminLoginLogout.logout(SSN, AppURL);
 				// EOD Process
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCEODDeposit.eodDeposit(SSN, AppURL);
@@ -5009,14 +5037,15 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 421, enabled = false, groups = { "EOD2" })
+	@Test(priority = 421, enabled = true, groups = "Anoop_EOD2")
 
 	public void Deposit_DrawEODTwice() throws Exception {
 		FileName = "QC_LOC_Draw_EODTwice.xls";
 		test = reports.startTest("QC_LOC_Draw_EODTwice",
 				"New LOC-->EOD on Payment Due Date(including collateral Deposit)-->Age the store-->Draw -EOD on 2nd Payment Due Date(including collate ral Deposit)");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/ALOC/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + Aprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);
@@ -5042,8 +5071,6 @@ public class QCStore {
 				AQCCSR_Deposit.deposit(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
-				AadminOpen.storeSetup(SSN, AppURL);
-				AQCAdminLoginLogout.logout(SSN, AppURL);
 				// EOD Process
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCEODDeposit.eodDeposit(SSN, AppURL);
@@ -5072,8 +5099,6 @@ public class QCStore {
 				AQCCSR_Deposit.deposit(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
-				AadminOpen.storeSetup(SSN, AppURL);
-				AQCAdminLoginLogout.logout(SSN, AppURL);
 				// EOD Process
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCEODDeposit.eodDeposit(SSN, AppURL);
@@ -5092,14 +5117,15 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 420, enabled = false, groups = { "EOD2" })
+	@Test(priority = 420, enabled = true, groups = "Anoop_EOD2")
 
 	public void DepositEODTwice() throws Exception {
 		FileName = "QC_LOC_DepositEODTwice.xls";
 		test = reports.startTest("QC_LOC_DepositEODTwice",
 				"New LOC-->EOD on Payment Due Date(including collateral Deposit)-->EOD on 2nd Payment Due Date(including collateral Deposit)");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/ALOC/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + Aprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);
@@ -5125,8 +5151,6 @@ public class QCStore {
 				AQCCSR_Deposit.deposit(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
-				AadminOpen.storeSetup(SSN, AppURL);
-				AQCAdminLoginLogout.logout(SSN, AppURL);
 				// EOD Process
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCEODDeposit.eodDeposit(SSN, AppURL);
@@ -5143,8 +5167,6 @@ public class QCStore {
 				AQCCSR_Deposit.deposit(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
-				AadminOpen.storeSetup(SSN, AppURL);
-				AQCAdminLoginLogout.logout(SSN, AppURL);
 				// EOD Process
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCEODDeposit.eodDeposit(SSN, AppURL);
@@ -5163,14 +5185,15 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 419, enabled = false, groups = { "EOD2" })
+	@Test(priority = 419, enabled = true, groups = "Anoop_EOD2")
 
 	public void PaymentdrawVoidEOD() throws Exception {
 		FileName = "QC_LOC_paymentDraw_Void_EOD.xls";
 		test = reports.startTest("QC_LOC_paymentDraw_Void_EOD",
 				"New LOC--> Payment-->Draw(LOC Increment amt)--->Void-->EOD on Payment Due Date");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/ALOC/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + Aprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);
@@ -5208,8 +5231,6 @@ public class QCStore {
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
 
-				AadminOpen.storeSetup(SSN, AppURL);
-				AQCAdminLoginLogout.logout(SSN, AppURL);
 				// EOD Process
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCEODDeposit.eodDeposit(SSN, AppURL);
@@ -5229,14 +5250,15 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 418, enabled = false, groups = { "EOD2" })
+	@Test(priority = 418, enabled = true, groups = "Anoop_EOD2")
 
 	public void PaymentAndDraw() throws Exception {
 		FileName = "QC_LOC_payment_Draw.xls";
 		test = reports.startTest("QC_LOC_payment_Draw",
 				"New LOC--> Payment-->Draw(LOC Increment amt)-->EOD on Payment Due Date");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/ALOC/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + Aprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);
@@ -5270,8 +5292,6 @@ public class QCStore {
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
 
-				AadminOpen.storeSetup(SSN, AppURL);
-				AQCAdminLoginLogout.logout(SSN, AppURL);
 				// EOD Process
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCEODDeposit.eodDeposit(SSN, AppURL);
@@ -5291,13 +5311,14 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 417, enabled = false, groups = { "EOD1" })
+	@Test(priority = 417, enabled = true, groups = "Anoop_EOD1")
 
 	public void DrawAndEOD() throws Exception {
 		FileName = "QC_LOC_Draw_EOD.xls";
 		test = reports.startTest("QC_LOC_Draw_EOD", "New LOC-->Draw(LOC Increment amt)-->EOD on Payment Due Date");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/ALOC/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + Aprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);
@@ -5326,8 +5347,6 @@ public class QCStore {
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
 
-				AadminOpen.storeSetup(SSN, AppURL);
-				AQCAdminLoginLogout.logout(SSN, AppURL);
 				// EOD Process
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCEODDeposit.eodDeposit(SSN, AppURL);
@@ -5346,13 +5365,14 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 416, enabled = false, groups = { "EOD1" })
+	@Test(priority = 416, enabled = true, groups = "Anoop_EOD1")
 
 	public void DepositAndEOD() throws Exception {
 		FileName = "QC_LOC_Deposit_EOD.xls";
 		test = reports.startTest("QC_LOC_Deposit_EOD", "New LOC -->Deposit--> EOD on Payment Due Date");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/ALOC/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + Aprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);
@@ -5378,8 +5398,6 @@ public class QCStore {
 				AQCCSR_Deposit.deposit(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
-				AadminOpen.storeSetup(SSN, AppURL);
-				AQCAdminLoginLogout.logout(SSN, AppURL);
 				// EOD Process
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCEODDeposit.eodDeposit(SSN, AppURL);
@@ -5398,13 +5416,14 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 415, enabled = false, groups = { "EOD1" })
+	@Test(priority = 415, enabled = true, groups = "Anoop_EOD1")
 
 	public void PayOFFandEod() throws Exception {
 		FileName = "QC_LOC_PayOff_EOD.xls";
 		test = reports.startTest("QC_LOC_PayOff_EOD", "New LOC -->Payoff--> EOD on Payment Due Date");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/ALOC/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + Aprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);
@@ -5433,8 +5452,6 @@ public class QCStore {
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
 
-				AadminOpen.storeSetup(SSN, AppURL);
-				AQCAdminLoginLogout.logout(SSN, AppURL);
 				// EOD Process
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCEODDeposit.eodDeposit(SSN, AppURL);
@@ -5453,13 +5470,14 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 414, enabled = false, groups = { "EOD1" })
+	@Test(priority = 414, enabled = true, groups = "Anoop_EOD1")
 
 	public void VoidandEod() throws Exception {
 		FileName = "QC_LOC_Void_EOD.xls";
 		test = reports.startTest("QC_LOC_Void_EOD", "New LOC-->Payment --> Void --> EOD on payment Due Date");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/ALOC/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + Aprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);
@@ -5493,8 +5511,6 @@ public class QCStore {
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
 
-				AadminOpen.storeSetup(SSN, AppURL);
-				AQCAdminLoginLogout.logout(SSN, AppURL);
 				// EOD Process
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCEODDeposit.eodDeposit(SSN, AppURL);
@@ -5512,14 +5528,15 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 414, enabled = false, groups = { "EOD1" })
+	@Test(priority = 414, enabled = true, groups = "Anoop_EOD1")
 
 	public void HigherPaymentAndEod() throws Exception {
 		FileName = "QC_LOC_MorePayment_EOD.xls";
 		test = reports.startTest("QC_LOC_MorePayment_EOD",
 				"New LOC-->Payment More than Min Payment Amt after Rescind Period -->EOD on Payment Due Date");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/ALOC/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + Aprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);
@@ -5549,8 +5566,6 @@ public class QCStore {
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
 
-				AadminOpen.storeSetup(SSN, AppURL);
-				AQCAdminLoginLogout.logout(SSN, AppURL);
 				// EOD Process
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCEODDeposit.eodDeposit(SSN, AppURL);
@@ -5569,14 +5584,15 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 413, enabled = false, groups = { "Anoop_EOD1" })
+	@Test(priority = 413, enabled = true, groups = "Anoop_EOD1")
 
 	public void PaymentAndEod() throws Exception {
 		FileName = "QC_LOC_Payment_EOD.xls";
 		test = reports.startTest("QC_LOC_Payment_EOD",
 				"New LOC-->Payment less than Min Payment Amt after Rescind Period -->EOD on Payment Due Date");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/ALOC/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + Aprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);
@@ -5605,8 +5621,6 @@ public class QCStore {
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
 
-				AadminOpen.storeSetup(SSN, AppURL);
-				AQCAdminLoginLogout.logout(SSN, AppURL);
 				// EOD Process
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCEODDeposit.eodDeposit(SSN, AppURL);
@@ -5625,13 +5639,14 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 412, enabled = true, groups = { "Anoop_EOD1" })
+	@Test(priority = 412, enabled = true, groups = "Anoop_EOD1")
 
 	public void EODOnDueDate() throws Exception {
 		FileName = "QC_LOC_EODDuedate.xls";
 		test = reports.startTest("QC_LOC_EODDuedate", "New LOC – EOD on Payment Due Date");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/ALOC/" + FileName);
+		TestData = new ExcelNew(
+				System.getProperty("user.dir") + Aprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);
@@ -5653,8 +5668,6 @@ public class QCStore {
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
 
-				AadminOpen.storeSetup(SSN, AppURL);
-				AQCAdminLoginLogout.logout(SSN, AppURL);
 				// EOD Process
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCEODDeposit.eodDeposit(SSN, AppURL);

@@ -173,7 +173,7 @@ public class AQCAgeStoreDueDate extends QCStore{
 												 test.log(LogStatus.PASS,"************************************************");
 
 												 Thread.sleep(5000);
-												 //driver.close();
+												 driver.close();
 							break;
 							
 						 

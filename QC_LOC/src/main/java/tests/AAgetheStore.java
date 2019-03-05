@@ -260,6 +260,7 @@ public class AAgetheStore extends QCStore{
 				test.log(LogStatus.PASS, "Clicked on Scheduler Ok Successfully");
 				test.log(LogStatus.INFO, "<FONT color=green> ****Scheduler completed******");
 				test.log(LogStatus.INFO, "<FONT color=green> Logout Successfully");
+				driver.close();
 				//Thread.sleep(1000);
 
 			}
@@ -350,6 +351,7 @@ public class AAgetheStore extends QCStore{
 				test.log(LogStatus.PASS, "Clicked on Scheduler Ok Successfully");
 				test.log(LogStatus.INFO, "<FONT color=green> ****Scheduler completed******");
 				test.log(LogStatus.INFO, "<FONT color=green> Logout Successfully");
+				driver.close();
 				//Thread.sleep(1000);
 
 			}
@@ -439,6 +441,7 @@ public class AAgetheStore extends QCStore{
 				test.log(LogStatus.PASS, "Clicked on Scheduler Ok Successfully");
 				test.log(LogStatus.INFO, "<FONT color=green> ****Scheduler completed******");
 				test.log(LogStatus.INFO, "<FONT color=green> Logout Successfully");
+				driver.close();
 				//Thread.sleep(1000);
 
 			}

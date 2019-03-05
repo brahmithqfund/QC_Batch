@@ -182,7 +182,7 @@ public class AQCSafeAssign extends QCStore{
 					//do what you normally would if you didn't have the alert.
 
 				}
-				Thread.sleep(3000);
+				Thread.sleep(6000);
 
 
 				driver.switchTo().defaultContent();

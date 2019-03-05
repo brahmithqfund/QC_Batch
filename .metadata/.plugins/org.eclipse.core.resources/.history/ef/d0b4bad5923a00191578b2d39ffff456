@@ -8,10 +8,20 @@
 #for Age Store and Void-------------------------------------->QC_AgeStore_Void_Txn
 #for Age Store and Deposit (EOD)-------------------------------------->QC_AgeStore_Deposit_Menu_Txn
 LendNation_URL=https://qcln.qfund.net:8090/
+<<<<<<< HEAD:.metadata/.plugins/org.eclipse.core.resources/.history/ef/d0b4bad5923a00191578b2d39ffff456
 CSR_URL=https://qcuat.qfund.net/cc/demoIndex.do
 ADMIN_CSR_URL=https://qcuat.qfund.net/cc/adminIndex.do
 login_page=https://qcuat.qfund.net/cc/login/index.jsp
 login_method=local
+=======
+CSR_URL=http://192.168.2.203/cc/demoIndex.do
+ADMIN_CSR_URL=http://192.168.2.203/cc/adminIndex.do
+login_page=http://192.168.2.203/cc/login/index.jsp
+#CSR_URL=https://qcuat.qfund.net/cc/demoIndex.do
+#ADMIN_CSR_URL=https://qcuat.qfund.net/cc/adminIndex.do
+#login_page=https://qcuat.qfund.net/cc/login/index.jsp
+login_method=nlocal
+>>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980:.metadata/.plugins/org.eclipse.core.resources/.history/6/30faec64a53900191d7ebe4ec154e7fb
 
 QC_Store_NewLoan_Test_data_sheet_path=/TestData/QCStore/PDL_Monthly/
 #QC_Store_NewLoan_Test_data_sheet_path=/TestData/QCStore/PDL_BiWeekly/

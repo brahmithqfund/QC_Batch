@@ -71,13 +71,11 @@ public class AQCDrawerAssign extends QCStore{
 
 
 				}
+				Thread.sleep(20000);
+				driver.findElement(By.name("done")).click();
+				test.log(LogStatus.PASS,"clicked on Ok ");
 				test.log(LogStatus.PASS,"Drawer assigned successfully");
-				Thread.sleep(3000);
-
-
-				/*driver.findElement(By.name("done")).click();
-
-				test.log(LogStatus.PASS,"clicked on Ok ");*/
+				Thread.sleep(1500);
 			}
 
 

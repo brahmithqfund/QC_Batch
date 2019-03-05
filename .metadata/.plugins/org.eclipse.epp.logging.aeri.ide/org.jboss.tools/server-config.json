@@ -1,7 +1,15 @@
 {
   "version": "v1",
   "title": "JBoss Tools",
+<<<<<<< HEAD
   "timestamp": 1551418142276,
+=======
+<<<<<<< HEAD
+  "timestamp": 1551158453019,
+=======
+  "timestamp": 1551271366388,
+>>>>>>> 142a91c5653888e6feab1178c6b3bfd7b13dd4e3
+>>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
   "ttl": 0,
   "helpUrl": "https://aer.ctrlflow.com/redhat/help",
   "feedbackUrl": "https://www.codetrails.com/error-analytics/",
@@ -63,5 +71,13 @@
     ":java.net.*:",
     ":org.eclipse.core.runtime.OperationCanceledException:"
   ],
+<<<<<<< HEAD
   "problemsZipLastDownloadTimestamp": 1551418444183
+=======
+<<<<<<< HEAD
+  "problemsZipLastDownloadTimestamp": 1551158754980
+=======
+  "problemsZipLastDownloadTimestamp": 1551271669003
+>>>>>>> 142a91c5653888e6feab1178c6b3bfd7b13dd4e3
+>>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 }

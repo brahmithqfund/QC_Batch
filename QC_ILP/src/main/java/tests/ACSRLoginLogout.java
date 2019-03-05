@@ -27,9 +27,12 @@ public class ACSRLoginLogout extends QCStore{
 				if(SSN.equals(RegSSN))
 
 				{
-					String uname=TestData.getCellData(sheetName,"UserName",row);
+					/*String uname=TestData.getCellData(sheetName,"UserName",row);
 					passwrd=TestData.getCellData(sheetName,"Password",row);
-					String Storeid=TestData.getCellData(sheetName,"StoreID",row);
+					String Storeid=TestData.getCellData(sheetName,"StoreID",row);*/
+					String uname="csr1705";
+					passwrd="1234";
+					String Storeid="1705";
 					if(Aprop.getProperty("login_method").equalsIgnoreCase("local"))
 					{
 						driver = new InternetExplorerDriver();
@@ -46,8 +49,9 @@ public class ACSRLoginLogout extends QCStore{
 					driver.manage().window().maximize();
 					driver.manage().timeouts().implicitlyWait(05, TimeUnit.SECONDS);
 				
-					driver.get(AppURL);
-					test.log(LogStatus.PASS, "Application Launched with URL :"+AppURL);
+					driver.get(Aprop.getProperty("csrURL"));
+					test.log(LogStatus.PASS, "Application Launched with URL"+Aprop.getProperty("csrURL"));
+					
 					
 					String passwordId = "loginRequestBean.password";
 					String StoreId = "loginRequestBean.locNbr";
@@ -62,6 +66,7 @@ public class ACSRLoginLogout extends QCStore{
 					//Click Login Button
 					driver.findElement(By.name(Login)).click();
 					test.log(LogStatus.PASS, "Clicked on Submit button");
+					Thread.sleep(3000);
 
 					test.log(LogStatus.INFO, "<FONT color=green> Login Sucessfully");
 					test.log(LogStatus.INFO, "******************************************************** ");
