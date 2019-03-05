@@ -179,7 +179,7 @@ public class LendNation {
 		
 		try {
 			//reader = new BufferedReader(new FileReader("D:/QC_Workspace/AA_Automation/src/Tests/Objects.properties"));
-			reader = new BufferedReader(new FileReader("D:/QC_Workspace/QC_LendNation/src/test/java/tests/Objects.properties"));
+			reader = new BufferedReader(new FileReader("C:/QC_Batch/QC_LendNation/src/test/java/tests/Objects.properties"));
 
 			prop = new Properties();
 						try {

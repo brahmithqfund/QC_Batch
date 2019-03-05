@@ -2,16 +2,18 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="QC_Store_NewLoan_Test_data_sheet_path" key="selection"/>
+		<item value="@Test" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="//@Test"/>
 			<item value="QC_Store_NewLoan_Test_data_sheet_path"/>
 			<item value="=="/>
 		</list>
 		<list key="replacehistory">
+			<item value="@Test"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

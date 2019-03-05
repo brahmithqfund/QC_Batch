@@ -4700,7 +4700,7 @@ public class QCStore {
 
 			try {
 				reader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_PDL/src/test/java/tests/Objects.properties"));
+						new FileReader("C:/QC_Batch/QC_PDL/src/test/java/tests/Objects.properties"));
 				prop = new Properties();
 				prop.load(reader);
 				reader.close();

@@ -1564,11 +1564,7 @@ public class QCStore {
 		}
 	}
 
-<<<<<<< HEAD
-	@Test(priority = 66,groups = { "EOD" })
-=======
 	@Test(priority = 66, groups = { "EOD" })
->>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 	public static void LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn() throws Exception {
 		try {
 
@@ -1937,11 +1933,7 @@ public class QCStore {
 		}
 	}
 
-<<<<<<< HEAD
-	 @Test(priority = 69, groups = { "EOD2" })
-=======
 	@Test(priority = 69, groups = { "EOD2" })
->>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 	public static void LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn() throws Exception {
 		try {
 
@@ -2267,6 +2259,8 @@ public class QCStore {
 
 		catch (Exception e) {
 			System.out.println("under catch of Test" + e);
+			String screenshotPath = getScreenhot(driver, "QC_LOC_Deposit_Return_ManualDefault_Txn");
+			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 			test.log(LogStatus.ERROR, "Unable to start scenarios ");
 
 		}
@@ -3144,7 +3138,7 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					RCSRLoginLogout.login(SSN, AppURL);
+					/*RCSRLoginLogout.login(SSN, AppURL);
 					RQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					RCSRLoginLogout.logout();
 					RCSRLoginLogout.login(SSN, AppURL);
@@ -3154,10 +3148,11 @@ public class QCStore {
 					RQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCPayOff.payoff(SSN, AppURL);
-					// RCSRLoginLogout.logout();
+					   // RCSRLoginLogout.logout();
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCAgeStoreGraceDays.ageStoreGraceDays2ndTime(SSN, AppURL);
-					// RQCAgeStoreGraceDays.age180day(SSN, AppURL);
+					   // RQCAgeStoreGraceDays.age180day(SSN, AppURL);
+*/					
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCCSRAutoClosure.autoclosure(SSN, AppURL);
 					RCSRLoginLogout.login(SSN, AppURL);
@@ -3389,11 +3384,7 @@ public class QCStore {
 
 	// Janaki's (Ratikanta) scenarios
 
-<<<<<<< HEAD
-	@Test(priority=301,enabled = true, groups="Janaki_NEOD")
-=======
 	@Test(priority = 301, enabled = true, groups = "Janaki_NEOD")
->>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 	public static void JQC_LOC_New_Loan_Void_Txn() throws Exception {
 		try {
 
@@ -3449,11 +3440,7 @@ public class QCStore {
 		}
 	}
 
-<<<<<<< HEAD
-	@Test(priority=302,enabled = true, groups="Janaki_NEOD")
-=======
 	@Test(priority = 302, enabled = true, groups = "Janaki_NEOD")
->>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 	public static void JQC_LOC_New_Loan_Rescind_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_New_Loan_Rescind_Txn"),
@@ -3504,11 +3491,7 @@ public class QCStore {
 		}
 	}
 
-<<<<<<< HEAD
-	@Test(priority=303,enabled = true, groups="Janaki_NEOD")
-=======
 	@Test(priority = 303, enabled = true, groups = "Janaki_NEOD")
->>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 	public static void JQC_LOC_New_Loan_Void_GraceDay_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_New_Loan_Void_GraceDay_Txn"),
@@ -3565,11 +3548,7 @@ public class QCStore {
 		}
 	}
 
-<<<<<<< HEAD
-	@Test(priority=304,enabled = true, groups="Janaki_NEOD")
-=======
 	@Test(priority = 304, enabled = true, groups = "Janaki_NEOD")
->>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 	public static void JQC_LOC_New_Loan_GraceDay_Rescind_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_New_Loan_GraceDay_Rescind_Txn"),
@@ -3622,11 +3601,7 @@ public class QCStore {
 		}
 	}
 
-<<<<<<< HEAD
-	@Test(priority=305,enabled = true, groups="Janaki_NEOD")
-=======
 	@Test(priority = 305, enabled = true, groups = "Janaki_NEOD")
->>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 	public static void JQC_LOC_New_Loan_After_RescindDays_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_New_Loan_After_RescindDays_Txn"),
@@ -3678,11 +3653,7 @@ public class QCStore {
 		}
 	}
 
-<<<<<<< HEAD
-	@Test(priority=306,enabled = true, groups="Janaki_NEOD")
-=======
 	@Test(priority = 306, enabled = true, groups = "Janaki_NEOD")
->>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 	public static void JQC_LOC_Payment_After_Rescind_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_Payment_After_Rescind_Txn"),
@@ -3735,11 +3706,7 @@ public class QCStore {
 		}
 	}
 
-<<<<<<< HEAD
-	@Test(priority=307,enabled = true, groups="Janaki_NEOD")
-=======
 	@Test(priority = 307, enabled = true, groups = "Janaki_NEOD")
->>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 	public static void JQC_LOC_Payment_OnDueDate_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_Payment_OnDueDate_Txn"),
@@ -3792,11 +3759,7 @@ public class QCStore {
 		}
 	}
 
-<<<<<<< HEAD
-	@Test(priority=308,enabled = true, groups="Janaki_NEOD")
-=======
 	@Test(priority = 308, enabled = true, groups = "Janaki_NEOD")
->>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 
 	public static void JQC_LOC_LessThan_MinPayment_Txn() throws Exception {
 		try {
@@ -3925,19 +3888,19 @@ public class QCStore {
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 					System.out.println(AppURL);
 
-					/*
-					 * JQCCSRLoginLogout.login(SSN, AppURL);
-					 * JQCBorrowerRegistration.borrowerRegistration(SSN,
-					 * AppURL); JQCCSRLoginLogout.logout(SSN, AppURL);
-					 * JQCCSRLoginLogout.login(SSN, AppURL);
-					 * JQCCSRNewLoan.newLoan(SSN, AppURL);
-					 * JQCCSRLoginLogout.logout(SSN, AppURL);
-					 * JQCCSRLoginLogout.login(SSN, AppURL);
-					 * JQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
-					 * JQCCSRLoginLogout.login(SSN, AppURL);
-					 * JLOCPayments.payment(SSN, AppURL);
-					 * JQCCSRLoginLogout.logout(SSN, AppURL);
-					 */
+					
+					JQCCSRLoginLogout.login(SSN, AppURL);
+					JQCBorrowerRegistration.borrowerRegistration(SSN,
+					AppURL); JQCCSRLoginLogout.logout(SSN, AppURL);
+					JQCCSRLoginLogout.login(SSN, AppURL);
+					JQCCSRNewLoan.newLoan(SSN, AppURL);
+					JQCCSRLoginLogout.logout(SSN, AppURL);
+					JQCCSRLoginLogout.login(SSN, AppURL);
+					JQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+					JQCCSRLoginLogout.login(SSN, AppURL);
+					JLOCPayments.payment(SSN, AppURL);
+					JQCCSRLoginLogout.logout(SSN, AppURL);
+					 
 
 					JQCCSRLoginLogout.login(SSN, AppURL);
 					JQCCSRHistory.history(SSN, AppURL);
@@ -6943,7 +6906,7 @@ public class QCStore {
 
 			try {
 				reader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_LOC/src/test/java/tests/Objects.properties"));
+						new FileReader("C:/QC_Batch/QC_LOC/src/test/java/tests/Objects.properties"));
 				prop = new Properties();
 				prop.load(reader);
 				reader.close();

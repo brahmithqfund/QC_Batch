@@ -94,16 +94,6 @@ public class QCStore {
 	public static String age_Date3;
 	public static String appdate;
 	public static String day;
-<<<<<<< HEAD
-	@Test(priority = 101, groups="Brahmith")
-		public static void QC_TLP_NewLoan_Txn() throws Exception {
-			try {
-				// test =
-				// extent.createTest(prop.getProperty("QC_Store_NewLoan_Void_Txn_file_name"));
-				test = reports.startTest((prop.getProperty("QC_TLP_NewLoan_Txn_scenario")),
-						"Login->Borrower Registratino->New Loan");
-=======
->>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 
 	@Test(priority = 101, groups="Brahmith")
 	public static void QC_TLP_NewLoan_Txn() throws Exception {
@@ -158,15 +148,9 @@ public class QCStore {
 		}
 	}
 
-<<<<<<< HEAD
-		@Test(priority=103,groups="Brahmith")
-		public static void QC_NewLoan_Promotion_Txn() throws Exception {
-			try {
-=======
 	@Test(priority=103,groups="Brahmith")
 	public static void QC_NewLoan_Promotion_Txn() throws Exception {
 		try {
->>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 
 			test = reports.startTest(prop.getProperty("QC_TLP_NewLoan_Promotion_Txn_scenario"),
 					"Login->Borrower Registratino->New Loan with Promotion");
@@ -215,52 +199,6 @@ public class QCStore {
 		}
 	}
 
-<<<<<<< HEAD
-		@Test(priority = 104,groups="Brahmith")
-		public static void QC_NewLoan_Void_Txn() throws Exception {
-			try {
-				// test =
-				// extent.createTest(prop.getProperty("QC_Store_NewLoan_Void_Txn_file_name"));
-				test = reports.startTest((prop.getProperty("QC_TLP_NewLoan_Void_Txn_scenario")),
-						"Login->Borrower Registratino->New Loan->Void");
-
-				FileName = prop.getProperty("QC_TLP_NewLoan_Void_Txn_file_name") + ".xls";
-
-				TestData = new ExcelNew(System.getProperty("user.dir")
-						+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
-
-				int lastrow = TestData.getLastRow("Start");
-				String sheetName = "Start";
-				// int lastrow=TestData.getLastRow("Borrower");
-				System.out.println(lastrow);
-				for (int row = 2; row <= lastrow; row++) {
-
-					String RunFlag = TestData.getCellData(sheetName, "Run", row);
-					// System.out.println(RunFlag);
-					if (RunFlag.equals("Y")) {
-
-						//String AppURL = TestData.getCellData(sheetName, "AppURL", row);
-						String SSN = TestData.getCellData(sheetName, "SSN", row);
-
-						System.out.println(AppURL);
-
-						QCCSRLoginLogout.login(SSN, AppURL);
-						QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
-						QCCSRLoginLogout.logout(SSN, AppURL);
-
-						QCCSRLoginLogout.login(SSN, AppURL);
-						QCCSRNewLoan.newLoan(SSN, AppURL);
-						QCCSRLoginLogout.logout(SSN, AppURL);
-						QCCSRLoginLogout.login(SSN, AppURL);
-						QCVoid.qcVoid(SSN, AppURL);
-						QCCSRLoginLogout.logout(SSN, AppURL);
-						 QCCSRLoginLogout.login(SSN, AppURL);
-						 QCCSRHistory.history(SSN, AppURL);
-							QCCSRLoginLogout.logout(SSN, AppURL);
-					}
-				}
-			}
-=======
 	@Test(priority = 104,groups="Brahmith")
 	public static void QC_NewLoan_Void_Txn() throws Exception {
 		try {
@@ -268,7 +206,6 @@ public class QCStore {
 			// extent.createTest(prop.getProperty("QC_Store_NewLoan_Void_Txn_file_name"));
 			test = reports.startTest((prop.getProperty("QC_TLP_NewLoan_Void_Txn_scenario")),
 					"Login->Borrower Registratino->New Loan->Void");
->>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 
 			FileName = prop.getProperty("QC_TLP_NewLoan_Void_Txn_file_name") + ".xls";
 
@@ -281,64 +218,9 @@ public class QCStore {
 			System.out.println(lastrow);
 			for (int row = 2; row <= lastrow; row++) {
 
-<<<<<<< HEAD
-		@Test(priority = 105,groups="Brahmith")
-		public static void QC_AgeStore_Void_Txn() throws Exception {
-			try {
-				// test =
-				// extent.createTest(prop.getProperty("QC_Store_AgeStore_Void_Txn_file_name"));
-				test = reports.startTest((prop.getProperty("QC_TLP_AgeStore_Void_Txn_scenario")),
-						"Login->Borrower Registratino->New Loan->AgeStore->Void");
-
-				FileName = prop.getProperty("QC_TLP_AgeStore_Void_Txn_file_name") + ".xls";
-
-				TestData = new ExcelNew(System.getProperty("user.dir")
-						+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
-
-				int lastrow = TestData.getLastRow("Start");
-				String sheetName = "Start";
-
-				System.out.println(lastrow);
-				for (int row = 2; row <= lastrow; row++) {
-
-					String RunFlag = TestData.getCellData(sheetName, "Run", row);
-					// System.out.println(RunFlag);
-					if (RunFlag.equals("Y")) {
-
-						//String AppURL = TestData.getCellData(sheetName, "AppURL", row);
-						String SSN = TestData.getCellData(sheetName, "SSN", row);
-
-						System.out.println(AppURL);
-
-						QCCSRLoginLogout.login(SSN, AppURL);
-						QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
-						QCCSRLoginLogout.logout(SSN, AppURL);
-						QCCSRLoginLogout.login(SSN, AppURL);
-						QCCSRNewLoan.newLoan(SSN, AppURL);
-						QCCSRLoginLogout.logout(SSN, AppURL);
-						QCCSRLoginLogout.login(SSN, AppURL);
-						QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
-						QCCSRLoginLogout.login(SSN, AppURL);
-						QCEncryptionDetails.readEncryptionDetails(SSN, AppURL);
-						QCCSRLoginLogout.logout(SSN, AppURL);
-						// QCCSRLoginLogout.adminLogin(driver, SSN, AppURL);
-						QCAdminEncryption.getEncryption(driver, SSN, AppURL);
-						// QCCSRLoginLogout.adminLogout(driver,SSN, AppURL);
-						QCCSRLoginLogout.login(SSN, AppURL);
-						QCAgeStoreVoid.ageStoreVoid(SSN, AppURL);
-
-						QCCSRLoginLogout.logout(SSN, AppURL);
-						 QCCSRLoginLogout.login(SSN, AppURL);
-						 QCCSRHistory.history(SSN, AppURL);
-							QCCSRLoginLogout.logout(SSN, AppURL);
-					}
-				}
-			}
-=======
 				String RunFlag = TestData.getCellData(sheetName, "Run", row);
 				// System.out.println(RunFlag);
 				if (RunFlag.equals("Y")) {
->>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 
 					// String AppURL = TestData.getCellData(sheetName, "AppURL",
 					// row);
@@ -363,15 +245,7 @@ public class QCStore {
 			}
 		}
 
-<<<<<<< HEAD
-		@Test(priority = 116,groups="Brahmith")
-		public static void QC_TLP_Buyback_Txn() throws Exception {
-			try {
-				test = reports.startTest((prop.getProperty("QC_TLP_Buyback_Txn_scenario")),
-						"Login->Borrower Registratino->New Loan->AgeStore->Pay Off the balance");
-=======
 		catch (Exception e) {
->>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
@@ -443,80 +317,19 @@ public class QCStore {
 		}
 	}
 
-<<<<<<< HEAD
-		@Test(priority = 117,groups="Brahmith")
-		public static void QC_TLP_Buyback_Void_Txn() throws Exception {
-			try {
-				test = reports.startTest((prop.getProperty("QC_TLP_Buyback_Void_Txn_scenario")),
-						"Login->Borrower Registratino->New Loan->AgeStore->Payment Pay Off the balance-> Void");
-
-				// test =
-				// extent.createTest(prop.getProperty("QC_Store_AgeStore_Deposit_Menu_Txn_file_name"));
-
-				FileName = prop.getProperty("QC_TLP_Buyback_Void_Txn_file_name") + ".xls";
-
-				TestData = new ExcelNew(System.getProperty("user.dir")
-						+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
-
-				int lastrow = TestData.getLastRow("Start");
-				String sheetName = "Start";
-
-				System.out.println(lastrow);
-				for (int row = 2; row <= lastrow; row++) {
-
-					String RunFlag = TestData.getCellData(sheetName, "Run", row);
-					// System.out.println(RunFlag);
-					if (RunFlag.equals("Y")) {
-
-						// AppURL = TestData.getCellData(sheetName, "AppURL", row);
-						String SSN = TestData.getCellData(sheetName, "SSN", row);
-
-						System.out.println(AppURL);
-
-						QCCSRLoginLogout.login(SSN, AppURL);
-						QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
-						QCCSRLoginLogout.logout(SSN, AppURL);
-						QCCSRLoginLogout.login(SSN, AppURL);
-						QCCSRNewLoan.newLoan(SSN, AppURL);
-						QCCSRLoginLogout.logout(SSN, AppURL);
-						QCCSRLoginLogout.login(SSN, AppURL);
-						QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
-						QCCSRLoginLogout.login(SSN, AppURL);
-
-						QCPayment.payment(SSN, AppURL);
-						QCCSRLoginLogout.logout(SSN, AppURL);
-						QCCSRLoginLogout.login(SSN, AppURL);
-						QCVoid.qcVoid(SSN, AppURL);
-						QCCSRLoginLogout.logout(SSN, AppURL);
-						 QCCSRLoginLogout.login(SSN, AppURL);
-						 QCCSRHistory.history(SSN, AppURL);
-							QCCSRLoginLogout.logout(SSN, AppURL);
-					}
-				}
-			}
-=======
 	@Test(priority = 116,groups="Brahmith")
 	public static void QC_TLP_Buyback_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Buyback_Txn_scenario")),
 					"Login->Borrower Registratino->New Loan->AgeStore->Pay Off the balance");
->>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 
 			// test =
 			// extent.createTest(prop.getProperty("QC_Store_AgeStore_Deposit_Menu_Txn_file_name"));
 
 			FileName = prop.getProperty("QC_TLP_Buyback_Txn_file_name") + ".xls";
 
-<<<<<<< HEAD
-		@Test(priority = 118,groups="Brahmith")
-		public static void QC_Installmentpayment_Txn() throws Exception {
-			try {
-				test = reports.startTest((prop.getProperty("QC_TLP_Installmentpayment_Txn_scenario")),
-						"Login->Borrower Registratino->New Loan->AgeStore->PartialPayment Pay Installment Amt");
-=======
 			TestData = new ExcelNew(System.getProperty("user.dir")
 					+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
->>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 
 			int lastrow = TestData.getLastRow("Start");
 			String sheetName = "Start";
@@ -612,19 +425,11 @@ public class QCStore {
 			}
 		}
 
-<<<<<<< HEAD
-		@Test(priority = 120,groups="Brahmith")
-		public static void QC_PayAnyotherAmount_Txn() throws Exception {
-			try {
-				test = reports.startTest((prop.getProperty("QC_TLP_Payanyotheramount_Txn_scenario")),
-						"Login->Borrower Registratino->New Loan->AgeStore->PartialPayment Payanyotheramount");
-=======
 		catch (Exception e) {
 			System.out.println("QC_Installmentpayment_Void_Txn");
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
 			test.log(LogStatus.ERROR, "Unable to start scenario QC_Installmentpayment_Void_Txn ");
->>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 
 		}
 	}
@@ -687,194 +492,25 @@ public class QCStore {
 		}
 	}
 
-<<<<<<< HEAD
-		@Test(priority = 121,groups="Brahmith")
-		public static void QC_PayAnyotherAmount_Void_Txn() throws Exception {
-			try {
-				test = reports.startTest((prop.getProperty("QC_TLP_Payanyotheramount_Void_Txn_scenario")),
-						"Login->Borrower Registratino->New Loan->AgeStore->PartialPayment Payanyotheramount-> Void");
-
-				// test =
-				// extent.createTest(prop.getProperty("QC_Store_AgeStore_Deposit_Menu_Txn_file_name"));
-
-				FileName = prop.getProperty("QC_TLP_Payanyotheramount_Void_Txn_file_name") + ".xls";
-
-				TestData = new ExcelNew(System.getProperty("user.dir")
-						+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
-
-				int lastrow = TestData.getLastRow("Start");
-				String sheetName = "Start";
-
-				System.out.println(lastrow);
-				for (int row = 2; row <= lastrow; row++) {
-
-					String RunFlag = TestData.getCellData(sheetName, "Run", row);
-					// System.out.println(RunFlag);
-					if (RunFlag.equals("Y")) {
-
-						// AppURL = TestData.getCellData(sheetName, "AppURL", row);
-						String SSN = TestData.getCellData(sheetName, "SSN", row);
-
-						System.out.println(AppURL);
-
-						QCCSRLoginLogout.login(SSN, AppURL);
-						QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
-						QCCSRLoginLogout.logout(SSN, AppURL);
-						QCCSRLoginLogout.login(SSN, AppURL);
-						QCCSRNewLoan.newLoan(SSN, AppURL);
-						QCCSRLoginLogout.logout(SSN, AppURL);
-						QCCSRLoginLogout.login(SSN, AppURL);
-						QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
-						QCCSRLoginLogout.login(SSN, AppURL);
-
-						QCPayment.payment(SSN, AppURL);
-						QCCSRLoginLogout.logout(SSN, AppURL);
-						QCCSRLoginLogout.login(SSN, AppURL);
-						QCVoid.qcVoid(SSN, AppURL);
-						QCCSRLoginLogout.logout(SSN, AppURL);
-						 QCCSRLoginLogout.login(SSN, AppURL);
-						 QCCSRHistory.history(SSN, AppURL);
-							QCCSRLoginLogout.logout(SSN, AppURL);
-					}
-				}
-			}
-=======
 	@Test(priority = 119, groups = "Brahmith")
 	public static void QC_Installmentpayment_Void_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Installmentpayment_Void_Txn_scenario")),
 					"Login->Borrower Registratino->New Loan->AgeStore->PartialPayment Pay Installment Amt->Void");
->>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 
 			// test =
 			// extent.createTest(prop.getProperty("QC_Store_AgeStore_Deposit_Menu_Txn_file_name"));
 
 			FileName = prop.getProperty("QC_TLP_Installmentpayment_Void_Txn_file_name") + ".xls";
 
-<<<<<<< HEAD
-		
-		@Test(priority = 131,groups="Brahmith")
-		public static void QC_TLP_Writeoff_Recovery_Txn() throws Exception {
-			try {
-				test = reports.startTest((prop.getProperty("QC_TLP_Writeoff_Recovery_Txn_scenario")),
-						"Login->Borrower Registratino->New Loan->AgeStor Duedate->Write Off->Age Store to Gracedays->WriteOff Recovery");
-
-				// test =
-				// extent.createTest(prop.getProperty("QC_Store_AgeStore_Deposit_Menu_Txn_file_name"));
-
-				FileName = prop.getProperty("QC_TLP_Writeoff_Recovery_Txn_file_name") + ".xls";
-
-				TestData = new ExcelNew(System.getProperty("user.dir")
-						+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
-
-				int lastrow = TestData.getLastRow("Start");
-				String sheetName = "Start";
-
-				System.out.println(lastrow);
-				for (int row = 2; row <= lastrow; row++) {
-
-					String RunFlag = TestData.getCellData(sheetName, "Run", row);
-					// System.out.println(RunFlag);
-					if (RunFlag.equals("Y")) {
-
-						// AppURL = TestData.getCellData(sheetName, "AppURL", row);
-						String SSN = TestData.getCellData(sheetName, "SSN", row);
-
-						System.out.println(AppURL);
-
-						QCCSRLoginLogout.login(SSN, AppURL);
-						QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
-						QCCSRLoginLogout.logout(SSN, AppURL);
-						QCCSRLoginLogout.login(SSN, AppURL);
-						QCCSRNewLoan.newLoan(SSN, AppURL);
-						QCCSRLoginLogout.logout(SSN, AppURL);
-						QCCSRLoginLogout.login(SSN, AppURL);
-						QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
-						QCCSRLoginLogout.login(SSN, AppURL);
-
-						QCCSRWriteOff.writeoff(SSN, SSN);
-						
-						QCCSRLoginLogout.login(SSN, AppURL);
-						QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
-						QCCSRLoginLogout.login(SSN, AppURL);
-						QCCSRWriteOffRecovery.writeoffrecovery(SSN, SSN);
-						QCCSRLoginLogout.logout(SSN, AppURL);
-						 QCCSRLoginLogout.login(SSN, AppURL);
-						 QCCSRHistory.history(SSN, AppURL);
-							QCCSRLoginLogout.logout(SSN, AppURL);
-					}
-				}
-			}
-=======
 			TestData = new ExcelNew(System.getProperty("user.dir")
 					+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
->>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 
 			int lastrow = TestData.getLastRow("Start");
 			String sheetName = "Start";
 
-<<<<<<< HEAD
-			}
-		}
-		@Test(priority = 132,groups="Brahmith")
-		public static void QC_TLP_Writeoff_Recovery_Void_Txn() throws Exception {
-			try {
-				test = reports.startTest((prop.getProperty("QC_TLP_Writeoff_Recovery_Void_Txn_scenario")),
-						"Login->Borrower Registratino->New Loan->AgeStor Duedate->Write Off->Age Store to Gracedays->WriteOff Recovery->Void");
-
-				// test =
-				// extent.createTest(prop.getProperty("QC_Store_AgeStore_Deposit_Menu_Txn_file_name"));
-
-				FileName = prop.getProperty("QC_TLP_Writeoff_Recovery_Void_Txn_file_name") + ".xls";
-
-				TestData = new ExcelNew(System.getProperty("user.dir")
-						+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
-
-				int lastrow = TestData.getLastRow("Start");
-				String sheetName = "Start";
-
-				System.out.println(lastrow);
-				for (int row = 2; row <= lastrow; row++) {
-
-					String RunFlag = TestData.getCellData(sheetName, "Run", row);
-					// System.out.println(RunFlag);
-					if (RunFlag.equals("Y")) {
-
-						// AppURL = TestData.getCellData(sheetName, "AppURL", row);
-						String SSN = TestData.getCellData(sheetName, "SSN", row);
-
-						System.out.println(AppURL);
-
-						QCCSRLoginLogout.login(SSN, AppURL);
-						QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
-						QCCSRLoginLogout.logout(SSN, AppURL);
-						QCCSRLoginLogout.login(SSN, AppURL);
-						QCCSRNewLoan.newLoan(SSN, AppURL);
-						QCCSRLoginLogout.logout(SSN, AppURL);
-						QCCSRLoginLogout.login(SSN, AppURL);
-						QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);																																							
-						QCCSRLoginLogout.login(SSN, AppURL);
-
-						QCCSRWriteOff.writeoff(SSN, SSN);
-						
-						QCCSRLoginLogout.login(SSN, AppURL);
-						QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
-						QCCSRLoginLogout.login(SSN, AppURL);
-						QCCSRWriteOffRecovery.writeoffrecovery(SSN, SSN);
-						QCCSRLoginLogout.logout(SSN, AppURL);
-						QCCSRLoginLogout.login(SSN, AppURL);
-						QCVoid.qcVoid(SSN, AppURL);
-						QCCSRLoginLogout.logout(SSN, AppURL);
-						 QCCSRLoginLogout.login(SSN, AppURL);
-						 QCCSRHistory.history(SSN, AppURL);
-							QCCSRLoginLogout.logout(SSN, AppURL);
-					}
-				}
-			}
-=======
 			System.out.println(lastrow);
 			for (int row = 2; row <= lastrow; row++) {
->>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 
 				String RunFlag = TestData.getCellData(sheetName, "Run", row);
 				// System.out.println(RunFlag);
@@ -2374,7 +2010,7 @@ public class QCStore {
 			BufferedReader Areader;
 			try {
 				reader = new BufferedReader(
-						new FileReader("E:/QC_Batch/QC_TLP/src/test/java/tests/Objects.properties"));
+						new FileReader("C:/QC_Batch/QC_TLP/src/test/java/tests/Objects.properties"));
 				prop = new Properties();
 				prop.load(reader);
 				reader.close();
@@ -2386,11 +2022,7 @@ public class QCStore {
 						System.getProperty("user.dir") + prop.getProperty("QC_Store_extent_report_path") + filename,
 						true);
 
-<<<<<<< HEAD
-				//Runtime.getRuntime().exec("taskkill /F /IM IEDriverServer.exe");
-=======
 			}
->>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 
 			catch (Exception e) {
 
