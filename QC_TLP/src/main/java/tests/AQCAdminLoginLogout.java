@@ -56,7 +56,7 @@ public class AQCAdminLoginLogout extends QCStore {
 
 					driver.findElement(By.name("login")).click();
 					test.log(LogStatus.PASS, "Clicked on login button");  
-					Thread.sleep(3000);
+					Thread.sleep(4000);
 					
 					break;
 				}

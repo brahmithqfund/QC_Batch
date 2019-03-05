@@ -1,31 +1,10 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-#Mon Mar 04 15:18:34 IST 2019
+#Tue Mar 05 18:35:41 IST 2019
 l=true|false|N/A
 ct=central
-d=1551692914588
-c=6
-=======
-#Mon Mar 04 14:04:17 IST 2019
-l=true|false|N/A
-ct=central
-d=1551688457409
-c=4
->>>>>>> 52141e78668e0a1d7be317a02730c4658cd4f55e
+d=1551791141602
+c=0
 cmp=usage
 a=showOnStartup
 cl=N/A
 v=2.1.1.Final-v20160408-2358-B112
 s=0
-=======
-#Mon Mar 04 12:01:23 IST 2019
-l=true|false|N/A
-ct=central
-d=1551681083971
-c=3
-cmp=usage
-a=showOnStartup
-cl=N/A
-v=2.1.1.Final-v20160408-2358-B112
-s=0
->>>>>>> janaki1.1

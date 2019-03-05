@@ -1,31 +1,10 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-#Mon Mar 04 15:18:35 IST 2019
+#Tue Mar 05 18:35:41 IST 2019
 l=Installed plugins\: AS-RUNTIME
 ct=jbt
-d=1551692915032
-c=6
-=======
-#Mon Mar 04 14:04:17 IST 2019
-l=Installed plugins\: AS-RUNTIME
-ct=jbt
-d=1551688457625
-c=4
->>>>>>> 52141e78668e0a1d7be317a02730c4658cd4f55e
+d=1551791141605
+c=0
 cmp=usage
 a=installed
 cl=AS-RUNTIME
 v=2.1.1
 s=0
-=======
-#Mon Mar 04 12:01:24 IST 2019
-l=Installed plugins\: AS-RUNTIME
-ct=jbt
-d=1551681084202
-c=3
-cmp=usage
-a=installed
-cl=AS-RUNTIME
-v=2.1.1
-s=0
->>>>>>> janaki1.1

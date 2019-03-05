@@ -13,9 +13,13 @@
    <!-- <include name="Janaki_EOD_set1"/> -->
    
  	<!-- Anoop group-->
-  <!--  <include name="Anoop"/> -->
+ <!--   <include name="Anoop"/> -->
+   <include name="Anoop_bankruptcy"/>
+  <!--  <include name="Anoop_writeoff"/>
+   <include name="Anoop_st_void"/>
+   <include name="Anoop_st_down"/> -->
 
-  </run>
+  </run> 
   </groups>
     <classes>
       <class name="tests.QCStore"/>
