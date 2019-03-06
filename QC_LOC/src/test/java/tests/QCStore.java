@@ -3148,11 +3148,12 @@ public class QCStore {
 					RQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCPayOff.payoff(SSN, AppURL);
+
 					      // RCSRLoginLogout.logout();
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCAgeStoreGraceDays.ageStoreGraceDays2ndTime(SSN, AppURL);
 					      // RQCAgeStoreGraceDays.age180day(SSN, AppURL);
-					
+			
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCCSRAutoClosure.autoclosure(SSN, AppURL);
 					RCSRLoginLogout.login(SSN, AppURL);

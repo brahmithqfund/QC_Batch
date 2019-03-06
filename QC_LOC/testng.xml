@@ -32,28 +32,12 @@
  
   <!--  Shashi scenarios  -->
   <!-- <include name="NonEOD"/>--> 
+  <!--  <include name="Shashi"/> -->
+  <!-- <include name="EOD"/>  -->
 
-
- <!-- <include name="EOD"/>  -->
  
- 
-    
-  
-   <!-- <include name="EOD"/>  -->
-   
-
-   <!--<include name="Janaki_EOD"/>  --> 
-
- <!--<include name="EOD"/> -->
-
-   <!-- <include name="EOD2"/>-->
- <!-- <include name="1st Batch"/>-->
-   <!-- <include name="NonEOD"/> -->
-
- <!--  <include name="Shashi"/> -->
- 
-
   <!--  Jyothi scenarios -->
+
 
   </run>
   </groups>

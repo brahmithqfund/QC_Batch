@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <groups>
+  <run>
+<<<<<<< HEAD
+   <!--  Brahmith scenarios   -->  
+    <!-- <include name="EOD"/>-->
+  <!--    <include name="Rebate"/> --> 
+  <include name="1stBatch"/> 
+ 
+  <!--  Janaki scenarios  -->
+ <!-- <include name="Janaki"/>  -->
+  <!--  <include name="Janaki1"/>  --> 
+
+  <!--  Anoop scenarios -->
+   <!--  <include name="Anoop"/> -->
+</run>
+=======
+    <!-- Janaki's group--> 
+       <!-- <include name="Janaki"/> --> 
+<!--    <include name="Janaki1"/>  -->
+   
+       <!-- Brahmith group--> 
+   <!-- <include name="EOD"/>-->
+     <!--  <include name="Rebate"/>   -->
+<!--  <include name="1stBatch"/> -->   
+
+       <!-- Anoop group--> 
+ <include name="Anoop"/> 
+  </run>
+>>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
+  </groups>
+    <classes>
+<class name="tests.QCStore"/>
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

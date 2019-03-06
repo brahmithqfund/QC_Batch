@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
-   <groups>
+   <groups>																																																	
   <run>
 
   <!-- Janaki's group--> 
@@ -11,19 +11,16 @@
    <!-- <include name="Janaki_EOD_set2"/> --> 
   
    <!-- Brahmith group--> 
-   <!-- <include name="Brahmith"/>  -->
-
+   <include name="Brahmith"/>  
 
    <!-- Anoop group-->  
-    <!-- <include name="Anoop"/> -->  
 
+    <!-- <include name="Anoop"/>  -->
 
-
-  <!-- Ratikanta group--> 
+  <!-- Ratikanta group-->  
   <include name="Ratikanta_ILP"/>
-  
-  
- 
+
+
   </run>
   </groups>
    <classes>

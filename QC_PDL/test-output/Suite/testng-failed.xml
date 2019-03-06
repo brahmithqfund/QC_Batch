@@ -4,15 +4,25 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="Janaki1"/>
+<<<<<<< HEAD
+        <include name="Rebate"/>
+=======
+        <include name="Anoop"/>
+>>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
-          <include name="JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata"/>
+<<<<<<< HEAD
           <include name="getResult"/>
           <include name="setup"/>
+          <include name="QC_Refinance_StepDownVoidURP_Txn"/>
+=======
+          <include name="AQC_EPP_Redeposit"/>
+          <include name="getResult"/>
+          <include name="setup"/>
+>>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->

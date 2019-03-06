@@ -1010,7 +1010,7 @@ public class QCStore {
 					// row);
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					/*QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
@@ -1057,7 +1057,7 @@ public class QCStore {
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCNSFPayment.nsfpayment(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);*/
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
@@ -1628,7 +1628,7 @@ public class QCStore {
 
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCEODDeposit.eodDeposit(SSN, AppURL);
-					// QCCSRLoginLogout.logout(SSN, AppURL);
+					
 					QCAdminStoreSetup.storeSetup(SSN, AppURL);
 					QCCSRLoginLogout.adminLogout(driver, SSN, AppURL);
 
@@ -1727,7 +1727,7 @@ public class QCStore {
 
 	// Anoop scenarios
 	
-	@Test(priority = 22, enabled=true, groups = "Anoop")
+	@Test(priority = 22, enabled=true, groups ="Anoop")
 
 	public void AQC_EPP_Redeposit() throws Exception {
 
@@ -4700,7 +4700,7 @@ public class QCStore {
 
 			try {
 				reader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_PDL/src/test/java/tests/Objects.properties"));
+						new FileReader("C:/QC_Batch/QC_PDL/src/test/java/tests/Objects.properties"));
 				prop = new Properties();
 				prop.load(reader);
 				reader.close();
@@ -4759,7 +4759,7 @@ public class QCStore {
 
 			try {
 				Areader = new BufferedReader(
-						new FileReader("E:/QC_Batch/QC_PDL/src/test/java/tests/AObjects.properties"));
+						new FileReader("D:/QC_Batch/QC_PDL/src/test/java/tests/AObjects.properties"));
 				Aprop = new Properties();
 				Aprop.load(Areader);
 				Areader.close();
@@ -4810,7 +4810,7 @@ public class QCStore {
 
 		File source = ((TakesScreenshot) (driver)).getScreenshotAs(OutputType.FILE);
 
-		String destination = System.getProperty("user.dir") + "/ExecutionReports/QCStore/PDL/FailedTestsScreenshots/"
+		String destination = System.getProperty("user.dir") + "/ExecutionReports/QCStore/FailedTestsScreenshots/"
 				+ screenshotName + dateName + ".png";
 		File finalDestination = new File(destination);
 		FileUtils.copyFile(source, finalDestination);

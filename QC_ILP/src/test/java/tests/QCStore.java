@@ -3126,7 +3126,7 @@ public class QCStore {
 
 			try {
 				Areader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_ILP/src/test/java/tests/AObjects.properties"));
+						new FileReader("C:/QC_Batch/QC_ILP/src/test/java/tests/AObjects.properties"));
 				Aprop = new Properties();
 				Aprop.load(Areader);
 				Areader.close();

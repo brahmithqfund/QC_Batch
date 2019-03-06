@@ -25,19 +25,19 @@ public class AAutoclearCheck extends QCStore{
 					        String SSN1 = SSN.substring(0, 3);
 					        String SSN2 = SSN.substring(3,5);
 					        String SSN3 = SSN.substring(5,9);
-			       Thread.sleep(1000);
+			       Thread.sleep(3000);
 					//test.log(LogStatus.INFO, MarkupHelper.createLabel("Age Store process is initiated", ExtentColor.BLUE));
 					test.log(LogStatus.INFO, "Auto clear checking ");
 
 					driver.switchTo().defaultContent();	
 					
-			        wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("topFrame")));
+			        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("topFrame")));
 					driver.switchTo().frame("topFrame");
-					wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("li[id='910000']")));
+					//wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("li[id='910000']")));
 			        driver.findElement(By.cssSelector("li[id='910000']")).click();	
 						
 					test.log(LogStatus.PASS, "Clicked on Loan Transactions");
-					Thread.sleep(1000);
+					Thread.sleep(2000);
 					try{
 					driver.switchTo().defaultContent();
 					driver.switchTo().frame("mainFrame");

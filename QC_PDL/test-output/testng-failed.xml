@@ -1,21 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="Janaki1"/>
+        <include name="Rebate"/>
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
-          <include name="JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata"/>
           <include name="getResult"/>
           <include name="setup"/>
+          <include name="QC_Refinance_StepDownVoidURP_Txn"/>
+=======
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="tests.QCStore">
+        <methods>
+          <include name="AQC_EPP_Redeposit"/>
+          <include name="getResult"/>
+          <include name="setup"/>
+>>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

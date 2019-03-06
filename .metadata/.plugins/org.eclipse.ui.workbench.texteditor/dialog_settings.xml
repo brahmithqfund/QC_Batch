@@ -2,12 +2,21 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
+<<<<<<< HEAD
 		<item value="RATIKANTA" key="selection"/>
+=======
+<<<<<<< HEAD
+		<item value="@Test" key="selection"/>
+=======
+		<item value="QC_TLP_ProcessAutoClear" key="selection"/>
+>>>>>>> janaki1.1
+>>>>>>> cfd4415cf923aceeec44a0b1fca621dca6ccc529
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+<<<<<<< HEAD
 			<item value="Ratikanta"/>
 			<item value="//@Test"/>
 			<item value="janaki"/>
@@ -16,17 +25,42 @@
 			<item value="Janaki"/>
 			<item value="Anoop"/>
 			<item value="csrloginpage"/>
+=======
+<<<<<<< HEAD
+			<item value="//@Test"/>
+			<item value="QC_Store_NewLoan_Test_data_sheet_path"/>
+			<item value="=="/>
+>>>>>>> cfd4415cf923aceeec44a0b1fca621dca6ccc529
 		</list>
 		<list key="replacehistory">
 			<item value="@Test"/>
-			<item value="//@Test"/>
+=======
+			<item value="QC_TLP_ProcessAutoClear"/>
+			<item value="admin_ACH_transaction"/>
+			<item value="QC_TLP_ProcessClearMenu"/>
+			<item value="QC_TLP_ProcessClear"/>
+			<item value="ACH Processing through from Admin has initiated"/>
+			<item value="QC_Store_extent_report_path"/>
+		</list>
+		<list key="replacehistory">
+>>>>>>> janaki1.1
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
+<<<<<<< HEAD
 		<item value="16" key="DIALOG_X_ORIGIN"/>
 		<item value="405" key="DIALOG_Y_ORIGIN"/>
+=======
+<<<<<<< HEAD
+		<item value="588" key="DIALOG_X_ORIGIN"/>
+		<item value="323" key="DIALOG_Y_ORIGIN"/>
+=======
+		<item value="563" key="DIALOG_X_ORIGIN"/>
+		<item value="119" key="DIALOG_Y_ORIGIN"/>
+>>>>>>> janaki1.1
+>>>>>>> cfd4415cf923aceeec44a0b1fca621dca6ccc529
 	</section>
 </section>
