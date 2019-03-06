@@ -2259,6 +2259,8 @@ public class QCStore {
 
 		catch (Exception e) {
 			System.out.println("under catch of Test" + e);
+			String screenshotPath = getScreenhot(driver, "QC_LOC_Deposit_Return_ManualDefault_Txn");
+			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 			test.log(LogStatus.ERROR, "Unable to start scenarios ");
 
 		}
@@ -2576,7 +2578,7 @@ public class QCStore {
 					RQCCSRDefaultPayment.sdefaultpayment(SSN, AppURL);
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCCSRDefault_Void.defaultvoid(SSN, AppURL);
-					// RCSRLoginLogout.logout();
+					    // RCSRLoginLogout.logout();
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCCSRHistory.history(SSN, AppURL);
 					RCSRLoginLogout.logout();
@@ -2877,7 +2879,7 @@ public class QCStore {
 					RQCCSRDefaultPayment.sdefaultpayment(SSN, AppURL);
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCCSRDefault_Void.defaultvoid(SSN, AppURL);
-					// RCSRLoginLogout.logout();
+					    // RCSRLoginLogout.logout();
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCCSRHistory.history(SSN, AppURL);
 					RCSRLoginLogout.logout();
@@ -2939,7 +2941,7 @@ public class QCStore {
 					RQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCPayOff.payoff(SSN, AppURL);
-					// RCSRLoginLogout.logout();
+					    // RCSRLoginLogout.logout();
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCCSR_LOCClosure.locclosure(SSN, AppURL);
 					RCSRLoginLogout.logout();
@@ -3007,13 +3009,13 @@ public class QCStore {
 					RCSRLoginLogout.logout();
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCPayOff.payoff(SSN, AppURL);
-					// RCSRLoginLogout.logout();
+					         // RCSRLoginLogout.logout();
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCCSR_LOCClosure.locclosure(SSN, AppURL);
 					RCSRLoginLogout.logout();
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCCSR_LOC_VoidClosure.locvoidclosure(SSN, AppURL);
-					// RCSRLoginLogout.logout();
+					        // RCSRLoginLogout.logout();
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCCSRHistory.history(SSN, AppURL);
 					RCSRLoginLogout.logout();
@@ -3075,7 +3077,7 @@ public class QCStore {
 					RQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCCSR_CashierCheck_Payoff.cashiercheckpayoff(SSN, AppURL);
-					// RCSRLoginLogout.logout();
+					       // RCSRLoginLogout.logout();
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCCSR_LOCClosure.locclosure(SSN, AppURL);
 					RCSRLoginLogout.logout();
@@ -3146,10 +3148,11 @@ public class QCStore {
 					RQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCPayOff.payoff(SSN, AppURL);
-					// RCSRLoginLogout.logout();
+					      // RCSRLoginLogout.logout();
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCAgeStoreGraceDays.ageStoreGraceDays2ndTime(SSN, AppURL);
-					// RQCAgeStoreGraceDays.age180day(SSN, AppURL);
+					      // RQCAgeStoreGraceDays.age180day(SSN, AppURL);
+					
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCCSRAutoClosure.autoclosure(SSN, AppURL);
 					RCSRLoginLogout.login(SSN, AppURL);
@@ -3885,19 +3888,19 @@ public class QCStore {
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 					System.out.println(AppURL);
 
-					/*
-					 * JQCCSRLoginLogout.login(SSN, AppURL);
-					 * JQCBorrowerRegistration.borrowerRegistration(SSN,
-					 * AppURL); JQCCSRLoginLogout.logout(SSN, AppURL);
-					 * JQCCSRLoginLogout.login(SSN, AppURL);
-					 * JQCCSRNewLoan.newLoan(SSN, AppURL);
-					 * JQCCSRLoginLogout.logout(SSN, AppURL);
-					 * JQCCSRLoginLogout.login(SSN, AppURL);
-					 * JQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
-					 * JQCCSRLoginLogout.login(SSN, AppURL);
-					 * JLOCPayments.payment(SSN, AppURL);
-					 * JQCCSRLoginLogout.logout(SSN, AppURL);
-					 */
+					
+					JQCCSRLoginLogout.login(SSN, AppURL);
+					JQCBorrowerRegistration.borrowerRegistration(SSN,
+					AppURL); JQCCSRLoginLogout.logout(SSN, AppURL);
+					JQCCSRLoginLogout.login(SSN, AppURL);
+					JQCCSRNewLoan.newLoan(SSN, AppURL);
+					JQCCSRLoginLogout.logout(SSN, AppURL);
+					JQCCSRLoginLogout.login(SSN, AppURL);
+					JQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+					JQCCSRLoginLogout.login(SSN, AppURL);
+					JLOCPayments.payment(SSN, AppURL);
+					JQCCSRLoginLogout.logout(SSN, AppURL);
+					 
 
 					JQCCSRLoginLogout.login(SSN, AppURL);
 					JQCCSRHistory.history(SSN, AppURL);
@@ -4065,9 +4068,9 @@ public class QCStore {
 					JQCCSRLoginLogout.login(SSN, AppURL);
 					JQCEncryptionDetails.readEncryptionDetails(SSN, AppURL);
 					JQCCSRLoginLogout.logout(SSN, AppURL);
-					// JQCAdminLoginLogout.login(SSN, AppURL);
+					      // JQCAdminLoginLogout.login(SSN, AppURL);
 					JQCAdminEncryption.getEncryption(driver, SSN, AppURL);
-					// JQCAdminLoginLogout.logout(SSN, AppURL);
+					      // JQCAdminLoginLogout.logout(SSN, AppURL);
 					JQCCSRLoginLogout.login(SSN, AppURL);
 					JQCAgeStoreVoid.ageStoreVoid(SSN, AppURL);
 					JQCCSRLoginLogout.logout(SSN, AppURL);
