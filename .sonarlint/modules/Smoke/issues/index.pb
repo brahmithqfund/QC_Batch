@@ -121,3 +121,5 @@ c
 3Testdata/TLP_EditBorrowerRegistration_Save_Loan.xls,7\5\7549cebf945afe9b7221e6ba0c38b3b88edb65db
 @
 chromedriver.exe,d\0\d0b49ae29587435df3e9988b34c286a37d9a89d9
+W
+'src/test/java/QCHome/Objects.properties,8\4\848de25ce3b410d117be08fecaeaaf4b0581261b
