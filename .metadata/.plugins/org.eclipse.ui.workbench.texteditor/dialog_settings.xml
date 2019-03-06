@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="Clicked on loan button" key="selection"/>
+		<item value="// Anoop" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="// anoop"/>
 			<item value="Clicked on loan button"/>
+			<item value="&#x09;Clicked on loan button"/>
 			<item value="QC_LOC_Payment_EOD"/>
 			<item value="// Anoop"/>
 			<item value="wait.until"/>
 			<item value="storeSetup"/>
 			<item value="QC_LOC_EODDuedate"/>
-			<item value="EODDeposit Completed successfully"/>
-			<item value="Anoop_EOD1"/>
 		</list>
 		<list key="replacehistory">
 		</list>
