@@ -1,6 +1,7 @@
 
 M
 src/test/java/QCHome/CSR.java,a\3\a3930d0189460d06ffe3f297bdd951b204bda6c0
+<<<<<<< HEAD
 €
 PExecutionReports/QC_CSR/Smoke/QC_Smoke_Execution_Report_02.12.2019.12.36.44.html,d\d\dd8878f13bf4bf7f651e89a6e040882fe3119092
 U
@@ -123,3 +124,7 @@ c
 chromedriver.exe,d\0\d0b49ae29587435df3e9988b34c286a37d9a89d9
 W
 'src/test/java/QCHome/Objects.properties,8\4\848de25ce3b410d117be08fecaeaaf4b0581261b
+=======
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+>>>>>>> brahmith1.1
