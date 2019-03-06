@@ -25,10 +25,10 @@ public class AQCDrawerAssign extends QCStore{
 				String NoOfDollarsAmount = TestData.getCellData(sheetName,"NoOfDollarsAmount",row);
 
 				test.log(LogStatus.INFO, "Drawer assign process initiated" );
-				Thread.sleep(2000);
+				Thread.sleep(4000);
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("topFrame");
-				wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(text(),'Cash Management')]")));
+				//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(text(),'Cash Management')]")));
 
 				driver.findElement(By.xpath("//*[contains(text(),'Cash Management')]")).click();
 				test.log(LogStatus.PASS, "Clicked on Cash Management");

@@ -209,7 +209,7 @@ public static void LOC() throws InterruptedException
 	
 	driver.findElement(By.id("LoanButtonId")).click();
 	test.log(LogStatus.PASS, "Clicked on loan button");
-		Thread.sleep(1000);
+		Thread.sleep(4000);
 		driver.findElement(By.name("advanceRequestBean.paymentCollateralType")).sendKeys(ESign_CollateralType);
 		test.log(LogStatus.PASS, "Collateral Type is enterted as "+ESign_CollateralType);
 		if(!(ESign_LoanAmt.isEmpty()))

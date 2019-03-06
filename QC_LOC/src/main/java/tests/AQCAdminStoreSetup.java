@@ -34,7 +34,7 @@ public class AQCAdminStoreSetup extends QCStore
 				//String AdminURL = TestData.getCellData(sheetName,"AdminURL",row);
 				String StoreID = TestData.getCellData(sheetName,"StoreID",row);
 
-				if(prop.getProperty("login_method").equalsIgnoreCase("local"))
+				if(Aprop.getProperty("login_method").equalsIgnoreCase("local"))
 				{
 					driver = new InternetExplorerDriver();
 				}

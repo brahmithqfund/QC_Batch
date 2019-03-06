@@ -2299,7 +2299,7 @@ public class QCStore {
 
 	public void ILP_voidRefinance() throws Exception {
 
-		FileName = "ILP_Scenario_NO.52.xls";
+		FileName = "QC_Loan_Refinance_Void.xls";
 		test = reports.startTest("QC_Loan_Refinance_Void",
 				"Loan->Age store for 12 days->Make Payment less than interest amount->Age Store for 10 Days->Refinance->Void Refinance");
 
@@ -2337,11 +2337,11 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCVoid.qcVoid(SSN, AppURL);
+				AQCVoid.qcVoid(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCCSRHistory.history(SSN, AppURL);
+				AQCCSRHistory.history(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
 				// test.log(LogStatus.INFO, "****Test Scenario for Void
@@ -2350,7 +2350,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 11, enabled = true, groups = "Anoop")
+	//////@Test(priority = 11, enabled = true, groups = "Anoop")
 
 	public void ILP_ACHAutoClear() throws Exception {
 
@@ -2377,10 +2377,10 @@ public class QCStore {
 				ACSRNewLoanPage.newLoan(SSN, AppURL);
 				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+				AQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
 
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCDepositDropdown.depositDropDown(SSN, AppURL);
+				AQCDepositDropdown.depositDropDown(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
 				AQCAdminLoginLogout.login(SSN, AppURL);
@@ -2395,7 +2395,7 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCCSRHistory.history(SSN, AppURL);
+				AQCCSRHistory.history(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
 				// test.log(LogStatus.INFO, "****Test Scenario for ACH Auto
@@ -2431,10 +2431,10 @@ public class QCStore {
 				ACSRNewLoanPage.newLoan(SSN, AppURL);
 				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+				AQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
 
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCDepositDropdown.depositDropDown(SSN, AppURL);
+				AQCDepositDropdown.depositDropDown(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
@@ -2445,7 +2445,7 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCCSRHistory.history(SSN, AppURL);
+				AQCCSRHistory.history(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
 				// test.log(LogStatus.INFO, "****Test Scenario for Check Auto
@@ -2481,10 +2481,10 @@ public class QCStore {
 				ACSRNewLoanPage.newLoan(SSN, AppURL);
 				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+				AQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
 
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCDepositDropdown.depositDropDown(SSN, AppURL);
+				AQCDepositDropdown.depositDropDown(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
@@ -2495,7 +2495,7 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCCSRHistory.history(SSN, AppURL);
+				AQCCSRHistory.history(SSN, AppURL);
 				ACSRLoginLogout.logout();
 				// test.log(LogStatus.INFO, "****Test Scenario for Process Clear
 				// is pass******");
@@ -2503,11 +2503,11 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 0, enabled = true, groups = "Anoop")
+	@Test(priority = 0, enabled = true, groups = "Anoop_StdownVoid")
 	// This is date dependency make it 03/12/2018
 	public void ILP_RefinanceStepDown_void() throws Exception {
 
-		FileName = "QC_ILP_StepDown_Void.xls";
+		FileName = "QC_StepDown_Void.xls";
 		test = reports.startTest("QC_ILP_StepDown_Void",
 				"Login-->Age the Store_payment_Age store to Duedate_Refinance Step Down Void");
 
@@ -2536,18 +2536,18 @@ public class QCStore {
 				ILP_Payment.payment(SSN, AppURL);
 				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+				AQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
 
 				ACSRLoginLogout.login(SSN, AppURL);
 				ILP_Refinance_StepDown.StepDown(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCVoid.qcVoid(SSN, AppURL);
+				AQCVoid.qcVoid(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCCSRHistory.history(SSN, AppURL);
+				AQCCSRHistory.history(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
 				// test.log(LogStatus.INFO, "****Test Scenario for Refinance
@@ -2556,12 +2556,12 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 15, enabled = true, groups = "Anoop")
+	@Test(priority = 15, enabled = true, groups = "Anoop_stDown")
 	// This is date dependency make it 03/12/2018
 	public void ILP_RefinanceStepDown() throws Exception {
 
 		FileName = "QC_ILP_StepDown.xls";
-		test = reports.startTest("ILP_Scenario_NO.26",
+		test = reports.startTest("QC_ILP_StepDown",
 				"Login-->Age the Store_payment_Age store to Duedate_Refinance Step Down");
 
 		TestData = new ExcelNew(
@@ -2589,14 +2589,14 @@ public class QCStore {
 				ILP_Payment.payment(SSN, AppURL);
 				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+				AQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
 
 				ACSRLoginLogout.login(SSN, AppURL);
 				ILP_Refinance_StepDown.StepDown(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCCSRHistory.history(SSN, AppURL);
+				AQCCSRHistory.history(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
 				// test.log(LogStatus.INFO, "****Test Scenario for Refinance
@@ -2638,17 +2638,17 @@ public class QCStore {
 				ILP_Payment.payment(SSN, AppURL);
 				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+				AQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
 				ACSRLoginLogout.login(SSN, AppURL);
 				ILP_Refinance_StepSame.StepSame(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCVoid.qcVoid(SSN, AppURL);
+				AQCVoid.qcVoid(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCCSRHistory.history(SSN, AppURL);
+				AQCCSRHistory.history(SSN, AppURL);
 				ACSRLoginLogout.logout();
 				// test.log(LogStatus.INFO, "****Test Scenario for Refinance
 				// Step Same Void is pass******");
@@ -2689,13 +2689,13 @@ public class QCStore {
 				ILP_Payment.payment(SSN, AppURL);
 				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+				AQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
 				ACSRLoginLogout.login(SSN, AppURL);
 				ILP_Refinance_StepSame.StepSame(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCCSRHistory.history(SSN, AppURL);
+				AQCCSRHistory.history(SSN, AppURL);
 				ACSRLoginLogout.logout();
 				// test.log(LogStatus.INFO, "****Test Scenario for Refinance
 				// Step Same is pass******");
@@ -2738,18 +2738,18 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+				AQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
 
 				ACSRLoginLogout.login(SSN, AppURL);
 				ILP_RefinanceStepup.StepUp(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCVoid.qcVoid(SSN, AppURL);
+				AQCVoid.qcVoid(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCCSRHistory.history(SSN, AppURL);
+				AQCCSRHistory.history(SSN, AppURL);
 				ACSRLoginLogout.logout();
 				// test.log(LogStatus.INFO, "****Test Scenario for Refinance
 				// StepUp void is pass******");
@@ -2793,14 +2793,14 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+				AQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
 
 				ACSRLoginLogout.login(SSN, AppURL);
 				ILP_RefinanceStepup.StepUp(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCCSRHistory.history(SSN, AppURL);
+				AQCCSRHistory.history(SSN, AppURL);
 				ACSRLoginLogout.logout();
 				// test.log(LogStatus.INFO, "****Test Scenario for Refinance
 				// Stepup is pass******");
@@ -2835,7 +2835,7 @@ public class QCStore {
 				ACSRNewLoanPage.newLoan(SSN, AppURL);
 				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+				AQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
 				ACSRLoginLogout.login(SSN, AppURL);
 				ILP_DepositDropdown.depositDropDown(SSN, AppURL);
 				ACSRLoginLogout.logout();
@@ -2853,7 +2853,7 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCCSRHistory.history(SSN, AppURL);
+				AQCCSRHistory.history(SSN, AppURL);
 				ACSRLoginLogout.logout();
 				// test.log(LogStatus.INFO, "****Test Scenario for ReDeposit is
 				// pass******");
@@ -2893,7 +2893,7 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCCSRHistory.history(SSN, AppURL);
+				AQCCSRHistory.history(SSN, AppURL);
 				ACSRLoginLogout.logout();
 				// test.log(LogStatus.INFO, "****Test Scenario for age to store
 				// loan rescind is pass******");
@@ -2931,7 +2931,7 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCCSRHistory.history(SSN, AppURL);
+				AQCCSRHistory.history(SSN, AppURL);
 				ACSRLoginLogout.logout();
 				// test.log(LogStatus.INFO, "**********************Test Scenario
 				// for loan rescind is pass***********************");
@@ -2977,7 +2977,7 @@ public class QCStore {
 				// test.log(LogStatus.INFO, "****Test Scenario for max loan
 				// amount is pass******");
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCCSRHistory.history(SSN, AppURL);
+				AQCCSRHistory.history(SSN, AppURL);
 				ACSRLoginLogout.logout();
 			}
 
@@ -3008,7 +3008,7 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCCSRHistory.history(SSN, AppURL);
+				AQCCSRHistory.history(SSN, AppURL);
 				ACSRLoginLogout.logout();
 			}
 		}
@@ -3040,7 +3040,7 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
-				QCCSRHistory.history(SSN, AppURL);
+				AQCCSRHistory.history(SSN, AppURL);
 				ACSRLoginLogout.logout();
 			}
 		}

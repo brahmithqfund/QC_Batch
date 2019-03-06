@@ -10,11 +10,26 @@
     <classes>
       <class name="tests.QCStore">
         <methods>
+          <include name="ILP_Redeposit"/>
+          <include name="ILP_RefinanceStepDown"/>
+          <include name="ILP_ProcessClear"/>
+          <include name="setup"/>
+          <include name="ILP_RefinanceStepup"/>
+          <include name="ILP_voidRefinance"/>
+          <include name="ILP_maxloanCount"/>
+          <include name="endReport"/>
+          <include name="ILP_RefinanceStepSame"/>
+          <include name="killProcess"/>
+          <include name="ILP_inactiveNewloan"/>
           <include name="ILP_borrowregNewloan"/>
           <include name="getResult"/>
-          <include name="setup"/>
-          <include name="endReport"/>
-          <include name="killProcess"/>
+          <include name="ILP_RefinanceStepUpVoid"/>
+          <include name="ILP_RefinanceStepDown_void"/>
+          <include name="ILP_agerescindtest"/>
+          <include name="ILP_rescindloan"/>
+          <include name="ILP_ACHAutoClear"/>
+          <include name="ILP_CheckAutoClear"/>
+          <include name="ILP_RefinanceStepSame_Void"/>
         </methods>
       </class> <!-- tests.QCStore -->
     </classes>

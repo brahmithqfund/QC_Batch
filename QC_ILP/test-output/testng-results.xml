@@ -1,45 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="16" ignored="35" total="51" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="16182" started-at="2019-03-04T06:21:54Z" finished-at="2019-03-04T06:22:10Z">
+  <suite name="Suite" duration-ms="3396515" started-at="2019-03-04T13:21:05Z" finished-at="2019-03-04T14:17:42Z">
     <groups>
       <group name="Anoop">
-        <method signature="QCStore.ILP_borrowregNewloan()[pri:13, instance:tests.QCStore@6d7b4f4c]" name="ILP_borrowregNewloan" class="tests.QCStore"/>
+        <method signature="QCStore.ILP_ACHAutoClear()[pri:11, instance:tests.QCStore@527740a2]" name="ILP_ACHAutoClear" class="tests.QCStore"/>
+        <method signature="QCStore.ILP_CheckAutoClear()[pri:12, instance:tests.QCStore@527740a2]" name="ILP_CheckAutoClear" class="tests.QCStore"/>
+        <method signature="QCStore.ILP_ProcessClear()[pri:10, instance:tests.QCStore@527740a2]" name="ILP_ProcessClear" class="tests.QCStore"/>
+        <method signature="QCStore.ILP_Redeposit()[pri:1, instance:tests.QCStore@527740a2]" name="ILP_Redeposit" class="tests.QCStore"/>
+        <method signature="QCStore.ILP_RefinanceStepDown()[pri:15, instance:tests.QCStore@527740a2]" name="ILP_RefinanceStepDown" class="tests.QCStore"/>
+        <method signature="QCStore.ILP_RefinanceStepDown_void()[pri:0, instance:tests.QCStore@527740a2]" name="ILP_RefinanceStepDown_void" class="tests.QCStore"/>
+        <method signature="QCStore.ILP_RefinanceStepSame()[pri:7, instance:tests.QCStore@527740a2]" name="ILP_RefinanceStepSame" class="tests.QCStore"/>
+        <method signature="QCStore.ILP_RefinanceStepSame_Void()[pri:9, instance:tests.QCStore@527740a2]" name="ILP_RefinanceStepSame_Void" class="tests.QCStore"/>
+        <method signature="QCStore.ILP_RefinanceStepUpVoid()[pri:8, instance:tests.QCStore@527740a2]" name="ILP_RefinanceStepUpVoid" class="tests.QCStore"/>
+        <method signature="QCStore.ILP_RefinanceStepup()[pri:6, instance:tests.QCStore@527740a2]" name="ILP_RefinanceStepup" class="tests.QCStore"/>
+        <method signature="QCStore.ILP_agerescindtest()[pri:5, instance:tests.QCStore@527740a2]" name="ILP_agerescindtest" class="tests.QCStore"/>
+        <method signature="QCStore.ILP_borrowregNewloan()[pri:13, instance:tests.QCStore@527740a2]" name="ILP_borrowregNewloan" class="tests.QCStore"/>
+        <method signature="QCStore.ILP_inactiveNewloan()[pri:2, instance:tests.QCStore@527740a2]" name="ILP_inactiveNewloan" class="tests.QCStore"/>
+        <method signature="QCStore.ILP_maxloanCount()[pri:3, instance:tests.QCStore@527740a2]" name="ILP_maxloanCount" class="tests.QCStore"/>
+        <method signature="QCStore.ILP_rescindloan()[pri:4, instance:tests.QCStore@527740a2]" name="ILP_rescindloan" class="tests.QCStore"/>
+        <method signature="QCStore.ILP_voidRefinance()[pri:14, instance:tests.QCStore@527740a2]" name="ILP_voidRefinance" class="tests.QCStore"/>
       </group> <!-- Anoop -->
     </groups>
-    <test name="Test" duration-ms="16182" started-at="2019-03-04T06:21:54Z" finished-at="2019-03-04T06:22:10Z">
+    <test name="Test" duration-ms="3396515" started-at="2019-03-04T13:21:05Z" finished-at="2019-03-04T14:17:42Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="setup" is-config="true" duration-ms="84" started-at="2019-03-04T06:21:54Z" finished-at="2019-03-04T06:21:54Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="81" started-at="2019-03-04T13:21:05Z" finished-at="2019-03-04T13:21:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="killProcess" is-config="true" duration-ms="5017" started-at="2019-03-04T06:21:54Z" finished-at="2019-03-04T06:21:59Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5017" started-at="2019-03-04T13:21:05Z" finished-at="2019-03-04T13:21:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="FAIL" signature="ILP_borrowregNewloan()[pri:13, instance:tests.QCStore@6d7b4f4c]" name="ILP_borrowregNewloan" duration-ms="9603" started-at="2019-03-04T06:21:59Z" finished-at="2019-03-04T06:22:08Z">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+        <test-method status="FAIL" signature="ILP_RefinanceStepDown_void()[pri:0, instance:tests.QCStore@527740a2]" name="ILP_RefinanceStepDown_void" duration-ms="280970" started-at="2019-03-04T13:21:10Z" finished-at="2019-03-04T13:25:51Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Element is no longer valid (WARNING: The server did not provide any stacktrace information)
+              <![CDATA[Unable to find element with name == checkyes (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'QTLSYS2-48', ip: '192.168.2.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:48681/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: b311f3af-10e3-4af2-ac9c-9bb41d4434cb]]>
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:17315/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: f989e680-febc-4b11-98ca-2f6578cc4708
+*** Element info: {Using=name, value=checkyes}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: Element is no longer valid (WARNING: The server did not provide any stacktrace information)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with name == checkyes (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'QTLSYS2-48', ip: '192.168.2.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:48681/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: b311f3af-10e3-4af2-ac9c-9bb41d4434cb
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:17315/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: f989e680-febc-4b11-98ca-2f6578cc4708
+*** Element info: {Using=name, value=checkyes}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -52,10 +68,12 @@ at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttp
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)
-at tests.ACSRBorrowerRegistration.borrowerReg(ACSRBorrowerRegistration.java:107)
-at tests.QCStore.ILP_borrowregNewloan(QCStore.java:3017)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at tests.ILP_Payment.payment(ILP_Payment.java:128)
+at tests.QCStore.ILP_RefinanceStepDown_void(QCStore.java:2536)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -83,53 +101,919 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ILP_borrowregNewloan -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-04T06:22:08Z" finished-at="2019-03-04T06:22:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@6d7b4f4c]" name="getResult" is-config="true" duration-ms="1459" started-at="2019-03-04T06:22:08Z" finished-at="2019-03-04T06:22:10Z">
+        </test-method> <!-- ILP_RefinanceStepDown_void -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="1508" started-at="2019-03-04T13:25:51Z" finished-at="2019-03-04T13:25:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ILP_borrowregNewloan status=FAILURE method=QCStore.ILP_borrowregNewloan()[pri:13, instance:tests.QCStore@6d7b4f4c] output={null}]]]>
-=======
-<testng-results skipped="0" failed="0" ignored="24" total="25" passed="1">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Suite" duration-ms="1664384" started-at="2019-03-04T05:49:41Z" finished-at="2019-03-04T06:17:26Z">
-    <groups>
-      <group name="Ratikanta_ILP">
-        <method signature="QCStore.RQC_DefaultPayment_Txn_Testdata()[pri:5, instance:tests.QCStore@527740a2]" name="RQC_DefaultPayment_Txn_Testdata" class="tests.QCStore"/>
-      </group> <!-- Ratikanta_ILP -->
-    </groups>
-    <test name="Test" duration-ms="1664384" started-at="2019-03-04T05:49:41Z" finished-at="2019-03-04T06:17:26Z">
-      <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="93" started-at="2019-03-04T05:49:41Z" finished-at="2019-03-04T05:49:41Z">
+                <![CDATA[[TestResult name=ILP_RefinanceStepDown_void status=FAILURE method=QCStore.ILP_RefinanceStepDown_void()[pri:0, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5007" started-at="2019-03-04T05:49:41Z" finished-at="2019-03-04T05:49:46Z">
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-04T13:25:51Z" finished-at="2019-03-04T13:25:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5008" started-at="2019-03-04T13:25:53Z" finished-at="2019-03-04T13:25:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="RQC_DefaultPayment_Txn_Testdata()[pri:5, instance:tests.QCStore@527740a2]" name="RQC_DefaultPayment_Txn_Testdata" duration-ms="1659049" started-at="2019-03-04T05:49:46Z" finished-at="2019-03-04T06:17:25Z">
+        <test-method status="FAIL" signature="ILP_Redeposit()[pri:1, instance:tests.QCStore@527740a2]" name="ILP_Redeposit" duration-ms="109869" started-at="2019-03-04T13:25:58Z" finished-at="2019-03-04T13:27:48Z">
+          <exception class="java.lang.StringIndexOutOfBoundsException">
+            <message>
+              <![CDATA[String index out of range: 250]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+at java.lang.String.substring(Unknown Source)
+at tests.QCAgeStoreDueDate.ageStoreDueDate(QCAgeStoreDueDate.java:221)
+at tests.QCStore.ILP_Redeposit(QCStore.java:2838)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.StringIndexOutOfBoundsException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RQC_DefaultPayment_Txn_Testdata -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-04T06:17:25Z" finished-at="2019-03-04T06:17:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="219" started-at="2019-03-04T06:17:25Z" finished-at="2019-03-04T06:17:26Z">
+        </test-method> <!-- ILP_Redeposit -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="1360" started-at="2019-03-04T13:27:48Z" finished-at="2019-03-04T13:27:49Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=RQC_DefaultPayment_Txn_Testdata status=SUCCESS method=QCStore.RQC_DefaultPayment_Txn_Testdata()[pri:5, instance:tests.QCStore@527740a2] output={null}]]]>
->>>>>>> feb1.1
+                <![CDATA[[TestResult name=ILP_Redeposit status=FAILURE method=QCStore.ILP_Redeposit()[pri:1, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-04T13:27:48Z" finished-at="2019-03-04T13:27:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5008" started-at="2019-03-04T13:27:49Z" finished-at="2019-03-04T13:27:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="FAIL" signature="ILP_inactiveNewloan()[pri:2, instance:tests.QCStore@527740a2]" name="ILP_inactiveNewloan" duration-ms="140428" started-at="2019-03-04T13:27:54Z" finished-at="2019-03-04T13:30:14Z">
+          <exception class="java.lang.StringIndexOutOfBoundsException">
+            <message>
+              <![CDATA[String index out of range: 250]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+at java.lang.String.substring(Unknown Source)
+at tests.QCCSRHistory.history(QCCSRHistory.java:833)
+at tests.QCStore.ILP_inactiveNewloan(QCStore.java:3011)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.StringIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ILP_inactiveNewloan -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="1425" started-at="2019-03-04T13:30:14Z" finished-at="2019-03-04T13:30:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ILP_inactiveNewloan status=FAILURE method=QCStore.ILP_inactiveNewloan()[pri:2, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-04T13:30:14Z" finished-at="2019-03-04T13:30:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5019" started-at="2019-03-04T13:30:16Z" finished-at="2019-03-04T13:30:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="FAIL" signature="ILP_maxloanCount()[pri:3, instance:tests.QCStore@527740a2]" name="ILP_maxloanCount" duration-ms="137324" started-at="2019-03-04T13:30:21Z" finished-at="2019-03-04T13:32:38Z">
+          <exception class="java.lang.StringIndexOutOfBoundsException">
+            <message>
+              <![CDATA[String index out of range: 250]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+at java.lang.String.substring(Unknown Source)
+at tests.QCCSRHistory.history(QCCSRHistory.java:833)
+at tests.QCStore.ILP_maxloanCount(QCStore.java:2980)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.StringIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ILP_maxloanCount -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="1314" started-at="2019-03-04T13:32:38Z" finished-at="2019-03-04T13:32:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ILP_maxloanCount status=FAILURE method=QCStore.ILP_maxloanCount()[pri:3, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-04T13:32:38Z" finished-at="2019-03-04T13:32:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5010" started-at="2019-03-04T13:32:40Z" finished-at="2019-03-04T13:32:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="FAIL" signature="ILP_rescindloan()[pri:4, instance:tests.QCStore@527740a2]" name="ILP_rescindloan" duration-ms="164085" started-at="2019-03-04T13:32:45Z" finished-at="2019-03-04T13:35:29Z">
+          <exception class="java.lang.StringIndexOutOfBoundsException">
+            <message>
+              <![CDATA[String index out of range: 250]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+at java.lang.String.substring(Unknown Source)
+at tests.QCCSRHistory.history(QCCSRHistory.java:833)
+at tests.QCStore.ILP_rescindloan(QCStore.java:2934)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.StringIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ILP_rescindloan -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-04T13:35:29Z" finished-at="2019-03-04T13:35:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="1375" started-at="2019-03-04T13:35:29Z" finished-at="2019-03-04T13:35:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ILP_rescindloan status=FAILURE method=QCStore.ILP_rescindloan()[pri:4, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5019" started-at="2019-03-04T13:35:30Z" finished-at="2019-03-04T13:35:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="FAIL" signature="ILP_agerescindtest()[pri:5, instance:tests.QCStore@527740a2]" name="ILP_agerescindtest" duration-ms="210578" started-at="2019-03-04T13:35:35Z" finished-at="2019-03-04T13:39:06Z">
+          <exception class="java.lang.StringIndexOutOfBoundsException">
+            <message>
+              <![CDATA[String index out of range: 250]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+at java.lang.String.substring(Unknown Source)
+at tests.QCCSRHistory.history(QCCSRHistory.java:833)
+at tests.QCStore.ILP_agerescindtest(QCStore.java:2896)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.StringIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ILP_agerescindtest -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-04T13:39:06Z" finished-at="2019-03-04T13:39:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="1394" started-at="2019-03-04T13:39:06Z" finished-at="2019-03-04T13:39:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ILP_agerescindtest status=FAILURE method=QCStore.ILP_agerescindtest()[pri:5, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5019" started-at="2019-03-04T13:39:07Z" finished-at="2019-03-04T13:39:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="FAIL" signature="ILP_RefinanceStepup()[pri:6, instance:tests.QCStore@527740a2]" name="ILP_RefinanceStepup" duration-ms="227172" started-at="2019-03-04T13:39:12Z" finished-at="2019-03-04T13:42:59Z">
+          <exception class="java.lang.StringIndexOutOfBoundsException">
+            <message>
+              <![CDATA[String index out of range: 250]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+at java.lang.String.substring(Unknown Source)
+at tests.QCAgeStoreDueDate.ageStoreDueDate(QCAgeStoreDueDate.java:221)
+at tests.QCStore.ILP_RefinanceStepup(QCStore.java:2796)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.StringIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ILP_RefinanceStepup -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="1321" started-at="2019-03-04T13:42:59Z" finished-at="2019-03-04T13:43:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ILP_RefinanceStepup status=FAILURE method=QCStore.ILP_RefinanceStepup()[pri:6, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-04T13:42:59Z" finished-at="2019-03-04T13:42:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5017" started-at="2019-03-04T13:43:01Z" finished-at="2019-03-04T13:43:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="FAIL" signature="ILP_RefinanceStepSame()[pri:7, instance:tests.QCStore@527740a2]" name="ILP_RefinanceStepSame" duration-ms="220553" started-at="2019-03-04T13:43:06Z" finished-at="2019-03-04T13:46:46Z">
+          <exception class="java.lang.StringIndexOutOfBoundsException">
+            <message>
+              <![CDATA[String index out of range: 250]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+at java.lang.String.substring(Unknown Source)
+at tests.QCAgeStoreDueDate.ageStoreDueDate(QCAgeStoreDueDate.java:221)
+at tests.QCStore.ILP_RefinanceStepSame(QCStore.java:2692)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.StringIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ILP_RefinanceStepSame -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-04T13:46:46Z" finished-at="2019-03-04T13:46:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="1337" started-at="2019-03-04T13:46:46Z" finished-at="2019-03-04T13:46:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ILP_RefinanceStepSame status=FAILURE method=QCStore.ILP_RefinanceStepSame()[pri:7, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5013" started-at="2019-03-04T13:46:47Z" finished-at="2019-03-04T13:46:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="FAIL" signature="ILP_RefinanceStepUpVoid()[pri:8, instance:tests.QCStore@527740a2]" name="ILP_RefinanceStepUpVoid" duration-ms="242557" started-at="2019-03-04T13:46:52Z" finished-at="2019-03-04T13:50:55Z">
+          <exception class="java.lang.StringIndexOutOfBoundsException">
+            <message>
+              <![CDATA[String index out of range: 250]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+at java.lang.String.substring(Unknown Source)
+at tests.QCAgeStoreDueDate.ageStoreDueDate(QCAgeStoreDueDate.java:221)
+at tests.QCStore.ILP_RefinanceStepUpVoid(QCStore.java:2741)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.StringIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ILP_RefinanceStepUpVoid -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-04T13:50:55Z" finished-at="2019-03-04T13:50:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="1284" started-at="2019-03-04T13:50:55Z" finished-at="2019-03-04T13:50:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ILP_RefinanceStepUpVoid status=FAILURE method=QCStore.ILP_RefinanceStepUpVoid()[pri:8, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5019" started-at="2019-03-04T13:50:56Z" finished-at="2019-03-04T13:51:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="FAIL" signature="ILP_RefinanceStepSame_Void()[pri:9, instance:tests.QCStore@527740a2]" name="ILP_RefinanceStepSame_Void" duration-ms="229578" started-at="2019-03-04T13:51:01Z" finished-at="2019-03-04T13:54:51Z">
+          <exception class="java.lang.StringIndexOutOfBoundsException">
+            <message>
+              <![CDATA[String index out of range: 250]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+at java.lang.String.substring(Unknown Source)
+at tests.QCAgeStoreDueDate.ageStoreDueDate(QCAgeStoreDueDate.java:221)
+at tests.QCStore.ILP_RefinanceStepSame_Void(QCStore.java:2641)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.StringIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ILP_RefinanceStepSame_Void -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="1" started-at="2019-03-04T13:54:51Z" finished-at="2019-03-04T13:54:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="1337" started-at="2019-03-04T13:54:51Z" finished-at="2019-03-04T13:54:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ILP_RefinanceStepSame_Void status=FAILURE method=QCStore.ILP_RefinanceStepSame_Void()[pri:9, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5018" started-at="2019-03-04T13:54:52Z" finished-at="2019-03-04T13:54:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="FAIL" signature="ILP_ProcessClear()[pri:10, instance:tests.QCStore@527740a2]" name="ILP_ProcessClear" duration-ms="109144" started-at="2019-03-04T13:54:57Z" finished-at="2019-03-04T13:56:46Z">
+          <exception class="java.lang.StringIndexOutOfBoundsException">
+            <message>
+              <![CDATA[String index out of range: 250]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+at java.lang.String.substring(Unknown Source)
+at tests.QCAgeStoreDueDate.ageStoreDueDate(QCAgeStoreDueDate.java:221)
+at tests.QCStore.ILP_ProcessClear(QCStore.java:2484)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.StringIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ILP_ProcessClear -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="1" started-at="2019-03-04T13:56:46Z" finished-at="2019-03-04T13:56:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="1333" started-at="2019-03-04T13:56:46Z" finished-at="2019-03-04T13:56:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ILP_ProcessClear status=FAILURE method=QCStore.ILP_ProcessClear()[pri:10, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5018" started-at="2019-03-04T13:56:48Z" finished-at="2019-03-04T13:56:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="FAIL" signature="ILP_ACHAutoClear()[pri:11, instance:tests.QCStore@527740a2]" name="ILP_ACHAutoClear" duration-ms="109289" started-at="2019-03-04T13:56:53Z" finished-at="2019-03-04T13:58:42Z">
+          <exception class="java.lang.StringIndexOutOfBoundsException">
+            <message>
+              <![CDATA[String index out of range: 250]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+at java.lang.String.substring(Unknown Source)
+at tests.QCAgeStoreDueDate.ageStoreDueDate(QCAgeStoreDueDate.java:221)
+at tests.QCStore.ILP_ACHAutoClear(QCStore.java:2380)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.StringIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ILP_ACHAutoClear -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="1351" started-at="2019-03-04T13:58:42Z" finished-at="2019-03-04T13:58:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ILP_ACHAutoClear status=FAILURE method=QCStore.ILP_ACHAutoClear()[pri:11, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-04T13:58:42Z" finished-at="2019-03-04T13:58:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5013" started-at="2019-03-04T13:58:43Z" finished-at="2019-03-04T13:58:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="FAIL" signature="ILP_CheckAutoClear()[pri:12, instance:tests.QCStore@527740a2]" name="ILP_CheckAutoClear" duration-ms="107151" started-at="2019-03-04T13:58:48Z" finished-at="2019-03-04T14:00:36Z">
+          <exception class="java.lang.StringIndexOutOfBoundsException">
+            <message>
+              <![CDATA[String index out of range: 250]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+at java.lang.String.substring(Unknown Source)
+at tests.QCAgeStoreDueDate.ageStoreDueDate(QCAgeStoreDueDate.java:221)
+at tests.QCStore.ILP_CheckAutoClear(QCStore.java:2434)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.StringIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ILP_CheckAutoClear -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-04T14:00:36Z" finished-at="2019-03-04T14:00:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="1327" started-at="2019-03-04T14:00:36Z" finished-at="2019-03-04T14:00:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ILP_CheckAutoClear status=FAILURE method=QCStore.ILP_CheckAutoClear()[pri:12, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5017" started-at="2019-03-04T14:00:37Z" finished-at="2019-03-04T14:00:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="FAIL" signature="ILP_borrowregNewloan()[pri:13, instance:tests.QCStore@527740a2]" name="ILP_borrowregNewloan" duration-ms="131697" started-at="2019-03-04T14:00:42Z" finished-at="2019-03-04T14:02:54Z">
+          <exception class="java.lang.StringIndexOutOfBoundsException">
+            <message>
+              <![CDATA[String index out of range: 250]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+at java.lang.String.substring(Unknown Source)
+at tests.QCCSRHistory.history(QCCSRHistory.java:833)
+at tests.QCStore.ILP_borrowregNewloan(QCStore.java:3043)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.StringIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ILP_borrowregNewloan -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-04T14:02:54Z" finished-at="2019-03-04T14:02:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="1396" started-at="2019-03-04T14:02:54Z" finished-at="2019-03-04T14:02:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ILP_borrowregNewloan status=FAILURE method=QCStore.ILP_borrowregNewloan()[pri:13, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5017" started-at="2019-03-04T14:02:55Z" finished-at="2019-03-04T14:03:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="FAIL" signature="ILP_voidRefinance()[pri:14, instance:tests.QCStore@527740a2]" name="ILP_voidRefinance" duration-ms="653832" started-at="2019-03-04T14:03:00Z" finished-at="2019-03-04T14:13:54Z">
+          <exception class="java.lang.StringIndexOutOfBoundsException">
+            <message>
+              <![CDATA[String index out of range: 250]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+at java.lang.String.substring(Unknown Source)
+at tests.QCVoid.qcVoid(QCVoid.java:270)
+at tests.QCStore.ILP_voidRefinance(QCStore.java:2340)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.StringIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ILP_voidRefinance -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-04T14:13:54Z" finished-at="2019-03-04T14:13:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="1270" started-at="2019-03-04T14:13:54Z" finished-at="2019-03-04T14:13:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ILP_voidRefinance status=FAILURE method=QCStore.ILP_voidRefinance()[pri:14, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5018" started-at="2019-03-04T14:13:55Z" finished-at="2019-03-04T14:14:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="FAIL" signature="ILP_RefinanceStepDown()[pri:15, instance:tests.QCStore@527740a2]" name="ILP_RefinanceStepDown" duration-ms="220176" started-at="2019-03-04T14:14:00Z" finished-at="2019-03-04T14:17:40Z">
+          <exception class="java.lang.StringIndexOutOfBoundsException">
+            <message>
+              <![CDATA[String index out of range: 250]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+at java.lang.String.substring(Unknown Source)
+at tests.QCAgeStoreDueDate.ageStoreDueDate(QCAgeStoreDueDate.java:221)
+at tests.QCStore.ILP_RefinanceStepDown(QCStore.java:2592)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.StringIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ILP_RefinanceStepDown -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="1" started-at="2019-03-04T14:17:40Z" finished-at="2019-03-04T14:17:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="1397" started-at="2019-03-04T14:17:40Z" finished-at="2019-03-04T14:17:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ILP_RefinanceStepDown status=FAILURE method=QCStore.ILP_RefinanceStepDown()[pri:15, instance:tests.QCStore@527740a2] output={null}]]]>
               </value>
             </param>
           </params>

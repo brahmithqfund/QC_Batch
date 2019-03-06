@@ -124,13 +124,13 @@ public class ILP_Payment extends QCStore{
 				catch (NoAlertPresentException e) {
 					//do what you normally would if you didn't have the alert.
 				}
-				Thread.sleep(4000);
+				Thread.sleep(7000);
 				if(driver.findElement(By.name("checkyes")).isDisplayed())
 				{
 				test.log(LogStatus.PASS, "Payment transaction is successfully");
 				}
 				else{
-					test.log(LogStatus.INFO, "Payment transaction is successfully");
+					test.log(LogStatus.FAIL, "Payment transaction is Not done");
 				}
 				test.log(LogStatus.PASS,"Partial Payment Completed Successfully");
 				

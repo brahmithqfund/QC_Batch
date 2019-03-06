@@ -28,7 +28,7 @@ public class AQCSafeAssign extends QCStore{
 				driver.switchTo().defaultContent();				
 				driver.switchTo().frame("topFrame");
 
-				wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(text(),'Cash Management')]")));
+				//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(text(),'Cash Management')]")));
 
 				driver.findElement(By.xpath("//*[contains(text(),'Cash Management')]")).click();			
 				test.log(LogStatus.PASS, "Clicked on Cash Management");

@@ -9,19 +9,44 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<<<<<<< HEAD
-<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">16,182</td><td>Anoop</td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">16</td><td class="num">3,396,515</td><td>Anoop</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.QCStore</td><td><a href="#m0">ILP_borrowregNewloan</a></td><td rowspan="1">1551680519198</td><td rowspan="1">9603</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="16">tests.QCStore</td><td><a href="#m0">ILP_ACHAutoClear</a></td><td rowspan="1">1551707813267</td><td rowspan="1">109289</td></tr><tr class="failedeven"><td><a href="#m1">ILP_CheckAutoClear</a></td><td rowspan="1">1551707928922</td><td rowspan="1">107151</td></tr><tr class="failedeven"><td><a href="#m2">ILP_ProcessClear</a></td><td rowspan="1">1551707697769</td><td rowspan="1">109144</td></tr><tr class="failedeven"><td><a href="#m3">ILP_Redeposit</a></td><td rowspan="1">1551705958316</td><td rowspan="1">109869</td></tr><tr class="failedeven"><td><a href="#m4">ILP_RefinanceStepDown</a></td><td rowspan="1">1551708840650</td><td rowspan="1">220176</td></tr><tr class="failedeven"><td><a href="#m5">ILP_RefinanceStepDown_void</a></td><td rowspan="1">1551705670822</td><td rowspan="1">280970</td></tr><tr class="failedeven"><td><a href="#m6">ILP_RefinanceStepSame</a></td><td rowspan="1">1551706986066</td><td rowspan="1">220553</td></tr><tr class="failedeven"><td><a href="#m7">ILP_RefinanceStepSame_Void</a></td><td rowspan="1">1551707461833</td><td rowspan="1">229578</td></tr><tr class="failedeven"><td><a href="#m8">ILP_RefinanceStepUpVoid</a></td><td rowspan="1">1551707212971</td><td rowspan="1">242557</td></tr><tr class="failedeven"><td><a href="#m9">ILP_RefinanceStepup</a></td><td rowspan="1">1551706752554</td><td rowspan="1">227172</td></tr><tr class="failedeven"><td><a href="#m10">ILP_agerescindtest</a></td><td rowspan="1">1551706535561</td><td rowspan="1">210578</td></tr><tr class="failedeven"><td><a href="#m11">ILP_borrowregNewloan</a></td><td rowspan="1">1551708042418</td><td rowspan="1">131697</td></tr><tr class="failedeven"><td><a href="#m12">ILP_inactiveNewloan</a></td><td rowspan="1">1551706074556</td><td rowspan="1">140428</td></tr><tr class="failedeven"><td><a href="#m13">ILP_maxloanCount</a></td><td rowspan="1">1551706221430</td><td rowspan="1">137324</td></tr><tr class="failedeven"><td><a href="#m14">ILP_rescindloan</a></td><td rowspan="1">1551706365080</td><td rowspan="1">164085</td></tr><tr class="failedeven"><td><a href="#m15">ILP_voidRefinance</a></td><td rowspan="1">1551708180529</td><td rowspan="1">653832</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">tests.QCStore#ILP_borrowregNewloan</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: Element is no longer valid (WARNING: The server did not provide any stacktrace information)
+<h2>Test</h2><h3 id="m0">tests.QCStore#ILP_ACHAutoClear</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+	at java.lang.String.substring(Unknown Source)
+	at tests.QCAgeStoreDueDate.ageStoreDueDate(QCAgeStoreDueDate.java:221)
+	at tests.QCStore.ILP_ACHAutoClear(QCStore.java:2380)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.QCStore#ILP_CheckAutoClear</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+	at java.lang.String.substring(Unknown Source)
+	at tests.QCAgeStoreDueDate.ageStoreDueDate(QCAgeStoreDueDate.java:221)
+	at tests.QCStore.ILP_CheckAutoClear(QCStore.java:2434)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.QCStore#ILP_ProcessClear</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+	at java.lang.String.substring(Unknown Source)
+	at tests.QCAgeStoreDueDate.ageStoreDueDate(QCAgeStoreDueDate.java:221)
+	at tests.QCStore.ILP_ProcessClear(QCStore.java:2484)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.QCStore#ILP_Redeposit</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+	at java.lang.String.substring(Unknown Source)
+	at tests.QCAgeStoreDueDate.ageStoreDueDate(QCAgeStoreDueDate.java:221)
+	at tests.QCStore.ILP_Redeposit(QCStore.java:2838)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.QCStore#ILP_RefinanceStepDown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+	at java.lang.String.substring(Unknown Source)
+	at tests.QCAgeStoreDueDate.ageStoreDueDate(QCAgeStoreDueDate.java:221)
+	at tests.QCStore.ILP_RefinanceStepDown(QCStore.java:2592)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.QCStore#ILP_RefinanceStepDown_void</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to find element with name == checkyes (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;QTLSYS2-48&apos;, ip: &apos;192.168.2.48&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:48681/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: b311f3af-10e3-4af2-ac9c-9bb41d4434cb
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:17315/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: f989e680-febc-4b11-98ca-2f6578cc4708
+*** Element info: {Using=name, value=checkyes}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -30,17 +55,62 @@ Session ID: b311f3af-10e3-4af2-ac9c-9bb41d4434cb
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)
-	at tests.ACSRBorrowerRegistration.borrowerReg(ACSRBorrowerRegistration.java:107)
-	at tests.QCStore.ILP_borrowregNewloan(QCStore.java:3017)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at tests.ILP_Payment.payment(ILP_Payment.java:128)
+	at tests.QCStore.ILP_RefinanceStepDown_void(QCStore.java:2536)
 ... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-=======
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">1,664,384</td><td>Ratikanta_ILP</td><td></td></tr>
-</table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.QCStore</td><td><a href="#m0">RQC_DefaultPayment_Txn_Testdata</a></td><td rowspan="1">1551678586904</td><td rowspan="1">1659049</td></tr></tbody>
-</table>
-<h2>Test</h2><h3 id="m0">tests.QCStore#RQC_DefaultPayment_Txn_Testdata</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
->>>>>>> feb1.1
+<h3 id="m6">tests.QCStore#ILP_RefinanceStepSame</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+	at java.lang.String.substring(Unknown Source)
+	at tests.QCAgeStoreDueDate.ageStoreDueDate(QCAgeStoreDueDate.java:221)
+	at tests.QCStore.ILP_RefinanceStepSame(QCStore.java:2692)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">tests.QCStore#ILP_RefinanceStepSame_Void</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+	at java.lang.String.substring(Unknown Source)
+	at tests.QCAgeStoreDueDate.ageStoreDueDate(QCAgeStoreDueDate.java:221)
+	at tests.QCStore.ILP_RefinanceStepSame_Void(QCStore.java:2641)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">tests.QCStore#ILP_RefinanceStepUpVoid</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+	at java.lang.String.substring(Unknown Source)
+	at tests.QCAgeStoreDueDate.ageStoreDueDate(QCAgeStoreDueDate.java:221)
+	at tests.QCStore.ILP_RefinanceStepUpVoid(QCStore.java:2741)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">tests.QCStore#ILP_RefinanceStepup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+	at java.lang.String.substring(Unknown Source)
+	at tests.QCAgeStoreDueDate.ageStoreDueDate(QCAgeStoreDueDate.java:221)
+	at tests.QCStore.ILP_RefinanceStepup(QCStore.java:2796)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">tests.QCStore#ILP_agerescindtest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+	at java.lang.String.substring(Unknown Source)
+	at tests.QCCSRHistory.history(QCCSRHistory.java:833)
+	at tests.QCStore.ILP_agerescindtest(QCStore.java:2896)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">tests.QCStore#ILP_borrowregNewloan</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+	at java.lang.String.substring(Unknown Source)
+	at tests.QCCSRHistory.history(QCCSRHistory.java:833)
+	at tests.QCStore.ILP_borrowregNewloan(QCStore.java:3043)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">tests.QCStore#ILP_inactiveNewloan</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+	at java.lang.String.substring(Unknown Source)
+	at tests.QCCSRHistory.history(QCCSRHistory.java:833)
+	at tests.QCStore.ILP_inactiveNewloan(QCStore.java:3011)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">tests.QCStore#ILP_maxloanCount</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+	at java.lang.String.substring(Unknown Source)
+	at tests.QCCSRHistory.history(QCCSRHistory.java:833)
+	at tests.QCStore.ILP_maxloanCount(QCStore.java:2980)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">tests.QCStore#ILP_rescindloan</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+	at java.lang.String.substring(Unknown Source)
+	at tests.QCCSRHistory.history(QCCSRHistory.java:833)
+	at tests.QCStore.ILP_rescindloan(QCStore.java:2934)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">tests.QCStore#ILP_voidRefinance</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.StringIndexOutOfBoundsException: String index out of range: 250
+	at java.lang.String.substring(Unknown Source)
+	at tests.QCVoid.qcVoid(QCVoid.java:270)
+	at tests.QCStore.ILP_voidRefinance(QCStore.java:2340)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
