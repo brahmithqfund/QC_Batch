@@ -4,12 +4,17 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
+<<<<<<< HEAD
+        <include name="Rebate"/>
+=======
         <include name="Anoop"/>
+>>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
+<<<<<<< HEAD
           <include name="GracedaysDepositMenu"/>
           <include name="middayDeposit"/>
           <include name="Achdeposit"/>
@@ -26,6 +31,17 @@
           <include name="RefinanceStepupVoid"/>
           <include name="borrowregNewloan"/>
           <include name="inactiveNewloan"/>
+=======
+<<<<<<< HEAD
+          <include name="getResult"/>
+          <include name="setup"/>
+          <include name="QC_Refinance_StepDownVoidURP_Txn"/>
+=======
+          <include name="AQC_EPP_Redeposit"/>
+          <include name="getResult"/>
+          <include name="setup"/>
+>>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
+>>>>>>> 792c0d99c7dc98fb911ab128b442f178e0a75ffb
           <include name="killProcess"/>
           <include name="AQC_EPP_Redeposit"/>
           <include name="getResult"/>

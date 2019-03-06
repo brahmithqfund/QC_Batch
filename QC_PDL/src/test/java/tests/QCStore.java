@@ -1010,7 +1010,7 @@ public class QCStore {
 					// row);
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					/*QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
@@ -1057,7 +1057,7 @@ public class QCStore {
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCNSFPayment.nsfpayment(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);*/
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
@@ -1628,7 +1628,7 @@ public class QCStore {
 
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCEODDeposit.eodDeposit(SSN, AppURL);
-					// QCCSRLoginLogout.logout(SSN, AppURL);
+					
 					QCAdminStoreSetup.storeSetup(SSN, AppURL);
 					QCCSRLoginLogout.adminLogout(driver, SSN, AppURL);
 
@@ -4700,7 +4700,7 @@ public class QCStore {
 
 			try {
 				reader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_PDL/src/test/java/tests/Objects.properties"));
+						new FileReader("C:/QC_Batch/QC_PDL/src/test/java/tests/Objects.properties"));
 				prop = new Properties();
 				prop.load(reader);
 				reader.close();
@@ -4721,7 +4721,7 @@ public class QCStore {
 
 			try {
 				Jreader = new BufferedReader(
-						new FileReader("E:/QC_Batch/QC_PDL/src/test/java/tests/JObjects.properties"));
+						new FileReader("C:/QC_Batch/QC_PDL/src/test/java/tests/JObjects.properties"));
 				Jprop = new Properties();
 				Jprop.load(Jreader);
 				Jreader.close();
@@ -4740,7 +4740,7 @@ public class QCStore {
 
 			try {
 				Rreader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_PDL/src/test/java/tests/RObjects.properties"));
+						new FileReader("C:/QC_Batch/QC_PDL/src/test/java/tests/RObjects.properties"));
 				Rprop = new Properties();
 				Rprop.load(Rreader);
 				Rreader.close();
@@ -4759,7 +4759,7 @@ public class QCStore {
 
 			try {
 				Areader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_PDL/src/test/java/tests/AObjects.properties"));
+						new FileReader("C:/QC_Batch/QC_PDL/src/test/java/tests/AObjects.properties"));
 				Aprop = new Properties();
 				Aprop.load(Areader);
 				Areader.close();

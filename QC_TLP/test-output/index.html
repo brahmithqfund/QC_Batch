@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="JQC_TLP_Deposit_EOD_Txn">JQC_TLP_Deposit_EOD_Txn</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="TLP_ProcessAutoClear">TLP_ProcessAutoClear</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -125,9 +125,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="JQC_TLP_Deposit_EOD_Txn">
-                  </a> <!-- JQC_TLP_Deposit_EOD_Txn -->
-                  <span class="method-name">JQC_TLP_Deposit_EOD_Txn</span>
+                  <a name="TLP_ProcessAutoClear">
+                  </a> <!-- TLP_ProcessAutoClear -->
+                  <span class="method-name">TLP_ProcessAutoClear</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -145,7 +145,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;groups&gt;
       &lt;run&gt;
-        &lt;include name=&quot;Janaki_EOD_set1&quot;/&gt;
+        &lt;include name=&quot;Anoop1&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
@@ -174,10 +174,10 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">Janaki_EOD_set1</span>
+              <span class="test-group-name">Anoop1</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">JQC_TLP_Deposit_EOD_Txn</span>
+                <span class="method-in-group-name">TLP_ProcessAutoClear</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -199,14 +199,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'JQC_TLP_Deposit_EOD_Txn')
+data.setCell(0, 1, 'TLP_ProcessAutoClear')
 data.setCell(0, 2, 'tests.QCStore')
-data.setCell(0, 3, 709911);
+data.setCell(0, 3, 909652);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 minutes</span>
+              <span class="suite-total-time">Total running time: 15 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -221,7 +221,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">23 ignored methods</span>
+            <span class="header-content">34 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -231,11 +231,15 @@ return data;
                 <br/>
                 <span class="ignored-method-name">TLP_agerescind</span>
                 <br/>
-                <span class="ignored-method-name">TLP_RefinanceStepSame_Void</span>
+                <span class="ignored-method-name">QC_PayAnyotherAmount_Void_Txn</span>
                 <br/>
                 <span class="ignored-method-name">JQC_TLP_Deceased_Txn</span>
                 <br/>
-                <span class="ignored-method-name">TLP_rescindloan</span>
+                <span class="ignored-method-name">QC_TLP_Buyback_Void_Txn</span>
+                <br/>
+                <span class="ignored-method-name">QC_AgeStore_Void_Txn</span>
+                <br/>
+                <span class="ignored-method-name">QC_TLP_Buyback_Txn</span>
                 <br/>
                 <span class="ignored-method-name">TLP_bankruptcyWriteOff</span>
                 <br/>
@@ -243,35 +247,53 @@ return data;
                 <br/>
                 <span class="ignored-method-name">TLP_RefinanceStepSame</span>
                 <br/>
+                <span class="ignored-method-name">QC_PayAnyotherAmount_Txn</span>
+                <br/>
+                <span class="ignored-method-name">QC_NewLoan_Void_Txn</span>
+                <br/>
+                <span class="ignored-method-name">JQC_TLP_Deposit_dropdown_Txn</span>
+                <br/>
+                <span class="ignored-method-name">JQC_TLP_Deposit_MidDay_Txn</span>
+                <br/>
+                <span class="ignored-method-name">JQC_DefaultPayment_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">TLP_ProcessClearFromMenu</span>
+                <br/>
+                <span class="ignored-method-name">TLP_RefinanceStepDown</span>
+                <br/>
+                <span class="ignored-method-name">JQC_TLP_Deposit_EOD_Txn</span>
+                <br/>
+                <span class="ignored-method-name">QC_TLP_NewLoan_Txn</span>
+                <br/>
+                <span class="ignored-method-name">JQC_TLP_GraceDays_Deposit_MidDay_Txn</span>
+                <br/>
+                <span class="ignored-method-name">TLP_RefinanceStepSame_Void</span>
+                <br/>
+                <span class="ignored-method-name">QC_TLP_Writeoff_Recovery_Txn</span>
+                <br/>
+                <span class="ignored-method-name">TLP_rescindloan</span>
+                <br/>
+                <span class="ignored-method-name">QC_NewLoan_Promotion_Txn</span>
+                <br/>
+                <span class="ignored-method-name">QC_Installmentpayment_Txn</span>
+                <br/>
                 <span class="ignored-method-name">TLP_bankruptcyDismiss</span>
                 <br/>
                 <span class="ignored-method-name">JQC_TLP_GraceDays_Deposit_EOD_Txn</span>
-                <br/>
-                <span class="ignored-method-name">JQC_TLP_Deposit_dropdown_Txn</span>
                 <br/>
                 <span class="ignored-method-name">JQC_TLP_GraceDays_Deposit_dropdown_Txn</span>
                 <br/>
                 <span class="ignored-method-name">JQC_TLP_Deposit_Menu_Txn</span>
                 <br/>
-                <span class="ignored-method-name">QC_Installmentpayment_Void_Txn</span>
-                <br/>
-                <span class="ignored-method-name">JQC_TLP_Deposit_MidDay_Txn</span>
-                <br/>
                 <span class="ignored-method-name">TLP_RefinanceStepDownVoid</span>
                 <br/>
-                <span class="ignored-method-name">JQC_DefaultPayment_Txn_Testdata</span>
+                <span class="ignored-method-name">QC_Installmentpayment_Void_Txn</span>
+                <br/>
+                <span class="ignored-method-name">QC_TLP_Writeoff_Recovery_Void_Txn</span>
                 <br/>
                 <span class="ignored-method-name">TLP_ProcessClear</span>
                 <br/>
-                <span class="ignored-method-name">TLP_ProcessClearFromMenu</span>
-                <br/>
                 <span class="ignored-method-name">JQC_DefaultPayment_Void_Txn_Testdata</span>
-                <br/>
-                <span class="ignored-method-name">TLP_RefinanceStepDown</span>
-                <br/>
-                <span class="ignored-method-name">TLP_ProcessAutoClear</span>
-                <br/>
-                <span class="ignored-method-name">JQC_TLP_GraceDays_Deposit_MidDay_Txn</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -290,19 +312,19 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">killProcess</span>
-                <span class="method-start">80 ms</span>
+                <span class="method-start">86 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">JQC_TLP_Deposit_EOD_Txn</span>
-                <span class="method-start">5089 ms</span>
+                <span class="method-name">TLP_ProcessAutoClear</span>
+                <span class="method-start">5096 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">715002 ms</span>
+                <span class="method-start">914749 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=JQC_TLP_Deposit_EOD_Txn status=SUCCESS method=QCStore.JQC_TLP_Deposit_EOD_Txn()[pri...)</span>
-                <span class="method-start">715003 ms</span>
+                <span class="method-name">getResult([TestResult name=TLP_ProcessAutoClear status=SUCCESS method=QCStore.TLP_ProcessAutoClear()[pri:308, ...)</span>
+                <span class="method-start">914749 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

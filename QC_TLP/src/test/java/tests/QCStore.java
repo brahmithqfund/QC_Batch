@@ -1414,7 +1414,7 @@ public class QCStore {
 
 	// Anoop scenariso
 
-	@Test(priority = 310,enabled=true,groups="Anoop")
+	@Test(priority = 310,enabled=true,groups="Anoop_bankruptcy")
 	// This is date dependent so needs to run on 01/02/2018
 	public void TLP_bankruptcyDismiss() throws Exception {
 
@@ -1465,7 +1465,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 309,enabled=true,groups="Anoop")
+	@Test(priority = 309,enabled=true,groups="Anoop_writeoff")
 	// This is date dependent so needs to run on 01/02/2018
 	public void TLP_bankruptcyWriteOff() throws Exception {
 
@@ -1515,7 +1515,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 300,enabled=true,groups="Anoop")
+	@Test(priority = 300,enabled=true,groups="Anoop_st_void")
 	// Date will be /03/12/218
 	public void TLP_RefinanceStepDownVoid() throws Exception {
 
@@ -1568,7 +1568,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 310,enabled=true,groups="Anoop")
+	@Test(priority = 310,enabled=true,groups="Anoop_st_down")
 	// Date will be /03/12/218
 	public void TLP_RefinanceStepDown() throws Exception {
 
@@ -2010,7 +2010,7 @@ public class QCStore {
 			BufferedReader Areader;
 			try {
 				reader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_TLP/src/test/java/tests/Objects.properties"));
+						new FileReader("C:/QC_Batch/QC_TLP/src/test/java/tests/Objects.properties"));
 				prop = new Properties();
 				prop.load(reader);
 				reader.close();
@@ -2032,7 +2032,7 @@ public class QCStore {
 			try {
 				Jreader = new BufferedReader(
 
-						new FileReader("E:/QC_Batch/QC_TLP/src/test/java/tests/JObjects.properties"));
+						new FileReader("C:/QC_Batch/QC_TLP/src/test/java/tests/JObjects.properties"));
 
 				Jprop = new Properties();
 				Jprop.load(Jreader);
@@ -2052,7 +2052,7 @@ public class QCStore {
 
 			try {
 				Rreader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_TLP/src/test/java/tests/RObjects.properties"));
+						new FileReader("C:/QC_Batch/QC_TLP/src/test/java/tests/RObjects.properties"));
 				Rprop = new Properties();
 				Rprop.load(Rreader);
 				Rreader.close();
@@ -2071,7 +2071,7 @@ public class QCStore {
 
 			try {
 				Areader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_TLP/src/test/java/tests/AObjects.properties"));
+						new FileReader("C:/QC_Batch/QC_TLP/src/test/java/tests/AObjects.properties"));
 				Aprop = new Properties();
 				Aprop.load(Areader);
 				Areader.close();

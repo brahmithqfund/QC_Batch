@@ -251,17 +251,18 @@ public class ACSRRescindLoan extends QCStore{
 				catch (Exception e) {
 					//do what you normally would if you didn't have the alert.
 				}
-				Thread.sleep(5000);
+				 Thread.sleep(30000);
+					
+				 wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("ok")));
+				 Thread.sleep(5000);
+				 driver.findElement(By.name("ok")).click();
+				 //test.log(LogStatus.PASS, "Clicked on Scheduler Ok");
+				// test.log(LogStatus.PASS, MarkupHelper.createLabel("Clicked on Scheduler Ok Successfully",ExtentColor.GREEN));
+				 test.log(LogStatus.PASS,"Clicked on Scheduler Ok Successfully");
+				 test.log(LogStatus.PASS,"************************************************");
 
-				wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("ok")));
-				//Thread.sleep(5000);
-				driver.findElement(By.name("ok")).click();
-				//test.log(Status.PASS, "Clicked on Scheduler Ok");
-				test.log(LogStatus.PASS, "Clicked on Scheduler Ok Successfully");
-				test.log(LogStatus.INFO, "<FONT color=green> ****Scheduler completed******");
-				test.log(LogStatus.INFO, "<FONT color=green> Logout Successfully");
-				driver.close();
-				//Thread.sleep(1000);
+				 Thread.sleep(5000);
+				 driver.close();
 
 			}
 

@@ -1,5 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="16" ignored="35" total="51" passed="0">
+=======
+<<<<<<< HEAD
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="2559427" started-at="2019-03-04T08:57:49Z" finished-at="2019-03-04T09:40:28Z">
+    <groups>
+      <group name="Brahmith">
+        <method signature="QCStore.QC_ILP_Deposit_Return_Txn()[pri:35, instance:tests.QCStore@6d7b4f4c]" name="QC_ILP_Deposit_Return_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_ILP_Return_Menu_Txn()[pri:31, instance:tests.QCStore@6d7b4f4c]" name="QC_ILP_Return_Menu_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_ILP_clear_Menu_Txn()[pri:32, instance:tests.QCStore@6d7b4f4c]" name="QC_ILP_clear_Menu_Txn" class="tests.QCStore"/>
+      </group> <!-- Brahmith -->
+    </groups>
+    <test name="Test" duration-ms="2559427" started-at="2019-03-04T08:57:49Z" finished-at="2019-03-04T09:40:28Z">
+      <class name="tests.QCStore">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="setup" is-config="true" duration-ms="108" started-at="2019-03-04T08:57:49Z" finished-at="2019-03-04T08:57:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="killProcess" is-config="true" duration-ms="5013" started-at="2019-03-04T08:57:49Z" finished-at="2019-03-04T08:57:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_ILP_Return_Menu_Txn()[pri:31, instance:tests.QCStore@6d7b4f4c]" name="QC_ILP_Return_Menu_Txn" duration-ms="949826" started-at="2019-03-04T08:57:54Z" finished-at="2019-03-04T09:13:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_ILP_Return_Menu_Txn -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="endReport" is-config="true" duration-ms="1" started-at="2019-03-04T09:13:44Z" finished-at="2019-03-04T09:13:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@6d7b4f4c]" name="getResult" is-config="true" duration-ms="213" started-at="2019-03-04T09:13:44Z" finished-at="2019-03-04T09:13:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_ILP_Return_Menu_Txn status=SUCCESS method=QCStore.QC_ILP_Return_Menu_Txn()[pri:31, instance:tests.QCStore@6d7b4f4c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="killProcess" is-config="true" duration-ms="5041" started-at="2019-03-04T09:13:44Z" finished-at="2019-03-04T09:13:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_ILP_clear_Menu_Txn()[pri:32, instance:tests.QCStore@6d7b4f4c]" name="QC_ILP_clear_Menu_Txn" duration-ms="837981" started-at="2019-03-04T09:13:49Z" finished-at="2019-03-04T09:27:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_ILP_clear_Menu_Txn -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="endReport" is-config="true" duration-ms="1" started-at="2019-03-04T09:27:47Z" finished-at="2019-03-04T09:27:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@6d7b4f4c]" name="getResult" is-config="true" duration-ms="77" started-at="2019-03-04T09:27:47Z" finished-at="2019-03-04T09:27:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_ILP_clear_Menu_Txn status=SUCCESS method=QCStore.QC_ILP_clear_Menu_Txn()[pri:32, instance:tests.QCStore@6d7b4f4c] output={null}]]]>
+=======
+<<<<<<< HEAD
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+>>>>>>> 792c0d99c7dc98fb911ab128b442f178e0a75ffb
   <reporter-output>
   </reporter-output>
   <suite name="Suite" duration-ms="3396515" started-at="2019-03-04T13:21:05Z" finished-at="2019-03-04T14:17:42Z">
@@ -1013,13 +1077,42 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
                 <![CDATA[[TestResult name=ILP_RefinanceStepDown status=FAILURE method=QCStore.ILP_RefinanceStepDown()[pri:15, instance:tests.QCStore@527740a2] output={null}]]]>
+=======
+                <![CDATA[[TestResult name=RQC_DefaultPayment_Txn_Testdata status=SUCCESS method=QCStore.RQC_DefaultPayment_Txn_Testdata()[pri:5, instance:tests.QCStore@527740a2] output={null}]]]>
+>>>>>>> feb1.1
+>>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
+>>>>>>> 792c0d99c7dc98fb911ab128b442f178e0a75ffb
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="killProcess" is-config="true" duration-ms="5048" started-at="2019-03-04T09:27:47Z" finished-at="2019-03-04T09:27:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_ILP_Deposit_Return_Txn()[pri:35, instance:tests.QCStore@6d7b4f4c]" name="QC_ILP_Deposit_Return_Txn" duration-ms="756052" started-at="2019-03-04T09:27:52Z" finished-at="2019-03-04T09:40:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_ILP_Deposit_Return_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@6d7b4f4c]" name="getResult" is-config="true" duration-ms="45" started-at="2019-03-04T09:40:28Z" finished-at="2019-03-04T09:40:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_ILP_Deposit_Return_Txn status=SUCCESS method=QCStore.QC_ILP_Deposit_Return_Txn()[pri:35, instance:tests.QCStore@6d7b4f4c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-04T09:40:28Z" finished-at="2019-03-04T09:40:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
       </class> <!-- tests.QCStore -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

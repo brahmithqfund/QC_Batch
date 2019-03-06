@@ -2,7 +2,38 @@
 <testng-results skipped="22" failed="1" ignored="54" total="77" passed="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Suite" duration-ms="126738" started-at="2019-03-04T10:43:48Z" finished-at="2019-03-04T10:45:55Z">
+=======
+<<<<<<< HEAD
+  <suite name="Suite" duration-ms="814321" started-at="2019-03-05T05:09:57Z" finished-at="2019-03-05T05:23:32Z">
+    <groups>
+      <group name="1stBatch">
+        <method signature="QCStore.QC_Refinance_StepSameVoidURP_Txn()[pri:199, instance:tests.QCStore@6d7b4f4c]" name="QC_Refinance_StepSameVoidURP_Txn" class="tests.QCStore"/>
+      </group> <!-- 1stBatch -->
+    </groups>
+    <test name="Test" duration-ms="814321" started-at="2019-03-05T05:09:57Z" finished-at="2019-03-05T05:23:32Z">
+      <class name="tests.QCStore">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="setup" is-config="true" duration-ms="94" started-at="2019-03-05T05:09:57Z" finished-at="2019-03-05T05:09:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@6d7b4f4c]" name="killProcess" is-config="true" duration-ms="5022" started-at="2019-03-05T05:09:58Z" finished-at="2019-03-05T05:10:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_Refinance_StepSameVoidURP_Txn()[pri:199, instance:tests.QCStore@6d7b4f4c]" name="QC_Refinance_StepSameVoidURP_Txn" duration-ms="808923" started-at="2019-03-05T05:10:03Z" finished-at="2019-03-05T05:23:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_Refinance_StepSameVoidURP_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@6d7b4f4c]" name="getResult" is-config="true" duration-ms="266" started-at="2019-03-05T05:23:31Z" finished-at="2019-03-05T05:23:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_Refinance_StepSameVoidURP_Txn status=SUCCESS method=QCStore.QC_Refinance_StepSameVoidURP_Txn()[pri:199, instance:tests.QCStore@6d7b4f4c] output={null}]]]>
+=======
+  <suite name="Suite" duration-ms="54072" started-at="2019-03-04T10:16:57Z" finished-at="2019-03-04T10:17:51Z">
+>>>>>>> 792c0d99c7dc98fb911ab128b442f178e0a75ffb
     <groups>
       <group name="Anoop">
         <method signature="QCStore.AQC_EPPDeposit()[pri:16, instance:tests.QCStore@527740a2]" name="AQC_EPPDeposit" class="tests.QCStore"/>
@@ -2484,7 +2515,12 @@ at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
                 <![CDATA[[TestResult name={null} status=CREATED method=QCStore.AQC_EPP_Redeposit()[pri:22, instance:tests.QCStore@527740a2] output={null}]]]>
+=======
+                <![CDATA[[TestResult name=AQC_EPP_Redeposit status=SUCCESS method=QCStore.AQC_EPP_Redeposit()[pri:22, instance:tests.QCStore@6d7b4f4c] output={null}]]]>
+>>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
+>>>>>>> 792c0d99c7dc98fb911ab128b442f178e0a75ffb
               </value>
             </param>
           </params>

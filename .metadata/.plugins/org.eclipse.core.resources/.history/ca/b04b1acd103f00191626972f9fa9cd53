@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+   <groups>																																																	
+  <run>
+<<<<<<< HEAD
+  <!--  Brahmith scenarios   -->  
+     <include name="Brahmith"/>
+  
+ 
+  <!--  Janaki scenarios  -->
+<!-- <include name="Janaki"/>  -->
+  <!-- <include name="Janaki_EOD_set1"/> -->
+ <!-- <include name="Janaki_EOD_set2"/>  -->
+
+  <!--  Anoop scenarios -->
+   <!--  <include name="Anoop"/> -->
+   
+=======
+<<<<<<< HEAD
+  <!-- Janaki's group--> 
+    <!-- <include name="Janaki"/>  -->
+   <!-- <include name="Janaki_EOD_set1"/> --> 
+   <!-- <include name="Janaki_EOD_set2"/> --> 
+  
+   <!-- Brahmith group--> 
+   <!-- <include name="Brahmith"/>  -->
+
+
+   <!-- Anoop group-->  
+    <include name="Anoop"/>  
+
+
+=======
+  
+  <include name="Ratikanta_ILP"/>
+  
+  
+  <!-- <include name="Janaki"/>  -->
+  <!-- <include name="Janaki_EOD_set1"/> -->
+  <!--<include name="Janaki_EOD_set2"/>-->  
+>>>>>>> feb1.1
+>>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
+  </run>
+  </groups>
+   <classes>
+      <class name="tests.QCStore"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
