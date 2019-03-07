@@ -625,11 +625,11 @@ System.out.println(columnname+"_TxnHistory_FieldValue");
 							}
 							if(loan_balance_inf_Return_Fee_Due_test.equalsIgnoreCase(loan_balance_inf_Return_Fee_Due))
 							{
-								test.log(LogStatus.PASS, "Earned_and_unpaid_interest->Expected value:"+loan_balance_inf_Return_Fee_Due_test +"; == Actual value:"+loan_balance_inf_Return_Fee_Due);
+								test.log(LogStatus.PASS, "Return_Fee_Due->Expected value:"+loan_balance_inf_Return_Fee_Due_test +"; == Actual value:"+loan_balance_inf_Return_Fee_Due);
 							}
 							else
 							{
-								test.log(LogStatus.FAIL, "Earned_and_unpaid_interest->Expected value:"+loan_balance_inf_Return_Fee_Due_test +"; not equals to Actual value:"+loan_balance_inf_Return_Fee_Due);
+								test.log(LogStatus.FAIL, "Return_Fee_Due->Expected value:"+loan_balance_inf_Return_Fee_Due_test +"; not equals to Actual value:"+loan_balance_inf_Return_Fee_Due);
 
 							}
 							if(loan_balance_inf_Late_Fee_Due_test.equalsIgnoreCase(loan_balance_inf_Late_Fee_Due))

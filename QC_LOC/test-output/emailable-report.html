@@ -10,6 +10,7 @@
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <tr><td><a href="#t0">Test</a></td><td class="num">6</td><td class="num">0</td><td class="num attn">1</td><td class="num">7,809,621</td><td>Anoop_EOD1</td><td></td></tr>
 </table>
 <table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.QCStore</td><td><a href="#m0">PaymentAndEod</a></td><td rowspan="1">1551794045230</td><td rowspan="1">86160</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">tests.QCStore</td><td><a href="#m1">DepositAndEOD</a></td><td rowspan="1">1551798122028</td><td rowspan="1">1215893</td></tr><tr class="passedeven"><td><a href="#m2">DrawAndEOD</a></td><td rowspan="1">1551799343573</td><td rowspan="1">1310364</td></tr><tr class="passedeven"><td><a href="#m3">EODOnDueDate</a></td><td rowspan="1">1551792850039</td><td rowspan="1">1189381</td></tr><tr class="passedeven"><td><a href="#m4">HigherPaymentAndEod</a></td><td rowspan="1">1551794137790</td><td rowspan="1">1331377</td></tr><tr class="passedeven"><td><a href="#m5">PayOFFandEod</a></td><td rowspan="1">1551796843557</td><td rowspan="1">1272827</td></tr><tr class="passedeven"><td><a href="#m6">VoidandEod</a></td><td rowspan="1">1551795474807</td><td rowspan="1">1363107</td></tr></tbody>
@@ -100,5 +101,49 @@ Session ID: 65697d82-dfdd-47b9-bc12-ede5e15cce8a
 >>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
 >>>>>>> cfd4415cf923aceeec44a0b1fca621dca6ccc529
 >>>>>>> 792c0d99c7dc98fb911ab128b442f178e0a75ffb
+=======
+<tr><td><a href="#t0">Test</a></td><td class="num">6</td><td class="num">0</td><td class="num attn">8</td><td class="num">12,284,107</td><td>1st Batch</td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="8">tests.QCStore</td><td><a href="#m0">LOC_Draw_Void_Txn</a></td><td rowspan="1">1551801672616</td><td rowspan="1">712712</td></tr><tr class="failedeven"><td><a href="#m1">LOC_PayOff_Draw_Void_Txn</a></td><td rowspan="1">1551803113287</td><td rowspan="1">746391</td></tr><tr class="failedeven"><td><a href="#m2">LOC_PayOff_RescindPeriod_void_Txn</a></td><td rowspan="1">1551793437352</td><td rowspan="1">685930</td></tr><tr class="failedeven"><td><a href="#m3">LOC_PayOff_Return_Txn</a></td><td rowspan="1">1551797238817</td><td rowspan="1">2204047</td></tr><tr class="failedeven"><td><a href="#m4">LOC_Payment_Draw_Void_Txn</a></td><td rowspan="1">1551802391062</td><td rowspan="1">716447</td></tr><tr class="failedeven"><td><a href="#m5">LOC_Payment_Gracedays_PayOff_Void_Txn</a></td><td rowspan="1">1551795495363</td><td rowspan="1">917051</td></tr><tr class="failedeven"><td><a href="#m6">LOC_Payment_PayOff_Void_Txn</a></td><td rowspan="1">1551794129020</td><td rowspan="1">1360566</td></tr><tr class="failedeven"><td><a href="#m7">LOC_Payment_Void_PayOff_Void_Txn</a></td><td rowspan="1">1551796418203</td><td rowspan="1">814786</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">tests.QCStore</td><td><a href="#m8">LOC_Deposit_Return_PayOff_Txn</a></td><td rowspan="1">1551803865506</td><td rowspan="1">1191916</td></tr><tr class="passedeven"><td><a href="#m9">LOC_Draw_Txn</a></td><td rowspan="1">1551800119609</td><td rowspan="1">415357</td></tr><tr class="passedeven"><td><a href="#m10">LOC_PayOff_Draw_Txn</a></td><td rowspan="1">1551801111289</td><td rowspan="1">556261</td></tr><tr class="passedeven"><td><a href="#m11">LOC_Payment_Draw_Txn</a></td><td rowspan="1">1551800540021</td><td rowspan="1">566175</td></tr><tr class="passedeven"><td><a href="#m12">LOC_Payment_PayOff_Return_Txn</a></td><td rowspan="1">1551799448699</td><td rowspan="1">665844</td></tr><tr class="passedeven"><td><a href="#m13">LOC_Payment_Return_PayOff_Txn</a></td><td rowspan="1">1551792778509</td><td rowspan="1">653570</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">tests.QCStore#LOC_Draw_Void_Txn</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at tests.QCVoid.qcVoid(QCVoid.java:177)
+	at tests.QCStore.LOC_Draw_Void_Txn(QCStore.java:1368)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.QCStore#LOC_PayOff_Draw_Void_Txn</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at tests.QCVoid.qcVoid(QCVoid.java:177)
+	at tests.QCStore.LOC_PayOff_Draw_Void_Txn(QCStore.java:1490)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.QCStore#LOC_PayOff_RescindPeriod_void_Txn</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at tests.QCVoid.qcVoid(QCVoid.java:177)
+	at tests.QCStore.LOC_PayOff_RescindPeriod_void_Txn(QCStore.java:817)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.QCStore#LOC_PayOff_Return_Txn</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at tests.QCPayOff.payoff(QCPayOff.java:152)
+	at tests.QCStore.LOC_PayOff_Return_Txn(QCStore.java:1061)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.QCStore#LOC_Payment_Draw_Void_Txn</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at tests.QCVoid.qcVoid(QCVoid.java:177)
+	at tests.QCStore.LOC_Payment_Draw_Void_Txn(QCStore.java:1430)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.QCStore#LOC_Payment_Gracedays_PayOff_Void_Txn</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at tests.QCVoid.qcVoid(QCVoid.java:177)
+	at tests.QCStore.LOC_Payment_Gracedays_PayOff_Void_Txn(QCStore.java:943)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">tests.QCStore#LOC_Payment_PayOff_Void_Txn</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at tests.QCVoid.qcVoid(QCVoid.java:177)
+	at tests.QCStore.LOC_Payment_PayOff_Void_Txn(QCStore.java:880)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">tests.QCStore#LOC_Payment_Void_PayOff_Void_Txn</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at tests.QCVoid.qcVoid(QCVoid.java:177)
+	at tests.QCStore.LOC_Payment_Void_PayOff_Void_Txn(QCStore.java:1007)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">tests.QCStore#LOC_Deposit_Return_PayOff_Txn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">tests.QCStore#LOC_Draw_Txn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">tests.QCStore#LOC_PayOff_Draw_Txn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">tests.QCStore#LOC_Payment_Draw_Txn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">tests.QCStore#LOC_Payment_PayOff_Return_Txn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">tests.QCStore#LOC_Payment_Return_PayOff_Txn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+>>>>>>> jyothi1.1
 </body>
 </html>

@@ -147,7 +147,7 @@ public class VQCAgeStoreDueDate extends QCStore{
 												}
 												catch(Exception e)
 												{
-													//driver.get("http://192.168.2.203/cc/login/index.jsp");
+													driver.get("http://192.168.2.203/cc/login/index.jsp");
 
 													driver.switchTo().defaultContent();
 													 driver.switchTo().frame("topFrame");

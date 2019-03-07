@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" ignored="107" total="114" passed="6">
   <reporter-output>
   </reporter-output>
@@ -172,12 +173,56 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn status=SUCCESS method=QCStore.LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn()[pri:69, instance:tests.QCStore@527740a2] output={null}]]]>
+=======
+<testng-results skipped="0" failed="8" ignored="81" total="95" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="12284107" started-at="2019-03-05T13:32:53Z" finished-at="2019-03-05T16:57:37Z">
+    <groups>
+      <group name="1st Batch">
+        <method signature="QCStore.LOC_Deposit_Return_PayOff_Txn()[pri:164, instance:tests.QCStore@527740a2]" name="LOC_Deposit_Return_PayOff_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.LOC_Draw_Txn()[pri:155, instance:tests.QCStore@527740a2]" name="LOC_Draw_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.LOC_Draw_Void_Txn()[pri:158, instance:tests.QCStore@527740a2]" name="LOC_Draw_Void_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.LOC_PayOff_Draw_Txn()[pri:157, instance:tests.QCStore@527740a2]" name="LOC_PayOff_Draw_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.LOC_PayOff_Draw_Void_Txn()[pri:160, instance:tests.QCStore@527740a2]" name="LOC_PayOff_Draw_Void_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.LOC_PayOff_RescindPeriod_void_Txn()[pri:140, instance:tests.QCStore@527740a2]" name="LOC_PayOff_RescindPeriod_void_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.LOC_PayOff_Return_Txn()[pri:144, instance:tests.QCStore@527740a2]" name="LOC_PayOff_Return_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.LOC_Payment_Draw_Txn()[pri:156, instance:tests.QCStore@527740a2]" name="LOC_Payment_Draw_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.LOC_Payment_Draw_Void_Txn()[pri:159, instance:tests.QCStore@527740a2]" name="LOC_Payment_Draw_Void_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.LOC_Payment_Gracedays_PayOff_Void_Txn()[pri:142, instance:tests.QCStore@527740a2]" name="LOC_Payment_Gracedays_PayOff_Void_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.LOC_Payment_PayOff_Return_Txn()[pri:145, instance:tests.QCStore@527740a2]" name="LOC_Payment_PayOff_Return_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.LOC_Payment_PayOff_Void_Txn()[pri:141, instance:tests.QCStore@527740a2]" name="LOC_Payment_PayOff_Void_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.LOC_Payment_Return_PayOff_Txn()[pri:139, instance:tests.QCStore@527740a2]" name="LOC_Payment_Return_PayOff_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.LOC_Payment_Void_PayOff_Void_Txn()[pri:143, instance:tests.QCStore@527740a2]" name="LOC_Payment_Void_PayOff_Void_Txn" class="tests.QCStore"/>
+      </group> <!-- 1st Batch -->
+    </groups>
+    <test name="Test" duration-ms="12284107" started-at="2019-03-05T13:32:53Z" finished-at="2019-03-05T16:57:37Z">
+      <class name="tests.QCStore">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="88" started-at="2019-03-05T13:32:53Z" finished-at="2019-03-05T13:32:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5039" started-at="2019-03-05T13:32:53Z" finished-at="2019-03-05T13:32:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="LOC_Payment_Return_PayOff_Txn()[pri:139, instance:tests.QCStore@527740a2]" name="LOC_Payment_Return_PayOff_Txn" duration-ms="653570" started-at="2019-03-05T13:32:58Z" finished-at="2019-03-05T13:43:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LOC_Payment_Return_PayOff_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="247" started-at="2019-03-05T13:43:52Z" finished-at="2019-03-05T13:43:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LOC_Payment_Return_PayOff_Txn status=SUCCESS method=QCStore.LOC_Payment_Return_PayOff_Txn()[pri:139, instance:tests.QCStore@527740a2] output={null}]]]>
+>>>>>>> jyothi1.1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5098" started-at="2019-03-04T13:03:35Z" finished-at="2019-03-04T13:03:40Z">
           <reporter-output>
           </reporter-output>
@@ -278,12 +323,68 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=RQC_LOC_Deposit_Return_2ndDeposit_Clear_3rdDeposit_Return_Default_Txn_Testdata status=SUCCESS method=QCStore.RQC_LOC_Deposit_Return_2ndDeposit_Clear_3rdDeposit_Return_Default_Txn_Testdata()[pri:203, instance:tests.QCStore@527740a2] output={null}]]]>
+=======
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5024" started-at="2019-03-05T13:43:52Z" finished-at="2019-03-05T13:43:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="FAIL" signature="LOC_PayOff_RescindPeriod_void_Txn()[pri:140, instance:tests.QCStore@527740a2]" name="LOC_PayOff_RescindPeriod_void_Txn" duration-ms="685930" started-at="2019-03-05T13:43:57Z" finished-at="2019-03-05T13:55:23Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at tests.QCVoid.qcVoid(QCVoid.java:177)
+at tests.QCStore.LOC_PayOff_RescindPeriod_void_Txn(QCStore.java:817)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LOC_PayOff_RescindPeriod_void_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="716" started-at="2019-03-05T13:55:23Z" finished-at="2019-03-05T13:55:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LOC_PayOff_RescindPeriod_void_Txn status=FAILURE method=QCStore.LOC_PayOff_RescindPeriod_void_Txn()[pri:140, instance:tests.QCStore@527740a2] output={null}]]]>
+>>>>>>> jyothi1.1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5002" started-at="2019-03-05T14:49:42Z" finished-at="2019-03-05T14:49:47Z">
           <reporter-output>
           </reporter-output>
@@ -297,12 +398,68 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=RQC_LOC_2missedPayment_Default_EOD_Txn_Testdata status=SUCCESS method=QCStore.RQC_LOC_2missedPayment_Default_EOD_Txn_Testdata()[pri:204, instance:tests.QCStore@527740a2] output={null}]]]>
+=======
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5019" started-at="2019-03-05T13:55:24Z" finished-at="2019-03-05T13:55:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="FAIL" signature="LOC_Payment_PayOff_Void_Txn()[pri:141, instance:tests.QCStore@527740a2]" name="LOC_Payment_PayOff_Void_Txn" duration-ms="1360566" started-at="2019-03-05T13:55:29Z" finished-at="2019-03-05T14:18:09Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at tests.QCVoid.qcVoid(QCVoid.java:177)
+at tests.QCStore.LOC_Payment_PayOff_Void_Txn(QCStore.java:880)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LOC_Payment_PayOff_Void_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="734" started-at="2019-03-05T14:18:09Z" finished-at="2019-03-05T14:18:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LOC_Payment_PayOff_Void_Txn status=FAILURE method=QCStore.LOC_Payment_PayOff_Void_Txn()[pri:141, instance:tests.QCStore@527740a2] output={null}]]]>
+>>>>>>> jyothi1.1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-03-05T15:22:24Z" finished-at="2019-03-05T15:22:29Z">
           <reporter-output>
           </reporter-output>
@@ -316,12 +473,68 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=RQC_LOC_Default_DefaultPayment_Txn_Testdata status=SUCCESS method=QCStore.RQC_LOC_Default_DefaultPayment_Txn_Testdata()[pri:205, instance:tests.QCStore@527740a2] output={null}]]]>
+=======
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5041" started-at="2019-03-05T14:18:10Z" finished-at="2019-03-05T14:18:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="FAIL" signature="LOC_Payment_Gracedays_PayOff_Void_Txn()[pri:142, instance:tests.QCStore@527740a2]" name="LOC_Payment_Gracedays_PayOff_Void_Txn" duration-ms="917051" started-at="2019-03-05T14:18:15Z" finished-at="2019-03-05T14:33:32Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at tests.QCVoid.qcVoid(QCVoid.java:177)
+at tests.QCStore.LOC_Payment_Gracedays_PayOff_Void_Txn(QCStore.java:943)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LOC_Payment_Gracedays_PayOff_Void_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="726" started-at="2019-03-05T14:33:32Z" finished-at="2019-03-05T14:33:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LOC_Payment_Gracedays_PayOff_Void_Txn status=FAILURE method=QCStore.LOC_Payment_Gracedays_PayOff_Void_Txn()[pri:142, instance:tests.QCStore@527740a2] output={null}]]]>
+>>>>>>> jyothi1.1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5005" started-at="2019-03-05T15:57:16Z" finished-at="2019-03-05T15:57:21Z">
           <reporter-output>
           </reporter-output>
@@ -335,12 +548,68 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=RQC_LOC_Default_DefaultPayment_Void_Txn_Testdata status=SUCCESS method=QCStore.RQC_LOC_Default_DefaultPayment_Void_Txn_Testdata()[pri:206, instance:tests.QCStore@527740a2] output={null}]]]>
+=======
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5061" started-at="2019-03-05T14:33:33Z" finished-at="2019-03-05T14:33:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="FAIL" signature="LOC_Payment_Void_PayOff_Void_Txn()[pri:143, instance:tests.QCStore@527740a2]" name="LOC_Payment_Void_PayOff_Void_Txn" duration-ms="814786" started-at="2019-03-05T14:33:38Z" finished-at="2019-03-05T14:47:12Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at tests.QCVoid.qcVoid(QCVoid.java:177)
+at tests.QCStore.LOC_Payment_Void_PayOff_Void_Txn(QCStore.java:1007)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LOC_Payment_Void_PayOff_Void_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="737" started-at="2019-03-05T14:47:12Z" finished-at="2019-03-05T14:47:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LOC_Payment_Void_PayOff_Void_Txn status=FAILURE method=QCStore.LOC_Payment_Void_PayOff_Void_Txn()[pri:143, instance:tests.QCStore@527740a2] output={null}]]]>
+>>>>>>> jyothi1.1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5002" started-at="2019-03-05T16:30:11Z" finished-at="2019-03-05T16:30:16Z">
           <reporter-output>
           </reporter-output>
@@ -354,12 +623,68 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=RQC_LOC_Default_PartialDefaultPayment_Void_Txn_Testdata status=SUCCESS method=QCStore.RQC_LOC_Default_PartialDefaultPayment_Void_Txn_Testdata()[pri:207, instance:tests.QCStore@527740a2] output={null}]]]>
+=======
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5090" started-at="2019-03-05T14:47:13Z" finished-at="2019-03-05T14:47:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="FAIL" signature="LOC_PayOff_Return_Txn()[pri:144, instance:tests.QCStore@527740a2]" name="LOC_PayOff_Return_Txn" duration-ms="2204047" started-at="2019-03-05T14:47:18Z" finished-at="2019-03-05T15:24:02Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at tests.QCPayOff.payoff(QCPayOff.java:152)
+at tests.QCStore.LOC_PayOff_Return_Txn(QCStore.java:1061)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LOC_PayOff_Return_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="726" started-at="2019-03-05T15:24:02Z" finished-at="2019-03-05T15:24:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LOC_PayOff_Return_Txn status=FAILURE method=QCStore.LOC_PayOff_Return_Txn()[pri:144, instance:tests.QCStore@527740a2] output={null}]]]>
+>>>>>>> jyothi1.1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-03-05T17:03:30Z" finished-at="2019-03-05T17:03:35Z">
           <reporter-output>
           </reporter-output>
@@ -373,12 +698,28 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=RQC_LOC_Default_DefaultPayment_Return_Txn_Testdata status=SUCCESS method=QCStore.RQC_LOC_Default_DefaultPayment_Return_Txn_Testdata()[pri:208, instance:tests.QCStore@527740a2] output={null}]]]>
+=======
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5106" started-at="2019-03-05T15:24:03Z" finished-at="2019-03-05T15:24:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="LOC_Payment_PayOff_Return_Txn()[pri:145, instance:tests.QCStore@527740a2]" name="LOC_Payment_PayOff_Return_Txn" duration-ms="665844" started-at="2019-03-05T15:24:08Z" finished-at="2019-03-05T15:35:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LOC_Payment_PayOff_Return_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="29" started-at="2019-03-05T15:35:14Z" finished-at="2019-03-05T15:35:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LOC_Payment_PayOff_Return_Txn status=SUCCESS method=QCStore.LOC_Payment_PayOff_Return_Txn()[pri:145, instance:tests.QCStore@527740a2] output={null}]]]>
+>>>>>>> jyothi1.1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5002" started-at="2019-03-05T17:37:38Z" finished-at="2019-03-05T17:37:43Z">
           <reporter-output>
           </reporter-output>
@@ -392,12 +733,28 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Txn_Testdata status=SUCCESS method=QCStore.RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Txn_Testdata()[pri:209, instance:tests.QCStore@527740a2] output={null}]]]>
+=======
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5037" started-at="2019-03-05T15:35:14Z" finished-at="2019-03-05T15:35:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="LOC_Draw_Txn()[pri:155, instance:tests.QCStore@527740a2]" name="LOC_Draw_Txn" duration-ms="415357" started-at="2019-03-05T15:35:19Z" finished-at="2019-03-05T15:42:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LOC_Draw_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="30" started-at="2019-03-05T15:42:14Z" finished-at="2019-03-05T15:42:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LOC_Draw_Txn status=SUCCESS method=QCStore.LOC_Draw_Txn()[pri:155, instance:tests.QCStore@527740a2] output={null}]]]>
+>>>>>>> jyothi1.1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5003" started-at="2019-03-05T18:10:18Z" finished-at="2019-03-05T18:10:23Z">
           <reporter-output>
           </reporter-output>
@@ -447,12 +804,28 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               <value>
                 <![CDATA[[TestResult name=RQC_LOC_PayOff_Closure_Txn_Testdata status=SUCCESS method=QCStore.RQC_LOC_PayOff_Closure_Txn_Testdata()[pri:211, instance:tests.QCStore@527740a2] output={null}]]]>
 >>>>>>> 792c0d99c7dc98fb911ab128b442f178e0a75ffb
+=======
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5023" started-at="2019-03-05T15:42:14Z" finished-at="2019-03-05T15:42:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="LOC_Payment_Draw_Txn()[pri:156, instance:tests.QCStore@527740a2]" name="LOC_Payment_Draw_Txn" duration-ms="566175" started-at="2019-03-05T15:42:20Z" finished-at="2019-03-05T15:51:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LOC_Payment_Draw_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="28" started-at="2019-03-05T15:51:46Z" finished-at="2019-03-05T15:51:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LOC_Payment_Draw_Txn status=SUCCESS method=QCStore.LOC_Payment_Draw_Txn()[pri:156, instance:tests.QCStore@527740a2] output={null}]]]>
+>>>>>>> jyothi1.1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5035" started-at="2019-03-05T14:40:38Z" finished-at="2019-03-05T14:40:43Z">
           <reporter-output>
@@ -482,12 +855,28 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               <value>
                 <![CDATA[[TestResult name=RQC_LOC_Payment_PayOff_Closure_Void_Txn_Testdata status=SUCCESS method=QCStore.RQC_LOC_Payment_PayOff_Closure_Void_Txn_Testdata()[pri:212, instance:tests.QCStore@527740a2] output={null}]]]>
 >>>>>>> 792c0d99c7dc98fb911ab128b442f178e0a75ffb
+=======
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5065" started-at="2019-03-05T15:51:46Z" finished-at="2019-03-05T15:51:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="LOC_PayOff_Draw_Txn()[pri:157, instance:tests.QCStore@527740a2]" name="LOC_PayOff_Draw_Txn" duration-ms="556261" started-at="2019-03-05T15:51:51Z" finished-at="2019-03-05T16:01:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LOC_PayOff_Draw_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="30" started-at="2019-03-05T16:01:07Z" finished-at="2019-03-05T16:01:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LOC_PayOff_Draw_Txn status=SUCCESS method=QCStore.LOC_PayOff_Draw_Txn()[pri:157, instance:tests.QCStore@527740a2] output={null}]]]>
+>>>>>>> jyothi1.1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5030" started-at="2019-03-05T15:01:56Z" finished-at="2019-03-05T15:02:02Z">
           <reporter-output>
@@ -552,6 +941,198 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               <value>
                 <![CDATA[[TestResult name=RQC_LOC_PayOff_Agestore180days_AutoClosure_Txn_Testdata status=SUCCESS method=QCStore.RQC_LOC_PayOff_Agestore180days_AutoClosure_Txn_Testdata()[pri:214, instance:tests.QCStore@527740a2] output={null}]]]>
 >>>>>>> 792c0d99c7dc98fb911ab128b442f178e0a75ffb
+=======
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5035" started-at="2019-03-05T16:01:07Z" finished-at="2019-03-05T16:01:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="FAIL" signature="LOC_Draw_Void_Txn()[pri:158, instance:tests.QCStore@527740a2]" name="LOC_Draw_Void_Txn" duration-ms="712712" started-at="2019-03-05T16:01:12Z" finished-at="2019-03-05T16:13:05Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at tests.QCVoid.qcVoid(QCVoid.java:177)
+at tests.QCStore.LOC_Draw_Void_Txn(QCStore.java:1368)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LOC_Draw_Void_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="695" started-at="2019-03-05T16:13:05Z" finished-at="2019-03-05T16:13:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LOC_Draw_Void_Txn status=FAILURE method=QCStore.LOC_Draw_Void_Txn()[pri:158, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5037" started-at="2019-03-05T16:13:06Z" finished-at="2019-03-05T16:13:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="FAIL" signature="LOC_Payment_Draw_Void_Txn()[pri:159, instance:tests.QCStore@527740a2]" name="LOC_Payment_Draw_Void_Txn" duration-ms="716447" started-at="2019-03-05T16:13:11Z" finished-at="2019-03-05T16:25:07Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at tests.QCVoid.qcVoid(QCVoid.java:177)
+at tests.QCStore.LOC_Payment_Draw_Void_Txn(QCStore.java:1430)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LOC_Payment_Draw_Void_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="747" started-at="2019-03-05T16:25:07Z" finished-at="2019-03-05T16:25:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LOC_Payment_Draw_Void_Txn status=FAILURE method=QCStore.LOC_Payment_Draw_Void_Txn()[pri:159, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5030" started-at="2019-03-05T16:25:08Z" finished-at="2019-03-05T16:25:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="FAIL" signature="LOC_PayOff_Draw_Void_Txn()[pri:160, instance:tests.QCStore@527740a2]" name="LOC_PayOff_Draw_Void_Txn" duration-ms="746391" started-at="2019-03-05T16:25:13Z" finished-at="2019-03-05T16:37:39Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at tests.QCVoid.qcVoid(QCVoid.java:177)
+at tests.QCStore.LOC_PayOff_Draw_Void_Txn(QCStore.java:1490)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LOC_PayOff_Draw_Void_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="745" started-at="2019-03-05T16:37:39Z" finished-at="2019-03-05T16:37:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LOC_PayOff_Draw_Void_Txn status=FAILURE method=QCStore.LOC_PayOff_Draw_Void_Txn()[pri:160, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5081" started-at="2019-03-05T16:37:40Z" finished-at="2019-03-05T16:37:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="LOC_Deposit_Return_PayOff_Txn()[pri:164, instance:tests.QCStore@527740a2]" name="LOC_Deposit_Return_PayOff_Txn" duration-ms="1191916" started-at="2019-03-05T16:37:45Z" finished-at="2019-03-05T16:57:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LOC_Deposit_Return_PayOff_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="52" started-at="2019-03-05T16:57:37Z" finished-at="2019-03-05T16:57:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LOC_Deposit_Return_PayOff_Txn status=SUCCESS method=QCStore.LOC_Deposit_Return_PayOff_Txn()[pri:164, instance:tests.QCStore@527740a2] output={null}]]]>
+>>>>>>> jyothi1.1
               </value>
             </param>
           </params>

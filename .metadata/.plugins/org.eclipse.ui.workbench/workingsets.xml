@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1551684585519_0" label="Window Working Set" name="Aggregate for window 1551684585519"/>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1551165669869_0" label="Window Working Set" name="Aggregate for window 1550826528831"/>
+>>>>>>> jyothi1.1
 </workingSetManager>

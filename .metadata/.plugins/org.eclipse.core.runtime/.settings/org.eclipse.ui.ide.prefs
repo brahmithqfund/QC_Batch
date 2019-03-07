@@ -1,8 +1,13 @@
 =\=\=\=\=\=\=
 <<<<<<<=HEAD
+<<<<<<< HEAD
 >>>>>>>=janaki1.1
+=======
+>>>>>>>=jan21.1
+EXIT_PROMPT_ON_CLOSE_LAST_WINDOW=false
+>>>>>>> jyothi1.1
 PROBLEMS_FILTERS_MIGRATE=true
 eclipse.preferences.version=1
-platformState=1487326882157
+platformState=1487326882091
 quickStart=false
 tipsAndTricks=true

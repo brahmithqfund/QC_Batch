@@ -61,3 +61,7 @@ M
 test-output/testng-reports.js,8\0\80592053f6a51e6a2e28f59d796ae3db5c14005a
 F
 test-output/passed.png,9\6\96b721e41daae92ce544186fb5fb4265c2c4d44e
+€
+PExecutionReports/LendNation/FailedTestsScreenshots/Submit2019.01.29.12.04.07.png,4\e\4e1ad6b999ac31bca3fcadfc181e304a627fc604
+€
+PExecutionReports/LendNation/FailedTestsScreenshots/Submit2019.01.29.11.56.03.png,6\5\652e2e828b688ffc38ba890966e976ce6d8ec4a4
