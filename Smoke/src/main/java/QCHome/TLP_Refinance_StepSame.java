@@ -212,6 +212,7 @@ public class TLP_Refinance_StepSame extends CSR{
 						
 						
 					}
+					Thread.sleep(3000);
 					driver.switchTo().defaultContent();
 					driver.switchTo().frame("mainFrame");
 					driver.switchTo().frame("main");

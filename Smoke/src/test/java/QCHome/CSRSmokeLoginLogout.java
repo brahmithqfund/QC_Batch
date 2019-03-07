@@ -40,7 +40,7 @@ public class CSRSmokeLoginLogout extends CSR{
 
 					test.log(LogStatus.INFO, "<FONT color=green> Login Sucessfully");
 					test.log(LogStatus.INFO, "******************************************************** ");
-
+Thread.sleep(2000);
 				
 
 			

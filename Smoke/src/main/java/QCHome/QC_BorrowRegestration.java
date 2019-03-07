@@ -838,12 +838,12 @@ public class QC_BorrowRegestration extends CSR {
 //----------------------------------------------------------------------------------------------------------
 				driver.findElement(By.name("Save")).click();
 				test.log(LogStatus.PASS, "Clicked on Next in Personal Tab");
-				Thread.sleep(5000);
+				Thread.sleep(7000);
 				//driver.findElement(By.xpath("//*[@id='valReferenceTable']/tbody/tr[2]/td[5]/div[3]/input")).click();
 				 driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
 				 
 				test.log(LogStatus.PASS, "Clicked on Go");
-				Thread.sleep(1000);
+				Thread.sleep(3000);
 				driver.findElement(By.name("bt_Income")).click();
 				test.log(LogStatus.PASS, "Clicked on Update");
 				Thread.sleep(1000);

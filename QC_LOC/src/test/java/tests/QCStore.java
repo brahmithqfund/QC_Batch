@@ -5672,9 +5672,11 @@ public class QCStore {
 		}
 	}
 
-	// ------SET 1 of
-	// SHASHI------------------------------------------------------------------------------------------------------------------------------------------------------
-	@Test(priority = 487, enabled = true, groups = { "NonEOD" })
+
+	
+	//****************************************Anoop-Scenarios-NonEOD****************************************//
+	
+	//@Test(priority = 487, enabled = true, groups = { "NonEOD" })
 
 	public void MinLocAmounts() throws Exception {
 		FileName = "QC_LOC_NewLoan_monthly_MinAmount.xls";
@@ -5705,7 +5707,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 488, enabled = true, groups = { "NonEOD" })
+	//@Test(priority = 488, enabled = true, groups = { "NonEOD" })
 
 	public void MaxLocAmounts() throws Exception {
 		FileName = "QC_LOC_NewLoan_monthly_Maxamount.xls";
@@ -5736,9 +5738,9 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 489, enabled = true, groups = { "NonEOD" })
+	//@Test(priority = 489, enabled = true, groups = { "NonEOD" })
 
-	public void ILP_maxloanCount() throws Exception {
+	public void LOC_maxloanCount() throws Exception {
 		FileName = "QC_LOC_MaxLoan.xls";
 		test = reports.startTest("QC_LOC_MaxLoan_Count ", "Login-->Borrower-->Max loan count");
 
@@ -5773,7 +5775,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 490, enabled = true, groups = { "NonEOD" })
+//	@Test(priority = 490, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanWeekly_Duedatevalidation() throws Exception {
 		FileName = "QC_LOC_EndDate_Weekly_Duedate.xls";
@@ -5804,7 +5806,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 491, enabled = true, groups = { "NonEOD" })
+	//@Test(priority = 491, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanSemiMonthly_Duedatevalidation() throws Exception {
 		FileName = "QC_LOC_EndDate_Semimonthly_Duedate.xls";
@@ -5835,7 +5837,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 492, enabled = true, groups = { "NonEOD" })
+//	@Test(priority = 492, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanMonthly_Duedatevalidation() throws Exception {
 		FileName = "QC_LOC_EndDate_monthly_Duedate.xls";
@@ -5866,7 +5868,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 493, enabled = true, groups = { "NonEOD" })
+//	@Test(priority = 493, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanBiweeklyPaymentDuedate() throws Exception {
 		FileName = "QC_LOC_EndDate_Biweekly_Duedate.xls";
@@ -5897,7 +5899,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 494, enabled = true, groups = { "NonEOD" })
+//	@Test(priority = 494, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanWeekly() throws Exception {
 		FileName = "QC_LOC_NewLoan_Weekly.xls";
@@ -5927,7 +5929,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 495, enabled = true, groups = { "NonEOD" })
+//	@Test(priority = 495, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanSemiMonthly() throws Exception {
 		FileName = "QC_LOC_NewLoan_Semimonthly.xls";
@@ -5957,7 +5959,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 496, enabled = true, groups = { "NonEOD" })
+//	@Test(priority = 496, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanMonthly() throws Exception {
 		FileName = "QC_LOC_NewLoan_monthly.xls";
@@ -5987,7 +5989,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 497, enabled = true, groups = { "NonEOD" })
+//	@Test(priority = 497, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanBiweekly() throws Exception {
 		FileName = "QC_LOC_NewLoan_Biweekly.xls";
@@ -6013,18 +6015,15 @@ public class QCStore {
 				AQCCSRNewLoan.newLoan(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
-				ACSRLoginLogout.login(SSN, AppURL);
-				AQC_LOC_History.history(SSN, AppURL);
-				ACSRLoginLogout.logout();
 				test.log(LogStatus.INFO, "****Test Scenario for BiWeekly pay frequence new loan is pass******");
 			}
 		}
 	}
 
 	@Test(priority = 498, enabled = true, groups = { "NonEOD" })
-	public void AReviseCredit_IncreaseIncome() throws Exception {
+	public void AReviseCredit_IncIncome() throws Exception {
 
-		FileName = "QC_ AReviseCredit_IncreaseIncome.xls";
+		FileName = "QC_ ReviseCredit_IncreaseIncome.xls";
 		test = reports.startTest("QC_ AReviseCredit_IncreaseIncome", " New LOC-->Increase Income-Revise credit ");
 
 		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/ALOC/" + FileName);
@@ -6038,14 +6037,14 @@ public class QCStore {
 				String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
 
-				ACSRLoginLogout.login(SSN, AppURL);
+				/*ACSRLoginLogout.login(SSN, AppURL);
 				ACSRBorrowerRegistration.borrowerReg(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCCSRNewLoan.newLoan(SSN, AppURL);
 				ACSRLoginLogout.logout();
-
+*/
 				ACSRLoginLogout.login(SSN, AppURL);
 				AReviseCredit.revisecredit(SSN, AppURL);
 				ACSRLoginLogout.logout();
@@ -6055,7 +6054,7 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
-				AQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+				SQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
 
 				ACSRLoginLogout.login(SSN, AppURL);
 				// This is normal payment
@@ -6166,7 +6165,7 @@ public class QCStore {
 		}
 	}
 
-	// Shashi scenarios
+	//**************************************Shashi-Scenarios************************************//
 
 	@Test(priority = 500, enabled = true, groups = "Shashi")
 
@@ -6174,7 +6173,7 @@ public class QCStore {
 		FileName = "QC_LOC_Deposit_Dropdown.xls";
 		test = reports.startTest("QC_LOC_Deposit_DropDown");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/SLOC/" + FileName);
+		TestData = new ExcelNew(System.getProperty("user.dir") + Sprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);
@@ -6211,7 +6210,7 @@ public class QCStore {
 		FileName = "QC_LOC_Deposit_DropDown_Void.xls";
 		test = reports.startTest("QC_LOC_Deposit_DropDown_Void");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/SLOC/" + FileName);
+		TestData = new ExcelNew(System.getProperty("user.dir") + Sprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);
@@ -6250,7 +6249,8 @@ public class QCStore {
 		FileName = "QC_LOC_Deposit_Bulk.xls";
 		test = reports.startTest("QC_LOC_Deposit_Bulk");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/SLOC/" + FileName);
+		TestData = new ExcelNew(System.getProperty("user.dir") + Sprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
+		
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);
@@ -6286,7 +6286,7 @@ public class QCStore {
 		FileName = "QC_LOC_Deposit_Bulk_Void.xls";
 		test = reports.startTest("QC_LOC_Deposit_Bulk_Void");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/SLOC/" + FileName);
+		TestData = new ExcelNew(System.getProperty("user.dir") + Sprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);
@@ -6325,7 +6325,7 @@ public class QCStore {
 		FileName = "QC_LOC_MidDay_Deposit.xls";
 		test = reports.startTest("QC_LOC_MidDay_Deposit");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/SLOC/" + FileName);
+		TestData = new ExcelNew(System.getProperty("user.dir") + Sprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);
@@ -6362,7 +6362,7 @@ public class QCStore {
 		FileName = "QC_LOC_MidDay_Void_Deposit.xls";
 		test = reports.startTest("QC_LOC_MidDay_Void_Deposit");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/SLOC/" + FileName);
+		TestData = new ExcelNew(System.getProperty("user.dir") + Sprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);
@@ -6403,7 +6403,7 @@ public class QCStore {
 		FileName = "QC_LOC_LessMinPayment_Deposit.xls";
 		test = reports.startTest("QC_LOC_LessMinPayment_Deposit");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/SLOC/" + FileName);
+		TestData = new ExcelNew(System.getProperty("user.dir") + Sprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);

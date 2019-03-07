@@ -6,8 +6,9 @@
       <class name="QCHome.CSR">
         <methods>
           <include name="getResult"/>
-          <include name="NewLoanVeritec"/>
+          <include name="TLPBuyback"/>
           <include name="endReport"/>
+          <include name="HistoryTLp"/>
           <include name="setup"/>
         </methods>
       </class> <!-- QCHome.CSR -->

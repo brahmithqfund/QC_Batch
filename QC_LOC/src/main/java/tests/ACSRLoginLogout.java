@@ -67,7 +67,7 @@ public class ACSRLoginLogout extends QCStore{
 
 					test.log(LogStatus.INFO, "<FONT color=green> Login Sucessfully");
 					test.log(LogStatus.INFO, "******************************************************** ");
-				Thread.sleep(4000);
+				Thread.sleep(5000);
 				}	
 
 			}
@@ -100,6 +100,7 @@ public class ACSRLoginLogout extends QCStore{
 				test.log(LogStatus.PASS, "<FONT color=Red> Logout was unsuccessfull"); 
 			}*/
 			driver.close();
+			driver.quit();
 
 		}
 		catch(Exception e)

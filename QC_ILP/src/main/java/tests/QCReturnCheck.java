@@ -47,7 +47,7 @@ public class QCReturnCheck extends QCStore{
 					{
 						
 						
-						String StoreID = TestData.getCellData(sheetName,"StoreID",row);
+						String StoreID = "1709";
 						String ReasonForReturn = TestData.getCellData(sheetName,"ReasonForReturn",row);
 						String Esign_CollateralType = TestData.getCellData(sheetName,"Esign_CollateralType",row);
 						String ProductID = TestData.getCellData(sheetName, "ProductID", row);
