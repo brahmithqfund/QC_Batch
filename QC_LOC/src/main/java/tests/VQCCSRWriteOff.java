@@ -250,7 +250,7 @@ public class VQCCSRWriteOff extends QCStore {
 						
 						//driver1 = new InternetExplorerDriver();
 						String mainwindow2=driver.getWindowHandle();
-						QCAdminEncryption.getEncryption(driver1, SSN, AppURL);
+						VQCAdminEncryption.getEncryption(driver1, SSN, AppURL);
 						 Thread.sleep(5000);
 						 driver.switchTo().window(mainwindow2);
 						 driver.switchTo().defaultContent();
