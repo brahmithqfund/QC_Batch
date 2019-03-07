@@ -22,6 +22,7 @@ g
 7Testdata/TLP_BorrowerRegistration_Save_Exit_EditSSN.xls,f\2\f2130eaed7889ec4c51152282b54926e336c1234
 _
 /Testdata/TLP_BorrowerRegistration_Save_Exit.xls,c\2\c26bba613b0e3db2603c6bb09720f362ad5d6048
+<<<<<<< HEAD
 €
 PExecutionReports/QC_CSR/Smoke/QC_Smoke_Execution_Report_02.12.2019.16.02.56.html,e\7\e73dc1d0f102f01397489023f5fe24baf55710c9
 €
@@ -128,3 +129,21 @@ W
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 >>>>>>> brahmith1.1
+=======
+a
+1src/main/java/QCHome/CSRBorrowerRegistration.java,c\2\c2b62c1de9aaad0f697fe8b2cfe0e47642670cec
+i
+9src/main/java/QCHome/CSRBorrowRegestration_Save_Exit.java,a\8\a8abd0a78510248bda2d314417ce7c24e6df6ef3
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+X
+(src/main/java/QCHome/CSRRescindLoan.java,7\6\761823624af700025d498da93ea7c62a733acd3d
+[
++src/main/java/QCHome/AgestoreToDuedate.java,6\e\6e13b3adfeaf2ebc2c492f8504d36e8ee6fd341d
+M
+src/main/java/QCHome/App.java,2\8\281dd0603dbedbe751e5d7aeb23cfefa05e8831f
+X
+(src/main/java/QCHome/CSRNewLoanPage.java,d\7\d7bb3f4c3690e62ca22fd8b53e197150aa506638
+X
+(src/main/java/QCHome/CSRLoginLogout.java,8\5\85d9fd988666648b469d6bd23c5909e6b3061634
+>>>>>>> anoop1.1

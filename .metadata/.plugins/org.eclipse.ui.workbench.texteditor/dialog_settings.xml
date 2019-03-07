@@ -19,6 +19,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 			<item value="// anoop"/>
+			<item value="prop.get"/>
+			<item value="returnposting"/>
+			<item value="prop"/>
+			<item value="QC_LOC_clearReturnEODTwice"/>
+			<item value="QC_LOC_payment_Draw"/>
+			<item value="Click on GO Button"/>
 		</list>
 		<list key="replacehistory">
 =======
@@ -51,7 +57,11 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+=======
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+>>>>>>> anoop1.1
 		<item value="380" key="DIALOG_HEIGHT"/>
 <<<<<<< HEAD
 		<item value="563" key="DIALOG_X_ORIGIN"/>

@@ -60,7 +60,7 @@ public class AQCDrawerAssign extends QCStore{
 				test.log(LogStatus.PASS,"Entered the Password as: "+Password);
 				driver.findElement(By.name("drawerassign")).click();
 				test.log(LogStatus.PASS,"Clicked on Drawer assign ");
-				Thread.sleep(1000);
+				Thread.sleep(3000);
 				try {
 					Alert alert = driver.switchTo().alert();
 					alert.accept();
