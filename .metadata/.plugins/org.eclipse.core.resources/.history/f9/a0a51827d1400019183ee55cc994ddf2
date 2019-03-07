@@ -5998,7 +5998,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 498, enabled = true, groups = { "NonEOD1" })
+	@Test(priority = 498, enabled = true, groups = { "NonEOD" })
 	public void AReviseCredit_IncreaseIncome() throws Exception {
 
 		FileName = "QC_ AReviseCredit_IncreaseIncome.xls";
@@ -6995,7 +6995,7 @@ public class QCStore {
 
 			try {
 				Sreader = new BufferedReader(
-						new FileReader("C:/QC_Batch/QC_LOC/src/test/java/tests/SObjects.properties"));
+						new FileReader("D:/QC_Batch/QC_LOC/src/test/java/tests/SObjects.properties"));
 				Sprop = new Properties();
 				Sprop.load(Sreader);
 				Sreader.close();
