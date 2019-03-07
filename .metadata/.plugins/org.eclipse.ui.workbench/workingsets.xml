@@ -1,16 +1,4 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
-<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1551257865062_0" label="Window Working Set" name="Aggregate for window 1551257865062"/>
-=======
-<<<<<<< HEAD
-<?xml version="1.0" encoding="UTF-8"?>
-<workingSetManager>
-<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1551684585519_0" label="Window Working Set" name="Aggregate for window 1551684585519"/>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<workingSetManager>
-<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1551165669869_0" label="Window Working Set" name="Aggregate for window 1550826528831"/>
->>>>>>> jyothi1.1
->>>>>>> 05fc51d0698a47f83bd3d40515ae979587c1345c
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1551960894607_0" label="Window Working Set" name="Aggregate for window 1551960894607"/>
 </workingSetManager>

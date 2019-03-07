@@ -7021,7 +7021,7 @@ public class QCStore {
 
 			try {
 				Vreader = new BufferedReader(
-						new FileReader("C:/QC_Batch/QC_LOC/src/test/java/tests/VObjects.properties"));
+						new FileReader("E:/QC_Batch/QC_LOC/src/test/java/tests/VObjects.properties"));
 				Vprop = new Properties();
 				Vprop.load(Vreader);
 				Vreader.close();
