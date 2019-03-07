@@ -315,7 +315,7 @@ public class JQCEODDeposit extends QCStore{
 						System.out.println("before CSR"+ mainwindow);
 					
 						//driver1 = new InternetExplorerDriver();	
-						QCAdminEncryption.getEncryption(driver,SSN, AppURL); 
+						JQCAdminEncryption.getEncryption(driver,SSN, AppURL); 
 						//AdminLoginForEncryption.getEncryption(driver,SSN, AppURL);
 						//method for getting encryption from Admin
 						//QCCSRLoginLogout.adminLogout(driver1,SSN, AppURL);				//Admin logout

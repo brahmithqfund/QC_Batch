@@ -40,9 +40,9 @@ public class AQCEODDeposit extends QCStore{
 				test.log(LogStatus.INFO, "Drawer deassign and EOD deposit process" );
 				driver.switchTo().defaultContent();	
 
-				wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("topFrame")));
+				//wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("topFrame")));
 				driver.switchTo().frame("topFrame");
-				wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("li[id='910000']")));
+				//wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("li[id='910000']")));
 				Thread.sleep(1500);
 				driver.findElement(By.cssSelector("li[id='910000']")).click();	
 
@@ -124,10 +124,10 @@ public class AQCEODDeposit extends QCStore{
 				//loan_number=driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[5]/td[2]")).getText();					   
 				//test.log(LogStatus.PASS, "Loan Number is" + loan_number);
 				
-				Thread.sleep(2000);
+				Thread.sleep(4000);
 				driver.switchTo().defaultContent();				
 				driver.switchTo().frame("topFrame");
-				wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(text(),'Cash Management')]")));
+				//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(text(),'Cash Management')]")));
 
 				driver.findElement(By.xpath("//*[contains(text(),'Cash Management')]")).click();			
 				test.log(LogStatus.PASS, "Clicked on Cash Management");
@@ -287,7 +287,7 @@ public class AQCEODDeposit extends QCStore{
 						//System.out.println("before CSR"+ mainwindow);
 
 						//driver1 = new InternetExplorerDriver();	
-						QCAdminEncryption.getEncryption(driver,SSN, AppURL); 
+						AQCAdminEncryption.getEncryption(driver,SSN, AppURL); 
 						//AdminLoginForEncryption.getEncryption(driver,SSN, AppURL);
 						//method for getting encryption from Admin
 						//QCCSRLoginLogout.adminLogout(driver1,SSN, AppURL);				
@@ -360,7 +360,7 @@ public class AQCEODDeposit extends QCStore{
 						
 						driver.close();
 						
-						driver.quit();
+						//driver.quit();
 
 						break;
 					

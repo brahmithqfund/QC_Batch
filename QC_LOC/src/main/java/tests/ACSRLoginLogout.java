@@ -48,8 +48,8 @@ public class ACSRLoginLogout extends QCStore{
 						driver.manage().window().maximize();
 						driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 					
-						driver.get("http://192.168.2.203/cc/demoIndex.do");
-					    test.log(LogStatus.PASS, "Application Launched with URL ");
+						driver.get(Aprop.getProperty("csrURL"));
+						test.log(LogStatus.PASS, "Application Launched with URL"+Aprop.getProperty("csrURL"));
 					
 					String passwordId = "loginRequestBean.password";
 					String StoreId = "loginRequestBean.locNbr";

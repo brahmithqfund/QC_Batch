@@ -141,11 +141,11 @@ public class AQCCSRNewLoan extends QCStore{
 				driver.switchTo().frame("main");
 				driver.findElement(locator(Aprop.getProperty("csr_new_loan_go_button"))).click();
 				test.log(LogStatus.PASS, "Click on GO Button");
-
+				Thread.sleep(2000);
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");
 				driver.switchTo().frame("main");
-				Thread.sleep(2000);
+				
 				//	Selection of Product based on the Name provided in Test Data
 				if(driver.findElement(By.id("LoanButtonId")).isEnabled())
 				{
@@ -209,7 +209,7 @@ public static void LOC() throws InterruptedException
 	
 	driver.findElement(By.id("LoanButtonId")).click();
 	test.log(LogStatus.PASS, "Clicked on loan button");
-		Thread.sleep(1000);
+		Thread.sleep(4000);
 		driver.findElement(By.name("advanceRequestBean.paymentCollateralType")).sendKeys(ESign_CollateralType);
 		test.log(LogStatus.PASS, "Collateral Type is enterted as "+ESign_CollateralType);
 		if(!(ESign_LoanAmt.isEmpty()))

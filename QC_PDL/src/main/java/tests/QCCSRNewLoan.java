@@ -339,6 +339,7 @@ public class QCCSRNewLoan extends QCStore {
 			driver.findElement(By.name("advanceRequestBean.advanceAmt")).clear();
 			driver.findElement(By.name("advanceRequestBean.advanceAmt")).sendKeys(ESign_LoanAmt);
 			test.log(LogStatus.PASS, "Loan amount is entered as" + ESign_LoanAmt);
+			Thread.sleep(3000);
 			try {
 				Alert alert = driver.switchTo().alert();
 				// alert.dismiss();
@@ -347,6 +348,8 @@ public class QCCSRNewLoan extends QCStore {
 			} catch (NoAlertPresentException e) {
 				// do what you normally would if you didn't have the alert.
 			}
+			driver.findElement(By.name("advanceRequestBean.courtesyCallFlag")).click();
+			Thread.sleep(5000);
 			driver.findElement(By.name("advanceRequestBean.courtesyCallFlag")).sendKeys(ESign_CourtesyCallConsent);
 			driver.findElement(By.name("advanceRequestBean.courtesyCallFlag")).sendKeys(Keys.ENTER);
 			test.log(LogStatus.PASS, "Payment Reminder Consent is selected as " + ESign_CourtesyCallConsent);

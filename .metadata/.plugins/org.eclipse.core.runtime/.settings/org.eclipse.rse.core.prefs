@@ -1,7 +1,7 @@
 =\=\=\=\=\=\=
 <<<<<<<=HEAD
->>>>>>>=dbf04da162a9d10be8af26cb26f3a2432f816848
-activeuserprofiles=QTLSYS2-238;Team;qtlsys2-124
+>>>>>>>=jyothi1.1
+activeuserprofiles=QTLSYS1-182;QTLSYS2-238;QTLSYS2-72pc;Ratikanta-pc;Team;qtlsys2-124
 eclipse.preferences.version=1
-org.eclipse.rse.systemtype.local.systemType.defaultUserId=brahmithchary.p
-useridperkey=qtlsys2-124.Local\=brahmithchary.p;QTLSYS2-238.Local\=brahmithchary.p;
+org.eclipse.rse.systemtype.local.systemType.defaultUserId=jyothi.v
+useridperkey=qtlsys2-124.Local\=jyothi.v;QTLSYS2-72pc.Local\=jyothi.v;Ratikanta-pc.Local\=jyothi.v;QTLSYS2-238.Local\=jyothi.v;QTLSYS1-182.Local\=jyothi.v;

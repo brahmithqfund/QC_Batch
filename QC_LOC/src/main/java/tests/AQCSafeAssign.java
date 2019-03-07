@@ -28,7 +28,7 @@ public class AQCSafeAssign extends QCStore{
 				driver.switchTo().defaultContent();				
 				driver.switchTo().frame("topFrame");
 
-				wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(text(),'Cash Management')]")));
+				//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(text(),'Cash Management')]")));
 
 				driver.findElement(By.xpath("//*[contains(text(),'Cash Management')]")).click();			
 				test.log(LogStatus.PASS, "Clicked on Cash Management");
@@ -182,7 +182,7 @@ public class AQCSafeAssign extends QCStore{
 					//do what you normally would if you didn't have the alert.
 
 				}
-				Thread.sleep(3000);
+				Thread.sleep(6000);
 
 
 				driver.switchTo().defaultContent();

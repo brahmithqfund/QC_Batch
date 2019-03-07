@@ -25,10 +25,10 @@ public class AQCDrawerAssign extends QCStore{
 				String NoOfDollarsAmount = TestData.getCellData(sheetName,"NoOfDollarsAmount",row);
 
 				test.log(LogStatus.INFO, "Drawer assign process initiated" );
-				Thread.sleep(2000);
+				Thread.sleep(4000);
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("topFrame");
-				wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(text(),'Cash Management')]")));
+				//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(text(),'Cash Management')]")));
 
 				driver.findElement(By.xpath("//*[contains(text(),'Cash Management')]")).click();
 				test.log(LogStatus.PASS, "Clicked on Cash Management");
@@ -60,7 +60,7 @@ public class AQCDrawerAssign extends QCStore{
 				test.log(LogStatus.PASS,"Entered the Password as: "+Password);
 				driver.findElement(By.name("drawerassign")).click();
 				test.log(LogStatus.PASS,"Clicked on Drawer assign ");
-				Thread.sleep(1000);
+				Thread.sleep(3000);
 				try {
 					Alert alert = driver.switchTo().alert();
 					alert.accept();
@@ -71,13 +71,11 @@ public class AQCDrawerAssign extends QCStore{
 
 
 				}
+				Thread.sleep(20000);
+				driver.findElement(By.name("done")).click();
+				test.log(LogStatus.PASS,"clicked on Ok ");
 				test.log(LogStatus.PASS,"Drawer assigned successfully");
-				Thread.sleep(3000);
-
-
-				/*driver.findElement(By.name("done")).click();
-
-				test.log(LogStatus.PASS,"clicked on Ok ");*/
+				Thread.sleep(1500);
 			}
 
 

@@ -220,6 +220,7 @@ public class AAgetheStore extends QCStore{
 				driver.switchTo().frame("topFrame");
 				driver.findElement(By.xpath("//*[@id='930000']/a")).click();			
 				test.log(LogStatus.PASS, "Clicked on Cash Management");
+				Thread.sleep(2000);
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");							
 				driver.findElement(By.xpath("//*[@id='988190657']/a")).click();		
@@ -260,6 +261,7 @@ public class AAgetheStore extends QCStore{
 				test.log(LogStatus.PASS, "Clicked on Scheduler Ok Successfully");
 				test.log(LogStatus.INFO, "<FONT color=green> ****Scheduler completed******");
 				test.log(LogStatus.INFO, "<FONT color=green> Logout Successfully");
+				driver.close();
 				//Thread.sleep(1000);
 
 			}
@@ -350,6 +352,7 @@ public class AAgetheStore extends QCStore{
 				test.log(LogStatus.PASS, "Clicked on Scheduler Ok Successfully");
 				test.log(LogStatus.INFO, "<FONT color=green> ****Scheduler completed******");
 				test.log(LogStatus.INFO, "<FONT color=green> Logout Successfully");
+				driver.close();
 				//Thread.sleep(1000);
 
 			}
@@ -439,6 +442,7 @@ public class AAgetheStore extends QCStore{
 				test.log(LogStatus.PASS, "Clicked on Scheduler Ok Successfully");
 				test.log(LogStatus.INFO, "<FONT color=green> ****Scheduler completed******");
 				test.log(LogStatus.INFO, "<FONT color=green> Logout Successfully");
+				driver.close();
 				//Thread.sleep(1000);
 
 			}

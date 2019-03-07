@@ -266,7 +266,7 @@ System.out.println(columnname+"_TxnHistory_FieldValue");
 						 test.log(LogStatus.PASS, "Clicked on Go button under Transaction selection section");
 						 
 						
-						 Thread.sleep(3000);
+						 Thread.sleep(6000);
 			 //Validations
 						 for( String winHandle1 : driver.getWindowHandles())
 							{

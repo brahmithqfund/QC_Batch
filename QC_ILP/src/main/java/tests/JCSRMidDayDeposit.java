@@ -16,7 +16,6 @@ public class JCSRMidDayDeposit extends QCStore {
 		
 			int lastrow=TestData.getLastRow("MidDeposit");
 			String sheetName="MidDeposit";
-
 			for(int row=2;row<=lastrow;row++)
 			{		
 				String RegSSN = TestData.getCellData(sheetName,"SSN",row);
@@ -133,7 +132,7 @@ public class JCSRMidDayDeposit extends QCStore {
 			
 			for(int i=4;i<=n;i++){
 				try{
-				String Duedate=driver.findElement(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[3]/td/table/tbody/tr["+i+"]/td[4]")).getText();
+				 Duedate=driver.findElement(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[3]/td/table/tbody/tr["+i+"]/td[4]")).getText();
 				test.log(LogStatus.PASS, "Getting check number for the check box to check condition "+Duedate);	
 			}
 			catch(Exception e5){

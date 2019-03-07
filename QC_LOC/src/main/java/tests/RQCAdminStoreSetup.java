@@ -54,7 +54,7 @@ public class RQCAdminStoreSetup extends QCStore
 				
 
 
-					if(prop.getProperty("login_method").equalsIgnoreCase("local"))
+					if(Rprop.getProperty("login_method").equalsIgnoreCase("local"))
 					{
 						driver = new InternetExplorerDriver();
 					}

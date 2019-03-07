@@ -1,70 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 792c0d99c7dc98fb911ab128b442f178e0a75ffb
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+        <include name="Anoop"/>
+      </run>
+    </groups>
 =======
-        <include name="EOD"/>
->>>>>>> jan21.1
-        <include name="1stBatch"/>
-=======
-        <include name="Janaki"/>
->>>>>>> 2595ff094730e8fabc91b1e4a6f764cef5b2e41a
-=======
-        <include name="Janaki"/>
->>>>>>> 204c31dbc0e0b4ef5ce1fe20208426e8612bfd9b
+        <include name="Rebate"/>
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
           <include name="getResult"/>
           <include name="setup"/>
-<<<<<<< HEAD
-          <include name="QC_Refinance_StepSameVoidURP_Txn"/>
-          <include name="QC_Refinance_StepSameURP_Txn"/>
-          <include name="endReport"/>
+          <include name="QC_Refinance_StepDownVoidURP_Txn"/>
 =======
-=======
->>>>>>> 204c31dbc0e0b4ef5ce1fe20208426e8612bfd9b
-          <include name="JQC_AgeStore_Refinance_Rescind_Txn"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+>>>>>>> 792c0d99c7dc98fb911ab128b442f178e0a75ffb
+    <classes>
+      <class name="tests.QCStore">
+        <methods>
+          <include name="GracedaysDepositMenu"/>
+          <include name="middayDeposit"/>
+          <include name="Achdeposit"/>
           <include name="setup"/>
-          <include name="JQC_AgeStore_Deposit_AutoClear_Txn"/>
-          <include name="JQC_AgeStore_PrePayment_Clear_Txn"/>
-          <include name="JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata"/>
-          <include name="JQC_AgeStore_Deposit_Return_Refinance_Void_Txn"/>
-          <include name="JQC_AgeStore_Deposit_Return_Refinance_Txn"/>
-          <include name="JQC_AgeStore_NSFPosting_Refinance_Rescind_Txn"/>
-          <include name="JQC_AgeStore_Deposit_PrePayment_Void_Txn"/>
-          <include name="JQC_EPP_Txn_Testdata"/>
-          <include name="JQC_EPP_AgestoreInstallmentwise_EPPPayment_Txn_Testdata"/>
-          <include name="JQC_BuyBack_Txn_Testdata"/>
 <<<<<<< HEAD
->>>>>>> 2595ff094730e8fabc91b1e4a6f764cef5b2e41a
+          <include name="AQC_EPPDeposit"/>
+          <include name="GracedaysMiddayDeposit"/>
+          <include name="AQC_EPP_Prepayment"/>
+          <include name="RefinanceStepup"/>
+          <include name="maxloanCount"/>
+          <include name="rescindloan"/>
+          <include name="rebateStepup"/>
+          <include name="AQC_EPP_Return"/>
+          <include name="futureMidayDeposit"/>
+          <include name="RefinanceStepupVoid"/>
+          <include name="borrowregNewloan"/>
+          <include name="inactiveNewloan"/>
 =======
->>>>>>> 204c31dbc0e0b4ef5ce1fe20208426e8612bfd9b
-=======
-          <include name="QC_Void_FullReturnPayment_Txn"/>
->>>>>>> jan21.1
+>>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
+>>>>>>> 792c0d99c7dc98fb911ab128b442f178e0a75ffb
           <include name="killProcess"/>
-          <include name="JQC_AgeStore_ACHReturn_Refinance_Rescind_Txn"/>
-          <include name="JQC_AgeStore_Deposit_ClearMenu_Txn"/>
-          <include name="JQC_BuyBack_Rebate_Txn_Testdata"/>
+          <include name="AQC_EPP_Redeposit"/>
           <include name="getResult"/>
-          <include name="JQC_BuyBack_Void_Txn_Testdata"/>
-          <include name="JQC_Deposit_Return_EPP_Txn_Testdata"/>
-          <include name="JQC_AgeStore_Deposit_ClearDropdown_Txn"/>
-          <include name="JQC_Return_ReDeposit_Clear_Txn"/>
-          <include name="JQC_AgeStore_Deposit_PrePayment_Txn"/>
-          <include name="JQC_AgeStore_PrePayment_Return_Txn"/>
-          <include name="JQC_AgeStore_Redeposit_Prepayment_Void_Prepayment_Return_Txn"/>
-          <include name="JQC_BuyBack_Rebate_Void_Txn_Testdata"/>
+          <include name="rebateStepupVoid"/>
+          <include name="RefinanceStepSameVoid"/>
+          <include name="agerescindtest"/>
+          <include name="AQC_EPP_refund"/>
+          <include name="AQC_EPP_clear"/>
+          <include name="RefinanceStepSame"/>
+          <include name="AQC_EPP_nsfPayment"/>
         </methods>
       </class> <!-- tests.QCStore -->
     </classes>

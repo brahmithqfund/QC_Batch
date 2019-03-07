@@ -456,7 +456,7 @@ System.out.println(columnname+"_TxnHistory_FieldValue");
 								test.log(LogStatus.FAIL, "loan_status->Expected value:"+loan_status +"; not equals to Actual value:"+loan_status_inf_loan_status);
 								//Assert.assertTrue(false);
 							}
-							if(check_status.equalsIgnoreCase(loan_status_inf_checkstatus))
+							if(check_status.trim().equalsIgnoreCase(loan_status_inf_checkstatus.trim()))
 							{
 								test.log(LogStatus.PASS, "check_status->Expected value:"+check_status +"; == Actual value:"+loan_status_inf_checkstatus);
 							}

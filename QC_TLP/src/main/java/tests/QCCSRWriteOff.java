@@ -273,10 +273,76 @@ public class QCCSRWriteOff extends QCStore {
 
 						test.log(LogStatus.PASS, "Clicked on WriteOff");
 						Thread.sleep(5000);
+						try{
 						
 						encryption_transaction_nbr = driver.findElement(By.name("customerBean.randomNbr1")).getAttribute("value");				
 						test.log(LogStatus.PASS, "Trans Number is" + encryption_transaction_nbr);
+						}
+						catch(Exception e)
+						{
+							driver.get(prop.getProperty("login_page")); 
+							
+							Thread.sleep(10000);
+							driver.switchTo().defaultContent();
+							driver.switchTo().frame("topFrame");
+			// -----------------------------------
+			 
+							// driver.switchTo().frame("topFrame");
+							wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("li[id='900000']")));
+
+							driver.findElement(locator(prop.getProperty("borrower_tab"))).click();
+							Thread.sleep(2000);
+
+							test.log(LogStatus.PASS, "Clicked on Borrower");
+
+							driver.switchTo().defaultContent();
+							driver.switchTo().frame("mainFrame");
+							wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("li[id='903000']")));
+							driver.findElement(By.linkText("Collections")).click();
+
+							test.log(LogStatus.PASS, "Clicked on Collection");
+							//Thread.sleep(5000);
+					    Thread.sleep(5000);
+						driver.switchTo().defaultContent();
+						driver.switchTo().frame("mainFrame");
+						driver.switchTo().frame("main");
+						// wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("name=requestBean.installmentType")));
+						Thread.sleep(500);
+						driver.findElement(By.name("requestBean.installmentType")).sendKeys(ProductType);
+						test.log(LogStatus.PASS, "Product Type Selected as :" + ProductType);
+						Thread.sleep(500);
+						driver.findElement(By.xpath("//*[@id='queueTable']/tbody/tr[22]/td[1]/input")).click();
+						test.log(LogStatus.PASS, "Clicked on Customer search radiobutton");
+						Thread.sleep(5000);
+						//driver.findElement(By.xpath("//*[@id='ach12']/option[6]]")).click(); ////*[@id="ach12"]/option[6]
+						Select cSelect = new Select(driver.findElement(By.xpath("//select[@name='customerSearch' and @id='ach12']")));
+						cSelect.selectByVisibleText("Loan Nbr");							
 						
+								//"//*[@id='ach12']/option[6]")).click();
+						test.log(LogStatus.PASS, "Loan Nbr selected from List");
+						Thread.sleep(500);
+						driver.findElement(By.name("requestBean.loanNo")).sendKeys(loan_nbr);
+						test.log(LogStatus.PASS, "Loan Nbr entered is :" + loan_nbr);
+						Thread.sleep(5000);
+						driver.findElement(By.name("Button3")).click();
+						test.log(LogStatus.PASS, "Clicked on Search button");
+						//wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("name=requestBean.installmentType")));
+						Thread.sleep(15000);									
+						//driver.findElement(By.xpath("//*[@id='"+loan_nbr+"']/td[19]/input[4]")).click();
+						driver.findElement(By.xpath("//input[@name='myButton' and @class='sortbuttons']")).click();
+						test.log(LogStatus.PASS, "Clicked on Go button");
+						//driver.findElement(By.xpath("//input[@value='Go' and @name='myButton']")).click();
+						Thread.sleep(8000);	
+						//driver.findElement(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[14]/td[2]/table/tbody/tr[2]/td[2]/input")).click();
+						//test.log(LogStatus.PASS, "Clicked on Go Writeoff");
+						//driver.findElement(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr[3]/td/table/tbody/tr[12]/td[2]/table/tbody/tr[2]/td[3]/input")).click();
+						driver.findElement(By.xpath("//input[@name='button' and @value='WriteOff']")).click();
+
+						test.log(LogStatus.PASS, "Clicked on WriteOff");
+						Thread.sleep(5000);
+							encryption_transaction_nbr = driver.findElement(By.name("customerBean.randomNbr1")).getAttribute("value");				
+							test.log(LogStatus.PASS, "Trans Number is" + encryption_transaction_nbr);
+						}
 						
 		//Admin Login For Getting Encryption Key
 						

@@ -4,16 +4,16 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="Janaki1"/>
+        <include name="Anoop1"/>
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
-          <include name="JQC_DefaultPayment_Txn_Testdata"/>
           <include name="getResult"/>
           <include name="setup"/>
-          <include name="JQC_DefaultPayment_Void_Txn_Testdata"/>
+          <include name="endReport"/>
+          <include name="TLP_ProcessAutoClear"/>
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->
