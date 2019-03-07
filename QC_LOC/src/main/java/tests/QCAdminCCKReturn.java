@@ -56,7 +56,7 @@ public class QCAdminCCKReturn extends QCStore {
 		driver.switchTo().defaultContent();
 
 		driver.switchTo().frame("topFrame");
-
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//*[@id='500000']/a")).click(); 
 		Thread.sleep(1000);
 		test.log(LogStatus.PASS, "Clicked on Transaction tab");

@@ -1,4 +1,38 @@
 
+<<<<<<< HEAD
+X
+(src/main/java/QCHome/CSRLoginLogout.java,8\5\85d9fd988666648b469d6bd23c5909e6b3061634
+]
+-src/test/java/QCHome/CSRSmokeLoginLogout.java,5\8\58ea8dfd23bb4e2ff1774cc479d7838e20959850
+`
+0src/main/java/QCHome/TLP_Refinance_StepSame.java,f\8\f83fcb69f2c6d364b663a47148d4136b9d79aa38
+d
+4src/main/java/QCHome/QC_Edit_BorrowRegestration.java,7\b\7bd011d03797007589462d7fcd10dbb3c106c34c
+W
+'src/test/java/QCHome/Objects.properties,8\4\848de25ce3b410d117be08fecaeaaf4b0581261b
+S
+#Testdata/QC_NewLoan_Veritec_Txn.xls,3\f\3fa38ff51dcba86ec7c71f294f197a5aa894b220
+_
+/src/main/java/QCHome/QC_BorrowRegestration.java,9\6\96fc9eb7758dc99a8ea1316e39446ac699bc211a
+M
+src/test/java/QCHome/CSR.java,a\3\a3930d0189460d06ffe3f297bdd951b204bda6c0
+O
+test-output/jquery-1.7.1.min.js,d\b\db04a51f4da33f8e6796a81e98cfdf3f953adc25
+K
+test-output/collapseall.gif,7\5\758d0b7744ae68c553dff8dd5bede7db7100947e
+b
+2test-output/old/Default suite/reporter-output.html,2\3\235aa33a8d713fd4931af0a492f829813b4bdb44
+M
+test-output/testng-reports.js,8\0\80592053f6a51e6a2e28f59d796ae3db5c14005a
+Y
+)test-output/old/Default suite/groups.html,b\8\b82ee97ad9310dbdfec9d3f91d49f101837ecbb8
+]
+-test-output/old/Default suite/testng.xml.html,5\3\53eccd0a4110e87cc1f90f05e135ef7e11c02fc1
+N
+test-output/testng-reports.css,0\6\068c76965dc9e349fc152beb6fb96e282b12e320
+e
+5test-output/old/Default suite/Default test.properties,d\3\d39a18da7fbc165cf86e506101bb6516f1600a21
+=======
 M
 src/test/java/QCHome/CSR.java,a\3\a3930d0189460d06ffe3f297bdd951b204bda6c0
 <<<<<<< HEAD
@@ -22,6 +56,7 @@ g
 7Testdata/TLP_BorrowerRegistration_Save_Exit_EditSSN.xls,f\2\f2130eaed7889ec4c51152282b54926e336c1234
 _
 /Testdata/TLP_BorrowerRegistration_Save_Exit.xls,c\2\c26bba613b0e3db2603c6bb09720f362ad5d6048
+<<<<<<< HEAD
 €
 PExecutionReports/QC_CSR/Smoke/QC_Smoke_Execution_Report_02.12.2019.16.02.56.html,e\7\e73dc1d0f102f01397489023f5fe24baf55710c9
 €
@@ -128,3 +163,22 @@ W
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 >>>>>>> brahmith1.1
+=======
+a
+1src/main/java/QCHome/CSRBorrowerRegistration.java,c\2\c2b62c1de9aaad0f697fe8b2cfe0e47642670cec
+i
+9src/main/java/QCHome/CSRBorrowRegestration_Save_Exit.java,a\8\a8abd0a78510248bda2d314417ce7c24e6df6ef3
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+X
+(src/main/java/QCHome/CSRRescindLoan.java,7\6\761823624af700025d498da93ea7c62a733acd3d
+[
++src/main/java/QCHome/AgestoreToDuedate.java,6\e\6e13b3adfeaf2ebc2c492f8504d36e8ee6fd341d
+M
+src/main/java/QCHome/App.java,2\8\281dd0603dbedbe751e5d7aeb23cfefa05e8831f
+X
+(src/main/java/QCHome/CSRNewLoanPage.java,d\7\d7bb3f4c3690e62ca22fd8b53e197150aa506638
+X
+(src/main/java/QCHome/CSRLoginLogout.java,8\5\85d9fd988666648b469d6bd23c5909e6b3061634
+>>>>>>> anoop1.1
+>>>>>>> 05fc51d0698a47f83bd3d40515ae979587c1345c

@@ -77,17 +77,20 @@ public class AQCAgeStoreDueDate extends QCStore{
 								driver.findElement(By.name("submit1")).click();
 								test.log(LogStatus.PASS, "Click on submit Button");		
 								
-							    driver.switchTo().defaultContent();
+							  /*  driver.switchTo().defaultContent();
 							    driver.switchTo().frame("mainFrame");
-							    driver.switchTo().frame("main");
+							    driver.switchTo().frame("main");*/
 							
 										String mainwindow=driver.getWindowHandle();
 										
 									    driver.switchTo().defaultContent();
 									    driver.switchTo().frame("mainFrame");
+									    Thread.sleep(2000);
 									    driver.switchTo().frame("main");
+									    Thread.sleep(2000);
 									    driver.findElement(By.xpath("/html/body/table/tbody/tr[1]/td[1]/table[2]/tbody/tr[2]/td/table/tbody/tr[2]/td[2]/a")).click();
 									    test.log(LogStatus.PASS, "Clicked on Customer number link");
+									    Thread.sleep(3000);
 										for (String winHandle : driver.getWindowHandles()) {
 											if(!mainwindow.equalsIgnoreCase(winHandle)) {
 												driver.switchTo().window(winHandle);

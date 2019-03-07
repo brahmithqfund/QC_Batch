@@ -1,7 +1,7 @@
 package tests;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.interactions.Actions;
+//import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import com.relevantcodes.extentreports.LogStatus;
 
@@ -61,10 +61,10 @@ public class AReviseCredit extends QCStore{
 					        driver.findElement(By.cssSelector("li[id='1200004']")).click();	
 					        test.log(LogStatus.PASS, "Clicked on Revise credit limit");
 					        
-					        Actions action = new Actions(driver);
+					        /*Actions action = new Actions(driver);
 							action.moveByOffset(200,100).perform();
 							Thread.sleep(800);
-							action.click();
+							action.click();*/
 							
 							driver.switchTo().frame("main");	
 							Thread.sleep(1000);
@@ -81,8 +81,8 @@ public class AReviseCredit extends QCStore{
 					        driver.findElement(By.name("button")).click();
 					        test.log(LogStatus.PASS, "Click on Go button under search results");
 					        											
-					        revisemsg=driver.findElement(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[1]/td/b")).getText();
-					        test.log(LogStatus.PASS, "Revise message is"+revisemsg);
+					        /*revisemsg=driver.findElement(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[1]/td/b")).getText();
+					        test.log(LogStatus.PASS, "Revise message is"+revisemsg);*/
 						
 						        
 					}
@@ -137,10 +137,10 @@ public class AReviseCredit extends QCStore{
 				        driver.findElement(By.cssSelector("li[id='1200004']")).click();	
 				        test.log(LogStatus.PASS, "Clicked on Revise credit limit");
 						
-				        Actions action = new Actions(driver);
+				        /*Actions action = new Actions(driver);
 						action.moveByOffset(200,100).perform();
 						Thread.sleep(800);
-						action.click();
+						action.click();*/
 						
 						driver.switchTo().frame("main");	
 						Thread.sleep(1000);

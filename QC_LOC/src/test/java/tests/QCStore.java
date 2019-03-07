@@ -107,6 +107,7 @@ public class QCStore {
 	public static String LOCamount;
 
 	private static final String QCAdmin_Deceased = null;
+	private static final QCCSRHistory VQC_LOC_History = null;
 
 	public static String Bank_Status;
 
@@ -118,7 +119,7 @@ public class QCStore {
 
 	// Brahmith scenarios
 
-	@Test(priority = 113, groups = { "1st Batch" })
+	//@Test(priority = 113, groups = { "1st Batch" })
 	public static void LOC_Biweekly_Nextpay_Txn() throws Exception {
 		try {
 
@@ -168,7 +169,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 114, groups = { "1st Batch" })
+	//@Test(priority = 114, groups = { "1st Batch" })
 	public static void LOC_NewLoan_MaxLOC_Txn() throws Exception {
 		try {
 
@@ -216,7 +217,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 105, groups = { "1st Batch" })
+	//@Test(priority = 105, groups = { "1st Batch" })
 	public static void LOC_Biweekly_NextPay_NotOn_End_Txn() throws Exception {
 		try {
 
@@ -265,7 +266,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 16, groups = { "1st Batch" })
+	//@Test(priority = 16, groups = { "1st Batch" })
 	public static void LOC_monthly_NextPay_NotOn_End_Txn() throws Exception {
 		try {
 
@@ -313,7 +314,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 107, groups = { "1st Batch" })
+	//@Test(priority = 107, groups = { "1st Batch" })
 	public static void LOC_semimonthly_NextPay_NotOn_End_Txn() throws Exception {
 		try {
 
@@ -361,7 +362,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 108, groups = { "1st Batch" })
+	//@Test(priority = 108, groups = { "1st Batch" })
 	public static void LOC_weekly_NextPay_NotOn_End_Txn() throws Exception {
 		try {
 
@@ -409,7 +410,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 134, groups = { "1st Batch" })
+	//@Test(priority = 134, groups = { "1st Batch" })
 	public static void LOC_PayOff_after_RescindPeriod_Txn() throws Exception {
 		try {
 
@@ -464,7 +465,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 135, groups = { "1st Batch" })
+	//@Test(priority = 135, groups = { "1st Batch" })
 	public static void LOC_PayOff_On_DueDate_Txn() throws Exception {
 		try {
 
@@ -520,7 +521,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 136, groups = { "1st Batch" })
+	//@Test(priority = 136, groups = { "1st Batch" })
 	public static void LOC_Payment_PayOff_Txn() throws Exception {
 		try {
 
@@ -580,7 +581,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 137, groups = { "1st Batch" })
+	//@Test(priority = 137, groups = { "1st Batch" })
 	public static void LOC_Payment_GraceDays_PayOff_Txn() throws Exception {
 		try {
 
@@ -641,7 +642,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 138, groups = { "1st Batch" })
+	//@Test(priority = 138, groups = { "1st Batch" })
 	public static void LOC_Payment_Void_PayOff_Txn() throws Exception {
 		try {
 
@@ -1565,6 +1566,7 @@ public class QCStore {
 	}
 
 	@Test(priority = 66, groups = { "EOD" })
+
 	public static void LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn() throws Exception {
 		try {
 
@@ -3386,6 +3388,7 @@ public class QCStore {
 	// Janaki's (Ratikanta) scenarios
 
 	@Test(priority = 301, enabled = true, groups = "Janaki_NEOD")
+
 	public static void JQC_LOC_New_Loan_Void_Txn() throws Exception {
 		try {
 
@@ -3442,6 +3445,7 @@ public class QCStore {
 	}
 
 	@Test(priority = 302, enabled = true, groups = "Janaki_NEOD")
+
 	public static void JQC_LOC_New_Loan_Rescind_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_New_Loan_Rescind_Txn"),
@@ -3493,6 +3497,7 @@ public class QCStore {
 	}
 
 	@Test(priority = 303, enabled = true, groups = "Janaki_NEOD")
+
 	public static void JQC_LOC_New_Loan_Void_GraceDay_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_New_Loan_Void_GraceDay_Txn"),
@@ -3550,6 +3555,7 @@ public class QCStore {
 	}
 
 	@Test(priority = 304, enabled = true, groups = "Janaki_NEOD")
+
 	public static void JQC_LOC_New_Loan_GraceDay_Rescind_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_New_Loan_GraceDay_Rescind_Txn"),
@@ -3603,6 +3609,7 @@ public class QCStore {
 	}
 
 	@Test(priority = 305, enabled = true, groups = "Janaki_NEOD")
+
 	public static void JQC_LOC_New_Loan_After_RescindDays_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_New_Loan_After_RescindDays_Txn"),
@@ -3655,6 +3662,7 @@ public class QCStore {
 	}
 
 	@Test(priority = 306, enabled = true, groups = "Janaki_NEOD")
+
 	public static void JQC_LOC_Payment_After_Rescind_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_Payment_After_Rescind_Txn"),
@@ -3708,6 +3716,7 @@ public class QCStore {
 	}
 
 	@Test(priority = 307, enabled = true, groups = "Janaki_NEOD")
+
 	public static void JQC_LOC_Payment_OnDueDate_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_Payment_OnDueDate_Txn"),
@@ -3761,6 +3770,7 @@ public class QCStore {
 	}
 
 	@Test(priority = 308, enabled = true, groups = "Janaki_NEOD")
+
 
 	public static void JQC_LOC_LessThan_MinPayment_Txn() throws Exception {
 		try {
@@ -5649,9 +5659,11 @@ public class QCStore {
 		}
 	}
 
-	// ------SET 1 of
-	// SHASHI------------------------------------------------------------------------------------------------------------------------------------------------------
-	@Test(priority = 487, enabled = true, groups = { "NonEOD" })
+
+	
+	//****************************************Anoop-Scenarios-NonEOD****************************************//
+	
+	//@Test(priority = 487, enabled = true, groups = { "NonEOD" })
 
 	public void MinLocAmounts() throws Exception {
 		FileName = "QC_LOC_NewLoan_monthly_MinAmount.xls";
@@ -5682,7 +5694,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 488, enabled = true, groups = { "NonEOD" })
+	//@Test(priority = 488, enabled = true, groups = { "NonEOD" })
 
 	public void MaxLocAmounts() throws Exception {
 		FileName = "QC_LOC_NewLoan_monthly_Maxamount.xls";
@@ -5713,9 +5725,9 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 489, enabled = true, groups = { "NonEOD" })
+	//@Test(priority = 489, enabled = true, groups = { "NonEOD" })
 
-	public void ILP_maxloanCount() throws Exception {
+	public void LOC_maxloanCount() throws Exception {
 		FileName = "QC_LOC_MaxLoan.xls";
 		test = reports.startTest("QC_LOC_MaxLoan_Count ", "Login-->Borrower-->Max loan count");
 
@@ -5750,7 +5762,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 490, enabled = true, groups = { "NonEOD" })
+//	@Test(priority = 490, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanWeekly_Duedatevalidation() throws Exception {
 		FileName = "QC_LOC_EndDate_Weekly_Duedate.xls";
@@ -5781,7 +5793,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 491, enabled = true, groups = { "NonEOD" })
+	//@Test(priority = 491, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanSemiMonthly_Duedatevalidation() throws Exception {
 		FileName = "QC_LOC_EndDate_Semimonthly_Duedate.xls";
@@ -5812,7 +5824,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 492, enabled = true, groups = { "NonEOD" })
+//	@Test(priority = 492, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanMonthly_Duedatevalidation() throws Exception {
 		FileName = "QC_LOC_EndDate_monthly_Duedate.xls";
@@ -5843,7 +5855,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 493, enabled = true, groups = { "NonEOD" })
+//	@Test(priority = 493, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanBiweeklyPaymentDuedate() throws Exception {
 		FileName = "QC_LOC_EndDate_Biweekly_Duedate.xls";
@@ -5874,7 +5886,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 494, enabled = true, groups = { "NonEOD" })
+//	@Test(priority = 494, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanWeekly() throws Exception {
 		FileName = "QC_LOC_NewLoan_Weekly.xls";
@@ -5904,7 +5916,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 495, enabled = true, groups = { "NonEOD" })
+//	@Test(priority = 495, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanSemiMonthly() throws Exception {
 		FileName = "QC_LOC_NewLoan_Semimonthly.xls";
@@ -5934,7 +5946,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 496, enabled = true, groups = { "NonEOD" })
+//	@Test(priority = 496, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanMonthly() throws Exception {
 		FileName = "QC_LOC_NewLoan_monthly.xls";
@@ -5964,7 +5976,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 497, enabled = true, groups = { "NonEOD" })
+//	@Test(priority = 497, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanBiweekly() throws Exception {
 		FileName = "QC_LOC_NewLoan_Biweekly.xls";
@@ -5990,18 +6002,16 @@ public class QCStore {
 				AQCCSRNewLoan.newLoan(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
-				ACSRLoginLogout.login(SSN, AppURL);
-				AQC_LOC_History.history(SSN, AppURL);
-				ACSRLoginLogout.logout();
 				test.log(LogStatus.INFO, "****Test Scenario for BiWeekly pay frequence new loan is pass******");
 			}
 		}
 	}
 
-	@Test(priority = 498, enabled = true, groups = { "NonEOD1" })
-	public void AReviseCredit_IncreaseIncome() throws Exception {
 
-		FileName = "QC_ AReviseCredit_IncreaseIncome.xls";
+	@Test(priority = 498, enabled = true, groups = { "NonEOD" })
+	public void AReviseCredit_IncIncome() throws Exception {
+
+		FileName = "QC_ ReviseCredit_IncreaseIncome.xls";
 		test = reports.startTest("QC_ AReviseCredit_IncreaseIncome", " New LOC-->Increase Income-Revise credit ");
 
 		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/ALOC/" + FileName);
@@ -6015,14 +6025,14 @@ public class QCStore {
 				String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
 
-				ACSRLoginLogout.login(SSN, AppURL);
+				/*ACSRLoginLogout.login(SSN, AppURL);
 				ACSRBorrowerRegistration.borrowerReg(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCCSRNewLoan.newLoan(SSN, AppURL);
 				ACSRLoginLogout.logout();
-
+*/
 				ACSRLoginLogout.login(SSN, AppURL);
 				AReviseCredit.revisecredit(SSN, AppURL);
 				ACSRLoginLogout.logout();
@@ -6032,7 +6042,7 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
-				AQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+				SQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
 
 				ACSRLoginLogout.login(SSN, AppURL);
 				// This is normal payment
@@ -6143,7 +6153,7 @@ public class QCStore {
 		}
 	}
 
-	// Shashi scenarios
+	//**************************************Shashi-Scenarios************************************//
 
 	@Test(priority = 500, enabled = true, groups = "Shashi")
 
@@ -6151,7 +6161,7 @@ public class QCStore {
 		FileName = "QC_LOC_Deposit_Dropdown.xls";
 		test = reports.startTest("QC_LOC_Deposit_DropDown");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/SLOC/" + FileName);
+		TestData = new ExcelNew(System.getProperty("user.dir") + Sprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);
@@ -6188,7 +6198,7 @@ public class QCStore {
 		FileName = "QC_LOC_Deposit_DropDown_Void.xls";
 		test = reports.startTest("QC_LOC_Deposit_DropDown_Void");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/SLOC/" + FileName);
+		TestData = new ExcelNew(System.getProperty("user.dir") + Sprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);
@@ -6227,7 +6237,8 @@ public class QCStore {
 		FileName = "QC_LOC_Deposit_Bulk.xls";
 		test = reports.startTest("QC_LOC_Deposit_Bulk");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/SLOC/" + FileName);
+		TestData = new ExcelNew(System.getProperty("user.dir") + Sprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
+		
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);
@@ -6263,7 +6274,7 @@ public class QCStore {
 		FileName = "QC_LOC_Deposit_Bulk_Void.xls";
 		test = reports.startTest("QC_LOC_Deposit_Bulk_Void");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/SLOC/" + FileName);
+		TestData = new ExcelNew(System.getProperty("user.dir") + Sprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);
@@ -6302,7 +6313,7 @@ public class QCStore {
 		FileName = "QC_LOC_MidDay_Deposit.xls";
 		test = reports.startTest("QC_LOC_MidDay_Deposit");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/SLOC/" + FileName);
+		TestData = new ExcelNew(System.getProperty("user.dir") + Sprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);
@@ -6339,7 +6350,7 @@ public class QCStore {
 		FileName = "QC_LOC_MidDay_Void_Deposit.xls";
 		test = reports.startTest("QC_LOC_MidDay_Void_Deposit");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/SLOC/" + FileName);
+		TestData = new ExcelNew(System.getProperty("user.dir") + Sprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);
@@ -6380,7 +6391,7 @@ public class QCStore {
 		FileName = "QC_LOC_LessMinPayment_Deposit.xls";
 		test = reports.startTest("QC_LOC_LessMinPayment_Deposit");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/SLOC/" + FileName);
+		TestData = new ExcelNew(System.getProperty("user.dir") + Sprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 		System.out.println(lastrow);
@@ -6415,7 +6426,7 @@ public class QCStore {
 
 	// V Jyothi scenarios
 
-	@Test(priority = 0, enabled = true)
+	//@Test(priority = 600, enabled = true,groups ="Jyothi")
 
 	public static void LOC_Writeoff() throws Exception {
 
@@ -6434,7 +6445,7 @@ public class QCStore {
 			// System.out.println(RunFlag);
 			if (RunFlag.equals("Y")) {
 
-				// String AppURL = TestData.getCellData(sheetName,"AppURL",row);
+				 String AppURL = TestData.getCellData(sheetName,"AppURL",row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
 
 				System.out.println(AppURL);
@@ -6452,7 +6463,7 @@ public class QCStore {
 				VQCCSRWriteOff.writeoff(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 				VQCCSRLoginLogout.login(SSN, AppURL);
-				// VQC_LOC_History.history(SSN, AppURL);
+				VQCCSRHistory.history(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 
 			}
@@ -6460,7 +6471,7 @@ public class QCStore {
 
 	}
 
-	@Test(priority = 601, enabled = true)
+	//@Test(priority = 601, enabled = true,groups = "Jyothi")
 
 	public static void LOC_WriteoffRecovery() throws Exception {
 
@@ -6507,7 +6518,7 @@ public class QCStore {
 				VQCVoid.qcVoid(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 				VQCCSRLoginLogout.login(SSN, AppURL);
-				// VQC_LOC_History.history(SSN, AppURL);
+				VQCCSRHistory.history(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 
 			}
@@ -6515,7 +6526,7 @@ public class QCStore {
 
 	}
 
-	@Test(priority = 602, enabled = true)
+	//@Test(priority = 602, enabled = true,groups = "Jyothi")
 
 	public static void LOC_PartialWriteoffRecovery() throws Exception {
 
@@ -6558,14 +6569,14 @@ public class QCStore {
 				VQCCSRWriteOffRecovery_Partial.writeoffrecovery(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 				VQCCSRLoginLogout.login(SSN, AppURL);
-				// VQC_LOC_History.history(SSN, AppURL);
+				VQCCSRHistory.history(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 			}
 		}
 
 	}
 
-	@Test(priority = 603, enabled = true)
+	//@Test(priority = 603, enabled = true,groups = "Jyothi")
 
 	public static void LOC_PartialWriteoffRecoveryVoid() throws Exception {
 
@@ -6606,13 +6617,13 @@ public class QCStore {
 				VQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
 				VQCCSRLoginLogout.login(SSN, AppURL);
 				VQCCSRWriteOffRecovery_Partial.writeoffrecovery(SSN, AppURL);
-				// VQCCSRWriteOffRecovery.writeoffrecovery(SSN, AppURL);
+				
 				VCSRLoginLogout.logout(SSN, AppURL);
 				VQCCSRLoginLogout.login(SSN, AppURL);
 				VQCVoid.qcVoid(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 				VQCCSRLoginLogout.login(SSN, AppURL);
-				// VQC_LOC_History.history(SSN, AppURL);
+				VQCCSRHistory.history(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 
 			}
@@ -6620,7 +6631,7 @@ public class QCStore {
 
 	}
 
-	@Test(priority = 604, enabled = true)
+	//@Test(priority = 604, enabled = true,groups = "Jyothi")
 
 	public static void LOC_Bankrupt_Writeoff() throws Exception {
 
@@ -6639,7 +6650,7 @@ public class QCStore {
 			// System.out.println(RunFlag);
 			if (RunFlag.equals("Y")) {
 
-				// String AppURL = TestData.getCellData(sheetName,"AppURL",row);
+				 String AppURL = TestData.getCellData(sheetName,"AppURL",row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
 
 				System.out.println(AppURL);
@@ -6654,16 +6665,13 @@ public class QCStore {
 				VQCCSRLoginLogout.login(SSN, AppURL);
 				VQCCSRBankruptcy.bankruptcy(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
-				// VQCCSRLoginLogout.login(SSN, AppURL);
+				
 				VAdminLoginForBankruptcy.bankruptcy(driver, SSN, AppURL);
 				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQC_LOC_History.history(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				VQCCSRLoginLogout.login(SSN, AppURL);
 				VQCCSRHistory.history(SSN, AppURL);
-				VCSRLoginLogout.logout(SSN, AppURL);
-				VQCCSRLoginLogout.login(SSN, AppURL);
-				// VQC_LOC_History.history(SSN, AppURL);
-				VCSRLoginLogout.logout(SSN, AppURL);
-				VQCCSRLoginLogout.login(SSN, AppURL);
-				// VQC_LOC_History.history(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 
 			}
@@ -6671,7 +6679,7 @@ public class QCStore {
 
 	}
 
-	@Test(priority = 605, enabled = true)
+	//@Test(priority = 605, enabled = true,groups = "Jyothi")
 
 	public static void LOC_Bankrupt_Writeoff_Dismissed() throws Exception {
 
@@ -6706,14 +6714,14 @@ public class QCStore {
 				VQCCSRLoginLogout.login(SSN, AppURL);
 				VQCCSRBankruptcy.bankruptcy(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
-				// VQCCSRLoginLogout.login(SSN, AppURL);
+				
 				VAdminLoginForBankruptcy.bankruptcy(driver, SSN, AppURL);
 				VQCCSRLoginLogout.login(SSN, AppURL);
-				VQCCSRHistory.history(SSN, AppURL);
+				VQC_LOC_History.history(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 				VDismissed_Admin.Dismissed(driver, SSN, AppURL);
 				VQCCSRLoginLogout.login(SSN, AppURL);
-				// VQC_LOC_History.history(SSN, AppURL);
+				VQCCSRHistory.history(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 
 			}
@@ -6721,7 +6729,7 @@ public class QCStore {
 
 	}
 
-	@Test(priority = 606, enabled = true)
+	//@Test(priority = 606, enabled = true,groups = "Jyothi")
 	public static void LOC_Deposit_Return_Writeoff() throws Exception {
 
 		FileName = "LOC_Deposit_Return_Writeoff.xls";
@@ -6762,7 +6770,7 @@ public class QCStore {
 				VQCCSRWriteOff.writeoff(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 				VQCCSRLoginLogout.login(SSN, AppURL);
-				// VQC_LOC_History.history(SSN, AppURL);
+				VQCCSRHistory.history(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 
 			}
@@ -6770,7 +6778,7 @@ public class QCStore {
 
 	}
 
-	@Test(priority = 607, enabled = true)
+	@Test(priority = 607, enabled = true,groups = "Jyothi")
 
 	public static void LOC_Deposit2_Return_Writeoff() throws Exception {
 
@@ -6826,14 +6834,13 @@ public class QCStore {
 				VCSRLoginLogout.logout(SSN, AppURL);
 
 				VQCCSRLoginLogout.login(SSN, AppURL);
-				// VQC_LOC_History.history(SSN, AppURL);
-				VQCCSRHistory.history(SSN, SSN);
+				VQCCSRHistory.history(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 			}
 		}
 	}
 
-	@Test(priority = 608, enabled = true)
+	//@Test(priority = 608, enabled = true,groups ="Jyothi")
 
 	public static void LOC_WriteoffRecoveryReturn() throws Exception {
 
@@ -6884,7 +6891,7 @@ public class QCStore {
 				VQCAdminCCKReturn.cckreturn(SSN, AppURL);
 
 				VQCCSRLoginLogout.login(SSN, AppURL);
-				// VQC_LOC_History.history(SSN, AppURL);
+				VQCCSRHistory.history(SSN, AppURL);
 				VCSRLoginLogout.logout(SSN, AppURL);
 
 			}
@@ -6908,12 +6915,13 @@ public class QCStore {
 			try {
 				reader = new BufferedReader(
 						new FileReader("C:/QC_Batch/QC_LOC/src/test/java/tests/Objects.properties"));
+
 				prop = new Properties();
 				prop.load(reader);
 				reader.close();
 				AppURL = prop.getProperty("CSR_URL");
 				AdminURL = prop.getProperty("ADMIN_CSR_URL");
-				String Bfilename = prop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+				String Bfilename = Vprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
 				reports = new ExtentReports(
 						System.getProperty("user.dir") + prop.getProperty("QC_Store_extent_report_path") + Bfilename,
@@ -7014,10 +7022,13 @@ public class QCStore {
 
 			try {
 				Vreader = new BufferedReader(
-						new FileReader("E:/QC_Batch/QC_LOC/src/test/java/tests/VObjects.properties"));
+						new FileReader("C:/QC_Batch/QC_LOC/src/test/java/tests/VObjects.properties"));
 				Vprop = new Properties();
 				Vprop.load(Vreader);
 				Vreader.close();
+				csr_url = Vprop.getProperty("CSR_URL");
+				csrloginpage = Vprop.getProperty("Login_Page");
+				AdminURL = Vprop.getProperty("ADMIN_URL");
 				String Vfilename = Vprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
 				reports = new ExtentReports(

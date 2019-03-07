@@ -61,6 +61,7 @@ M
 test-output/testng-reports.js,8\0\80592053f6a51e6a2e28f59d796ae3db5c14005a
 F
 test-output/passed.png,9\6\96b721e41daae92ce544186fb5fb4265c2c4d44e
+<<<<<<< HEAD
 o
 ?ExecutionReports/LendNation/LendNation_01.28.2019.17.20.28.html,c\6\c6664df6ffd451facea673c98589bf5097b102b9
 o
@@ -81,3 +82,37 @@ o
 ?ExecutionReports/LendNation/LendNation_10.30.2018.18.40.35.html,8\1\8145bb583130eccb40a5afccb80ce8dfd5f30034
 }
 MExecutionReports/LendNation/QC_Store_Execution_report10.15.2018.12.29.36.html,6\2\62a56b0093dc02af1806c2222afdd5f8ad67cc13
+=======
+€
+PExecutionReports/LendNation/FailedTestsScreenshots/Submit2019.01.29.12.04.07.png,4\e\4e1ad6b999ac31bca3fcadfc181e304a627fc604
+€
+PExecutionReports/LendNation/FailedTestsScreenshots/Submit2019.01.29.11.56.03.png,6\5\652e2e828b688ffc38ba890966e976ce6d8ec4a4
+€
+PExecutionReports/LendNation/FailedTestsScreenshots/Submit2019.01.29.03.19.24.png,6\1\615562ab734eb948ec48714b5282c86d55d96966
+€
+PExecutionReports/LendNation/FailedTestsScreenshots/Submit2019.01.29.11.18.37.png,2\d\2de462f1f38f349ee1d4caee2d0f5d1626e581b4
+€
+PExecutionReports/LendNation/FailedTestsScreenshots/Submit2019.01.29.11.39.38.png,e\b\eb751e3b368ced9b5c38a1f4f08e51af9fcbf566
+€
+PExecutionReports/LendNation/FailedTestsScreenshots/Submit2019.01.29.05.12.15.png,9\e\9e4d35e3fc35d4a2dc9188fd9d64187001508d73
+€
+PExecutionReports/LendNation/FailedTestsScreenshots/Submit2019.01.29.03.01.28.png,a\0\a0d13268586b8b5ea2a2a51583ea2ca67337f289
+€
+PExecutionReports/LendNation/FailedTestsScreenshots/Submit2019.01.29.03.10.40.png,3\1\31d6ee2931747354c2d6730ab9a85183369b1fd0
+F
+test-output/index.html,c\1\c10f928fc0f061b63f6363f7a2541846b1eeda4d
+F
+test-output/failed.png,b\0\b05812c036384696c17aaf7f5884acbefeb28381
+[
++test-output/Default suite/testng-failed.xml,e\9\e958d68dbfc53fb43925420823170c846bd36f5d
+K
+test-output/collapseall.gif,7\5\758d0b7744ae68c553dff8dd5bede7db7100947e
+L
+test-output/bullet_point.png,c\0\c0b0119f0662880dcdadc70b27420ce51b778a1e
+Z
+*test-output/Default suite/Default test.xml,1\4\14cf7af3b8cbd9a4cde83b6272f6f518df7d1702
+Q
+!test-output/emailable-report.html,c\0\c049dbb431f8ff7e9fda71897548a9eaa626ae36
+[
++test-output/Default suite/Default test.html,e\e\ee618e2e5aa3d207f69c99fec27e84c075d26e49
+>>>>>>> a4a352df2b6d11552eca388eb0dc83e83bb0900d
