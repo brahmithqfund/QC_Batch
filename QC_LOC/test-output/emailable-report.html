@@ -9,21 +9,69 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<<<<<<< HEAD
-<tr><td><a href="#t0">Test</a></td><td class="num">6</td><td class="num">0</td><td class="num attn">1</td><td class="num">7,809,621</td><td>Anoop_EOD1</td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">3</td><td class="num">4,206,965</td><td>Anoop_EOD3</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.QCStore</td><td><a href="#m0">PaymentAndEod</a></td><td rowspan="1">1551794045230</td><td rowspan="1">86160</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">tests.QCStore</td><td><a href="#m1">DepositAndEOD</a></td><td rowspan="1">1551798122028</td><td rowspan="1">1215893</td></tr><tr class="passedeven"><td><a href="#m2">DrawAndEOD</a></td><td rowspan="1">1551799343573</td><td rowspan="1">1310364</td></tr><tr class="passedeven"><td><a href="#m3">EODOnDueDate</a></td><td rowspan="1">1551792850039</td><td rowspan="1">1189381</td></tr><tr class="passedeven"><td><a href="#m4">HigherPaymentAndEod</a></td><td rowspan="1">1551794137790</td><td rowspan="1">1331377</td></tr><tr class="passedeven"><td><a href="#m5">PayOFFandEod</a></td><td rowspan="1">1551796843557</td><td rowspan="1">1272827</td></tr><tr class="passedeven"><td><a href="#m6">VoidandEod</a></td><td rowspan="1">1551795474807</td><td rowspan="1">1363107</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">tests.QCStore</td><td><a href="#m0">DepositEODReDeposit</a></td><td rowspan="1">1551939418762</td><td rowspan="1">105194</td></tr><tr class="failedeven"><td><a href="#m1">PaymentDepositEODReDeposit</a></td><td rowspan="1">1551939530290</td><td rowspan="1">99643</td></tr><tr class="failedeven"><td><a href="#m2">SignatureNewLoan_EODTwice</a></td><td rowspan="1">1551938126800</td><td rowspan="1">1285589</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.QCStore</td><td><a href="#m3">Clear_Return_EODTwice</a></td><td rowspan="1">1551935429462</td><td rowspan="1">2691481</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">tests.QCStore#PaymentAndEod</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.UnhandledAlertException: Modal dialog present: Please Select Product
+<h2>Test</h2><h3 id="m0">tests.QCStore#DepositEODReDeposit</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to find element with id == LoanButtonId (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;QTLSYS2-48&apos;, ip: &apos;192.168.2.48&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:34656/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: 65697d82-dfdd-47b9-bc12-ede5e15cce8a
-*** Element info: {Using=name, value=advanceRequestBean.paymentCollateralType}
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:31162/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: f80b50a2-2639-4ac5-9e86-515dc57c32ce
+*** Element info: {Using=id, value=LoanButtonId}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:195)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at tests.AQCCSRNewLoan.newLoan(AQCCSRNewLoan.java:150)
+	at tests.QCStore.DepositEODReDeposit(QCStore.java:4808)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.QCStore#PaymentDepositEODReDeposit</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to find element with id == LoanButtonId (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;QTLSYS2-48&apos;, ip: &apos;192.168.2.48&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:36918/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 0d72bbda-cf7f-434b-b299-4da4cb88e115
+*** Element info: {Using=id, value=LoanButtonId}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at tests.AQCCSRNewLoan.newLoan(AQCCSRNewLoan.java:150)
+	at tests.QCStore.PaymentDepositEODReDeposit(QCStore.java:4739)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.QCStore#SignatureNewLoan_EODTwice</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to find element with name == done (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;QTLSYS2-48&apos;, ip: &apos;192.168.2.48&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:9477/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: d54b12d3-b324-4f03-ab06-41f43bc9af51
+*** Element info: {Using=name, value=done}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
 	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
 	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
@@ -34,71 +82,9 @@ Session ID: 65697d82-dfdd-47b9-bc12-ede5e15cce8a
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
 	at org.openqa.selenium.By$ByName.findElement(By.java:284)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at tests.AQCCSRNewLoan.LOC(AQCCSRNewLoan.java:213)
-	at tests.AQCCSRNewLoan.newLoan(AQCCSRNewLoan.java:162)
-	at tests.QCStore.PaymentAndEod(QCStore.java:5571)
+	at tests.AQCDrawerAssign.drawerAssign(AQCDrawerAssign.java:75)
+	at tests.QCStore.SignatureNewLoan_EODTwice(QCStore.java:4883)
 ... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.QCStore#DepositAndEOD</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">tests.QCStore#DrawAndEOD</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">tests.QCStore#EODOnDueDate</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">tests.QCStore#HigherPaymentAndEod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">tests.QCStore#PayOFFandEod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">tests.QCStore#VoidandEod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-=======
-<<<<<<< HEAD
-<tr><td><a href="#t0">Test</a></td><td class="num">14</td><td class="num">0</td><td class="num">0</td><td class="num">23,917,423</td><td>Ratikanta_NEOD</td><td></td></tr>
-=======
-<<<<<<< HEAD
-<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">7,298,522</td><td>EOD2</td><td></td></tr>
-</table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">tests.QCStore</td><td><a href="#m0">LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn</a></td><td rowspan="1">1551699960366</td><td rowspan="1">4654715</td></tr><tr class="passedeven"><td><a href="#m1">LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn</a></td><td rowspan="1">1551704620438</td><td rowspan="1">2633015</td></tr></tbody>
-</table>
-<h2>Test</h2><h3 id="m0">tests.QCStore#LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.QCStore#LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-=======
-<<<<<<< HEAD
-<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">5,198</td><td>Anoop_EOD1</td><td></td></tr>
->>>>>>> cfd4415cf923aceeec44a0b1fca621dca6ccc529
-</table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="14">tests.QCStore</td><td><a href="#m0">RQC_LOC_2missedPayment_Default_EOD_Txn_Testdata</a></td><td rowspan="1">1551797387395</td><td rowspan="1">1957103</td></tr><tr class="passedeven"><td><a href="#m1">RQC_LOC_Default_DefaultPayment_Return_Txn_Testdata</a></td><td rowspan="1">1551805415814</td><td rowspan="1">2042928</td></tr><tr class="passedeven"><td><a href="#m2">RQC_LOC_Default_DefaultPayment_Txn_Testdata</a></td><td rowspan="1">1551799349540</td><td rowspan="1">2086444</td></tr><tr class="passedeven"><td><a href="#m3">RQC_LOC_Default_DefaultPayment_Void_Txn_Testdata</a></td><td rowspan="1">1551801441036</td><td rowspan="1">1969977</td></tr><tr class="passedeven"><td><a href="#m4">RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Txn_Testdata</a></td><td rowspan="1">1551807463784</td><td rowspan="1">1954314</td></tr><tr class="passedeven"><td><a href="#m5">RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Void_Txn_Testdata</a></td><td rowspan="1">1551809423148</td><td rowspan="1">2004618</td></tr><tr class="passedeven"><td><a href="#m6">RQC_LOC_Default_PartialDefaultPayment_Void_Txn_Testdata</a></td><td rowspan="1">1551803416059</td><td rowspan="1">1994713</td></tr><tr class="passedeven"><td><a href="#m7">RQC_LOC_Deposit_Return_2ndDeposit_Clear_3rdDeposit_Return_Default_Txn_Testdata</a></td><td rowspan="1">1551794173673</td><td rowspan="1">3208681</td></tr><tr class="passedeven"><td><a href="#m8">RQC_LOC_Deposit_Return_ManualDefault_Txn_Testdata</a></td><td rowspan="1">1551792983292</td><td rowspan="1">1185325</td></tr><tr class="passedeven"><td><a href="#m9">RQC_LOC_ManualDefault_Txn_Testdata</a></td><td rowspan="1">1551791928194</td><td rowspan="1">1049891</td></tr><tr class="passedeven"><td><a href="#m10">RQC_LOC_PayOff_Agestore180days_AutoClosure_Txn_Testdata</a></td><td rowspan="1">1551813502466</td><td rowspan="1">2337406</td></tr><tr class="passedeven"><td><a href="#m11">RQC_LOC_PayOff_Closure_PayoffReturn_Txn_Testdata</a></td><td rowspan="1">1551812710777</td><td rowspan="1">786597</td></tr><tr class="passedeven"><td><a href="#m12">RQC_LOC_PayOff_Closure_Txn_Testdata</a></td><td rowspan="1">1551811432812</td><td rowspan="1">556343</td></tr><tr class="passedeven"><td><a href="#m13">RQC_LOC_Payment_PayOff_Closure_Void_Txn_Testdata</a></td><td rowspan="1">1551811994205</td><td rowspan="1">711511</td></tr></tbody>
-</table>
-<<<<<<< HEAD
-<h2>Test</h2><h3 id="m0">tests.QCStore#RQC_LOC_2missedPayment_Default_EOD_Txn_Testdata</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.QCStore#RQC_LOC_Default_DefaultPayment_Return_Txn_Testdata</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">tests.QCStore#RQC_LOC_Default_DefaultPayment_Txn_Testdata</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">tests.QCStore#RQC_LOC_Default_DefaultPayment_Void_Txn_Testdata</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">tests.QCStore#RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Txn_Testdata</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">tests.QCStore#RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Void_Txn_Testdata</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">tests.QCStore#RQC_LOC_Default_PartialDefaultPayment_Void_Txn_Testdata</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">tests.QCStore#RQC_LOC_Deposit_Return_2ndDeposit_Clear_3rdDeposit_Return_Default_Txn_Testdata</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">tests.QCStore#RQC_LOC_Deposit_Return_ManualDefault_Txn_Testdata</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">tests.QCStore#RQC_LOC_ManualDefault_Txn_Testdata</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">tests.QCStore#RQC_LOC_PayOff_Agestore180days_AutoClosure_Txn_Testdata</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">tests.QCStore#RQC_LOC_PayOff_Closure_PayoffReturn_Txn_Testdata</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">tests.QCStore#RQC_LOC_PayOff_Closure_Txn_Testdata</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m13">tests.QCStore#RQC_LOC_Payment_PayOff_Closure_Void_Txn_Testdata</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-=======
-<h2>Test</h2><h3 id="m0">tests.QCStore#getResult</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=EODOnDueDate status=FAILURE method=QCStore.EODOnDueDate()[pri:412, instance:tests.QCStore@799f10e1] output={null}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at tests.QCStore.getScreenhot(QCStore.java:7091)
-	at tests.QCStore.getResult(QCStore.java:7107)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.QCStore#EODOnDueDate</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: D:\QC_Batch\QC_LOC\TestData\QCStore\ALOC\QC_LOC_EODDuedate.xls (The system cannot find the path specified)
-	at java.io.FileInputStream.open0(Native Method)
-	at java.io.FileInputStream.open(Unknown Source)
-	at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
-	at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
-	at tests.ExcelNew.&lt;init&gt;(ExcelNew.java:35)
-	at tests.QCStore.EODOnDueDate(QCStore.java:5634)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-=======
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">1,524,740</td><td>Janaki_EOD</td><td></td></tr>
-</table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.QCStore</td><td><a href="#m0">JQC_LOC_Refinance_EOD_Payment_Txn</a></td><td rowspan="1">1551440051898</td><td rowspan="1">1519420</td></tr></tbody>
-</table>
-<h2>Test</h2><h3 id="m0">tests.QCStore#JQC_LOC_Refinance_EOD_Payment_Txn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
->>>>>>> feb1.1
->>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
->>>>>>> cfd4415cf923aceeec44a0b1fca621dca6ccc529
->>>>>>> 792c0d99c7dc98fb911ab128b442f178e0a75ffb
+<h3 id="m3">tests.QCStore#Clear_Return_EODTwice</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

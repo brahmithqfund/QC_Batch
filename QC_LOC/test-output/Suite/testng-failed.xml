@@ -4,23 +4,17 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-<<<<<<< HEAD
-        <include name="Anoop_EOD1"/>
-=======
-        <include name="Ratikanta_NEOD"/>
->>>>>>> 792c0d99c7dc98fb911ab128b442f178e0a75ffb
+        <include name="Anoop_EOD3"/>
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
-          <include name="PaymentAndEod"/>
           <include name="getResult"/>
           <include name="setup"/>
-<<<<<<< HEAD
-=======
-          <include name="RQC_LOC_ManualDefault_Txn_Testdata"/>
->>>>>>> 792c0d99c7dc98fb911ab128b442f178e0a75ffb
+          <include name="SignatureNewLoan_EODTwice"/>
+          <include name="DepositEODReDeposit"/>
+          <include name="PaymentDepositEODReDeposit"/>
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->
