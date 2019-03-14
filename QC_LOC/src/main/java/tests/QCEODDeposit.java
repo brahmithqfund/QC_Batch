@@ -288,7 +288,7 @@ public class QCEODDeposit extends QCStore{
 						Thread.sleep(2000);
 						driver.findElement(locator(prop.getProperty("daily_processing_start_eod"))).click();
 						test.log(LogStatus.PASS, "Clicked on Start EOD processing");
-						Thread.sleep(5000);
+						Thread.sleep(8000);
 						String trans_nbr=driver.findElement(locator(prop.getProperty("daily_processing_trans_nbr"))).getText();	
 						String trans_store=driver.findElement(locator(prop.getProperty("daily_processing_store_nbr"))).getText();	
 						String transnbr[]=trans_nbr.split(":");

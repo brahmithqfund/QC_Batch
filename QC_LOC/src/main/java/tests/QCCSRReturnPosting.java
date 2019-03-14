@@ -32,7 +32,8 @@ public class QCCSRReturnPosting extends QCStore {
 				if (SSN.equals(RegSSN)) {
 					
 					String PIN = TestData.getCellData(sheetName, "PIN", row);
-					String StoreID = TestData.getCellData(sheetName, "StoreID", row);
+					String StoreID = bstoreid;
+							//TestData.getCellData(sheetName, "StoreID", row);
 					String ReasonForReturn = TestData.getCellData(sheetName, "ReasonForReturn", row);
 					String Esign_CollateralType = TestData.getCellData(sheetName, "Esign_CollateralType", row);
 
@@ -202,7 +203,7 @@ public class QCCSRReturnPosting extends QCStore {
 						driver.switchTo().defaultContent();
 						driver.switchTo().frame("mainFrame");
 						driver.switchTo().frame("main");
-						//business_date="08/02/2018";
+						//business_date="06/01/2018";
 						String App_date[] = business_date.split("/");
 						System.out.println("business_date");
 

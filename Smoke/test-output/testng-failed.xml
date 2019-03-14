@@ -6,9 +6,17 @@
       <class name="QCHome.CSR">
         <methods>
           <include name="getResult"/>
+          <include name="QC_NM_TLP_Txn"/>
+          <include name="ilpeditborrowregsavenext"/>
           <include name="NewLoanVeritec"/>
+          <include name="borrowregsaveloan"/>
+          <include name="borrowregsavenext"/>
+          <include name="locborrowregsaveexiteditssn"/>
           <include name="endReport"/>
+          <include name="CSRBorrowerRegistration"/>
+          <include name="editborrowregsavenext"/>
           <include name="setup"/>
+          <include name="loceditborrowregsavenext"/>
         </methods>
       </class> <!-- QCHome.CSR -->
     </classes>

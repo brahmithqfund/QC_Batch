@@ -2,6 +2,7 @@
 <<<<<<<=HEAD
 >>>>>>>=janaki1.1
 PROBLEMS_FILTERS_MIGRATE=true
+TASKS_FILTERS_MIGRATE=true
 eclipse.preferences.version=1
 platformState=1487326882157
 quickStart=false

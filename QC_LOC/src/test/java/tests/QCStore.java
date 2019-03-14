@@ -115,6 +115,8 @@ public class QCStore {
 	public static String logout;
 
 	private static Object rescind;
+	public static String bstoreid="520";
+	public static String busername="csr520";
 
 	// Brahmith scenarios
 
@@ -1793,7 +1795,7 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+		/*			QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
@@ -1909,7 +1911,7 @@ public class QCStore {
 					QCCSRReturnPosting.returnposting(SSN, SSN);
 
 					QCCSRLoginLogout.adminLogin(SSN, SSN);
-					QCAdminACHReturn.achreturn(SSN, SSN);
+					QCAdminACHReturn.achreturn(SSN, SSN);*/
 
 					QCCSRLoginLogout.login(SSN, AppURL);
 
@@ -7049,8 +7051,8 @@ public class QCStore {
 
 		try {
 
-			Runtime.getRuntime().exec("taskkill /IM iexplore.exe /F");
-			Runtime.getRuntime().exec("taskkill /F /IM IEDriverServer.exe");
+			//Runtime.getRuntime().exec("taskkill /IM iexplore.exe /F");
+			//Runtime.getRuntime().exec("taskkill /F /IM IEDriverServer.exe");
 
 			Thread.sleep(5000); // Allow OS to kill the process
 			System.out.println("killed the IE process LOC process");

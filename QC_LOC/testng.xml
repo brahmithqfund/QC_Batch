@@ -7,8 +7,8 @@
 
 
   <!--  Brahmith scenarios   -->  
- <!--    <include name="EOD"/>   -->
-   <!-- <include name="EOD2"/>-->
+      <include name="EOD"/>   
+  <!-- <include name="EOD2"/>-->
  <!-- <include name="1st Batch"/>-->
  
   <!--  Janaki scenarios  -->

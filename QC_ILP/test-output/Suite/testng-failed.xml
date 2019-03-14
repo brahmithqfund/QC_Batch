@@ -4,46 +4,17 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-<<<<<<< HEAD
-        <include name="Brahmith"/>
-=======
-        <include name="Anoop"/>
->>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
+        <include name="Brahmith1"/>
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
-<<<<<<< HEAD
-          <include name="ILP_Redeposit"/>
-          <include name="ILP_RefinanceStepDown"/>
-          <include name="ILP_ProcessClear"/>
-=======
-<<<<<<< HEAD
-          <include name="QC_ILP_clear_Menu_Txn"/>
-          <include name="QC_ILP_Return_Menu_Txn"/>
-=======
-          <include name="ILP_borrowregNewloan"/>
->>>>>>> 034e575dc96add0c75e87be5f99f7163fb9e1980
           <include name="getResult"/>
->>>>>>> 792c0d99c7dc98fb911ab128b442f178e0a75ffb
+          <include name="QC_InstallPayment_Ref_Rescind_Txn"/>
           <include name="setup"/>
-          <include name="ILP_RefinanceStepup"/>
-          <include name="ILP_voidRefinance"/>
-          <include name="ILP_maxloanCount"/>
           <include name="endReport"/>
-          <include name="ILP_RefinanceStepSame"/>
           <include name="killProcess"/>
-          <include name="ILP_inactiveNewloan"/>
-          <include name="ILP_borrowregNewloan"/>
-          <include name="getResult"/>
-          <include name="ILP_RefinanceStepUpVoid"/>
-          <include name="ILP_RefinanceStepDown_void"/>
-          <include name="ILP_agerescindtest"/>
-          <include name="ILP_rescindloan"/>
-          <include name="ILP_ACHAutoClear"/>
-          <include name="ILP_CheckAutoClear"/>
-          <include name="ILP_RefinanceStepSame_Void"/>
         </methods>
       </class> <!-- tests.QCStore -->
     </classes>
