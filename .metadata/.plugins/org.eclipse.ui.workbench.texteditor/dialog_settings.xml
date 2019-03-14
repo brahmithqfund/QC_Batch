@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value="QC_Store_NewLoan_Test_data_sheet_path" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="QC_Store_NewLoan_Test_data_sheet_path"/>
+			<item value="Clicked on Start EOD processing"/>
 			<item value="odbc"/>
 			<item value="QC_ILP_Installmentpayment"/>
 			<item value="brahmith1"/>
 			<item value="Loan number verification is not successfull"/>
 			<item value="00911"/>
 			<item value="ORA-00911"/>
-			<item value="Brahmith1"/>
-			<item value="//@Test"/>
 		</list>
 		<list key="replacehistory">
 			<item value="@Test"/>
