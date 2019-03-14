@@ -64,7 +64,7 @@ public class ILP_DepositDropdown extends QCStore{
 					test.log(LogStatus.PASS, "SSN3 is entered: "+SSN3);
 					driver.findElement(By.name("submit1")).click();
 					test.log(LogStatus.PASS, "Click on submit Button");		
-					
+					Thread.sleep(3000);
 				    driver.switchTo().defaultContent();
 				    driver.switchTo().frame("mainFrame");
 				    driver.switchTo().frame("main");

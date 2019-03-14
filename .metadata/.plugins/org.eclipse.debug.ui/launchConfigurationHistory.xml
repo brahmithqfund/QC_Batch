@@ -2,40 +2,10 @@
 <launchHistory>
 <launchGroup id="org.eclipse.debug.ui.launchGroup.debug">
 <mruHistory>
-<<<<<<< HEAD
-<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;QC_LOC_testng.xml&quot;/&gt;&#13;&#10;"/>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;QC_LOC_testng.xml&quot;/&gt;&#13;&#10;"/>
 <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;QC_ILP_testng.xml&quot;/&gt;&#13;&#10;"/>
 <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;QC_PDL_testng.xml&quot;/&gt;&#13;&#10;"/>
-<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;QCStore&quot;/&gt;&#13;&#10;"/>
-<<<<<<< HEAD
-<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;LOCMaxloanCount&quot;/&gt;&#13;&#10;"/>
-<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;CSR&quot;/&gt;&#13;&#10;"/>
-<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;QC_BorrowRegestration&quot;/&gt;&#13;&#10;"/>
-<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;CSRLoginLogout&quot;/&gt;&#13;&#10;"/>
-=======
-=======
-<<<<<<< HEAD
-<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;QC_ILP_testng.xml&quot;/&gt;&#13;&#10;"/>
-=======
 <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;QC_TLP_testng.xml&quot;/&gt;&#13;&#10;"/>
->>>>>>> janaki1.1
->>>>>>> 792c0d99c7dc98fb911ab128b442f178e0a75ffb
-=======
 <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;QC_LOC_testng.xml&quot;/&gt;&#13;&#10;"/>
-<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;QCStore&quot;/&gt;&#13;&#10;"/>
-<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;VQCAdminEncryption&quot;/&gt;&#13;&#10;"/>
-<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;QCAdminEncryption&quot;/&gt;&#13;&#10;"/>
->>>>>>> jyothi1.1
-=======
-<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;QC_LOC_testng.xml&quot;/&gt;&#13;&#10;"/>
->>>>>>> anoop1.1
->>>>>>> 05fc51d0698a47f83bd3d40515ae979587c1345c
->>>>>>> a4a352df2b6d11552eca388eb0dc83e83bb0900d
 </mruHistory>
 <favorites/>
 </launchGroup>
@@ -49,40 +19,10 @@
 </launchGroup>
 <launchGroup id="org.eclipse.debug.ui.launchGroup.run">
 <mruHistory>
-<<<<<<< HEAD
-<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;QC_LOC_testng.xml&quot;/&gt;&#13;&#10;"/>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;QC_LOC_testng.xml&quot;/&gt;&#13;&#10;"/>
 <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;QC_ILP_testng.xml&quot;/&gt;&#13;&#10;"/>
 <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;QC_PDL_testng.xml&quot;/&gt;&#13;&#10;"/>
-<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;QCStore&quot;/&gt;&#13;&#10;"/>
-<<<<<<< HEAD
-<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;LOCMaxloanCount&quot;/&gt;&#13;&#10;"/>
-<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;CSR&quot;/&gt;&#13;&#10;"/>
-<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;QC_BorrowRegestration&quot;/&gt;&#13;&#10;"/>
-<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;CSRLoginLogout&quot;/&gt;&#13;&#10;"/>
-=======
-=======
-<<<<<<< HEAD
-<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;QC_ILP_testng.xml&quot;/&gt;&#13;&#10;"/>
-=======
 <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;QC_TLP_testng.xml&quot;/&gt;&#13;&#10;"/>
->>>>>>> janaki1.1
->>>>>>> 792c0d99c7dc98fb911ab128b442f178e0a75ffb
-=======
 <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;QC_LOC_testng.xml&quot;/&gt;&#13;&#10;"/>
-<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;QCStore&quot;/&gt;&#13;&#10;"/>
-<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;VQCAdminEncryption&quot;/&gt;&#13;&#10;"/>
-<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;QCAdminEncryption&quot;/&gt;&#13;&#10;"/>
->>>>>>> jyothi1.1
-=======
-<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;QC_LOC_testng.xml&quot;/&gt;&#13;&#10;"/>
->>>>>>> anoop1.1
->>>>>>> 05fc51d0698a47f83bd3d40515ae979587c1345c
->>>>>>> a4a352df2b6d11552eca388eb0dc83e83bb0900d
 </mruHistory>
 <favorites/>
 </launchGroup>

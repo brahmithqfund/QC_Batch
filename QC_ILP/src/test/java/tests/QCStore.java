@@ -2506,13 +2506,10 @@ public class QCStore {
 	@Test(priority = 0, enabled = true, groups = "Anoop_StdownVoid")
 	// This is date dependency make it 03/12/2018
 	public void ILP_RefinanceStepDown_void() throws Exception {
+		FileName = "QC_ILP_StepDown_Void.xls";
+		test = reports.startTest("QC_ILP_StepDown_Void","Login-->Age the Store_payment_Age store to Duedate_Refinance Step Down Void");
 
-		FileName = "QC_StepDown_Void.xls";
-		test = reports.startTest("QC_ILP_StepDown_Void",
-				"Login-->Age the Store_payment_Age store to Duedate_Refinance Step Down Void");
-
-		TestData = new ExcelNew(
-				System.getProperty("user.dir") + Aprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
+		TestData = new ExcelNew(System.getProperty("user.dir") + Aprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 

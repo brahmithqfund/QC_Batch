@@ -2,35 +2,35 @@
 <testng-results skipped="0" failed="0" ignored="34" total="35" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="915528" started-at="2019-03-05T10:41:14Z" finished-at="2019-03-05T10:56:29Z">
+  <suite name="Suite" duration-ms="1071507" started-at="2019-03-11T12:29:19Z" finished-at="2019-03-11T12:47:11Z">
     <groups>
-      <group name="Anoop1">
-        <method signature="QCStore.TLP_ProcessAutoClear()[pri:308, instance:tests.QCStore@527740a2]" name="TLP_ProcessAutoClear" class="tests.QCStore"/>
-      </group> <!-- Anoop1 -->
+      <group name="Janaki_EOD_set2">
+        <method signature="QCStore.JQC_TLP_GraceDays_Deposit_EOD_Txn()[pri:210, instance:tests.QCStore@527740a2]" name="JQC_TLP_GraceDays_Deposit_EOD_Txn" class="tests.QCStore"/>
+      </group> <!-- Janaki_EOD_set2 -->
     </groups>
-    <test name="Test" duration-ms="915528" started-at="2019-03-05T10:41:14Z" finished-at="2019-03-05T10:56:29Z">
+    <test name="Test" duration-ms="1071507" started-at="2019-03-11T12:29:19Z" finished-at="2019-03-11T12:47:11Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="80" started-at="2019-03-05T10:41:14Z" finished-at="2019-03-05T10:41:14Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="82" started-at="2019-03-11T12:29:19Z" finished-at="2019-03-11T12:29:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5010" started-at="2019-03-05T10:41:14Z" finished-at="2019-03-05T10:41:19Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5010" started-at="2019-03-11T12:29:19Z" finished-at="2019-03-11T12:29:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="TLP_ProcessAutoClear()[pri:308, instance:tests.QCStore@527740a2]" name="TLP_ProcessAutoClear" duration-ms="909652" started-at="2019-03-05T10:41:19Z" finished-at="2019-03-05T10:56:28Z">
+        <test-method status="PASS" signature="JQC_TLP_GraceDays_Deposit_EOD_Txn()[pri:210, instance:tests.QCStore@527740a2]" name="JQC_TLP_GraceDays_Deposit_EOD_Txn" duration-ms="1066227" started-at="2019-03-11T12:29:24Z" finished-at="2019-03-11T12:47:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TLP_ProcessAutoClear -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-05T10:56:28Z" finished-at="2019-03-05T10:56:28Z">
+        </test-method> <!-- JQC_TLP_GraceDays_Deposit_EOD_Txn -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="1" started-at="2019-03-11T12:47:11Z" finished-at="2019-03-11T12:47:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="771" started-at="2019-03-05T10:56:28Z" finished-at="2019-03-05T10:56:29Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="172" started-at="2019-03-11T12:47:11Z" finished-at="2019-03-11T12:47:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TLP_ProcessAutoClear status=SUCCESS method=QCStore.TLP_ProcessAutoClear()[pri:308, instance:tests.QCStore@527740a2] output={null}]]]>
+                <![CDATA[[TestResult name=JQC_TLP_GraceDays_Deposit_EOD_Txn status=SUCCESS method=QCStore.JQC_TLP_GraceDays_Deposit_EOD_Txn()[pri:210, instance:tests.QCStore@527740a2] output={null}]]]>
               </value>
             </param>
           </params>

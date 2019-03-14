@@ -6008,7 +6008,7 @@ public class QCStore {
 	}
 
 
-	@Test(priority = 498, enabled = true, groups = { "NonEOD" })
+	@Test(priority = 498, enabled = true, groups = { "NonEOD1" })
 	public void AReviseCredit_IncIncome() throws Exception {
 
 		FileName = "QC_ ReviseCredit_IncreaseIncome.xls";
@@ -6025,14 +6025,13 @@ public class QCStore {
 				String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
 
-				/*ACSRLoginLogout.login(SSN, AppURL);
+				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRBorrowerRegistration.borrowerReg(SSN, AppURL);
 				ACSRLoginLogout.logout();
 
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCCSRNewLoan.newLoan(SSN, AppURL);
 				ACSRLoginLogout.logout();
-*/
 				ACSRLoginLogout.login(SSN, AppURL);
 				AReviseCredit.revisecredit(SSN, AppURL);
 				ACSRLoginLogout.logout();

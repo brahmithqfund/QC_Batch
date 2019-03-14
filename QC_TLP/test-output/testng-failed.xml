@@ -4,7 +4,7 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="Anoop1"/>
+        <include name="Janaki_EOD_set1"/>
       </run>
     </groups>
     <classes>
@@ -12,8 +12,8 @@
         <methods>
           <include name="getResult"/>
           <include name="setup"/>
+          <include name="JQC_TLP_Deposit_EOD_Txn"/>
           <include name="endReport"/>
-          <include name="TLP_ProcessAutoClear"/>
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->

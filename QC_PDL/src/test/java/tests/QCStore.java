@@ -4471,7 +4471,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 423, enabled = true, groups = "Janaki1")
+	@Test(priority = 423, enabled = true, groups = "Janaki_WORecovery")
 	public static void JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(
