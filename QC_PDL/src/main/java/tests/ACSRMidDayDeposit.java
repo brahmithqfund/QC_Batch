@@ -29,6 +29,7 @@ public class ACSRMidDayDeposit extends QCStore {
 		e.click();
 		e.sendKeys("0");
 		test.log(LogStatus.PASS, "Enterd count of dollar coins :"+"0");
+		Thread.sleep(2000);
 
 		List<WebElement>  rows = driver.findElements(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[3]/td/table/tbody/tr")); 
 

@@ -335,9 +335,10 @@ public class AQCEODDeposit extends QCStore{
 
 						}
 
-						Thread.sleep(500);
+						Thread.sleep(1500);
 						driver.findElement(locator(Aprop.getProperty("deposit_next_btn"))).click();
 						//driver.findElement(By.xpath("/html/body/form/table/tbody/tr[1]/td/table/tbody/tr/td/table/tbody/tr[2]/td[2]/table/tbody/tr[3]/td[2]/input[3]")).click();
+						Thread.sleep(2500);
 
 						test.log(LogStatus.PASS, "Clicked next under Deposit section ");
 						try{

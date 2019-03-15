@@ -110,23 +110,24 @@ public class ACSRBorrowerRegistration extends QCStore {
 
 
 				driver.switchTo().defaultContent();
-
-				wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("topFrame")));
+				Thread.sleep(2500);
+				//wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("topFrame")));
 				driver.switchTo().frame("topFrame");	   
 				//driver.findElement(By.xpath("//*[contains(text(),'Loan Transactions')])")).click();
-				wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("li[id='900000']")));
+				//wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("li[id='900000']")));
 				driver.findElement(By.cssSelector("li[id='900000']")).click();	
 				//driver.findElement(By.xpath("//*[contains(text(),'Borrower')]")).click();			
 				test.log(LogStatus.PASS, "Clicked on Borrower");
 				//driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
+				Thread.sleep(2500);
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");			 
-				wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("li[id='901000']")));
+				//wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("li[id='901000']")));
 				driver.findElement(By.cssSelector("li[id='901000']")).click();			
 				test.log(LogStatus.PASS, "Clicked on Registration");
 				//---------------------------------------------------------------------------------------
 			
-			
+				Thread.sleep(2500);
 					driver.switchTo().frame("main");
 					driver.findElement(By.name("customerBean.custProdType")).sendKeys("Line of credit");
 					test.log(LogStatus.INFO, "Product trpe selected as : Line of credit");

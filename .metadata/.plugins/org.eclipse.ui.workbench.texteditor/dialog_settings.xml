@@ -2,79 +2,29 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-		<item value="// Anoop" key="selection"/>
-=======
-		<item value="build" key="selection"/>
->>>>>>> brahmith1.1
-=======
-		<item value="Admin" key="selection"/>
->>>>>>> jyothi1.1
+		<item value="ESign_LoanAmt" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-<<<<<<< HEAD
-<<<<<<< HEAD
-			<item value="// anoop"/>
-			<item value="prop.get"/>
-			<item value="returnposting"/>
-			<item value="prop"/>
-			<item value="QC_LOC_clearReturnEODTwice"/>
-			<item value="QC_LOC_payment_Draw"/>
-			<item value="Click on GO Button"/>
+			<item value="ESign_LoanAmt"/>
+			<item value="Minimum LOC amount is"/>
+			<item value="minAmountDue"/>
+			<item value="QC_LOC_Payment_EOD"/>
+			<item value="QC_LOC_EODDuedate"/>
+			<item value="QC_DepositEODReDeposit"/>
+			<item value="Clicked next under Deposit section"/>
+			<item value="// Anoop"/>
 		</list>
 		<list key="replacehistory">
-=======
-			<item value="build"/>
-			<item value="//@Test"/>
-			<item value="coupon"/>
-=======
-			<item value="admin"/>
-			<item value="Tran"/>
-			<item value="Prop"/>
-			<item value="prop"/>
-			<item value="transaction"/>
-			<item value="Yes"/>
-			<item value="URL https://qcuat.qfund.net/cc/demoIndex.do"/>
-			<item value="Opened the CSR URL https://qcuat.qfund.net/cc/demoIndex.do"/>
-		</list>
-		<list key="replacehistory">
-			<item value="prop."/>
->>>>>>> jyothi1.1
-			<item value="@Test"/>
-			<item value="QC_Store_NewLoan_Test_data_sheet_path"/>
-			<item value="=="/>
-		</list>
-		<list key="replacehistory">
-			<item value="@Test"/>
-			<item value="//@Test"/>
->>>>>>> brahmith1.1
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI" key="DIALOG_FONT_NAME"/>
-=======
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
->>>>>>> anoop1.1
 		<item value="380" key="DIALOG_HEIGHT"/>
-<<<<<<< HEAD
-		<item value="563" key="DIALOG_X_ORIGIN"/>
-		<item value="119" key="DIALOG_Y_ORIGIN"/>
-=======
-		<item value="895" key="DIALOG_X_ORIGIN"/>
-		<item value="294" key="DIALOG_Y_ORIGIN"/>
->>>>>>> brahmith1.1
-=======
-		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
-		<item value="244" key="DIALOG_HEIGHT"/>
-		<item value="449" key="DIALOG_X_ORIGIN"/>
-		<item value="466" key="DIALOG_Y_ORIGIN"/>
->>>>>>> jyothi1.1
+		<item value="906" key="DIALOG_X_ORIGIN"/>
+		<item value="356" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>
