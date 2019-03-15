@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" ignored="83" total="84" passed="0">
   <reporter-output>
   </reporter-output>
@@ -195,6 +196,39 @@ at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
+=======
+<testng-results skipped="0" failed="0" ignored="70" total="71" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="2157173" started-at="2019-03-15T05:44:54Z" finished-at="2019-03-15T06:20:52Z">
+    <groups>
+      <group name="Anoop_EOD2">
+        <method signature="QCStore.Deposit_DrawEODTwice()[pri:421, instance:tests.QCStore@527740a2]" name="Deposit_DrawEODTwice" class="tests.QCStore"/>
+      </group> <!-- Anoop_EOD2 -->
+    </groups>
+    <test name="Test" duration-ms="2157173" started-at="2019-03-15T05:44:54Z" finished-at="2019-03-15T06:20:52Z">
+      <class name="tests.QCStore">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="104" started-at="2019-03-15T05:44:54Z" finished-at="2019-03-15T05:44:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5019" started-at="2019-03-15T05:44:54Z" finished-at="2019-03-15T05:44:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="Deposit_DrawEODTwice()[pri:421, instance:tests.QCStore@527740a2]" name="Deposit_DrawEODTwice" duration-ms="2151265" started-at="2019-03-15T05:44:59Z" finished-at="2019-03-15T06:20:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Deposit_DrawEODTwice -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="769" started-at="2019-03-15T06:20:51Z" finished-at="2019-03-15T06:20:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Deposit_DrawEODTwice status=SUCCESS method=QCStore.Deposit_DrawEODTwice()[pri:421, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+>>>>>>> anoop1.1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->

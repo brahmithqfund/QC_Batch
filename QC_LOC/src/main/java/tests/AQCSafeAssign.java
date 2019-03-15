@@ -105,7 +105,7 @@ public class AQCSafeAssign extends QCStore{
 				driver.findElement(By.name("safeAssignRequestBean.empPwd")).sendKeys(Password);
 
 				test.log(LogStatus.PASS, "Entered the Password: "+Password);
-				Thread.sleep(500);
+				Thread.sleep(1500);
 				driver.findElement(By.name("safeAssignRequestBean.noOf100Dollars")).sendKeys(NoOfDollarsAmount);
 				test.log(LogStatus.PASS, "Entered the amount 500 under No of Dollars");
 				Thread.sleep(500);
@@ -113,7 +113,9 @@ public class AQCSafeAssign extends QCStore{
 				test.log(LogStatus.PASS, "Clicked on Finish Safe");
 				try { 
 					Alert alert = driver.switchTo().alert();
+					test.log(LogStatus.PASS, "Accepting alert with message"+alert.getText());
 					alert.accept();
+					
 					//if alert present, accept and move on.														
 
 				}
@@ -123,7 +125,7 @@ public class AQCSafeAssign extends QCStore{
 				}
 
 				try{
-					Thread.sleep(500);
+					Thread.sleep(2500);
 					driver.findElement(By.name("safeAssignRequestBean.empPwd")).sendKeys(Password);
 
 					test.log(LogStatus.PASS, "Entered the Password: "+Password);
@@ -135,7 +137,9 @@ public class AQCSafeAssign extends QCStore{
 					test.log(LogStatus.PASS, "Clicked on Finish Safe");
 					try { 
 						Alert alert = driver.switchTo().alert();
+						test.log(LogStatus.PASS, "Accepting alert with message"+alert.getText());
 						alert.accept();
+						test.log(LogStatus.PASS, "Alert accepted");
 						//if alert present, accept and move on.														
 
 					}
@@ -182,7 +186,7 @@ public class AQCSafeAssign extends QCStore{
 					//do what you normally would if you didn't have the alert.
 
 				}
-				Thread.sleep(6000);
+				Thread.sleep(15000);
 
 
 				driver.switchTo().defaultContent();

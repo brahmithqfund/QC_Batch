@@ -211,10 +211,10 @@ public static void LOC() throws InterruptedException
 	
 	Thread.sleep(5000);
 	
-	e5.sendKeys(minAmountDue);
+	e5.sendKeys(MinLOCamount);
 	e5.sendKeys(Keys.TAB);
 	Thread.sleep(4000);
-	test.log(LogStatus.PASS, "LOC amount enterd  as "+minAmountDue);
+	test.log(LogStatus.PASS, "LOC amount enterd  as "+MinLOCamount);
 		Thread.sleep(1000);
 		driver.findElement(By.name("advanceRequestBean.paymentCollateralType")).sendKeys(ESign_CollateralType);
 		test.log(LogStatus.PASS, "Collateral Type is enterted as "+ESign_CollateralType);
@@ -275,9 +275,9 @@ public static void LOC() throws InterruptedException
 
 		if (ESign_CollateralType.equals("ACH"))
 		{
-			driver.findElement(By.name("advanceRequestBean.disbAmtFirst")).sendKeys(minAmountDue);
+			driver.findElement(By.name("advanceRequestBean.disbAmtFirst")).sendKeys(MinLOCamount);
 			
-			test.log(LogStatus.PASS, "Disb amount enterd  as "+minAmountDue);
+			test.log(LogStatus.PASS, "Disb amount enterd  as "+MinLOCamount);
 			
 			driver.findElement(By.name("requestBean.password")).sendKeys(ESign_Password);
 			test.log(LogStatus.PASS, "ESign_Checks is selected as "+ESign_Password);
@@ -312,8 +312,8 @@ public static void LOC() throws InterruptedException
 			driver.findElement(By.xpath("//*[@id='errorMessage']/form[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[3]/td/table[1]/tbody/tr[17]/td[2]/div[1]/input[3]")).click();
 			test.log(LogStatus.PASS, "Clicked on add card button ");
 			Thread.sleep(30000);
-			driver.findElement(By.name("advanceRequestBean.disbAmtFirst")).sendKeys(minAmountDue);			
-			test.log(LogStatus.PASS, "Disb amount enterd  as "+minAmountDue);
+			driver.findElement(By.name("advanceRequestBean.disbAmtFirst")).sendKeys(MinLOCamount);			
+			test.log(LogStatus.PASS, "Disb amount enterd  as "+MinLOCamount);
 			driver.findElement(By.name("requestBean.password")).sendKeys(ESign_Password);
 			test.log(LogStatus.PASS, "ESign_Checks is selected as "+ESign_Password);
 			driver.findElement(By.name("finishadvance")).click();

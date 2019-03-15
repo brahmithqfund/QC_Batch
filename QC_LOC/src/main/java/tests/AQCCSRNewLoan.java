@@ -115,7 +115,7 @@ public class AQCCSRNewLoan extends QCStore{
 				SSN3 = SSN.substring(5,9);
 
 				
-				Thread.sleep(3000);
+				Thread.sleep(5000);
 				driver.switchTo().frame("topFrame");
 				driver.findElement(locator(Aprop.getProperty("transactions_tab"))).click();			
 				test.log(LogStatus.PASS, "Clicked on Loan Transactions");
@@ -135,7 +135,7 @@ public class AQCCSRNewLoan extends QCStore{
 				test.log(LogStatus.PASS, "SSN3 is entered: "+SSN3);
 				driver.findElement(locator(Aprop.getProperty("csr_new_loan_submit_button"))).click();
 				test.log(LogStatus.PASS, "Click on submit Button");		
-				
+				Thread.sleep(1000);
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");
 				driver.switchTo().frame("main");
