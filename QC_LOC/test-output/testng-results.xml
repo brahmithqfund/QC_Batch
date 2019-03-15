@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" ignored="83" total="84" passed="0">
   <reporter-output>
   </reporter-output>
@@ -108,6 +109,36 @@ at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=AReviseCredit_IncIncome status=FAILURE method=QCStore.AReviseCredit_IncIncome()[pri:498, instance:tests.QCStore@527740a2] output={null}]]]>
+=======
+<testng-results skipped="0" failed="0" ignored="113" total="114" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="121966" started-at="2019-03-14T09:11:04Z" finished-at="2019-03-14T09:13:06Z">
+    <groups>
+      <group name="EOD1">
+        <method signature="QCStore.LOC_ACHDeposit_EODs_Return_Txn()[pri:68, instance:tests.QCStore@527740a2]" name="LOC_ACHDeposit_EODs_Return_Txn" class="tests.QCStore"/>
+      </group> <!-- EOD1 -->
+    </groups>
+    <test name="Test" duration-ms="121966" started-at="2019-03-14T09:11:04Z" finished-at="2019-03-14T09:13:06Z">
+      <class name="tests.QCStore">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="117" started-at="2019-03-14T09:11:04Z" finished-at="2019-03-14T09:11:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-14T09:11:04Z" finished-at="2019-03-14T09:11:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="LOC_ACHDeposit_EODs_Return_Txn()[pri:68, instance:tests.QCStore@527740a2]" name="LOC_ACHDeposit_EODs_Return_Txn" duration-ms="116533" started-at="2019-03-14T09:11:09Z" finished-at="2019-03-14T09:13:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LOC_ACHDeposit_EODs_Return_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="295" started-at="2019-03-14T09:13:06Z" finished-at="2019-03-14T09:13:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LOC_ACHDeposit_EODs_Return_Txn status=SUCCESS method=QCStore.LOC_ACHDeposit_EODs_Return_Txn()[pri:68, instance:tests.QCStore@527740a2] output={null}]]]>
+>>>>>>> brahmith1.1
               </value>
             </param>
           </params>

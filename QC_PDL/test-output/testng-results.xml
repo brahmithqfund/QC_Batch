@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="76" total="77" passed="1">
   <reporter-output>
   </reporter-output>
@@ -27,6 +28,56 @@
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata status=SUCCESS method=QCStore.JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata()[pri:423, instance:tests.QCStore@527740a2] output={null}]]]>
+=======
+<testng-results skipped="0" failed="0" ignored="75" total="77" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="1698033" started-at="2019-03-13T08:54:18Z" finished-at="2019-03-13T09:22:36Z">
+    <groups>
+      <group name="Rebate">
+        <method signature="QCStore.QC_Refinance_StepDownURP_Txn()[pri:201, instance:tests.QCStore@527740a2]" name="QC_Refinance_StepDownURP_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_Refinance_StepDownVoidURP_Txn()[pri:202, instance:tests.QCStore@527740a2]" name="QC_Refinance_StepDownVoidURP_Txn" class="tests.QCStore"/>
+      </group> <!-- Rebate -->
+    </groups>
+    <test name="Test" duration-ms="1698033" started-at="2019-03-13T08:54:18Z" finished-at="2019-03-13T09:22:36Z">
+      <class name="tests.QCStore">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="109" started-at="2019-03-13T08:54:18Z" finished-at="2019-03-13T08:54:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-13T08:54:18Z" finished-at="2019-03-13T08:54:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_Refinance_StepDownURP_Txn()[pri:201, instance:tests.QCStore@527740a2]" name="QC_Refinance_StepDownURP_Txn" duration-ms="763132" started-at="2019-03-13T08:54:23Z" finished-at="2019-03-13T09:07:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_Refinance_StepDownURP_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="209" started-at="2019-03-13T09:07:07Z" finished-at="2019-03-13T09:07:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_Refinance_StepDownURP_Txn status=SUCCESS method=QCStore.QC_Refinance_StepDownURP_Txn()[pri:201, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-13T09:07:07Z" finished-at="2019-03-13T09:07:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_Refinance_StepDownVoidURP_Txn()[pri:202, instance:tests.QCStore@527740a2]" name="QC_Refinance_StepDownVoidURP_Txn" duration-ms="924440" started-at="2019-03-13T09:07:12Z" finished-at="2019-03-13T09:22:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_Refinance_StepDownVoidURP_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="124" started-at="2019-03-13T09:22:36Z" finished-at="2019-03-13T09:22:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_Refinance_StepDownVoidURP_Txn status=SUCCESS method=QCStore.QC_Refinance_StepDownVoidURP_Txn()[pri:202, instance:tests.QCStore@527740a2] output={null}]]]>
+>>>>>>> brahmith1.1
               </value>
             </param>
           </params>

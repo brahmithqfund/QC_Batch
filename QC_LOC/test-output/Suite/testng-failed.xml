@@ -4,15 +4,25 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
+<<<<<<< HEAD
         <include name="NonEOD1"/>
+=======
+        <include name="EOD1"/>
+>>>>>>> brahmith1.1
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
+<<<<<<< HEAD
           <include name="AReviseCredit_IncIncome"/>
           <include name="getResult"/>
           <include name="setup"/>
+=======
+          <include name="getResult"/>
+          <include name="setup"/>
+          <include name="LOC_ACHDeposit_EODs_Return_Txn"/>
+>>>>>>> brahmith1.1
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->

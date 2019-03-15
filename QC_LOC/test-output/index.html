@@ -24,7 +24,11 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
+<<<<<<< HEAD
       <span class="top-banner-font-1">1 suite, 1 failed test</span>
+=======
+      <span class="top-banner-font-1">1 suite</span>
+>>>>>>> brahmith1.1
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +42,11 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
+<<<<<<< HEAD
               <span class="suite-name border-failed">Suite</span>
+=======
+              <span class="suite-name border-passed">Suite</span>
+>>>>>>> brahmith1.1
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,6 +99,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
+<<<<<<< HEAD
                     <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
@@ -106,6 +115,23 @@
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
+=======
+                    <span class="method-stats">1 method,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="LOC_ACHDeposit_EODs_Return_Txn">LOC_ACHDeposit_EODs_Return_Txn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+>>>>>>> brahmith1.1
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,14 +143,21 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+<<<<<<< HEAD
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
+=======
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+>>>>>>> brahmith1.1
               <span class="class-name">tests.QCStore</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+<<<<<<< HEAD
                   <a name="AReviseCredit_IncIncome">
                   </a> <!-- AReviseCredit_IncIncome -->
                   <span class="method-name">AReviseCredit_IncIncome</span>
@@ -175,6 +208,11 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	... 50 more
 ... Removed 25 stack frames
 </div> <!-- stack-trace -->
+=======
+                  <a name="LOC_ACHDeposit_EODs_Return_Txn">
+                  </a> <!-- LOC_ACHDeposit_EODs_Return_Txn -->
+                  <span class="method-name">LOC_ACHDeposit_EODs_Return_Txn</span>
+>>>>>>> brahmith1.1
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -192,7 +230,11 @@ Caused by: java.net.ConnectException: Connection refused: connect
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;groups&gt;
       &lt;run&gt;
+<<<<<<< HEAD
         &lt;include name=&quot;NonEOD1&quot;/&gt;
+=======
+        &lt;include name=&quot;EOD1&quot;/&gt;
+>>>>>>> brahmith1.1
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
@@ -221,10 +263,17 @@ Caused by: java.net.ConnectException: Connection refused: connect
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
+<<<<<<< HEAD
               <span class="test-group-name">NonEOD1</span>
               <br/>
               <div class="method-in-group">
                 <span class="method-in-group-name">AReviseCredit_IncIncome</span>
+=======
+              <span class="test-group-name">EOD1</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">LOC_ACHDeposit_EODs_Return_Txn</span>
+>>>>>>> brahmith1.1
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -246,14 +295,24 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
+<<<<<<< HEAD
 data.setCell(0, 1, 'AReviseCredit_IncIncome')
 data.setCell(0, 2, 'tests.QCStore')
 data.setCell(0, 3, 262876);
+=======
+data.setCell(0, 1, 'LOC_ACHDeposit_EODs_Return_Txn')
+data.setCell(0, 2, 'tests.QCStore')
+data.setCell(0, 3, 116533);
+>>>>>>> brahmith1.1
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
+<<<<<<< HEAD
               <span class="suite-total-time">Total running time: 4 minutes</span>
+=======
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+>>>>>>> brahmith1.1
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -268,13 +327,101 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
+<<<<<<< HEAD
             <span class="header-content">83 ignored methods</span>
+=======
+            <span class="header-content">113 ignored methods</span>
+>>>>>>> brahmith1.1
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">tests.QCStore</span>
               <div class="ignored-methods-div">
+<<<<<<< HEAD
                 <span class="ignored-method-name">LOC_Draw_Void_Txn</span>
+=======
+                <span class="ignored-method-name">JQC_LOC_Refinance_StepSame_Txn</span>
+                <br/>
+                <span class="ignored-method-name">LOC_PayOff_after_RescindPeriod_Txn</span>
+                <br/>
+                <span class="ignored-method-name">SignatureNewLoan_EODTwice</span>
+                <br/>
+                <span class="ignored-method-name">JQC_LOC_Refinance_StepUp_Txn</span>
+                <br/>
+                <span class="ignored-method-name">LOC_PayOff_Draw_Void_Txn</span>
+                <br/>
+                <span class="ignored-method-name">SQC_LOC_Deposit_Bulk_Void</span>
+                <br/>
+                <span class="ignored-method-name">DepositEODReDeposit</span>
+                <br/>
+                <span class="ignored-method-name">RQC_LOC_ManualDefault_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">LOC_Payment_Return_PayOff_Txn</span>
+                <br/>
+                <span class="ignored-method-name">RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">RQC_LOC_PayOff_Agestore180days_AutoClosure_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">JQC_LOC_Payment_void_NextBusinessDay_Txn</span>
+                <br/>
+                <span class="ignored-method-name">JQC_LOC_Refinance_EOD_Payment_Txn</span>
+                <br/>
+                <span class="ignored-method-name">JQC_LOC_Payment_After_Rescind_Txn</span>
+                <br/>
+                <span class="ignored-method-name">DrawAndEOD</span>
+                <br/>
+                <span class="ignored-method-name">MaxLocAmounts</span>
+                <br/>
+                <span class="ignored-method-name">JQC_LOC_GreaterThan_MinPayment_Void_Txn</span>
+                <br/>
+                <span class="ignored-method-name">JQC_LOC_Refinance_Stepdown_Txn</span>
+                <br/>
+                <span class="ignored-method-name">PayOFFandEod</span>
+                <br/>
+                <span class="ignored-method-name">LOC_weekly_NextPay_NotOn_End_Txn</span>
+                <br/>
+                <span class="ignored-method-name">JQC_LOC_New_Loan_GraceDay_Rescind_Txn</span>
+                <br/>
+                <span class="ignored-method-name">MinLocAmounts</span>
+                <br/>
+                <span class="ignored-method-name">EODOnDueDate</span>
+                <br/>
+                <span class="ignored-method-name">LOC_NewLoan_MaxLOC_Txn</span>
+                <br/>
+                <span class="ignored-method-name">RQC_LOC_Default_DefaultPayment_Return_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">LOC_Bankrupt_Writeoff</span>
+                <br/>
+                <span class="ignored-method-name">RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Void_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">RQC_LOC_Default_PartialDefaultPayment_Void_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">LOC_Payment_Void_PayOff_Void_Txn</span>
+                <br/>
+                <span class="ignored-method-name">NewLoanWeekly</span>
+                <br/>
+                <span class="ignored-method-name">JQC_LOC_New_Loan_Void_Txn</span>
+                <br/>
+                <span class="ignored-method-name">LOC_Payment_PayOff_Void_Txn</span>
+                <br/>
+                <span class="ignored-method-name">LOC_Payment_Gracedays_PayOff_Void_Txn</span>
+                <br/>
+                <span class="ignored-method-name">HigherPaymentAndEod</span>
+                <br/>
+                <span class="ignored-method-name">LOC_monthly_NextPay_NotOn_End_Txn</span>
+                <br/>
+                <span class="ignored-method-name">LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn</span>
+                <br/>
+                <span class="ignored-method-name">JQC_LOC_DueDate_LessThan_MinPayment_Txn</span>
+                <br/>
+                <span class="ignored-method-name">NewLoanSemiMonthly</span>
+                <br/>
+                <span class="ignored-method-name">JQC_LOC_LessThan_MinPayment_Viod_Txn</span>
+                <br/>
+                <span class="ignored-method-name">JQC_LOC_GreaterThan_MinPayment_Return_Txn</span>
+                <br/>
+                <span class="ignored-method-name">DepositAndEOD</span>
+>>>>>>> brahmith1.1
                 <br/>
                 <span class="ignored-method-name">JQC_LOC_Refinance_StepSame_Txn</span>
                 <br/>
@@ -290,11 +437,21 @@ return data;
                 <br/>
                 <span class="ignored-method-name">LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn</span>
                 <br/>
+<<<<<<< HEAD
                 <span class="ignored-method-name">LOC_PayOff_Draw_Void_Txn</span>
+=======
+                <span class="ignored-method-name">RQC_LOC_Default_DefaultPayment_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">LOC_Payment_Draw_Txn</span>
+>>>>>>> brahmith1.1
                 <br/>
                 <span class="ignored-method-name">LOC_Payment_Draw_Void_Txn</span>
                 <br/>
+<<<<<<< HEAD
                 <span class="ignored-method-name">SQC_LOC_Deposit_Bulk_Void</span>
+=======
+                <span class="ignored-method-name">RQC_LOC_PayOff_Closure_PayoffReturn_Txn_Testdata</span>
+>>>>>>> brahmith1.1
                 <br/>
                 <span class="ignored-method-name">JQC_LOC_LessThan_MinPayment_Txn</span>
                 <br/>
@@ -308,6 +465,7 @@ return data;
                 <br/>
                 <span class="ignored-method-name">LOC_Payment_Return_PayOff_Txn</span>
                 <br/>
+<<<<<<< HEAD
                 <span class="ignored-method-name">RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Txn_Testdata</span>
                 <br/>
                 <span class="ignored-method-name">Deposit_Dropdown_Void</span>
@@ -315,6 +473,15 @@ return data;
                 <span class="ignored-method-name">RQC_LOC_PayOff_Agestore180days_AutoClosure_Txn_Testdata</span>
                 <br/>
                 <span class="ignored-method-name">JQC_LOC_Payment_void_NextBusinessDay_Txn</span>
+=======
+                <span class="ignored-method-name">RQC_LOC_Deposit_Return_ManualDefault_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">JQC_LOC_New_Loan_Rescind_Txn</span>
+                <br/>
+                <span class="ignored-method-name">PaymentdrawVoidEOD</span>
+                <br/>
+                <span class="ignored-method-name">LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn</span>
+>>>>>>> brahmith1.1
                 <br/>
                 <span class="ignored-method-name">Deposit_Dropdown</span>
                 <br/>
@@ -329,6 +496,8 @@ return data;
                 <span class="ignored-method-name">JQC_LOC_GreaterThan_MinPayment_Void_Txn</span>
                 <br/>
                 <span class="ignored-method-name">JQC_LOC_Refinance_Stepdown_Txn</span>
+                <br/>
+                <span class="ignored-method-name">RQC_LOC_Deposit_Return_2ndDeposit_Clear_3rdDeposit_Return_Default_Txn_Testdata</span>
                 <br/>
                 <span class="ignored-method-name">JQC_LOC_Refinance_Latefee_Payment_Txn</span>
                 <br/>
@@ -346,8 +515,11 @@ return data;
                 <br/>
                 <span class="ignored-method-name">LOC_PayOff_RescindPeriod_void_Txn</span>
                 <br/>
+<<<<<<< HEAD
                 <span class="ignored-method-name">JQC_LOC_New_Loan_GraceDay_Rescind_Txn</span>
                 <br/>
+=======
+>>>>>>> brahmith1.1
                 <span class="ignored-method-name">RQC_LOC_2missedPayment_Default_EOD_Txn_Testdata</span>
                 <br/>
                 <span class="ignored-method-name">DepositEODTwice</span>
@@ -380,8 +552,11 @@ return data;
                 <br/>
                 <span class="ignored-method-name">LOC_Payment_Gracedays_PayOff_Void_Txn</span>
                 <br/>
+<<<<<<< HEAD
                 <span class="ignored-method-name">LOC_ACHDeposit_EODs_Return_Txn</span>
                 <br/>
+=======
+>>>>>>> brahmith1.1
                 <span class="ignored-method-name">JQC_LOC_GreaterThan_MinPayment_Txn</span>
                 <br/>
                 <span class="ignored-method-name">LOC_PayOff_Return_Txn</span>
@@ -397,6 +572,8 @@ return data;
                 <span class="ignored-method-name">JQC_LOC_LessThan_MinPayment_Viod_Txn</span>
                 <br/>
                 <span class="ignored-method-name">JQC_LOC_GreaterThan_MinPayment_Return_Txn</span>
+                <br/>
+                <span class="ignored-method-name">RQC_LOC_PayOff_Closure_Txn_Testdata</span>
                 <br/>
                 <span class="ignored-method-name">RQC_LOC_PayOff_Closure_Txn_Testdata</span>
                 <br/>
@@ -416,7 +593,11 @@ return data;
                 <br/>
                 <span class="ignored-method-name">RQC_LOC_Payment_PayOff_Closure_Void_Txn_Testdata</span>
                 <br/>
+<<<<<<< HEAD
                 <span class="ignored-method-name">RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata</span>
+=======
+                <span class="ignored-method-name">LOC_PartialWriteoffRecovery</span>
+>>>>>>> brahmith1.1
                 <br/>
                 <span class="ignored-method-name">LOC_Draw_Txn</span>
                 <br/>
@@ -433,6 +614,8 @@ return data;
                 <span class="ignored-method-name">JQC_LOC_Payment_OnDueDate_Txn</span>
                 <br/>
                 <span class="ignored-method-name">JQC_LOC_New_Loan_After_RescindDays_Txn</span>
+                <br/>
+                <span class="ignored-method-name">VoidandEod</span>
                 <br/>
                 <span class="ignored-method-name">Clear_Return_EODTwice</span>
                 <br/>
@@ -457,6 +640,7 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">killProcess</span>
+<<<<<<< HEAD
                 <span class="method-start">100 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
@@ -470,6 +654,17 @@ return data;
                 </img>
                 <span class="method-name">getResult([TestResult name=AReviseCredit_IncIncome status=FAILURE method=QCStore.AReviseCredit_IncIncome()[pri...)</span>
                 <span class="method-start">267997 ms</span>
+=======
+                <span class="method-start">125 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LOC_ACHDeposit_EODs_Return_Txn</span>
+                <span class="method-start">5125 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=LOC_ACHDeposit_EODs_Return_Txn status=SUCCESS method=QCStore.LOC_ACHDeposit_EODs_Re...)</span>
+                <span class="method-start">121660 ms</span>
+>>>>>>> brahmith1.1
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

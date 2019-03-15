@@ -6,8 +6,9 @@
   <run>
 
   <!--  Brahmith scenarios   -->  
- <!--    <include name="EOD"/>   -->
-   <!-- <include name="EOD2"/>-->
+      <include name="EOD"/>   
+  <!-- <include name="EOD2"/>-->
+
  
   <!--  Janaki scenarios  --> 
     <!-- <include name="Janaki_NEOD"/> --> 

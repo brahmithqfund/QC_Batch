@@ -4,14 +4,22 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
+<<<<<<< HEAD
         <include name="Anoop_StdownVoid"/>
+=======
+        <include name="Brahmith1"/>
+>>>>>>> brahmith1.1
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
           <include name="getResult"/>
+<<<<<<< HEAD
           <include name="ILP_RefinanceStepDown_void"/>
+=======
+          <include name="QC_InstallPayment_Ref_Rescind_Txn"/>
+>>>>>>> brahmith1.1
           <include name="setup"/>
           <include name="endReport"/>
           <include name="killProcess"/>

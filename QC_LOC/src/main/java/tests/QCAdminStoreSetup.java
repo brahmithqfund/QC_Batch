@@ -47,7 +47,8 @@ public class QCAdminStoreSetup extends QCStore
 					//String AdminURL = TestData.getCellData(sheetName,"AdminURL",row);
 					String PIN = TestData.getCellData(sheetName,"PIN",row);
 					String Tran_cd = TestData.getCellData(sheetName,"Tran_cd",row);
-					String StoreID = TestData.getCellData(sheetName,"StoreID",row);
+					String StoreID = bstoreid;
+							//TestData.getCellData(sheetName,"StoreID",row);
 
 
 					//test.log(LogStatus.INFO, MarkupHelper.createLabel("Admin Application is launched", ExtentColor.BLUE));
