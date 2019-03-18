@@ -287,7 +287,7 @@ public class AQCEODDeposit extends QCStore{
 						//System.out.println("before CSR"+ mainwindow);
 
 						//driver1 = new InternetExplorerDriver();	
-						QCAdminEncryption.getEncryption(driver,SSN, AppURL); 
+						AQCAdminEncryption.getEncryption(driver,SSN, AppURL); 
 						//AdminLoginForEncryption.getEncryption(driver,SSN, AppURL);
 						//method for getting encryption from Admin
 						//QCCSRLoginLogout.adminLogout(driver1,SSN, AppURL);				
@@ -335,9 +335,10 @@ public class AQCEODDeposit extends QCStore{
 
 						}
 
-						Thread.sleep(500);
+						Thread.sleep(1500);
 						driver.findElement(locator(Aprop.getProperty("deposit_next_btn"))).click();
 						//driver.findElement(By.xpath("/html/body/form/table/tbody/tr[1]/td/table/tbody/tr/td/table/tbody/tr[2]/td[2]/table/tbody/tr[3]/td[2]/input[3]")).click();
+						Thread.sleep(2500);
 
 						test.log(LogStatus.PASS, "Clicked next under Deposit section ");
 						try{

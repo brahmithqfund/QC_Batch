@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 #Mon Mar 18 10:40:44 IST 2019
 vl=How many times the 'Finish' button pressed during the day
 l=Wizard class name
 ct=jbt
 d=1552885844214
+=======
+#Mon Mar 18 10:45:10 IST 2019
+vl=How many times the 'Finish' button pressed during the day
+l=Wizard class name
+ct=jbt
+d=1552886110897
+>>>>>>> master
 c=0
 cmp=usage
 a=finishWizard

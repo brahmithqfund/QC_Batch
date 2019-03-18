@@ -4,15 +4,35 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
+<<<<<<< HEAD
+        <include name="NonEOD1"/>
+=======
+<<<<<<< HEAD
         <include name="EOD1"/>
+>>>>>>> brahmith1.1
+=======
+        <include name="Anoop_EOD2"/>
+>>>>>>> anoop1.1
+>>>>>>> f96b7d09c18261a556e71ad66742e2079a8ac046
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
+<<<<<<< HEAD
+          <include name="AReviseCredit_IncIncome"/>
           <include name="getResult"/>
           <include name="setup"/>
+=======
+          <include name="getResult"/>
+          <include name="setup"/>
+<<<<<<< HEAD
           <include name="LOC_ACHDeposit_EODs_Return_Txn"/>
+>>>>>>> brahmith1.1
+=======
+          <include name="Deposit_DrawEODTwice"/>
+>>>>>>> anoop1.1
+>>>>>>> f96b7d09c18261a556e71ad66742e2079a8ac046
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->

@@ -33,7 +33,7 @@ public class AQCAdminLoginLogout extends QCStore {
 					
 					test.log(LogStatus.INFO, "Opened the CSR URL ");
 					test.log(LogStatus.INFO, "admin Application is launched " );
-					if(prop.getProperty("login_method").equalsIgnoreCase("local"))
+					if(Aprop.getProperty("login_method").equalsIgnoreCase("local"))
 					{
 						driver = new InternetExplorerDriver();
 					}
@@ -57,7 +57,7 @@ public class AQCAdminLoginLogout extends QCStore {
 
 					driver.findElement(By.name("login")).click();
 					test.log(LogStatus.PASS, "Clicked on login button");  
-					Thread.sleep(3000);
+					Thread.sleep(5000);
 					
 					break;
 				}

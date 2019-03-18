@@ -1,5 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="50" total="51" passed="1">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<testng-results skipped="0" failed="0" ignored="49" total="50" passed="1">
+=======
+<testng-results skipped="0" failed="0" ignored="50" total="51" passed="1">
+>>>>>>> f96b7d09c18261a556e71ad66742e2079a8ac046
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="63657" started-at="2019-03-14T13:11:43Z" finished-at="2019-03-14T13:12:47Z">
+    <groups>
+      <group name="janaki_Refinance_StUp">
+        <method signature="QCStore.JQC_ILP_Payment_Refinance_StepUp_Txn()[pri:12, instance:tests.QCStore@527740a2]" name="JQC_ILP_Payment_Refinance_StepUp_Txn" class="tests.QCStore"/>
+      </group> <!-- janaki_Refinance_StUp -->
+    </groups>
+    <test name="Test" duration-ms="63657" started-at="2019-03-14T13:11:43Z" finished-at="2019-03-14T13:12:47Z">
+      <class name="tests.QCStore">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="82" started-at="2019-03-14T13:11:43Z" finished-at="2019-03-14T13:11:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5009" started-at="2019-03-14T13:11:43Z" finished-at="2019-03-14T13:11:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="JQC_ILP_Payment_Refinance_StepUp_Txn()[pri:12, instance:tests.QCStore@527740a2]" name="JQC_ILP_Payment_Refinance_StepUp_Txn" duration-ms="57792" started-at="2019-03-14T13:11:48Z" finished-at="2019-03-14T13:12:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JQC_ILP_Payment_Refinance_StepUp_Txn -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-14T13:12:46Z" finished-at="2019-03-14T13:12:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="760" started-at="2019-03-14T13:12:46Z" finished-at="2019-03-14T13:12:47Z">
+          <params>
+            <param index="0">
+              <value>
+<<<<<<< HEAD
+                <![CDATA[[TestResult name=ILP_RefinanceStepDown_void status=SUCCESS method=QCStore.ILP_RefinanceStepDown_void()[pri:0, instance:tests.QCStore@527740a2] output={null}]]]>
+=======
+<testng-results skipped="0" failed="0" ignored="49" total="51" passed="2">
+>>>>>>> master
   <reporter-output>
   </reporter-output>
   <suite name="Suite" duration-ms="107471" started-at="2019-03-15T12:47:40Z" finished-at="2019-03-15T12:49:27Z">
@@ -37,6 +80,36 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
+=======
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-14T10:43:08Z" finished-at="2019-03-14T10:43:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_InstallPayment_Ref_Rescind_Txn()[pri:47, instance:tests.QCStore@5f9d02cb]" name="QC_InstallPayment_Ref_Rescind_Txn" duration-ms="46495" started-at="2019-03-14T10:43:13Z" finished-at="2019-03-14T10:43:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_InstallPayment_Ref_Rescind_Txn -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-14T10:43:59Z" finished-at="2019-03-14T10:43:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="603" started-at="2019-03-14T10:43:59Z" finished-at="2019-03-14T10:44:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_InstallPayment_Ref_Rescind_Txn status=SUCCESS method=QCStore.QC_InstallPayment_Ref_Rescind_Txn()[pri:47, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+>>>>>>> brahmith1.1
+=======
+                <![CDATA[[TestResult name=JQC_ILP_Payment_Refinance_StepUp_Txn status=SUCCESS method=QCStore.JQC_ILP_Payment_Refinance_StepUp_Txn()[pri:12, instance:tests.QCStore@527740a2] output={null}]]]>
+>>>>>>> f96b7d09c18261a556e71ad66742e2079a8ac046
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+>>>>>>> master
       </class> <!-- tests.QCStore -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

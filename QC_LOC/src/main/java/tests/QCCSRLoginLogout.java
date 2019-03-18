@@ -175,7 +175,7 @@ public static void logout(String SSN,String AppURL){
 				{
 				String UserName = TestData.getCellData(sheetName,"AdminUserName",row);
 				String Password = TestData.getCellData(sheetName,"AdminPassword",row);
-				//String AdminURL = TestData.getCellData(sheetName,"AdminURL",row);
+				String AdminURL = TestData.getCellData(sheetName,"AdminURL",row);
 				
 
 				//test.log(LogStatus.INFO, MarkupHelper.createLabel("Admin Application is launched", ExtentColor.BLUE));

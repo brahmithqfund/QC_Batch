@@ -35,17 +35,19 @@ public class ACSRRescindLoan extends QCStore{
 				String SSN2 = SSN.substring(3,5);
 				String SSN3 = SSN.substring(5,9);
 				driver.switchTo().defaultContent();		
-			
+				Thread.sleep(3000);
 				driver.switchTo().frame("topFrame");
-				driver.findElement(By.xpath("//*[contains(text(),'Loan Transactions')]")).click();			
+				driver.findElement(locator(Aprop.getProperty("transactions_tab"))).click();			
 				test.log(LogStatus.PASS, "Clicked on Loan Transactions");
-				driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
+				//driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
+				Thread.sleep(500);
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");
-				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+				//driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+				Thread.sleep(500);
 				driver.findElement(By.cssSelector("li[id='911101']")).click();			
 				test.log(LogStatus.PASS, "Clicked on Transactions");		
-				driver.switchTo().frame("main");		
+				driver.switchTo().frame("main");
 				driver.findElement(By.name("ssn1")).sendKeys(SSN1);
 				test.log(LogStatus.PASS, "SSN1 is entered: "+SSN1);
 				driver.findElement(By.name("ssn2")).sendKeys(SSN2);
@@ -218,10 +220,13 @@ public class ACSRRescindLoan extends QCStore{
 				String age_Date3 = age_Date[2];
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("topFrame");
+				Thread.sleep(1000);
 				driver.findElement(By.xpath("//*[@id='930000']/a")).click();			
 				test.log(LogStatus.PASS, "Clicked on Cash Management");
+				Thread.sleep(1000);
 				driver.switchTo().defaultContent();
-				driver.switchTo().frame("mainFrame");							
+				driver.switchTo().frame("mainFrame");
+				Thread.sleep(1000);
 				driver.findElement(By.xpath("//*[@id='988190657']/a")).click();		
 				test.log(LogStatus.PASS, "Clicked on Start Scheduler");
 				Thread.sleep(2000);
@@ -229,7 +234,7 @@ public class ACSRRescindLoan extends QCStore{
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");
 				driver.switchTo().frame("main");
-
+				Thread.sleep(1000);	
 				test.log(LogStatus.INFO, "******Entering date Into the feilds ******");
 				driver.findElement(By.name("endMonth")).sendKeys(age_Date1);
 				test.log(LogStatus.PASS, "Month is entered: "+age_Date1);

@@ -64,10 +64,10 @@ public class AQCAgeStoreDueDate extends QCStore{
 							{
 								driver.get("http://192.168.2.203/cc/login/index.jsp");
 								driver.switchTo().defaultContent();	
-								
-						        wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("topFrame")));
+								Thread.sleep(1000);	
+						        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("topFrame")));
 								driver.switchTo().frame("topFrame");
-								wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("li[id='910000']")));
+								//wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("li[id='910000']")));
 						        driver.findElement(By.cssSelector("li[id='910000']")).click();	
 									
 								Thread.sleep(1000);	
@@ -77,6 +77,7 @@ public class AQCAgeStoreDueDate extends QCStore{
 								driver.findElement(By.cssSelector("li[id='911101']")).click();	
 								test.log(LogStatus.PASS, "Clicked on Transactions");
 							}
+							Thread.sleep(1000);	
 							driver.switchTo().frame("main");		
 							driver.findElement(By.name("ssn1")).sendKeys(SSN1);
 							test.log(LogStatus.PASS, "SSN1 is entered: "+SSN1);
@@ -197,7 +198,7 @@ public class AQCAgeStoreDueDate extends QCStore{
 											 test.log(LogStatus.PASS,"************************************************");
 											}*/
 											 
-											 //driver.close();
+											 driver.close();
 						break;
 						
 					 

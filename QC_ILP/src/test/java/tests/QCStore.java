@@ -217,7 +217,7 @@ public class QCStore {
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 
 					System.out.println(AppURL);
-					BProc3.proc();
+					//BProc3.proc();
 
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
@@ -1556,6 +1556,50 @@ public class QCStore {
 
 		}
 	}
+	@Test(priority = 12, enabled = true, groups = "janaki_Refinance_StUp")
+
+	public static void JQC_ILP_Payment_Refinance_StepUp_Txn() throws Exception {
+		try {
+			test = reports.startTest(Jprop.getProperty("QC_ILP_Payment_Refinance_StepUp_Txn"),
+					"Login->Borrower Registratino->New Loan with Promotion->Age Store->Deposit Dropdown");
+
+			FileName = Jprop.getProperty("QC_ILP_Payment_Refinance_StepUp_Txn_file_name") + ".xls";
+
+			TestData = new ExcelNew(System.getProperty("user.dir")
+					+ Jprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
+
+			int lastrow = TestData.getLastRow("Start");
+			String sheetName = "Start";
+			System.out.println(lastrow);
+			for (int row = 2; row <= lastrow; row++) {
+
+				String RunFlag = TestData.getCellData(sheetName, "Run", row);
+				if (RunFlag.equals("Y")) {
+					String AppURL = TestData.getCellData(sheetName, "AppURL", row);
+					String SSN = TestData.getCellData(sheetName, "SSN", row);
+					System.out.println(AppURL);
+
+					JQCCSRLoginLogout.login(SSN, AppURL);
+					JQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+					JQCCSRLoginLogout.logout(SSN, AppURL);
+					JQCCSRLoginLogout.login(SSN, AppURL);
+					JQCCSRNewLoan.newLoan(SSN, AppURL);
+					JQCCSRLoginLogout.logout(SSN, AppURL);
+					JQCCSRLoginLogout.login(SSN, AppURL);
+					JQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
+
+				}
+			}
+		}
+
+		catch (Exception e) {
+			System.out.println("under catch of Test" + e);
+			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
+			// start scenario 1 " , ExtentColor.RED));
+			test.log(LogStatus.ERROR, "Unable to start scenario 11 JQC_ILP_Deposit_dropdown_Txn ");
+
+		}
+	}
 
 	// Date:07/06/2018
 
@@ -2585,13 +2629,10 @@ public class QCStore {
 	@Test(priority = 0, enabled = true, groups = "Anoop_StdownVoid")
 	// This is date dependency make it 03/12/2018
 	public void ILP_RefinanceStepDown_void() throws Exception {
+		FileName = "QC_ILP_StepDown_Void.xls";
+		test = reports.startTest("QC_ILP_StepDown_Void","Login-->Age the Store_payment_Age store to Duedate_Refinance Step Down Void");
 
-		FileName = "QC_StepDown_Void.xls";
-		test = reports.startTest("QC_ILP_StepDown_Void",
-				"Login-->Age the Store_payment_Age store to Duedate_Refinance Step Down Void");
-
-		TestData = new ExcelNew(
-				System.getProperty("user.dir") + Aprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
+		TestData = new ExcelNew(System.getProperty("user.dir") + Aprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 		String sheetName = "Start";
 		int lastrow = TestData.getLastRow("Start");
 
