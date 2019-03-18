@@ -91,7 +91,7 @@ public class QCStore {
 
 	public static String customer_number;
 
-	public static String Drawer_OverShort_Amount;
+	public static String Drawer_OverShort_Amount; 
 
 	public static String Date1;
 
@@ -116,10 +116,13 @@ public class QCStore {
 	public static String logout;
 
 	private static Object rescind;
+	public static String vstoreid="1706";
+	public static String vusername="csr1706";
+	
 
 	// Brahmith scenarios
 
-	//@Test(priority = 113, groups = { "1st Batch" })
+	@Test(priority = 113, groups = { "1st Batch" })
 	public static void LOC_Biweekly_Nextpay_Txn() throws Exception {
 		try {
 
@@ -140,12 +143,12 @@ public class QCStore {
 				// System.out.println(RunFlag);
 				if (RunFlag.equals("Y")) {
 
-					// AppURL = TestData.getCellData(sheetName, "AppURL", row);
+					 //AppURL = TestData.getCellData(sheetName, "AppURL", row);
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
@@ -169,7 +172,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 114, groups = { "1st Batch" })
+	@Test(priority = 114, groups = { "1st Batch" })
 	public static void LOC_NewLoan_MaxLOC_Txn() throws Exception {
 		try {
 
@@ -195,7 +198,7 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
@@ -217,7 +220,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 105, groups = { "1st Batch" })
+	@Test(priority = 105, groups = { "1st Batch" })
 	public static void LOC_Biweekly_NextPay_NotOn_End_Txn() throws Exception {
 		try {
 
@@ -243,7 +246,7 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
@@ -266,7 +269,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 16, groups = { "1st Batch" })
+	@Test(priority = 106, groups = { "1st Batch" })
 	public static void LOC_monthly_NextPay_NotOn_End_Txn() throws Exception {
 		try {
 
@@ -292,7 +295,7 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
@@ -314,7 +317,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 107, groups = { "1st Batch" })
+	@Test(priority = 107, groups = { "1st Batch" })
 	public static void LOC_semimonthly_NextPay_NotOn_End_Txn() throws Exception {
 		try {
 
@@ -340,7 +343,7 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
@@ -362,7 +365,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 108, groups = { "1st Batch" })
+	@Test(priority = 108, groups = { "1st Batch" })
 	public static void LOC_weekly_NextPay_NotOn_End_Txn() throws Exception {
 		try {
 
@@ -410,7 +413,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 134, groups = { "1st Batch" })
+	@Test(priority = 134, groups = { "1st Batch" })
 	public static void LOC_PayOff_after_RescindPeriod_Txn() throws Exception {
 		try {
 
@@ -465,7 +468,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 135, groups = { "1st Batch" })
+	@Test(priority = 135, groups = { "1st Batch" })
 	public static void LOC_PayOff_On_DueDate_Txn() throws Exception {
 		try {
 
@@ -521,7 +524,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 136, groups = { "1st Batch" })
+	@Test(priority = 136, groups = { "1st Batch" })
 	public static void LOC_Payment_PayOff_Txn() throws Exception {
 		try {
 
@@ -581,7 +584,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 137, groups = { "1st Batch" })
+	@Test(priority = 137, groups = { "1st Batch" })
 	public static void LOC_Payment_GraceDays_PayOff_Txn() throws Exception {
 		try {
 
@@ -642,7 +645,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 138, groups = { "1st Batch" })
+	@Test(priority = 138, groups = { "1st Batch" })
 	public static void LOC_Payment_Void_PayOff_Txn() throws Exception {
 		try {
 
@@ -728,7 +731,7 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
@@ -748,7 +751,7 @@ public class QCStore {
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
 					QCCSRLoginLogout.adminLogin(SSN, AppURL);
-					QCAdminCCKReturn.cckreturn(SSN, AppURL);
+					VQCAdminCCKReturn.cckreturn(SSN, AppURL);
 
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCPayOff.payoff(SSN, AppURL);
@@ -956,7 +959,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 143, groups = { "1st Batch" })
+	//@Test(priority = 143, groups = { "1st Batch" })
 	public static void LOC_Payment_Void_PayOff_Void_Txn() throws Exception {
 		try {
 
@@ -1020,7 +1023,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 144, groups = { "1st Batch" })
+	//@Test(priority = 144, groups = { "1st Batch" })
 	public static void LOC_PayOff_Return_Txn() throws Exception {
 		try {
 
@@ -1067,7 +1070,7 @@ public class QCStore {
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
 					QCCSRLoginLogout.adminLogin(SSN, SSN);
-					QCAdminCCKReturn.cckreturn(SSN, AppURL);
+					VQCAdminCCKReturn.cckreturn(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
@@ -1084,7 +1087,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 145, groups = { "1st Batch" })
+	//@Test(priority = 145, groups = { "1st Batch" })
 	public static void LOC_Payment_PayOff_Return_Txn() throws Exception {
 		try {
 
@@ -1134,7 +1137,7 @@ public class QCStore {
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
 					QCCSRLoginLogout.adminLogin(SSN, SSN);
-					QCAdminCCKReturn.cckreturn(SSN, AppURL);
+					VQCAdminCCKReturn.cckreturn(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
@@ -1151,7 +1154,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 155, groups = { "1st Batch" })
+	//@Test(priority = 155, groups = { "1st Batch" })
 	public static void LOC_Draw_Txn() throws Exception {
 		try {
 
@@ -1206,7 +1209,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 156, groups = { "1st Batch" })
+	//@Test(priority = 156, groups = { "1st Batch" })
 	public static void LOC_Payment_Draw_Txn() throws Exception {
 		try {
 
@@ -1265,7 +1268,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 157, groups = { "1st Batch" })
+	//@Test(priority = 157, groups = { "1st Batch" })
 	public static void LOC_PayOff_Draw_Txn() throws Exception {
 		try {
 
@@ -1539,10 +1542,10 @@ public class QCStore {
 					QCDepositDropdown.depositDropDown(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.adminLogin(SSN, SSN);
-					QCCSRReturnPosting.returnposting(SSN, SSN);
+					VQCCSRReturnPosting.returnposting(SSN, SSN);
 
 					QCCSRLoginLogout.adminLogin(SSN, SSN);
-					QCAdminACHReturn.achreturn(SSN, SSN);
+					VQCAdminACHReturn.achreturn(SSN, SSN);
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
 					QCCSRLoginLogout.login(SSN, AppURL);
@@ -1565,7 +1568,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 66, groups = { "EOD" })
+	//@Test(priority = 66, groups = { "EOD" })
 
 	public static void LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn() throws Exception {
 		try {
@@ -1668,7 +1671,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 67, groups = { "EOD" })
+	//@Test(priority = 67, groups = { "EOD" })
 	public static void LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn() throws Exception {
 		try {
 
@@ -1770,7 +1773,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 68, groups = { "EOD" })
+	//@Test(priority = 68, groups = { "EOD" })
 	public static void LOC_ACHDeposit_EODs_Return_Txn() throws Exception {
 		try {
 
@@ -1935,7 +1938,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 69, groups = { "EOD2" })
+	//@Test(priority = 69, groups = { "EOD2" })
 	public static void LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn() throws Exception {
 		try {
 
@@ -2040,7 +2043,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 70, groups = { "EOD2" })
+	//@Test(priority = 70, groups = { "EOD2" })
 	public static void LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn() throws Exception {
 		try {
 
@@ -6432,7 +6435,7 @@ public class QCStore {
 		FileName = "LOC_Writeoff.xls";
 		test = reports.startTest("VQC_Writeoff", "Login-->New LOC - Write off");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/VLOC/" + FileName);
+		TestData = new ExcelNew(System.getProperty("user.dir") + Vprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 
 		int lastrow = TestData.getLastRow("Start");
 		String sheetName = "Start";
@@ -6477,7 +6480,7 @@ public class QCStore {
 		FileName = "LOC_WriteoffRecovery.xls";
 		test = reports.startTest("VQC_WriteoffRecovery", "Login-->New LOC - Write off - Write off recovery--Void");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/VLOC/" + FileName);
+		TestData = new ExcelNew(System.getProperty("user.dir") + Vprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 
 		int lastrow = TestData.getLastRow("Start");
 		String sheetName = "Start";
@@ -6533,7 +6536,7 @@ public class QCStore {
 		test = reports.startTest("VQC_PartialWriteoffRecovery",
 				"Login-->New LOC - Write off -  Partial Write off recovery");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/VLOC/" + FileName);
+		TestData = new ExcelNew(System.getProperty("user.dir") + Vprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);;
 
 		int lastrow = TestData.getLastRow("Start");
 		String sheetName = "Start";
@@ -6583,7 +6586,7 @@ public class QCStore {
 		test = reports.startTest("VQC_PartialWriteoffRecoveryVoid",
 				"Login-->New LOC - Write off -  Partial Write off recovery—Void");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/VLOC/" + FileName);
+		TestData = new ExcelNew(System.getProperty("user.dir") + Vprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 
 		int lastrow = TestData.getLastRow("Start");
 		String sheetName = "Start";
@@ -6637,7 +6640,7 @@ public class QCStore {
 		FileName = "LOC _Bankrupt_Write off.xls";
 		test = reports.startTest("VQC_Bankrupt_Writeoff", "Login-->New LOC - Bankrupt Write off");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/VLOC/" + FileName);
+		TestData = new ExcelNew(System.getProperty("user.dir") + Vprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 
 		int lastrow = TestData.getLastRow("Start");
 		String sheetName = "Start";
@@ -6686,7 +6689,7 @@ public class QCStore {
 		test = reports.startTest("VQC_Bankrupt_Writeoff_Dismissed",
 				"Login-->New LOC - Bankrupt Write off - Dismissed/Discharged");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/VLOC/" + FileName);
+		TestData = new ExcelNew(System.getProperty("user.dir") + Vprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 
 		int lastrow = TestData.getLastRow("Start");
 		String sheetName = "Start";
@@ -6734,7 +6737,7 @@ public class QCStore {
 		FileName = "LOC_Deposit_Return_Writeoff.xls";
 		test = reports.startTest(" VQC_Deposit-Return-Writeoff", "Login-->New LOC - Deposit - Return- Write off");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/VLOC/" + FileName);
+		TestData = new ExcelNew(System.getProperty("user.dir") + Vprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 
 		int lastrow = TestData.getLastRow("Start");
 		String sheetName = "Start";
@@ -6777,7 +6780,7 @@ public class QCStore {
 
 	}
 
-	@Test(priority = 607, enabled = true,groups = "Jyothi")
+	//@Test(priority = 607, enabled = true,groups = "Jyothi")
 
 	public static void LOC_Deposit2_Return_Writeoff() throws Exception {
 
@@ -6785,7 +6788,7 @@ public class QCStore {
 		test = reports.startTest(" VQC_Deposit2_Return_Writeoff",
 				"Login-->New LOC - Deposit - Return- 2nd Deposit - Return - Write off");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/VLOC/" + FileName);
+		TestData = new ExcelNew(System.getProperty("user.dir") + Vprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 
 		int lastrow = TestData.getLastRow("Start");
 		String sheetName = "Start";
@@ -6847,7 +6850,7 @@ public class QCStore {
 		test = reports.startTest("VQC_WriteoffRecoveryReturn",
 				"Login-->New LOC - Write off - Write off recovery--Return");
 
-		TestData = new ExcelNew(System.getProperty("user.dir") + "/TestData/QCStore/VLOC/" + FileName);
+		TestData = new ExcelNew(System.getProperty("user.dir") + Vprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
 
 		int lastrow = TestData.getLastRow("Start");
 		String sheetName = "Start";
@@ -6897,6 +6900,49 @@ public class QCStore {
 		}
 
 	}
+	
+	@Test(priority = 609, enabled = true,groups ="Jyothi")
+	public static void QC_ILP_Refinance_Payanyother_Step_Up_Txn() throws Exception {
+		FileName = "QC_ILP_Payanyotheramount.xls";
+		test = reports.startTest("VQC_ILP_Refinance_Payanyother_Step_Up",
+				"Login-->New LOC - Write off - Write off recovery--Return");
+
+		TestData = new ExcelNew(System.getProperty("user.dir") + Vprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
+
+		int lastrow = TestData.getLastRow("Start");
+		String sheetName = "Start";
+		// int lastrow=TestData.getLastRow("Borrower");
+		System.out.println(lastrow);
+		for (int row = 2; row <= lastrow; row++) {
+
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+			// System.out.println(RunFlag);
+			if (RunFlag.equals("Y")) {
+
+				// String AppURL = TestData.getCellData(sheetName,"AppURL",row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+
+				System.out.println(AppURL);
+/*
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);*/
+				VQCCSRLoginLogout.login(SSN, AppURL);
+				JQCCSRNewLoan.newLoan(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);
+				
+			/*	VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+                VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
+			    VQCCSRLoginLogout.login(SSN, AppURL);
+				VQCCSRHistory.history(SSN, AppURL);
+				VCSRLoginLogout.logout(SSN, AppURL);*/
+
+			}
+		}
+
+	}
 
 	@BeforeClass(alwaysRun = true)
 	public void setup() throws IOException {
@@ -6920,7 +6966,7 @@ public class QCStore {
 				reader.close();
 				AppURL = prop.getProperty("CSR_URL");
 				AdminURL = prop.getProperty("ADMIN_CSR_URL");
-				String Bfilename = Vprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+				String Bfilename = prop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
 				reports = new ExtentReports(
 						System.getProperty("user.dir") + prop.getProperty("QC_Store_extent_report_path") + Bfilename,
@@ -7002,7 +7048,7 @@ public class QCStore {
 
 			try {
 				Sreader = new BufferedReader(
-						new FileReader("D:/QC_Batch/QC_LOC/src/test/java/tests/SObjects.properties"));
+						new FileReader("C:/QC_Batch/QC_LOC/src/test/java/tests/SObjects.properties"));
 				Sprop = new Properties();
 				Sprop.load(Sreader);
 				Sreader.close();
@@ -7021,7 +7067,7 @@ public class QCStore {
 
 			try {
 				Vreader = new BufferedReader(
-						new FileReader("E:/QC_Batch/QC_LOC/src/test/java/tests/VObjects.properties"));
+						new FileReader("C:/QC_Batch/QC_LOC/src/test/java/tests/VObjects.properties"));
 				Vprop = new Properties();
 				Vprop.load(Vreader);
 				Vreader.close();

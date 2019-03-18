@@ -43,7 +43,8 @@ public class VQCAdminACHReturn extends QCStore {
 					//String AdminURL="https://qcuat.qfund.net/cc/adminIndex.do";
 					String AdminURL = TestData.getCellData(sheetName, "AdminURL", row);
 					String PIN = TestData.getCellData(sheetName,"PIN",row);
-					String StoreID = TestData.getCellData(sheetName,"StoreID",row);
+					//String StoreID = TestData.getCellData(sheetName,"StoreID",row);
+					String StoreID = vstoreid;
 					String ReasonForReturn = TestData.getCellData(sheetName,"ReasonForReturn",row);
 					String Esign_CollateralType = TestData.getCellData(sheetName,"Esign_CollateralType",row);
 
@@ -96,7 +97,7 @@ public class VQCAdminACHReturn extends QCStore {
 		driver.switchTo().frame("topFrame");
 
 		driver.findElement(By.xpath("//*[@id='500000']/a")).click(); 
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		test.log(LogStatus.PASS, "Clicked on Transaction tab");
 		
 		Thread.sleep(1000);

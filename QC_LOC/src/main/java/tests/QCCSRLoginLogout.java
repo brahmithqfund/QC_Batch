@@ -101,7 +101,7 @@ public class QCCSRLoginLogout extends QCStore
 				        driver.findElement(locator(prop.getProperty("csr_login_button"))).click();
 				        test.log(LogStatus.PASS, "Clicked on login button");
 				        
-				       Thread.sleep(2000);
+				       Thread.sleep(4000);
 				       break;
 }
 					
@@ -211,6 +211,9 @@ public static void logout(String SSN,String AppURL){
 				driver.findElement(By.name("login")).click();
 
 				test.log(LogStatus.PASS, "Clicked on Submit button");
+				Thread.sleep(5000);
+				driver.get(csrloginpage);
+				Thread.sleep(3000);
 				break;
 
 }
@@ -220,7 +223,7 @@ public static void logout(String SSN,String AppURL){
 	catch (Exception e) {
 		// TODO Auto-generated catch block
 		//test.log(LogStatus.FAIL, MarkupHelper.createLabel("CSR login is failed", ExtentColor.RED));
-		test.log(LogStatus.FAIL,"Admin login is failed");
+		//test.log(LogStatus.FAIL,"Admin login is failed");
 
 
 		e.printStackTrace();

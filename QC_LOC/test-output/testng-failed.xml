@@ -4,41 +4,15 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <include name="Anoop_EOD1"/>
-=======
-        <include name="Ratikanta_NEOD"/>
->>>>>>> 792c0d99c7dc98fb911ab128b442f178e0a75ffb
-=======
-        <include name="1st Batch"/>
->>>>>>> jyothi1.1
+        <include name="Jyothi"/>
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
-<<<<<<< HEAD
-          <include name="PaymentAndEod"/>
-=======
-          <include name="LOC_Draw_Void_Txn"/>
->>>>>>> jyothi1.1
           <include name="getResult"/>
-          <include name="LOC_Payment_Void_PayOff_Void_Txn"/>
           <include name="setup"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-          <include name="RQC_LOC_ManualDefault_Txn_Testdata"/>
->>>>>>> 792c0d99c7dc98fb911ab128b442f178e0a75ffb
-=======
-          <include name="LOC_PayOff_Draw_Void_Txn"/>
-          <include name="LOC_Payment_Draw_Void_Txn"/>
-          <include name="LOC_Payment_PayOff_Void_Txn"/>
-          <include name="LOC_Payment_Gracedays_PayOff_Void_Txn"/>
-          <include name="LOC_PayOff_RescindPeriod_void_Txn"/>
-          <include name="LOC_PayOff_Return_Txn"/>
->>>>>>> jyothi1.1
+          <include name="QC_ILP_Refinance_Payanyother_Step_Up_Txn"/>
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->

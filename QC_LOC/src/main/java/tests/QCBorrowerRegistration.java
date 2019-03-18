@@ -148,8 +148,6 @@ public class QCBorrowerRegistration extends QCStore {
 
 								driver.switchTo().defaultContent();	      
 						  
-						// wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("li[id='900000']")));
-
 				        driver.switchTo().frame("topFrame");	        
 				        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("li[id='900000']")));
 				       
