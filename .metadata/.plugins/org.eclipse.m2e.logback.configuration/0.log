@@ -28291,3 +28291,12 @@ Caused by: java.io.FileNotFoundException: C:\QC_Batch\.metadata\.plugins\org.ecl
 2019-03-18 10:42:54,651 [Worker-2726] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-03-18 10:42:54,651 [Worker-2726] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\QC_Batch\QC_ILP\src\main\resources
 2019-03-18 10:42:54,651 [Worker-2726] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-18 10:42:54,651 [Worker-2726] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\QC_Batch\QC_ILP\src\test\resources
+2019-03-18 11:11:26,159 [Worker-2723] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-18 11:11:26,159 [Worker-2723] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\QC_Batch\QC_ILP\src\main\resources
+2019-03-18 11:11:26,159 [Worker-2723] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-18 11:11:26,159 [Worker-2723] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\QC_Batch\QC_ILP\src\test\resources
+2019-03-18 11:11:26,159 [Worker-2723] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-18 11:11:26,159 [Worker-2723] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\QC_Batch\QC_LOC\src\main\resources
+2019-03-18 11:11:26,159 [Worker-2723] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-18 11:11:26,159 [Worker-2723] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\QC_Batch\QC_LOC\src\test\resources
