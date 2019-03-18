@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="49" total="50" passed="1">
 =======
 <testng-results skipped="0" failed="0" ignored="50" total="51" passed="1">
@@ -71,12 +72,43 @@
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=QC_ILP_Refinanace_Txn status=SUCCESS method=QCStore.QC_ILP_Refinanace_Txn()[pri:17, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+=======
+<testng-results skipped="0" failed="0" ignored="50" total="51" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="1438615" started-at="2019-03-18T05:13:09Z" finished-at="2019-03-18T05:37:07Z">
+    <groups>
+      <group name="Jyothi">
+        <method signature="QCStore.ILP_InstallmentStepup()[pri:1, instance:tests.QCStore@527740a2]" name="ILP_InstallmentStepup" class="tests.QCStore"/>
+      </group> <!-- Jyothi -->
+    </groups>
+    <test name="Test" duration-ms="1438615" started-at="2019-03-18T05:13:09Z" finished-at="2019-03-18T05:37:07Z">
+      <class name="tests.QCStore">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="125" started-at="2019-03-18T05:13:09Z" finished-at="2019-03-18T05:13:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5061" started-at="2019-03-18T05:13:09Z" finished-at="2019-03-18T05:13:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="ILP_InstallmentStepup()[pri:1, instance:tests.QCStore@527740a2]" name="ILP_InstallmentStepup" duration-ms="1432694" started-at="2019-03-18T05:13:14Z" finished-at="2019-03-18T05:37:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ILP_InstallmentStepup -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="735" started-at="2019-03-18T05:37:07Z" finished-at="2019-03-18T05:37:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ILP_InstallmentStepup status=SUCCESS method=QCStore.ILP_InstallmentStepup()[pri:1, instance:tests.QCStore@527740a2] output={null}]]]>
+>>>>>>> jyothi1.2
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-14T10:43:08Z" finished-at="2019-03-14T10:43:13Z">
           <reporter-output>
           </reporter-output>
@@ -104,6 +136,12 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+=======
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-18T05:37:07Z" finished-at="2019-03-18T05:37:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+>>>>>>> jyothi1.2
       </class> <!-- tests.QCStore -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

@@ -116,10 +116,13 @@ public class QCCashMgmtDeposit extends QCStore {
 					// test.log(LogStatus.PASS, "Action Type is :"+Action);
 					driver.findElement(By.name("safeDepositRequestBean.noOfDollars")).sendKeys(CountofDollarCoins);
 					test.log(LogStatus.PASS, "Coin Entered is :" + CountofDollarCoins);
-					driver.findElement(By.name("locSlipNbrs")).click();
+					Thread.sleep(3000);
+					driver.findElement(By.name("locSlipNbrs")).click();					
 					test.log(LogStatus.PASS, "Clicked on WebCheckbox");
+					Thread.sleep(1000);
 					driver.findElement(By.name("safeDepositRequestBean.password")).sendKeys(PIN);
 					test.log(LogStatus.PASS, "Banker Pin Entered is :" + PIN);
+					Thread.sleep(3000);
 					driver.findElement(By.name("finishdeposit")).click();
 					test.log(LogStatus.PASS, "Clicked on Finish Deposit");
 					try {

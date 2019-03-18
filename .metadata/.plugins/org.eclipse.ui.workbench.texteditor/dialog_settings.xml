@@ -2,68 +2,25 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-<<<<<<< HEAD
-		<item value="Refinan" key="selection"/>
-=======
-<<<<<<< HEAD
-		<item value="Anoop_StdownVoid" key="selection"/>
-=======
-		<item value="@Test" key="selection"/>
->>>>>>> anoop1.1
->>>>>>> f96b7d09c18261a556e71ad66742e2079a8ac046
+		<item value="" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-<<<<<<< HEAD
-			<item value="refinan"/>
+			<item value="head"/>
+			<item value="dependency"/>
+			<item value="jy"/>
+			<item value="jyothi"/>
 		</list>
 		<list key="replacehistory">
-=======
-<<<<<<< HEAD
-			<item value="Anoop_StdownVoid"/>
-			<item value="Anoop_stDown"/>
-			<item value="QC_Store_NewLoan_Test_data_sheet_path"/>
-			<item value="Anoop1"/>
-			<item value="QC_Loan_deposit_AutoClear"/>
-			<item value="QC_Loan_deposit_ClearFromDropDown"/>
-			<item value="QC_Loan_StepUP"/>
-			<item value="QC_Loan_Redeposit"/>
-		</list>
-		<list key="replacehistory">
-			<item value=""/>
-=======
-			<item value="//@Test"/>
-			<item value="anoop"/>
-			<item value="Alert accepted"/>
-			<item value="ESign_LoanAmt"/>
-			<item value="Minimum LOC amount is"/>
-			<item value="minAmountDue"/>
-			<item value="QC_LOC_Payment_EOD"/>
-			<item value="QC_LOC_EODDuedate"/>
-		</list>
-		<list key="replacehistory">
-			<item value="@Test"/>
->>>>>>> anoop1.1
->>>>>>> f96b7d09c18261a556e71ad66742e2079a8ac046
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
-<<<<<<< HEAD
 		<item value="563" key="DIALOG_X_ORIGIN"/>
 		<item value="119" key="DIALOG_Y_ORIGIN"/>
-=======
-<<<<<<< HEAD
-		<item value="835" key="DIALOG_X_ORIGIN"/>
-		<item value="322" key="DIALOG_Y_ORIGIN"/>
-=======
-		<item value="906" key="DIALOG_X_ORIGIN"/>
-		<item value="356" key="DIALOG_Y_ORIGIN"/>
->>>>>>> anoop1.1
->>>>>>> f96b7d09c18261a556e71ad66742e2079a8ac046
 	</section>
 </section>

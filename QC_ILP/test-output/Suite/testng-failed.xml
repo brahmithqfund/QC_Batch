@@ -5,10 +5,14 @@
     <groups>
       <run>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <include name="Anoop_StdownVoid"/>
 =======
         <include name="Brahmith1"/>
 >>>>>>> brahmith1.1
+=======
+        <include name="Jyothi"/>
+>>>>>>> jyothi1.2
       </run>
     </groups>
     <classes>
@@ -16,10 +20,14 @@
         <methods>
           <include name="getResult"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
           <include name="ILP_RefinanceStepDown_void"/>
 =======
           <include name="QC_InstallPayment_Ref_Rescind_Txn"/>
 >>>>>>> brahmith1.1
+=======
+          <include name="ILP_InstallmentStepup"/>
+>>>>>>> jyothi1.2
           <include name="setup"/>
           <include name="endReport"/>
           <include name="killProcess"/>

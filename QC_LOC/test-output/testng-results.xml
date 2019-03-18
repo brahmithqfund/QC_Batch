@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" ignored="83" total="84" passed="0">
   <reporter-output>
   </reporter-output>
@@ -255,6 +256,36 @@ at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=Deposit_DrawEODTwice status=SUCCESS method=QCStore.Deposit_DrawEODTwice()[pri:421, instance:tests.QCStore@527740a2] output={null}]]]>
+=======
+<testng-results skipped="0" failed="0" ignored="94" total="95" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="37398" started-at="2019-03-15T05:31:23Z" finished-at="2019-03-15T05:32:00Z">
+    <groups>
+      <group name="Jyothi">
+        <method signature="QCStore.QC_ILP_Refinance_Payanyother_Step_Up_Txn()[pri:609, instance:tests.QCStore@527740a2]" name="QC_ILP_Refinance_Payanyother_Step_Up_Txn" class="tests.QCStore"/>
+      </group> <!-- Jyothi -->
+    </groups>
+    <test name="Test" duration-ms="37398" started-at="2019-03-15T05:31:23Z" finished-at="2019-03-15T05:32:00Z">
+      <class name="tests.QCStore">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="78" started-at="2019-03-15T05:31:23Z" finished-at="2019-03-15T05:31:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5024" started-at="2019-03-15T05:31:23Z" finished-at="2019-03-15T05:31:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_ILP_Refinance_Payanyother_Step_Up_Txn()[pri:609, instance:tests.QCStore@527740a2]" name="QC_ILP_Refinance_Payanyother_Step_Up_Txn" duration-ms="32094" started-at="2019-03-15T05:31:28Z" finished-at="2019-03-15T05:32:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_ILP_Refinance_Payanyother_Step_Up_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="171" started-at="2019-03-15T05:32:00Z" finished-at="2019-03-15T05:32:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_ILP_Refinance_Payanyother_Step_Up_Txn status=SUCCESS method=QCStore.QC_ILP_Refinance_Payanyother_Step_Up_Txn()[pri:609, instance:tests.QCStore@527740a2] output={null}]]]>
+>>>>>>> jyothi1.2
               </value>
             </param>
           </params>

@@ -143,6 +143,7 @@ public class QCStore {
 	public static Properties Jprop;
 	public static Properties Rprop;
 	public static Properties Aprop;
+	public static Properties Vprop;
 	public static String loan_number;
 	public static ExtentReports reports;
 	public static ExtentReports Breports;
@@ -3148,6 +3149,61 @@ public class QCStore {
 			}
 		}
 	}
+	
+	@Test(priority = 1, enabled = true, groups = "Jyothi")
+
+	public void ILP_InstallmentStepup() throws Exception {
+
+		FileName = "QC_ILP_Payanyotheramount.xls";
+		test = reports.startTest("QC_ILP_Payanyotheramount", "QC_ILP_Payanyotheramount");
+
+		TestData = new ExcelNew(System.getProperty("user.dir") + Vprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
+
+		int lastrow = TestData.getLastRow("Start");
+		String sheetName = "Start";
+
+		for (int row = 2; row <= lastrow+1; row++) {
+			String RunFlag = TestData.getCellData(sheetName, "Run", row);
+
+			if (RunFlag.equals("Y")) {
+				String AppURL = TestData.getCellData(sheetName, "AppURL", row);
+				String SSN = TestData.getCellData(sheetName, "SSN", row);
+
+				JQCCSRLoginLogout.login(SSN, AppURL);
+				ACSRBorrowerRegistration.borrowerReg(SSN, AppURL);
+				JQCCSRLoginLogout.logout(SSN, AppURL);
+
+				JQCCSRLoginLogout.login(SSN, AppURL);
+				ACSRNewLoanPage.newLoan(SSN, AppURL);
+				JQCCSRLoginLogout.logout(SSN, AppURL);
+				JQCCSRLoginLogout.login(SSN, AppURL);
+				JQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
+				JQCCSRLoginLogout.logout(SSN, AppURL);
+				JQCCSRLoginLogout.login(SSN, AppURL);
+				
+				VQC_Payment.payment(SSN, AppURL);
+				JQCCSRLoginLogout.logout(SSN, AppURL);
+				JQCCSRLoginLogout.login(SSN, AppURL);
+				VQCCSRNewLoan2.newLoan2(SSN, AppURL);
+				JQCCSRLoginLogout.logout(SSN, AppURL);
+				JQCCSRLoginLogout.login(SSN, AppURL);
+				JQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+				JQCCSRLoginLogout.logout(SSN, AppURL);
+				JQCCSRLoginLogout.login(SSN, AppURL);
+				VQC_Payment.payment1(SSN, AppURL);
+				JQCCSRLoginLogout.logout(SSN, AppURL);
+				JQCCSRLoginLogout.login(SSN, AppURL);
+				JQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+				JQCCSRLoginLogout.logout(SSN, AppURL);
+			/*	JQCCSRLoginLogout.login(SSN, AppURL);
+				VQC_Payment.payment2(SSN, AppURL);
+				JQCCSRLoginLogout.logout(SSN, AppURL);*/
+				
+				
+			}
+		}
+	}
+
 
 	@BeforeClass(alwaysRun = true)
 	public void setup() throws IOException {
@@ -3158,6 +3214,7 @@ public class QCStore {
 			BufferedReader Jreader;
 			BufferedReader Rreader;
 			BufferedReader Areader;
+			BufferedReader Vreader;
 
 			try {
 				reader = new BufferedReader(
@@ -3237,6 +3294,27 @@ public class QCStore {
 
 				reports = new ExtentReports(
 						System.getProperty("user.dir") + Aprop.getProperty("QC_Store_extent_report_path") + Afilename,
+						true);
+
+			}
+
+			catch (Exception e) {
+
+				System.out.println("Object proprties file not found");
+			}
+			try {
+				Vreader = new BufferedReader(
+						new FileReader("C:/QC_Batch/QC_ILP/src/test/java/tests/VObjects.properties"));
+				Vprop = new Properties();
+				Vprop.load(Vreader);
+				Vreader.close();
+				csr_url = Vprop.getProperty("CSR_URL");
+				csrloginpage = Vprop.getProperty("Login_Page");
+				AdminURL = Vprop.getProperty("ADMIN_URL");
+				String Vfilename = Vprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+
+				reports = new ExtentReports(
+						System.getProperty("user.dir") + Vprop.getProperty("QC_Store_extent_report_path") + Vfilename,
 						true);
 
 			}
