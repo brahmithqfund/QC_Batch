@@ -162,7 +162,13 @@ at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:
     </error>
   </testcase> <!-- AReviseCredit_IncIncome -->
 =======
+<<<<<<< HEAD
 <testsuite skipped="0" hostname="QTLSYS2-238" name="tests.QCStore" tests="1" failures="0" timestamp="14 Mar 2019 09:13:06 GMT" time="121.828" errors="0">
   <testcase name="LOC_ACHDeposit_EODs_Return_Txn" time="121.828" classname="tests.QCStore"/>
 >>>>>>> brahmith1.1
+=======
+<testsuite skipped="0" hostname="QTLSYS2-48" name="tests.QCStore" tests="1" failures="0" timestamp="15 Mar 2019 06:20:52 GMT" time="2157.053" errors="0">
+  <testcase name="Deposit_DrawEODTwice" time="2157.053" classname="tests.QCStore"/>
+>>>>>>> anoop1.1
+>>>>>>> f96b7d09c18261a556e71ad66742e2079a8ac046
 </testsuite> <!-- tests.QCStore -->

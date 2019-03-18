@@ -108,6 +108,10 @@ at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:
 ... Removed 25 stack frames]]>
     </failure>
   </testcase> <!-- AReviseCredit_IncIncome -->
+=======
+<testsuite hostname="QTLSYS2-48" ignored="70" name="Test" tests="1" failures="0" timestamp="15 Mar 2019 06:20:52 GMT" time="2157.173" errors="0">
+  <testcase name="Deposit_DrawEODTwice" time="2151.265" classname="tests.QCStore"/>
+>>>>>>> anoop1.1
   <testcase name="LOC_Draw_Void_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- LOC_Draw_Void_Txn -->
@@ -124,12 +128,15 @@ at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:
   <testcase name="JQC_LOC_New_Loan_Rescind_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_New_Loan_Rescind_Txn -->
+<<<<<<< HEAD
   <testcase name="PaymentdrawVoidEOD" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- PaymentdrawVoidEOD -->
   <testcase name="SignatureNewLoan_EODTwice" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- SignatureNewLoan_EODTwice -->
+=======
+>>>>>>> anoop1.1
   <testcase name="JQC_LOC_Refinance_StepUp_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_Refinance_StepUp_Txn -->
@@ -148,10 +155,16 @@ at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:
   <testcase name="JQC_LOC_LessThan_MinPayment_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_LessThan_MinPayment_Txn -->
+<<<<<<< HEAD
   <testcase name="DepositEODReDeposit" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- DepositEODReDeposit -->
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> anoop1.1
+>>>>>>> f96b7d09c18261a556e71ad66742e2079a8ac046
   <testcase name="LOC_Deposit2_Return_Writeoff" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- LOC_Deposit2_Return_Writeoff -->
@@ -373,11 +386,14 @@ at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:
   <testcase name="JQC_LOC_Refinance_Latefee_Payment_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_Refinance_Latefee_Payment_Txn -->
-  <testcase name="PayOFFandEod" time="0.0" classname="tests.QCStore">
+  <testcase name="LOC_Deposit_Return_PayOff_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
+<<<<<<< HEAD
   </testcase> <!-- PayOFFandEod -->
   <testcase name="LOC_Deposit_Return_PayOff_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
+=======
+>>>>>>> anoop1.1
   </testcase> <!-- LOC_Deposit_Return_PayOff_Txn -->
   <testcase name="JQC_LOC_LessThan_MinPayment_Return_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
@@ -388,8 +404,9 @@ at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:
   <testcase name="RQC_LOC_ManualDefault_EOD_Txn_Testdata" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- RQC_LOC_ManualDefault_EOD_Txn_Testdata -->
-  <testcase name="Deposit_DrawEODTwice" time="0.0" classname="tests.QCStore">
+  <testcase name="LOC_PayOff_RescindPeriod_void_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
+<<<<<<< HEAD
   </testcase> <!-- Deposit_DrawEODTwice -->
   <testcase name="LOC_PayOff_RescindPeriod_void_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
@@ -397,30 +414,41 @@ at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:
 <<<<<<< HEAD
   <testcase name="JQC_LOC_New_Loan_GraceDay_Rescind_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
+=======
+  </testcase> <!-- LOC_PayOff_RescindPeriod_void_Txn -->
+  <testcase name="JQC_LOC_New_Loan_GraceDay_Rescind_Txn" time="0.0" classname="tests.QCStore">
+    <ignored/>
+>>>>>>> anoop1.1
   </testcase> <!-- JQC_LOC_New_Loan_GraceDay_Rescind_Txn -->
 =======
 >>>>>>> brahmith1.1
   <testcase name="RQC_LOC_2missedPayment_Default_EOD_Txn_Testdata" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- RQC_LOC_2missedPayment_Default_EOD_Txn_Testdata -->
+<<<<<<< HEAD
   <testcase name="DepositEODTwice" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- DepositEODTwice -->
   <testcase name="PaymentAndEod" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- PaymentAndEod -->
+=======
+>>>>>>> anoop1.1
   <testcase name="RQC_DefaultPayment_Void_Txn_Testdata" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- RQC_DefaultPayment_Void_Txn_Testdata -->
   <testcase name="LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn -->
+<<<<<<< HEAD
   <testcase name="EODOnDueDate" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- EODOnDueDate -->
   <testcase name="PaymentAndDraw" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- PaymentAndDraw -->
+=======
+>>>>>>> anoop1.1
   <testcase name="LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn -->
@@ -466,9 +494,12 @@ at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:
   <testcase name="SQC_LOC_Deposit_Bulk" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- SQC_LOC_Deposit_Bulk -->
+<<<<<<< HEAD
   <testcase name="HigherPaymentAndEod" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- HigherPaymentAndEod -->
+=======
+>>>>>>> anoop1.1
   <testcase name="LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn -->
@@ -491,12 +522,15 @@ at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:
   <testcase name="MidDay_Void_Deposit" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- MidDay_Void_Deposit -->
-  <testcase name="DepositAndEOD" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- DepositAndEOD -->
   <testcase name="JQC_LOC_DueDate_GreaterThan_MinPayment_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_DueDate_GreaterThan_MinPayment_Txn -->
+<<<<<<< HEAD
+=======
+  <testcase name="AReviseCredit_IncreaseIncome" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- AReviseCredit_IncreaseIncome -->
+>>>>>>> anoop1.1
   <testcase name="LOC_Payment_PayOff_Return_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- LOC_Payment_PayOff_Return_Txn -->
@@ -529,14 +563,17 @@ at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:
 <<<<<<< HEAD
   </testcase> <!-- RQC_LOC_Default_DefaultPayment_Txn_Testdata -->
   <testcase name="LOC_Payment_Draw_Txn" time="0.0" classname="tests.QCStore">
+<<<<<<< HEAD
     <ignored/>
   </testcase> <!-- LOC_Payment_Draw_Txn -->
   <testcase name="AReviseCredit_PayofffIncreaseIncome" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- AReviseCredit_PayofffIncreaseIncome -->
   <testcase name="VoidandEod" time="0.0" classname="tests.QCStore">
+=======
+>>>>>>> anoop1.1
     <ignored/>
-  </testcase> <!-- VoidandEod -->
+  </testcase> <!-- LOC_Payment_Draw_Txn -->
   <testcase name="RQC_LOC_PayOff_Closure_PayoffReturn_Txn_Testdata" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- RQC_LOC_PayOff_Closure_PayoffReturn_Txn_Testdata -->
@@ -546,15 +583,21 @@ at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:
   <testcase name="JQC_LOC_New_Loan_After_RescindDays_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_New_Loan_After_RescindDays_Txn -->
+<<<<<<< HEAD
 =======
   </testcase> <!-- LOC_WriteoffRecovery -->
   <testcase name="VoidandEod" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- VoidandEod -->
 >>>>>>> brahmith1.1
+=======
+<<<<<<< HEAD
+>>>>>>> f96b7d09c18261a556e71ad66742e2079a8ac046
   <testcase name="Clear_Return_EODTwice" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- Clear_Return_EODTwice -->
+=======
+>>>>>>> anoop1.1
   <testcase name="SQC_LOC_LessMinPayment_Deposit" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- SQC_LOC_LessMinPayment_Deposit -->

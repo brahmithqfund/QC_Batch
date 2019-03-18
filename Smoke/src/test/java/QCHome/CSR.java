@@ -78,11 +78,7 @@ public class CSR {
 //**************************************************************************/Rati-Set/***************************************************************//	
 	
 		
-<<<<<<< HEAD
 //@Test(priority=41,enabled=true)
-=======
-@Test(priority=41,enabled=true)
->>>>>>> brahmith1.1
 	public void borrowregsaveloan() throws Exception{
 		FileName=  "PDL_BorrowerRegistration_Save_Loan.xls";
 		test=reports.startTest("PDL_Borrower Registration_Save_Loan","Login-->Home Screen-->Borrower Registration-->Check NewLoan Page Displayed");
@@ -111,7 +107,7 @@ public class CSR {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 	
-@Test(priority=42,enabled=true)
+//@Test(priority=42,enabled=true)
 	public void borrowregsavenext() throws Exception{
 		FileName=  "PDL_BorrowerRegistration_Save_Next.xls";
 		test=reports.startTest("PDL_BorrowerRegistration_Save_Next","Login-->Home Screen-->Borrower Registration-->Save and Next");
@@ -138,7 +134,7 @@ public class CSR {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 	
-@Test(priority=43,enabled=true)
+//@Test(priority=43,enabled=true)
 	public void borrowregsavedeny() throws Exception{
 		FileName=  "PDL_BorrowerRegistration_Deny.xls";
 		test=reports.startTest("PDL_BorrowerRegistration_Deny","Login-->Home Screen-->Borrower Registration-->Deny");
@@ -165,7 +161,7 @@ public class CSR {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 	
-@Test(priority=44,enabled=true)
+//@Test(priority=44,enabled=true)
 	public void borrowregsaveexit() throws Exception{
 		FileName=  "PDL_BorrowerRegistration_Save_Exit.xls";
 		test=reports.startTest("PDL_BorrowerRegistration_Save_Exit","Login-->Home Screen-->Borrower Registration-->Save and Exit");
@@ -192,7 +188,7 @@ public class CSR {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 	
-@Test(priority=45,enabled=true)
+//@Test(priority=45,enabled=true)
 	public void editborrowregsaveexit() throws Exception{
 		FileName=  "PDL_EditBorrowerRegistration_Save_Exit.xls";
 		test=reports.startTest("PDL_EditBorrowerRegistration_Save_Exit","Login-->Home Screen-->Borrower Registration-->Check NewLoan Page Displayed-->Login-->Edit Borrower-->Save&Exit-->Verify Borrower Updated");
@@ -223,7 +219,7 @@ public class CSR {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 	
-@Test(priority=46,enabled=true)
+//@Test(priority=46,enabled=true)
 	public void editborrowregsavenext() throws Exception{
 		FileName=  "PDL_EditBorrowerRegistration_Save_Next.xls";
 		test=reports.startTest("PDL_EditBorrowerRegistration_Save_Next","Login-->Home Screen-->Borrower Registration-->Click Save&Next-->Login-->Edit Borrower-->Save&Next");
@@ -254,7 +250,7 @@ public class CSR {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 	
-@Test(priority=47,enabled=true)
+//@Test(priority=47,enabled=true)
 	public void editborrowregsaveloan() throws Exception{
 		FileName=  "PDL_EditBorrowerRegistration_Save_Loan.xls";
 		test=reports.startTest("PDL_EditBorrowerRegistration_Save_Loan","Login-->Home Screen-->Borrower Registration-->Click Save&Loan-->Verify NewLoan Screen-->Login-->Edit Borrower-->Save&Loan");
@@ -286,7 +282,7 @@ public class CSR {
 			}}}
 
 	
-@Test(priority=48,enabled=true)
+//@Test(priority=48,enabled=true)
 	 	public void pdlborrowregsaveexiteditssn() throws Exception{
 	 		FileName=  "PDL_BorrowerRegistration_Save_Exit_EditSSN.xls";
 	 		test=reports.startTest("PDL_BorrowerRegistration_Save_Exit_EditSSN","Login-->Home Screen-->Borrower Registration-->Save and Exit-->Edit SSN");
@@ -317,7 +313,7 @@ public class CSR {
 	 			}}}
 	
 	
-@Test(priority=49,enabled=true)
+//@Test(priority=49,enabled=true)
 	public void ilpborrowregsavenext() throws Exception{
 		FileName=  "ILP_BorrowerRegistration_Save_Next.xls";
 		test=reports.startTest("ILP_BorrowerRegistration_Save_Next","Login-->Home Screen-->Borrower Registration-->Save and Next");
@@ -344,7 +340,7 @@ public class CSR {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 	
-@Test(priority=50,enabled=true)
+//@Test(priority=50,enabled=true)
 	public void ilpborrowregsaveloan() throws Exception{
 		FileName=  "ILP_BorrowerRegistration_Save_Loan.xls";
 		test=reports.startTest("ILP_BorrowerRegistration_Save_Loan","Login-->Home Screen-->Borrower Registration-->Check NewLoan Page Displayed");
@@ -373,7 +369,7 @@ public class CSR {
 			}}}
 
 	
-@Test(priority=51,enabled=true)
+//@Test(priority=51,enabled=true)
 	public void ilpborrowregsavedeny() throws Exception{
 		FileName=  "ILP_BorrowerRegistration_Deny.xls";
 		test=reports.startTest("ILP_BorrowerRegistration_Deny","Login-->Home Screen-->Borrower Registration-->Deny");
@@ -400,7 +396,7 @@ public class CSR {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 	
-@Test(priority=52,enabled=true)
+//@Test(priority=52,enabled=true)
 	public void ilpborrowregsaveexit() throws Exception{
 		FileName=  "ILP_BorrowerRegistration_Save_Exit.xls";
 		test=reports.startTest("ILP_BorrowerRegistration_Save_Exit","Login-->Home Screen-->Borrower Registration-->Save and Exit");
@@ -428,7 +424,7 @@ public class CSR {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 	
-@Test(priority=53,enabled=true)
+//@Test(priority=53,enabled=true)
 	public void ilpeditborrowregsaveexit() throws Exception{
 		FileName=  "ILP_EditBorrowerRegistration_Save_Exit.xls";
 		test=reports.startTest("ILP_EditBorrowerRegistration_Save_Exit","Login-->Home Screen-->Borrower Registration-->Login-->Edit Borrower-->Save&Exit-->Verify Borrower Updated");
@@ -459,7 +455,7 @@ public class CSR {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 	
-@Test(priority=54,enabled=true)
+//@Test(priority=54,enabled=true)
 	public void ilpeditborrowregsavenext() throws Exception{
 		FileName=  "ILP_EditBorrowerRegistration_Save_Next.xls";
 		test=reports.startTest("ILP_EditBorrowerRegistration_Save_Next","Login-->Home Screen-->Borrower Registration-->Save&Next-->Login-->Edit Borrower-->Save&Exit");
@@ -490,7 +486,7 @@ public class CSR {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 	
-@Test(priority=55,enabled=true)
+//@Test(priority=55,enabled=true)
 	public void ilpeditborrowregsaveloan() throws Exception{
 		FileName=  "ILP_EditBorrowerRegistration_Save_Loan.xls";
 		test=reports.startTest("ILP_EditBorrowerRegistration_Save_Loan","Login-->Home Screen-->Borrower Registration-->Save&Loan-->Verify NewLoan Page Display-->Login-->Edit Borrower");
@@ -522,7 +518,7 @@ public class CSR {
 			}}}
 	
 	    
-@Test(priority=56,enabled=true)
+//@Test(priority=56,enabled=true)
 	 	public void ilpborrowregsaveexiteditssn() throws Exception{
 	 		FileName=  "ILP_BorrowerRegistration_Save_Exit_EditSSN.xls";
 	 		test=reports.startTest("ILP_BorrowerRegistration_Save_Exit_EditSSN","Login-->Home Screen-->Borrower Registration-->Save and Exit-->Edit SSN");
@@ -552,7 +548,7 @@ public class CSR {
 	 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 	 			}}}	    
 	
-@Test(priority=57,enabled=true)
+//@Test(priority=57,enabled=true)
 	public void tlpeditborrowregsaveexit() throws Exception{
 		FileName=  "TLP_EditBorrowerRegistration_Save_Exit.xls";
 		test=reports.startTest("TLP_EditBorrowerRegistration_Save_Exit","Login-->Home Screen-->Borrower Registration-->Save&Exit-->Verify Regestration Successfull-->Login-->Edit Borrower-->Save&Exit");
@@ -583,7 +579,7 @@ public class CSR {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 	
-@Test(priority=58,enabled=true)
+//@Test(priority=58,enabled=true)
 	public void tlpeditborrowregsavenext() throws Exception{
 		FileName=  "TLP_EditBorrowerRegistration_Save_Next.xls";
 		test=reports.startTest("TLP_EditBorrowerRegistration_Save_Next","Login-->Home Screen-->Borrower Registration-->Save&Next-->Login-->Edit Borrower-->Save&Next");
@@ -614,7 +610,7 @@ public class CSR {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 	
-@Test(priority=59,enabled=true)
+//@Test(priority=59,enabled=true)
 	public void tlpeditborrowregsaveloan() throws Exception{
 		FileName=  "TLP_EditBorrowerRegistration_Save_Loan.xls";
 		test=reports.startTest("TLP_EditBorrowerRegistration_Save_Loan","Login-->Home Screen-->Borrower Registration-->Save&Loan--->Verify New Loan Screen Display-->Login-->Edit Borrower-->Save&Loan-->Verify NewLoan creen Display");
@@ -643,7 +639,7 @@ public class CSR {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 	
-@Test(priority=60,enabled=true)
+//@Test(priority=60,enabled=true)
 	public void TLPBorrowerRegistrationsavenext() throws Exception{
 		FileName=  "TLP_BorrowerRegistration_Save_Next.xls";
 		test=reports.startTest("TLP_BorrowerRegistration_Save_Next","Login-->Home Screen-->Borrower Registration-->NewLoan Screen-->Co-Borrower");
@@ -672,7 +668,7 @@ public class CSR {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 	
-@Test(priority=61,enabled=true)
+//@Test(priority=61,enabled=true)
 	public void TLPBorrowerRegistrationsaveloan() throws Exception{
 		FileName=  "TLP_BorrowerRegistration_Save_Loan.xls";
 		test=reports.startTest("TLP_BorrowerRegistration_Save_Loan","Login-->Home Screen-->Borrower Registration-->Check Save and loan-->NewLoan Screen");
@@ -701,7 +697,7 @@ public class CSR {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 	
-@Test(priority=62,enabled=true)
+//@Test(priority=62,enabled=true)
 	public void TLPBorrowerRegistrationsavedeny() throws Exception{
 		FileName=  "TLP_BorrowerRegistration_Deny.xls";
 		test=reports.startTest("TLP_BorrowerRegistration_Deny","Login-->Home Screen-->Borrower Registration-->Check Deny");
@@ -729,7 +725,7 @@ public class CSR {
 
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
-@Test(priority=63,enabled=true)
+//@Test(priority=63,enabled=true)
 	public void TLPBorrowerRegistrationsaveexit() throws Exception{
 		FileName=  "TLP_BorrowerRegistration_Save_Exit.xls";
 		            
@@ -759,7 +755,7 @@ public class CSR {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 
-@Test(priority=64,enabled=true)
+//@Test(priority=64,enabled=true)
 	public void tlpborrowregsaveexiteditssn() throws Exception{
 		FileName=  "TLP_BorrowerRegistration_Save_Exit_EditSSN.xls";
 		test=reports.startTest("TLP_BorrowerRegistration_Save_Exit_EditSSN","Login-->Home Screen-->Borrower Registration-->Save and Exit-->Edit SSN");
@@ -789,7 +785,7 @@ public class CSR {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}	    
 	
-@Test(priority=65,enabled=true)
+//@Test(priority=65,enabled=true)
 	public void locborrowregsavenext() throws Exception{
 		FileName=  "LOC_BorrowerRegistration_Save_Next.xls";
 		test=reports.startTest("LOC_BorrowerRegistration_Save_Next","Login-->Home Screen-->Borrower Registration-->Save and Next");
@@ -816,7 +812,7 @@ public class CSR {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 	
-@Test(priority=66,enabled=true)
+//@Test(priority=66,enabled=true)
 	public void locborrowregsaveloan() throws Exception{
 		FileName=  "LOC_BorrowerRegistration_Save_Loan.xls";
 		test=reports.startTest("LOC_BorrowerRegistration_Save_Loan","Login-->Home Screen-->Borrower Registration-->Save and Loan");
@@ -843,7 +839,7 @@ public class CSR {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 	
-@Test(priority=67,enabled=true)
+//@Test(priority=67,enabled=true)
 	public void locborrowregsavedeny() throws Exception{
 		FileName=  "LOC_BorrowerRegistration_Save_Deny.xls";
 		test=reports.startTest("LOC_BorrowerRegistration_Save_Deny","Login-->Home Screen-->Borrower Registration-->Check Deny");
@@ -870,7 +866,7 @@ public class CSR {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 
-@Test(priority=68,enabled=true)
+//@Test(priority=68,enabled=true)
 	public void locborrowregsaveexit() throws Exception{
 		FileName=  "LOC_BorrowerRegistration_Save_Exit.xls";
 		test=reports.startTest("LOC_BorrowerRegistration_Save_Exit","Login-->Home Screen-->Borrower Registration-->Verify Save&Exit");
@@ -897,7 +893,7 @@ public class CSR {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 	
-@Test(priority=69,enabled=true)
+//@Test(priority=69,enabled=true)
 	public void loceditborrowregsaveexit() throws Exception{
 		FileName=  "LOC_EditBorrowerRegistration_Save_Exit.xls";
 		test=reports.startTest("LOC_EditBorrowerRegistration_Save_Exit","Login-->Home Screen-->Borrower Registration-->Save&Exit--->Login-->Edit Borrower-->Save&Exit-->Verify Customer Updated");
@@ -926,7 +922,7 @@ public class CSR {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 
-@Test(priority=70,enabled=true)
+//@Test(priority=70,enabled=true)
 	public void loceditborrowregsavenext() throws Exception{
 		FileName=  "LOC_EditBorrowerRegistration_Save_Next.xls";
 		test=reports.startTest("LOC_EditBorrowerRegistration_Save_Next","Login-->Home Screen-->Borrower Registration-->Save&Next--->Login-->Edit Borrower-->Save&Next");
@@ -955,7 +951,7 @@ public class CSR {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}	
 	
-@Test(priority=71,enabled=true)
+//@Test(priority=71,enabled=true)
 	public void loceditborrowregsaveloan() throws Exception{
 		FileName=  "LOC_EditBorrowerRegistration_Save_Loan.xls";
 		test=reports.startTest("LOC_EditBorrowerRegistration_Save_Loan","Login-->Home Screen-->Borrower Registration-->Save&Loan-->Verify New Loan Screen Display--->Login-->Edit Borrower-->Save&Loan-->Verify NewLoan Screen Displayed");
@@ -984,7 +980,7 @@ public class CSR {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}	
 
-@Test(priority=72,enabled=true)
+//@Test(priority=72,enabled=true)
 public void locborrowregsaveexiteditssn() throws Exception{
 	FileName=  "LOC_EditBorrowerRegistration_Save_Exit_EditSSN.xls";
 	test=reports.startTest("LOC_EditBorrowerRegistration_Save_Exit_EditSSN","Login-->Home Screen-->Borrower Registration-->Save and Exit-->Edit SSN");
@@ -1015,7 +1011,7 @@ public void locborrowregsaveexiteditssn() throws Exception{
 		}}}	    
 
 	
-@Test(priority=73,enabled=true)
+//@Test(priority=73,enabled=true)
 	public void CSRBorrowerRegistration() throws Exception{
 		FileName=  "TLP_CoBorrowerRegestration.xls";
 		test=reports.startTest("TLP_CoBorrower Registration_Complete NewLoan","Login-->Home Screen-->Borrower Registration-->NewLoan Screen-->Co-Borrower-->Complete New Loan");
@@ -1050,7 +1046,7 @@ public void locborrowregsaveexiteditssn() throws Exception{
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 	
-@Test(priority=74,enabled=true)
+//@Test(priority=74,enabled=true)
 	public void CSRCoBorrowerRegistrationsavenext() throws Exception{
 		FileName=  "TLP_CoBorrowerRegestration_Save_Next.xls";
 		test=reports.startTest("TLP_CoBorrowerRegestration_Save_Next","Login-->Home Screen-->Borrower Registration-->NewLoan Screen-->Co-Borrower-->Save and Next");
@@ -1083,7 +1079,7 @@ public void locborrowregsaveexiteditssn() throws Exception{
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 	
-@Test(priority=75,enabled=true)
+//@Test(priority=75,enabled=true)
 	public void CSRCoBorrowerRegistrationsaveloan() throws Exception{
 		FileName=  "TLP_CoBorrowerRegestration_Save_Loan.xls";
 		test=reports.startTest("TLP_CoBorrowerRegestration_Save_Loan","Login-->Home Screen-->Borrower Registration-->NewLoan Screen-->Co-Borrower-->Save and Loan-->Verify New Loan Screen");
@@ -1116,7 +1112,7 @@ public void locborrowregsaveexiteditssn() throws Exception{
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 	
-@Test(priority=76,enabled=true)
+//@Test(priority=76,enabled=true)
 	public void CSRCoBorrowerRegistrationsavedeny() throws Exception{
 		FileName=  "TLP_CoBorrowerRegestration_Deny.xls";
 		test=reports.startTest("TLP_CoBorrowerRegestration_Deny","Login-->Home Screen-->Borrower Registration-->NewLoan Screen-->Co-Borrower-->Deny");
@@ -1149,7 +1145,7 @@ public void locborrowregsaveexiteditssn() throws Exception{
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 	
-@Test(priority=77,enabled=true)
+//@Test(priority=77,enabled=true)
 	public void CSRCoBorrowerRegistrationsaveexit() throws Exception{
 		FileName=  "TLP_CoBorrowerRegestration_Save_Exit.xls";
 		test=reports.startTest("TLP_CoBorrowerRegestration_Save_Exit","Login-->Home Screen-->Borrower Registration-->NewLoan Screen-->Co-Borrower-->Save and Exit");
@@ -1187,7 +1183,7 @@ public void locborrowregsaveexiteditssn() throws Exception{
 //***************************************************************/JD-Set/************************************************************//	
 	
 	
-@Test(priority=78,enabled=true)
+//@Test(priority=78,enabled=true)
 public static void QC_NE_PDL_Txn() throws Exception {
 	try
 	{			
@@ -1235,7 +1231,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 
 	}
 }
-	@Test(priority=79,enabled=true)
+	//@Test(priority=79,enabled=true)
 	public static void QC_LA_PDL_Txn() throws Exception {
 		try
 		{			
@@ -1283,7 +1279,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 
 		}
 }
-	@Test(priority=80,enabled=true)
+	//@Test(priority=80,enabled=true)
 	public static void QC_NV_PDL_Txn() throws Exception {
 		try
 		{			
@@ -1331,7 +1327,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 
 		}
 }
-	@Test(priority=81,enabled=true)
+	//@Test(priority=81,enabled=true)
 	public static void QC_MO_PDL_Txn() throws Exception {
 		try
 		{			
@@ -1379,7 +1375,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 
 		}
 }
-	@Test(priority=82,enabled=true)
+	//@Test(priority=82,enabled=true)
 	public static void QC_WI_ILP_Txn() throws Exception {
 		try
 		{			
@@ -1427,7 +1423,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 
 		}
 }
-	@Test(priority=83,enabled=true)
+	//@Test(priority=83,enabled=true)
 	public static void QC_NM_ILP_Txn() throws Exception {
 		try
 			{			
@@ -1476,7 +1472,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 				}
 		}
 			
-			@Test(priority=84,enabled=true)
+			//@Test(priority=84,enabled=true)
 			public static void QC_MO_ILP_Txn() throws Exception {
 				try
 				{			
@@ -1524,7 +1520,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 
 				}
 		}
-			@Test(priority=85,enabled=true)
+			//@Test(priority=85,enabled=true)
 			public static void QC_MO_TLP_Txn() throws Exception {
 				try
 				{			
@@ -1572,7 +1568,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 
 				}
 		}
-			@Test(priority=86,enabled=true)
+			//@Test(priority=86,enabled=true)
 			public static void QC_NM_TLP_Txn() throws Exception {
 				try
 				{			
@@ -1620,7 +1616,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 
 				}
 		}
-			@Test(priority=87,enabled=true)
+			//@Test(priority=87,enabled=true)
 			public static void QC_NV_TLP_Txn() throws Exception {
 				try
 				{			
@@ -1668,7 +1664,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 
 				}
 		}
-			@Test(priority=88,enabled=true)
+			//@Test(priority=88,enabled=true)
 			public static void QC_KS_LOC_Txn() throws Exception {
 				try
 				{			
@@ -1758,11 +1754,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 
 	
 
-<<<<<<< HEAD
 //@Test(priority=40,enabled=true)
-=======
-@Test(priority=40,enabled=false)
->>>>>>> brahmith1.1
 	public void LOC_History() throws Exception{
 		FileName="QC_LOC_Payment_Refinance.xls";
 		test=reports.startTest("LOC_History","Login-->History");
@@ -1786,11 +1778,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 				CSRLoginLogout.logout();	
 	
 			}}}
-<<<<<<< HEAD
 	//@Test(priority=39,enabled=true)
-=======
-	@Test(priority=39,enabled=false)
->>>>>>> brahmith1.1
 	public void LOC_Payoff() throws Exception{
 		FileName="QC_LOC_Payment_Refinance.xls";
 		test=reports.startTest("LOC_Refinance","Login-->Payoff");
@@ -1815,11 +1803,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 	
 			}}}
 	
-<<<<<<< HEAD
 	//@Test(priority=38,enabled=true)
-=======
-	@Test(priority=38,enabled=false)
->>>>>>> brahmith1.1
 	public void LOC_Payment() throws Exception{
 		FileName="QC_LOC_Payment_Refinance.xls";
 		test=reports.startTest("LOC_Payment","Login-->Payment");
@@ -1845,11 +1829,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 	
 			}}}
 	
-<<<<<<< HEAD
 	//@Test(priority=37,enabled=true)
-=======
-	@Test(priority=37,enabled=false)
->>>>>>> brahmith1.1
 	public void LOC_NewLoan() throws Exception{
 		FileName="QC_LOC_Payment_Refinance.xls";
 		test=reports.startTest("LOC_NewLoan","Login-->NewLoan");
@@ -1873,11 +1853,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 	
 			}}}
 	
-<<<<<<< HEAD
 	//@Test(priority=36,enabled=true)
-=======
-	@Test(priority=36,enabled=false)
->>>>>>> brahmith1.1
 	public void LOC_BorrowerReg() throws Exception{
 		FileName="QC_LOC_Payment_Refinance.xls";
 		test=reports.startTest("LOC_BorrowerRegistration","Login-->BorrowerRegistration");
@@ -1904,11 +1880,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 	
 //*****************************************************TLP************************************************
 	
-<<<<<<< HEAD
 	//@Test(priority=35,enabled=true)
-=======
-	@Test(priority=35,enabled=false)
->>>>>>> brahmith1.1
 	public void HistoryTLp() throws Exception{
 		FileName=  "TLPnewloan2.xls";
 		test=reports.startTest("TLP_History","Login-->Transactions-->History");
@@ -1934,11 +1906,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 	
-<<<<<<< HEAD
 		//@Test(priority=34,enabled=true)
-=======
-		@Test(priority=34,enabled=false)
->>>>>>> brahmith1.1
 		
 			public void TLPBuyback() throws Exception{
 				FileName=  "TLPnewloan2.xls";
@@ -1976,11 +1944,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 						
 						test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 					}}}
-<<<<<<< HEAD
 	//@Test(priority=33,enabled=true)
-=======
-	@Test(priority=33,enabled=false)
->>>>>>> brahmith1.1
 		public void TLPRefinance() throws Exception{
 			FileName=  "TLPnewloan.xls";
 			test=reports.startTest("TLP_Refinance","Login-->Home Screen-->Refinance");
@@ -2009,11 +1973,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 					test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 				}}}
 	
-<<<<<<< HEAD
 	//@Test(priority=32,enabled=true)
-=======
-	@Test(priority=32,enabled=false)
->>>>>>> brahmith1.1
 	public void TLPPayment() throws Exception{
 		FileName=  "TLPnewloan.xls";
 		test=reports.startTest("TLP_Payment","Login-->Home Screen-->Payment");
@@ -2046,11 +2006,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 	
 	
 	
-<<<<<<< HEAD
 	//@Test(priority=31,enabled=true)
-=======
-	@Test(priority=31,enabled=false)
->>>>>>> brahmith1.1
 	public void TLPnewLoan() throws Exception{
 		FileName=  "TLPnewloan.xls";
 		test=reports.startTest("QC_TLP_NewLoan","Login-->Home Screen-->NewLoan");
@@ -2078,11 +2034,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 	
 	
 
-<<<<<<< HEAD
 	//@Test(priority=30,enabled=true)
-=======
-	@Test(priority=30,enabled=false)
->>>>>>> brahmith1.1
 	public void TLPborrowreg() throws Exception{
 		FileName=  "TLPnewloan.xls";
 		test=reports.startTest("TLP_Borrower Registration","Login-->Home Screen-->Borrower Registration");
@@ -2111,11 +2063,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 	
 	//-------------------------------------------------------------------------------------------------------------------------
 	
-<<<<<<< HEAD
 	//@Test(priority=29,enabled=true)
-=======
-	@Test(priority=29,enabled=false)
->>>>>>> brahmith1.1
 	public void DailyTransactionJournal() throws Exception{
 		FileName=  "TLPnewloan.xls";
 		test=reports.startTest("DailyTransactionJournal","Login-->Home Screen-->NewLoan");
@@ -2207,11 +2155,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 			}}}
 	
 
-<<<<<<< HEAD
 	//@Test(priority=27,enabled=true)
-=======
-	@Test(priority=27,enabled=false)
->>>>>>> brahmith1.1
 	public void Collections() throws Exception {
 
 		FileName=  "ILP_BorrowerRegistration_NewLoan.xls";
@@ -2318,11 +2262,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 
 			}}CSRLoginLogout.logout ();}
 
-<<<<<<< HEAD
 	//@Test(priority=28,enabled=true)
-=======
-	@Test(priority=28,enabled=false)
->>>>>>> brahmith1.1
 	public void CourtesyCalls() throws Exception {
 
 		FileName=  "ILP_BorrowerRegistration_NewLoan.xls";
@@ -2442,11 +2382,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 //---------------------------------------ILP---------------------------------------------------------------------	
 	
 	//*****************************************************ILP*********************************************
-<<<<<<< HEAD
 	//@Test(priority=26,enabled=true)
-=======
-	@Test(priority=26,enabled=false)
->>>>>>> brahmith1.1
 	public void HistoryILp() throws Exception{
 		FileName=  "ILP_BorrowerRegistration_NewLoan.xls";
 		test=reports.startTest("ILP_History","Login-->Transactions-->History");
@@ -2471,11 +2407,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
-<<<<<<< HEAD
 	//@Test(priority=25,enabled=true)
-=======
-	@Test(priority=25,enabled=false)
->>>>>>> brahmith1.1
 	public void ILPpayoff() throws Exception{
 		FileName=  "ILP_BorrowerRegistration_NewLoan.xls";
 		test=reports.startTest("ILP_Buyback","Login-->Age the Store-->payment-->Buyback");
@@ -2503,11 +2435,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 
-<<<<<<< HEAD
 	//@Test(priority=24,enabled=true)
-=======
-	@Test(priority=24,enabled=false)
->>>>>>> brahmith1.1
 	public void ILPRefinance() throws Exception{
 		FileName=  "ILP_BorrowerRegistration_NewLoan.xls";
 		test=reports.startTest("ILP_Refinance","Login-->Transactions-->Refinance");
@@ -2533,11 +2461,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 
-<<<<<<< HEAD
 	//@Test(priority=23,enabled=true)
-=======
-	@Test(priority=23,enabled=false)
->>>>>>> brahmith1.1
 	public void ILPpayment() throws Exception{
 		FileName=  "ILP_BorrowerRegistration_NewLoan.xls";
 		test=reports.startTest("ILP_Payment","Login-->Age the store to due date-->payment");
@@ -2565,11 +2489,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 			}}}
 
 
-<<<<<<< HEAD
 	//@Test(priority=22,enabled=true)
-=======
-	@Test(priority=22,enabled=false)
->>>>>>> brahmith1.1
 	public void ILPnewLoan() throws Exception{
 		FileName=  "ILP_BorrowerRegistration_NewLoan.xls";
 		test=reports.startTest("ILP_NewLoan","Login-->Transactions-->NewLoan");
@@ -2596,11 +2516,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 			}}}
 
 
-<<<<<<< HEAD
 	//@Test(priority=21,enabled=true)
-=======
-	@Test(priority=21,enabled=false)
->>>>>>> brahmith1.1
 	public void ILPborrowreg() throws Exception{
 		FileName=  "ILP_BorrowerRegistration_NewLoan.xls";
 		test=reports.startTest("ILP_Borrower Registration","Login-->Home Screen-->Borrower Registration");
@@ -2628,11 +2544,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 
 
 	//**************************************PDL****************************************************************************
-<<<<<<< HEAD
 	//@Test(priority=14,enabled=true)
-=======
-	@Test(priority=14,enabled=false)
->>>>>>> brahmith1.1
 	public void borrowreg() throws Exception{
 		FileName=  "QC_BorrowerRegistration_NewLoan.xls";
 		test=reports.startTest("PDL_Borrower Registration","Login-->Home Screen-->Borrower Registration");
@@ -2658,11 +2570,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 
-<<<<<<< HEAD
 	//@Test(priority=15,enabled=true)
-=======
-	@Test(priority=15,enabled=false)
->>>>>>> brahmith1.1
 	public void newLoan() throws Exception{
 		FileName=  "QC_BorrowerRegistration_NewLoan.xls";
 		test=reports.startTest("PDL_NewLoan","Login-->Transactions-->NewLoan");
@@ -2688,11 +2596,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 				test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 			}}}
 
-<<<<<<< HEAD
 	//@Test(priority=16,enabled=true)
-=======
-	@Test(priority=16,enabled=false)
->>>>>>> brahmith1.1
 
 	public void search() throws Exception{
 
@@ -2878,11 +2782,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 
 
 
-<<<<<<< HEAD
 	//@Test(priority=17,enabled=true)
-=======
-	@Test(priority=17,enabled=false)
->>>>>>> brahmith1.1
 	public void partialpayment() throws Exception{
 		FileName=  "QC_BorrowerRegistration_NewLoan.xls";
 		test=reports.startTest("PDL_partialpayment","Login-->Home Age the store to due date-->Payment");
@@ -2912,11 +2812,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 			}}}
 
 
-<<<<<<< HEAD
 	//@Test(priority=18,enabled=true)
-=======
-	@Test(priority=18,enabled=false)
->>>>>>> brahmith1.1
 	public void refinance() throws Exception{
 		FileName=  "QC_BorrowerRegistration_NewLoan.xls";
 		test=reports.startTest("PDL_Refinance","Login-->Transactions-->Refinance");
@@ -2943,11 +2839,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 			}}}
 
 
-<<<<<<< HEAD
 	//@Test(priority=19,enabled=true)
-=======
-	@Test(priority=19,enabled=false)
->>>>>>> brahmith1.1
 	public void buyBack() throws Exception{
 		FileName=  "QC_BorrowerRegistration_NewLoan.xls";
 		test=reports.startTest("PDL_Buyback","Login-->Age the Store to due date-->Buyback");
@@ -2977,11 +2869,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 			}}}
 
 
-<<<<<<< HEAD
 	//@Test(priority=20,enabled=true)
-=======
-	@Test(priority=20,enabled=false)
->>>>>>> brahmith1.1
 	public void history() throws Exception{
 		FileName=  "QC_BorrowerRegistration_NewLoan.xls";
 		test=reports.startTest("PDL_History","Login-->Transaction-->History");
@@ -3009,11 +2897,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 
 
 	//****************************************************************************************************************************
-<<<<<<< HEAD
 	//@Test(priority=1,enabled=true)
-=======
-	@Test(priority=1,enabled=false)
->>>>>>> brahmith1.1
 
 	public void login() throws Exception{
 
@@ -3033,11 +2917,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 
 	}
 
-<<<<<<< HEAD
 	//@Test(priority=2,enabled=true)
-=======
-	@Test(priority=2,enabled=false)
->>>>>>> brahmith1.1
 
 	public void Adminlogin() throws Exception{
 
@@ -3057,11 +2937,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 	}
 
 
-<<<<<<< HEAD
 	//@Test(priority=3,enabled=true)
-=======
-	@Test(priority=3,enabled=false)
->>>>>>> brahmith1.1
 
 	public void borrower() throws Exception{
 
@@ -3278,11 +3154,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 
 	}
 
-<<<<<<< HEAD
 	//@Test(priority=4,enabled=true)
-=======
-	@Test(priority=4,enabled=false)
->>>>>>> brahmith1.1
 
 	public void borrowerSublinks() throws Exception{
 
@@ -3325,11 +3197,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 	}
 
 
-<<<<<<< HEAD
 	//@Test(priority=5,enabled=true)
-=======
-	@Test(priority=5,enabled=false)
->>>>>>> brahmith1.1
 
 	public void LoanTransactions() throws Exception{
 
@@ -3549,11 +3417,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 		test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 	}
 
-<<<<<<< HEAD
 	//@Test(priority=6,enabled=true)
-=======
-	@Test(priority=6,enabled=false)
->>>>>>> brahmith1.1
 
 	public void LoanTransactionsSbulinks() throws Exception{
 
@@ -4744,11 +4608,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 	//**********************************************************************************************
 
 
-<<<<<<< HEAD
 	//@Test(priority=7,enabled=true)
-=======
-	@Test(priority=7,enabled=false)
->>>>>>> brahmith1.1
 
 	public void MiscLoanTransactions() throws Exception{
 
@@ -4832,11 +4692,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 	}
 
 
-<<<<<<< HEAD
 	//@Test(priority=8,enabled=true)
-=======
-	@Test(priority=8,enabled=false)
->>>>>>> brahmith1.1
 
 	public void MiscLoanTransactionsSublinks() throws Exception{
 
@@ -5170,11 +5026,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 
 
 	//**********************************************************************************************
-<<<<<<< HEAD
 	//@Test(priority=9,enabled=true)
-=======
-	@Test(priority=9,enabled=false)
->>>>>>> brahmith1.1
 
 	public void cashManagement() throws Exception{
 
@@ -5269,11 +5121,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 
 	}
 
-<<<<<<< HEAD
 	//@Test(priority=10,enabled=true)
-=======
-	@Test(priority=10,enabled=false)
->>>>>>> brahmith1.1
 	public void cashManagemerntSublinks() throws Exception {
 
 		FileName = "QC_Smoke.xls";
@@ -5613,11 +5461,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 
 
 	//*********************************************************************************
-<<<<<<< HEAD
 	//@Test(priority=11,enabled=true)
-=======
-	@Test(priority=11,enabled=false)
->>>>>>> brahmith1.1
 
 	public void DailyProcessing() throws Exception{
 
@@ -5650,11 +5494,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 		test.log(LogStatus.INFO, "****Test Scenario for Smoke test is pass******");
 	}
 
-<<<<<<< HEAD
 	//@Test(priority=12,enabled=true)
-=======
-	@Test(priority=12,enabled=false)
->>>>>>> brahmith1.1
 
 	public void reports() throws Exception{
 
@@ -5803,11 +5643,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 
 	}
 
-<<<<<<< HEAD
 	//@Test(priority=13,enabled=true)
-=======
-	@Test(priority=13,enabled=false)
->>>>>>> brahmith1.1
 	public void reportsSublinks() throws Exception {
 
 		FileName = "QC_Smoke.xls";
@@ -7407,11 +7243,7 @@ public static void QC_NE_PDL_Txn() throws Exception {
 		wait = new WebDriverWait(driver, 10000);
 
 		BufferedReader reader;
-<<<<<<< HEAD
 		reader = new BufferedReader(new FileReader("D:/QC_Batch/Smoke/src/test/java/QCHome/Objects.properties"));
-=======
-		reader = new BufferedReader(new FileReader("C:/QC_Batch/Smoke/src/test/java/QCHome/Objects.properties"));
->>>>>>> brahmith1.1
 		prop = new Properties();
 
 		prop.load(reader);
