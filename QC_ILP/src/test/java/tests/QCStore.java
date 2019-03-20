@@ -1872,7 +1872,7 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 2, groups = "Ratikanta_ILP")
+	 @Test(priority = 2, groups = "Ratikanta_ILP")
 	public static void RQC_Bankruptcy_Discharge_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_Bankruptcy_Discharge"),
@@ -3283,7 +3283,7 @@ public class QCStore {
 				JQCCSRLoginLogout.logout(SSN, AppURL);
 				JQCCSRLoginLogout.login(SSN, AppURL);
 				
-				VQC_Payment.payment(SSN, AppURL);
+				/*VQC_Payment.payment(SSN, AppURL);
 				JQCCSRLoginLogout.logout(SSN, AppURL);
 				JQCCSRLoginLogout.login(SSN, AppURL);
 				VQCCSRNewLoan2.newLoan2(SSN, AppURL);
@@ -3296,7 +3296,7 @@ public class QCStore {
 				JQCCSRLoginLogout.logout(SSN, AppURL);
 				JQCCSRLoginLogout.login(SSN, AppURL);
 				JQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
-				JQCCSRLoginLogout.logout(SSN, AppURL);
+				JQCCSRLoginLogout.logout(SSN, AppURL);*/
 			/*	JQCCSRLoginLogout.login(SSN, AppURL);
 				VQC_Payment.payment2(SSN, AppURL);
 				JQCCSRLoginLogout.logout(SSN, AppURL);*/
