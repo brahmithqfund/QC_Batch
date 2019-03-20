@@ -1765,7 +1765,7 @@ public class QCStore {
 		}
 	}
 
-	// @Test(priority = 2, groups = "Ratikanta_ILP")
+	 @Test(priority = 2, groups = "Ratikanta_ILP")
 	public static void RQC_Bankruptcy_Discharge_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_Bankruptcy_Discharge"),

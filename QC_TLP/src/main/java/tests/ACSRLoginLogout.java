@@ -34,7 +34,7 @@ public class ACSRLoginLogout extends QCStore{
 					passwrd=TestData.getCellData(sheetName,"Password",row);
 					Storeid="1706";
 					
-					if(prop.getProperty("login_method").equalsIgnoreCase("local"))
+					if(Aprop.getProperty("login_method").equalsIgnoreCase("local"))
 					{
 						driver = new InternetExplorerDriver();
 					}
