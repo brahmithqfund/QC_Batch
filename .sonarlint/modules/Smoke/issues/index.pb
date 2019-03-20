@@ -21,6 +21,7 @@ g
 7Testdata/TLP_BorrowerRegistration_Save_Exit_EditSSN.xls,f\2\f2130eaed7889ec4c51152282b54926e336c1234
 _
 /Testdata/TLP_BorrowerRegistration_Save_Exit.xls,c\2\c26bba613b0e3db2603c6bb09720f362ad5d6048
+<<<<<<< HEAD
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 W
@@ -93,3 +94,7 @@ H
 Testdata/TLPnewloan2.xls,2\0\20e60daf491771bf6ce08831c8ae879d50094900
 @
 chromedriver.exe,d\0\d0b49ae29587435df3e9988b34c286a37d9a89d9
+=======
+X
+(src/main/java/QCHome/TLP_CoBorrower.java,b\2\b290e64c6f90518455464099d7999ba254b23349
+>>>>>>> Ratikanta1.1

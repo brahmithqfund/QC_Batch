@@ -152,6 +152,8 @@ public class RQCCSRDefaultPayment extends QCStore {
 		catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			
+			
 			//test.log(LogStatus.FAIL, "Default Payment is failed");
 
 		}

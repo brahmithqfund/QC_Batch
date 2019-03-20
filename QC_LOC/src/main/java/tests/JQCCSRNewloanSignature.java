@@ -173,7 +173,9 @@ public static void LOC() throws InterruptedException
 		rnum=rnum+1;
 		if(State.equals("KS")){
 			try{								
-				driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[4]/td[2]/input")).click();
+				//driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[4]/td[2]/input")).click();
+				driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[5]/td[2]/input")).click();
+				                             
 			}	
 			catch(Exception e){
 				test.log(LogStatus.PASS, "CustomerReached maximum Loan amounts");
@@ -184,18 +186,30 @@ public static void LOC() throws InterruptedException
 	}
 	test.log(LogStatus.PASS, "Product selected as "+stateProduct);
 													
-	LOCamount=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[3]/td[5]/table/tbody/tr[1]/td[2]")).getText();
+	//LOCamount=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[3]/td[5]/table/tbody/tr[1]/td[2]")).getText();
+	LOCamount=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[5]/td[5]/table/tbody/tr[1]/td[2]")).getText();
+	                                      
 	test.log(LogStatus.PASS, "LOC amount is : "+LOCamount);
 	
-	String interesrrate=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[3]/td[5]/table/tbody/tr[2]/td[2]")).getText();
+	//String interesrrate=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[3]/td[5]/table/tbody/tr[2]/td[2]")).getText();
+	String interesrrate=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[5]/td[5]/table/tbody/tr[2]/td[2]")).getText();
+	                                                 
 	test.log(LogStatus.PASS, "Interest rate is : "+interesrrate);
-	String minAmountDue=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[3]/td[5]/table/tbody/tr[3]/td[2]")).getText();
+	//String minAmountDue=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[3]/td[5]/table/tbody/tr[3]/td[2]")).getText();
+	String minAmountDue=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[5]/td[5]/table/tbody/tr[3]/td[2]")).getText();
+	                                                 
 	test.log(LogStatus.PASS, "Minimum amount due is : "+minAmountDue);
-	 Statementdate=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[3]/td[5]/table/tbody/tr[4]/td[2]")).getText();
+	 //Statementdate=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[3]/td[5]/table/tbody/tr[4]/td[2]")).getText();
+	 Statementdate=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[5]/td[5]/table/tbody/tr[4]/td[2]")).getText();
+	                                            
 	test.log(LogStatus.PASS, "Statement date is : "+Statementdate);
-	String MinLOCamount=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[3]/td[5]/table/tbody/tr[5]/td[2]")).getText();
+	//String MinLOCamount=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[3]/td[5]/table/tbody/tr[5]/td[2]")).getText();
+	String MinLOCamount=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[5]/td[5]/table/tbody/tr[5]/td[2]")).getText();
+	                                                 
 	test.log(LogStatus.PASS, "Minimum LOC amount is : "+MinLOCamount);
-	String MaxLOCamount=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[3]/td[5]/table/tbody/tr[6]/td[2]")).getText();
+	//String MaxLOCamount=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[3]/td[5]/table/tbody/tr[6]/td[2]")).getText();
+	String MaxLOCamount=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[5]/td[5]/table/tbody/tr[6]/td[2]")).getText();
+	                                                 
 	test.log(LogStatus.PASS, "Maximum Loc amount is : "+MaxLOCamount);
 
 	Thread.sleep(2000);
@@ -257,6 +271,7 @@ public static void LOC() throws InterruptedException
 		if (ESign_CollateralType.equals("SIGNATURE"))
 		{
 			String LOCamount2=driver.findElement(By.xpath("//*[@id='errorMessage']/form[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[3]/td/table/tbody/tr[7]/td[2]/input")).getAttribute("value");
+			                                               
 			test.log(LogStatus.PASS, "LOC amount is : "+LOCamount2);
 			
 			driver.findElement(By.name("advanceRequestBean.disbAmtFirst")).sendKeys(LOCamount2);
