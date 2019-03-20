@@ -220,11 +220,12 @@ public class AAgetheStore extends QCStore{
 				driver.switchTo().frame("topFrame");
 				driver.findElement(By.xpath("//*[@id='930000']/a")).click();			
 				test.log(LogStatus.PASS, "Clicked on Cash Management");
+				Thread.sleep(5000);
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");							
 				driver.findElement(By.xpath("//*[@id='988190657']/a")).click();		
 				test.log(LogStatus.PASS, "Clicked on Start Scheduler");
-				Thread.sleep(2000);
+				Thread.sleep(5000);
 
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");

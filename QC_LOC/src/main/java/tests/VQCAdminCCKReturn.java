@@ -39,10 +39,11 @@ public class VQCAdminCCKReturn extends QCStore {
 				if (SSN.equals(RegSSN)) {
 					String AdminUserName = TestData.getCellData(sheetName,"AdminUserName",row);
 					String AdminPassword = TestData.getCellData(sheetName,"AdminPassword",row);
-					//String AdminURL = TestData.getCellData(sheetName, "AdminURL", row);
+					String AdminURL = TestData.getCellData(sheetName, "AdminURL", row);
 					//String AdminURL="https://qcuat.qfund.net/cc/adminIndex.do";
 					String PIN = TestData.getCellData(sheetName,"PIN",row);
-					String StoreID = TestData.getCellData(sheetName,"StoreID",row);
+					//String StoreID = TestData.getCellData(sheetName,"StoreID",row);
+					String StoreID = vstoreid;
 					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 					String CCKReasonForReturn = TestData.getCellData(sheetName,"CCKReasonForReturn",row);
 					String Esign_CollateralType = TestData.getCellData(sheetName,"Esign_CollateralType",row);
@@ -51,7 +52,7 @@ public class VQCAdminCCKReturn extends QCStore {
 					
 					test.log(LogStatus.INFO,"Admin Application is launched For Return Posting");
 
-					if(prop.getProperty("login_method").equalsIgnoreCase("local"))
+					if(Vprop.getProperty("login_method").equalsIgnoreCase("local"))
 					{
 						driver = new InternetExplorerDriver();
 					}

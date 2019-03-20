@@ -1,4 +1,16 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
-<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1551684585519_0" label="Window Working Set" name="Aggregate for window 1551684585519"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1551960894607_0" label="Window Working Set" name="Aggregate for window 1551960894607"/>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1551949957177_0" label="Window Working Set" name="Aggregate for window 1551949957177"/>
+>>>>>>> anoop1.1
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1551939926473_0" label="Window Working Set" name="Aggregate for window 1551939926473"/>
+>>>>>>> jyothi1.2
 </workingSetManager>

@@ -159,10 +159,10 @@ public class AQCCSRReturnPosting extends QCStore {
 								.xpath("/html/body/table/tbody/tr/td/table/tbody/tr/td[1]/form/table[3]/tbody/tr/td[2]/input"))
 								.click();
 						test.log(LogStatus.PASS, "Clicked on Search Button");
-						Thread.sleep(500);
+						Thread.sleep(2500);
 						driver.findElement(By.name("CmdReturnPosting")).click();
 						test.log(LogStatus.PASS, "Clicked on Process Button");
-						Thread.sleep(5000);
+						//Thread.sleep(5000);
 						test.log(LogStatus.PASS, "ACH Files created successfully");
 						//driver.close();
 						break;

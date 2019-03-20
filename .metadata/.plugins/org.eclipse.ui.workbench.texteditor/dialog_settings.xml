@@ -8,8 +8,15 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+<<<<<<< HEAD
 			<item value="payment3"/>
 			<item value="priority = 10"/>
+=======
+			<item value="head"/>
+			<item value="dependency"/>
+			<item value="jy"/>
+			<item value="jyothi"/>
+>>>>>>> 26f8126931b7afc696e5ebd31895ac4dfa2dd77b
 		</list>
 		<list key="replacehistory">
 		</list>

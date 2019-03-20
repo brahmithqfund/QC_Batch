@@ -94,6 +94,11 @@ public class ILP_RefinanceStepup extends QCStore{
 				try{							
 					driver.findElement(By.xpath("//*[@id='documentForm']/table/tbody/tr[4]/td/input[2]")).click();
 					test.log(LogStatus.PASS, "Clicked Yes on cashOut popup");
+					//*[@id="documentForm"]/table/tbody/tr[4]/td/input[1]
+					//*[@id="documentForm"]/table/tbody/tr[4]/td/input[2]
+					/*driver.findElement(By.xpath("//input[@class='sortbuttons' and @value='No']")).click();
+					test.log(LogStatus.PASS, "Clicked No on cashOut popup");*/
+					
 				}
 				catch(Exception e){
 					//normal flow
@@ -109,7 +114,7 @@ public class ILP_RefinanceStepup extends QCStore{
 				e1.clear();
 				e1.sendKeys(paymentamount);
 				test.log(LogStatus.PASS, "Entered tender amount as  :"+paymentamount);
-
+				Thread.sleep(3000);
 
 				String stepupmsg=driver.findElement(By.xpath("//*[@id='_StepUpDown']")).getText();
 				test.log(LogStatus.PASS, "getting stepup message  :"+stepupmsg);

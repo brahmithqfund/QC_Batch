@@ -1010,7 +1010,7 @@ public class QCStore {
 					// row);
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 
-					/*QCCSRLoginLogout.login(SSN, AppURL);
+					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
@@ -1057,7 +1057,7 @@ public class QCStore {
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCNSFPayment.nsfpayment(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);*/
+					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
@@ -4471,7 +4471,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 423, enabled = true, groups = "Janaki1")
+	@Test(priority = 423, enabled = true, groups = "Janaki_WORecovery")
 	public static void JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(
@@ -4793,7 +4793,7 @@ public class QCStore {
 
 		try {
 
-			Runtime.getRuntime().exec("taskkill /F /IM IEDriverServer.exe");
+			//Runtime.getRuntime().exec("taskkill /F /IM IEDriverServer.exe");
 
 			Thread.sleep(5000); // Allow OS to kill the process
 			System.out.println("killed the process");

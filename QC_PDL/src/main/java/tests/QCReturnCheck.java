@@ -113,7 +113,7 @@ public class QCReturnCheck extends QCStore{
 						    driver.findElement(By.name("button")).click();   
 						    test.log(LogStatus.PASS, "Clicked on Submit Button");
 						    String req_loan_number=driver.findElement(By.xpath("/html/body/table/tbody/tr/td/table[2]/tbody/tr[4]/td[5]")).getText();
-loan_nbr="10310914";
+//loan_nbr="10310914";
 						    Thread.sleep(3000);
 						    if(loan_nbr.toLowerCase().trim().equalsIgnoreCase(req_loan_number.toLowerCase().trim()))
 						    {

@@ -5,7 +5,7 @@
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="QC_TLP"/>
 <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
 <listAttribute key="org.testng.eclipse.SUITE_TEST_LIST">
-<listEntry value="E:\QC_Batch\QC_TLP\testng.xml"/>
+<listEntry value="C:\QC_Batch\QC_TLP\testng.xml"/>
 </listAttribute>
 <intAttribute key="org.testng.eclipse.TYPE" value="3"/>
 </launchConfiguration>

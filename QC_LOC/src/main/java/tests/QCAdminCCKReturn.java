@@ -50,16 +50,29 @@ public class QCAdminCCKReturn extends QCStore {
 			
 					test.log(LogStatus.INFO,"Reading encryption details from Admin has initiated");
 
+					Thread.sleep(3000);
 
 
+					driver.switchTo().defaultContent();
 
-		driver.switchTo().defaultContent();
+					driver.switchTo().frame("topFrame");
+					
+					Thread.sleep(2000);
+
+					driver.findElement(By.xpath("//*[@id='500000']/a")).click();
+
+					test.log(LogStatus.PASS, "Clicked on Transaction tab");
+
+
+		/*driver.switchTo().defaultContent();
 
 		driver.switchTo().frame("topFrame");
-
-		driver.findElement(By.xpath("//*[@id='500000']/a")).click(); 
-		Thread.sleep(1000);
-		test.log(LogStatus.PASS, "Clicked on Transaction tab");
+		
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("//*[@id='500000']/a")).click();
+		//driver.findElement(By.linkText("Transactions")).click();
+		//Thread.sleep(3000);
+		test.log(LogStatus.PASS, "Clicked on Transaction tab");*/
 		
 		Thread.sleep(3000);
 		
@@ -78,6 +91,7 @@ public class QCAdminCCKReturn extends QCStore {
 				
 			
 			driver.findElement(By.linkText("Payment Check Return Posting")).click();
+			//driver.findElement(By.xpath("//*[@id='509004']/a")).click();
 
 			test.log(LogStatus.PASS, "Clicked on Payment Check Return Posting link");
 			
@@ -89,9 +103,9 @@ public class QCAdminCCKReturn extends QCStore {
 			
 			test.log(LogStatus.PASS, "Store nbr entered is :" +StoreID);
 		
-			//loan_nbr="10207070";
+			//loan_nbr="10311720";
 			driver.findElement(By.name("requestBean.loanNo")).sendKeys(loan_nbr);
-			
+						
 			test.log(LogStatus.PASS, "Loan nbr entered is :" +loan_nbr);
 			
 			driver.findElement(By.name("requestBean.pmtTenderType")).sendKeys(TenderType);

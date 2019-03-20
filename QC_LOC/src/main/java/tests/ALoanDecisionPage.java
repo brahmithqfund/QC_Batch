@@ -159,7 +159,7 @@ public class ALoanDecisionPage extends QCStore{
 						{
 							rnum=rnum+1;
 							if(State.equals("KS")){
-								String s1=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[4]/td[3]")).getText();
+								String s1=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[3]/td[2]")).getText();
 								if(s1.trim().equalsIgnoreCase("Eligible")){								
 									//driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[4]/td[2]/input")).click();
 									
@@ -167,18 +167,18 @@ public class ALoanDecisionPage extends QCStore{
 									
 									String LOCamount=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[3]/td[5]/table/tbody/tr[1]/td[2]")).getText();
 									test.log(LogStatus.PASS, "LOC amount is : "+LOCamount);
-									String interesrrate=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[4]/td[5]/table/tbody/tr[2]/td[2]")).getText();
+									String interesrrate=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[3]/td[5]/table/tbody/tr[2]/td[2]")).getText();
 									test.log(LogStatus.PASS, "Interest rate is : "+interesrrate);
-									String minAmountDue=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[4]/td[5]/table/tbody/tr[3]/td[2]")).getText();
+									String minAmountDue=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[3]/td[5]/table/tbody/tr[3]/td[2]")).getText();
 									test.log(LogStatus.PASS, "Minimum amount due is : "+minAmountDue);
-									 Statementdate=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[4]/td[5]/table/tbody/tr[4]/td[2]")).getText();
+									 Statementdate=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[3]/td[5]/table/tbody/tr[4]/td[2]")).getText();
 									test.log(LogStatus.PASS, "Statement date is : "+Statementdate);
-									String MinLOCamount=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[4]/td[5]/table/tbody/tr[5]/td[2]")).getText();
+									String MinLOCamount=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[3]/td[5]/table/tbody/tr[5]/td[2]")).getText();
 									test.log(LogStatus.PASS, "Minimum LOC amount is : "+MinLOCamount);
-									String MaxLOCamount=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[4]/td[5]/table/tbody/tr[6]/td[2]")).getText();
+									String MaxLOCamount=driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[3]/td[5]/table/tbody/tr[6]/td[2]")).getText();
 									test.log(LogStatus.PASS, "Maximum Loc amount is : "+MaxLOCamount);
 
-									if(minAmountDue.equals("719.50")||minAmountDue.equals("50.00")){
+									if(minAmountDue.equals("718.75")||minAmountDue.equals("50.00")){
 										test.log(LogStatus.PASS, " Minimum amount due Condition satisfied ");
 										driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[4]/td[2]/input")).click();
 										driver.findElement(By.id("LoanButtonId")).click();

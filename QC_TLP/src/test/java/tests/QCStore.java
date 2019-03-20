@@ -1124,7 +1124,7 @@ public class QCStore {
 	}
 
 	// Date: 01/02/2018
-	@Test(priority = 206, enabled = true, groups = "Janaki")
+	@Test(priority = 206, enabled = true, groups = "Janaki_EOD_set1")
 
 	public static void JQC_TLP_Deceased_Txn() throws Exception {
 		try {
@@ -2107,7 +2107,7 @@ public class QCStore {
 
 		try {
 
-			Runtime.getRuntime().exec("taskkill /F /IM IEDriverServer.exe");
+			//Runtime.getRuntime().exec("taskkill /F /IM IEDriverServer.exe");
 
 			Thread.sleep(5000); // Allow OS to kill the process
 			System.out.println("killed the process in TLP");

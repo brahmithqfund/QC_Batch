@@ -45,9 +45,11 @@ public class QCCSRLoginLogout extends QCStore
 					String RegSSN = TestData.getCellData(sheetName,"SSN",row);
 					//String csr_url = TestData.getCellData(sheetName,"AppURL",row);
 
-					String username = TestData.getCellData(sheetName,"UserName",row);
-					String password = TestData.getCellData(sheetName,"Password",row);
-					String store_id = TestData.getCellData(sheetName,"StoreID",row);
+					String username = busername;
+							//TestData.getCellData(sheetName,"UserName",row);
+					String password =TestData.getCellData(sheetName,"Password",row);
+					String store_id = bstoreid;
+					//TestData.getCellData(sheetName,"StoreID",row);
 					
 
 
@@ -100,8 +102,8 @@ public class QCCSRLoginLogout extends QCStore
 				        //Click Login Button
 				        driver.findElement(locator(prop.getProperty("csr_login_button"))).click();
 				        test.log(LogStatus.PASS, "Clicked on login button");
-				        
-				       Thread.sleep(2000);
+
+				       Thread.sleep(9000);
 				       break;
 }
 					
@@ -173,7 +175,7 @@ public static void logout(String SSN,String AppURL){
 				{
 				String UserName = TestData.getCellData(sheetName,"AdminUserName",row);
 				String Password = TestData.getCellData(sheetName,"AdminPassword",row);
-				//String AdminURL = TestData.getCellData(sheetName,"AdminURL",row);
+				String AdminURL = TestData.getCellData(sheetName,"AdminURL",row);
 				
 
 				//test.log(LogStatus.INFO, MarkupHelper.createLabel("Admin Application is launched", ExtentColor.BLUE));
@@ -211,6 +213,9 @@ public static void logout(String SSN,String AppURL){
 				driver.findElement(By.name("login")).click();
 
 				test.log(LogStatus.PASS, "Clicked on Submit button");
+				Thread.sleep(5000);
+				driver.get(csrloginpage);
+				Thread.sleep(3000);
 				break;
 
 }
@@ -220,7 +225,7 @@ public static void logout(String SSN,String AppURL){
 	catch (Exception e) {
 		// TODO Auto-generated catch block
 		//test.log(LogStatus.FAIL, MarkupHelper.createLabel("CSR login is failed", ExtentColor.RED));
-		test.log(LogStatus.FAIL,"Admin login is failed");
+		//test.log(LogStatus.FAIL,"Admin login is failed");
 
 
 		e.printStackTrace();

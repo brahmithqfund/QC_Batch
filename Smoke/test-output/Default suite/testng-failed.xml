@@ -6,9 +6,23 @@
       <class name="QCHome.CSR">
         <methods>
           <include name="getResult"/>
-          <include name="NewLoanVeritec"/>
+<<<<<<< HEAD
+          <include name="TLPBuyback"/>
           <include name="endReport"/>
+          <include name="HistoryTLp"/>
+=======
+          <include name="QC_NM_TLP_Txn"/>
+          <include name="ilpeditborrowregsavenext"/>
+          <include name="NewLoanVeritec"/>
+          <include name="borrowregsaveloan"/>
+          <include name="borrowregsavenext"/>
+          <include name="locborrowregsaveexiteditssn"/>
+          <include name="endReport"/>
+          <include name="CSRBorrowerRegistration"/>
+          <include name="editborrowregsavenext"/>
+>>>>>>> brahmith1.1
           <include name="setup"/>
+          <include name="loceditborrowregsavenext"/>
         </methods>
       </class> <!-- QCHome.CSR -->
     </classes>

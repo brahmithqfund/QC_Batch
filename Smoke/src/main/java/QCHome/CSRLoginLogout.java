@@ -45,7 +45,8 @@ public class CSRLoginLogout extends CSR{
 
 					test.log(LogStatus.INFO, "<FONT color=green> Login Sucessfully");
 					test.log(LogStatus.INFO, "******************************************************** ");
-break;
+Thread.sleep(2000);
+					break;
 				}	
 
 			}

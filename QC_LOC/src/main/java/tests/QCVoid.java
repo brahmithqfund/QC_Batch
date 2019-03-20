@@ -140,7 +140,8 @@ public class QCVoid extends QCStore{
 							//do what you normally would if you didn't have the alert.
 						}
 						Thread.sleep(4000);
-						if(driver.findElement(By.xpath("//input[@class='sortbuttons' and @value='Ok']")).isDisplayed())
+						//if(driver.findElement(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr[3]/td/b/input[1]")).isDisplayed())
+						//if(driver.findElement(By.xpath("//input[@class='sortbuttons' and @value='Ok']")).isDisplayed())
 						{
 						test.log(LogStatus.PASS, "Void transaction is successfully");
 						}
