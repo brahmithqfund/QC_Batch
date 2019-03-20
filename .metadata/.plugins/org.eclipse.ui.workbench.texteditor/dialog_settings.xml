@@ -9,7 +9,17 @@
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
 			<item value="Jyothi"/>
+<<<<<<< HEAD
 			<item value="Ratikanta"/>
+=======
+			<item value="prop.getProperty"/>
+			<item value="Anoop"/>
+			<item value="Janaki"/>
+			<item value="jyot"/>
+			<item value="V"/>
+			<item value="Ratikanta"/>
+			<item value="//@Test"/>
+>>>>>>> Ratikanta1.1
 		</list>
 		<list key="replacehistory">
 		</list>

@@ -1414,7 +1414,7 @@ public class QCStore {
 
 	// Anoop scenariso
 
-	@Test(priority = 310,enabled=true,groups="Anoop_bankruptcy")
+	//@Test(priority = 310,enabled=true,groups="Anoop_bankruptcy")
 	// This is date dependent so needs to run on 01/02/2018
 	public void TLP_bankruptcyDismiss() throws Exception {
 
@@ -1465,7 +1465,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 309,enabled=true,groups="Anoop_writeoff")
+	//@Test(priority = 309,enabled=true,groups="Anoop_writeoff")
 	// This is date dependent so needs to run on 01/02/2018
 	public void TLP_bankruptcyWriteOff() throws Exception {
 
@@ -1515,7 +1515,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 300,enabled=true,groups="Anoop_st_void")
+	//@Test(priority = 300,enabled=true,groups="Anoop_st_void")
 	// Date will be /03/12/218
 	public void TLP_RefinanceStepDownVoid() throws Exception {
 
@@ -1568,7 +1568,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 310,enabled=true,groups="Anoop_st_down")
+	//@Test(priority = 310,enabled=true,groups="Anoop_st_down")
 	// Date will be /03/12/218
 	public void TLP_RefinanceStepDown() throws Exception {
 

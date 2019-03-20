@@ -15,12 +15,20 @@
    <!-- <include name="Janaki_EOD_set2"/> -->
    
  	<!-- Anoop group-->
+<<<<<<< HEAD
  <!--   <include name="Anoop"/> -->
    <!-- <include name="Anoop_bankruptcy"/> -->
 
   <!--  <include name="Anoop_writeoff"/>
    <include name="Anoop_st_void"/>
    <include name="Anoop_st_down"/> -->
+=======
+   <include name="Anoop"/>
+  <!--  <include name="Anoop_bankruptcy"/> -->
+  <!--  <include name="Anoop_writeoff"/>-->
+   <!-- <include name="Anoop_st_void"/> -->
+   <!--<include name="Anoop_st_down"/> -->
+>>>>>>> Ratikanta1.1
 
 
   </run> 
