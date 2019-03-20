@@ -1765,7 +1765,7 @@ public class QCStore {
 		}
 	}
 
-	 @Test(priority = 2, groups = "Ratikanta_ILP")
+	// @Test(priority = 2, groups = "Ratikanta_ILP")
 	public static void RQC_Bankruptcy_Discharge_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_Bankruptcy_Discharge"),
@@ -1933,6 +1933,7 @@ public class QCStore {
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 
 					System.out.println(AppURL);
+					
 					RQCCSRLoginLogout.login(SSN, AppURL);
 					RQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					RQCCSRLoginLogout.logout(SSN, AppURL);
@@ -2097,7 +2098,7 @@ public class QCStore {
 		}
 	}
 
-	 @Test(priority = 7, groups = "Ratikanta_ILP")
+	@Test(priority = 7, groups = "Ratikanta_ILP")
 	public static void RQC_WriteOffRecovery_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_WriteOffRecovery"),
@@ -2293,6 +2294,107 @@ public class QCStore {
 		}
 	}
 
+	 @Test(priority = 10, groups = "Ratikanta_ILP")
+		public static void RQC_3Payments_Refinance_StepUp_Txn_Testdata() throws Exception {
+			try {
+				test = reports.startTest(("QC_3Payments_Refinance_StepUp"),
+
+						"Login->Borrower Registration->New Loan->Payment-->Refinance");
+				String FileName = "QC_3Payments_Refinance_StepUp_Txn_Testdata.xls";
+				// String FileName=
+				// Rprop.getProperty("QC_DefaultPayment_Txn_Testdata_Scenario")+".xls";
+				// ExcelNew TestData;
+				TestData = new ExcelNew(System.getProperty("user.dir")
+						+ Rprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
+
+				// test=reports.startTest("Lend Nation Smoke_testing","Lend Nation
+				// Application test report");
+
+				// String FileName= "Registration_Lend_Nation.xls";
+				// Excel TestData = new
+				// ExcelNew(System.getProperty("user.dir")+"/TestData/LendNation/"+FileName);
+				// int lastrow=TestData.getLastRow("Start");
+				int lastrow = TestData.getLastRow("Start");
+				String sheetName = "Start";
+				// int lastrow=TestData.getLastRow("Borrower");
+				System.out.println(lastrow);
+				for (int row = 2; row <= lastrow; row++) {
+
+					String RunFlag = TestData.getCellData(sheetName, "Run", row);
+					// System.out.println(RunFlag);
+					if (RunFlag.equals("Y")) {
+						// driver.get(appUrl);
+						// test.log(LogStatus.INFO, "Application is launched");
+						// driver.manage().window().maximize();
+						String AppURL = TestData.getCellData(sheetName, "AppURL", row);
+						String SSN = TestData.getCellData(sheetName, "SSN", row);
+
+						System.out.println(AppURL);
+
+						RQCCSRLoginLogout.login(SSN, AppURL);
+						RQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+						RQCCSRLoginLogout.logout(SSN, AppURL);
+						
+						RQCCSRLoginLogout.login(SSN, AppURL);
+						RQCCSRNewLoan.newLoan(SSN, AppURL);
+						RQCCSRLoginLogout.logout(SSN, AppURL);
+						
+						RQCCSRLoginLogout.login(SSN, AppURL);
+						RQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
+						
+						RQCCSRLoginLogout.login(SSN, AppURL);
+						RQCPayment.payment(SSN, AppURL);
+						RQCCSRLoginLogout.logout(SSN, AppURL);
+						
+						RQCCSRLoginLogout.login(SSN, AppURL);
+						RQCCSRNewLoan2.newLoan2(SSN, AppURL);
+						RQCCSRLoginLogout.logout(SSN, AppURL);
+						
+						RQCCSRLoginLogout.login(SSN, AppURL);
+						RQCAgeStoreGraceDays.ageStoreGraceDays2ndTime(SSN, AppURL);
+						
+						RQCCSRLoginLogout.login(SSN, AppURL);
+						RQCPayment.payment1(SSN, AppURL);
+						RQCCSRLoginLogout.logout(SSN, AppURL);
+						
+						RQCCSRLoginLogout.login(SSN, AppURL);
+						RQCAgeStoreGraceDays.ageStoreGraceDays3rdTime(SSN, AppURL);
+						
+						RQCCSRLoginLogout.login(SSN, AppURL);
+						RQCPayment.payment2(SSN, AppURL);
+						RQCCSRLoginLogout.logout(SSN, AppURL);
+						
+						RQCCSRLoginLogout.login(SSN, AppURL);
+						RQCAgeStoreGraceDays.ageStoreGraceDays4thTime(SSN, AppURL);
+						
+						RQCCSRLoginLogout.login(SSN, AppURL);
+						RQCPayment.payment3(SSN, AppURL);
+						RQCCSRLoginLogout.logout(SSN, AppURL);
+						
+						RQCCSRLoginLogout.login(SSN, AppURL);
+						QC_Edit_BorrowRegestration.editborrower_saveexit(SSN, AppURL);
+						RQCCSRLoginLogout.logout(SSN, AppURL);
+						
+						/*RQCCSRLoginLogout.login(SSN, AppURL);
+						RQCRefinance.StepUp(SSN, AppURL);
+						RQCCSRLoginLogout.logout(SSN, AppURL);*/
+						
+
+					}
+				}
+			}
+
+			catch (Exception e) {
+				System.out.println("under catch of Test" + e);
+				String screenshotPath = getScreenhot(driver, "RQC_3Payments_Refinance_StepUp_Txn");
+				test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
+				test.log(LogStatus.ERROR, "Unable to start scenarios ");
+
+			}
+		}	 
+	 
+	 
+//============================================================================================================
 	// Anoop Transactions
 
 	@Test(priority = 14, enabled = true, groups = "Anoop")
@@ -2350,7 +2452,7 @@ public class QCStore {
 		}
 	}
 
-	//////@Test(priority = 11, enabled = true, groups = "Anoop")
+	@Test(priority = 11, enabled = true, groups = "Anoop")
 
 	public void ILP_ACHAutoClear() throws Exception {
 
