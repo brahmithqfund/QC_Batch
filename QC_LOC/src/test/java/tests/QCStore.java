@@ -61,6 +61,7 @@ public class QCStore {
 	public static String loan_nbr;
 	public static String NextDueDate;
 	public static String AppURL;
+	public static String BAdminURL;
 	public static String AdminURL;
 	public static String business_date;
 	public static String No_of_Installments;
@@ -116,8 +117,8 @@ public class QCStore {
 	public static String logout;
 
 	private static Object rescind;
-	public static String bstoreid="520";
-	public static String busername="csr520";
+	public static String bstoreid="505";
+	public static String busername="csr505";
 
 	// Brahmith scenarios
 
@@ -1797,7 +1798,7 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-		/*			QCCSRLoginLogout.login(SSN, AppURL);
+					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
@@ -1913,7 +1914,7 @@ public class QCStore {
 					QCCSRReturnPosting.returnposting(SSN, SSN);
 
 					QCCSRLoginLogout.adminLogin(SSN, SSN);
-					QCAdminACHReturn.achreturn(SSN, SSN);*/
+					QCAdminACHReturn.achreturn(SSN, SSN);
 
 					QCCSRLoginLogout.login(SSN, AppURL);
 
@@ -2042,7 +2043,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 70, groups = { "EOD2" })
+	@Test(priority = 70, groups = { "EOD21" })
 	public static void LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn() throws Exception {
 		try {
 
@@ -6922,7 +6923,7 @@ public class QCStore {
 				prop.load(reader);
 				reader.close();
 				AppURL = prop.getProperty("CSR_URL");
-				AdminURL = prop.getProperty("ADMIN_CSR_URL");
+				BAdminURL = prop.getProperty("ADMIN_CSR_URL");
 				String Bfilename = Vprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
 				reports = new ExtentReports(

@@ -191,7 +191,7 @@ public class QCStore {
 
 	// Brahmith Transactions
 
-	@Test(priority = 4, groups = "Brahmith")
+	@Test(priority = 4, groups = "Brahmith1")
 
 	public static void QC_NewLoan_Promotion_Txn() throws Exception {
 		try {
@@ -217,11 +217,14 @@ public class QCStore {
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 
 					System.out.println(AppURL);
-					//BProc3.proc();
+					QCCSRLoginLogout.adminLogin(SSN, SSN);
+					BAdminStartDate.toStartdate(SSN, SSN);
+					QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
+					BProc3.proc();
 
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
-						QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
@@ -242,7 +245,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 7, groups = "Brahmith")
+	@Test(priority = 7, groups = "Brahmith1")
 
 	public static void QC_NewLoan_Void_Txn() throws Exception {
 		try {
@@ -849,7 +852,7 @@ public class QCStore {
 						QCDepositDropdown.depositDropDown(SSN, SSN);
 						QCCSRLoginLogout.logout(SSN, AppURL);
 					}
-					test.log(LogStatus.INFO, "Completed installment deposits for " + j + " installments");
+					test.log(LogStatus.INFO, "Completed installment deposits for " + (j-1) + " installments");
 
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
@@ -1054,7 +1057,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 16, groups = "Brahmith")
+	@Test(priority = 16, groups = "Brahmith1")
 
 	public static void QC_ILP_Buyback_Txn() throws Exception {
 		try {
@@ -1173,7 +1176,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 17, groups = "Brahmith1")
+	@Test(priority = 56, groups = "Brahmith")
 
 	public static void QC_ILP_Refinanace_Txn() throws Exception {
 		try {
@@ -3281,7 +3284,7 @@ public class QCStore {
 
 		try {
 
-			Runtime.getRuntime().exec("taskkill /F /IM IEDriverServer.exe");
+			//Runtime.getRuntime().exec("taskkill /F /IM IEDriverServer.exe");
 
 			Thread.sleep(5000); // Allow OS to kill the process
 			System.out.println("killed the process ILP scenarios");

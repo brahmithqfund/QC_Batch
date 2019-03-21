@@ -203,7 +203,7 @@ public class QCCSRReturnPosting extends QCStore {
 						driver.switchTo().defaultContent();
 						driver.switchTo().frame("mainFrame");
 						driver.switchTo().frame("main");
-						//business_date="06/01/2018";
+						//business_date="08/02/2018";
 						String App_date[] = business_date.split("/");
 						System.out.println("business_date");
 
