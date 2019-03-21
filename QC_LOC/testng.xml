@@ -6,7 +6,7 @@
   <run>
 
   <!--  Brahmith scenarios   -->  
-<<<<<<< HEAD
+
     <!-- <include name="EOD"/>-->  
    <!-- <include name="EOD2"/>-->
  <!-- <include name="1st Batch"/>-->
@@ -16,15 +16,7 @@
   <!--  <include name="Janaki1"/>  --> 
      <!-- <include name="Janaki_NEOD"/> --> 
       <!-- <include name="Janaki_EOD"/> --> 
-=======
-      <include name="EOD"/>   
-  <!-- <include name="EOD2"/>-->
 
- 
-  <!--  Janaki scenarios  --> 
-    <!-- <include name="Janaki_NEOD"/> --> 
-       <!--<include name="Janaki_EOD"/>  --> 
->>>>>>> 26f8126931b7afc696e5ebd31895ac4dfa2dd77b
 
   <!--  Anoop scenarios -->
 
@@ -33,16 +25,11 @@
       <!-- <include name="Anoop_EOD3"/> -->
 
    
-<<<<<<< HEAD
+
     <!--  Rati scenarios   -->  
      <!-- <include name="Ratikanta_NEOD"/> --> 
       <include name="Ratikanta_EOD"/>
-=======
-   
-    <!--  Rati scenarios   --> 
-   <!-- <include name="Ratikanta_NEOD"/> --> 
-     <!--<include name="Ratikanta_EOD"/>  -->
->>>>>>> 26f8126931b7afc696e5ebd31895ac4dfa2dd77b
+
  
   <!--  Shashi scenarios  -->
 
