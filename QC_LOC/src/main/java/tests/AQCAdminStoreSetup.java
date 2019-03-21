@@ -66,20 +66,20 @@ public class AQCAdminStoreSetup extends QCStore
 				driver.findElement(By.name("login")).click();
 
 				test.log(LogStatus.PASS, "Clicked on Submit button");
-				Thread.sleep(3000);
+				Thread.sleep(8000);
 
 				driver.switchTo().defaultContent();
 
 				driver.switchTo().frame("topFrame");
 
-				Thread.sleep(2000);
+				
 				driver.findElement(By.xpath("//*[@id='100000']/a")).click();
 				test.log(LogStatus.PASS, "Clicked on Store tab");
-
+				Thread.sleep(4000);
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");
 
-				Thread.sleep(2000);
+				
 				driver.findElement(By.xpath("//*[@id='101000']/a")).click();
 
 				test.log(LogStatus.PASS, "Clicked on Store Config link");
@@ -104,7 +104,7 @@ public class AQCAdminStoreSetup extends QCStore
 				driver.findElement(By.xpath("/html/body/table/tbody/tr/td/table/tbody/tr/td/form/table/tbody/tr[2]/td[1]/table/tbody/tr[1]/td/table/tbody/tr[3]/td/input[1]")).click();
 				test.log(LogStatus.PASS, "Clicked on Submit button");
 
-				Thread.sleep(1000);
+				Thread.sleep(1500);
 
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");
@@ -115,11 +115,11 @@ public class AQCAdminStoreSetup extends QCStore
 				test.log(LogStatus.PASS, "Store status set as Open"); 
 				String business_unit=driver.findElement(By.name("locationBean.businessUnitCd")).getAttribute("value");
 
-				Thread.sleep(500);
+				Thread.sleep(1500);
 				driver.findElement(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[2]/td[2]/table[2]/tbody/tr/td/input[3]")).click();
 
 				test.log(LogStatus.PASS, "Clicked on Submit"); 
-				Thread.sleep(1500);
+				Thread.sleep(2500);
 
 				try { 
 					Alert alert = driver.switchTo().alert();

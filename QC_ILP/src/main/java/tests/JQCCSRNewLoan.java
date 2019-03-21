@@ -101,7 +101,7 @@ public class JQCCSRNewLoan extends QCStore {
 				int lastrow = TestData.getLastRow("New_loan");
 				String sheetName = "New_Loan";
 
-				for (int row = 2; row <= lastrow; row++) {
+				for (int row = 2; row <= lastrow+1; row++) {
 					String RegSSN = TestData.getCellData(sheetName, "SSN", row);
 					if (SSN.equals(RegSSN)) {
 						State = TestData.getCellData(sheetName, "StateID", row);

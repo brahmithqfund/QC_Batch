@@ -43,8 +43,8 @@ public class VDismissed_Admin extends QCStore{
 				{
 				String AdminUserName = TestData.getCellData(sheetName,"AdminUserName",row);
 				String AdminPassword = TestData.getCellData(sheetName,"AdminPassword",row);
-				//String AdminURL = TestData.getCellData(sheetName,"AdminURL",row);
-				String AdminURL="https://qcuat.qfund.net/cc/adminIndex.do";
+				String AdminURL = TestData.getCellData(sheetName,"AdminURL",row);
+				//String AdminURL="https://qcuat.qfund.net/cc/adminIndex.do";
 				String PIN = TestData.getCellData(sheetName,"PIN",row);
 				String Trancd = TestData.getCellData(sheetName,"Trancd",row);
 				String StoreID = TestData.getCellData(sheetName,"StoreID",row);
@@ -66,7 +66,7 @@ public class VDismissed_Admin extends QCStore{
 
 				test.log(LogStatus.INFO,"Admin Application is launched");
 
-				if(prop.getProperty("login_method").equalsIgnoreCase("local"))
+				if(Vprop.getProperty("login_method").equalsIgnoreCase("local"))
 				{
 					driver = new InternetExplorerDriver();
 				}
@@ -166,7 +166,7 @@ public class VDismissed_Admin extends QCStore{
 	action.moveByOffset(200,100).perform();
 	Thread.sleep(10000);
 	action.click();
-	Thread.sleep(5000);
+	Thread.sleep(6000);
 	driver.findElement(By.xpath("/html/body/table/tbody/tr/td/table/tbody/tr/td[1]/form/table[3]/tbody/tr/td[2]/input")).click();
 	                             
 	test.log(LogStatus.PASS, "Clicked on Submit");

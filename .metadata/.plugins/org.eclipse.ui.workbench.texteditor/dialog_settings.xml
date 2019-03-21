@@ -2,37 +2,29 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value="RATIKANTA" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
-		<item value="false" key="wrap"/>
+		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="Jyothi"/>
-			<item value="prop.getProperty"/>
+			<item value="Ratikanta"/>
+			<item value="Insurance"/>
+			<item value="Insurance Coverage "/>
+			<item value="Coverage"/>
+			<item value="casenumber"/>
 			<item value="Anoop"/>
 			<item value="Janaki"/>
-			<item value="jyot"/>
-			<item value="V"/>
-			<item value="Ratikanta"/>
-			<item value="//@Test"/>
+			<item value="Jyothi"/>
 		</list>
 		<list key="replacehistory">
-			<item value="@Test"/>
-			<item value=""/>
-			<item value="//@Test"/>
-			<item value="enabled = true"/>
-			<item value="enabled = false"/>
-			<item value="Edit_Borrower_Registration"/>
-			<item value="Borrower_Registration2"/>
-			<item value="AgeStore_4th_time"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="334" key="DIALOG_WIDTH"/>
+		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
-		<item value="8" key="DIALOG_X_ORIGIN"/>
-		<item value="199" key="DIALOG_Y_ORIGIN"/>
+		<item value="759" key="DIALOG_X_ORIGIN"/>
+		<item value="504" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

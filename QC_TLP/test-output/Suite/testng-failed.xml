@@ -4,16 +4,16 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="Anoop1"/>
+        <include name="Anoop_st_void"/>
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
+          <include name="TLP_RefinanceStepDownVoid"/>
           <include name="getResult"/>
           <include name="setup"/>
           <include name="endReport"/>
-          <include name="TLP_ProcessAutoClear"/>
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->

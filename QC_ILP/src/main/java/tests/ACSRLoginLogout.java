@@ -66,7 +66,7 @@ public class ACSRLoginLogout extends QCStore{
 					//Click Login Button
 					driver.findElement(By.name(Login)).click();
 					test.log(LogStatus.PASS, "Clicked on Submit button");
-					Thread.sleep(3000);
+					Thread.sleep(5000);
 
 					test.log(LogStatus.INFO, "<FONT color=green> Login Sucessfully");
 					test.log(LogStatus.INFO, "******************************************************** ");

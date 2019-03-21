@@ -41,15 +41,16 @@ public class VQCAdminACHReturn extends QCStore {
 					String AdminUserName = TestData.getCellData(sheetName,"AdminUserName",row);
 					String AdminPassword = TestData.getCellData(sheetName,"AdminPassword",row);
 					//String AdminURL="https://qcuat.qfund.net/cc/adminIndex.do";
-					//String AdminURL = TestData.getCellData(sheetName, "AdminURL", row);
+					String AdminURL = TestData.getCellData(sheetName, "AdminURL", row);
 					String PIN = TestData.getCellData(sheetName,"PIN",row);
-					String StoreID = TestData.getCellData(sheetName,"StoreID",row);
+					//String StoreID = TestData.getCellData(sheetName,"StoreID",row);
+					String StoreID = vstoreid;
 					String ReasonForReturn = TestData.getCellData(sheetName,"ReasonForReturn",row);
 					String Esign_CollateralType = TestData.getCellData(sheetName,"Esign_CollateralType",row);
 
 					test.log(LogStatus.INFO,"Admin Application is launched For Return Posting");
 
-					if(prop.getProperty("login_method").equalsIgnoreCase("local"))
+					if(Vprop.getProperty("login_method").equalsIgnoreCase("local"))
 					{
 						driver = new InternetExplorerDriver();
 					}
@@ -96,7 +97,7 @@ public class VQCAdminACHReturn extends QCStore {
 		driver.switchTo().frame("topFrame");
 
 		driver.findElement(By.xpath("//*[@id='500000']/a")).click(); 
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		test.log(LogStatus.PASS, "Clicked on Transaction tab");
 		
 		Thread.sleep(1000);

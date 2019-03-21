@@ -47,7 +47,8 @@ public class AQCAdminLoginLogout extends QCStore {
 
 					driver.get(Aprop.getProperty("adminURL"));
 					test.log(LogStatus.PASS, "Application Launched with URL"+Aprop.getProperty("adminURL"));
-
+					
+					driver.findElement(By.name("loginRequestBean.userId")).sendKeys(uname);
 					test.log(LogStatus.PASS, "Username is entered: "+uname);
 
 					driver.findElement(By.name("loginRequestBean.password")).sendKeys(pwd);
@@ -55,7 +56,7 @@ public class AQCAdminLoginLogout extends QCStore {
 
 					driver.findElement(By.name("login")).click();
 					test.log(LogStatus.PASS, "Clicked on login button"); 
-					Thread.sleep(2000);
+					Thread.sleep(4000);
 					
 					break;
 				}

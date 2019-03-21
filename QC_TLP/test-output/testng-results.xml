@@ -2,41 +2,41 @@
 <testng-results skipped="0" failed="0" ignored="34" total="35" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="915528" started-at="2019-03-05T10:41:14Z" finished-at="2019-03-05T10:56:29Z">
+  <suite name="Suite" duration-ms="769606" started-at="2019-03-20T12:36:59Z" finished-at="2019-03-20T12:49:48Z">
     <groups>
-      <group name="Anoop1">
-        <method signature="QCStore.TLP_ProcessAutoClear()[pri:308, instance:tests.QCStore@527740a2]" name="TLP_ProcessAutoClear" class="tests.QCStore"/>
-      </group> <!-- Anoop1 -->
+      <group name="Anoop_st_down">
+        <method signature="QCStore.TLP_RefinanceStepDown()[pri:310, instance:tests.QCStore@527740a2]" name="TLP_RefinanceStepDown" class="tests.QCStore"/>
+      </group> <!-- Anoop_st_down -->
     </groups>
-    <test name="Test" duration-ms="915528" started-at="2019-03-05T10:41:14Z" finished-at="2019-03-05T10:56:29Z">
+    <test name="Test" duration-ms="769606" started-at="2019-03-20T12:36:59Z" finished-at="2019-03-20T12:49:48Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="80" started-at="2019-03-05T10:41:14Z" finished-at="2019-03-05T10:41:14Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="110" started-at="2019-03-20T12:36:59Z" finished-at="2019-03-20T12:36:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5010" started-at="2019-03-05T10:41:14Z" finished-at="2019-03-05T10:41:19Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-03-20T12:36:59Z" finished-at="2019-03-20T12:37:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="TLP_ProcessAutoClear()[pri:308, instance:tests.QCStore@527740a2]" name="TLP_ProcessAutoClear" duration-ms="909652" started-at="2019-03-05T10:41:19Z" finished-at="2019-03-05T10:56:28Z">
+        <test-method status="PASS" signature="TLP_RefinanceStepDown()[pri:310, instance:tests.QCStore@527740a2]" name="TLP_RefinanceStepDown" duration-ms="763747" started-at="2019-03-20T12:37:04Z" finished-at="2019-03-20T12:49:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TLP_ProcessAutoClear -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-05T10:56:28Z" finished-at="2019-03-05T10:56:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="771" started-at="2019-03-05T10:56:28Z" finished-at="2019-03-05T10:56:29Z">
+        </test-method> <!-- TLP_RefinanceStepDown -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="731" started-at="2019-03-20T12:49:47Z" finished-at="2019-03-20T12:49:48Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TLP_ProcessAutoClear status=SUCCESS method=QCStore.TLP_ProcessAutoClear()[pri:308, instance:tests.QCStore@527740a2] output={null}]]]>
+                <![CDATA[[TestResult name=TLP_RefinanceStepDown status=SUCCESS method=QCStore.TLP_RefinanceStepDown()[pri:310, instance:tests.QCStore@527740a2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-20T12:49:47Z" finished-at="2019-03-20T12:49:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
       </class> <!-- tests.QCStore -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

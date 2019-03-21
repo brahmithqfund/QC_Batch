@@ -35,7 +35,8 @@ public class QCAdminACHReturn extends QCStore {
 				String RegSSN = TestData.getCellData(sheetName, "SSN", row);
 				if (SSN.equals(RegSSN)) {
 					
-					String StoreID = TestData.getCellData(sheetName,"StoreID",row);
+					String StoreID = bstoreid;
+							//TestData.getCellData(sheetName,"StoreID",row);
 					String ReasonForReturn = TestData.getCellData(sheetName,"ReasonForReturn",row);
 					String Esign_CollateralType = TestData.getCellData(sheetName,"Esign_CollateralType",row);
 

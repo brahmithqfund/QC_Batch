@@ -1,4 +1,4 @@
-# List of external plug-in models previously loaded. Timestamp: 1551854222747
+# List of external plug-in models previously loaded. Timestamp: 1553076130455
 file:/D:/eclipse-mars/eclipse/plugins/ch.qos.logback.classic_1.0.7.v20121108-1250.jar
 file:/D:/eclipse-mars/eclipse/plugins/ch.qos.logback.core_1.0.7.v20121108-1250.jar
 file:/D:/eclipse-mars/eclipse/plugins/ch.qos.logback.slf4j_1.0.7.v201505121915.jar
@@ -971,7 +971,6 @@ file:/D:/eclipse-mars/eclipse/plugins/org.testng_6.14.2.r201802161450.jar
 file:/D:/eclipse-mars/eclipse/plugins/org.testng.eclipse_6.14.0.201802161500.jar
 file:/D:/eclipse-mars/eclipse/plugins/org.testng.eclipse.maven_6.14.0.201802161500.jar
 file:/D:/eclipse-mars/eclipse/plugins/org.tukaani.xz_1.3.0.v201308270617.jar
-file:/D:/eclipse-mars/eclipse/dropins/org.ucdetector_2.0.0.jar
 file:/D:/eclipse-mars/eclipse/plugins/org.uddi4j_2.0.5.v200805270300.jar
 file:/D:/eclipse-mars/eclipse/plugins/org.w3c.css.sac_1.3.1.v200903091627.jar
 file:/D:/eclipse-mars/eclipse/plugins/org.w3c.dom.events_3.0.0.draft20060413_v201105210656.jar

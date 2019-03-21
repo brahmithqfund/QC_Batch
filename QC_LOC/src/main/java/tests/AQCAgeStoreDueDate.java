@@ -38,7 +38,8 @@ public class AQCAgeStoreDueDate extends QCStore{
 								        String SSN1 = SSN.substring(0, 3);
 								        String SSN2 = SSN.substring(3,5);
 								        String SSN3 = SSN.substring(5,9);
-						       Thread.sleep(1000);
+								        
+						       Thread.sleep(3000);
 							
 								test.log(LogStatus.INFO, "Age Store Due Date process is initiated");
 
@@ -52,13 +53,14 @@ public class AQCAgeStoreDueDate extends QCStore{
 								driver.switchTo().defaultContent();
 
 								
-						        wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("topFrame")));
+						        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("topFrame")));
+								  Thread.sleep(3000);
 								driver.switchTo().frame("topFrame");
 								wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("li[id='910000']")));
 						        driver.findElement(By.cssSelector("li[id='910000']")).click();	
 									
 								test.log(LogStatus.PASS, "Clicked on Loan Transactions");
-								Thread.sleep(1000);
+								Thread.sleep(2000);
 								
 								driver.switchTo().defaultContent();
 								driver.switchTo().frame("mainFrame");
@@ -66,7 +68,7 @@ public class AQCAgeStoreDueDate extends QCStore{
 								driver.findElement(By.cssSelector("li[id='911101']")).click();			
 								test.log(LogStatus.PASS, "Clicked on Transactions");
 								
-							
+								Thread.sleep(2000);
 								driver.switchTo().frame("main");		
 								driver.findElement(By.name("ssn1")).sendKeys(SSN1);
 								test.log(LogStatus.PASS, "SSN1 is entered: "+SSN1);
@@ -76,18 +78,18 @@ public class AQCAgeStoreDueDate extends QCStore{
 								test.log(LogStatus.PASS, "SSN3 is entered: "+SSN3);
 								driver.findElement(By.name("submit1")).click();
 								test.log(LogStatus.PASS, "Click on submit Button");		
-								
-							    driver.switchTo().defaultContent();
-							    driver.switchTo().frame("mainFrame");
-							    driver.switchTo().frame("main");
+
 							
 										String mainwindow=driver.getWindowHandle();
 										
 									    driver.switchTo().defaultContent();
 									    driver.switchTo().frame("mainFrame");
+									    Thread.sleep(2000);
 									    driver.switchTo().frame("main");
+									    Thread.sleep(2000);
 									    driver.findElement(By.xpath("/html/body/table/tbody/tr[1]/td[1]/table[2]/tbody/tr[2]/td/table/tbody/tr[2]/td[2]/a")).click();
 									    test.log(LogStatus.PASS, "Clicked on Customer number link");
+									    Thread.sleep(3000);
 										for (String winHandle : driver.getWindowHandles()) {
 											if(!mainwindow.equalsIgnoreCase(winHandle)) {
 												driver.switchTo().window(winHandle);

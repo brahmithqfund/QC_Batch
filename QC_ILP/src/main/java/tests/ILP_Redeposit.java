@@ -21,11 +21,12 @@ public class ILP_Redeposit extends QCStore{
 
 				String RepresentmentType = TestData.getCellData(sheetName,"RepresentmentType",row);
 				driver.switchTo().frame("topFrame");
+				Thread.sleep(1500);
 				driver.findElement(locator(Aprop.getProperty("transactions_tab"))).click();			
 				test.log(LogStatus.PASS, "Clicked on Loan Transactions");
 				driver.switchTo().defaultContent();
-				driver.switchTo().frame("mainFrame");
 				Thread.sleep(1500);
+				driver.switchTo().frame("mainFrame");				
 				driver.findElement(By.partialLinkText("Collateral Checks")).click();
 				test.log(LogStatus.PASS, "Clicked on collateral check types");
 				Thread.sleep(1500);
@@ -35,6 +36,7 @@ public class ILP_Redeposit extends QCStore{
 				driver.findElement(By.partialLinkText("ReDeposit")).click();
 				test.log(LogStatus.PASS, "Clicked on Redeposit");
 				//loan_nbr="10761111";
+				Thread.sleep(1500);
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");
 				driver.switchTo().frame("main");
@@ -42,7 +44,7 @@ public class ILP_Redeposit extends QCStore{
 				test.log(LogStatus.PASS, "Enterd loan number is :"+loan_nbr);
 				driver.findElement(By.name("button")).click();
 				test.log(LogStatus.PASS, "Click on submit button");
-				
+				Thread.sleep(1500);
 				String loanno=driver.findElement(By.xpath("//*[@id='dealNbrId0']")).getText();
 				test.log(LogStatus.PASS, "Getting loan number from table"+loanno);
 				if(loanno.equals(loan_nbr)){

@@ -43,11 +43,13 @@ public class VQCCSRLoginLogout extends QCStore
 				{		
 					String RegSSN = TestData.getCellData(sheetName,"SSN",row);
 					//String csr_url = TestData.getCellData(sheetName,"csr_url",row);
-					String csr_url="https://qcuat.qfund.net/cc/demoIndex.do";
+					//String csr_url="https://qcuat.qfund.net/cc/demoIndex.do";
 
-					String username = TestData.getCellData(sheetName,"UserName",row);
+					//String username = TestData.getCellData(sheetName,"UserName",row);
+					String username = vusername;
 					String password = TestData.getCellData(sheetName,"Password",row);
-					String store_id = TestData.getCellData(sheetName,"StoreID",row);
+					//String store_id = TestData.getCellData(sheetName,"StoreID",row);
+					String store_id = vstoreid;
 					
 
 

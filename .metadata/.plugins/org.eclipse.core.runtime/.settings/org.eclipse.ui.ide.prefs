@@ -1,7 +1,9 @@
 =\=\=\=\=\=\=
 <<<<<<<=HEAD
->>>>>>>=janaki1.1
+>>>>>>>=f96b7d09c18261a556e71ad66742e2079a8ac046
+EXIT_PROMPT_ON_CLOSE_LAST_WINDOW=false
 PROBLEMS_FILTERS_MIGRATE=true
+TASKS_FILTERS_MIGRATE=true
 eclipse.preferences.version=1
 platformState=1487326882091
 quickStart=false
