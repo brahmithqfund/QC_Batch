@@ -38,8 +38,8 @@ public class QCRedeposit extends QCStore {
 					driver.switchTo().defaultContent();
 					driver.switchTo().frame("mainFrame");
 					driver.switchTo().frame("main");
-					driver.findElement(By.name("requestBean.loanCode")).sendKeys(loan_nbr);
-					test.log(LogStatus.PASS, "Enterd loan number is :" + loan_nbr);
+					driver.findElement(By.name("requestBean.loanCode")).sendKeys(loan_number);
+					test.log(LogStatus.PASS, "Enterd loan number is :" + loan_number);
 					driver.findElement(By.name("submit")).click();
 					test.log(LogStatus.PASS, "Click on submit button");
 					Thread.sleep(3000);

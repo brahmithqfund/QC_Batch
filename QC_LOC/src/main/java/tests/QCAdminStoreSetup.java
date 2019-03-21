@@ -71,9 +71,9 @@ public class QCAdminStoreSetup extends QCStore
 					driver.manage().window().maximize();
 					driver.manage().timeouts().implicitlyWait(05, TimeUnit.SECONDS);
 				
-					driver.get(AdminURL);
+					driver.get(BAdminURL);
 					//test.log(LogStatus.INFO, MarkupHelper.createLabel("Opened the Admin URL"+ AdminURL, ExtentColor.BLUE));
-					test.log(LogStatus.INFO, "Opened the Admin URL" + AdminURL);
+					test.log(LogStatus.INFO, "Opened the Admin URL" + BAdminURL);
 
 		driver.findElement(By.name("loginRequestBean.userId")).sendKeys(UserName);
 

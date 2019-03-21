@@ -95,7 +95,7 @@ public class QCStore {
 	public static String appdate;
 	public static String day;
 
-	@Test(priority = 101, groups="Brahmith")
+	@Test(priority = 101, groups="Brahmith1")
 	public static void QC_TLP_NewLoan_Txn() throws Exception {
 		try {
 			// test =
@@ -123,6 +123,12 @@ public class QCStore {
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 
 					System.out.println(AppURL);
+					
+					/*QCCSRLoginLogout.adminLogin(SSN, SSN);
+					BAdminStartDate.toStartdate(SSN, SSN);
+					QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
+					BProc3.proc();*/
+					
 
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
@@ -148,7 +154,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority=103,groups="Brahmith")
+	@Test(priority=103,groups="Brahmith1")
 	public static void QC_NewLoan_Promotion_Txn() throws Exception {
 		try {
 
@@ -199,7 +205,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 104,groups="Brahmith")
+	@Test(priority = 104,groups="Brahmith1")
 	public static void QC_NewLoan_Void_Txn() throws Exception {
 		try {
 			// test =
@@ -254,7 +260,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 105,groups="Brahmith")
+	@Test(priority = 105,groups="Brahmith1")
 	public static void QC_AgeStore_Void_Txn() throws Exception {
 		try {
 			// test =

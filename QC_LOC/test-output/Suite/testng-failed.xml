@@ -5,6 +5,7 @@
     <groups>
       <run>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <include name="Ratikanta_NEOD"/>
 =======
 <<<<<<< HEAD
@@ -22,11 +23,15 @@
         <include name="Jyothi"/>
 >>>>>>> jyothi1.2
 >>>>>>> 26f8126931b7afc696e5ebd31895ac4dfa2dd77b
+=======
+        <include name="EOD2"/>
+>>>>>>> brahmith1.1
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <include name="RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Void_Txn_Testdata"/>
           <include name="RQC_LOC_Deposit_Return_ManualDefault_Txn_Testdata"/>
@@ -57,6 +62,11 @@
           <include name="QC_ILP_Refinance_Payanyother_Step_Up_Txn"/>
 >>>>>>> jyothi1.2
 >>>>>>> 26f8126931b7afc696e5ebd31895ac4dfa2dd77b
+=======
+          <include name="getResult"/>
+          <include name="setup"/>
+          <include name="LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn"/>
+>>>>>>> brahmith1.1
           <include name="killProcess"/>
           <include name="RQC_LOC_2missedPayment_Default_EOD_Txn_Testdata"/>
           <include name="RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Txn_Testdata"/>

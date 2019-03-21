@@ -156,6 +156,7 @@ public class QCBorrowerRegistration extends QCStore {
 				        Thread.sleep(2000);
 						//driver.findElement(By.xpath("//*[contains(text(),'Borrower')]")).click();			
 						test.log(LogStatus.PASS, "Clicked on Borrower");
+						 Thread.sleep(2000);
 					
 						driver.switchTo().defaultContent();
 						driver.switchTo().frame("mainFrame");			 

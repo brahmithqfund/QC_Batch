@@ -192,7 +192,7 @@ public class QCStore {
 
 	// Brahmith Transactions
 
-	@Test(priority = 4, groups = "Brahmith")
+	@Test(priority = 4, groups = "Brahmith1")
 
 	public static void QC_NewLoan_Promotion_Txn() throws Exception {
 		try {
@@ -218,11 +218,14 @@ public class QCStore {
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 
 					System.out.println(AppURL);
-					//BProc3.proc();
+					QCCSRLoginLogout.adminLogin(SSN, SSN);
+					BAdminStartDate.toStartdate(SSN, SSN);
+					QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
+					BProc3.proc();
 
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
-						QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
@@ -243,7 +246,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 7, groups = "Brahmith")
+	@Test(priority = 7, groups = "Brahmith1")
 
 	public static void QC_NewLoan_Void_Txn() throws Exception {
 		try {
@@ -850,7 +853,7 @@ public class QCStore {
 						QCDepositDropdown.depositDropDown(SSN, SSN);
 						QCCSRLoginLogout.logout(SSN, AppURL);
 					}
-					test.log(LogStatus.INFO, "Completed installment deposits for " + j + " installments");
+					test.log(LogStatus.INFO, "Completed installment deposits for " + (j-1) + " installments");
 
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
@@ -869,7 +872,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 47, groups = "Brahmith1")
+	@Test(priority = 47, groups = "Brahmith")
 
 	public static void QC_InstallPayment_Ref_Rescind_Txn() throws Exception {
 		try {
@@ -1055,7 +1058,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 16, groups = "Brahmith")
+	@Test(priority = 16, groups = "Brahmith1")
 
 	public static void QC_ILP_Buyback_Txn() throws Exception {
 		try {
@@ -1174,7 +1177,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 17, groups = "Brahmith1")
+	@Test(priority = 56, groups = "Brahmith")
 
 	public static void QC_ILP_Refinanace_Txn() throws Exception {
 		try {
@@ -1204,22 +1207,39 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					/*QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCPayment.payment(SSN, SSN);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogout.login(SSN, AppURL);
+					
+				BQCCSRNewLoan2.newLoan2(SSN, AppURL);
+				QCCSRLoginLogout.logout(SSN, AppURL);
 				QCCSRLoginLogout.login(SSN, AppURL);
-					QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
-
-					QCPayment.payment(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCVoid.qcVoid(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+				QCAgeStoreGraceDays.ageStoreGraceDays2ndTime(SSN, SSN);
+				QCCSRLoginLogout.login(SSN, AppURL);
+				QCPayment.paymentTwice(SSN, SSN);
+				QCCSRLoginLogout.logout(SSN, AppURL);
+				
+				QCCSRLoginLogout.login(SSN, AppURL);
+				QCAgeStoreGraceDays.ageStoreGraceDays3rdTime(SSN, SSN);*/
+				QCCSRLoginLogout.login(SSN, AppURL);
+				QCPayment.paymentThrice(SSN, SSN);
+				QCCSRLoginLogout.logout(SSN, AppURL);
+				
+				QCCSRLoginLogout.login(SSN, AppURL);
+				QCAgeStoreGraceDays.ageStoreGraceDays4thTime(SSN, SSN);
+				QCCSRLoginLogout.login(SSN, AppURL);
+				QCPayment.payment4(SSN, SSN);
+				QCCSRLoginLogout.logout(SSN, AppURL);
+					
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 				}

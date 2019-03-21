@@ -2,12 +2,17 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
+<<<<<<< HEAD
 		<item value="Ratikanta" key="selection"/>
+=======
+		<item value="NACHA" key="selection"/>
+>>>>>>> brahmith1.1
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+<<<<<<< HEAD
 			<item value="Ratikanta"/>
 			<item value="Jyothi"/>
 			<item value="Janaki"/>
@@ -18,13 +23,31 @@
 			<item value="Anoop"/>
 		</list>
 		<list key="replacehistory">
+=======
+			<item value="nacha"/>
+			<item value="admin"/>
+			<item value="AdminURL"/>
+			<item value="ADMIN_CSR_URL"/>
+			<item value="adminurl"/>
+			<item value="Brahmith1"/>
+			<item value="brahmith1"/>
+			<item value="batch1"/>
+		</list>
+		<list key="replacehistory">
+			<item value="QC_SSN_THREE_TLP"/>
+>>>>>>> brahmith1.1
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
+<<<<<<< HEAD
 		<item value="759" key="DIALOG_X_ORIGIN"/>
 		<item value="504" key="DIALOG_Y_ORIGIN"/>
+=======
+		<item value="813" key="DIALOG_X_ORIGIN"/>
+		<item value="172" key="DIALOG_Y_ORIGIN"/>
+>>>>>>> brahmith1.1
 	</section>
 </section>

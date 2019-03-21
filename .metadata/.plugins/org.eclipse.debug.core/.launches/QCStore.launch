@@ -3,6 +3,7 @@
 <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.testng.remote.RemoteTestNG"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="QC_ILP"/>
 =======
 <<<<<<< HEAD
@@ -27,6 +28,9 @@
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="QC_LOC"/>
 >>>>>>> jyothi1.2
 >>>>>>> 26f8126931b7afc696e5ebd31895ac4dfa2dd77b
+=======
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="QC_LOC"/>
+>>>>>>> brahmith1.1
 <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
 <mapAttribute key="org.testng.eclipse.ALL_CLASS_METHODS"/>
 <listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">

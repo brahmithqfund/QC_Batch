@@ -61,6 +61,7 @@ public class QCStore {
 	public static String loan_nbr;
 	public static String NextDueDate;
 	public static String AppURL;
+	public static String BAdminURL;
 	public static String AdminURL;
 	public static String business_date;
 	public static String No_of_Installments;
@@ -122,6 +123,7 @@ public class QCStore {
 	
 	public static String vstoreid="508";
 	public static String vusername="csr508";
+
 
 
 	// Brahmith scenarios
@@ -1802,7 +1804,7 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-		/*			QCCSRLoginLogout.login(SSN, AppURL);
+					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
@@ -1918,7 +1920,7 @@ public class QCStore {
 					QCCSRReturnPosting.returnposting(SSN, SSN);
 
 					QCCSRLoginLogout.adminLogin(SSN, SSN);
-					QCAdminACHReturn.achreturn(SSN, SSN);*/
+					QCAdminACHReturn.achreturn(SSN, SSN);
 
 					QCCSRLoginLogout.login(SSN, AppURL);
 
@@ -2047,8 +2049,9 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 70, groups = { "EOD2" })
-	public static void LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn() throws Exception {
+
+	@Test(priority = 70, groups = { "EOD2" })
+public static void LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn() throws Exception {
 		try {
 
 			test = reports.startTest(prop.getProperty("LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn_scenario"),
@@ -6977,8 +6980,10 @@ public class QCStore {
 				prop.load(reader);
 				reader.close();
 				AppURL = prop.getProperty("CSR_URL");
-				AdminURL = prop.getProperty("ADMIN_CSR_URL");
-				String Bfilename = prop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+
+				BAdminURL = prop.getProperty("ADMIN_CSR_URL");
+				String Bfilename = Vprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+
 
 				reports = new ExtentReports(
 						System.getProperty("user.dir") + prop.getProperty("QC_Store_extent_report_path") + Bfilename,

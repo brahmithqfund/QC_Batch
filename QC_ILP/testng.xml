@@ -9,10 +9,17 @@
     <!-- <include name="Janaki"/>  -->
    <!-- <include name="Janaki_EOD_set1"/> --> 
    <!-- <include name="Janaki_EOD_set2"/> --> 
+<<<<<<< HEAD
    <!-- <include name="janaki_Refinance_StUp"/> -->
   
    <!-- Brahmith group--> 
 <!--<include name="Brahmith"/>  --> 
+=======
+ <!--  <include name="janaki_Refinance_StUp"/>--> 
+  
+   <!-- Brahmith group--> 
+    <include name="Brahmith"/> 
+>>>>>>> brahmith1.1
 
    <!-- Anoop group-->  
     <!--<include name="Anoop"/> -->  
