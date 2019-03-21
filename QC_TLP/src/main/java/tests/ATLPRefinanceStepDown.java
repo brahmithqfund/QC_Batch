@@ -87,22 +87,23 @@ public class ATLPRefinanceStepDown extends QCStore{
 					test.log(LogStatus.PASS, "Transaction Type is selected as Refinance");
 					driver.findElement(By.name("button")).click();
 					test.log(LogStatus.PASS, "Clicked on Go button");
-					Thread.sleep(500);	
+					Thread.sleep(5000);	
 					
 					
 					driver.findElement(By.xpath("/html/body/form/table/tbody/tr[2]/td/table[2]/tbody/tr[4]/td/input")).click();
 					test.log(LogStatus.PASS, "click on update button of borrower overview ");
-					Thread.sleep(3000);
+					Thread.sleep(8000);
 					driver.findElement(By.xpath("//*[@id='vehicleInformation']/td/table/tbody/tr[10]/td/input")).click();
 					test.log(LogStatus.PASS, "click on update button of Vechile details");
-					Thread.sleep(5000);
+					Thread.sleep(8000);
 					
 					driver.findElement(By.xpath("//*[@id='save']/input")).click();
 					test.log(LogStatus.PASS, "click on process loan");
 					
 					//--------------------------------------------------------------
 				try{
-					driver.findElement(By.xpath("//*[@id='documentForm']/table/tbody/tr[4]/td/input[1]")).click();
+					//driver.findElement(By.xpath("//*[@id='documentForm']/table/tbody/tr[4]/td/input[1]")).click();
+					driver.findElement(By.xpath("//*[@id='documentForm']/table/tbody/tr[4]/td/input[2]")).click();
 					test.log(LogStatus.PASS, "Clicked Yes on cashOut popup");
 					}
 				catch(Exception e){

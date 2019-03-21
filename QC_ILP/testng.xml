@@ -12,22 +12,12 @@
    <!-- <include name="janaki_Refinance_StUp"/> -->
   
    <!-- Brahmith group--> 
-<<<<<<< HEAD
-   <!--<include name="Brahmith"/>  --> 
+<!--<include name="Brahmith"/>  --> 
 
    <!-- Anoop group-->  
     <!--<include name="Anoop"/> -->  
     <!--  <include name="Anoop_stDown"/>-->
      <!--<include name="Anoop_StdownVoid"/> -->
-=======
-   <!-- <include name="Brahmith"/> -->  
-
-   <!-- Anoop group-->  
-    <!-- <include name="Anoop"/> -->  
-     <!-- <include name="Anoop_stDown"/> -->
-     <!-- include name="Anoop_StdownVoid"/> -->
-
->>>>>>> 26f8126931b7afc696e5ebd31895ac4dfa2dd77b
 
 
   <!-- Ratikanta group-->  

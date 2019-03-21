@@ -33,7 +33,7 @@ public class AQCbankruptcy extends QCStore{
 				
 		/*ESign_CheckNbr = TestData.getCellData(sheetName, "ESign_CheckNbr", row);
 		casenumber= ESign_CheckNbr.substring(ESign_CheckNbr.length() - 4);*/
-				casenumber="8077";
+				casenumber="1114";
 		String spagedate[]=Str_date.split(":");
 		String day=spagedate[1].trim();
 		String age_Date[] =day.split("/");
