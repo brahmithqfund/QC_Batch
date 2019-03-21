@@ -219,9 +219,9 @@ public class QCStore {
 
 					System.out.println(AppURL);
 					QCCSRLoginLogout.adminLogin(SSN, SSN);
-					BAdminStartDate.toStartdate(SSN, SSN);
+					//BAdminStartDate.toStartdate(SSN, SSN);
 					QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
-					BProc3.proc();
+					//BProc3.proc();
 
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
