@@ -53,6 +53,8 @@ public class QCPayment extends QCStore
 					driver.switchTo().frame("topFrame");
 					driver.findElement(locator(prop.getProperty("transactions_tab"))).click();			
 					test.log(LogStatus.PASS, "Clicked on Loan Transactions");
+					
+					
 
 					driver.switchTo().defaultContent();
 					driver.switchTo().frame("mainFrame");

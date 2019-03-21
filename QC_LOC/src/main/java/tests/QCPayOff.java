@@ -294,6 +294,8 @@ break;
 					test.log(LogStatus.INFO, "Patial Payment process is initiated again due to Application sync issue");
 					driver.get(prop.getProperty("login_page"));
 					continue;
+					
+					
 
 
 				}

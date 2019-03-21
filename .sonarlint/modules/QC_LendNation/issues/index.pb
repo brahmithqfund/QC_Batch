@@ -27,6 +27,34 @@ f
 chromedriver.exe,d\0\d0b49ae29587435df3e9988b34c286a37d9a89d9
 B
 IEDriverServer.exe,9\1\91c8366e22f75cf182379d0c621025823649da39
+<<<<<<< HEAD
+†
+VExecutionReports/LendNation/FailedTestsScreenshots/signContract2019.01.29.03.19.40.png,4\6\46fb8e87f8295f870b929dc2a6ed8d1aa931bc53
+†
+VExecutionReports/LendNation/FailedTestsScreenshots/signContract2019.01.29.12.04.23.png,9\0\9049c85e759f367394e36488ecc830db301ed3ef
+†
+VExecutionReports/LendNation/FailedTestsScreenshots/signContract2019.01.29.11.39.54.png,c\0\c09fdef315f993e4812bf539584d845e4e2f1873
+†
+VExecutionReports/LendNation/FailedTestsScreenshots/signContract2019.02.05.01.11.33.png,8\7\87549f94f7b887dc979519cc4b25519b70a501cc
+†
+VExecutionReports/LendNation/FailedTestsScreenshots/signContract2019.01.30.04.43.43.png,b\2\b23eefdf4a5b508e4a4c97413be2573a56beb5b2
+†
+VExecutionReports/LendNation/FailedTestsScreenshots/signContract2019.01.29.05.12.32.png,e\c\ec3497ddc6912bc632724dadc26c58244177c4de
+†
+VExecutionReports/LendNation/FailedTestsScreenshots/signContract2019.01.29.11.56.18.png,c\d\cd99bdb428d589a8af6bd21340507c085ba030e3
+o
+?ExecutionReports/LendNation/LendNation_01.29.2019.17.05.44.html,7\a\7ac94b01adaa103d39bcf00c0c3f5cc53a8531d2
+o
+?ExecutionReports/LendNation/LendNation_01.29.2019.15.05.37.html,e\f\ef419948195bf4dbb7195f338096454bf2e1b437
+o
+?ExecutionReports/LendNation/LendNation_01.29.2019.15.13.04.html,e\e\ee0198ba033f13dfd3e83e631d8f5cbee745a8fb
+o
+?ExecutionReports/LendNation/LendNation_01.29.2019.15.12.17.html,9\c\9c7311531817626e76ed9aaaf52412151e279164
+o
+?ExecutionReports/LendNation/LendNation_01.29.2019.15.06.23.html,a\d\ad08eece632a21cc4b373da7e23330ee8115d956
+f
+6TestData/LendNation/Registration_Lend_Nation_Texas.xls,8\f\8fa05135ed3a4ff3cd2e9c02799e53ff6ee43e2a
+=======
 €
 PExecutionReports/LendNation/FailedTestsScreenshots/Submit2019.02.01.04.57.39.png,4\b\4bd06f437c7f4bd85a17a3ad18be9771287c085a
 Ž
@@ -116,3 +144,4 @@ Q
 [
 +test-output/Default suite/Default test.html,e\e\ee618e2e5aa3d207f69c99fec27e84c075d26e49
 >>>>>>> a4a352df2b6d11552eca388eb0dc83e83bb0900d
+>>>>>>> 26f8126931b7afc696e5ebd31895ac4dfa2dd77b

@@ -42,7 +42,8 @@ public class VQCAdminCCKReturn extends QCStore {
 					String AdminURL = TestData.getCellData(sheetName, "AdminURL", row);
 					//String AdminURL="https://qcuat.qfund.net/cc/adminIndex.do";
 					String PIN = TestData.getCellData(sheetName,"PIN",row);
-					String StoreID = TestData.getCellData(sheetName,"StoreID",row);
+					//String StoreID = TestData.getCellData(sheetName,"StoreID",row);
+					String StoreID = vstoreid;
 					String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 					String CCKReasonForReturn = TestData.getCellData(sheetName,"CCKReasonForReturn",row);
 					String Esign_CollateralType = TestData.getCellData(sheetName,"Esign_CollateralType",row);
