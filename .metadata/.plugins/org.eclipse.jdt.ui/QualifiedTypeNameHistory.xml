@@ -2,7 +2,10 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.sql.CallableStatement"/>
 <fullyQualifiedTypeName name="oracle.jdbc.OracleTypes"/>
-<fullyQualifiedTypeName name="tests.BAdminStartDate"/>
 <fullyQualifiedTypeName name="tests.QCCSRLoginLogout"/>
 <fullyQualifiedTypeName name="tests.BProc3"/>
+<fullyQualifiedTypeName name="tests.BAdminEODDate"/>
+<fullyQualifiedTypeName name="tests.BAdminRebateDate"/>
+<fullyQualifiedTypeName name="tests.BAdminNVDate"/>
+<fullyQualifiedTypeName name="tests.BAdminStartDate"/>
 </qualifiedTypeNameHistroy>

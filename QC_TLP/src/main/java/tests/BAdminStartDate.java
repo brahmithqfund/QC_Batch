@@ -22,8 +22,8 @@ public class BAdminStartDate extends QCStore
 	public static void toStartdate(String SSN,String AppURL) throws InterruptedException, ParseException
 	{
 
-				String StoreID ="1710";
-				if(prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path").equalsIgnoreCase("/TestData/QCStore/TLP_Biweekly/"))
+				String StoreID ="1710";                                                       
+				if(prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path").equalsIgnoreCase("/TestData/QCStore/TLP_BiWeekly/"))
 				{
 					startdate="12/14/2017";
 				}

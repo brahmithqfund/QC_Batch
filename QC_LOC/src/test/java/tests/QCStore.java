@@ -1574,7 +1574,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 66, groups = { "EOD" })
+	@Test(priority = 66, groups = { "EOD" })
 
 	public static void LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn() throws Exception {
 		try {
@@ -1600,6 +1600,11 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
+					QCCSRLoginLogout.adminLogin(SSN, SSN);
+					BAdminStartDate.toStartdate(SSN, SSN);
+					QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
+					BProc3.proc();
+					
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
@@ -1677,7 +1682,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 67, groups = { "EOD" })
+	@Test(priority = 67, groups = { "EOD" })
 	public static void LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn() throws Exception {
 		try {
 
@@ -1779,7 +1784,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 68, groups = { "EOD" })
+	@Test(priority = 68, groups = { "EOD" })
 	public static void LOC_ACHDeposit_EODs_Return_Txn() throws Exception {
 		try {
 
@@ -1944,7 +1949,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 69, groups = { "EOD2" })
+	@Test(priority = 69, groups = { "EOD2" })
 	public static void LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn() throws Exception {
 		try {
 
@@ -1969,6 +1974,11 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
+					QCCSRLoginLogout.adminLogin(SSN, SSN);
+					BAdminStartDate.toStartdate(SSN, SSN);
+					QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
+					BProc3.proc();
+					
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);

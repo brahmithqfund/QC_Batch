@@ -142,7 +142,7 @@ public class QCBorrowerRegistration extends QCStore {
 								String business_date=store_date[1].trim();
 								transaction_date=business_date;
 								test.log(LogStatus.PASS, "Business date is :"+business_date);
-
+								Thread.sleep(2000);
 								driver.switchTo().defaultContent();	      
 						  
 						// wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("li[id='900000']")));

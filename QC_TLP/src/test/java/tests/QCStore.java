@@ -124,10 +124,10 @@ public class QCStore {
 
 					System.out.println(AppURL);
 					
-					/*QCCSRLoginLogout.adminLogin(SSN, SSN);
+					QCCSRLoginLogout.adminLogin(SSN, SSN);
 					BAdminStartDate.toStartdate(SSN, SSN);
 					QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
-					BProc3.proc();*/
+					BProc3.proc();
 					
 
 					QCCSRLoginLogout.login(SSN, AppURL);
@@ -154,7 +154,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority=103,groups="Brahmith1")
+	@Test(priority=103,groups="Brahmith")
 	public static void QC_NewLoan_Promotion_Txn() throws Exception {
 		try {
 
@@ -205,7 +205,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 104,groups="Brahmith1")
+	@Test(priority = 104,groups="Brahmith")
 	public static void QC_NewLoan_Void_Txn() throws Exception {
 		try {
 			// test =
@@ -260,7 +260,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 105,groups="Brahmith1")
+	@Test(priority = 105,groups="Brahmith")
 	public static void QC_AgeStore_Void_Txn() throws Exception {
 		try {
 			// test =
