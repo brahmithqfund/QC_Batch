@@ -111,8 +111,10 @@ public class QCAgeStoreDueDate extends QCStore{
 										    driver.switchTo().window(winHandle);
 										    
 											
-										    loan_number = driver.findElement(locator(prop.getProperty("csr_loan_nbr"))).getText();
-											test.log(LogStatus.PASS, "Loan Number is" + loan_number);
+
+										    loan_nbr= driver.findElement(locator(prop.getProperty("csr_loan_nbr"))).getText();
+											//test.log(LogStatus.PASS, "Loan Number is" + loan_nbr);
+
 											Thread.sleep(3000);
 										    NextDueDate= driver.findElement(locator(prop.getProperty("csr_due_date"))).getText();
 									        test.log(LogStatus.PASS, "Next due date is "+NextDueDate);

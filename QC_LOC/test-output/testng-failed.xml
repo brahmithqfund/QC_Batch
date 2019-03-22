@@ -6,6 +6,7 @@
       <run>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <include name="Ratikanta_NEOD"/>
 =======
 <<<<<<< HEAD
@@ -26,11 +27,15 @@
 =======
         <include name="EOD2"/>
 >>>>>>> brahmith1.1
+=======
+        <include name="Anoop_EOD2"/>
+>>>>>>> anoop1.1
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
           <include name="RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Void_Txn_Testdata"/>
@@ -47,6 +52,9 @@
           <include name="getResult"/>
           <include name="setup"/>
 =======
+=======
+          <include name="DepositEODTwice"/>
+>>>>>>> anoop1.1
           <include name="getResult"/>
           <include name="setup"/>
 <<<<<<< HEAD
@@ -54,6 +62,7 @@
 >>>>>>> brahmith1.1
 =======
           <include name="Deposit_DrawEODTwice"/>
+<<<<<<< HEAD
 >>>>>>> anoop1.1
 >>>>>>> f96b7d09c18261a556e71ad66742e2079a8ac046
 =======
@@ -67,6 +76,8 @@
           <include name="setup"/>
           <include name="LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn"/>
 >>>>>>> brahmith1.1
+=======
+>>>>>>> anoop1.1
           <include name="killProcess"/>
           <include name="RQC_LOC_2missedPayment_Default_EOD_Txn_Testdata"/>
           <include name="RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Txn_Testdata"/>

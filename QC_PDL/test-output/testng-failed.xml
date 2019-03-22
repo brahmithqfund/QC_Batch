@@ -11,9 +11,14 @@
       <class name="tests.QCStore">
         <methods>
           <include name="getResult"/>
+<<<<<<< HEAD
           <include name="setup"/>
           <include name="QC_Refinance_StepSameVoidURP_Txn"/>
           <include name="QC_Refinance_StepSameURP_Txn"/>
+=======
+          <include name="AQC_EPP_Return"/>
+          <include name="setup"/>
+>>>>>>> anoop1.1
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->

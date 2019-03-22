@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="76" total="77" passed="1">
   <reporter-output>
   </reporter-output>
@@ -27,6 +28,36 @@
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=QC_NewLoan_Promotion_Txn status=SUCCESS method=QCStore.QC_NewLoan_Promotion_Txn()[pri:100, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+=======
+<testng-results skipped="0" failed="0" ignored="54" total="55" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="1193605" started-at="2019-03-21T09:00:54Z" finished-at="2019-03-21T09:20:48Z">
+    <groups>
+      <group name="Anoop">
+        <method signature="QCStore.AQC_EPP_Return()[pri:20, instance:tests.QCStore@527740a2]" name="AQC_EPP_Return" class="tests.QCStore"/>
+      </group> <!-- Anoop -->
+    </groups>
+    <test name="Test" duration-ms="1193605" started-at="2019-03-21T09:00:54Z" finished-at="2019-03-21T09:20:48Z">
+      <class name="tests.QCStore">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="95" started-at="2019-03-21T09:00:54Z" finished-at="2019-03-21T09:00:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5012" started-at="2019-03-21T09:00:54Z" finished-at="2019-03-21T09:00:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="AQC_EPP_Return()[pri:20, instance:tests.QCStore@527740a2]" name="AQC_EPP_Return" duration-ms="1188262" started-at="2019-03-21T09:00:59Z" finished-at="2019-03-21T09:20:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AQC_EPP_Return -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="219" started-at="2019-03-21T09:20:47Z" finished-at="2019-03-21T09:20:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AQC_EPP_Return status=SUCCESS method=QCStore.AQC_EPP_Return()[pri:20, instance:tests.QCStore@527740a2] output={null}]]]>
+>>>>>>> anoop1.1
               </value>
             </param>
           </params>
