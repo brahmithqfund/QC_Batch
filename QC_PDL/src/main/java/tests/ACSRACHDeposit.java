@@ -19,6 +19,7 @@ public class ACSRACHDeposit extends QCStore {
 
 		int lastrow=TestData.getLastRow("NewLoan");
 		String sheetName="NewLoan";		
+		Thread.sleep(2000);
 		for(int row=2;row<=lastrow;row++)
 		{	
 			String RegSSN = TestData.getCellData(sheetName,"SSN",row);
@@ -31,7 +32,7 @@ public class ACSRACHDeposit extends QCStore {
 				String SSN2 = SSN.substring(3,5);
 				String SSN3 = SSN.substring(5,9);
 				driver.switchTo().defaultContent();		
-
+                Thread.sleep(2000);
 				driver.switchTo().frame("topFrame");
 				driver.findElement(By.xpath("//*[contains(text(),'Loan Transactions')]")).click();			
 				test.log(LogStatus.PASS, "Clicked on Loan Transactions");

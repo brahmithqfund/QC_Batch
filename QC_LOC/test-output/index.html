@@ -24,11 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-<<<<<<< HEAD
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
-=======
-      <span class="top-banner-font-1">1 suite</span>
->>>>>>> anoop1.1
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -42,11 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-<<<<<<< HEAD
               <span class="suite-name border-failed">Suite</span>
-=======
-              <span class="suite-name border-passed">Suite</span>
->>>>>>> anoop1.1
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -99,8 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-<<<<<<< HEAD
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -111,12 +102,15 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="AReviseCredit_IncIncome">AReviseCredit_IncIncome</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="DepositEODTwice">DepositEODTwice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="Deposit_DrawEODTwice">Deposit_DrawEODTwice</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
-=======
-                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -127,11 +121,10 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="Deposit_DrawEODTwice">Deposit_DrawEODTwice</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="PaymentdrawVoidEOD">PaymentdrawVoidEOD</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
->>>>>>> anoop1.1
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -143,35 +136,60 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-<<<<<<< HEAD
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-=======
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
->>>>>>> anoop1.1
               <span class="class-name">tests.QCStore</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-<<<<<<< HEAD
-                  <a name="AReviseCredit_IncIncome">
-                  </a> <!-- AReviseCredit_IncIncome -->
-                  <span class="method-name">AReviseCredit_IncIncome</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:29072
+                  <a name="DepositEODTwice">
+                  </a> <!-- DepositEODTwice -->
+                  <span class="method-name">DepositEODTwice</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to find element with name == done (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;QTLSYS1-182&apos;, ip: &apos;192.168.1.182&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+System info: host: &apos;QTLSYS2-48&apos;, ip: &apos;192.168.2.48&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:28600/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 2603ae68-9f7e-41b4-a0b9-c7677d17306b
+*** Element info: {Using=name, value=done}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at tests.AQCDrawerAssign.drawerAssign(AQCDrawerAssign.java:75)
+	at tests.QCStore.DepositEODTwice(QCStore.java:5150)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Deposit_DrawEODTwice">
+                  </a> <!-- Deposit_DrawEODTwice -->
+                  <span class="method-name">Deposit_DrawEODTwice</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:41470
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;QTLSYS2-48&apos;, ip: &apos;192.168.2.48&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
 Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at tests.SQCAgeStoreDueDate.ageStoreDueDate(SQCAgeStoreDueDate.java:107)
-	at tests.QCStore.AReviseCredit_IncIncome(QCStore.java:6044)
-Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:29072
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
+	at tests.ACSRBorrowerRegistration.borrowerReg(ACSRBorrowerRegistration.java:318)
+	at tests.QCStore.Deposit_DrawEODTwice(QCStore.java:5034)
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:41470
 	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:242)
 	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
 	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
@@ -212,15 +230,21 @@ Caused by: java.net.ConnectException: Connection refused: connect
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-=======
-                  <a name="Deposit_DrawEODTwice">
-                  </a> <!-- Deposit_DrawEODTwice -->
-                  <span class="method-name">Deposit_DrawEODTwice</span>
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.QCStore</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PaymentdrawVoidEOD">
+                  </a> <!-- PaymentdrawVoidEOD -->
+                  <span class="method-name">PaymentdrawVoidEOD</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
->>>>>>> anoop1.1
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -234,11 +258,7 @@ Caused by: java.net.ConnectException: Connection refused: connect
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;groups&gt;
       &lt;run&gt;
-<<<<<<< HEAD
-        &lt;include name=&quot;NonEOD1&quot;/&gt;
-=======
         &lt;include name=&quot;Anoop_EOD2&quot;/&gt;
->>>>>>> anoop1.1
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
@@ -267,17 +287,18 @@ Caused by: java.net.ConnectException: Connection refused: connect
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-<<<<<<< HEAD
-              <span class="test-group-name">NonEOD1</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">AReviseCredit_IncIncome</span>
-=======
               <span class="test-group-name">Anoop_EOD2</span>
               <br/>
               <div class="method-in-group">
+                <span class="method-in-group-name">DepositEODTwice</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">Deposit_DrawEODTwice</span>
->>>>>>> anoop1.1
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PaymentdrawVoidEOD</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -297,26 +318,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-<<<<<<< HEAD
-data.setCell(0, 1, 'AReviseCredit_IncIncome')
+data.setCell(0, 1, 'DepositEODTwice')
 data.setCell(0, 2, 'tests.QCStore')
-data.setCell(0, 3, 262876);
-=======
-data.setCell(0, 1, 'Deposit_DrawEODTwice')
-data.setCell(0, 2, 'tests.QCStore')
-data.setCell(0, 3, 2151265);
->>>>>>> anoop1.1
+data.setCell(0, 3, 2069524);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'PaymentdrawVoidEOD')
+data.setCell(1, 2, 'tests.QCStore')
+data.setCell(1, 3, 1270955);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Deposit_DrawEODTwice')
+data.setCell(2, 2, 'tests.QCStore')
+data.setCell(2, 3, 41370);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-<<<<<<< HEAD
-              <span class="suite-total-time">Total running time: 4 minutes</span>
-=======
-              <span class="suite-total-time">Total running time: 35 minutes</span>
->>>>>>> anoop1.1
+              <span class="suite-total-time">Total running time: 56 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -331,51 +350,27 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-<<<<<<< HEAD
-            <span class="header-content">83 ignored methods</span>
-=======
-            <span class="header-content">70 ignored methods</span>
->>>>>>> anoop1.1
+            <span class="header-content">99 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">tests.QCStore</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">LOC_Draw_Void_Txn</span>
+                <span class="ignored-method-name">AReviseCredit_IncIncome</span>
                 <br/>
                 <span class="ignored-method-name">JQC_LOC_Refinance_StepSame_Txn</span>
                 <br/>
-                <span class="ignored-method-name">RQC_LOC_Deposit_Return_ManualDefault_Txn_Testdata</span>
-                <br/>
-                <span class="ignored-method-name">JQC_LOC_New_Loan_Rescind_Txn</span>
-                <br/>
-<<<<<<< HEAD
-                <span class="ignored-method-name">PaymentdrawVoidEOD</span>
+                <span class="ignored-method-name">LOC_PayOff_after_RescindPeriod_Txn</span>
                 <br/>
                 <span class="ignored-method-name">SignatureNewLoan_EODTwice</span>
                 <br/>
-=======
->>>>>>> anoop1.1
                 <span class="ignored-method-name">JQC_LOC_Refinance_StepUp_Txn</span>
-                <br/>
-                <span class="ignored-method-name">LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn</span>
                 <br/>
                 <span class="ignored-method-name">LOC_PayOff_Draw_Void_Txn</span>
                 <br/>
-                <span class="ignored-method-name">LOC_Payment_Draw_Void_Txn</span>
-                <br/>
                 <span class="ignored-method-name">SQC_LOC_Deposit_Bulk_Void</span>
                 <br/>
-                <span class="ignored-method-name">JQC_LOC_LessThan_MinPayment_Txn</span>
-                <br/>
-<<<<<<< HEAD
                 <span class="ignored-method-name">DepositEODReDeposit</span>
-                <br/>
-=======
->>>>>>> anoop1.1
-                <span class="ignored-method-name">LOC_Deposit2_Return_Writeoff</span>
-                <br/>
-                <span class="ignored-method-name">PaymentDepositEODReDeposit</span>
                 <br/>
                 <span class="ignored-method-name">RQC_LOC_ManualDefault_Txn_Testdata</span>
                 <br/>
@@ -383,19 +378,13 @@ return data;
                 <br/>
                 <span class="ignored-method-name">RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Txn_Testdata</span>
                 <br/>
-                <span class="ignored-method-name">Deposit_Dropdown_Void</span>
-                <br/>
                 <span class="ignored-method-name">RQC_LOC_PayOff_Agestore180days_AutoClosure_Txn_Testdata</span>
                 <br/>
                 <span class="ignored-method-name">JQC_LOC_Payment_void_NextBusinessDay_Txn</span>
                 <br/>
-                <span class="ignored-method-name">Deposit_Dropdown</span>
-                <br/>
                 <span class="ignored-method-name">JQC_LOC_Refinance_EOD_Payment_Txn</span>
                 <br/>
                 <span class="ignored-method-name">JQC_LOC_Payment_After_Rescind_Txn</span>
-                <br/>
-                <span class="ignored-method-name">RQC_LOC_Deposit_Return_2ndDeposit_Clear_3rdDeposit_Return_Default_Txn_Testdata</span>
                 <br/>
                 <span class="ignored-method-name">DrawAndEOD</span>
                 <br/>
@@ -403,50 +392,19 @@ return data;
                 <br/>
                 <span class="ignored-method-name">JQC_LOC_Refinance_Stepdown_Txn</span>
                 <br/>
-                <span class="ignored-method-name">JQC_LOC_Refinance_Latefee_Payment_Txn</span>
+                <span class="ignored-method-name">PayOFFandEod</span>
                 <br/>
-                <span class="ignored-method-name">LOC_Deposit_Return_PayOff_Txn</span>
+                <span class="ignored-method-name">LOC_weekly_NextPay_NotOn_End_Txn</span>
                 <br/>
-                <span class="ignored-method-name">LOC_Deposit_Return_PayOff_Txn</span>
-                <br/>
-                <span class="ignored-method-name">JQC_LOC_LessThan_MinPayment_Return_Txn</span>
-                <br/>
-                <span class="ignored-method-name">RQC_LOC_Default_DefaultPayment_Void_Txn_Testdata</span>
-                <br/>
-                <span class="ignored-method-name">RQC_LOC_ManualDefault_EOD_Txn_Testdata</span>
-                <br/>
-                <span class="ignored-method-name">LOC_PayOff_RescindPeriod_void_Txn</span>
-                <br/>
-<<<<<<< HEAD
-                <span class="ignored-method-name">LOC_PayOff_RescindPeriod_void_Txn</span>
-                <br/>
-=======
->>>>>>> anoop1.1
                 <span class="ignored-method-name">JQC_LOC_New_Loan_GraceDay_Rescind_Txn</span>
                 <br/>
-                <span class="ignored-method-name">RQC_LOC_2missedPayment_Default_EOD_Txn_Testdata</span>
-                <br/>
-<<<<<<< HEAD
-                <span class="ignored-method-name">DepositEODTwice</span>
-                <br/>
-                <span class="ignored-method-name">PaymentAndEod</span>
-                <br/>
-=======
->>>>>>> anoop1.1
-                <span class="ignored-method-name">RQC_DefaultPayment_Void_Txn_Testdata</span>
-                <br/>
-                <span class="ignored-method-name">LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn</span>
-                <br/>
-<<<<<<< HEAD
                 <span class="ignored-method-name">EODOnDueDate</span>
                 <br/>
-                <span class="ignored-method-name">PaymentAndDraw</span>
-                <br/>
-=======
->>>>>>> anoop1.1
-                <span class="ignored-method-name">LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn</span>
+                <span class="ignored-method-name">LOC_NewLoan_MaxLOC_Txn</span>
                 <br/>
                 <span class="ignored-method-name">RQC_LOC_Default_DefaultPayment_Return_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">LOC_Bankrupt_Writeoff</span>
                 <br/>
                 <span class="ignored-method-name">RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Void_Txn_Testdata</span>
                 <br/>
@@ -458,9 +416,107 @@ return data;
                 <br/>
                 <span class="ignored-method-name">LOC_Payment_PayOff_Void_Txn</span>
                 <br/>
+                <span class="ignored-method-name">LOC_Payment_Gracedays_PayOff_Void_Txn</span>
+                <br/>
+                <span class="ignored-method-name">HigherPaymentAndEod</span>
+                <br/>
+                <span class="ignored-method-name">LOC_monthly_NextPay_NotOn_End_Txn</span>
+                <br/>
+                <span class="ignored-method-name">LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn</span>
+                <br/>
+                <span class="ignored-method-name">JQC_LOC_DueDate_LessThan_MinPayment_Txn</span>
+                <br/>
+                <span class="ignored-method-name">JQC_LOC_LessThan_MinPayment_Viod_Txn</span>
+                <br/>
+                <span class="ignored-method-name">JQC_LOC_GreaterThan_MinPayment_Return_Txn</span>
+                <br/>
+                <span class="ignored-method-name">DepositAndEOD</span>
+                <br/>
+                <span class="ignored-method-name">JQC_LOC_New_Loan_Void_GraceDay_Txn</span>
+                <br/>
+                <span class="ignored-method-name">LOC_Payment_PayOff_Return_Txn</span>
+                <br/>
+                <span class="ignored-method-name">LOC_PayOff_Draw_Txn</span>
+                <br/>
+                <span class="ignored-method-name">RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">RQC_LOC_Default_DefaultPayment_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">LOC_Payment_Draw_Txn</span>
+                <br/>
+                <span class="ignored-method-name">AReviseCredit_PayofffIncreaseIncome</span>
+                <br/>
+                <span class="ignored-method-name">RQC_LOC_PayOff_Closure_PayoffReturn_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">JQC_LOC_Payment_OnDueDate_Txn</span>
+                <br/>
+                <span class="ignored-method-name">LOC_Writeoff</span>
+                <br/>
+                <span class="ignored-method-name">LOC_Deposit_Return_Writeoff</span>
+                <br/>
+                <span class="ignored-method-name">JQC_LOC_New_Loan_After_RescindDays_Txn</span>
+                <br/>
+                <span class="ignored-method-name">SQC_LOC_LessMinPayment_Deposit</span>
+                <br/>
+                <span class="ignored-method-name">LOC_Draw_Void_Txn</span>
+                <br/>
+                <span class="ignored-method-name">RQC_LOC_Deposit_Return_ManualDefault_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">JQC_LOC_New_Loan_Rescind_Txn</span>
+                <br/>
+                <span class="ignored-method-name">LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn</span>
+                <br/>
+                <span class="ignored-method-name">LOC_Payment_Draw_Void_Txn</span>
+                <br/>
+                <span class="ignored-method-name">LOC_WriteoffRecoveryReturn</span>
+                <br/>
+                <span class="ignored-method-name">JQC_LOC_LessThan_MinPayment_Txn</span>
+                <br/>
+                <span class="ignored-method-name">LOC_Deposit2_Return_Writeoff</span>
+                <br/>
+                <span class="ignored-method-name">PaymentDepositEODReDeposit</span>
+                <br/>
+                <span class="ignored-method-name">Deposit_Dropdown_Void</span>
+                <br/>
+                <span class="ignored-method-name">Deposit_Dropdown</span>
+                <br/>
+                <span class="ignored-method-name">RQC_LOC_Deposit_Return_2ndDeposit_Clear_3rdDeposit_Return_Default_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">JQC_LOC_Refinance_Latefee_Payment_Txn</span>
+                <br/>
+                <span class="ignored-method-name">LOC_Deposit_Return_PayOff_Txn</span>
+                <br/>
+                <span class="ignored-method-name">LOC_Payment_PayOff_Txn</span>
+                <br/>
+                <span class="ignored-method-name">JQC_LOC_LessThan_MinPayment_Return_Txn</span>
+                <br/>
+                <span class="ignored-method-name">RQC_LOC_Default_DefaultPayment_Void_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">RQC_LOC_ManualDefault_EOD_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">LOC_semimonthly_NextPay_NotOn_End_Txn</span>
+                <br/>
+                <span class="ignored-method-name">LOC_PayOff_RescindPeriod_void_Txn</span>
+                <br/>
+                <span class="ignored-method-name">RQC_LOC_2missedPayment_Default_EOD_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">PaymentAndEod</span>
+                <br/>
+                <span class="ignored-method-name">RQC_DefaultPayment_Void_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn</span>
+                <br/>
+                <span class="ignored-method-name">LOC_Payment_GraceDays_PayOff_Txn</span>
+                <br/>
+                <span class="ignored-method-name">LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn</span>
+                <br/>
+                <span class="ignored-method-name">LOC_Biweekly_NextPay_NotOn_End_Txn</span>
+                <br/>
+                <span class="ignored-method-name">LOC_PayOff_On_DueDate_Txn</span>
+                <br/>
                 <span class="ignored-method-name">JQC_LOC_Payment_void_Txn</span>
                 <br/>
-                <span class="ignored-method-name">LOC_Payment_Gracedays_PayOff_Void_Txn</span>
+                <span class="ignored-method-name">LOC_Bankrupt_Writeoff_Dismissed</span>
                 <br/>
                 <span class="ignored-method-name">LOC_ACHDeposit_EODs_Return_Txn</span>
                 <br/>
@@ -470,67 +526,31 @@ return data;
                 <br/>
                 <span class="ignored-method-name">SQC_LOC_Deposit_Bulk</span>
                 <br/>
-<<<<<<< HEAD
-                <span class="ignored-method-name">HigherPaymentAndEod</span>
+                <span class="ignored-method-name">LOC_PartialWriteoffRecoveryVoid</span>
                 <br/>
-=======
->>>>>>> anoop1.1
-                <span class="ignored-method-name">LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn</span>
-                <br/>
-                <span class="ignored-method-name">JQC_LOC_DueDate_LessThan_MinPayment_Txn</span>
-                <br/>
-                <span class="ignored-method-name">JQC_LOC_LessThan_MinPayment_Viod_Txn</span>
-                <br/>
-                <span class="ignored-method-name">JQC_LOC_GreaterThan_MinPayment_Return_Txn</span>
+                <span class="ignored-method-name">LOC_Biweekly_Nextpay_Txn</span>
                 <br/>
                 <span class="ignored-method-name">RQC_LOC_PayOff_Closure_Txn_Testdata</span>
                 <br/>
                 <span class="ignored-method-name">MidDay_Void_Deposit</span>
                 <br/>
+                <span class="ignored-method-name">LOC_Payment_Void_PayOff_Txn</span>
+                <br/>
                 <span class="ignored-method-name">JQC_LOC_DueDate_GreaterThan_MinPayment_Txn</span>
-                <br/>
-<<<<<<< HEAD
-=======
-                <span class="ignored-method-name">AReviseCredit_IncreaseIncome</span>
-                <br/>
->>>>>>> anoop1.1
-                <span class="ignored-method-name">LOC_Payment_PayOff_Return_Txn</span>
-                <br/>
-                <span class="ignored-method-name">JQC_LOC_New_Loan_Void_GraceDay_Txn</span>
-                <br/>
-                <span class="ignored-method-name">LOC_PayOff_Draw_Txn</span>
                 <br/>
                 <span class="ignored-method-name">MidDay_Deposit</span>
                 <br/>
                 <span class="ignored-method-name">RQC_LOC_Payment_PayOff_Closure_Void_Txn_Testdata</span>
                 <br/>
-                <span class="ignored-method-name">RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata</span>
+                <span class="ignored-method-name">LOC_PartialWriteoffRecovery</span>
                 <br/>
                 <span class="ignored-method-name">LOC_Draw_Txn</span>
                 <br/>
-                <span class="ignored-method-name">RQC_LOC_Default_DefaultPayment_Txn_Testdata</span>
-                <br/>
-                <span class="ignored-method-name">LOC_Payment_Draw_Txn</span>
-<<<<<<< HEAD
-                <br/>
-                <span class="ignored-method-name">AReviseCredit_PayofffIncreaseIncome</span>
+                <span class="ignored-method-name">LOC_WriteoffRecovery</span>
                 <br/>
                 <span class="ignored-method-name">VoidandEod</span>
-=======
->>>>>>> anoop1.1
                 <br/>
-                <span class="ignored-method-name">RQC_LOC_PayOff_Closure_PayoffReturn_Txn_Testdata</span>
-                <br/>
-                <span class="ignored-method-name">JQC_LOC_Payment_OnDueDate_Txn</span>
-                <br/>
-                <span class="ignored-method-name">JQC_LOC_New_Loan_After_RescindDays_Txn</span>
-                <br/>
-<<<<<<< HEAD
                 <span class="ignored-method-name">Clear_Return_EODTwice</span>
-                <br/>
-=======
->>>>>>> anoop1.1
-                <span class="ignored-method-name">SQC_LOC_LessMinPayment_Deposit</span>
                 <br/>
                 <span class="ignored-method-name">JQC_LOC_Refinance_CABPayment_Return_Txn</span>
                 <br/>
@@ -551,31 +571,45 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">killProcess</span>
-<<<<<<< HEAD
-                <span class="method-start">100 ms</span>
+                <span class="method-start">108 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">AReviseCredit_IncIncome</span>
-                <span class="method-start">5118 ms</span>
+                <span class="method-name">PaymentdrawVoidEOD</span>
+                <span class="method-start">5132 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">getResult([TestResult name=AReviseCredit_IncIncome status=FAILURE method=QCStore.AReviseCredit_IncIncome()[pri...)</span>
-                <span class="method-start">267997 ms</span>
-=======
-                <span class="method-start">110 ms</span>
+                <span class="method-name">getResult([TestResult name=PaymentdrawVoidEOD status=SUCCESS method=QCStore.PaymentdrawVoidEOD()[pri:419, inst...)</span>
+                <span class="method-start">1276089 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">killProcess</span>
+                <span class="method-start">1276353 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">DepositEODTwice</span>
+                <span class="method-start">1281379 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=DepositEODTwice status=FAILURE method=QCStore.DepositEODTwice()[pri:420, instance:t...)</span>
+                <span class="method-start">3350908 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">killProcess</span>
+                <span class="method-start">3352286 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Deposit_DrawEODTwice</span>
-                <span class="method-start">5129 ms</span>
+                <span class="method-start">3357305 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=Deposit_DrawEODTwice status=SUCCESS method=QCStore.Deposit_DrawEODTwice()[pri:421, ...)</span>
-                <span class="method-start">2156397 ms</span>
->>>>>>> anoop1.1
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getResult([TestResult name=Deposit_DrawEODTwice status=FAILURE method=QCStore.Deposit_DrawEODTwice()[pri:421, ...)</span>
+                <span class="method-start">3398679 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
