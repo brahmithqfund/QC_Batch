@@ -6,8 +6,8 @@
   <run>
 
     <!-- Janaki's group--> 
-       <!-- <include name="Janaki"/>  -->
-   <!-- <include name="Janaki_WORecovery"/>  -->
+       <include name="Janaki1"/>
+<!--    <include name="Janaki_WORecovery"/>   -->
    
        <!-- Brahmith group--> 
    <!-- <include name="EOD"/>-->

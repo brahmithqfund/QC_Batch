@@ -4,15 +4,18 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="NonEOD1"/>
+        <include name="Anoop_EOD1"/>
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
-          <include name="AReviseCredit_IncIncome"/>
+          <include name="VoidandEod"/>
+          <include name="PayOFFandEod"/>
           <include name="getResult"/>
           <include name="setup"/>
+          <include name="DepositAndEOD"/>
+          <include name="DrawAndEOD"/>
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->

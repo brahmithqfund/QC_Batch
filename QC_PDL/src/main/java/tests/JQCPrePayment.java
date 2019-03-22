@@ -353,6 +353,13 @@ public class JQCPrePayment extends QCStore{
 										 test.log(LogStatus.PASS, "********************************************** ");
 										 
 									 	}
+									 else
+									 	{
+								
+										 test.log(LogStatus.INFO, ESign_CollateralType+" Pre-Payement from CSR is successfull");
+										 test.log(LogStatus.PASS, "********************************************** ");
+										 
+									 	}
 									}
 						}
 						break;

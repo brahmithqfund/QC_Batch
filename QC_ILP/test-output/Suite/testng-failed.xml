@@ -4,15 +4,17 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="Anoop_StdownVoid"/>
+        <include name="Anoop"/>
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
           <include name="getResult"/>
-          <include name="ILP_RefinanceStepDown_void"/>
           <include name="setup"/>
+          <include name="ILP_voidRefinance"/>
+          <include name="ILP_CheckAutoClear"/>
+          <include name="ILP_maxloanCount"/>
           <include name="endReport"/>
           <include name="killProcess"/>
         </methods>

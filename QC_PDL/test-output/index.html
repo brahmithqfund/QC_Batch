@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata">JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata">JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -125,9 +125,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata">
-                  </a> <!-- JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata -->
-                  <span class="method-name">JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata</span>
+                  <a name="JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata">
+                  </a> <!-- JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata -->
+                  <span class="method-name">JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -145,7 +145,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;groups&gt;
       &lt;run&gt;
-        &lt;include name=&quot;Janaki_WORecovery&quot;/&gt;
+        &lt;include name=&quot;Janaki1&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
@@ -174,10 +174,10 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">Janaki_WORecovery</span>
+              <span class="test-group-name">Janaki1</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata</span>
+                <span class="method-in-group-name">JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -199,9 +199,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata')
+data.setCell(0, 1, 'JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata')
 data.setCell(0, 2, 'tests.QCStore')
-data.setCell(0, 3, 1111869);
+data.setCell(0, 3, 1086758);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -267,9 +267,9 @@ return data;
                 <br/>
                 <span class="ignored-method-name">JQC_AgeStore_DCDeposit_Txn</span>
                 <br/>
-                <span class="ignored-method-name">JQC_EPP_AgestoreInstallmentwise_EPPPayment_Txn_Testdata</span>
-                <br/>
                 <span class="ignored-method-name">QC_Epp_Return_NSFPayment_Txn</span>
+                <br/>
+                <span class="ignored-method-name">JQC_EPP_AgestoreInstallmentwise_EPPPayment_Txn_Testdata</span>
                 <br/>
                 <span class="ignored-method-name">QC_Deposit_GraceDays_Txn</span>
                 <br/>
@@ -317,8 +317,6 @@ return data;
                 <br/>
                 <span class="ignored-method-name">JQC_AgeStore_PrePayment_Clear_Txn</span>
                 <br/>
-                <span class="ignored-method-name">JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata</span>
-                <br/>
                 <span class="ignored-method-name">GracedaysMiddayDeposit</span>
                 <br/>
                 <span class="ignored-method-name">QC_NewLoan_Void_Txn</span>
@@ -335,9 +333,9 @@ return data;
                 <br/>
                 <span class="ignored-method-name">RefinanceStepup</span>
                 <br/>
-                <span class="ignored-method-name">QC_FutureDeposit_DropDown</span>
-                <br/>
                 <span class="ignored-method-name">rebateStepup</span>
+                <br/>
+                <span class="ignored-method-name">QC_FutureDeposit_DropDown</span>
                 <br/>
                 <span class="ignored-method-name">QC_Refinance_StepSameVoidURP_Txn</span>
                 <br/>
@@ -357,15 +355,17 @@ return data;
                 <br/>
                 <span class="ignored-method-name">JQC_AgeStore_ACHReturn_Refinance_Rescind_Txn</span>
                 <br/>
+                <span class="ignored-method-name">JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata</span>
+                <br/>
                 <span class="ignored-method-name">JQC_BuyBack_Rebate_Txn_Testdata</span>
                 <br/>
                 <span class="ignored-method-name">rebateStepupVoid</span>
                 <br/>
                 <span class="ignored-method-name">QC_FutureDeposit_EOD_Txn</span>
                 <br/>
-                <span class="ignored-method-name">QC_Refinance_StepDownVoidURP_Txn</span>
-                <br/>
                 <span class="ignored-method-name">agerescindtest</span>
+                <br/>
+                <span class="ignored-method-name">QC_Refinance_StepDownVoidURP_Txn</span>
                 <br/>
                 <span class="ignored-method-name">JQC_Return_ReDeposit_Clear_Txn</span>
                 <br/>
@@ -396,15 +396,15 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">killProcess</span>
-                <span class="method-start">87 ms</span>
+                <span class="method-start">78 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata</span>
-                <span class="method-start">5106 ms</span>
+                <span class="method-name">JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata</span>
+                <span class="method-start">5108 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata status=SUCCESS method=QCStor...)</span>
-                <span class="method-start">1116976 ms</span>
+                <span class="method-name">getResult([TestResult name=JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata status=SUCCESS meth...)</span>
+                <span class="method-start">1091866 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

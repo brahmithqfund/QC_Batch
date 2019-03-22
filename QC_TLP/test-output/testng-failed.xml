@@ -4,15 +4,19 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="Janaki_EOD_set1"/>
+        <include name="Janaki"/>
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
+          <include name="JQC_TLP_Deposit_Menu_Txn"/>
+          <include name="JQC_TLP_Deposit_dropdown_Txn"/>
+          <include name="JQC_TLP_GraceDays_Deposit_dropdown_Txn"/>
+          <include name="JQC_DefaultPayment_Txn_Testdata"/>
           <include name="getResult"/>
           <include name="setup"/>
-          <include name="JQC_TLP_Deposit_EOD_Txn"/>
+          <include name="JQC_DefaultPayment_Void_Txn_Testdata"/>
           <include name="endReport"/>
           <include name="killProcess"/>
         </methods>

@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="Anoop_StdownVoid" key="selection"/>
+		<item value="Janaki1" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="Anoop_StdownVoid"/>
-			<item value="Anoop_stDown"/>
+			<item value="QC_Deceased"/>
+			<item value="Janaki1"/>
+			<item value="Janaki_WORecovery"/>
+			<item value="write"/>
+			<item value="Janaki_EOD_set1"/>
+			<item value="QC_LOC_EODDuedate"/>
+			<item value="QC_Store_extent_report_path"/>
 			<item value="QC_Store_NewLoan_Test_data_sheet_path"/>
-			<item value="Anoop1"/>
-			<item value="QC_Loan_deposit_AutoClear"/>
-			<item value="QC_Loan_deposit_ClearFromDropDown"/>
-			<item value="QC_Loan_StepUP"/>
-			<item value="QC_Loan_Redeposit"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>
@@ -25,7 +25,7 @@
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
-		<item value="835" key="DIALOG_X_ORIGIN"/>
-		<item value="322" key="DIALOG_Y_ORIGIN"/>
+		<item value="1067" key="DIALOG_X_ORIGIN"/>
+		<item value="233" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

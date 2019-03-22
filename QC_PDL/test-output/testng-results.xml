@@ -2,31 +2,31 @@
 <testng-results skipped="0" failed="0" ignored="76" total="77" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="1117169" started-at="2019-03-12T05:23:50Z" finished-at="2019-03-12T05:42:27Z">
+  <suite name="Suite" duration-ms="1092068" started-at="2019-03-21T11:22:12Z" finished-at="2019-03-21T11:40:25Z">
     <groups>
-      <group name="Janaki_WORecovery">
-        <method signature="QCStore.JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata()[pri:423, instance:tests.QCStore@527740a2]" name="JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata" class="tests.QCStore"/>
-      </group> <!-- Janaki_WORecovery -->
+      <group name="Janaki1">
+        <method signature="QCStore.JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata()[pri:420, instance:tests.QCStore@527740a2]" name="JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata" class="tests.QCStore"/>
+      </group> <!-- Janaki1 -->
     </groups>
-    <test name="Test" duration-ms="1117169" started-at="2019-03-12T05:23:50Z" finished-at="2019-03-12T05:42:27Z">
+    <test name="Test" duration-ms="1092068" started-at="2019-03-21T11:22:12Z" finished-at="2019-03-21T11:40:25Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="82" started-at="2019-03-12T05:23:50Z" finished-at="2019-03-12T05:23:50Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="78" started-at="2019-03-21T11:22:12Z" finished-at="2019-03-21T11:22:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5019" started-at="2019-03-12T05:23:50Z" finished-at="2019-03-12T05:23:55Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5030" started-at="2019-03-21T11:22:13Z" finished-at="2019-03-21T11:22:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata()[pri:423, instance:tests.QCStore@527740a2]" name="JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata" duration-ms="1111869" started-at="2019-03-12T05:23:55Z" finished-at="2019-03-12T05:42:27Z">
+        <test-method status="PASS" signature="JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata()[pri:420, instance:tests.QCStore@527740a2]" name="JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata" duration-ms="1086758" started-at="2019-03-21T11:22:18Z" finished-at="2019-03-21T11:40:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="184" started-at="2019-03-12T05:42:27Z" finished-at="2019-03-12T05:42:27Z">
+        </test-method> <!-- JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="187" started-at="2019-03-21T11:40:24Z" finished-at="2019-03-21T11:40:25Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata status=SUCCESS method=QCStore.JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata()[pri:423, instance:tests.QCStore@527740a2] output={null}]]]>
+                <![CDATA[[TestResult name=JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata status=SUCCESS method=QCStore.JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata()[pri:420, instance:tests.QCStore@527740a2] output={null}]]]>
               </value>
             </param>
           </params>

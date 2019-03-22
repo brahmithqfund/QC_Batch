@@ -36,7 +36,7 @@ public class CSRMidDayDeposit extends QCStore {
 		driver.switchTo().frame("mainFrame");
 		driver.findElement(By.xpath("//*[@id='932000']/a")).click();	
 		test.log(LogStatus.PASS, "Clicked on Safe button");
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//*[@id='932050']/a")).click();	
 		test.log(LogStatus.PASS, "Clicked on Deposit button");
 		Thread.sleep(3000);

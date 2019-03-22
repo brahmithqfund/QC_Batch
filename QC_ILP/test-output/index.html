@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="JQC_ILP_Payment_Refinance_StepUp_Txn">JQC_ILP_Payment_Refinance_StepUp_Txn</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="JQC_ILP_Deposit_EOD_Txn">JQC_ILP_Deposit_EOD_Txn</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -125,9 +125,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="JQC_ILP_Payment_Refinance_StepUp_Txn">
-                  </a> <!-- JQC_ILP_Payment_Refinance_StepUp_Txn -->
-                  <span class="method-name">JQC_ILP_Payment_Refinance_StepUp_Txn</span>
+                  <a name="JQC_ILP_Deposit_EOD_Txn">
+                  </a> <!-- JQC_ILP_Deposit_EOD_Txn -->
+                  <span class="method-name">JQC_ILP_Deposit_EOD_Txn</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -145,7 +145,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;groups&gt;
       &lt;run&gt;
-        &lt;include name=&quot;janaki_Refinance_StUp&quot;/&gt;
+        &lt;include name=&quot;Janaki_EOD_set11&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
@@ -174,10 +174,10 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">janaki_Refinance_StUp</span>
+              <span class="test-group-name">Janaki_EOD_set11</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">JQC_ILP_Payment_Refinance_StepUp_Txn</span>
+                <span class="method-in-group-name">JQC_ILP_Deposit_EOD_Txn</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -199,14 +199,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'JQC_ILP_Payment_Refinance_StepUp_Txn')
+data.setCell(0, 1, 'JQC_ILP_Deposit_EOD_Txn')
 data.setCell(0, 2, 'tests.QCStore')
-data.setCell(0, 3, 57792);
+data.setCell(0, 3, 803339);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 57 seconds</span>
+              <span class="suite-total-time">Total running time: 13 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -241,6 +241,8 @@ return data;
                 <br/>
                 <span class="ignored-method-name">ILP_borrowregNewloan</span>
                 <br/>
+                <span class="ignored-method-name">JQC_ILP_Payment_Refinance_StepUp_Txn</span>
+                <br/>
                 <span class="ignored-method-name">QC_NewLoan_Promotion_Txn</span>
                 <br/>
                 <span class="ignored-method-name">QC_LessInterest_VoidFullPayment_Txn</span>
@@ -267,9 +269,9 @@ return data;
                 <br/>
                 <span class="ignored-method-name">ILP_Redeposit</span>
                 <br/>
-                <span class="ignored-method-name">QC_AgeStore_Void_Txn</span>
-                <br/>
                 <span class="ignored-method-name">ILP_RefinanceStepDown</span>
+                <br/>
+                <span class="ignored-method-name">QC_AgeStore_Void_Txn</span>
                 <br/>
                 <span class="ignored-method-name">ILP_ProcessClear</span>
                 <br/>
@@ -307,9 +309,9 @@ return data;
                 <br/>
                 <span class="ignored-method-name">QC_ILP_Return_Menu_Txn</span>
                 <br/>
-                <span class="ignored-method-name">JQC_ILP_Deposit_Menu_Txn</span>
-                <br/>
                 <span class="ignored-method-name">ILP_RefinanceStepUpVoid</span>
+                <br/>
+                <span class="ignored-method-name">JQC_ILP_Deposit_Menu_Txn</span>
                 <br/>
                 <span class="ignored-method-name">JQC_ILP_Deposit_dropdown_Txn</span>
                 <br/>
@@ -322,8 +324,6 @@ return data;
                 <span class="ignored-method-name">ILP_CheckAutoClear</span>
                 <br/>
                 <span class="ignored-method-name">JQC_ILP_Deceased_Txn</span>
-                <br/>
-                <span class="ignored-method-name">JQC_ILP_Deposit_EOD_Txn</span>
                 <br/>
                 <span class="ignored-method-name">RQC_Default_Refinance_Txn_Testdata</span>
                 <br/>
@@ -344,19 +344,19 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">killProcess</span>
-                <span class="method-start">87 ms</span>
+                <span class="method-start">78 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">JQC_ILP_Payment_Refinance_StepUp_Txn</span>
-                <span class="method-start">5096 ms</span>
+                <span class="method-name">JQC_ILP_Deposit_EOD_Txn</span>
+                <span class="method-start">5094 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">62889 ms</span>
+                <span class="method-start">808433 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=JQC_ILP_Payment_Refinance_StepUp_Txn status=SUCCESS method=QCStore.JQC_ILP_Payment_...)</span>
-                <span class="method-start">62889 ms</span>
+                <span class="method-name">getResult([TestResult name=JQC_ILP_Deposit_EOD_Txn status=SUCCESS method=QCStore.JQC_ILP_Deposit_EOD_Txn()[pri...)</span>
+                <span class="method-start">808433 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

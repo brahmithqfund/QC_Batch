@@ -5,10 +5,40 @@
     <classes>
       <class name="tests.QCStore">
         <methods>
-          <include name="getResult"/>
+          <include name="AReviseCredit_IncIncome"/>
+          <include name="LOC_Draw_Void_Txn"/>
+          <include name="LOC_Payment_Void_PayOff_Void_Txn"/>
           <include name="setup"/>
-          <include name="JQC_LOC_GreaterThan_MinPayment_Txn"/>
+          <include name="PaymentdrawVoidEOD"/>
+          <include name="SignatureNewLoan_EODTwice"/>
+          <include name="LOC_PayOff_Draw_Void_Txn"/>
+          <include name="LOC_Payment_Draw_Void_Txn"/>
+          <include name="SQC_LOC_Deposit_Bulk_Void"/>
+          <include name="DepositEODReDeposit"/>
+          <include name="LOC_Deposit2_Return_Writeoff"/>
+          <include name="LOC_Payment_PayOff_Void_Txn"/>
+          <include name="LOC_Payment_Gracedays_PayOff_Void_Txn"/>
+          <include name="PaymentDepositEODReDeposit"/>
+          <include name="LOC_PayOff_Return_Txn"/>
+          <include name="SQC_LOC_Deposit_Bulk"/>
+          <include name="Deposit_Dropdown_Void"/>
+          <include name="MidDay_Void_Deposit"/>
+          <include name="DepositAndEOD"/>
+          <include name="Deposit_Dropdown"/>
+          <include name="DrawAndEOD"/>
+          <include name="PayOFFandEod"/>
+          <include name="MidDay_Deposit"/>
+          <include name="Deposit_DrawEODTwice"/>
+          <include name="LOC_PayOff_RescindPeriod_void_Txn"/>
           <include name="killProcess"/>
+          <include name="AReviseCredit_PayofffIncreaseIncome"/>
+          <include name="VoidandEod"/>
+          <include name="DepositEODTwice"/>
+          <include name="getResult"/>
+          <include name="LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn"/>
+          <include name="PaymentAndDraw"/>
+          <include name="Clear_Return_EODTwice"/>
+          <include name="SQC_LOC_LessMinPayment_Deposit"/>
         </methods>
       </class> <!-- tests.QCStore -->
     </classes>

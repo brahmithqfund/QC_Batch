@@ -4513,7 +4513,7 @@ public class QCStore {
 					JQCCmgDeposit.CmgDeposit(SSN, AppURL);
 					JQCCSRLoginLogout.logout(SSN, AppURL);
 					JQCAdminLoginLogout.login(SSN, AppURL);
-					JQCAdminLoginLogout.login(SSN, AppURL);
+					//JQCAdminLoginLogout.login(SSN, AppURL);
 					JQCCSRReturnPosting.ReturnPosting(SSN, AppURL);
 					JQCAdminLoginLogout.logout(SSN, AppURL);
 					JQCCSRLoginLogout.login(SSN, AppURL);
@@ -4608,7 +4608,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 420, enabled = true, groups = "Janaki")
+	@Test(priority = 420, enabled = true, groups = "Janaki1")
 	public static void JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(
