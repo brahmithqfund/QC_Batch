@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <include name="Ratikanta_NEOD"/>
 =======
 <<<<<<< HEAD
@@ -30,11 +31,15 @@
 =======
         <include name="Anoop_EOD2"/>
 >>>>>>> anoop1.1
+=======
+        <include name="Anoop_EOD1"/>
+>>>>>>> janaki1.2
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -78,6 +83,14 @@
 >>>>>>> brahmith1.1
 =======
 >>>>>>> anoop1.1
+=======
+          <include name="VoidandEod"/>
+          <include name="PayOFFandEod"/>
+          <include name="getResult"/>
+          <include name="setup"/>
+          <include name="DepositAndEOD"/>
+          <include name="DrawAndEOD"/>
+>>>>>>> janaki1.2
           <include name="killProcess"/>
           <include name="RQC_LOC_2missedPayment_Default_EOD_Txn_Testdata"/>
           <include name="RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Txn_Testdata"/>

@@ -1,23 +1,11 @@
 =\=\=\=\=\=\=
 <<<<<<<=HEAD
->>>>>>>=142a91c5653888e6feab1178c6b3bfd7b13dd4e3
+>>>>>>>=a4a352df2b6d11552eca388eb0dc83e83bb0900d
 eclipse.preferences.version=1
 org.eclipse.jdt.core.builder.resourceCopyExclusionFilter=
-<<<<<<< HEAD
 org.eclipse.jdt.core.classpathVariable.JRE_LIB=C\:/Program Files/Java/jdk1.8.0_101/jre/lib/rt.jar
 org.eclipse.jdt.core.classpathVariable.JRE_SRC=C\:/Program Files/Java/jdk1.8.0_101/src.zip
 org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-org.eclipse.jdt.core.classpathVariable.JRE_LIB=C\:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar
-org.eclipse.jdt.core.classpathVariable.JRE_SRC=C\:/Program Files/Java/jdk1.8.0_171/src.zip
-org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=
->>>>>>> 142a91c5653888e6feab1178c6b3bfd7b13dd4e3
-=======
->>>>>>> jyothi1.1
->>>>>>> a4a352df2b6d11552eca388eb0dc83e83bb0900d
 org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
 org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
 org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.8

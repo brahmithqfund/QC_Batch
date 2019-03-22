@@ -2,6 +2,7 @@
 <testng-results skipped="0" failed="0" ignored="54" total="55" passed="1">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Suite" duration-ms="141420" started-at="2019-03-21T13:13:01Z" finished-at="2019-03-21T13:15:23Z">
     <groups>
       <group name="Brahmith1">
@@ -31,12 +32,43 @@
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=QC_NewLoan_Promotion_Txn status=SUCCESS method=QCStore.QC_NewLoan_Promotion_Txn()[pri:4, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+=======
+  <suite name="Suite" duration-ms="808743" started-at="2019-03-21T07:25:45Z" finished-at="2019-03-21T07:39:13Z">
+    <groups>
+      <group name="Janaki_EOD_set11">
+        <method signature="QCStore.JQC_ILP_Deposit_EOD_Txn()[pri:8, instance:tests.QCStore@527740a2]" name="JQC_ILP_Deposit_EOD_Txn" class="tests.QCStore"/>
+      </group> <!-- Janaki_EOD_set11 -->
+    </groups>
+    <test name="Test" duration-ms="808743" started-at="2019-03-21T07:25:45Z" finished-at="2019-03-21T07:39:13Z">
+      <class name="tests.QCStore">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="78" started-at="2019-03-21T07:25:45Z" finished-at="2019-03-21T07:25:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5016" started-at="2019-03-21T07:25:45Z" finished-at="2019-03-21T07:25:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="JQC_ILP_Deposit_EOD_Txn()[pri:8, instance:tests.QCStore@527740a2]" name="JQC_ILP_Deposit_EOD_Txn" duration-ms="803339" started-at="2019-03-21T07:25:50Z" finished-at="2019-03-21T07:39:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JQC_ILP_Deposit_EOD_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="292" started-at="2019-03-21T07:39:13Z" finished-at="2019-03-21T07:39:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JQC_ILP_Deposit_EOD_Txn status=SUCCESS method=QCStore.JQC_ILP_Deposit_EOD_Txn()[pri:8, instance:tests.QCStore@527740a2] output={null}]]]>
+>>>>>>> janaki1.2
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-21T07:39:13Z" finished-at="2019-03-21T07:39:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
       </class> <!-- tests.QCStore -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

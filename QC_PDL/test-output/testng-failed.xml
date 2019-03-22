@@ -4,7 +4,11 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
+<<<<<<< HEAD
         <include name="1stBatch1"/>
+=======
+        <include name="Janaki1"/>
+>>>>>>> janaki1.2
       </run>
     </groups>
     <classes>
@@ -13,12 +17,16 @@
           <include name="getResult"/>
 <<<<<<< HEAD
           <include name="setup"/>
+<<<<<<< HEAD
           <include name="QC_Refinance_StepSameVoidURP_Txn"/>
           <include name="QC_Refinance_StepSameURP_Txn"/>
 =======
           <include name="AQC_EPP_Return"/>
           <include name="setup"/>
 >>>>>>> anoop1.1
+=======
+          <include name="JQC_Return_ReDeposit_Clear_Txn"/>
+>>>>>>> janaki1.2
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->

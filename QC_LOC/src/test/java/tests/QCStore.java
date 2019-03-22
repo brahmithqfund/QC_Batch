@@ -5529,7 +5529,7 @@ public static void LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn() throws Exceptio
 		}
 	}
 
-	@Test(priority = 414, enabled = true, groups = "Anoop_EOD1")
+	//@Test(priority = 414, enabled = true, groups = "Anoop_EOD1")
 
 	public void HigherPaymentAndEod() throws Exception {
 		FileName = "QC_LOC_MorePayment_EOD.xls";
@@ -5585,7 +5585,7 @@ public static void LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn() throws Exceptio
 		}
 	}
 
-	@Test(priority = 413, enabled = true, groups = "Anoop_EOD1")
+	//@Test(priority = 413, enabled = true, groups = "Anoop_EOD1")
 
 	public void PaymentAndEod() throws Exception {
 		FileName = "QC_LOC_Payment_EOD.xls";
@@ -5640,7 +5640,7 @@ public static void LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn() throws Exceptio
 		}
 	}
 
-	@Test(priority = 412, enabled = true, groups = "Anoop_EOD1")
+	//@Test(priority = 412, enabled = true, groups = "Anoop_EOD1")
 
 	public void EODOnDueDate() throws Exception {
 		FileName = "QC_LOC_EODDuedate.xls";

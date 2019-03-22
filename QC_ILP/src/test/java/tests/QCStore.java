@@ -1592,6 +1592,27 @@ public class QCStore {
 					JQCCSRLoginLogout.logout(SSN, AppURL);
 					JQCCSRLoginLogout.login(SSN, AppURL);
 					JQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
+					JQCCSRLoginLogout.login(SSN, AppURL);
+					JQC_Payment.payment(SSN, AppURL);
+					JQCCSRLoginLogout.logout(SSN, AppURL);
+					JQCCSRLoginLogout.login(SSN, AppURL);
+					JQCCSRNewLoan2.newLoan2(SSN, AppURL);
+					JQCCSRLoginLogout.logout(SSN, AppURL);
+					JQCCSRLoginLogout.login(SSN, AppURL);
+					JQCAgeStoreGraceDays.ageStoreGraceDays2ndTime(SSN, AppURL);
+					JQCCSRLoginLogout.login(SSN, AppURL);
+					JQC_Payment.payment1(SSN, AppURL);
+					JQCCSRLoginLogout.logout(SSN, AppURL);
+					JQCCSRLoginLogout.login(SSN, AppURL);
+					JQCAgeStoreGraceDays.ageStoreGraceDays3rdTime(SSN, AppURL);
+					JQCCSRLoginLogout.login(SSN, AppURL);
+					JQC_Payment.payment2(SSN, AppURL);
+					JQCCSRLoginLogout.logout(SSN, AppURL);
+					JQCCSRLoginLogout.login(SSN, AppURL);
+					JQCAgeStoreGraceDays.ageStoreGraceDays4thTime(SSN, AppURL);
+					/*JQCCSRLoginLogout.login(SSN, AppURL);
+					JQC_Payment.payment2(SSN, AppURL);
+					JQCCSRLoginLogout.logout(SSN, AppURL);*/
 
 				}
 			}
@@ -1601,7 +1622,7 @@ public class QCStore {
 			System.out.println("under catch of Test" + e);
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario 11 JQC_ILP_Deposit_dropdown_Txn ");
+			test.log(LogStatus.ERROR, "Unable to start JQC_ILP_Payment_Refinance_StepUp_Txn ");
 
 		}
 	}

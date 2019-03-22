@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <groups>
@@ -32,6 +33,10 @@
 >>>>>>> anoop1.1
       </run>
     </groups>
+=======
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+>>>>>>> janaki1.2
     <classes>
       <class name="tests.QCStore">
         <methods>
@@ -49,8 +54,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
           <include name="AReviseCredit_IncIncome"/>
-          <include name="getResult"/>
+          <include name="LOC_Draw_Void_Txn"/>
+          <include name="LOC_Payment_Void_PayOff_Void_Txn"/>
           <include name="setup"/>
+<<<<<<< HEAD
 =======
 =======
           <include name="DepositEODTwice"/>
@@ -87,8 +94,40 @@
           <include name="RQC_LOC_PayOff_Agestore180days_AutoClosure_Txn_Testdata"/>
           <include name="RQC_LOC_Deposit_Return_2ndDeposit_Clear_3rdDeposit_Return_Default_Txn_Testdata"/>
           <include name="RQC_LOC_Default_DefaultPayment_Return_Txn_Testdata"/>
+=======
+          <include name="PaymentdrawVoidEOD"/>
+          <include name="SignatureNewLoan_EODTwice"/>
+          <include name="LOC_PayOff_Draw_Void_Txn"/>
+          <include name="LOC_Payment_Draw_Void_Txn"/>
+          <include name="SQC_LOC_Deposit_Bulk_Void"/>
+          <include name="DepositEODReDeposit"/>
+          <include name="LOC_Deposit2_Return_Writeoff"/>
+          <include name="LOC_Payment_PayOff_Void_Txn"/>
+          <include name="LOC_Payment_Gracedays_PayOff_Void_Txn"/>
+          <include name="PaymentDepositEODReDeposit"/>
+          <include name="LOC_PayOff_Return_Txn"/>
+          <include name="SQC_LOC_Deposit_Bulk"/>
+          <include name="Deposit_Dropdown_Void"/>
+          <include name="MidDay_Void_Deposit"/>
+          <include name="DepositAndEOD"/>
+          <include name="Deposit_Dropdown"/>
+          <include name="DrawAndEOD"/>
+          <include name="PayOFFandEod"/>
+          <include name="MidDay_Deposit"/>
+          <include name="Deposit_DrawEODTwice"/>
+          <include name="LOC_PayOff_RescindPeriod_void_Txn"/>
+          <include name="killProcess"/>
+          <include name="AReviseCredit_PayofffIncreaseIncome"/>
+          <include name="VoidandEod"/>
+          <include name="DepositEODTwice"/>
+          <include name="getResult"/>
+          <include name="LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn"/>
+          <include name="PaymentAndDraw"/>
+          <include name="Clear_Return_EODTwice"/>
+          <include name="SQC_LOC_LessMinPayment_Deposit"/>
+>>>>>>> janaki1.2
         </methods>
       </class> <!-- tests.QCStore -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
