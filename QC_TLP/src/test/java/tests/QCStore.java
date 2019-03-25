@@ -95,7 +95,7 @@ public class QCStore {
 	public static String appdate;
 	public static String day;
 
-	@Test(priority = 101, groups="Brahmith")
+	@Test(priority = 101, groups="Brahmith1")
 	public static void QC_TLP_NewLoan_Txn() throws Exception {
 		try {
 			// test =
@@ -123,6 +123,12 @@ public class QCStore {
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 
 					System.out.println(AppURL);
+					
+					QCCSRLoginLogout.adminLogin(SSN, SSN);
+					BAdminStartDate.toStartdate(SSN, SSN);
+					QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
+					BProc3.proc();
+					
 
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);

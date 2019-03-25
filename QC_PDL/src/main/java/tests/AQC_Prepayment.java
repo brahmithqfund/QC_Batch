@@ -134,7 +134,7 @@ public class AQC_Prepayment extends QCStore{
 		            catch (NoAlertPresentException e) {
 		                //do what you normally would if you didn't have the alert.
 		            }
-					Thread.sleep(3000);
+					Thread.sleep(8000);
 					driver.switchTo().defaultContent();
 					driver.switchTo().frame("mainFrame");
 					driver.switchTo().frame("main");
@@ -148,8 +148,8 @@ public class AQC_Prepayment extends QCStore{
 					}
 					else
 					{
-						test.log(LogStatus.PASS, " EPP Prepayment  is successfull");
-						test.log(LogStatus.PASS, "********************************************** ");
+						test.log(LogStatus.FAIL, " EPP Prepayment  is not successfull");
+						test.log(LogStatus.FAIL, "********************************************** ");
 					}
 
 				}

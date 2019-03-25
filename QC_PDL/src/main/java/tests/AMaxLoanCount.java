@@ -234,6 +234,7 @@ public class AMaxLoanCount extends QCStore{
 			catch(Exception e){
 				test.log(LogStatus.PASS, "CustomerReached maximum Loan amounts");
 				ACSRLoginLogout.logout();
+				
 
 
 			}

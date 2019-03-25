@@ -95,7 +95,7 @@ public class QCStore {
 
 	public static String NextDueDate;
 
-	@Test(priority = 100, groups = { "1stBatch" })
+	@Test(priority = 100, groups = { "1stBatch1" })
 	public static void QC_NewLoan_Promotion_Txn() throws Exception {
 		try {
 			// test =
@@ -125,6 +125,11 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
+					QCCSRLoginLogout.adminLogin(SSN, SSN);
+					BAdminStartDate.toStartdate(SSN, SSN);
+					QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
+					BProc3.proc();
+					
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
@@ -1303,6 +1308,11 @@ public class QCStore {
 					// String AppURL = TestData.getCellData(sheetName, "AppURL",
 					// row);
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
+					QCCSRLoginLogout.adminLogin(SSN, SSN);
+					BAdminRebateDate.toStartdate(SSN, SSN);
+					QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
+					BProc3.proc();
+					
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
@@ -1424,6 +1434,11 @@ public class QCStore {
 					// String AppURL = TestData.getCellData(sheetName, "AppURL",
 					// row);
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
+					QCCSRLoginLogout.adminLogin(SSN, SSN);
+					BAdminNVDate.toStartdate(SSN, SSN);
+					QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
+					BProc3.proc();
+					
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
@@ -1547,6 +1562,11 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
+					QCCSRLoginLogout.adminLogin(SSN, SSN);
+					BAdminEODDate.toStartdate(SSN, SSN);
+					QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
+					BProc3.proc();
+					
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
@@ -4513,7 +4533,7 @@ public class QCStore {
 					JQCCmgDeposit.CmgDeposit(SSN, AppURL);
 					JQCCSRLoginLogout.logout(SSN, AppURL);
 					JQCAdminLoginLogout.login(SSN, AppURL);
-					JQCAdminLoginLogout.login(SSN, AppURL);
+					//JQCAdminLoginLogout.login(SSN, AppURL);
 					JQCCSRReturnPosting.ReturnPosting(SSN, AppURL);
 					JQCAdminLoginLogout.logout(SSN, AppURL);
 					JQCCSRLoginLogout.login(SSN, AppURL);
@@ -4608,7 +4628,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 420, enabled = true, groups = "Janaki")
+	@Test(priority = 420, enabled = true, groups = "Janaki1")
 	public static void JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(

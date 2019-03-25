@@ -6,10 +6,11 @@
   <run>
 
   <!--  Brahmith scenarios   -->  
-
     <!-- <include name="EOD"/>-->  
+
    <!-- <include name="EOD2"/>-->
  <!-- <include name="1st Batch"/>-->
+
  
   <!--  Janaki scenarios  -->
  <!-- <include name="Janaki"/>  -->
@@ -19,9 +20,9 @@
 
 
   <!--  Anoop scenarios -->
-
      <!--<include name="Anoop_EOD1"/>-->
-   <!--   <include name="Anoop_EOD2"/> -->
+<!--      <include name="Anoop_EOD2"/> -->
+
       <!-- <include name="Anoop_EOD3"/> -->
 
    
@@ -33,7 +34,9 @@
  
   <!--  Shashi scenarios  -->
 
+
  <!--  <include name="NonEOD"/>  -->
+
   <!--  <include name="Shashi"/> -->
   <!-- <include name="EOD"/>  -->
 

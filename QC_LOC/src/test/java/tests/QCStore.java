@@ -61,6 +61,7 @@ public class QCStore {
 	public static String loan_nbr;
 	public static String NextDueDate;
 	public static String AppURL;
+	public static String BAdminURL;
 	public static String AdminURL;
 	public static String business_date;
 	public static String No_of_Installments;
@@ -122,6 +123,7 @@ public class QCStore {
 	
 	public static String vstoreid="508";
 	public static String vusername="csr508";
+
 
 
 	// Brahmith scenarios
@@ -1598,6 +1600,11 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
+					QCCSRLoginLogout.adminLogin(SSN, SSN);
+					BAdminStartDate.toStartdate(SSN, SSN);
+					QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
+					BProc3.proc();
+					
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
@@ -1802,7 +1809,7 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-		/*			QCCSRLoginLogout.login(SSN, AppURL);
+					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
@@ -1918,7 +1925,7 @@ public class QCStore {
 					QCCSRReturnPosting.returnposting(SSN, SSN);
 
 					QCCSRLoginLogout.adminLogin(SSN, SSN);
-					QCAdminACHReturn.achreturn(SSN, SSN);*/
+					QCAdminACHReturn.achreturn(SSN, SSN);
 
 					QCCSRLoginLogout.login(SSN, AppURL);
 
@@ -1967,6 +1974,11 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
+					QCCSRLoginLogout.adminLogin(SSN, SSN);
+					BAdminStartDate.toStartdate(SSN, SSN);
+					QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
+					BProc3.proc();
+					
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
@@ -2047,8 +2059,10 @@ public class QCStore {
 		}
 	}
 
+
 	@Test(priority = 70, groups = { "EOD2" })
 	public static void LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn() throws Exception {
+
 		try {
 
 			test = reports.startTest(prop.getProperty("LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn_scenario"),
@@ -5025,7 +5039,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 421, enabled = true, groups = "Anoop_EOD2")
+	//@Test(priority = 421, enabled = true, groups = "Anoop_EOD2")
 
 	public void Deposit_DrawEODTwice() throws Exception {
 		FileName = "QC_LOC_Draw_EODTwice.xls";
@@ -5238,7 +5252,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 418, enabled = true, groups = "Anoop_EOD2")
+	//@Test(priority = 418, enabled = true, groups = "Anoop_EOD2")
 
 	public void PaymentAndDraw() throws Exception {
 		FileName = "QC_LOC_payment_Draw.xls";
@@ -5516,7 +5530,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 414, enabled = true, groups = "Anoop_EOD1")
+	//@Test(priority = 414, enabled = true, groups = "Anoop_EOD1")
 
 	public void HigherPaymentAndEod() throws Exception {
 		FileName = "QC_LOC_MorePayment_EOD.xls";
@@ -5572,7 +5586,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 413, enabled = true, groups = "Anoop_EOD1")
+	//@Test(priority = 413, enabled = true, groups = "Anoop_EOD1")
 
 	public void PaymentAndEod() throws Exception {
 		FileName = "QC_LOC_Payment_EOD.xls";
@@ -5627,7 +5641,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 412, enabled = true, groups = "Anoop_EOD1")
+	//@Test(priority = 412, enabled = true, groups = "Anoop_EOD1")
 
 	public void EODOnDueDate() throws Exception {
 		FileName = "QC_LOC_EODDuedate.xls";
@@ -6977,8 +6991,10 @@ public class QCStore {
 				prop.load(reader);
 				reader.close();
 				AppURL = prop.getProperty("CSR_URL");
-				AdminURL = prop.getProperty("ADMIN_CSR_URL");
-				String Bfilename = prop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+
+				BAdminURL = prop.getProperty("ADMIN_CSR_URL");
+				String Bfilename = Vprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+
 
 				reports = new ExtentReports(
 						System.getProperty("user.dir") + prop.getProperty("QC_Store_extent_report_path") + Bfilename,

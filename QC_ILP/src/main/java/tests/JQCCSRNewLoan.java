@@ -281,6 +281,27 @@ public class JQCCSRNewLoan extends QCStore {
 			else{
 				continue;
 			}
+			
+			String loanAmt=driver.findElement(By.xpath("//*[@id='tableWid1']/tbody/tr[2]/td")).getText();
+			test.log(LogStatus.PASS, "ILP loan amount is : "+loanAmt);
+			String term=driver.findElement(By.xpath("//*[@id='tableWid1']/tbody/tr[3]/td")).getText();
+			test.log(LogStatus.PASS, "Term is : "+term);
+			String inst=driver.findElement(By.xpath("//*[@id='tableWid1']/tbody/tr[4]/td")).getText();
+			test.log(LogStatus.PASS, "Number of installments is : "+inst);
+			String rate=driver.findElement(By.xpath("//*[@id='tableWid1']/tbody/tr[5]/td")).getText();
+			test.log(LogStatus.PASS, "Interest rate is : "+rate);
+			String apr=driver.findElement(By.xpath("//*[@id='tableWid1']/tbody/tr[6]/td/input")).getAttribute("value");
+			test.log(LogStatus.PASS, "APR is : "+apr);
+			String payAmt=driver.findElement(By.xpath("//*[@id='tableWid1']/tbody/tr[7]/td/input")).getAttribute("value");
+			test.log(LogStatus.PASS, "Payment Amount is : "+payAmt);
+			String payDate=driver.findElement(By.xpath("//*[@id='tableWid1']/tbody/tr[8]/td")).getText();
+			test.log(LogStatus.PASS, "Payment Date is : "+payDate);
+			String freq=driver.findElement(By.xpath("//*[@id='tableWid1']/tbody/tr[9]/td")).getText();
+			test.log(LogStatus.PASS,  "Frequence is : "+freq);
+			String minLoanAmt=driver.findElement(By.xpath("//*[@id='tableWid1']/tbody/tr[10]/td")).getText();
+			test.log(LogStatus.PASS, "Minimum loan amount is : "+minLoanAmt);
+			String maxLoanAmt=driver.findElement(By.xpath("//*[@id='tableWid1']/tbody/tr[11]/td")).getText();
+			test.log(LogStatus.PASS, "Maximum loan amount is : "+maxLoanAmt);
 
 			driver.findElement(By.id("LoanButtonId")).click();
 			test.log(LogStatus.PASS, "Clicked on new loan button ");
