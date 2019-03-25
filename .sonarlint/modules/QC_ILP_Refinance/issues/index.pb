@@ -12,3 +12,5 @@ P
 +src/main/java/tests/RQCWeeklyRefinance.java,7\5\75e4e03eabd634e7f83d9fa310404ee25af08256
 `
 0src/main/java/tests/RQCSemiMonthlyRefinance.java,0\d\0d4ec3f7dc5439cb74da37f6fea660946451e557
+V
+&src/test/java/tests/Objects.properties,8\6\867f41f2355d714b16278d986529251e56c6cefd
