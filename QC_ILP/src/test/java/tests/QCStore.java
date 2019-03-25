@@ -1980,7 +1980,7 @@ public class QCStore {
 		}
 	}
 
-	 @Test(priority = 3, groups = "Ratikanta_ILP")
+	  @Test(priority = 3, groups = "Ratikanta_ILP")
 	public static void RQC_Bankruptcy_Dismiss_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_Bankruptcy_Dismiss"),
@@ -2180,7 +2180,7 @@ public class QCStore {
 		}
 	}
 
-	 @Test(priority = 6, groups = "Ratikanta_ILP")
+  @Test(priority = 6, groups = "Ratikanta_ILP")
 	public static void RQC_DefaultPayment_Void_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_DefaultPayment_Void"),
@@ -2312,7 +2312,7 @@ public class QCStore {
 		}
 	}
 
-	 @Test(priority = 8, groups = "Ratikanta_ILP")
+	@Test(priority = 8, groups = "Ratikanta_ILP")
 	public static void RQC_WriteOffRecovery_Void_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_WriteOffRecovery_Void"),
@@ -2444,7 +2444,7 @@ public class QCStore {
 	}
 
 	
-	 
+
 //============================================================================================================
 	// Anoop Transactions
 
@@ -3196,7 +3196,7 @@ public class QCStore {
 		}
 	}
 	
-	@Test(priority = 1, enabled = true, groups = "Jyothi")
+	/*@Test(priority = 1, enabled = true, groups = "Jyothi")
 
 	public void ILP_InstallmentStepup() throws Exception {
 
@@ -3227,7 +3227,7 @@ public class QCStore {
 				JQCCSRLoginLogout.logout(SSN, AppURL);
 				JQCCSRLoginLogout.login(SSN, AppURL);
 				
-				/*VQC_Payment.payment(SSN, AppURL);
+				VQC_Payment.payment(SSN, AppURL);
 				JQCCSRLoginLogout.logout(SSN, AppURL);
 				JQCCSRLoginLogout.login(SSN, AppURL);
 				VQCCSRNewLoan2.newLoan2(SSN, AppURL);
@@ -3240,15 +3240,15 @@ public class QCStore {
 				JQCCSRLoginLogout.logout(SSN, AppURL);
 				JQCCSRLoginLogout.login(SSN, AppURL);
 				JQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
-				JQCCSRLoginLogout.logout(SSN, AppURL);*/
-			/*	JQCCSRLoginLogout.login(SSN, AppURL);
+				JQCCSRLoginLogout.logout(SSN, AppURL);
+				JQCCSRLoginLogout.login(SSN, AppURL);
 				VQC_Payment.payment2(SSN, AppURL);
-				JQCCSRLoginLogout.logout(SSN, AppURL);*/
+				JQCCSRLoginLogout.logout(SSN, AppURL);
 				
 				
 			}
 		}
-	}
+	}*/
 
 
 	@BeforeClass(alwaysRun = true)
@@ -3316,7 +3316,7 @@ public class QCStore {
 				Rreader.close();
 				csr_url = Rprop.getProperty("CSR_URL");
 				csrloginpage = Rprop.getProperty("Login_Page");
-				AdminURL = Rprop.getProperty("ADMIN_URL");
+				AdminURL = Rprop.getProperty("ADMIN_CSR_URL");
 				String Rfilename = Rprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
 				reports = new ExtentReports(
@@ -3354,9 +3354,9 @@ public class QCStore {
 				Vprop = new Properties();
 				Vprop.load(Vreader);
 				Vreader.close();
-				csr_url = Vprop.getProperty("CSR_URL");
-				csrloginpage = Vprop.getProperty("Login_Page");
-				AdminURL = Vprop.getProperty("ADMIN_URL");
+				//csr_url = Vprop.getProperty("CSR_URL");
+				//csrloginpage = Vprop.getProperty("Login_Page");
+				//AdminURL = Vprop.getProperty("ADMIN_URL");
 				String Vfilename = Vprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
 				reports = new ExtentReports(

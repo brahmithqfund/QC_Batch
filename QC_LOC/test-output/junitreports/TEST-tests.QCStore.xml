@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testsuite skipped="0" hostname="qtlsys2-66pc" name="tests.QCStore" tests="2" failures="0" timestamp="19 Mar 2019 19:31:28 GMT" time="2835.514" errors="0">
   <testcase name="RQC_LOC_ManualDefault_EOD_Txn_Testdata" time="1172.821" classname="tests.QCStore"/>
   <testcase name="RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata" time="1662.693" classname="tests.QCStore"/>
@@ -1571,4 +1572,29 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
     <skipped/>
   </testcase> <!-- LOC_Deposit2_Return_Writeoff -->
 >>>>>>> janaki1.2
+=======
+<testsuite skipped="0" hostname="qtlsys2-66pc" name="tests.QCStore" tests="22" failures="0" timestamp="22 Mar 2019 22:43:03 GMT" time="11248.710" errors="0">
+  <testcase name="JQC_LOC_New_Loan_Void_Txn" time="367.558" classname="tests.QCStore"/>
+  <testcase name="JQC_LOC_New_Loan_Rescind_Txn" time="326.298" classname="tests.QCStore"/>
+  <testcase name="JQC_LOC_New_Loan_Void_GraceDay_Txn" time="315.832" classname="tests.QCStore"/>
+  <testcase name="JQC_LOC_New_Loan_GraceDay_Rescind_Txn" time="318.375" classname="tests.QCStore"/>
+  <testcase name="JQC_LOC_New_Loan_After_RescindDays_Txn" time="316.822" classname="tests.QCStore"/>
+  <testcase name="JQC_LOC_Payment_After_Rescind_Txn" time="317.064" classname="tests.QCStore"/>
+  <testcase name="JQC_LOC_Payment_OnDueDate_Txn" time="725.386" classname="tests.QCStore"/>
+  <testcase name="JQC_LOC_LessThan_MinPayment_Txn" time="319.635" classname="tests.QCStore"/>
+  <testcase name="JQC_LOC_GreaterThan_MinPayment_Txn" time="317.298" classname="tests.QCStore"/>
+  <testcase name="JQC_LOC_DueDate_GreaterThan_MinPayment_Txn" time="705.914" classname="tests.QCStore"/>
+  <testcase name="JQC_LOC_DueDate_LessThan_MinPayment_Txn" time="718.930" classname="tests.QCStore"/>
+  <testcase name="JQC_LOC_Payment_void_Txn" time="319.592" classname="tests.QCStore"/>
+  <testcase name="JQC_LOC_Payment_void_NextBusinessDay_Txn" time="317.328" classname="tests.QCStore"/>
+  <testcase name="JQC_LOC_LessThan_MinPayment_Viod_Txn" time="317.257" classname="tests.QCStore"/>
+  <testcase name="JQC_LOC_GreaterThan_MinPayment_Void_Txn" time="319.761" classname="tests.QCStore"/>
+  <testcase name="JQC_LOC_LessThan_MinPayment_Return_Txn" time="318.769" classname="tests.QCStore"/>
+  <testcase name="JQC_LOC_GreaterThan_MinPayment_Return_Txn" time="320.147" classname="tests.QCStore"/>
+  <testcase name="JQC_LOC_Refinance_StepSame_Txn" time="884.372" classname="tests.QCStore"/>
+  <testcase name="JQC_LOC_Refinance_StepUp_Txn" time="957.458" classname="tests.QCStore"/>
+  <testcase name="JQC_LOC_Refinance_CABPayment_Return_Txn" time="1066.472" classname="tests.QCStore"/>
+  <testcase name="JQC_LOC_Refinance_Stepdown_Txn" time="964.515" classname="tests.QCStore"/>
+  <testcase name="JQC_LOC_Refinance_Latefee_Payment_Txn" time="713.927" classname="tests.QCStore"/>
+>>>>>>> Ratikanta1.1
 </testsuite> <!-- tests.QCStore -->

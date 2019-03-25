@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="54" total="55" passed="1">
   <reporter-output>
   </reporter-output>
@@ -59,16 +60,77 @@
               <value>
                 <![CDATA[[TestResult name=JQC_ILP_Deposit_EOD_Txn status=SUCCESS method=QCStore.JQC_ILP_Deposit_EOD_Txn()[pri:8, instance:tests.QCStore@527740a2] output={null}]]]>
 >>>>>>> janaki1.2
+=======
+<testng-results skipped="0" failed="0" ignored="44" total="46" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="2806434" started-at="2019-03-23T17:48:23Z" finished-at="2019-03-23T18:35:10Z">
+    <groups>
+      <group name="Ratikanta_ILP">
+        <method signature="QCStore.RQC_Default_TLPConversion_Txn_Testdata()[pri:9, instance:tests.QCStore@527740a2]" name="RQC_Default_TLPConversion_Txn_Testdata" class="tests.QCStore"/>
+        <method signature="QCStore.RQC_WriteOffRecovery_Void_Txn_Testdata()[pri:8, instance:tests.QCStore@527740a2]" name="RQC_WriteOffRecovery_Void_Txn_Testdata" class="tests.QCStore"/>
+      </group> <!-- Ratikanta_ILP -->
+    </groups>
+    <test name="Test" duration-ms="2806434" started-at="2019-03-23T17:48:23Z" finished-at="2019-03-23T18:35:10Z">
+      <class name="tests.QCStore">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="121" started-at="2019-03-23T17:48:23Z" finished-at="2019-03-23T17:48:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-23T17:48:23Z" finished-at="2019-03-23T17:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="RQC_WriteOffRecovery_Void_Txn_Testdata()[pri:8, instance:tests.QCStore@527740a2]" name="RQC_WriteOffRecovery_Void_Txn_Testdata" duration-ms="1387727" started-at="2019-03-23T17:48:28Z" finished-at="2019-03-23T18:11:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RQC_WriteOffRecovery_Void_Txn_Testdata -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-23T18:11:36Z" finished-at="2019-03-23T18:11:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="219" started-at="2019-03-23T18:11:36Z" finished-at="2019-03-23T18:11:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RQC_WriteOffRecovery_Void_Txn_Testdata status=SUCCESS method=QCStore.RQC_WriteOffRecovery_Void_Txn_Testdata()[pri:8, instance:tests.QCStore@527740a2] output={null}]]]>
+>>>>>>> Ratikanta1.1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-21T07:39:13Z" finished-at="2019-03-21T07:39:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
+=======
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-03-23T18:11:36Z" finished-at="2019-03-23T18:11:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="RQC_Default_TLPConversion_Txn_Testdata()[pri:9, instance:tests.QCStore@527740a2]" name="RQC_Default_TLPConversion_Txn_Testdata" duration-ms="1407744" started-at="2019-03-23T18:11:41Z" finished-at="2019-03-23T18:35:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RQC_Default_TLPConversion_Txn_Testdata -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-23T18:35:09Z" finished-at="2019-03-23T18:35:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="603" started-at="2019-03-23T18:35:09Z" finished-at="2019-03-23T18:35:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RQC_Default_TLPConversion_Txn_Testdata status=SUCCESS method=QCStore.RQC_Default_TLPConversion_Txn_Testdata()[pri:9, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+>>>>>>> Ratikanta1.1
       </class> <!-- tests.QCStore -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

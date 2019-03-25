@@ -6,6 +6,7 @@
       <run>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <include name="Ratikanta_ILP"/>
 =======
 <<<<<<< HEAD
@@ -21,11 +22,15 @@
 =======
         <include name="Anoop"/>
 >>>>>>> janaki1.2
+=======
+        <include name="Ratikanta_ILP"/>
+>>>>>>> Ratikanta1.1
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
           <include name="RQC_WriteOffRecovery_Txn_Testdata"/>
@@ -56,6 +61,10 @@
 >>>>>>> brahmith1.1
 =======
 >>>>>>> janaki1.2
+=======
+          <include name="RQC_WriteOffRecovery_Void_Txn_Testdata"/>
+          <include name="getResult"/>
+>>>>>>> Ratikanta1.1
           <include name="setup"/>
           <include name="ILP_voidRefinance"/>
           <include name="ILP_CheckAutoClear"/>

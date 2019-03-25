@@ -3,6 +3,7 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<item value="@Test" key="selection"/>
 =======
 <<<<<<< HEAD
@@ -15,6 +16,9 @@
 		<item value="Janaki1" key="selection"/>
 >>>>>>> janaki1.2
 >>>>>>> 94f8c6c7c813472811788079e0dd42466be9f995
+=======
+		<item value="" key="selection"/>
+>>>>>>> Ratikanta1.1
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
@@ -26,6 +30,7 @@
 			<item value="enabled = false"/>
 			<item value="Janaki"/>
 			<item value="Ratikanta"/>
+<<<<<<< HEAD
 			<item value="Jyothi"/>
 			<item value="Insurance"/>
 			<item value="Insurance Coverage "/>
@@ -73,12 +78,28 @@
 		<list key="replacehistory">
 >>>>>>> anoop1.1
 >>>>>>> 94f8c6c7c813472811788079e0dd42466be9f995
+=======
+			<item value="enabled = false"/>
+			<item value="Janaki"/>
+			<item value="//@Test"/>
+			<item value="enabled = true"/>
+			<item value="JaNAKI"/>
+			<item value="Refinance"/>
+			<item value="janaki"/>
+		</list>
+		<list key="replacehistory">
+			<item value="enabled = true"/>
+			<item value="@Test"/>
+			<item value="enabled = false"/>
+			<item value="Rprop"/>
+>>>>>>> Ratikanta1.1
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		<item value="745" key="DIALOG_X_ORIGIN"/>
@@ -91,5 +112,9 @@
 		<item value="1067" key="DIALOG_X_ORIGIN"/>
 		<item value="233" key="DIALOG_Y_ORIGIN"/>
 >>>>>>> janaki1.2
+=======
+		<item value="122" key="DIALOG_X_ORIGIN"/>
+		<item value="356" key="DIALOG_Y_ORIGIN"/>
+>>>>>>> Ratikanta1.1
 	</section>
 </section>

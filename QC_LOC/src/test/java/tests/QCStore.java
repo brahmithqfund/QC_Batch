@@ -2680,7 +2680,7 @@ public class QCStore {
 					RQCCSRPartialDefaultPayment.partialdefaultpayment(SSN, AppURL);
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCCSRDefault_Void.defaultvoid(SSN, AppURL);
-					// RCSRLoginLogout.logout();
+					   // RCSRLoginLogout.logout();
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCCSRHistory.history(SSN, AppURL);
 					RCSRLoginLogout.logout();
@@ -4190,6 +4190,7 @@ public class QCStore {
 		}
 	}
 
+	
 	@Test(priority = 315, enabled = true, groups = "Janaki_NEOD")
 	public static void JQC_LOC_GreaterThan_MinPayment_Void_Txn() throws Exception {
 
@@ -7018,6 +7019,7 @@ public class QCStore {
 
 				csr_url = prop.getProperty("CSR_URL");
 				csrloginpage = prop.getProperty("Login_Page");
+				
 				AdminURL = prop.getProperty("ADMIN_URL");
 
 				reports = new ExtentReports(
