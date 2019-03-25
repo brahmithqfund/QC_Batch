@@ -158,6 +158,7 @@ public static String InsuranceExpiryDate1;
 					test.log(LogStatus.PASS, "Miles entered is :" +Miles);
 					driver.findElement(By.name("bbHit_Button")).click();
 					test.log(LogStatus.PASS, "Clicked on HitBlackBook Button");
+					Thread.sleep(30000);
 					wait.until(ExpectedConditions.elementToBeClickable(By.name("button2")));
 	//==============================================================================================
 					test.log(LogStatus.PASS, "getting product name ");

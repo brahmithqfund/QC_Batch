@@ -1,346 +1,455 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results skipped="0" failed="0" ignored="112" total="114" passed="2">
+<testng-results skipped="0" failed="0" ignored="70" total="92" passed="22">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="2835648" started-at="2019-03-19T18:44:12Z" finished-at="2019-03-19T19:31:28Z">
+  <suite name="Suite" duration-ms="11248876" started-at="2019-03-22T19:35:34Z" finished-at="2019-03-22T22:43:03Z">
     <groups>
-      <group name="Ratikanta_EOD">
-        <method signature="QCStore.RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata()[pri:216, instance:tests.QCStore@527740a2]" name="RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata" class="tests.QCStore"/>
-        <method signature="QCStore.RQC_LOC_ManualDefault_EOD_Txn_Testdata()[pri:215, instance:tests.QCStore@527740a2]" name="RQC_LOC_ManualDefault_EOD_Txn_Testdata" class="tests.QCStore"/>
-      </group> <!-- Ratikanta_EOD -->
+      <group name="Janaki_NEOD">
+        <method signature="QCStore.JQC_LOC_DueDate_GreaterThan_MinPayment_Txn()[pri:310, instance:tests.QCStore@527740a2]" name="JQC_LOC_DueDate_GreaterThan_MinPayment_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.JQC_LOC_DueDate_LessThan_MinPayment_Txn()[pri:311, instance:tests.QCStore@527740a2]" name="JQC_LOC_DueDate_LessThan_MinPayment_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.JQC_LOC_GreaterThan_MinPayment_Return_Txn()[pri:317, instance:tests.QCStore@527740a2]" name="JQC_LOC_GreaterThan_MinPayment_Return_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.JQC_LOC_GreaterThan_MinPayment_Txn()[pri:309, instance:tests.QCStore@527740a2]" name="JQC_LOC_GreaterThan_MinPayment_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.JQC_LOC_GreaterThan_MinPayment_Void_Txn()[pri:315, instance:tests.QCStore@527740a2]" name="JQC_LOC_GreaterThan_MinPayment_Void_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.JQC_LOC_LessThan_MinPayment_Return_Txn()[pri:316, instance:tests.QCStore@527740a2]" name="JQC_LOC_LessThan_MinPayment_Return_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.JQC_LOC_LessThan_MinPayment_Txn()[pri:308, instance:tests.QCStore@527740a2]" name="JQC_LOC_LessThan_MinPayment_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.JQC_LOC_LessThan_MinPayment_Viod_Txn()[pri:314, instance:tests.QCStore@527740a2]" name="JQC_LOC_LessThan_MinPayment_Viod_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.JQC_LOC_New_Loan_After_RescindDays_Txn()[pri:305, instance:tests.QCStore@527740a2]" name="JQC_LOC_New_Loan_After_RescindDays_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.JQC_LOC_New_Loan_GraceDay_Rescind_Txn()[pri:304, instance:tests.QCStore@527740a2]" name="JQC_LOC_New_Loan_GraceDay_Rescind_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.JQC_LOC_New_Loan_Rescind_Txn()[pri:302, instance:tests.QCStore@527740a2]" name="JQC_LOC_New_Loan_Rescind_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.JQC_LOC_New_Loan_Void_GraceDay_Txn()[pri:303, instance:tests.QCStore@527740a2]" name="JQC_LOC_New_Loan_Void_GraceDay_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.JQC_LOC_New_Loan_Void_Txn()[pri:301, instance:tests.QCStore@527740a2]" name="JQC_LOC_New_Loan_Void_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.JQC_LOC_Payment_After_Rescind_Txn()[pri:306, instance:tests.QCStore@527740a2]" name="JQC_LOC_Payment_After_Rescind_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.JQC_LOC_Payment_OnDueDate_Txn()[pri:307, instance:tests.QCStore@527740a2]" name="JQC_LOC_Payment_OnDueDate_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.JQC_LOC_Payment_void_NextBusinessDay_Txn()[pri:313, instance:tests.QCStore@527740a2]" name="JQC_LOC_Payment_void_NextBusinessDay_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.JQC_LOC_Payment_void_Txn()[pri:312, instance:tests.QCStore@527740a2]" name="JQC_LOC_Payment_void_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.JQC_LOC_Refinance_CABPayment_Return_Txn()[pri:320, instance:tests.QCStore@527740a2]" name="JQC_LOC_Refinance_CABPayment_Return_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.JQC_LOC_Refinance_Latefee_Payment_Txn()[pri:322, instance:tests.QCStore@527740a2]" name="JQC_LOC_Refinance_Latefee_Payment_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.JQC_LOC_Refinance_StepSame_Txn()[pri:318, instance:tests.QCStore@527740a2]" name="JQC_LOC_Refinance_StepSame_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.JQC_LOC_Refinance_StepUp_Txn()[pri:319, instance:tests.QCStore@527740a2]" name="JQC_LOC_Refinance_StepUp_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.JQC_LOC_Refinance_Stepdown_Txn()[pri:321, instance:tests.QCStore@527740a2]" name="JQC_LOC_Refinance_Stepdown_Txn" class="tests.QCStore"/>
+      </group> <!-- Janaki_NEOD -->
     </groups>
-    <test name="Test" duration-ms="2835648" started-at="2019-03-19T18:44:12Z" finished-at="2019-03-19T19:31:28Z">
+    <test name="Test" duration-ms="11248876" started-at="2019-03-22T19:35:34Z" finished-at="2019-03-22T22:43:03Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="117" started-at="2019-03-19T18:44:12Z" finished-at="2019-03-19T18:44:12Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="117" started-at="2019-03-22T19:35:34Z" finished-at="2019-03-22T19:35:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5019" started-at="2019-03-19T18:44:13Z" finished-at="2019-03-19T18:44:18Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-22T19:35:34Z" finished-at="2019-03-22T19:35:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="RQC_LOC_ManualDefault_EOD_Txn_Testdata()[pri:215, instance:tests.QCStore@527740a2]" name="RQC_LOC_ManualDefault_EOD_Txn_Testdata" duration-ms="1167584" started-at="2019-03-19T18:44:18Z" finished-at="2019-03-19T19:03:45Z">
+        <test-method status="PASS" signature="JQC_LOC_New_Loan_Void_Txn()[pri:301, instance:tests.QCStore@527740a2]" name="JQC_LOC_New_Loan_Void_Txn" duration-ms="362343" started-at="2019-03-22T19:35:39Z" finished-at="2019-03-22T19:41:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RQC_LOC_ManualDefault_EOD_Txn_Testdata -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="219" started-at="2019-03-19T19:03:45Z" finished-at="2019-03-19T19:03:45Z">
+        </test-method> <!-- JQC_LOC_New_Loan_Void_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="214" started-at="2019-03-22T19:41:42Z" finished-at="2019-03-22T19:41:42Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=RQC_LOC_ManualDefault_EOD_Txn_Testdata status=SUCCESS method=QCStore.RQC_LOC_ManualDefault_EOD_Txn_Testdata()[pri:215, instance:tests.QCStore@527740a2] output={null}]]]>
+                <![CDATA[[TestResult name=JQC_LOC_New_Loan_Void_Txn status=SUCCESS method=QCStore.JQC_LOC_New_Loan_Void_Txn()[pri:301, instance:tests.QCStore@527740a2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5018" started-at="2019-03-19T19:03:45Z" finished-at="2019-03-19T19:03:50Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-22T19:41:42Z" finished-at="2019-03-22T19:41:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata()[pri:216, instance:tests.QCStore@527740a2]" name="RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata" duration-ms="1657597" started-at="2019-03-19T19:03:50Z" finished-at="2019-03-19T19:31:28Z">
+        <test-method status="PASS" signature="JQC_LOC_New_Loan_Rescind_Txn()[pri:302, instance:tests.QCStore@527740a2]" name="JQC_LOC_New_Loan_Rescind_Txn" duration-ms="320720" started-at="2019-03-22T19:41:47Z" finished-at="2019-03-22T19:47:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="77" started-at="2019-03-19T19:31:28Z" finished-at="2019-03-19T19:31:28Z">
+        </test-method> <!-- JQC_LOC_New_Loan_Rescind_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="80" started-at="2019-03-22T19:47:08Z" finished-at="2019-03-22T19:47:08Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata status=SUCCESS method=QCStore.RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata()[pri:216, instance:tests.QCStore@527740a2] output={null}]]]>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<testng-results skipped="0" failed="1" ignored="83" total="84" passed="0">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Suite" duration-ms="270030" started-at="2019-03-07T13:02:13Z" finished-at="2019-03-07T13:06:43Z">
-    <groups>
-      <group name="NonEOD1">
-        <method signature="QCStore.AReviseCredit_IncIncome()[pri:498, instance:tests.QCStore@527740a2]" name="AReviseCredit_IncIncome" class="tests.QCStore"/>
-      </group> <!-- NonEOD1 -->
-    </groups>
-    <test name="Test" duration-ms="270030" started-at="2019-03-07T13:02:13Z" finished-at="2019-03-07T13:06:43Z">
-      <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="95" started-at="2019-03-07T13:02:13Z" finished-at="2019-03-07T13:02:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5018" started-at="2019-03-07T13:02:14Z" finished-at="2019-03-07T13:02:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="FAIL" signature="AReviseCredit_IncIncome()[pri:498, instance:tests.QCStore@527740a2]" name="AReviseCredit_IncIncome" duration-ms="262876" started-at="2019-03-07T13:02:19Z" finished-at="2019-03-07T13:06:41Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:29072
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS1-182', ip: '192.168.1.182', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
-Driver info: driver.version: RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:29072
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS1-182', ip: '192.168.1.182', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-at tests.SQCAgeStoreDueDate.ageStoreDueDate(SQCAgeStoreDueDate.java:107)
-at tests.QCStore.AReviseCredit_IncIncome(QCStore.java:6044)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:29072
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:242)
-at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
-at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-at okhttp3.RealCall.execute(RealCall.java:77)
-at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-... 30 more
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-at java.net.PlainSocketImpl.connect(Unknown Source)
-at java.net.SocksSocketImpl.connect(Unknown Source)
-at java.net.Socket.connect(Unknown Source)
-at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
-... 50 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AReviseCredit_IncIncome -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="2020" started-at="2019-03-07T13:06:41Z" finished-at="2019-03-07T13:06:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=AReviseCredit_IncIncome status=FAILURE method=QCStore.AReviseCredit_IncIncome()[pri:498, instance:tests.QCStore@527740a2] output={null}]]]>
-=======
-<testng-results skipped="0" failed="0" ignored="113" total="114" passed="1">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Suite" duration-ms="121966" started-at="2019-03-14T09:11:04Z" finished-at="2019-03-14T09:13:06Z">
-    <groups>
-      <group name="EOD1">
-        <method signature="QCStore.LOC_ACHDeposit_EODs_Return_Txn()[pri:68, instance:tests.QCStore@527740a2]" name="LOC_ACHDeposit_EODs_Return_Txn" class="tests.QCStore"/>
-      </group> <!-- EOD1 -->
-    </groups>
-    <test name="Test" duration-ms="121966" started-at="2019-03-14T09:11:04Z" finished-at="2019-03-14T09:13:06Z">
-      <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="117" started-at="2019-03-14T09:11:04Z" finished-at="2019-03-14T09:11:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-14T09:11:04Z" finished-at="2019-03-14T09:11:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="LOC_ACHDeposit_EODs_Return_Txn()[pri:68, instance:tests.QCStore@527740a2]" name="LOC_ACHDeposit_EODs_Return_Txn" duration-ms="116533" started-at="2019-03-14T09:11:09Z" finished-at="2019-03-14T09:13:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LOC_ACHDeposit_EODs_Return_Txn -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="295" started-at="2019-03-14T09:13:06Z" finished-at="2019-03-14T09:13:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=LOC_ACHDeposit_EODs_Return_Txn status=SUCCESS method=QCStore.LOC_ACHDeposit_EODs_Return_Txn()[pri:68, instance:tests.QCStore@527740a2] output={null}]]]>
->>>>>>> brahmith1.1
+                <![CDATA[[TestResult name=JQC_LOC_New_Loan_Rescind_Txn status=SUCCESS method=QCStore.JQC_LOC_New_Loan_Rescind_Txn()[pri:302, instance:tests.QCStore@527740a2] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:29072
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS1-182', ip: '192.168.1.182', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
-Driver info: driver.version: RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:29072
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS1-182', ip: '192.168.1.182', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-at tests.QCStore.getScreenhot(QCStore.java:7078)
-at tests.QCStore.getResult(QCStore.java:7094)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:29072
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:242)
-at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
-at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-at okhttp3.RealCall.execute(RealCall.java:77)
-at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-... 33 more
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-at java.net.PlainSocketImpl.connect(Unknown Source)
-at java.net.SocksSocketImpl.connect(Unknown Source)
-at java.net.Socket.connect(Unknown Source)
-at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
-... 53 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-=======
-<testng-results skipped="0" failed="0" ignored="70" total="71" passed="1">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Suite" duration-ms="2157173" started-at="2019-03-15T05:44:54Z" finished-at="2019-03-15T06:20:52Z">
-    <groups>
-      <group name="Anoop_EOD2">
-        <method signature="QCStore.Deposit_DrawEODTwice()[pri:421, instance:tests.QCStore@527740a2]" name="Deposit_DrawEODTwice" class="tests.QCStore"/>
-      </group> <!-- Anoop_EOD2 -->
-    </groups>
-    <test name="Test" duration-ms="2157173" started-at="2019-03-15T05:44:54Z" finished-at="2019-03-15T06:20:52Z">
-      <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="104" started-at="2019-03-15T05:44:54Z" finished-at="2019-03-15T05:44:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5019" started-at="2019-03-15T05:44:54Z" finished-at="2019-03-15T05:44:59Z">
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-03-22T19:47:08Z" finished-at="2019-03-22T19:47:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="Deposit_DrawEODTwice()[pri:421, instance:tests.QCStore@527740a2]" name="Deposit_DrawEODTwice" duration-ms="2151265" started-at="2019-03-15T05:44:59Z" finished-at="2019-03-15T06:20:51Z">
+        <test-method status="PASS" signature="JQC_LOC_New_Loan_Void_GraceDay_Txn()[pri:303, instance:tests.QCStore@527740a2]" name="JQC_LOC_New_Loan_Void_GraceDay_Txn" duration-ms="310752" started-at="2019-03-22T19:47:13Z" finished-at="2019-03-22T19:52:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Deposit_DrawEODTwice -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="769" started-at="2019-03-15T06:20:51Z" finished-at="2019-03-15T06:20:52Z">
+        </test-method> <!-- JQC_LOC_New_Loan_Void_GraceDay_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="580" started-at="2019-03-22T19:52:24Z" finished-at="2019-03-22T19:52:24Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Deposit_DrawEODTwice status=SUCCESS method=QCStore.Deposit_DrawEODTwice()[pri:421, instance:tests.QCStore@527740a2] output={null}]]]>
-=======
-<testng-results skipped="0" failed="0" ignored="94" total="95" passed="1">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Suite" duration-ms="37398" started-at="2019-03-15T05:31:23Z" finished-at="2019-03-15T05:32:00Z">
-    <groups>
-      <group name="Jyothi">
-        <method signature="QCStore.QC_ILP_Refinance_Payanyother_Step_Up_Txn()[pri:609, instance:tests.QCStore@527740a2]" name="QC_ILP_Refinance_Payanyother_Step_Up_Txn" class="tests.QCStore"/>
-      </group> <!-- Jyothi -->
-    </groups>
-    <test name="Test" duration-ms="37398" started-at="2019-03-15T05:31:23Z" finished-at="2019-03-15T05:32:00Z">
-      <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="78" started-at="2019-03-15T05:31:23Z" finished-at="2019-03-15T05:31:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5024" started-at="2019-03-15T05:31:23Z" finished-at="2019-03-15T05:31:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="QC_ILP_Refinance_Payanyother_Step_Up_Txn()[pri:609, instance:tests.QCStore@527740a2]" name="QC_ILP_Refinance_Payanyother_Step_Up_Txn" duration-ms="32094" started-at="2019-03-15T05:31:28Z" finished-at="2019-03-15T05:32:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- QC_ILP_Refinance_Payanyother_Step_Up_Txn -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="171" started-at="2019-03-15T05:32:00Z" finished-at="2019-03-15T05:32:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=QC_ILP_Refinance_Payanyother_Step_Up_Txn status=SUCCESS method=QCStore.QC_ILP_Refinance_Payanyother_Step_Up_Txn()[pri:609, instance:tests.QCStore@527740a2] output={null}]]]>
->>>>>>> jyothi1.2
->>>>>>> 26f8126931b7afc696e5ebd31895ac4dfa2dd77b
+                <![CDATA[[TestResult name=JQC_LOC_New_Loan_Void_GraceDay_Txn status=SUCCESS method=QCStore.JQC_LOC_New_Loan_Void_GraceDay_Txn()[pri:303, instance:tests.QCStore@527740a2] output={null}]]]>
               </value>
             </param>
           </params>
->>>>>>> anoop1.1
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-22T19:52:24Z" finished-at="2019-03-22T19:52:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="JQC_LOC_New_Loan_GraceDay_Rescind_Txn()[pri:304, instance:tests.QCStore@527740a2]" name="JQC_LOC_New_Loan_GraceDay_Rescind_Txn" duration-ms="312819" started-at="2019-03-22T19:52:29Z" finished-at="2019-03-22T19:57:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JQC_LOC_New_Loan_GraceDay_Rescind_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="558" started-at="2019-03-22T19:57:42Z" finished-at="2019-03-22T19:57:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JQC_LOC_New_Loan_GraceDay_Rescind_Txn status=SUCCESS method=QCStore.JQC_LOC_New_Loan_GraceDay_Rescind_Txn()[pri:304, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-22T19:57:42Z" finished-at="2019-03-22T19:57:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="JQC_LOC_New_Loan_After_RescindDays_Txn()[pri:305, instance:tests.QCStore@527740a2]" name="JQC_LOC_New_Loan_After_RescindDays_Txn" duration-ms="311235" started-at="2019-03-22T19:57:47Z" finished-at="2019-03-22T20:02:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JQC_LOC_New_Loan_After_RescindDays_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="581" started-at="2019-03-22T20:02:59Z" finished-at="2019-03-22T20:02:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JQC_LOC_New_Loan_After_RescindDays_Txn status=SUCCESS method=QCStore.JQC_LOC_New_Loan_After_RescindDays_Txn()[pri:305, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-22T20:02:59Z" finished-at="2019-03-22T20:03:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="JQC_LOC_Payment_After_Rescind_Txn()[pri:306, instance:tests.QCStore@527740a2]" name="JQC_LOC_Payment_After_Rescind_Txn" duration-ms="311507" started-at="2019-03-22T20:03:04Z" finished-at="2019-03-22T20:08:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JQC_LOC_Payment_After_Rescind_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="571" started-at="2019-03-22T20:08:16Z" finished-at="2019-03-22T20:08:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JQC_LOC_Payment_After_Rescind_Txn status=SUCCESS method=QCStore.JQC_LOC_Payment_After_Rescind_Txn()[pri:306, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-22T20:08:16Z" finished-at="2019-03-22T20:08:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="JQC_LOC_Payment_OnDueDate_Txn()[pri:307, instance:tests.QCStore@527740a2]" name="JQC_LOC_Payment_OnDueDate_Txn" duration-ms="719812" started-at="2019-03-22T20:08:21Z" finished-at="2019-03-22T20:20:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JQC_LOC_Payment_OnDueDate_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="50" started-at="2019-03-22T20:20:21Z" finished-at="2019-03-22T20:20:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JQC_LOC_Payment_OnDueDate_Txn status=SUCCESS method=QCStore.JQC_LOC_Payment_OnDueDate_Txn()[pri:307, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-03-22T20:20:21Z" finished-at="2019-03-22T20:20:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="JQC_LOC_LessThan_MinPayment_Txn()[pri:308, instance:tests.QCStore@527740a2]" name="JQC_LOC_LessThan_MinPayment_Txn" duration-ms="314603" started-at="2019-03-22T20:20:26Z" finished-at="2019-03-22T20:25:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JQC_LOC_LessThan_MinPayment_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="557" started-at="2019-03-22T20:25:41Z" finished-at="2019-03-22T20:25:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JQC_LOC_LessThan_MinPayment_Txn status=SUCCESS method=QCStore.JQC_LOC_LessThan_MinPayment_Txn()[pri:308, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-22T20:25:41Z" finished-at="2019-03-22T20:25:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="JQC_LOC_GreaterThan_MinPayment_Txn()[pri:309, instance:tests.QCStore@527740a2]" name="JQC_LOC_GreaterThan_MinPayment_Txn" duration-ms="311727" started-at="2019-03-22T20:25:46Z" finished-at="2019-03-22T20:30:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JQC_LOC_GreaterThan_MinPayment_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="573" started-at="2019-03-22T20:30:58Z" finished-at="2019-03-22T20:30:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JQC_LOC_GreaterThan_MinPayment_Txn status=SUCCESS method=QCStore.JQC_LOC_GreaterThan_MinPayment_Txn()[pri:309, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-03-22T20:30:59Z" finished-at="2019-03-22T20:31:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="JQC_LOC_DueDate_GreaterThan_MinPayment_Txn()[pri:310, instance:tests.QCStore@527740a2]" name="JQC_LOC_DueDate_GreaterThan_MinPayment_Txn" duration-ms="700334" started-at="2019-03-22T20:31:04Z" finished-at="2019-03-22T20:42:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JQC_LOC_DueDate_GreaterThan_MinPayment_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="32" started-at="2019-03-22T20:42:44Z" finished-at="2019-03-22T20:42:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JQC_LOC_DueDate_GreaterThan_MinPayment_Txn status=SUCCESS method=QCStore.JQC_LOC_DueDate_GreaterThan_MinPayment_Txn()[pri:310, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-03-22T20:42:44Z" finished-at="2019-03-22T20:42:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="JQC_LOC_DueDate_LessThan_MinPayment_Txn()[pri:311, instance:tests.QCStore@527740a2]" name="JQC_LOC_DueDate_LessThan_MinPayment_Txn" duration-ms="713849" started-at="2019-03-22T20:42:49Z" finished-at="2019-03-22T20:54:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JQC_LOC_DueDate_LessThan_MinPayment_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="31" started-at="2019-03-22T20:54:43Z" finished-at="2019-03-22T20:54:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JQC_LOC_DueDate_LessThan_MinPayment_Txn status=SUCCESS method=QCStore.JQC_LOC_DueDate_LessThan_MinPayment_Txn()[pri:311, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-03-22T20:54:43Z" finished-at="2019-03-22T20:54:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="JQC_LOC_Payment_void_Txn()[pri:312, instance:tests.QCStore@527740a2]" name="JQC_LOC_Payment_void_Txn" duration-ms="314021" started-at="2019-03-22T20:54:48Z" finished-at="2019-03-22T21:00:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JQC_LOC_Payment_void_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="556" started-at="2019-03-22T21:00:02Z" finished-at="2019-03-22T21:00:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JQC_LOC_Payment_void_Txn status=SUCCESS method=QCStore.JQC_LOC_Payment_void_Txn()[pri:312, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-03-22T21:00:03Z" finished-at="2019-03-22T21:00:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="JQC_LOC_Payment_void_NextBusinessDay_Txn()[pri:313, instance:tests.QCStore@527740a2]" name="JQC_LOC_Payment_void_NextBusinessDay_Txn" duration-ms="311752" started-at="2019-03-22T21:00:08Z" finished-at="2019-03-22T21:05:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JQC_LOC_Payment_void_NextBusinessDay_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="571" started-at="2019-03-22T21:05:19Z" finished-at="2019-03-22T21:05:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JQC_LOC_Payment_void_NextBusinessDay_Txn status=SUCCESS method=QCStore.JQC_LOC_Payment_void_NextBusinessDay_Txn()[pri:313, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-22T21:05:20Z" finished-at="2019-03-22T21:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="JQC_LOC_LessThan_MinPayment_Viod_Txn()[pri:314, instance:tests.QCStore@527740a2]" name="JQC_LOC_LessThan_MinPayment_Viod_Txn" duration-ms="311684" started-at="2019-03-22T21:05:25Z" finished-at="2019-03-22T21:10:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JQC_LOC_LessThan_MinPayment_Viod_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="577" started-at="2019-03-22T21:10:37Z" finished-at="2019-03-22T21:10:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JQC_LOC_LessThan_MinPayment_Viod_Txn status=SUCCESS method=QCStore.JQC_LOC_LessThan_MinPayment_Viod_Txn()[pri:314, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-22T21:10:37Z" finished-at="2019-03-22T21:10:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="JQC_LOC_GreaterThan_MinPayment_Void_Txn()[pri:315, instance:tests.QCStore@527740a2]" name="JQC_LOC_GreaterThan_MinPayment_Void_Txn" duration-ms="314710" started-at="2019-03-22T21:10:42Z" finished-at="2019-03-22T21:15:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JQC_LOC_GreaterThan_MinPayment_Void_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="575" started-at="2019-03-22T21:15:57Z" finished-at="2019-03-22T21:15:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JQC_LOC_GreaterThan_MinPayment_Void_Txn status=SUCCESS method=QCStore.JQC_LOC_GreaterThan_MinPayment_Void_Txn()[pri:315, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5002" started-at="2019-03-22T21:15:57Z" finished-at="2019-03-22T21:16:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="JQC_LOC_LessThan_MinPayment_Return_Txn()[pri:316, instance:tests.QCStore@527740a2]" name="JQC_LOC_LessThan_MinPayment_Return_Txn" duration-ms="313187" started-at="2019-03-22T21:16:02Z" finished-at="2019-03-22T21:21:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JQC_LOC_LessThan_MinPayment_Return_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="573" started-at="2019-03-22T21:21:16Z" finished-at="2019-03-22T21:21:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JQC_LOC_LessThan_MinPayment_Return_Txn status=SUCCESS method=QCStore.JQC_LOC_LessThan_MinPayment_Return_Txn()[pri:316, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-03-22T21:21:16Z" finished-at="2019-03-22T21:21:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="JQC_LOC_GreaterThan_MinPayment_Return_Txn()[pri:317, instance:tests.QCStore@527740a2]" name="JQC_LOC_GreaterThan_MinPayment_Return_Txn" duration-ms="315116" started-at="2019-03-22T21:21:21Z" finished-at="2019-03-22T21:26:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JQC_LOC_GreaterThan_MinPayment_Return_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="579" started-at="2019-03-22T21:26:36Z" finished-at="2019-03-22T21:26:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JQC_LOC_GreaterThan_MinPayment_Return_Txn status=SUCCESS method=QCStore.JQC_LOC_GreaterThan_MinPayment_Return_Txn()[pri:317, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-03-22T21:26:37Z" finished-at="2019-03-22T21:26:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="JQC_LOC_Refinance_StepSame_Txn()[pri:318, instance:tests.QCStore@527740a2]" name="JQC_LOC_Refinance_StepSame_Txn" duration-ms="878791" started-at="2019-03-22T21:26:42Z" finished-at="2019-03-22T21:41:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JQC_LOC_Refinance_StepSame_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="53" started-at="2019-03-22T21:41:21Z" finished-at="2019-03-22T21:41:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JQC_LOC_Refinance_StepSame_Txn status=SUCCESS method=QCStore.JQC_LOC_Refinance_StepSame_Txn()[pri:318, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-03-22T21:41:21Z" finished-at="2019-03-22T21:41:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="JQC_LOC_Refinance_StepUp_Txn()[pri:319, instance:tests.QCStore@527740a2]" name="JQC_LOC_Refinance_StepUp_Txn" duration-ms="951876" started-at="2019-03-22T21:41:26Z" finished-at="2019-03-22T21:57:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JQC_LOC_Refinance_StepUp_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="581" started-at="2019-03-22T21:57:18Z" finished-at="2019-03-22T21:57:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JQC_LOC_Refinance_StepUp_Txn status=SUCCESS method=QCStore.JQC_LOC_Refinance_StepUp_Txn()[pri:319, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-22T21:57:18Z" finished-at="2019-03-22T21:57:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="JQC_LOC_Refinance_CABPayment_Return_Txn()[pri:320, instance:tests.QCStore@527740a2]" name="JQC_LOC_Refinance_CABPayment_Return_Txn" duration-ms="1061418" started-at="2019-03-22T21:57:23Z" finished-at="2019-03-22T22:15:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JQC_LOC_Refinance_CABPayment_Return_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="41" started-at="2019-03-22T22:15:05Z" finished-at="2019-03-22T22:15:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JQC_LOC_Refinance_CABPayment_Return_Txn status=SUCCESS method=QCStore.JQC_LOC_Refinance_CABPayment_Return_Txn()[pri:320, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-22T22:15:05Z" finished-at="2019-03-22T22:15:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="JQC_LOC_Refinance_Stepdown_Txn()[pri:321, instance:tests.QCStore@527740a2]" name="JQC_LOC_Refinance_Stepdown_Txn" duration-ms="959474" started-at="2019-03-22T22:15:10Z" finished-at="2019-03-22T22:31:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JQC_LOC_Refinance_Stepdown_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="81" started-at="2019-03-22T22:31:09Z" finished-at="2019-03-22T22:31:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JQC_LOC_Refinance_Stepdown_Txn status=SUCCESS method=QCStore.JQC_LOC_Refinance_Stepdown_Txn()[pri:321, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-03-22T22:31:09Z" finished-at="2019-03-22T22:31:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="JQC_LOC_Refinance_Latefee_Payment_Txn()[pri:322, instance:tests.QCStore@527740a2]" name="JQC_LOC_Refinance_Latefee_Payment_Txn" duration-ms="708368" started-at="2019-03-22T22:31:14Z" finished-at="2019-03-22T22:43:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JQC_LOC_Refinance_Latefee_Payment_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="586" started-at="2019-03-22T22:43:03Z" finished-at="2019-03-22T22:43:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JQC_LOC_Refinance_Latefee_Payment_Txn status=SUCCESS method=QCStore.JQC_LOC_Refinance_Latefee_Payment_Txn()[pri:322, instance:tests.QCStore@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->

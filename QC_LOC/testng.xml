@@ -14,7 +14,7 @@
   <!--  Janaki scenarios  -->
  <!-- <include name="Janaki"/>  -->
   <!--  <include name="Janaki1"/>  --> 
-     <!-- <include name="Janaki_NEOD"/> --> 
+     <include name="Janaki_NEOD"/> 
       <!-- <include name="Janaki_EOD"/> --> 
 
 
@@ -27,19 +27,18 @@
    
 
     <!--  Rati scenarios   -->  
-     <!-- <include name="Ratikanta_NEOD"/> --> 
-      <include name="Ratikanta_EOD"/>
+    <!-- <include name="Ratikanta_NEOD"/> -->
+      <!-- <include name="Ratikanta_EOD"/>-->
 
  
   <!--  Shashi scenarios  -->
-
  <!--  <include name="NonEOD"/>  -->
   <!--  <include name="Shashi"/> -->
   <!-- <include name="EOD"/>  -->
 
   <!--  Jyothi scenarios -->
     <!-- <include name="1st Batch"/> -->
-        <include name="Jyothi"/>
+        <!-- <include name="Jyothi"/> -->
 
   </run>
   </groups>
