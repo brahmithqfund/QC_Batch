@@ -4,6 +4,7 @@
 		<item value="false" key="isRegEx"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<item value="@Test" key="selection"/>
 =======
 <<<<<<< HEAD
@@ -19,11 +20,15 @@
 =======
 		<item value="" key="selection"/>
 >>>>>>> Ratikanta1.1
+=======
+		<item value="Janaki_EOD_set2" key="selection"/>
+>>>>>>> janaki1.2
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+<<<<<<< HEAD
 <<<<<<< HEAD
 			<item value="//@Test"/>
 			<item value="@Test"/>
@@ -55,27 +60,19 @@
 			<item value="Janaki1"/>
 			<item value="Janaki_WORecovery"/>
 			<item value="write"/>
-			<item value="Janaki_EOD_set1"/>
-			<item value="QC_LOC_EODDuedate"/>
-			<item value="QC_Store_extent_report_path"/>
-			<item value="QC_Store_NewLoan_Test_data_sheet_path"/>
->>>>>>> janaki1.2
-		</list>
-		<list key="replacehistory">
-			<item value="QC_SSN_THREE_LOC"/>
-			<item value="QC_SSN_THREE_PDL"/>
-			<item value="QC_SSN_THREE_TLP"/>
 =======
-			<item value="Anoop_EOD2"/>
-			<item value="QC_EPP_Prepay_Return"/>
-			<item value="CustomerReached maximum Loan amounts"/>
-			<item value="QC_MaxLoanCount"/>
-			<item value="QC_RefinanceStepUp_rebate_Void"/>
-			<item value="QC_RefinanceStepUp_rebate"/>
-			<item value="QC_RefinanceStep_Same_void"/>
-			<item value="QC_Refinanace StepUp"/>
+			<item value="Janaki_EOD_set2"/>
+>>>>>>> janaki1.2
+			<item value="Janaki_EOD_set1"/>
+			<item value="QC_Refinance_Rescind"/>
+			<item value="QC_Deposit_Return_Refinance_Void"/>
+			<item value="Janaki1"/>
+			<item value="QC_Deposit_Return_Refinance"/>
+			<item value="QC_ACHReturn_Refinance_Rescind"/>
+			<item value="QC_NSFPosting_Refinance_Rescind"/>
 		</list>
 		<list key="replacehistory">
+<<<<<<< HEAD
 >>>>>>> anoop1.1
 >>>>>>> 94f8c6c7c813472811788079e0dd42466be9f995
 =======
@@ -93,12 +90,16 @@
 			<item value="enabled = false"/>
 			<item value="Rprop"/>
 >>>>>>> Ratikanta1.1
+=======
+			<item value="Janaki"/>
+>>>>>>> janaki1.2
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -116,5 +117,9 @@
 		<item value="122" key="DIALOG_X_ORIGIN"/>
 		<item value="356" key="DIALOG_Y_ORIGIN"/>
 >>>>>>> Ratikanta1.1
+=======
+		<item value="653" key="DIALOG_X_ORIGIN"/>
+		<item value="356" key="DIALOG_Y_ORIGIN"/>
+>>>>>>> janaki1.2
 	</section>
 </section>

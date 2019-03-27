@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <include name="Ratikanta_ILP"/>
 =======
 <<<<<<< HEAD
@@ -25,11 +26,15 @@
 =======
         <include name="Ratikanta_ILP"/>
 >>>>>>> Ratikanta1.1
+=======
+        <include name="Janaki"/>
+>>>>>>> janaki1.2
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -65,11 +70,15 @@
           <include name="RQC_WriteOffRecovery_Void_Txn_Testdata"/>
           <include name="getResult"/>
 >>>>>>> Ratikanta1.1
+=======
+          <include name="JQC_ILP_Deposit_MidDay_Txn"/>
+          <include name="getResult"/>
+>>>>>>> janaki1.2
           <include name="setup"/>
-          <include name="ILP_voidRefinance"/>
-          <include name="ILP_CheckAutoClear"/>
-          <include name="ILP_maxloanCount"/>
+          <include name="JQC_ILP_GraceDays_Deposit_MidDay_Txn"/>
+          <include name="JQC_ILP_GraceDays_Deposit_dropdown_Txn"/>
           <include name="endReport"/>
+          <include name="JQC_ILP_SignaturLoan_Default_Txn"/>
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->
