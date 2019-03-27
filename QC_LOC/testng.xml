@@ -6,9 +6,9 @@
   <run>
 
   <!--  Brahmith scenarios   -->  
-    <!-- <include name="EOD"/>-->  
+    <include name="EOD"/>  
 
-   <!-- <include name="EOD2"/>-->
+   <include name="EOD2"/>
  <!-- <include name="1st Batch"/>-->
 
  
@@ -33,12 +33,8 @@
 
  
   <!--  Shashi scenarios  -->
-<<<<<<< HEAD
-
  <!--  <include name="NonEOD"/>  -->
-=======
- <!--  <include name="NonEOD1"/> -->
->>>>>>> janaki1.2
+
   <!--  <include name="Shashi"/> -->
   <!-- <include name="EOD"/>  -->
 

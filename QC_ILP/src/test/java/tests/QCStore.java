@@ -1757,7 +1757,7 @@ public class QCStore {
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 					System.out.println(AppURL);
 
-					JQCCSRLoginLogout.login(SSN, AppURL);
+					/*JQCCSRLoginLogout.login(SSN, AppURL);
 					JQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					JQCCSRLoginLogout.logout(SSN, AppURL);
 					JQCCSRLoginLogout.login(SSN, AppURL);
@@ -1774,7 +1774,7 @@ public class QCStore {
 					JQCAdminLoginLogout.logout(SSN, AppURL);
 					JQCCSRLoginLogout.login(SSN, AppURL);
 					JQCSafeAssign.safeAssign(SSN, AppURL);
-					JQCCSRLoginLogout.logout(SSN, AppURL);
+					JQCCSRLoginLogout.logout(SSN, AppURL);*/
 					JQCCSRLoginLogout.login(SSN, AppURL);
 					JQCDrawerAssign.drawerAssign(SSN, AppURL);
 					JQCCSRLoginLogout.logout(SSN, AppURL);
