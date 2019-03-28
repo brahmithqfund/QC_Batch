@@ -67,10 +67,12 @@ public class QCCSRHistory extends QCStore{
 				String RegSSN = TestData.getCellData(sheetName,"SSN",row);
 				if(SSN.equals(RegSSN))
 				{
-					String UserName = TestData.getCellData(sheetName,"UserName",row);
+					//String UserName = TestData.getCellData(sheetName,"UserName",row);
 					String Password = TestData.getCellData(sheetName,"Password",row);
 			       // System.out.println(Password);
-			        String StoreId = TestData.getCellData(sheetName,"StoreID",row);
+			        //String StoreId = TestData.getCellData(sheetName,"StoreID",row);
+					String store_id = vstoreid;
+					String username = vusername;
 			        String ProductID = TestData.getCellData(sheetName_new_loan,"ProductID",row);
 			        String StateID = TestData.getCellData(sheetName,"StateID",row);
 			        String Income_PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
@@ -261,7 +263,7 @@ System.out.println(columnname+"_TxnHistory_FieldValue");
 					    driver.switchTo().frame("mainFrame");
 					    driver.switchTo().frame("main");
 					   					    
-					    Thread.sleep(5000);
+					    Thread.sleep(8000);
 					    
 					    	 driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
 							    test.log(LogStatus.PASS, "Clicked on Go button under Loans section");

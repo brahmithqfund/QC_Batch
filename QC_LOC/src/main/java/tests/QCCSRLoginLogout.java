@@ -48,7 +48,8 @@ public class QCCSRLoginLogout extends QCStore
 					String username = busername;
 							//TestData.getCellData(sheetName,"UserName",row);
 					String password =TestData.getCellData(sheetName,"Password",row);
-					String store_id = bstoreid;
+					//String store_id = bstoreid;
+					String store_id = vstoreid;
 					//TestData.getCellData(sheetName,"StoreID",row);
 					
 

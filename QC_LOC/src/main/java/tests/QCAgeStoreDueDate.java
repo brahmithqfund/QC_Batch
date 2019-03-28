@@ -71,7 +71,7 @@ public class QCAgeStoreDueDate extends QCStore{
 								}
 								catch(Exception e)
 								{
-									driver.get("https://qcuat.qfund.net/cc/login/index.jsp");
+									driver.get("http://192.168.2.203/cc/demoIndex.do");
 									driver.switchTo().defaultContent();	
 									
 							        wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("topFrame")));
@@ -143,7 +143,7 @@ public class QCAgeStoreDueDate extends QCStore{
 												}
 												catch(Exception e)
 												{
-													driver.get("https://qcuat.qfund.net/cc/login/index.jsp");
+													driver.get("http://192.168.2.203/cc/demoIndex.do");
 
 													driver.switchTo().defaultContent();
 													 driver.switchTo().frame("topFrame");

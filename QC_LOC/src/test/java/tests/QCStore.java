@@ -117,8 +117,8 @@ public class QCStore {
 
 	private static Object rescind;
 
-	public static String bstoreid="520";
-	public static String busername="csr520";
+	public static String bstoreid="505";
+	public static String busername="csr505";
 	
 	public static String vstoreid="508";
 	public static String vusername="csr508";
@@ -126,7 +126,7 @@ public class QCStore {
 
 	// Brahmith scenarios
 
-	@Test(priority = 113, groups = { "1st Batch" })
+	//@Test(priority = 113, groups = { "1st Batch" })
 	public static void LOC_Biweekly_Nextpay_Txn() throws Exception {
 		try {
 
@@ -155,11 +155,11 @@ public class QCStore {
 					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
@@ -176,7 +176,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 114, groups = { "1st Batch" })
+	//@Test(priority = 114, groups = { "1st Batch" })
 	public static void LOC_NewLoan_MaxLOC_Txn() throws Exception {
 		try {
 
@@ -205,10 +205,10 @@ public class QCStore {
 					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					LOCMaxloanCount.newLoan(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 				}
@@ -224,7 +224,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 105, groups = { "1st Batch" })
+	//@Test(priority = 105, groups = { "1st Batch" })
 	public static void LOC_Biweekly_NextPay_NotOn_End_Txn() throws Exception {
 		try {
 
@@ -253,11 +253,11 @@ public class QCStore {
 					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, SSN);
 					// QCCSRNewLoan.newLoan(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 				}
@@ -273,7 +273,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 106, groups = { "1st Batch" })
+	//@Test(priority = 106, groups = { "1st Batch" })
 	public static void LOC_monthly_NextPay_NotOn_End_Txn() throws Exception {
 		try {
 
@@ -302,10 +302,10 @@ public class QCStore {
 					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 				}
@@ -321,7 +321,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 107, groups = { "1st Batch" })
+	//@Test(priority = 107, groups = { "1st Batch" })
 	public static void LOC_semimonthly_NextPay_NotOn_End_Txn() throws Exception {
 		try {
 
@@ -350,10 +350,10 @@ public class QCStore {
 					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 				}
@@ -369,7 +369,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 108, groups = { "1st Batch" })
+	//@Test(priority = 108, groups = { "1st Batch" })
 	public static void LOC_weekly_NextPay_NotOn_End_Txn() throws Exception {
 		try {
 
@@ -395,13 +395,13 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 				}
@@ -443,20 +443,20 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					/*VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCPayOff.payoff(SSN, AppURL);
 
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);*/
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 				}
@@ -472,7 +472,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 135, groups = { "1st Batch" })
+	//@Test(priority = 135, groups = { "1st Batch" })
 	public static void LOC_PayOff_On_DueDate_Txn() throws Exception {
 		try {
 
@@ -498,21 +498,21 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCPayOff.payoff(SSN, AppURL);
 
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 				}
@@ -528,7 +528,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 136, groups = { "1st Batch" })
+	//@Test(priority = 136, groups = { "1st Batch" })
 	public static void LOC_Payment_PayOff_Txn() throws Exception {
 		try {
 
@@ -554,25 +554,25 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCPayment.payment(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCPayOff.payoff(SSN, AppURL);
 
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 				}
@@ -588,7 +588,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 137, groups = { "1st Batch" })
+	//@Test(priority = 137, groups = { "1st Batch" })
 	public static void LOC_Payment_GraceDays_PayOff_Txn() throws Exception {
 		try {
 
@@ -614,26 +614,26 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCPayment.payment(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCPayOff.payoff(SSN, AppURL);
 
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 				}
@@ -649,7 +649,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 138, groups = { "1st Batch" })
+	//@Test(priority = 138, groups = { "1st Batch" })
 	public static void LOC_Payment_Void_PayOff_Txn() throws Exception {
 		try {
 
@@ -675,25 +675,25 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCPayment.payment(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCVoid.qcVoid(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCPayOff.payoff(SSN, AppURL);
 
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 				}
@@ -709,7 +709,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 139, groups = { "1st Batch" })
+	//@Test(priority = 139, groups = { "1st Batch" })
 	public static void LOC_Payment_Return_PayOff_Txn() throws Exception {
 		try {
 
@@ -738,31 +738,32 @@ public class QCStore {
 					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCPayment.payment(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCInternalTransfer.internalTransfer(SSN, SSN);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCashMgmtDeposit.cashmgmtDeposit(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
-					QCCSRLoginLogout.adminLogin(SSN, AppURL);
+					//QCCSRLoginLogout.adminLogin(SSN, AppURL);
 					VQCAdminCCKReturn.cckreturn(SSN, AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
+					
 					QCPayOff.payoff(SSN, AppURL);
 
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 				}
@@ -778,7 +779,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 140, groups = { "1st Batch" })
+	//@Test(priority = 140, groups = { "1st Batch" })
 	public static void LOC_PayOff_RescindPeriod_void_Txn() throws Exception {
 		try {
 
@@ -804,23 +805,23 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCPayOff.payoff(SSN, AppURL);
 
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCVoid.qcVoid(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 				}
@@ -836,7 +837,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 141, groups = { "1st Batch" })
+	//@Test(priority = 141, groups = { "1st Batch" })
 	public static void LOC_Payment_PayOff_Void_Txn() throws Exception {
 		try {
 
@@ -862,28 +863,28 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCPayment.payment(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCPayOff.payoff(SSN, AppURL);
 
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCVoid.qcVoid(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 				}
@@ -899,7 +900,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 142, groups = { "1st Batch" })
+	//@Test(priority = 142, groups = { "1st Batch" })
 	public static void LOC_Payment_Gracedays_PayOff_Void_Txn() throws Exception {
 		try {
 
@@ -925,29 +926,29 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCPayment.payment(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCPayOff.payoff(SSN, AppURL);
 
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCVoid.qcVoid(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 				}
@@ -989,29 +990,29 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCPayment.payment(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCVoid.qcVoid(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCPayOff.payoff(SSN, AppURL);
 
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCVoid.qcVoid(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 				}
@@ -1053,29 +1054,33 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCPayOff.payoff(SSN, AppURL);
-
+					
+					VQCCSRLoginLogout.login(SSN, AppURL);
+					VQCPayoff.payoffcck(SSN, SSN);					
+					         //QCPayOff.payoff(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-
-					QCCSRLoginLogout.login(SSN, AppURL);
+					
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCInternalTransfer.internalTransfer(SSN, SSN);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCashMgmtDeposit.cashmgmtDeposit(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-
-					QCCSRLoginLogout.adminLogin(SSN, SSN);
+					
 					VQCAdminCCKReturn.cckreturn(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					
+					
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 				}
@@ -1117,32 +1122,33 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCPayment.payment(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCPayOff.payoff(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
+					//QCPayOff.payoff(SSN, AppURL);
+					VQCPayoff.payoffcck(SSN, SSN);	
 
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCInternalTransfer.internalTransfer(SSN, SSN);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCashMgmtDeposit.cashmgmtDeposit(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
-					QCCSRLoginLogout.adminLogin(SSN, SSN);
+					
 					VQCAdminCCKReturn.cckreturn(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 				}
@@ -1184,20 +1190,20 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 
 					QCDraw.draw(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 				}
@@ -1239,24 +1245,24 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCPaymentforDraw.paymentDraw(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 
 					QCDraw.draw(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 				}
@@ -1298,23 +1304,23 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCPayOff.payoff(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 
 					QCDraw.draw(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 				}
@@ -1330,7 +1336,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 158, groups = { "1st Batch" })
+	//@Test(priority = 158, groups = { "1st Batch" })
 	public static void LOC_Draw_Void_Txn() throws Exception {
 		try {
 
@@ -1356,22 +1362,22 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 
 					QCDraw.draw(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCVoid.qcVoid(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 				}
@@ -1387,7 +1393,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 159, groups = { "1st Batch" })
+	//@Test(priority = 159, groups = { "1st Batch" })
 	public static void LOC_Payment_Draw_Void_Txn() throws Exception {
 		try {
 
@@ -1413,27 +1419,27 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 
 					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCPayment.payment(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 
 					QCDraw.draw(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCVoid.qcVoid(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 				}
@@ -1449,7 +1455,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 160, groups = { "1st Batch" })
+	//@Test(priority = 160, groups = { "1st Batch" })
 	public static void LOC_PayOff_Draw_Void_Txn() throws Exception {
 		try {
 
@@ -1475,25 +1481,25 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCPayOff.payoff(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCDraw.draw(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCVoid.qcVoid(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 				}
@@ -1509,7 +1515,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 164, groups = { "1st Batch" })
+	//@Test(priority = 164, groups = { "1st Batch" })
 	public static void LOC_Deposit_Return_PayOff_Txn() throws Exception {
 		try {
 
@@ -1534,28 +1540,28 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCDepositDropdown.depositDropDown(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.adminLogin(SSN, SSN);
-					VQCCSRReturnPosting.returnposting(SSN, SSN);
+					QCCSRReturnPosting.returnposting(SSN, SSN);
 
 					QCCSRLoginLogout.adminLogin(SSN, SSN);
 					VQCAdminACHReturn.achreturn(SSN, SSN);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCDeliquentLoan.delinquent(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+					VQCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
@@ -6433,7 +6439,7 @@ public class QCStore {
 
 	// V Jyothi scenarios
 
-	@Test(priority = 600, enabled = true,groups ="Jyothi")
+	//@Test(priority = 600, enabled = true,groups ="Jyothi")
 
 	public static void LOC_Writeoff() throws Exception {
 
@@ -6478,7 +6484,7 @@ public class QCStore {
 
 	}
 
-	@Test(priority = 601, enabled = true,groups = "Jyothi")
+	//@Test(priority = 601, enabled = true,groups = "Jyothi")
 
 	public static void LOC_WriteoffRecovery() throws Exception {
 
@@ -6533,7 +6539,7 @@ public class QCStore {
 
 	}
 
-	@Test(priority = 602, enabled = true,groups = "Jyothi")
+	//@Test(priority = 602, enabled = true,groups = "Jyothi")
 
 	public static void LOC_PartialWriteoffRecovery() throws Exception {
 
@@ -6583,7 +6589,7 @@ public class QCStore {
 
 	}
 
-	@Test(priority = 603, enabled = true,groups = "Jyothi")
+	//@Test(priority = 603, enabled = true,groups = "Jyothi")
 
 	public static void LOC_PartialWriteoffRecoveryVoid() throws Exception {
 
@@ -6638,7 +6644,7 @@ public class QCStore {
 
 	}
 
-	@Test(priority = 604, enabled = true,groups = "Jyothi")
+	//@Test(priority = 604, enabled = true,groups = "Jyothi")
 
 	public static void LOC_Bankrupt_Writeoff() throws Exception {
 
@@ -6686,7 +6692,7 @@ public class QCStore {
 
 	}
 
-	@Test(priority = 605, enabled = true,groups = "Jyothi")
+	//@Test(priority = 605, enabled = true,groups = "Jyothi")
 
 	public static void LOC_Bankrupt_Writeoff_Dismissed() throws Exception {
 
@@ -6736,7 +6742,7 @@ public class QCStore {
 
 	}
 
-	@Test(priority = 606, enabled = true,groups = "Jyothi")
+	//@Test(priority = 606, enabled = true,groups = "Jyothi")
 	public static void LOC_Deposit_Return_Writeoff() throws Exception {
 
 		FileName = "LOC_Deposit_Return_Writeoff.xls";
@@ -6847,7 +6853,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 608, enabled = true,groups ="Jyothi")
+	//@Test(priority = 608, enabled = true,groups ="Jyothi")
 
 	public static void LOC_WriteoffRecoveryReturn() throws Exception {
 
@@ -6906,7 +6912,7 @@ public class QCStore {
 
 	}
 	
-	@Test(priority = 609, enabled = true,groups ="Jyothi")
+	@Test(priority = 609, enabled = true,groups ="Jyothi1")
 	public static void QC_ILP_Refinance_Payanyother_Step_Up_Txn() throws Exception {
 		FileName = "QC_ILP_Payanyotheramount.xls";
 		test = reports.startTest("VQC_ILP_Refinance_Payanyother_Step_Up",
