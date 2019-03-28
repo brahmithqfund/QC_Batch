@@ -963,7 +963,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 143, groups = { "1st Batch" })
+	@Test(priority = 143, groups = { "1st Batch" })
 	public static void LOC_Payment_Void_PayOff_Void_Txn() throws Exception {
 		try {
 
@@ -1027,7 +1027,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 144, groups = { "1st Batch" })
+	@Test(priority = 144, groups = { "1st Batch" })
 	public static void LOC_PayOff_Return_Txn() throws Exception {
 		try {
 
@@ -1091,7 +1091,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 145, groups = { "1st Batch" })
+	@Test(priority = 145, groups = { "1st Batch" })
 	public static void LOC_Payment_PayOff_Return_Txn() throws Exception {
 		try {
 
@@ -1158,7 +1158,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 155, groups = { "1st Batch" })
+	@Test(priority = 155, groups = { "1st Batch" })
 	public static void LOC_Draw_Txn() throws Exception {
 		try {
 
@@ -1213,7 +1213,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 156, groups = { "1st Batch" })
+	@Test(priority = 156, groups = { "1st Batch" })
 	public static void LOC_Payment_Draw_Txn() throws Exception {
 		try {
 
@@ -1272,7 +1272,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 157, groups = { "1st Batch" })
+	@Test(priority = 157, groups = { "1st Batch" })
 	public static void LOC_PayOff_Draw_Txn() throws Exception {
 		try {
 
@@ -1572,7 +1572,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 66, groups = { "EOD" })
+	@Test(priority = 66, groups = { "EOD" })
 
 	public static void LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn() throws Exception {
 		try {
@@ -1675,7 +1675,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 67, groups = { "EOD" })
+	@Test(priority = 67, groups = { "EOD" })
 	public static void LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn() throws Exception {
 		try {
 
@@ -1777,7 +1777,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 68, groups = { "EOD" })
+	@Test(priority = 68, groups = { "EOD" })
 	public static void LOC_ACHDeposit_EODs_Return_Txn() throws Exception {
 		try {
 
@@ -1942,7 +1942,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 69, groups = { "EOD2" })
+	@Test(priority = 69, groups = { "EOD2" })
 	public static void LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn() throws Exception {
 		try {
 
@@ -2047,7 +2047,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 70, groups = { "EOD2" })
+	@Test(priority = 70, groups = { "EOD2" })
 	public static void LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn() throws Exception {
 		try {
 
@@ -5670,7 +5670,7 @@ public class QCStore {
 	
 	//****************************************Anoop-Scenarios-NonEOD****************************************//
 	
-	//@Test(priority = 487, enabled = true, groups = { "NonEOD" })
+	@Test(priority = 487, enabled = true, groups = { "NonEOD" })
 
 	public void MinLocAmounts() throws Exception {
 		FileName = "QC_LOC_NewLoan_monthly_MinAmount.xls";
@@ -5701,7 +5701,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 488, enabled = true, groups = { "NonEOD" })
+	@Test(priority = 488, enabled = true, groups = { "NonEOD" })
 
 	public void MaxLocAmounts() throws Exception {
 		FileName = "QC_LOC_NewLoan_monthly_Maxamount.xls";
@@ -5732,7 +5732,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 489, enabled = true, groups = { "NonEOD" })
+	@Test(priority = 489, enabled = true, groups = { "NonEOD" })
 
 	public void LOC_maxloanCount() throws Exception {
 		FileName = "QC_LOC_MaxLoan.xls";
@@ -5769,7 +5769,7 @@ public class QCStore {
 		}
 	}
 
-//	@Test(priority = 490, enabled = true, groups = { "NonEOD" })
+@Test(priority = 490, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanWeekly_Duedatevalidation() throws Exception {
 		FileName = "QC_LOC_EndDate_Weekly_Duedate.xls";
@@ -5800,7 +5800,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 491, enabled = true, groups = { "NonEOD" })
+	@Test(priority = 491, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanSemiMonthly_Duedatevalidation() throws Exception {
 		FileName = "QC_LOC_EndDate_Semimonthly_Duedate.xls";
@@ -5831,7 +5831,7 @@ public class QCStore {
 		}
 	}
 
-//	@Test(priority = 492, enabled = true, groups = { "NonEOD" })
+@Test(priority = 492, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanMonthly_Duedatevalidation() throws Exception {
 		FileName = "QC_LOC_EndDate_monthly_Duedate.xls";
@@ -5862,7 +5862,7 @@ public class QCStore {
 		}
 	}
 
-//	@Test(priority = 493, enabled = true, groups = { "NonEOD" })
+@Test(priority = 493, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanBiweeklyPaymentDuedate() throws Exception {
 		FileName = "QC_LOC_EndDate_Biweekly_Duedate.xls";
@@ -5893,7 +5893,7 @@ public class QCStore {
 		}
 	}
 
-//	@Test(priority = 494, enabled = true, groups = { "NonEOD" })
+@Test(priority = 494, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanWeekly() throws Exception {
 		FileName = "QC_LOC_NewLoan_Weekly.xls";
@@ -5923,7 +5923,7 @@ public class QCStore {
 		}
 	}
 
-//	@Test(priority = 495, enabled = true, groups = { "NonEOD" })
+@Test(priority = 495, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanSemiMonthly() throws Exception {
 		FileName = "QC_LOC_NewLoan_Semimonthly.xls";
@@ -5953,7 +5953,7 @@ public class QCStore {
 		}
 	}
 
-//	@Test(priority = 496, enabled = true, groups = { "NonEOD" })
+@Test(priority = 496, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanMonthly() throws Exception {
 		FileName = "QC_LOC_NewLoan_monthly.xls";
@@ -5983,7 +5983,7 @@ public class QCStore {
 		}
 	}
 
-//	@Test(priority = 497, enabled = true, groups = { "NonEOD" })
+	@Test(priority = 497, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanBiweekly() throws Exception {
 		FileName = "QC_LOC_NewLoan_Biweekly.xls";
@@ -6785,7 +6785,7 @@ public class QCStore {
 
 	}
 
-	//@Test(priority = 607, enabled = true,groups = "Jyothi")
+	@Test(priority = 607, enabled = true,groups = "Jyothi")
 
 	public static void LOC_Deposit2_Return_Writeoff() throws Exception {
 
