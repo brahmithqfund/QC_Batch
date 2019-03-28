@@ -190,18 +190,19 @@ public class QCStore {
 
 	public static String csr_url;
 	public static String csrloginpage;
+	public static String cust_doc_total_amount;
 
 	// Brahmith Transactions
 
-	@Test(priority = 4, groups = "Brahmith1")
+	@Test(priority = 1, groups = "Brahmith")
 
-	public static void QC_NewLoan_Promotion_Txn() throws Exception {
+	public static void Recon_ILP_Debit_Card_Variance_scenario() throws Exception {
 		try {
 
-			test = reports.startTest(prop.getProperty("QC_Store_ILP_NewLoan_Promotion_Txn_scenario"),
-					"Login->Borrower Registratino->New Loan with Promotion");
+			test = reports.startTest(prop.getProperty("Recon_ILP_Debit_Card_Variance_scenario"),
+					"New ILP Loan->Age the store after Rescind period->Refinance");
 
-			FileName = prop.getProperty("QC_Store_ILP_NewLoan_Promotion_Txn_file_name") + ".xls";
+			FileName = prop.getProperty("Recon_ILP_Debit_Card_Variance_file_name") + ".xls";
 
 			TestData = new ExcelNew(System.getProperty("user.dir")
 					+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
@@ -231,9 +232,22 @@ public class QCStore {
 					QCCSRNewLoan.newLoan(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
-					QCCSRHistory.history(SSN, AppURL);
+					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
+					
+					
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCRefinanceNew.refinance(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-
+					
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCHistoryold.history(SSN, SSN);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCHistoryNew.history(SSN, SSN);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					
+		
 				}
 			}
 		}
@@ -247,16 +261,16 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 7, groups = "Brahmith")
+	@Test(priority = 2, groups = "Brahmith")
 
-	public static void QC_NewLoan_Void_Txn() throws Exception {
+	public static void Reverse_and_Reallocation() throws Exception {
 		try {
 			// test =
 			// extent.createTest(prop.getProperty("QC_Store_NewLoan_Void_Txn_file_name"));
-			test = reports.startTest((prop.getProperty("QC_Store_NewLoan_Void_Txn_Scenario")),
-					"Login->Borrower Registratino->New Loan->Void");
+			test = reports.startTest((prop.getProperty("Reverse_and_Reallocation_scenario")),
+					"While posting chargeback transaction for current / DLQ customers Checking Reverse and reallocation");
 
-			FileName = prop.getProperty("QC_Store_NewLoan_Void_Txn_file_name") + ".xls";
+			FileName = prop.getProperty("Reverse_and_Reallocation_file_name") + ".xls";
 
 			TestData = new ExcelNew(System.getProperty("user.dir")
 					+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
@@ -284,12 +298,56 @@ public class QCStore {
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
+					
 					QCCSRLoginLogout.login(SSN, AppURL);
-					QCVoid.qcVoid(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
+					
 					QCCSRLoginLogout.login(SSN, AppURL);
-					QCCSRHistory.history(SSN, AppURL);
+					QCPayment.payment(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
+					
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
+					
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCPayment.payment(SSN, SSN);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
+					
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCPayment.payment(SSN, SSN);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
+					
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCPayment.payment(SSN, SSN);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
+					
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCPayment.payment(SSN, SSN);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
+					
+					QCCSRLoginLogout.login(SSN, AppURL);
+					Chargeback.chargeback(SSN, SSN);
+					
+					
+					
+					
+					
+					
+									
+					
+				
 				}
 			}
 		}
@@ -303,16 +361,16 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 54, groups = "Brahmith")
+	@Test(priority = 3, groups = "Brahmith")
 
-	public static void QC_AgeStore_Void_Txn() throws Exception {
+	public static void WriteOff() throws Exception {
 		try {
 			// test =
 			// extent.createTest(prop.getProperty("QC_Store_AgeStore_Void_Txn_file_name"));
-			test = reports.startTest((prop.getProperty("QC_Store_AgeStore_Void_Txn_Scenario")),
-					"Login->Borrower Registratino->New Loan->AgeStore->Void");
+			test = reports.startTest((prop.getProperty("WriteOff_scenario")),
+					"Write-Off - After write-off, if any payment returned/chargeback");
 
-			FileName = prop.getProperty("QC_Store_AgeStore_Void_Txn_file_name") + ".xls";
+			FileName = prop.getProperty("WriteOff_file_name") + ".xls";
 
 			TestData = new ExcelNew(System.getProperty("user.dir")
 					+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
@@ -336,27 +394,43 @@ public class QCStore {
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
+
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
+					
 					QCCSRLoginLogout.login(SSN, AppURL);
-					QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+					QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
+					
 					QCCSRLoginLogout.login(SSN, AppURL);
-					QCEncryptionDetails.readEncryptionDetails(SSN, AppURL);
+					JQCDepositDropdown.depositDropDown(SSN, SSN);
+					
+					
+					
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
+					
+					QCCSRLoginLogout.login(SSN, AppURL);
+					Chargeback.chargeback(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					// QCCSRLoginLogout.adminLogin(driver, SSN, AppURL);
-					QCAdminEncryption.getEncryption(driver, SSN, AppURL);
-					// QCCSRLoginLogout.adminLogout(driver,SSN, AppURL);
+					
+					/*QCCSRLoginLogout.login(SSN, AppURL);
+					QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
+					
 					QCCSRLoginLogout.login(SSN, AppURL);
-					// QCVoid.qcVoid(SSN, AppURL);
-
-					QCAgeStoreVoid.ageStoreVoid(SSN, AppURL);
-
-					// QCCSRHistory.history(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
+					JQCDepositDropdown.depositDropDown(SSN, SSN);
+					
 					QCCSRLoginLogout.login(SSN, AppURL);
-					QCCSRHistory.history(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
+					
+					QCCSRLoginLogout.login(SSN, AppURL);
+					Chargeback.chargeback(SSN, SSN);
+					QCCSRLoginLogout.logout(SSN, AppURL);*/
+					
+					
+					
+					
+					
 				}
 			}
 		}
@@ -370,17 +444,17 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 21, groups = "Brahmith")
+	@Test(priority = 4, groups = "Brahmith")
 
-	public static void QC_Installmentpayment_Txn() throws Exception {
+	public static void Recon_ILP_EARNED_FEE() throws Exception {
 		try {
-			test = reports.startTest((prop.getProperty("QC_ILP_Installmentpayment_Txn_Scenario")),
+			test = reports.startTest((prop.getProperty("Recon_ILP_EARNED_FEE_Scenario")),
 					"Login->Borrower Registratino->New Loan->AgeStore->PartialPayment Pay Installment Amt");
 
 			// test =
 			// extent.createTest(prop.getProperty("QC_Store_AgeStore_Deposit_Menu_Txn_file_name"));
 
-			FileName = prop.getProperty("QC_ILP_Installmentpayment_Txn_file_name") + ".xls";
+			FileName = prop.getProperty("Recon_ILP_EARNED_FEE_file_name") + ".xls";
 
 			TestData = new ExcelNew(System.getProperty("user.dir")
 					+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
@@ -429,7 +503,212 @@ public class QCStore {
 		}
 	}
 
+	@Test(priority = 5, groups = "Brahmith")
 
+	public static void Recon_CashRoll() throws Exception {
+		try {
+			// test =
+			// extent.createTest(prop.getProperty("QC_Store_AgeStore_Void_Txn_file_name"));
+			test = reports.startTest((prop.getProperty("Recon_CashRoll_FEE_scenario")),
+					"New Loan->Age the store date to Due date->DC Deposit->Return DC Deposit->NSF Payment");
+
+			FileName = prop.getProperty("Recon_CashRoll_file_name") + ".xls";
+
+			TestData = new ExcelNew(System.getProperty("user.dir")
+					+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
+
+			int lastrow = TestData.getLastRow("Start");
+			String sheetName = "Start";
+			// int lastrow=TestData.getLastRow("Borrower");
+			System.out.println(lastrow);
+			for (int row = 2; row <= lastrow; row++) {
+
+				String RunFlag = TestData.getCellData(sheetName, "Run", row);
+				// System.out.println(RunFlag);
+				if (RunFlag.equals("Y")) {
+
+					// String AppURL = TestData.getCellData(sheetName, "AppURL",
+					// row);
+					String SSN = TestData.getCellData(sheetName, "SSN", row);
+
+					System.out.println(AppURL);
+
+			/*		QCCSRLoginLogoutPDL.login(SSN, AppURL);
+					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+
+					QCCSRLoginLogoutPDL.login(SSN, AppURL);
+					QCCSRNewLoanPDL.newLoan(SSN, SSN);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					
+					QCCSRLoginLogoutPDL.login(SSN, AppURL);
+					QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
+					
+					QCCSRLoginLogoutPDL.login(SSN, AppURL);
+					JQCDepositDropdownPDL.depositDropDown(SSN, SSN);
+					
+					
+					
+					QCCSRLoginLogoutPDL.login(SSN, AppURL);
+					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);*/
+					
+					QCCSRLoginLogoutPDL.login(SSN, AppURL);
+					Chargeback.chargeback(SSN, SSN);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					
+					QCCSRLoginLogoutPDL.login(SSN, AppURL);
+					AQC_NSFPayment.nsfpayment(SSN, SSN);
+					
+					
+				
+					
+					
+					
+					
+					
+				}
+			}
+		}
+
+		catch (Exception e) {
+			System.out.println("under catch of Test");
+			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
+			// start scenario 1 " , ExtentColor.RED));
+			test.log(LogStatus.ERROR, "Unable to start scenario QC_AgeStore_Void_Txn ");
+
+		}
+	}
+
+	
+	@Test(priority = 6, groups = { "Brahmith1" })
+	public static void EPP() throws Exception {
+		try {
+			// test =
+			// extent.createTest(prop.getProperty("QC_Store_AgeStore_Void_Txn_file_name"));
+			test = reports.startTest("EPP",
+					"In Payment Plan, while doing installment check deposit,the tran ID is being stored as DP instead of PPay");
+
+			FileName = prop.getProperty("EPP_file_name") + ".xls";
+
+			TestData = new ExcelNew(System.getProperty("user.dir")
+					+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
+
+			int lastrow = 12;
+			String sheetName = "Start";
+			// int lastrow=TestData.getLastRow("Borrower");
+			System.out.println(lastrow);
+			for (int row = 2; row <= lastrow; row++) {
+
+				String RunFlag = TestData.getCellData(sheetName, "Run", row);
+				// System.out.println(RunFlag);
+				if (RunFlag.equals("Y")) {
+
+					String SSN = TestData.getCellData(sheetName, "SSN", row);
+					/*QCCSRLoginLogoutPDL.login(SSN, AppURL);
+					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogoutPDL.login(SSN, AppURL);
+					QCCSRNewLoanPDL.newLoan(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogoutPDL.login(SSN, AppURL);
+					QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+					QCCSRLoginLogoutPDL.login(SSN, AppURL);
+					QCStoreEPP.epp(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogoutPDL.login(SSN, AppURL);
+					QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);*/
+					QCCSRLoginLogoutPDL.login(SSN, AppURL);
+					QCDepositDropdown.depositDropDown(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogoutPDL.login(SSN, AppURL);
+					QCInternalTransfer.internalTransfer(SSN, AppURL);
+
+					QCCSRLoginLogoutPDL.login(SSN, AppURL);
+					QCCashMgmtDeposit.cashmgmtDeposit(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogoutPDL.login(SSN, AppURL);
+					/*QCClearDropdown.clearDropDown(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCCSRHistory.history(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);*/
+
+				}
+			}
+		}
+
+		catch (Exception e) {
+			System.out.println("under catch of Test");
+			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
+			// start scenario 1 " , ExtentColor.RED));
+			test.log(LogStatus.ERROR, "Unable to start scenario QC_Epp_Deposit_Clear_Txn");
+
+		}
+	}
+
+	@Test(priority = 1, groups = "Brahmith")
+
+	public static void Recon_ILP_EARNED_FEE_Variance() throws Exception {
+		try {
+
+			test = reports.startTest(prop.getProperty("Recon_ILP_EARNED_FEE_Variance_scenario"),
+					"New ILP Loan->Age the store after Rescind period->Refinance");
+
+			FileName = prop.getProperty("Recon_ILP_EARNED_FEE_Variance_file_name") + ".xls";
+
+			TestData = new ExcelNew(System.getProperty("user.dir")
+					+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
+
+			String sheetName = "Start";
+			int lastrow = TestData.getLastRow("Start");
+			System.out.println(lastrow);
+			for (int row = 2; row <= lastrow; row++) {
+
+				String RunFlag = TestData.getCellData(sheetName, "Run", row);
+				// System.out.println(RunFlag);
+				if (RunFlag.equals("Y")) {
+
+					// AppURL = TestData.getCellData(sheetName, "AppURL", row);
+					String SSN = TestData.getCellData(sheetName, "SSN", row);
+
+					
+
+					/*QCCSRLoginLogoutTX.login(SSN, AppURL);
+					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);*/
+					QCCSRLoginLogoutTX.login(SSN, AppURL);
+					QCCSRNewLoan.newLoan(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogoutTX.login(SSN, AppURL);
+					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
+					
+					
+					QCCSRLoginLogoutTX.login(SSN, AppURL);
+					QCRefinanceNew.refinance(SSN, SSN);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					
+					QCCSRLoginLogoutTX.login(SSN, AppURL);
+					QCHistoryold.history(SSN, SSN);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					
+					QCCSRLoginLogoutTX.login(SSN, AppURL);
+					QCHistoryNew.history(SSN, SSN);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					
+		
+				}
+			}
+		}
+
+		catch (Exception e) {
+
+			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
+			// start scenario 1 " , ExtentColor.RED));
+			test.log(LogStatus.ERROR, "Unable to start scenario QC_BorrowerRegistration_NewLoan_Promotion_Txn ");
+
+		}
+	}
 
 
 	@BeforeClass(alwaysRun = true)
@@ -446,7 +725,7 @@ public class QCStore {
 			try {
 				reader = new BufferedReader(
 
-						new FileReader("C:/QC_Batch/QC_ILP/src/test/java/tests/Objects.properties"));
+						new FileReader("C:/QC_Batch/QC_Accouting/src/test/java/tests/Objects.properties"));
 
 				prop = new Properties();
 				prop.load(reader);
@@ -569,7 +848,7 @@ public class QCStore {
 
 		try {
 
-			//Runtime.getRuntime().exec("taskkill /F /IM IEDriverServer.exe");
+			Runtime.getRuntime().exec("taskkill /F /IM IEDriverServer.exe");
 
 			Thread.sleep(5000); // Allow OS to kill the process
 			System.out.println("killed the process ILP scenarios");

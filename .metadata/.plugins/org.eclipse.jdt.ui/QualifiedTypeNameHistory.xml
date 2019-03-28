@@ -8,4 +8,14 @@
 <fullyQualifiedTypeName name="tests.BAdminRebateDate"/>
 <fullyQualifiedTypeName name="tests.BAdminNVDate"/>
 <fullyQualifiedTypeName name="tests.BAdminStartDate"/>
+<fullyQualifiedTypeName name="tests.QCRefinance"/>
+<fullyQualifiedTypeName name="tests.QCHistoryold"/>
+<fullyQualifiedTypeName name="tests.QCHistoryNew"/>
+<fullyQualifiedTypeName name="tests.QCAgeStoreDueDate"/>
+<fullyQualifiedTypeName name="tests.QCPayment"/>
+<fullyQualifiedTypeName name="tests.JQCDepositDropdown"/>
+<fullyQualifiedTypeName name="tests.Chargeback"/>
+<fullyQualifiedTypeName name="tests.QCAgeStoreGraceDays"/>
+<fullyQualifiedTypeName name="tests.QCCSRNewLoan"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
 </qualifiedTypeNameHistroy>

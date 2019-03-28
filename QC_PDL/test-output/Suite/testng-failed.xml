@@ -4,7 +4,7 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="1stBatch1"/>
+        <include name="EOD1"/>
       </run>
     </groups>
     <classes>
@@ -12,8 +12,7 @@
         <methods>
           <include name="getResult"/>
           <include name="setup"/>
-          <include name="QC_Refinance_StepSameVoidURP_Txn"/>
-          <include name="QC_Refinance_StepSameURP_Txn"/>
+          <include name="QC_FutureDeposit_EOD_Txn"/>
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->

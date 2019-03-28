@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="594115" started-at="2019-02-05T10:22:27Z" finished-at="2019-02-05T10:32:21Z">
+  <suite name="Default suite" duration-ms="576266" started-at="2019-03-25T10:52:02Z" finished-at="2019-03-25T11:01:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="594115" started-at="2019-02-05T10:22:27Z" finished-at="2019-02-05T10:32:21Z">
+    <test name="Default test" duration-ms="576266" started-at="2019-03-25T10:52:02Z" finished-at="2019-03-25T11:01:38Z">
       <class name="tests.LendNation">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.LendNation@5ce81285]" name="setup" is-config="true" duration-ms="2063" started-at="2019-02-05T10:22:27Z" finished-at="2019-02-05T10:22:29Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.LendNation@5ce81285]" name="setup" is-config="true" duration-ms="2061" started-at="2019-03-25T10:52:02Z" finished-at="2019-03-25T10:52:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="LendNation()[pri:0, instance:tests.LendNation@5ce81285]" name="LendNation" duration-ms="591781" started-at="2019-02-05T10:22:29Z" finished-at="2019-02-05T10:32:20Z">
+        <test-method status="PASS" signature="LendNation()[pri:0, instance:tests.LendNation@5ce81285]" name="LendNation" duration-ms="573981" started-at="2019-03-25T10:52:04Z" finished-at="2019-03-25T11:01:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LendNation -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.LendNation@5ce81285]" name="getResult" is-config="true" duration-ms="3" started-at="2019-02-05T10:32:20Z" finished-at="2019-02-05T10:32:20Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.LendNation@5ce81285]" name="getResult" is-config="true" duration-ms="1" started-at="2019-03-25T11:01:38Z" finished-at="2019-03-25T11:01:38Z">
           <params>
             <param index="0">
               <value>
@@ -26,7 +26,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.LendNation@5ce81285]" name="endReport" is-config="true" duration-ms="253" started-at="2019-02-05T10:32:20Z" finished-at="2019-02-05T10:32:21Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.LendNation@5ce81285]" name="endReport" is-config="true" duration-ms="206" started-at="2019-03-25T11:01:38Z" finished-at="2019-03-25T11:01:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

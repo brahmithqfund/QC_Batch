@@ -198,7 +198,7 @@ public static void logout(String SSN,String AppURL){
 				driver.manage().window().maximize();
 				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			
-				driver.get(AdminURL);
+				driver.get(BAdminURL);
 
 				driver.findElement(By.name("loginRequestBean.userId")).sendKeys(UserName);
 

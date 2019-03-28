@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="QC_NewLoan_Promotion_Txn">QC_NewLoan_Promotion_Txn</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="QC_AgeStore_Void_Txn">QC_AgeStore_Void_Txn</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -125,9 +125,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="QC_NewLoan_Promotion_Txn">
-                  </a> <!-- QC_NewLoan_Promotion_Txn -->
-                  <span class="method-name">QC_NewLoan_Promotion_Txn</span>
+                  <a name="QC_AgeStore_Void_Txn">
+                  </a> <!-- QC_AgeStore_Void_Txn -->
+                  <span class="method-name">QC_AgeStore_Void_Txn</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -177,7 +177,7 @@
               <span class="test-group-name">1stBatch1</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">QC_NewLoan_Promotion_Txn</span>
+                <span class="method-in-group-name">QC_AgeStore_Void_Txn</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -199,14 +199,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'QC_NewLoan_Promotion_Txn')
+data.setCell(0, 1, 'QC_AgeStore_Void_Txn')
 data.setCell(0, 2, 'tests.QCStore')
-data.setCell(0, 3, 198603);
+data.setCell(0, 3, 139845);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -265,13 +265,15 @@ return data;
                 <br/>
                 <span class="ignored-method-name">JQC_AgeStore_DCDeposit_Txn</span>
                 <br/>
+                <span class="ignored-method-name">QC_NewLoan_Promotion_Txn</span>
+                <br/>
                 <span class="ignored-method-name">QC_Epp_Return_NSFPayment_Txn</span>
                 <br/>
                 <span class="ignored-method-name">JQC_EPP_AgestoreInstallmentwise_EPPPayment_Txn_Testdata</span>
                 <br/>
-                <span class="ignored-method-name">QC_Deposit_GraceDays_Txn</span>
-                <br/>
                 <span class="ignored-method-name">QC_GraceDays_EODDeposit_Txn</span>
+                <br/>
+                <span class="ignored-method-name">QC_Deposit_GraceDays_Txn</span>
                 <br/>
                 <span class="ignored-method-name">QC_Epp_PrePayment_Txn</span>
                 <br/>
@@ -307,8 +309,6 @@ return data;
                 <br/>
                 <span class="ignored-method-name">GracedaysDepositMenu</span>
                 <br/>
-                <span class="ignored-method-name">QC_AgeStore_Void_Txn</span>
-                <br/>
                 <span class="ignored-method-name">AQC_EPPDeposit</span>
                 <br/>
                 <span class="ignored-method-name">JQC_AgeStore_Deposit_AutoClear_Txn</span>
@@ -333,15 +333,15 @@ return data;
                 <br/>
                 <span class="ignored-method-name">RefinanceStepup</span>
                 <br/>
-                <span class="ignored-method-name">rebateStepup</span>
-                <br/>
                 <span class="ignored-method-name">QC_FutureDeposit_DropDown</span>
+                <br/>
+                <span class="ignored-method-name">rebateStepup</span>
                 <br/>
                 <span class="ignored-method-name">QC_Refinance_StepSameVoidURP_Txn</span>
                 <br/>
-                <span class="ignored-method-name">JQC_EPP_Txn_Testdata</span>
-                <br/>
                 <span class="ignored-method-name">JQC_AgeStore_Deposit_PrePayment_Void_Txn</span>
+                <br/>
+                <span class="ignored-method-name">JQC_EPP_Txn_Testdata</span>
                 <br/>
                 <span class="ignored-method-name">QC_Epp_Return_ReDeposit_Txn</span>
                 <br/>
@@ -363,9 +363,9 @@ return data;
                 <br/>
                 <span class="ignored-method-name">QC_FutureDeposit_EOD_Txn</span>
                 <br/>
-                <span class="ignored-method-name">agerescindtest</span>
-                <br/>
                 <span class="ignored-method-name">QC_Refinance_StepDownVoidURP_Txn</span>
+                <br/>
+                <span class="ignored-method-name">agerescindtest</span>
                 <br/>
                 <span class="ignored-method-name">JQC_Return_ReDeposit_Clear_Txn</span>
                 <br/>
@@ -396,15 +396,15 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">killProcess</span>
-                <span class="method-start">108 ms</span>
+                <span class="method-start">105 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">QC_NewLoan_Promotion_Txn</span>
-                <span class="method-start">5109 ms</span>
+                <span class="method-name">QC_AgeStore_Void_Txn</span>
+                <span class="method-start">5118 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=QC_NewLoan_Promotion_Txn status=SUCCESS method=QCStore.QC_NewLoan_Promotion_Txn()[p...)</span>
-                <span class="method-start">203715 ms</span>
+                <span class="method-name">getResult([TestResult name=QC_AgeStore_Void_Txn status=SUCCESS method=QCStore.QC_AgeStore_Void_Txn()[pri:110, ...)</span>
+                <span class="method-start">144965 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -4,51 +4,15 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-<<<<<<< HEAD
-        <include name="Ratikanta_ILP"/>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <include name="Anoop_StdownVoid"/>
-=======
-        <include name="Brahmith1"/>
->>>>>>> brahmith1.1
-=======
-        <include name="Jyothi"/>
->>>>>>> jyothi1.2
->>>>>>> 26f8126931b7afc696e5ebd31895ac4dfa2dd77b
+        <include name="Brahmith"/>
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-          <include name="RQC_WriteOffRecovery_Txn_Testdata"/>
-          <include name="RQC_WriteOffRecovery_Void_Txn_Testdata"/>
-          <include name="getResult"/>
-=======
-          <include name="getResult"/>
-<<<<<<< HEAD
-=======
           <include name="QC_ILP_Refinanace_Txn"/>
+          <include name="QC_Installmentpayment_Void_Txn"/>
           <include name="getResult"/>
-<<<<<<< HEAD
-=======
->>>>>>> brahmith1.1
-<<<<<<< HEAD
-          <include name="ILP_RefinanceStepDown_void"/>
-=======
-          <include name="QC_InstallPayment_Ref_Rescind_Txn"/>
->>>>>>> brahmith1.1
-<<<<<<< HEAD
-=======
-          <include name="ILP_InstallmentStepup"/>
->>>>>>> jyothi1.2
->>>>>>> 26f8126931b7afc696e5ebd31895ac4dfa2dd77b
-=======
->>>>>>> master
->>>>>>> brahmith1.1
           <include name="setup"/>
           <include name="endReport"/>
           <include name="killProcess"/>

@@ -7,9 +7,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import com.relevantcodes.extentreports.LogStatus;
+
 import oracle.jdbc.OracleTypes;
 
-public class BProc3 {
+public class BProc3 extends QCStore{
 
 	public static void proc() throws ClassNotFoundException, SQLException {
 		Connection conn = null;
@@ -90,9 +92,12 @@ public class BProc3 {
 				} catch (Exception e) {
 				}
 			}
+			test.log(LogStatus.PASS, "Stored Procedure successfully run");
+			
 		} catch (Exception e2) {
 
 			System.out.println(" console" + e2);
+			test.log(LogStatus.FAIL, "Stored Procedure running is failed");
 			e2.printStackTrace();
 		}
 

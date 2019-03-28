@@ -105,13 +105,13 @@ public class JQCACHReturn extends QCStore {
 						Thread.sleep(2000);
 		
 							Actions action = new Actions(driver);  
-							 WebElement collateral=driver.findElement(locator(prop.getProperty("ACH")));
+							 WebElement collateral=driver.findElement(By.linkText("Debit Card"));
 							 action.moveToElement(collateral).build().perform();
-							 test.log(LogStatus.PASS, " Mouse hover on ACH menu");
+							 test.log(LogStatus.PASS, " Mouse hover on Deposit menu");
 							 Thread.sleep(2000);
-							 WebElement pdl=driver.findElement(locator(prop.getProperty("deposit_ach_pdl")));
-							 action.moveToElement(pdl).build().perform();
-							 test.log(LogStatus.PASS, " Mouse hover on payday loan menu");
+							 WebElement ilp=driver.findElement(By.linkText("Installment Loan"));
+							 action.moveToElement(ilp).build().perform();
+							 test.log(LogStatus.PASS, " Mouse hover on ILP loan menu");
 							 Thread.sleep(3000);
 							 driver.findElement(locator(prop.getProperty("ACH_Return"))).click();
 							 test.log(LogStatus.PASS, " click on clear menu");
