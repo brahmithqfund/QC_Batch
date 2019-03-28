@@ -2457,7 +2457,7 @@ public class QCStore {
 		}
 	}
 
-	//////@Test(priority = 11, enabled = true, groups = "Anoop")
+	@Test(priority = 11, enabled = true, groups = "Anoop")
 
 	public void ILP_ACHAutoClear() throws Exception {
 
