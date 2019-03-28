@@ -133,9 +133,17 @@ public class LendNation {
 				String SSN = TestData.getCellData(sheetName,"SSN",row); 
 				
 				System.out.println(AppURL);
-				//LendNationLogin.login();
 				
-				System.out.println(loan_number);
+				for(int i=0; i<=10; i++)
+				{
+					LendNationLogin.login();
+					Thread.sleep(2000);
+					test.log(LogStatus.PASS, "Page refreshed");
+					
+				}
+				
+				
+				/*System.out.println(loan_number);
 				
 				LendNationRegistration.registration(SSN, AppURL);
 				LendNationPersonalInformation.personalInformation(SSN, AppURL);
@@ -143,7 +151,7 @@ public class LendNation {
 			  LendNationRepaymentInformation.repaymentInformation(SSN, AppURL);
 			LendNationSubmitApplication.submitApplication(SSN, AppURL);
 			 LendNationSignContract.signContract(SSN, AppURL);
-			LendNationCSR.lendNationCSR(SSN, AppURL, loan_number);
+			LendNationCSR.lendNationCSR(SSN, AppURL, loan_number);*/
 				
 				break;
 				
@@ -166,8 +174,8 @@ public class LendNation {
 		//driver = new FirefoxDriver();	
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-		WebDriverWait wait = new WebDriverWait(driver, 40000);	
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		WebDriverWait wait = new WebDriverWait(driver, 5000);	
 		
 		//prop=prop.getProperty("user.dir")+"/Tests/Objects.properties";
 		BufferedReader reader;

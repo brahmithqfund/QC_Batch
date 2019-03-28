@@ -95,7 +95,7 @@ public class QCStore {
 
 	public static String NextDueDate;
 
-	@Test(priority = 100, groups = { "1stBatch1" })
+	@Test(priority = 100, groups = { "1stBatch" })
 	public static void QC_NewLoan_Promotion_Txn() throws Exception {
 		try {
 			// test =
@@ -287,7 +287,7 @@ public class QCStore {
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 
 					System.out.println(AppURL);
-
+/*
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
@@ -295,13 +295,13 @@ public class QCStore {
 					QCCSRNewLoan.newLoan(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
-					QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
+					QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);*/
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCEncryptionDetails.readEncryptionDetails(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					// QCCSRLoginLogout.adminLogin(driver, SSN, AppURL);
+					 QCCSRLoginLogout.adminLogin( SSN, AppURL);
 					QCAdminEncryption.getEncryption(driver, SSN, AppURL);
-					// QCCSRLoginLogout.adminLogout(driver,SSN, AppURL);
+				
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCAgeStoreVoid.ageStoreVoid(SSN, AppURL);
 
@@ -1015,6 +1015,7 @@ public class QCStore {
 					// row);
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 
+					BProc3.proc();
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
@@ -4813,7 +4814,7 @@ public class QCStore {
 
 		try {
 
-			//Runtime.getRuntime().exec("taskkill /F /IM IEDriverServer.exe");
+			Runtime.getRuntime().exec("taskkill /F /IM IEDriverServer.exe");
 
 			Thread.sleep(5000); // Allow OS to kill the process
 			System.out.println("killed the process");

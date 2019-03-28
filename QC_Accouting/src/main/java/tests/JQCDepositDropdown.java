@@ -136,8 +136,23 @@ public class JQCDepositDropdown extends QCStore{
 								 test.log(LogStatus.PASS, "Transaction type is selected"+ESign_CollateralType+" Deposit");
 								 driver.findElement(By.id("go_Button")).click();
 								 test.log(LogStatus.PASS, "Click on GO Button after transaction type selection ");
+								 try{
 								 driver.findElement(locator(Jprop.getProperty("clear_finish"))).click();
 								 test.log(LogStatus.PASS, "Click on Debit Card deposit button ");
+								 }
+								 catch(Exception e)
+								 {
+									 
+								 }
+								 
+								 try{
+									 driver.findElement(By.name("CmdReturnPosting")).click();
+									 test.log(LogStatus.PASS, "Click on Debit Card deposit button ");  
+								 }
+								 catch(Exception e)
+								 {
+									 
+								 }
 								 
 								 test.log(LogStatus.PASS, "<FONT color=green>"+ESign_CollateralType+" Deposit from CSR is successfull");
 								 //test.log(LogStatus.PASS, "********************************************** ");

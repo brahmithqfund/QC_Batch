@@ -23,14 +23,8 @@ public class BAdminStartDate extends QCStore
 	{
 
 				String StoreID ="1709";                                                       
-				if(prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path").equalsIgnoreCase("/BTestData/QCStore/ILP_BiWeekly/"))
-				{
-					startdate="12/14/2017";
-				}
-				else
-				{
-					startdate="12/05/2018";
-				}
+				
+					startdate="03/22/2019";
 				
 				//String Days=TestData.getCellData(sheetName,"Days",2);	
 				int GraceDaysInt=0;
