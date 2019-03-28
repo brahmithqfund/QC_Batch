@@ -1,75 +1,0 @@
-
-Wsquid:UselessParenthesesCheck†"!Remove those useless parentheses.(†Äğ‘úÿÿÿÿ8ÈÛ ô›-
-Wsquid:UselessParenthesesCheckö"!Remove those useless parentheses.(Ã¿Áÿûÿÿÿÿ8ÈÛ ô›-
-Rsquid:EmptyStatementUsageCheckf"Remove this empty statement.(º¯áİûÿÿÿÿ8ÈÛ ô›-
-Dsquid:S2068´" Remove this hard-coded password.(Úşû÷şÿÿÿÿ8ÈÛ ô›-
-isquid:S1192("FDefine a constant instead of duplicating this literal "Login" 5 times.(÷º¢°üÿÿÿÿ8ÈÛ ô›-
-lsquid:S3008!"NRename this field "URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï¹«™8ÈÛ ô›-
-Qsquid:S1199Š"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ8ÈÛ ô›-
-Gsquid:S1444!")Make this "public static URL" field final(ï¹«™8ÈÛ ô›-
-Usquid:S1313M"2Make this IP "192.168.2.164" address configurable.(ŸıÌşÿÿÿÿ8ÈÛ ô›-
-Vsquid:S1313Â"2Make this IP "192.168.2.164" address configurable.(ŸıÌşÿÿÿÿ8ÈÛ ô›-
-isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Á³£›8ÈÛ ô›-
-isquid:CommentedOutCodeLine%"<This block of commented-out lines of code should be removed.(°«¨8ÈÛ ô›-
-isquid:CommentedOutCodeLine'"<This block of commented-out lines of code should be removed.(ªİ¾8ÈÛ ô›-
-nsquid:CommentedOutCodeLine."<This block of commented-out lines of code should be removed.(‹™®Õüÿÿÿÿ8ÈÛ ô›-
-nsquid:CommentedOutCodeLine1"<This block of commented-out lines of code should be removed.(ÂÊüÿÿÿÿ8ÈÛ ô›-
-isquid:CommentedOutCodeLine4"<This block of commented-out lines of code should be removed.(”ı‰­8ÈÛ ô›-
-isquid:CommentedOutCodeLine<"<This block of commented-out lines of code should be removed.(ÛŠÏÊ8ÈÛ ô›-
-nsquid:CommentedOutCodeLine?"<This block of commented-out lines of code should be removed.(Œ¥«øÿÿÿÿ8ÈÛ ô›-
-nsquid:CommentedOutCodeLineE"<This block of commented-out lines of code should be removed.(ÚÄê‹øÿÿÿÿ8ÈÛ ô›-
-isquid:CommentedOutCodeLineN"<This block of commented-out lines of code should be removed.(´ì¬§8ÈÛ ô›-
-isquid:CommentedOutCodeLinet"<This block of commented-out lines of code should be removed.(²Ğòí8ÈÛ ô›-
-osquid:CommentedOutCodeLineˆ"<This block of commented-out lines of code should be removed.(—ÈÉ¿ıÿÿÿÿ8ÈÛ ô›-
-jsquid:CommentedOutCodeLineŒ"<This block of commented-out lines of code should be removed.(½¼¡¦8ÈÛ ô›-
-osquid:CommentedOutCodeLine’"<This block of commented-out lines of code should be removed.(ÒÌâ–øÿÿÿÿ8ÈÛ ô›-
-osquid:CommentedOutCodeLineŸ"<This block of commented-out lines of code should be removed.(”›Ùøÿÿÿÿÿ8ÈÛ ô›-
-osquid:CommentedOutCodeLineµ"<This block of commented-out lines of code should be removed.(²±Œ­øÿÿÿÿ8ÈÛ ô›-
-jsquid:CommentedOutCodeLine¸"<This block of commented-out lines of code should be removed.(®ùŒ•8ÈÛ ô›-
-jsquid:CommentedOutCodeLineÃ"<This block of commented-out lines of code should be removed.(´ì¬§8ÈÛ ô›-
-jsquid:CommentedOutCodeLineã"<This block of commented-out lines of code should be removed.(²Ğòí8ÈÛ ô›-
-osquid:CommentedOutCodeLineú"<This block of commented-out lines of code should be removed.(Ó‹ŒÃÿÿÿÿÿ8ÈÛ ô›-
-osquid:CommentedOutCodeLineŒ"<This block of commented-out lines of code should be removed.(”›Ùøÿÿÿÿÿ8ÈÛ ô›-
-p
-squid:S134G"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(úäìÅÿÿÿÿÿ8ÈÛ ô›-
-q
-squid:S134¼"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(úäìÅÿÿÿÿÿ8ÈÛ ô›-
-„"squid:ClassVariableVisibilityCheck!"OMake URL a static final constant or non-public and provide accessors if needed.(ï¹«™8ÈÛ ô›-
-nsquid:S1132G"KMove the "local" string literal on the left side of this string comparison.(úäìÅÿÿÿÿÿ8ÈÛ ô›-
-osquid:S1132¼"KMove the "local" string literal on the left side of this string comparison.(úäìÅÿÿÿÿÿ8ÈÛ ô›-
-Usquid:S1135s"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8ÈÛ ô›-
-Vsquid:S1135â"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8ÈÛ ô›-
-Hsquid:S1172}"*Remove this unused method parameter "SSN".(ø¸íÈ8ÈÛ ô›-
-Lsquid:S1172§"-Remove this unused method parameter "AppURL".(ü½Ä²8ÈÛ ô›-
-Isquid:S1172í"*Remove this unused method parameter "SSN".(ÃıŸâ8ÈÛ ô›-
-Hsquid:S1166r"%Either log or rethrow this exception.(ñ“Š±üÿÿÿÿ8ÈÛ ô›-
-Isquid:S1166"%Either log or rethrow this exception.(¼Ôîàùÿÿÿÿ8ÈÛ ô›-
-Isquid:S1166á"%Either log or rethrow this exception.(ñ“Š±üÿÿÿÿ8ÈÛ ô›-
-Isquid:S1166Š"%Either log or rethrow this exception.(¼Ôîàùÿÿÿÿ8ÈÛ ô›-
-zsquid:S00117""VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹û÷×ûÿÿÿÿ8ÈÛ ô›-
-zsquid:S00117""VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹û÷×ûÿÿÿÿ8ÈÛ ô›-
-usquid:S00117-"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ïñ©8ÈÛ ô›-
-usquid:S001173"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Šİ–8ÈÛ ô›-
-zsquid:S00117M"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸıÌşÿÿÿÿ8ÈÛ ô›-
-usquid:S00117}"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø¸íÈ8ÈÛ ô›-
-usquid:S00117}"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø¸íÈ8ÈÛ ô›-
-vsquid:S00117§"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü½Ä²8ÈÛ ô›-
-vsquid:S00117§"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü½Ä²8ÈÛ ô›-
-vsquid:S00117°"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ïñ©8ÈÛ ô›-
-{squid:S00117³"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Š¼ê¬ûÿÿÿÿ8ÈÛ ô›-
-{squid:S00117´"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Úşû÷şÿÿÿÿ8ÈÛ ô›-
-{squid:S00117Â"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸıÌşÿÿÿÿ8ÈÛ ô›-
-vsquid:S00117í"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃıŸâ8ÈÛ ô›-
-vsquid:S00117í"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃıŸâ8ÈÛ ô›-
-\squid:UselessImportCheck
-"1Remove this unused import 'java.util.Properties'.(¬µ²8ÈÛ ô›-
-~squid:UselessImportCheck"NRemove this unused import 'org.openqa.selenium.support.ui.ExpectedConditions'.(û€Èéúÿÿÿÿ8ÈÛ ô›-
-Vsquid:UselessImportCheck	"+Remove this unused import 'java.util.Date'.(¸…¼ü8ÈÛ ô›-
-bsquid:UselessImportCheck"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ8ÈÛ ô›-
-rsquid:UselessImportCheck"BRemove this unused import 'org.openqa.selenium.support.ui.Select'.(´—âÛøÿÿÿÿ8ÈÛ ô›-
-usquid:UselessImportCheck"JRemove this unused import 'com.relevantcodes.extentreports.ExtentReports'.(èşÛÑ8ÈÛ ô›-
-\squid:UselessImportCheck"1Remove this unused import 'java.text.DateFormat'.(÷Œá¼8ÈÛ ô›-
-Fsquid:S1148x"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÈÛ ô›-
-Gsquid:S1148£"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÈÛ ô›-
-Gsquid:S1148ç"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÈÛ ô›-
-Gsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÈÛ ô›-
