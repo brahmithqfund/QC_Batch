@@ -103,14 +103,14 @@ public class JCSRMidDayDeposit extends QCStore {
 			}
 		
 		}
-		Thread.sleep(3000);
-		driver.switchTo().defaultContent();
+		Thread.sleep(4000);
+		/*driver.switchTo().defaultContent();
 		driver.switchTo().frame("mainFrame");
-		driver.switchTo().frame("main");
-		if(driver.findElement(By.xpath("//input[@value='Ok' and @class='sortbuttons']")).isDisplayed())
+		driver.switchTo().frame("main");*/
+		if(driver.findElement(By.xpath("//p[contains(text(),'successfully')]")).isDisplayed())
 		{	
 			
-			driver.findElement(By.xpath("//input[@value='Ok' and @class='sortbuttons']")).click();
+			driver.findElement(By.xpath("//input[@value='Ok' and @type='submit']")).click();
 			test.log(LogStatus.PASS, "Dispalying ok button condition satisfied");   
 			test.log(LogStatus.PASS, ESign_CollateralType+" Mid day deposit completed successfully");
 			test.log(LogStatus.PASS, "********************************************** ");
@@ -178,13 +178,14 @@ public class JCSRMidDayDeposit extends QCStore {
 					
 				}	
 			}
-			Thread.sleep(3000);
-			driver.switchTo().defaultContent();
+			Thread.sleep(4000);
+			/*driver.switchTo().defaultContent();
 			driver.switchTo().frame("mainFrame");
-			driver.switchTo().frame("main");
-			if(driver.findElement(By.xpath("//input[@value='Ok' and @class='sortbuttons']")).isDisplayed())
+			driver.switchTo().frame("main");*/
+			if(driver.findElement(By.xpath("//p[contains(text(),'successfully')]")).isDisplayed())
 			{	
-				driver.findElement(By.xpath("//input[@value='Ok' and @class='sortbuttons']")).click();
+				
+				driver.findElement(By.xpath("//input[@value='Ok' and @type='submit']")).click();
 				test.log(LogStatus.PASS, "<FONT color=green style=Arial>Dispalying ok button condition satisfied");   
 				test.log(LogStatus.PASS, "<FONT color=green style=Arial>"+ESign_CollateralType+" Mid day deposit completed successfully");
 				break;

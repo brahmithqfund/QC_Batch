@@ -61,6 +61,7 @@ public class QCStore {
 	public static String loan_nbr;
 	public static String NextDueDate;
 	public static String AppURL;
+	public static String BAdminURL;
 	public static String AdminURL;
 	public static String business_date;
 	public static String No_of_Installments;
@@ -122,6 +123,7 @@ public class QCStore {
 	
 	public static String vstoreid="508";
 	public static String vusername="csr508";
+
 
 
 	// Brahmith scenarios
@@ -1604,6 +1606,11 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
+					QCCSRLoginLogout.adminLogin(SSN, SSN);
+					BAdminStartDate.toStartdate(SSN, SSN);
+					QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
+					BProc3.proc();
+					
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
@@ -1808,7 +1815,7 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-		/*			QCCSRLoginLogout.login(SSN, AppURL);
+					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
@@ -1924,7 +1931,7 @@ public class QCStore {
 					QCCSRReturnPosting.returnposting(SSN, SSN);
 
 					QCCSRLoginLogout.adminLogin(SSN, SSN);
-					QCAdminACHReturn.achreturn(SSN, SSN);*/
+					QCAdminACHReturn.achreturn(SSN, SSN);
 
 					QCCSRLoginLogout.login(SSN, AppURL);
 
@@ -1973,6 +1980,11 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
+					QCCSRLoginLogout.adminLogin(SSN, SSN);
+					BAdminStartDate.toStartdate(SSN, SSN);
+					QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
+					BProc3.proc();
+					
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
@@ -2053,8 +2065,10 @@ public class QCStore {
 		}
 	}
 
+
 	@Test(priority = 70, groups = { "EOD2" })
 	public static void LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn() throws Exception {
+
 		try {
 
 			test = reports.startTest(prop.getProperty("LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn_scenario"),
@@ -2209,6 +2223,8 @@ public class QCStore {
 
 		catch (Exception e) {
 			System.out.println("under catch of Test" + e);
+			String screenshotPath = getScreenhot(driver, "QC_New LOC_Manual Default");
+			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 			test.log(LogStatus.ERROR, "Unable to start scenarios ");
 
 		}
@@ -2337,7 +2353,7 @@ public class QCStore {
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCCSR_Deposit.deposit(SSN, AppURL);
 					RCSRLoginLogout.login(SSN, AppURL);
-					// RQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
+					     // RQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
 					RQCAgeStoreGraceDays.ageStoreGraceDays2ndTime(SSN, AppURL);
 					RQCCSRReturnPosting.returnposting(SSN, AppURL);
 					RCSRLoginLogout.login(SSN, AppURL);
@@ -2350,8 +2366,7 @@ public class QCStore {
 					RQCCSRReturnPosting.returnposting(SSN, AppURL);
 					RQCAdminACHReturn.achreturn(SSN, AppURL);
 					RCSRLoginLogout.login(SSN, AppURL);
-					// RQCAgeStoreGraceDays.ageStoreGraceDays2ndTime(SSN,
-					// AppURL);
+					    // RQCAgeStoreGraceDays.ageStoreGraceDays2ndTime(SSN, AppURL);
 					RQCAgeStoreGraceDays.ageStoreGraceDays3rdTime(SSN, AppURL);
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCCSREOD_Default.eoddefault(SSN, AppURL);
@@ -2365,6 +2380,8 @@ public class QCStore {
 
 		catch (Exception e) {
 			System.out.println("under catch of Test" + e);
+			String screenshotPath = getScreenhot(driver, "QC_LOC_Deposit_Return_2ndDeposit_Clear_3rdDeposit_Return_Default_Txn");
+			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 			test.log(LogStatus.ERROR, "Unable to start scenarios ");
 
 		}
@@ -2374,7 +2391,7 @@ public class QCStore {
 	public static void RQC_LOC_2missedPayment_Default_EOD_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(
-					("New LOC-Deposit-Return-2nd Deposit-Clear-3rd Deposit–Return-Default(EOD/Auto EOD)"),
+					("New LOC-Deposit-Return-2nd Deposit-Clear-3rd Deposit_Return-Default(EOD/Auto EOD)"),
 					"Login->Borrower Registration->Signature Loan-->2missed Payment-->Default_EOD/AutoEOD");
 			String FileName = "QC_LOC_2missedPayment_Default_EOD_Txn_Testdata.xls";
 			// String FileName=
@@ -2604,6 +2621,8 @@ public class QCStore {
 
 		catch (Exception e) {
 			System.out.println("under catch of Test" + e);
+			String screenshotPath = getScreenhot(driver, "QC_LOC_Default_DefaultPayment_Void_Txn");
+			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 			test.log(LogStatus.ERROR, "Unable to start scenarios ");
 
 		}
@@ -2667,7 +2686,7 @@ public class QCStore {
 					RQCCSRPartialDefaultPayment.partialdefaultpayment(SSN, AppURL);
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCCSRDefault_Void.defaultvoid(SSN, AppURL);
-					// RCSRLoginLogout.logout();
+					   // RCSRLoginLogout.logout();
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCCSRHistory.history(SSN, AppURL);
 					RCSRLoginLogout.logout();
@@ -2756,6 +2775,8 @@ public class QCStore {
 
 		catch (Exception e) {
 			System.out.println("under catch of Test" + e);
+			String screenshotPath = getScreenhot(driver, "QC_LOC_Default_DefaultPayment_Return_Txn");
+			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 			test.log(LogStatus.ERROR, "Unable to start scenarios ");
 
 		}
@@ -2913,7 +2934,7 @@ public class QCStore {
 	@Test(priority = 211, groups = "Ratikanta_NEOD")
 	public static void RQC_LOC_PayOff_Closure_Txn_Testdata() throws Exception {
 		try {
-			test = reports.startTest(("New LOC – Payoff – LOC Closure"),
+			test = reports.startTest(("New LOC_Payoff_LOC Closure"),
 					"Login->Borrower Registration->New Loan-->Age Store to Gracedays-->PayOff-->Closure");
 			String FileName = "QC_LOC_PayOff_Closure_Txn_Testdata.xls";
 			// String FileName=
@@ -2978,7 +2999,7 @@ public class QCStore {
 	@Test(priority = 212, groups = "Ratikanta_NEOD")
 	public static void RQC_LOC_Payment_PayOff_Closure_Void_Txn_Testdata() throws Exception {
 		try {
-			test = reports.startTest(("New LOC – Payment – Payoff – LOC Closure – Void"),
+			test = reports.startTest(("New LOC_Payment_Payoff_LOC Closure_Void"),
 					"Login->Borrower Registration->New Loan-->Age Store to Gracedays-->Payment-->PayOff-->Closure-->Void");
 			String FileName = "QC_LOC_Payment_PayOff_Closure_Void_Txn_Testdata.xls";
 			// String FileName=
@@ -3049,7 +3070,7 @@ public class QCStore {
 	@Test(priority = 213, groups = "Ratikanta_NEOD")
 	public static void RQC_LOC_PayOff_Closure_PayoffReturn_Txn_Testdata() throws Exception {
 		try {
-			test = reports.startTest(("New LOC – Payoff – LOC Closure – Payoff return"),
+			test = reports.startTest(("New LOC_Payoff_LOC Closure_Payoff return"),
 					"Login->Borrower Registration->New Loan-->Age Store to Gracedays-->PayOff-->Closure-->PayoffReturn(Internal Transfer-->Cmg Deposit-->Return)");
 			String FileName = "QC_LOC_PayOff_Closure_PayoffReturn_Txn_Testdata.xls";
 			// String FileName=
@@ -3120,7 +3141,7 @@ public class QCStore {
 	@Test(priority = 214, groups = "Ratikanta_NEOD")
 	public static void RQC_LOC_PayOff_Agestore180days_AutoClosure_Txn_Testdata() throws Exception {
 		try {
-			test = reports.startTest(("New LOC – Payoff – Age the store to 180 days – Auto Closure"),
+			test = reports.startTest(("New LOC_Payoff_Age the store to 180 days_Auto Closure"),
 					"Login->Borrower Registration->New Loan-->Age Store to Gracedays-->PayOff-->Age Store to 180 days-->AutoClosure");
 			String FileName = "QC_LOC_PayOff_Agestore180days_AutoClosure_Txn_Testdata.xls";
 			// String FileName=
@@ -3189,7 +3210,7 @@ public class QCStore {
 	@Test(priority = 215, groups = "Ratikanta_EOD")
 	public static void RQC_LOC_ManualDefault_EOD_Txn_Testdata() throws Exception {
 		try {
-			test = reports.startTest(("New LOC - Manual Default – EOD on Payment Due Date"),
+			test = reports.startTest(("New LOC_Manual Default_EOD on Payment Due Date"),
 					"Login->Borrower Registration->New Loan-->Manual Default-->AgeStore to Duedate-->EOD");
 			String FileName = "QC_LOC_ManualDefault_EOD_Txn_Testdata.xls";
 			// String FileName=
@@ -3257,7 +3278,7 @@ public class QCStore {
 	@Test(priority = 216, groups = "Ratikanta_EOD")
 	public static void RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata() throws Exception {
 		try {
-			test = reports.startTest(("New LOC - Deposit - Return- 2nd Deposit - Return - Default(EOD/Auto EOD)"),
+			test = reports.startTest(("New LOC_Deposit_Return_2nd Deposit_Return_Default(EOD/Auto EOD)"),
 					"Login->Borrower Registration->New Loan-->Duedate-->Deposit-->Return-->2nd Deposit-->Return-->EOD-->Verify Status as Default");
 			String FileName = "QC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata.xls";
 			// String FileName=
@@ -3310,15 +3331,15 @@ public class QCStore {
 					RQCCSR_Deposit.deposit(SSN, AppURL);
 					RQCCSRReturnPosting.returnposting(SSN, AppURL);
 					RQCAdminACHReturn.achreturn(SSN, AppURL);
-					/*
-					 * RCSRLoginLogout.login(SSN, AppURL);
-					 * RQCEODDeposit.eodDeposit(SSN, AppURL);
-					 * RQCAdminStoreSetup.storeSetup(SSN, AppURL);
-					 * RCSRLoginLogout.login(SSN, AppURL);
-					 * RQCSafeAssign.safeAssign(SSN, AppURL);
-					 * RQCDrawerAssign.drawerAssign(SSN, AppURL);
-					 * RCSRLoginLogout.logout();
-					 */
+					       
+					        /* RCSRLoginLogout.login(SSN, AppURL);
+					        * RQCEODDeposit.eodDeposit(SSN, AppURL);
+					        * RQCAdminStoreSetup.storeSetup(SSN, AppURL);
+					        * RCSRLoginLogout.login(SSN, AppURL);
+					        * RQCSafeAssign.safeAssign(SSN, AppURL);
+					        * RQCDrawerAssign.drawerAssign(SSN, AppURL);
+					        * RCSRLoginLogout.logout();*/
+					        
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCAgeStoreGraceDays.ageStoreGraceDays2ndTime(SSN, AppURL);
 					RCSRLoginLogout.login(SSN, AppURL);
@@ -4175,6 +4196,7 @@ public class QCStore {
 		}
 	}
 
+	
 	@Test(priority = 315, enabled = true, groups = "Janaki_NEOD")
 	public static void JQC_LOC_GreaterThan_MinPayment_Void_Txn() throws Exception {
 
@@ -4670,7 +4692,7 @@ public class QCStore {
 	public static void JQC_LOC_Refinance_EOD_Payment_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_Refinance_EOD_Payment_Txn"),
-					"Login->Borrower Registratino->New Loan ->Refinance_EOD_Payment");
+					"Login->Borrower Regifstratino->New Loan ->Refinance_EOD_Payment");
 
 			FileName = Jprop.getProperty("QC_LOC_Refinance_EOD_Payment_Txn_file_name") + ".xls";
 
@@ -4706,7 +4728,7 @@ public class QCStore {
 					JQCEODDeposit.eodDeposit(SSN, AppURL);
 
 					JQCAdminStoreSetup.storeSetup(SSN, AppURL);
-					// JQCAdminLoginLogout.logout(SSN, AppURL);
+					       // JQCAdminLoginLogout.logout(SSN, AppURL);
 					JQCCSRLoginLogout.login(SSN, AppURL);
 					JQCSafeAssign.safeAssign(SSN, AppURL);
 					JQCCSRLoginLogout.logout(SSN, AppURL);
@@ -5024,7 +5046,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 421, enabled = true, groups = "Anoop_EOD2")
+	//@Test(priority = 421, enabled = true, groups = "Anoop_EOD2")
 
 	public void Deposit_DrawEODTwice() throws Exception {
 		FileName = "QC_LOC_Draw_EODTwice.xls";
@@ -5237,7 +5259,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 418, enabled = true, groups = "Anoop_EOD2")
+	//@Test(priority = 418, enabled = true, groups = "Anoop_EOD2")
 
 	public void PaymentAndDraw() throws Exception {
 		FileName = "QC_LOC_payment_Draw.xls";
@@ -5515,7 +5537,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 414, enabled = true, groups = "Anoop_EOD1")
+	//@Test(priority = 414, enabled = true, groups = "Anoop_EOD1")
 
 	public void HigherPaymentAndEod() throws Exception {
 		FileName = "QC_LOC_MorePayment_EOD.xls";
@@ -5571,7 +5593,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 413, enabled = true, groups = "Anoop_EOD1")
+	//@Test(priority = 413, enabled = true, groups = "Anoop_EOD1")
 
 	public void PaymentAndEod() throws Exception {
 		FileName = "QC_LOC_Payment_EOD.xls";
@@ -5626,7 +5648,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 412, enabled = true, groups = "Anoop_EOD1")
+	//@Test(priority = 412, enabled = true, groups = "Anoop_EOD1")
 
 	public void EODOnDueDate() throws Exception {
 		FileName = "QC_LOC_EODDuedate.xls";
@@ -6976,8 +6998,10 @@ public class QCStore {
 				prop.load(reader);
 				reader.close();
 				AppURL = prop.getProperty("CSR_URL");
-				AdminURL = prop.getProperty("ADMIN_CSR_URL");
-				String Bfilename = prop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+
+				BAdminURL = prop.getProperty("ADMIN_CSR_URL");
+				String Bfilename = Vprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
+
 
 				reports = new ExtentReports(
 						System.getProperty("user.dir") + prop.getProperty("QC_Store_extent_report_path") + Bfilename,
@@ -7001,6 +7025,7 @@ public class QCStore {
 
 				csr_url = prop.getProperty("CSR_URL");
 				csrloginpage = prop.getProperty("Login_Page");
+				
 				AdminURL = prop.getProperty("ADMIN_URL");
 
 				reports = new ExtentReports(

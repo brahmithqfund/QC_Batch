@@ -123,6 +123,12 @@ public class QCStore {
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 
 					System.out.println(AppURL);
+					
+					QCCSRLoginLogout.adminLogin(SSN, SSN);
+					BAdminStartDate.toStartdate(SSN, SSN);
+					QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
+					BProc3.proc();
+					
 
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
@@ -492,7 +498,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 119, groups = "Brahmith")
+	@Test(priority = 119, groups = "Brahmith1")
 	public static void QC_Installmentpayment_Void_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Installmentpayment_Void_Txn_scenario")),
@@ -553,7 +559,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 120,groups="Brahmith")
+	@Test(priority = 120,groups="Brahmith1")
 	public static void QC_PayAnyotherAmount_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Payanyotheramount_Txn_scenario")),
@@ -611,7 +617,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 121,groups="Brahmith")
+	@Test(priority = 121,groups="Brahmith1")
 	public static void QC_PayAnyotherAmount_Void_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Payanyotheramount_Void_Txn_scenario")),
@@ -671,7 +677,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 131,groups="Brahmith")
+	@Test(priority = 131,groups="Brahmith1")
 	public static void QC_TLP_Writeoff_Recovery_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Writeoff_Recovery_Txn_scenario")),
@@ -733,7 +739,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 132,groups="Brahmith")
+	@Test(priority = 132,groups="Brahmith1")
 	public static void QC_TLP_Writeoff_Recovery_Void_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Writeoff_Recovery_Void_Txn_scenario")),

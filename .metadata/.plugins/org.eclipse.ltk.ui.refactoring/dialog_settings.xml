@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-<<<<<<< HEAD
-	<section name="org.eclipse.ltk.ui.refactoring.settings">
-	</section>
-	<section name="RefactoringWizard.Convert from JUnit">
-		<item value="600" key="width"/>
-		<item value="464" key="height"/>
-=======
 	<section name="RefactoringWizard.preview">
 		<item value="600" key="width"/>
 		<item value="400" key="height"/>
->>>>>>> jyothi1.2
 	</section>
 </section>

@@ -8,15 +8,9 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-/*import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.markuputils.ExtentColor;
-import com.aventstack.extentreports.markuputils.MarkupHelper;*/
 
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class JQCAgeStoreGraceDays extends QCStore {
@@ -268,9 +262,11 @@ public class JQCAgeStoreGraceDays extends QCStore {
 	public static void ageStoreGraceDays2ndTime(String SSN, String AppURL) {
 		int i;
 		for (i = 0; i < 4; i++) {
-
+		
+		
+		
 			try {
-
+				
 				int lastrow = TestData.getLastRow("New_Loan");
 				String sheetName = "New_Loan";
 
@@ -283,7 +279,7 @@ public class JQCAgeStoreGraceDays extends QCStore {
 						String StoreId = TestData.getCellData(sheetName, "StoreID", row);
 						String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 
-						String AgeStore_2nd_time = TestData.getCellData(sheetName, "AgeStore_2nd_time", row);
+						String AgeStore = TestData.getCellData(sheetName, "AgeStore_2nd_time", row);
 
 						String SSN1 = SSN.substring(0, 3);
 						String SSN2 = SSN.substring(3, 5);
@@ -298,7 +294,7 @@ public class JQCAgeStoreGraceDays extends QCStore {
 						String Str_date = driver.findElement(By.xpath("/html/body/blink/table/tbody/tr/td[4]"))
 								.getText();
 						String store_date[] = Str_date.split(":");
-						String business_date = store_date[1].trim();
+						business_date = store_date[1].trim();
 						test.log(LogStatus.PASS, "Business date is :" + business_date);
 
 						driver.switchTo().defaultContent();
@@ -307,15 +303,31 @@ public class JQCAgeStoreGraceDays extends QCStore {
 						driver.switchTo().frame("topFrame");
 						wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("li[id='910000']")));
 						driver.findElement(By.cssSelector("li[id='910000']")).click();
-						
+
 						test.log(LogStatus.PASS, "Clicked on Loan Transactions");
 						Thread.sleep(1000);
-				
-						driver.switchTo().defaultContent();
-						driver.switchTo().frame("mainFrame");
-		
-						driver.findElement(By.cssSelector("li[id='911101']")).click();
-						test.log(LogStatus.PASS, "Clicked on Transactions");
+						try {
+							driver.switchTo().defaultContent();
+							driver.switchTo().frame("mainFrame");
+							driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+							driver.findElement(By.cssSelector("li[id='911101']")).click();
+							test.log(LogStatus.PASS, "Clicked on Transactions");
+						} catch (Exception e) {
+							driver.get("http://192.168.2.203/cc/login/index.jsp");
+							driver.switchTo().defaultContent();
+
+							wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("topFrame")));
+							driver.switchTo().frame("topFrame");
+							wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("li[id='910000']")));
+							driver.findElement(By.cssSelector("li[id='910000']")).click();
+
+							Thread.sleep(1000);
+							driver.switchTo().defaultContent();
+							driver.switchTo().frame("mainFrame");
+							driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+							driver.findElement(By.cssSelector("li[id='911101']")).click();
+							test.log(LogStatus.PASS, "Clicked on Transactions");
+						}
 						driver.switchTo().frame("main");
 						driver.findElement(By.name("ssn1")).sendKeys(SSN1);
 						test.log(LogStatus.PASS, "SSN1 is entered: " + SSN1);
@@ -332,53 +344,63 @@ public class JQCAgeStoreGraceDays extends QCStore {
 						driver.switchTo().frame("mainFrame");
 						driver.switchTo().frame("main");
 
-						driver.findElement(By.name("button")).click();
-						test.log(LogStatus.PASS, "Clicked on GO Button under Search results");
-						// driver.findElement(By.name("button")).click();
-
+						String mainwindow = driver.getWindowHandle();
+						driver.findElement(By
+								.xpath("/html/body/table/tbody/tr[1]/td[1]/table[2]/tbody/tr[2]/td/table/tbody/tr[2]/td[2]/a"))
+								.click();
+						test.log(LogStatus.PASS, "Clicked on Customer number link");
 						for (String winHandle : driver.getWindowHandles()) {
-							driver.switchTo().window(winHandle);
+							if (!mainwindow.equalsIgnoreCase(winHandle)) {
+								driver.switchTo().window(winHandle);
+
+								loan_nbr = driver.findElement(locator(Jprop.getProperty("csr_loan_nbr"))).getText();
+								test.log(LogStatus.PASS, "Loan Number is" + loan_nbr);
+								NextDueDate = driver.findElement(locator(Jprop.getProperty("csr_due_date"))).getText();
+								test.log(LogStatus.PASS, "Next due date is " + NextDueDate);
+								driver.close();
+								break;
+							}
+						}
+						driver.switchTo().window(mainwindow);
+
+						Thread.sleep(5000);
+
+						for (String winHandle1 : driver.getWindowHandles()) {
+							driver.switchTo().window(winHandle1);
 						}
 						driver.switchTo().defaultContent();
+						driver.switchTo().frame("topFrame");
+						driver.findElement(By.xpath("//*[@id='930000']/a")).click();
+						test.log(LogStatus.PASS, "Clicked on Cash Management");
+						driver.switchTo().defaultContent();
 						driver.switchTo().frame("mainFrame");
-						driver.switchTo().frame("main");
-						// driver.findElement(By.name("button")).click();
+						try {
+							driver.findElement(By.xpath("//*[@id='988190657']/a")).click();
+							test.log(LogStatus.PASS, "Clicked on Start Scheduler");
+						} catch (Exception e) {
+							driver.get("http://192.168.2.203/cc/login/index.jsp");
 
-						if (ProductID.equals("PDL")) {
-							driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
-							test.log(LogStatus.PASS, "Clicked on Go button under Loans section");
+							driver.switchTo().defaultContent();
+							driver.switchTo().frame("topFrame");
+							driver.findElement(By.xpath("//*[@id='930000']/a")).click();
+
+							driver.switchTo().defaultContent();
+							driver.switchTo().frame("mainFrame");
+							driver.findElement(By.xpath("//*[@id='988190657']/a")).click();
+							test.log(LogStatus.PASS, "Clicked on Start Scheduler");
 						}
-						if (ProductID.equals("TLP")) {
-							driver.findElement(By
-									.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input"))
-									.click();
-							test.log(LogStatus.PASS, "Clicked on Go button under Loans section");
-						}
+						int IAgeStore = Integer.parseInt(AgeStore);
 
-						Thread.sleep(5000);
-						if (ProductID.equals("LOC")) {
-							/// html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]
-							driver.findElement(By
-									.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]"))
-									.click();
-						}
+						DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
+						Date DDueDateminus1 = df.parse(business_date);
+						Calendar cal = Calendar.getInstance();
+						cal.setTime(DDueDateminus1);
+						cal.add(Calendar.DATE, IAgeStore);
+						Date DDueDate1 = cal.getTime();
+						business_date = df.format(DDueDate1);
+						System.out.println(business_date);
 
-						Thread.sleep(5000);
-							int IAgeStore = Integer.parseInt(AgeStore_2nd_time);
-							
-							DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
-							Date DDueDateminus1 = df.parse(business_date);
-							Calendar cal = Calendar.getInstance();
-							cal.setTime(DDueDateminus1);
-							cal.add(Calendar.DATE, IAgeStore);
-							Date DDueDate1 = cal.getTime();
-							business_date = df.format(DDueDate1);
-							System.out.println(business_date);
-
-							test.log(LogStatus.PASS, "Age Store Date after increasing is :" + business_date);
-							// String DueDate0[] =NextDueDate.split("/");
-
-						}
+						test.log(LogStatus.PASS, "Age Store Date after increasing is :" + business_date);
 
 						Thread.sleep(5000);
 
@@ -455,18 +477,16 @@ public class JQCAgeStoreGraceDays extends QCStore {
 						driver.close();
 
 						break;
-
 					}
-				
+				}
 
 				break; // for FOR loop
-			} 
-			catch (Exception e) {
+			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 				// test.log(LogStatus.FAIL, MarkupHelper.createLabel("Borrower
 				// Registration is failed", ExtentColor.RED));
-
+				// test.log(LogStatus.FAIL, "Age store is failed");
 				test.log(LogStatus.FAIL, " " + e);
 				test.log(LogStatus.INFO,
 						"Age store Grace days process is initiated again due to Application sync issue");
@@ -479,14 +499,15 @@ public class JQCAgeStoreGraceDays extends QCStore {
 		if (i == 3) {
 			test.log(LogStatus.FAIL, "Age store Grace days is failed");
 
-		}
-	}
+		}	}
 	public static void ageStoreGraceDays3rdTime(String SSN, String AppURL) {
 		int i;
 		for (i = 0; i < 4; i++) {
-
+		
+		
+		
 			try {
-
+				
 				int lastrow = TestData.getLastRow("New_Loan");
 				String sheetName = "New_Loan";
 
@@ -499,7 +520,7 @@ public class JQCAgeStoreGraceDays extends QCStore {
 						String StoreId = TestData.getCellData(sheetName, "StoreID", row);
 						String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 
-						String AgeStore_2nd_time = TestData.getCellData(sheetName, "AgeStore_3rd_time", row);
+						String AgeStore = TestData.getCellData(sheetName, "AgeStore_3rd_time", row);
 
 						String SSN1 = SSN.substring(0, 3);
 						String SSN2 = SSN.substring(3, 5);
@@ -514,7 +535,7 @@ public class JQCAgeStoreGraceDays extends QCStore {
 						String Str_date = driver.findElement(By.xpath("/html/body/blink/table/tbody/tr/td[4]"))
 								.getText();
 						String store_date[] = Str_date.split(":");
-						String business_date = store_date[1].trim();
+						business_date = store_date[1].trim();
 						test.log(LogStatus.PASS, "Business date is :" + business_date);
 
 						driver.switchTo().defaultContent();
@@ -523,15 +544,31 @@ public class JQCAgeStoreGraceDays extends QCStore {
 						driver.switchTo().frame("topFrame");
 						wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("li[id='910000']")));
 						driver.findElement(By.cssSelector("li[id='910000']")).click();
-						
+
 						test.log(LogStatus.PASS, "Clicked on Loan Transactions");
 						Thread.sleep(1000);
-				
-						driver.switchTo().defaultContent();
-						driver.switchTo().frame("mainFrame");
-		
-						driver.findElement(By.cssSelector("li[id='911101']")).click();
-						test.log(LogStatus.PASS, "Clicked on Transactions");
+						try {
+							driver.switchTo().defaultContent();
+							driver.switchTo().frame("mainFrame");
+							driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+							driver.findElement(By.cssSelector("li[id='911101']")).click();
+							test.log(LogStatus.PASS, "Clicked on Transactions");
+						} catch (Exception e) {
+							driver.get("http://192.168.2.203/cc/login/index.jsp");
+							driver.switchTo().defaultContent();
+
+							wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("topFrame")));
+							driver.switchTo().frame("topFrame");
+							wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("li[id='910000']")));
+							driver.findElement(By.cssSelector("li[id='910000']")).click();
+
+							Thread.sleep(1000);
+							driver.switchTo().defaultContent();
+							driver.switchTo().frame("mainFrame");
+							driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+							driver.findElement(By.cssSelector("li[id='911101']")).click();
+							test.log(LogStatus.PASS, "Clicked on Transactions");
+						}
 						driver.switchTo().frame("main");
 						driver.findElement(By.name("ssn1")).sendKeys(SSN1);
 						test.log(LogStatus.PASS, "SSN1 is entered: " + SSN1);
@@ -548,53 +585,63 @@ public class JQCAgeStoreGraceDays extends QCStore {
 						driver.switchTo().frame("mainFrame");
 						driver.switchTo().frame("main");
 
-						driver.findElement(By.name("button")).click();
-						test.log(LogStatus.PASS, "Clicked on GO Button under Search results");
-						// driver.findElement(By.name("button")).click();
-
+						String mainwindow = driver.getWindowHandle();
+						driver.findElement(By
+								.xpath("/html/body/table/tbody/tr[1]/td[1]/table[2]/tbody/tr[2]/td/table/tbody/tr[2]/td[2]/a"))
+								.click();
+						test.log(LogStatus.PASS, "Clicked on Customer number link");
 						for (String winHandle : driver.getWindowHandles()) {
-							driver.switchTo().window(winHandle);
+							if (!mainwindow.equalsIgnoreCase(winHandle)) {
+								driver.switchTo().window(winHandle);
+
+								loan_nbr = driver.findElement(locator(Jprop.getProperty("csr_loan_nbr"))).getText();
+								test.log(LogStatus.PASS, "Loan Number is" + loan_nbr);
+								NextDueDate = driver.findElement(locator(Jprop.getProperty("csr_due_date"))).getText();
+								test.log(LogStatus.PASS, "Next due date is " + NextDueDate);
+								driver.close();
+								break;
+							}
+						}
+						driver.switchTo().window(mainwindow);
+
+						Thread.sleep(5000);
+
+						for (String winHandle1 : driver.getWindowHandles()) {
+							driver.switchTo().window(winHandle1);
 						}
 						driver.switchTo().defaultContent();
+						driver.switchTo().frame("topFrame");
+						driver.findElement(By.xpath("//*[@id='930000']/a")).click();
+						test.log(LogStatus.PASS, "Clicked on Cash Management");
+						driver.switchTo().defaultContent();
 						driver.switchTo().frame("mainFrame");
-						driver.switchTo().frame("main");
-						// driver.findElement(By.name("button")).click();
+						try {
+							driver.findElement(By.xpath("//*[@id='988190657']/a")).click();
+							test.log(LogStatus.PASS, "Clicked on Start Scheduler");
+						} catch (Exception e) {
+							driver.get("http://192.168.2.203/cc/login/index.jsp");
 
-						if (ProductID.equals("PDL")) {
-							driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
-							test.log(LogStatus.PASS, "Clicked on Go button under Loans section");
+							driver.switchTo().defaultContent();
+							driver.switchTo().frame("topFrame");
+							driver.findElement(By.xpath("//*[@id='930000']/a")).click();
+
+							driver.switchTo().defaultContent();
+							driver.switchTo().frame("mainFrame");
+							driver.findElement(By.xpath("//*[@id='988190657']/a")).click();
+							test.log(LogStatus.PASS, "Clicked on Start Scheduler");
 						}
-						if (ProductID.equals("TLP")) {
-							driver.findElement(By
-									.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input"))
-									.click();
-							test.log(LogStatus.PASS, "Clicked on Go button under Loans section");
-						}
+						int IAgeStore = Integer.parseInt(AgeStore);
 
-						Thread.sleep(5000);
-						if (ProductID.equals("LOC")) {
-							/// html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]
-							driver.findElement(By
-									.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]"))
-									.click();
-						}
+						DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
+						Date DDueDateminus1 = df.parse(business_date);
+						Calendar cal = Calendar.getInstance();
+						cal.setTime(DDueDateminus1);
+						cal.add(Calendar.DATE, IAgeStore);
+						Date DDueDate1 = cal.getTime();
+						business_date = df.format(DDueDate1);
+						System.out.println(business_date);
 
-						Thread.sleep(5000);
-							int IAgeStore = Integer.parseInt(AgeStore_2nd_time);
-							
-							DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
-							Date DDueDateminus1 = df.parse(business_date);
-							Calendar cal = Calendar.getInstance();
-							cal.setTime(DDueDateminus1);
-							cal.add(Calendar.DATE, IAgeStore);
-							Date DDueDate1 = cal.getTime();
-							business_date = df.format(DDueDate1);
-							System.out.println(business_date);
-
-							test.log(LogStatus.PASS, "Age Store Date after increasing is :" + business_date);
-							// String DueDate0[] =NextDueDate.split("/");
-
-						}
+						test.log(LogStatus.PASS, "Age Store Date after increasing is :" + business_date);
 
 						Thread.sleep(5000);
 
@@ -671,18 +718,16 @@ public class JQCAgeStoreGraceDays extends QCStore {
 						driver.close();
 
 						break;
-
 					}
-				
+				}
 
 				break; // for FOR loop
-			} 
-			catch (Exception e) {
+			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 				// test.log(LogStatus.FAIL, MarkupHelper.createLabel("Borrower
 				// Registration is failed", ExtentColor.RED));
-
+				// test.log(LogStatus.FAIL, "Age store is failed");
 				test.log(LogStatus.FAIL, " " + e);
 				test.log(LogStatus.INFO,
 						"Age store Grace days process is initiated again due to Application sync issue");
@@ -695,14 +740,15 @@ public class JQCAgeStoreGraceDays extends QCStore {
 		if (i == 3) {
 			test.log(LogStatus.FAIL, "Age store Grace days is failed");
 
-		}
-	}
+		}	}
 	public static void ageStoreGraceDays4thTime(String SSN, String AppURL) {
 		int i;
 		for (i = 0; i < 4; i++) {
-
+		
+		
+		
 			try {
-
+				
 				int lastrow = TestData.getLastRow("New_Loan");
 				String sheetName = "New_Loan";
 
@@ -715,20 +761,22 @@ public class JQCAgeStoreGraceDays extends QCStore {
 						String StoreId = TestData.getCellData(sheetName, "StoreID", row);
 						String ProductID = TestData.getCellData(sheetName, "ProductID", row);
 
-						String AgeStore_2nd_time = TestData.getCellData(sheetName, "AgeStore_4th_time", row);
+						String AgeStore = TestData.getCellData(sheetName, "AgeStore_4th_time", row);
 
 						String SSN1 = SSN.substring(0, 3);
 						String SSN2 = SSN.substring(3, 5);
 						String SSN3 = SSN.substring(5, 9);
 
 						Thread.sleep(4000);
-						
+						// test.log(LogStatus.INFO,
+						// MarkupHelper.createLabel("Age Store process is
+						// initiated", ExtentColor.BLUE));
 						test.log(LogStatus.INFO, "Age Store Grace days process is initiated");
 						driver.switchTo().frame("bottom");
 						String Str_date = driver.findElement(By.xpath("/html/body/blink/table/tbody/tr/td[4]"))
 								.getText();
 						String store_date[] = Str_date.split(":");
-						String business_date = store_date[1].trim();
+						business_date = store_date[1].trim();
 						test.log(LogStatus.PASS, "Business date is :" + business_date);
 
 						driver.switchTo().defaultContent();
@@ -737,15 +785,31 @@ public class JQCAgeStoreGraceDays extends QCStore {
 						driver.switchTo().frame("topFrame");
 						wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("li[id='910000']")));
 						driver.findElement(By.cssSelector("li[id='910000']")).click();
-						
+
 						test.log(LogStatus.PASS, "Clicked on Loan Transactions");
 						Thread.sleep(1000);
-				
-						driver.switchTo().defaultContent();
-						driver.switchTo().frame("mainFrame");
-		
-						driver.findElement(By.cssSelector("li[id='911101']")).click();
-						test.log(LogStatus.PASS, "Clicked on Transactions");
+						try {
+							driver.switchTo().defaultContent();
+							driver.switchTo().frame("mainFrame");
+							driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+							driver.findElement(By.cssSelector("li[id='911101']")).click();
+							test.log(LogStatus.PASS, "Clicked on Transactions");
+						} catch (Exception e) {
+							driver.get("http://192.168.2.203/cc/login/index.jsp");
+							driver.switchTo().defaultContent();
+
+							wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("topFrame")));
+							driver.switchTo().frame("topFrame");
+							wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("li[id='910000']")));
+							driver.findElement(By.cssSelector("li[id='910000']")).click();
+
+							Thread.sleep(1000);
+							driver.switchTo().defaultContent();
+							driver.switchTo().frame("mainFrame");
+							driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+							driver.findElement(By.cssSelector("li[id='911101']")).click();
+							test.log(LogStatus.PASS, "Clicked on Transactions");
+						}
 						driver.switchTo().frame("main");
 						driver.findElement(By.name("ssn1")).sendKeys(SSN1);
 						test.log(LogStatus.PASS, "SSN1 is entered: " + SSN1);
@@ -762,53 +826,63 @@ public class JQCAgeStoreGraceDays extends QCStore {
 						driver.switchTo().frame("mainFrame");
 						driver.switchTo().frame("main");
 
-						driver.findElement(By.name("button")).click();
-						test.log(LogStatus.PASS, "Clicked on GO Button under Search results");
-						// driver.findElement(By.name("button")).click();
-
+						String mainwindow = driver.getWindowHandle();
+						driver.findElement(By
+								.xpath("/html/body/table/tbody/tr[1]/td[1]/table[2]/tbody/tr[2]/td/table/tbody/tr[2]/td[2]/a"))
+								.click();
+						test.log(LogStatus.PASS, "Clicked on Customer number link");
 						for (String winHandle : driver.getWindowHandles()) {
-							driver.switchTo().window(winHandle);
+							if (!mainwindow.equalsIgnoreCase(winHandle)) {
+								driver.switchTo().window(winHandle);
+
+								loan_nbr = driver.findElement(locator(Jprop.getProperty("csr_loan_nbr"))).getText();
+								test.log(LogStatus.PASS, "Loan Number is" + loan_nbr);
+								NextDueDate = driver.findElement(locator(Jprop.getProperty("csr_due_date"))).getText();
+								test.log(LogStatus.PASS, "Next due date is " + NextDueDate);
+								driver.close();
+								break;
+							}
+						}
+						driver.switchTo().window(mainwindow);
+
+						Thread.sleep(5000);
+
+						for (String winHandle1 : driver.getWindowHandles()) {
+							driver.switchTo().window(winHandle1);
 						}
 						driver.switchTo().defaultContent();
+						driver.switchTo().frame("topFrame");
+						driver.findElement(By.xpath("//*[@id='930000']/a")).click();
+						test.log(LogStatus.PASS, "Clicked on Cash Management");
+						driver.switchTo().defaultContent();
 						driver.switchTo().frame("mainFrame");
-						driver.switchTo().frame("main");
-						// driver.findElement(By.name("button")).click();
+						try {
+							driver.findElement(By.xpath("//*[@id='988190657']/a")).click();
+							test.log(LogStatus.PASS, "Clicked on Start Scheduler");
+						} catch (Exception e) {
+							driver.get("http://192.168.2.203/cc/login/index.jsp");
 
-						if (ProductID.equals("PDL")) {
-							driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
-							test.log(LogStatus.PASS, "Clicked on Go button under Loans section");
+							driver.switchTo().defaultContent();
+							driver.switchTo().frame("topFrame");
+							driver.findElement(By.xpath("//*[@id='930000']/a")).click();
+
+							driver.switchTo().defaultContent();
+							driver.switchTo().frame("mainFrame");
+							driver.findElement(By.xpath("//*[@id='988190657']/a")).click();
+							test.log(LogStatus.PASS, "Clicked on Start Scheduler");
 						}
-						if (ProductID.equals("TLP")) {
-							driver.findElement(By
-									.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[13]/input"))
-									.click();
-							test.log(LogStatus.PASS, "Clicked on Go button under Loans section");
-						}
+						int IAgeStore = Integer.parseInt(AgeStore);
 
-						Thread.sleep(5000);
-						if (ProductID.equals("LOC")) {
-							/// html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]
-							driver.findElement(By
-									.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]"))
-									.click();
-						}
+						DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
+						Date DDueDateminus1 = df.parse(business_date);
+						Calendar cal = Calendar.getInstance();
+						cal.setTime(DDueDateminus1);
+						cal.add(Calendar.DATE, IAgeStore);
+						Date DDueDate1 = cal.getTime();
+						business_date = df.format(DDueDate1);
+						System.out.println(business_date);
 
-						Thread.sleep(5000);
-							int IAgeStore = Integer.parseInt(AgeStore_2nd_time);
-							
-							DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
-							Date DDueDateminus1 = df.parse(business_date);
-							Calendar cal = Calendar.getInstance();
-							cal.setTime(DDueDateminus1);
-							cal.add(Calendar.DATE, IAgeStore);
-							Date DDueDate1 = cal.getTime();
-							business_date = df.format(DDueDate1);
-							System.out.println(business_date);
-
-							test.log(LogStatus.PASS, "Age Store Date after increasing is :" + business_date);
-							// String DueDate0[] =NextDueDate.split("/");
-
-						}
+						test.log(LogStatus.PASS, "Age Store Date after increasing is :" + business_date);
 
 						Thread.sleep(5000);
 
@@ -885,18 +959,16 @@ public class JQCAgeStoreGraceDays extends QCStore {
 						driver.close();
 
 						break;
-
 					}
-				
+				}
 
 				break; // for FOR loop
-			} 
-			catch (Exception e) {
+			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 				// test.log(LogStatus.FAIL, MarkupHelper.createLabel("Borrower
 				// Registration is failed", ExtentColor.RED));
-
+				// test.log(LogStatus.FAIL, "Age store is failed");
 				test.log(LogStatus.FAIL, " " + e);
 				test.log(LogStatus.INFO,
 						"Age store Grace days process is initiated again due to Application sync issue");
@@ -909,6 +981,5 @@ public class JQCAgeStoreGraceDays extends QCStore {
 		if (i == 3) {
 			test.log(LogStatus.FAIL, "Age store Grace days is failed");
 
-		}
-	}
+		}	}
 }

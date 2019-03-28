@@ -26,6 +26,7 @@ public class AInternalTfAndCashManagement extends QCStore{
 					String PIN = TestData.getCellData(sheetName,"PIN",row);
 					
 					driver.switchTo().frame("topFrame");
+					Thread.sleep(2000);
 					driver.findElement(By.xpath("//*[@id='930000']/a")).click();			
 					test.log(LogStatus.PASS, "Clicked on Cash Management");
 					driver.switchTo().defaultContent();
