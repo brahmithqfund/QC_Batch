@@ -9,22 +9,36 @@
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
 			<item value="//@Test"/>
+<<<<<<< HEAD
 			<item value="//&#x09;@Test"/>
 			<item value="@Test"/>
 			<item value="head"/>
 			<item value="dependency"/>
 			<item value="jy"/>
+=======
+			<item value="//////@Test"/>
+			<item value="PayOff_after_RescindPeriod"/>
+			<item value="Payment_Return_PayOff"/>
+>>>>>>> jyothi1.2
 			<item value="jyothi"/>
+			<item value="semimonthly_NextPay_NotOn_End"/>
+			<item value="store"/>
+			<item value="storeid"/>
 		</list>
 		<list key="replacehistory">
 			<item value="@Test"/>
+<<<<<<< HEAD
+=======
+			<item value="enabled = true"/>
+			<item value="enabled = false"/>
+>>>>>>> jyothi1.2
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
-		<item value="563" key="DIALOG_X_ORIGIN"/>
-		<item value="119" key="DIALOG_Y_ORIGIN"/>
+		<item value="839" key="DIALOG_X_ORIGIN"/>
+		<item value="356" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

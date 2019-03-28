@@ -159,7 +159,7 @@ public class VQCCSRLoginLogout extends QCStore
 				//String AdminURL = TestData.getCellData(sheetName,"AdminURL",row);
 				String PIN = TestData.getCellData(sheetName,"PIN",row);
 				String Tran_cd = TestData.getCellData(sheetName,"Tran_cd",row);
-
+                
 
 				//test.log(LogStatus.INFO, MarkupHelper.createLabel("Admin Application is launched", ExtentColor.BLUE));
 				test.log(LogStatus.INFO, "********Admin Application is launched********");
