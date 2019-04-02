@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testsuite skipped="0" hostname="QTLSYS2-72pc" name="tests.QCStore" tests="1" failures="0" timestamp="27 Mar 2019 11:28:06 GMT" time="64.358" errors="0">
   <testcase name="LOC_PayOff_after_RescindPeriod_Txn" time="64.358" classname="tests.QCStore"/>
 =======
@@ -1620,4 +1621,12 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
   <testcase name="LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn" time="201.068" classname="tests.QCStore"/>
   <testcase name="LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn" time="141.876" classname="tests.QCStore"/>
 >>>>>>> brahmith1.1
+=======
+<testsuite skipped="0" hostname="QTLSYS1-182" name="tests.QCStore" tests="5" failures="0" timestamp="01 Apr 2019 17:05:49 GMT" time="13716.475" errors="0">
+  <testcase name="LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn" time="2190.627" classname="tests.QCStore"/>
+  <testcase name="LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn" time="2079.125" classname="tests.QCStore"/>
+  <testcase name="LOC_ACHDeposit_EODs_Return_Txn" time="4785.419" classname="tests.QCStore"/>
+  <testcase name="LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn" time="2325.689" classname="tests.QCStore"/>
+  <testcase name="LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn" time="2335.615" classname="tests.QCStore"/>
+>>>>>>> janaki1.2
 </testsuite> <!-- tests.QCStore -->

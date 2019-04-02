@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testsuite hostname="QTLSYS2-72pc" ignored="65" name="Test" tests="1" failures="0" timestamp="27 Mar 2019 11:28:06 GMT" time="64.467" errors="0">
   <testcase name="LOC_PayOff_after_RescindPeriod_Txn" time="59.173" classname="tests.QCStore"/>
   <testcase name="AReviseCredit_IncIncome" time="0.0" classname="tests.QCStore">
@@ -328,36 +329,23 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
   </testcase> <!-- AReviseCredit_IncIncome -->
 >>>>>>> anoop1.1
 >>>>>>> bd07c6d5205653a8caa48fad7384faa0a833d949
+=======
+<testsuite hostname="QTLSYS1-182" ignored="98" name="Test" tests="5" failures="0" timestamp="01 Apr 2019 17:05:49 GMT" time="13716.577" errors="0">
+  <testcase name="LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn" time="2185.548" classname="tests.QCStore"/>
+  <testcase name="LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn" time="2074.067" classname="tests.QCStore"/>
+  <testcase name="LOC_ACHDeposit_EODs_Return_Txn" time="4780.231" classname="tests.QCStore"/>
+  <testcase name="LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn" time="2320.481" classname="tests.QCStore"/>
+  <testcase name="LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn" time="2330.526" classname="tests.QCStore"/>
+  <testcase name="AReviseCredit_IncIncome" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- AReviseCredit_IncIncome -->
+>>>>>>> janaki1.2
   <testcase name="JQC_LOC_Refinance_StepSame_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_Refinance_StepSame_Txn -->
   <testcase name="LOC_PayOff_after_RescindPeriod_Txn" time="0.0" classname="tests.QCStore">
-=======
-<testsuite hostname="qtlsys2-66pc" ignored="70" name="Test" tests="22" failures="0" timestamp="22 Mar 2019 22:43:03 GMT" time="11248.876" errors="0">
-  <testcase name="JQC_LOC_New_Loan_Void_Txn" time="362.343" classname="tests.QCStore"/>
-  <testcase name="JQC_LOC_New_Loan_Rescind_Txn" time="320.72" classname="tests.QCStore"/>
-  <testcase name="JQC_LOC_New_Loan_Void_GraceDay_Txn" time="310.752" classname="tests.QCStore"/>
-  <testcase name="JQC_LOC_New_Loan_GraceDay_Rescind_Txn" time="312.819" classname="tests.QCStore"/>
-  <testcase name="JQC_LOC_New_Loan_After_RescindDays_Txn" time="311.235" classname="tests.QCStore"/>
-  <testcase name="JQC_LOC_Payment_After_Rescind_Txn" time="311.507" classname="tests.QCStore"/>
-  <testcase name="JQC_LOC_Payment_OnDueDate_Txn" time="719.812" classname="tests.QCStore"/>
-  <testcase name="JQC_LOC_LessThan_MinPayment_Txn" time="314.603" classname="tests.QCStore"/>
-  <testcase name="JQC_LOC_GreaterThan_MinPayment_Txn" time="311.727" classname="tests.QCStore"/>
-  <testcase name="JQC_LOC_DueDate_GreaterThan_MinPayment_Txn" time="700.334" classname="tests.QCStore"/>
-  <testcase name="JQC_LOC_DueDate_LessThan_MinPayment_Txn" time="713.849" classname="tests.QCStore"/>
-  <testcase name="JQC_LOC_Payment_void_Txn" time="314.021" classname="tests.QCStore"/>
-  <testcase name="JQC_LOC_Payment_void_NextBusinessDay_Txn" time="311.752" classname="tests.QCStore"/>
-  <testcase name="JQC_LOC_LessThan_MinPayment_Viod_Txn" time="311.684" classname="tests.QCStore"/>
-  <testcase name="JQC_LOC_GreaterThan_MinPayment_Void_Txn" time="314.71" classname="tests.QCStore"/>
-  <testcase name="JQC_LOC_LessThan_MinPayment_Return_Txn" time="313.187" classname="tests.QCStore"/>
-  <testcase name="JQC_LOC_GreaterThan_MinPayment_Return_Txn" time="315.116" classname="tests.QCStore"/>
-  <testcase name="JQC_LOC_Refinance_StepSame_Txn" time="878.791" classname="tests.QCStore"/>
-  <testcase name="JQC_LOC_Refinance_StepUp_Txn" time="951.876" classname="tests.QCStore"/>
-  <testcase name="JQC_LOC_Refinance_CABPayment_Return_Txn" time="1061.418" classname="tests.QCStore"/>
-  <testcase name="JQC_LOC_Refinance_Stepdown_Txn" time="959.474" classname="tests.QCStore"/>
-  <testcase name="JQC_LOC_Refinance_Latefee_Payment_Txn" time="708.368" classname="tests.QCStore"/>
-  <testcase name="AReviseCredit_IncIncome" time="0.0" classname="tests.QCStore">
     <ignored/>
+<<<<<<< HEAD
   </testcase> <!-- AReviseCredit_IncIncome -->
   <testcase name="LOC_Draw_Void_Txn" time="0.0" classname="tests.QCStore">
 =======
@@ -423,19 +411,25 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
   <testcase name="PaymentdrawVoidEOD" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- PaymentdrawVoidEOD -->
+=======
+  </testcase> <!-- LOC_PayOff_after_RescindPeriod_Txn -->
+>>>>>>> janaki1.2
   <testcase name="SignatureNewLoan_EODTwice" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- SignatureNewLoan_EODTwice -->
-<<<<<<< HEAD
   <testcase name="JQC_LOC_Refinance_StepUp_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_Refinance_StepUp_Txn -->
 <<<<<<< HEAD
+<<<<<<< HEAD
   <testcase name="SQC_LOC_Deposit_Bulk_Void" time="0.0" classname="tests.QCStore">
 =======
+=======
+>>>>>>> janaki1.2
   <testcase name="LOC_PayOff_Draw_Void_Txn" time="0.0" classname="tests.QCStore">
 >>>>>>> brahmith1.1
     <ignored/>
+<<<<<<< HEAD
   </testcase> <!-- SQC_LOC_Deposit_Bulk_Void -->
   <testcase name="JQC_LOC_LessThan_MinPayment_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
@@ -491,6 +485,9 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
     <ignored/>
   </testcase> <!-- LOC_WriteoffRecoveryReturn -->
 >>>>>>> brahmith1.1
+=======
+  </testcase> <!-- LOC_PayOff_Draw_Void_Txn -->
+>>>>>>> janaki1.2
   <testcase name="SQC_LOC_Deposit_Bulk_Void" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- SQC_LOC_Deposit_Bulk_Void -->
@@ -500,6 +497,7 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
   <testcase name="DepositEODReDeposit" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- DepositEODReDeposit -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -537,12 +535,15 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
 >>>>>>> bd07c6d5205653a8caa48fad7384faa0a833d949
 =======
 >>>>>>> anoop1.1
+=======
+>>>>>>> janaki1.2
   <testcase name="RQC_LOC_ManualDefault_Txn_Testdata" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- RQC_LOC_ManualDefault_Txn_Testdata -->
   <testcase name="RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Txn_Testdata" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Txn_Testdata -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <testcase name="Deposit_Dropdown_Void" time="0.0" classname="tests.QCStore">
@@ -588,6 +589,8 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
     <ignored/>
   </testcase> <!-- Deposit_Dropdown_Void -->
 >>>>>>> brahmith1.1
+=======
+>>>>>>> janaki1.2
   <testcase name="RQC_LOC_PayOff_Agestore180days_AutoClosure_Txn_Testdata" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- RQC_LOC_PayOff_Agestore180days_AutoClosure_Txn_Testdata -->
@@ -600,6 +603,7 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
   <testcase name="JQC_LOC_Refinance_EOD_Payment_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_Refinance_EOD_Payment_Txn -->
+<<<<<<< HEAD
 <<<<<<< HEAD
   <testcase name="Deposit_Dropdown" time="0.0" classname="tests.QCStore">
     <ignored/>
@@ -652,12 +656,24 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
 >>>>>>> anoop1.1
 =======
 >>>>>>> brahmith1.1
+=======
+  <testcase name="JQC_LOC_Payment_After_Rescind_Txn" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- JQC_LOC_Payment_After_Rescind_Txn -->
+  <testcase name="DrawAndEOD" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- DrawAndEOD -->
+  <testcase name="MaxLocAmounts" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- MaxLocAmounts -->
+>>>>>>> janaki1.2
   <testcase name="JQC_LOC_GreaterThan_MinPayment_Void_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_GreaterThan_MinPayment_Void_Txn -->
   <testcase name="JQC_LOC_Refinance_Stepdown_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_Refinance_Stepdown_Txn -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -680,6 +696,8 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
 >>>>>>> brahmith1.1
 =======
 >>>>>>> anoop1.1
+=======
+>>>>>>> janaki1.2
   <testcase name="PayOFFandEod" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- PayOFFandEod -->
@@ -689,9 +707,9 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
   <testcase name="JQC_LOC_New_Loan_GraceDay_Rescind_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_New_Loan_GraceDay_Rescind_Txn -->
-  <testcase name="EODOnDueDate" time="0.0" classname="tests.QCStore">
+  <testcase name="MinLocAmounts" time="0.0" classname="tests.QCStore">
     <ignored/>
-  </testcase> <!-- EODOnDueDate -->
+  </testcase> <!-- MinLocAmounts -->
   <testcase name="LOC_NewLoan_MaxLOC_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- LOC_NewLoan_MaxLOC_Txn -->
@@ -719,15 +737,9 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
   <testcase name="LOC_Payment_Gracedays_PayOff_Void_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- LOC_Payment_Gracedays_PayOff_Void_Txn -->
-  <testcase name="HigherPaymentAndEod" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- HigherPaymentAndEod -->
   <testcase name="LOC_monthly_NextPay_NotOn_End_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- LOC_monthly_NextPay_NotOn_End_Txn -->
-  <testcase name="LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn -->
   <testcase name="JQC_LOC_DueDate_LessThan_MinPayment_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_DueDate_LessThan_MinPayment_Txn -->
@@ -749,27 +761,12 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
   <testcase name="LOC_PayOff_Draw_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- LOC_PayOff_Draw_Txn -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <testcase name="NewLoanMonthly_Duedatevalidation" time="0.0" classname="tests.QCStore">
+  <testcase name="RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata" time="0.0" classname="tests.QCStore">
     <ignored/>
-  </testcase> <!-- NewLoanMonthly_Duedatevalidation -->
-  <testcase name="ILP_maxloanCount" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- ILP_maxloanCount -->
+  </testcase> <!-- RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata -->
   <testcase name="NewLoanSemiMonthly_Duedatevalidation" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- NewLoanSemiMonthly_Duedatevalidation -->
-=======
-  <testcase name="RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata -->
->>>>>>> brahmith1.1
-=======
-  <testcase name="RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata -->
->>>>>>> anoop1.1
   <testcase name="RQC_LOC_Default_DefaultPayment_Txn_Testdata" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- RQC_LOC_Default_DefaultPayment_Txn_Testdata -->
@@ -806,15 +803,9 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
   <testcase name="JQC_LOC_New_Loan_Rescind_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_New_Loan_Rescind_Txn -->
-<<<<<<< HEAD
   <testcase name="PaymentdrawVoidEOD" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- PaymentdrawVoidEOD -->
-=======
-  <testcase name="LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn -->
->>>>>>> anoop1.1
   <testcase name="LOC_Payment_Draw_Void_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- LOC_Payment_Draw_Void_Txn -->
@@ -839,21 +830,10 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
   <testcase name="RQC_LOC_Deposit_Return_2ndDeposit_Clear_3rdDeposit_Return_Default_Txn_Testdata" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- RQC_LOC_Deposit_Return_2ndDeposit_Clear_3rdDeposit_Return_Default_Txn_Testdata -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> brahmith1.1
-=======
->>>>>>> jyothi1.2
->>>>>>> 26f8126931b7afc696e5ebd31895ac4dfa2dd77b
-=======
->>>>>>> brahmith1.1
-=======
->>>>>>> anoop1.1
   <testcase name="JQC_LOC_Refinance_Latefee_Payment_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_Refinance_Latefee_Payment_Txn -->
+<<<<<<< HEAD
 <<<<<<< HEAD
   <testcase name="LOC_Deposit_Return_PayOff_Txn" time="0.0" classname="tests.QCStore">
 =======
@@ -915,9 +895,14 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
 =======
 =======
 >>>>>>> anoop1.1
-  </testcase> <!-- LOC_Deposit_Return_PayOff_Txn -->
-  <testcase name="LOC_Payment_PayOff_Txn" time="0.0" classname="tests.QCStore">
+=======
+  <testcase name="LOC_Deposit_Return_PayOff_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
+>>>>>>> janaki1.2
+  </testcase> <!-- LOC_Deposit_Return_PayOff_Txn -->
+  <testcase name="LOC_maxloanCount" time="0.0" classname="tests.QCStore">
+    <ignored/>
+<<<<<<< HEAD
   </testcase> <!-- LOC_Payment_PayOff_Txn -->
 <<<<<<< HEAD
 >>>>>>> brahmith1.1
@@ -930,14 +915,19 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
 >>>>>>> bd07c6d5205653a8caa48fad7384faa0a833d949
 =======
 >>>>>>> anoop1.1
+=======
+  </testcase> <!-- LOC_maxloanCount -->
+  <testcase name="LOC_Payment_PayOff_Txn" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- LOC_Payment_PayOff_Txn -->
+>>>>>>> janaki1.2
   <testcase name="JQC_LOC_LessThan_MinPayment_Return_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_LessThan_MinPayment_Return_Txn -->
-=======
->>>>>>> Ratikanta1.1
   <testcase name="RQC_LOC_Default_DefaultPayment_Void_Txn_Testdata" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- RQC_LOC_Default_DefaultPayment_Void_Txn_Testdata -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <testcase name="RQC_LOC_ManualDefault_EOD_Txn_Testdata" time="0.0" classname="tests.QCStore">
@@ -1021,12 +1011,18 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
     <ignored/>
   </testcase> <!-- JQC_LOC_New_Loan_GraceDay_Rescind_Txn -->
 >>>>>>> brahmith1.1
+=======
+  <testcase name="RQC_LOC_ManualDefault_EOD_Txn_Testdata" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- RQC_LOC_ManualDefault_EOD_Txn_Testdata -->
+>>>>>>> janaki1.2
   <testcase name="LOC_semimonthly_NextPay_NotOn_End_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- LOC_semimonthly_NextPay_NotOn_End_Txn -->
   <testcase name="LOC_PayOff_RescindPeriod_void_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- LOC_PayOff_RescindPeriod_void_Txn -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1223,12 +1219,27 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
     <ignored/>
   </testcase> <!-- LOC_Bankrupt_Writeoff -->
 >>>>>>> brahmith1.1
+=======
+  <testcase name="RQC_LOC_2missedPayment_Default_EOD_Txn_Testdata" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- RQC_LOC_2missedPayment_Default_EOD_Txn_Testdata -->
+  <testcase name="DepositEODTwice" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- DepositEODTwice -->
+  <testcase name="RQC_DefaultPayment_Void_Txn_Testdata" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- RQC_DefaultPayment_Void_Txn_Testdata -->
+  <testcase name="LOC_Payment_GraceDays_PayOff_Txn" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- LOC_Payment_GraceDays_PayOff_Txn -->
+>>>>>>> janaki1.2
   <testcase name="LOC_Biweekly_NextPay_NotOn_End_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- LOC_Biweekly_NextPay_NotOn_End_Txn -->
   <testcase name="LOC_PayOff_On_DueDate_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- LOC_PayOff_On_DueDate_Txn -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> bd07c6d5205653a8caa48fad7384faa0a833d949
@@ -1252,11 +1263,14 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
   <testcase name="JQC_LOC_New_Loan_Void_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_New_Loan_Void_Txn -->
+=======
+>>>>>>> janaki1.2
   <testcase name="QC_ILP_Refinance_Payanyother_Step_Up_Txn" time="0.0" classname="tests.QCStore">
 <<<<<<< HEAD
 <<<<<<< HEAD
     <ignored/>
   </testcase> <!-- QC_ILP_Refinance_Payanyother_Step_Up_Txn -->
+<<<<<<< HEAD
   <testcase name="JQC_LOC_Payment_void_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_Payment_void_Txn -->
@@ -1291,11 +1305,14 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
 =======
 >>>>>>> brahmith1.1
   </testcase> <!-- LOC_Payment_PayOff_Void_Txn -->
+=======
+>>>>>>> janaki1.2
   <testcase name="JQC_LOC_Payment_void_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_Payment_void_Txn -->
   <testcase name="LOC_Payment_Gracedays_PayOff_Void_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
+<<<<<<< HEAD
   </testcase> <!-- LOC_Payment_Gracedays_PayOff_Void_Txn -->
   <testcase name="LOC_Bankrupt_Writeoff_Dismissed" time="0.0" classname="tests.QCStore">
 <<<<<<< HEAD
@@ -1422,6 +1439,19 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
 =======
 >>>>>>> brahmith1.1
   <testcase name="JQC_LOC_LessThan_MinPayment_Viod_Txn" time="0.0" classname="tests.QCStore">
+=======
+  </testcase> <!-- LOC_Bankrupt_Writeoff_Dismissed -->
+  <testcase name="JQC_LOC_GreaterThan_MinPayment_Txn" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- JQC_LOC_GreaterThan_MinPayment_Txn -->
+  <testcase name="LOC_PayOff_Return_Txn" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- LOC_PayOff_Return_Txn -->
+  <testcase name="SQC_LOC_Deposit_Bulk" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- SQC_LOC_Deposit_Bulk -->
+  <testcase name="LOC_PartialWriteoffRecoveryVoid" time="0.0" classname="tests.QCStore">
+>>>>>>> janaki1.2
     <ignored/>
   </testcase> <!-- JQC_LOC_LessThan_MinPayment_Viod_Txn -->
   <testcase name="JQC_LOC_GreaterThan_MinPayment_Return_Txn" time="0.0" classname="tests.QCStore">
@@ -1429,6 +1459,7 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
 <<<<<<< HEAD
 <<<<<<< HEAD
   </testcase> <!-- LOC_Biweekly_Nextpay_Txn -->
+<<<<<<< HEAD
 >>>>>>> anoop1.1
 =======
 >>>>>>> Ratikanta1.1
@@ -1439,12 +1470,15 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
 =======
   </testcase> <!-- JQC_LOC_GreaterThan_MinPayment_Return_Txn -->
 >>>>>>> brahmith1.1
+=======
+>>>>>>> janaki1.2
   <testcase name="RQC_LOC_PayOff_Closure_Txn_Testdata" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- RQC_LOC_PayOff_Closure_Txn_Testdata -->
   <testcase name="MidDay_Void_Deposit" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- MidDay_Void_Deposit -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1495,12 +1529,15 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
     <ignored/>
   </testcase> <!-- LOC_PayOff_Draw_Txn -->
 =======
+=======
+>>>>>>> janaki1.2
   <testcase name="LOC_Payment_Void_PayOff_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- LOC_Payment_Void_PayOff_Txn -->
   <testcase name="JQC_LOC_DueDate_GreaterThan_MinPayment_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_DueDate_GreaterThan_MinPayment_Txn -->
+<<<<<<< HEAD
 >>>>>>> brahmith1.1
 =======
   <testcase name="LOC_Payment_Void_PayOff_Txn" time="0.0" classname="tests.QCStore">
@@ -1517,10 +1554,13 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
 >>>>>>> anoop1.1
 =======
 >>>>>>> brahmith1.1
+=======
+>>>>>>> janaki1.2
   <testcase name="MidDay_Deposit" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- MidDay_Deposit -->
   <testcase name="RQC_LOC_Payment_PayOff_Closure_Void_Txn_Testdata" time="0.0" classname="tests.QCStore">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1541,6 +1581,8 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
 >>>>>>> anoop1.1
 =======
 >>>>>>> brahmith1.1
+=======
+>>>>>>> janaki1.2
     <ignored/>
   </testcase> <!-- RQC_LOC_Payment_PayOff_Closure_Void_Txn_Testdata -->
   <testcase name="RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata" time="0.0" classname="tests.QCStore">
@@ -1548,6 +1590,7 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
   </testcase> <!-- RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata -->
   <testcase name="LOC_PartialWriteoffRecovery" time="0.0" classname="tests.QCStore">
     <ignored/>
+<<<<<<< HEAD
 <<<<<<< HEAD
   </testcase> <!-- RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata -->
   <testcase name="RQC_LOC_Default_DefaultPayment_Txn_Testdata" time="0.0" classname="tests.QCStore">
@@ -1561,13 +1604,15 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
   </testcase> <!-- VoidandEod -->
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> janaki1.2
   </testcase> <!-- LOC_PartialWriteoffRecovery -->
 <<<<<<< HEAD
 <<<<<<< HEAD
   <testcase name="LOC_Draw_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
-<<<<<<< HEAD
   </testcase> <!-- LOC_Draw_Txn -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1614,10 +1659,13 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
   <testcase name="AReviseCredit_PayofffIncreaseIncome" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- AReviseCredit_PayofffIncreaseIncome -->
+=======
+>>>>>>> janaki1.2
   <testcase name="LOC_WriteoffRecovery" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- LOC_WriteoffRecovery -->
   <testcase name="VoidandEod" time="0.0" classname="tests.QCStore">
+<<<<<<< HEAD
     <ignored/>
   </testcase> <!-- VoidandEod -->
 >>>>>>> brahmith1.1
@@ -1664,6 +1712,12 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
   <testcase name="Clear_Return_EODTwice" time="0.0" classname="tests.QCStore">
 >>>>>>> bd07c6d5205653a8caa48fad7384faa0a833d949
     <ignored/>
+=======
+    <ignored/>
+  </testcase> <!-- VoidandEod -->
+  <testcase name="Clear_Return_EODTwice" time="0.0" classname="tests.QCStore">
+    <ignored/>
+>>>>>>> janaki1.2
   </testcase> <!-- Clear_Return_EODTwice -->
   <testcase name="SQC_LOC_LessMinPayment_Deposit" time="0.0" classname="tests.QCStore">
     <ignored/>
@@ -1671,6 +1725,7 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
   <testcase name="JQC_LOC_Refinance_CABPayment_Return_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_LOC_Refinance_CABPayment_Return_Txn -->
+<<<<<<< HEAD
 =======
     <ignored/>
   </testcase> <!-- AReviseCredit_PayofffIncreaseIncome -->
@@ -1711,4 +1766,6 @@ at tests.QCStore.DrawAndEOD(QCStore.java:5311)
     <ignored/>
   </testcase> <!-- SQC_LOC_LessMinPayment_Deposit -->
 >>>>>>> Ratikanta1.1
+=======
+>>>>>>> janaki1.2
 </testsuite> <!-- Test -->
