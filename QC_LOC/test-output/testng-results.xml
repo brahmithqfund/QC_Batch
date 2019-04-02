@@ -1,190 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<testng-results skipped="0" failed="0" ignored="112" total="114" passed="2">
+<testng-results skipped="0" failed="1" ignored="96" total="97" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="2835648" started-at="2019-03-19T18:44:12Z" finished-at="2019-03-19T19:31:28Z">
+  <suite name="Suite" duration-ms="653784" started-at="2019-04-01T07:17:48Z" finished-at="2019-04-01T07:28:42Z">
     <groups>
-      <group name="Ratikanta_EOD">
-        <method signature="QCStore.RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata()[pri:216, instance:tests.QCStore@527740a2]" name="RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata" class="tests.QCStore"/>
-        <method signature="QCStore.RQC_LOC_ManualDefault_EOD_Txn_Testdata()[pri:215, instance:tests.QCStore@527740a2]" name="RQC_LOC_ManualDefault_EOD_Txn_Testdata" class="tests.QCStore"/>
-      </group> <!-- Ratikanta_EOD -->
+      <group name="Anoop_EOD4">
+        <method signature="QCStore.PaymentDepositEODReDeposit()[pri:427, instance:tests.QCStore@5f9d02cb]" name="PaymentDepositEODReDeposit" class="tests.QCStore"/>
+      </group> <!-- Anoop_EOD4 -->
     </groups>
-    <test name="Test" duration-ms="2835648" started-at="2019-03-19T18:44:12Z" finished-at="2019-03-19T19:31:28Z">
+    <test name="Test" duration-ms="653784" started-at="2019-04-01T07:17:48Z" finished-at="2019-04-01T07:28:42Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="117" started-at="2019-03-19T18:44:12Z" finished-at="2019-03-19T18:44:12Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="132" started-at="2019-04-01T07:17:48Z" finished-at="2019-04-01T07:17:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5019" started-at="2019-03-19T18:44:13Z" finished-at="2019-03-19T18:44:18Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-04-01T07:17:48Z" finished-at="2019-04-01T07:17:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="RQC_LOC_ManualDefault_EOD_Txn_Testdata()[pri:215, instance:tests.QCStore@527740a2]" name="RQC_LOC_ManualDefault_EOD_Txn_Testdata" duration-ms="1167584" started-at="2019-03-19T18:44:18Z" finished-at="2019-03-19T19:03:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RQC_LOC_ManualDefault_EOD_Txn_Testdata -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="219" started-at="2019-03-19T19:03:45Z" finished-at="2019-03-19T19:03:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=RQC_LOC_ManualDefault_EOD_Txn_Testdata status=SUCCESS method=QCStore.RQC_LOC_ManualDefault_EOD_Txn_Testdata()[pri:215, instance:tests.QCStore@527740a2] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5018" started-at="2019-03-19T19:03:45Z" finished-at="2019-03-19T19:03:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata()[pri:216, instance:tests.QCStore@527740a2]" name="RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata" duration-ms="1657597" started-at="2019-03-19T19:03:50Z" finished-at="2019-03-19T19:31:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="77" started-at="2019-03-19T19:31:28Z" finished-at="2019-03-19T19:31:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata status=SUCCESS method=QCStore.RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata()[pri:216, instance:tests.QCStore@527740a2] output={null}]]]>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<testng-results skipped="0" failed="1" ignored="83" total="84" passed="0">
-=======
-<testng-results skipped="0" failed="0" ignored="102" total="103" passed="1">
->>>>>>> brahmith1.1
-  <reporter-output>
-  </reporter-output>
-  <suite name="Suite" duration-ms="61591" started-at="2019-03-21T06:20:32Z" finished-at="2019-03-21T06:21:33Z">
-    <groups>
-      <group name="EOD21">
-        <method signature="QCStore.LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn()[pri:70, instance:tests.QCStore@527740a2]" name="LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn" class="tests.QCStore"/>
-      </group> <!-- EOD21 -->
-    </groups>
-    <test name="Test" duration-ms="61591" started-at="2019-03-21T06:20:32Z" finished-at="2019-03-21T06:21:33Z">
-      <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="105" started-at="2019-03-21T06:20:32Z" finished-at="2019-03-21T06:20:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-03-21T06:20:32Z" finished-at="2019-03-21T06:20:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn()[pri:70, instance:tests.QCStore@527740a2]" name="LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn" duration-ms="56232" started-at="2019-03-21T06:20:37Z" finished-at="2019-03-21T06:21:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="239" started-at="2019-03-21T06:21:33Z" finished-at="2019-03-21T06:21:33Z">
-          <params>
-            <param index="0">
-              <value>
-<<<<<<< HEAD
-                <![CDATA[[TestResult name=AReviseCredit_IncIncome status=FAILURE method=QCStore.AReviseCredit_IncIncome()[pri:498, instance:tests.QCStore@527740a2] output={null}]]]>
-=======
-<testng-results skipped="0" failed="0" ignored="113" total="114" passed="1">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Suite" duration-ms="121966" started-at="2019-03-14T09:11:04Z" finished-at="2019-03-14T09:13:06Z">
-    <groups>
-      <group name="EOD1">
-        <method signature="QCStore.LOC_ACHDeposit_EODs_Return_Txn()[pri:68, instance:tests.QCStore@527740a2]" name="LOC_ACHDeposit_EODs_Return_Txn" class="tests.QCStore"/>
-      </group> <!-- EOD1 -->
-    </groups>
-    <test name="Test" duration-ms="121966" started-at="2019-03-14T09:11:04Z" finished-at="2019-03-14T09:13:06Z">
-      <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="117" started-at="2019-03-14T09:11:04Z" finished-at="2019-03-14T09:11:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-14T09:11:04Z" finished-at="2019-03-14T09:11:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="LOC_ACHDeposit_EODs_Return_Txn()[pri:68, instance:tests.QCStore@527740a2]" name="LOC_ACHDeposit_EODs_Return_Txn" duration-ms="116533" started-at="2019-03-14T09:11:09Z" finished-at="2019-03-14T09:13:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LOC_ACHDeposit_EODs_Return_Txn -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="295" started-at="2019-03-14T09:13:06Z" finished-at="2019-03-14T09:13:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=LOC_ACHDeposit_EODs_Return_Txn status=SUCCESS method=QCStore.LOC_ACHDeposit_EODs_Return_Txn()[pri:68, instance:tests.QCStore@527740a2] output={null}]]]>
->>>>>>> brahmith1.1
-=======
-<testng-results skipped="0" failed="2" ignored="99" total="102" passed="1">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Suite" duration-ms="3400769" started-at="2019-03-21T10:25:16Z" finished-at="2019-03-21T11:21:57Z">
-    <groups>
-      <group name="Anoop_EOD2">
-        <method signature="QCStore.DepositEODTwice()[pri:420, instance:tests.QCStore@527740a2]" name="DepositEODTwice" class="tests.QCStore"/>
-        <method signature="QCStore.Deposit_DrawEODTwice()[pri:421, instance:tests.QCStore@527740a2]" name="Deposit_DrawEODTwice" class="tests.QCStore"/>
-        <method signature="QCStore.PaymentdrawVoidEOD()[pri:419, instance:tests.QCStore@527740a2]" name="PaymentdrawVoidEOD" class="tests.QCStore"/>
-      </group> <!-- Anoop_EOD2 -->
-    </groups>
-    <test name="Test" duration-ms="3400769" started-at="2019-03-21T10:25:16Z" finished-at="2019-03-21T11:21:57Z">
-      <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="102" started-at="2019-03-21T10:25:16Z" finished-at="2019-03-21T10:25:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5024" started-at="2019-03-21T10:25:16Z" finished-at="2019-03-21T10:25:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="PaymentdrawVoidEOD()[pri:419, instance:tests.QCStore@527740a2]" name="PaymentdrawVoidEOD" duration-ms="1270955" started-at="2019-03-21T10:25:21Z" finished-at="2019-03-21T10:46:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PaymentdrawVoidEOD -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="263" started-at="2019-03-21T10:46:32Z" finished-at="2019-03-21T10:46:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=PaymentdrawVoidEOD status=SUCCESS method=QCStore.PaymentdrawVoidEOD()[pri:419, instance:tests.QCStore@527740a2] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5026" started-at="2019-03-21T10:46:32Z" finished-at="2019-03-21T10:46:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="FAIL" signature="DepositEODTwice()[pri:420, instance:tests.QCStore@527740a2]" name="DepositEODTwice" duration-ms="2069524" started-at="2019-03-21T10:46:37Z" finished-at="2019-03-21T11:21:07Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="PaymentDepositEODReDeposit()[pri:427, instance:tests.QCStore@5f9d02cb]" name="PaymentDepositEODReDeposit" duration-ms="647116" started-at="2019-04-01T07:17:53Z" finished-at="2019-04-01T07:28:40Z">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
             <message>
-              <![CDATA[Unable to find element with name == done (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[Modal dialog present: Do you want to ACH Revoke?
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'QTLSYS2-48', ip: '192.168.2.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:28600/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: 2603ae68-9f7e-41b4-a0b9-c7677d17306b
-*** Element info: {Using=name, value=done}]]>
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:34873/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 9d0d6384-da6a-40e5-bd99-143d26763578
+*** Element info: {Using=name, value=requestBean.chkName}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with name == done (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: Modal dialog present: Do you want to ACH Revoke?
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'QTLSYS2-48', ip: '192.168.2.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:28600/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: 2603ae68-9f7e-41b4-a0b9-c7677d17306b
-*** Element info: {Using=name, value=done}
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:34873/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 9d0d6384-da6a-40e5-bd99-143d26763578
+*** Element info: {Using=name, value=requestBean.chkName}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 at java.lang.reflect.Constructor.newInstance(Unknown Source)
 at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:195)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
 at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
 at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
 at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
@@ -195,8 +54,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
 at org.openqa.selenium.By$ByName.findElement(By.java:284)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-at tests.AQCDrawerAssign.drawerAssign(AQCDrawerAssign.java:75)
-at tests.QCStore.DepositEODTwice(QCStore.java:5150)
+at tests.AQCCSR_Deposit.deposit(AQCCSR_Deposit.java:102)
+at tests.QCStore.PaymentDepositEODReDeposit(QCStore.java:4790)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -224,272 +83,18 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DepositEODTwice -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="1378" started-at="2019-03-21T11:21:07Z" finished-at="2019-03-21T11:21:08Z">
+        </test-method> <!-- PaymentDepositEODReDeposit -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="1513" started-at="2019-04-01T07:28:40Z" finished-at="2019-04-01T07:28:42Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=DepositEODTwice status=FAILURE method=QCStore.DepositEODTwice()[pri:420, instance:tests.QCStore@527740a2] output={null}]]]>
+                <![CDATA[[TestResult name=PaymentDepositEODReDeposit status=FAILURE method=QCStore.PaymentDepositEODReDeposit()[pri:427, instance:tests.QCStore@5f9d02cb] output={null}]]]>
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5019" started-at="2019-03-21T11:21:08Z" finished-at="2019-03-21T11:21:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="FAIL" signature="Deposit_DrawEODTwice()[pri:421, instance:tests.QCStore@527740a2]" name="Deposit_DrawEODTwice" duration-ms="41370" started-at="2019-03-21T11:21:13Z" finished-at="2019-03-21T11:21:55Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:41470
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-48', ip: '192.168.2.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: driver.version: RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:41470
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-48', ip: '192.168.2.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
-at tests.ACSRBorrowerRegistration.borrowerReg(ACSRBorrowerRegistration.java:318)
-at tests.QCStore.Deposit_DrawEODTwice(QCStore.java:5034)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:41470
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:242)
-at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
-at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-at okhttp3.RealCall.execute(RealCall.java:77)
-at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-... 30 more
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-at java.net.PlainSocketImpl.connect(Unknown Source)
-at java.net.SocksSocketImpl.connect(Unknown Source)
-at java.net.Socket.connect(Unknown Source)
-at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
-... 50 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Deposit_DrawEODTwice -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="2078" started-at="2019-03-21T11:21:55Z" finished-at="2019-03-21T11:21:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Deposit_DrawEODTwice status=FAILURE method=QCStore.Deposit_DrawEODTwice()[pri:421, instance:tests.QCStore@527740a2] output={null}]]]>
->>>>>>> anoop1.1
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:41470
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-48', ip: '192.168.2.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: driver.version: RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:41470
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-48', ip: '192.168.2.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-at tests.QCStore.getScreenhot(QCStore.java:7079)
-at tests.QCStore.getResult(QCStore.java:7095)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:41470
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:242)
-at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
-at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-at okhttp3.RealCall.execute(RealCall.java:77)
-at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-... 33 more
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-at java.net.PlainSocketImpl.connect(Unknown Source)
-at java.net.SocksSocketImpl.connect(Unknown Source)
-at java.net.Socket.connect(Unknown Source)
-at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
-... 53 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-<<<<<<< HEAD
-=======
-<testng-results skipped="0" failed="0" ignored="70" total="71" passed="1">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Suite" duration-ms="2157173" started-at="2019-03-15T05:44:54Z" finished-at="2019-03-15T06:20:52Z">
-    <groups>
-      <group name="Anoop_EOD2">
-        <method signature="QCStore.Deposit_DrawEODTwice()[pri:421, instance:tests.QCStore@527740a2]" name="Deposit_DrawEODTwice" class="tests.QCStore"/>
-      </group> <!-- Anoop_EOD2 -->
-    </groups>
-    <test name="Test" duration-ms="2157173" started-at="2019-03-15T05:44:54Z" finished-at="2019-03-15T06:20:52Z">
-      <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="104" started-at="2019-03-15T05:44:54Z" finished-at="2019-03-15T05:44:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5019" started-at="2019-03-15T05:44:54Z" finished-at="2019-03-15T05:44:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="Deposit_DrawEODTwice()[pri:421, instance:tests.QCStore@527740a2]" name="Deposit_DrawEODTwice" duration-ms="2151265" started-at="2019-03-15T05:44:59Z" finished-at="2019-03-15T06:20:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Deposit_DrawEODTwice -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="769" started-at="2019-03-15T06:20:51Z" finished-at="2019-03-15T06:20:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Deposit_DrawEODTwice status=SUCCESS method=QCStore.Deposit_DrawEODTwice()[pri:421, instance:tests.QCStore@527740a2] output={null}]]]>
-=======
-<testng-results skipped="0" failed="0" ignored="94" total="95" passed="1">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Suite" duration-ms="37398" started-at="2019-03-15T05:31:23Z" finished-at="2019-03-15T05:32:00Z">
-    <groups>
-      <group name="Jyothi">
-        <method signature="QCStore.QC_ILP_Refinance_Payanyother_Step_Up_Txn()[pri:609, instance:tests.QCStore@527740a2]" name="QC_ILP_Refinance_Payanyother_Step_Up_Txn" class="tests.QCStore"/>
-      </group> <!-- Jyothi -->
-    </groups>
-    <test name="Test" duration-ms="37398" started-at="2019-03-15T05:31:23Z" finished-at="2019-03-15T05:32:00Z">
-      <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="78" started-at="2019-03-15T05:31:23Z" finished-at="2019-03-15T05:31:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5024" started-at="2019-03-15T05:31:23Z" finished-at="2019-03-15T05:31:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="QC_ILP_Refinance_Payanyother_Step_Up_Txn()[pri:609, instance:tests.QCStore@527740a2]" name="QC_ILP_Refinance_Payanyother_Step_Up_Txn" duration-ms="32094" started-at="2019-03-15T05:31:28Z" finished-at="2019-03-15T05:32:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- QC_ILP_Refinance_Payanyother_Step_Up_Txn -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="171" started-at="2019-03-15T05:32:00Z" finished-at="2019-03-15T05:32:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=QC_ILP_Refinance_Payanyother_Step_Up_Txn status=SUCCESS method=QCStore.QC_ILP_Refinance_Payanyother_Step_Up_Txn()[pri:609, instance:tests.QCStore@527740a2] output={null}]]]>
->>>>>>> jyothi1.2
->>>>>>> 26f8126931b7afc696e5ebd31895ac4dfa2dd77b
-=======
-                <![CDATA[[TestResult name=LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn status=SUCCESS method=QCStore.LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn()[pri:70, instance:tests.QCStore@527740a2] output={null}]]]>
->>>>>>> brahmith1.1
-              </value>
-            </param>
-          </params>
-=======
->>>>>>> anoop1.1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->

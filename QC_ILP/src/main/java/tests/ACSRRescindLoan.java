@@ -130,11 +130,11 @@ public class ACSRRescindLoan extends QCStore{
 				 catch (NoAlertPresentException e) {
 					 //do what you normally would if you didn't have the alert.
 				 }
-						
+				 	 Thread.sleep(6000);
 				 driver.switchTo().defaultContent();
 				 driver.switchTo().frame("mainFrame");
 				 driver.switchTo().frame("main");
-				 Thread.sleep(3000);
+				
 				 if(ProductID.equals("ILP"))
 				 {
 

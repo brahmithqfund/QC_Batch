@@ -1,63 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="76" total="77" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="203973" started-at="2019-03-22T05:19:51Z" finished-at="2019-03-22T05:23:15Z">
+  <suite name="Suite" duration-ms="806833" started-at="2019-04-02T05:14:17Z" finished-at="2019-04-02T05:27:44Z">
     <groups>
-      <group name="1stBatch1">
-        <method signature="QCStore.QC_NewLoan_Promotion_Txn()[pri:100, instance:tests.QCStore@5f9d02cb]" name="QC_NewLoan_Promotion_Txn" class="tests.QCStore"/>
-      </group> <!-- 1stBatch1 -->
+      <group name="AnoopRe">
+        <method signature="QCStore.RefinanceStepup()[pri:9, instance:tests.QCStore@5f9d02cb]" name="RefinanceStepup" class="tests.QCStore"/>
+      </group> <!-- AnoopRe -->
     </groups>
-    <test name="Test" duration-ms="203973" started-at="2019-03-22T05:19:51Z" finished-at="2019-03-22T05:23:15Z">
+    <test name="Test" duration-ms="806833" started-at="2019-04-02T05:14:17Z" finished-at="2019-04-02T05:27:44Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="101" started-at="2019-03-22T05:19:51Z" finished-at="2019-03-22T05:19:51Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="100" started-at="2019-04-02T05:14:17Z" finished-at="2019-04-02T05:14:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-03-22T05:19:51Z" finished-at="2019-03-22T05:19:56Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-04-02T05:14:17Z" finished-at="2019-04-02T05:14:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="QC_NewLoan_Promotion_Txn()[pri:100, instance:tests.QCStore@5f9d02cb]" name="QC_NewLoan_Promotion_Txn" duration-ms="198603" started-at="2019-03-22T05:19:56Z" finished-at="2019-03-22T05:23:15Z">
+        <test-method status="PASS" signature="RefinanceStepup()[pri:9, instance:tests.QCStore@5f9d02cb]" name="RefinanceStepup" duration-ms="801512" started-at="2019-04-02T05:14:22Z" finished-at="2019-04-02T05:27:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- QC_NewLoan_Promotion_Txn -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="250" started-at="2019-03-22T05:23:15Z" finished-at="2019-03-22T05:23:15Z">
+        </test-method> <!-- RefinanceStepup -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="206" started-at="2019-04-02T05:27:43Z" finished-at="2019-04-02T05:27:44Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=QC_NewLoan_Promotion_Txn status=SUCCESS method=QCStore.QC_NewLoan_Promotion_Txn()[pri:100, instance:tests.QCStore@5f9d02cb] output={null}]]]>
-=======
-<testng-results skipped="0" failed="0" ignored="54" total="55" passed="1">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Suite" duration-ms="1193605" started-at="2019-03-21T09:00:54Z" finished-at="2019-03-21T09:20:48Z">
-    <groups>
-      <group name="Anoop">
-        <method signature="QCStore.AQC_EPP_Return()[pri:20, instance:tests.QCStore@527740a2]" name="AQC_EPP_Return" class="tests.QCStore"/>
-      </group> <!-- Anoop -->
-    </groups>
-    <test name="Test" duration-ms="1193605" started-at="2019-03-21T09:00:54Z" finished-at="2019-03-21T09:20:48Z">
-      <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="95" started-at="2019-03-21T09:00:54Z" finished-at="2019-03-21T09:00:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5012" started-at="2019-03-21T09:00:54Z" finished-at="2019-03-21T09:00:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="AQC_EPP_Return()[pri:20, instance:tests.QCStore@527740a2]" name="AQC_EPP_Return" duration-ms="1188262" started-at="2019-03-21T09:00:59Z" finished-at="2019-03-21T09:20:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AQC_EPP_Return -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="219" started-at="2019-03-21T09:20:47Z" finished-at="2019-03-21T09:20:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=AQC_EPP_Return status=SUCCESS method=QCStore.AQC_EPP_Return()[pri:20, instance:tests.QCStore@527740a2] output={null}]]]>
->>>>>>> anoop1.1
+                <![CDATA[[TestResult name=RefinanceStepup status=SUCCESS method=QCStore.RefinanceStepup()[pri:9, instance:tests.QCStore@5f9d02cb] output={null}]]]>
               </value>
             </param>
           </params>

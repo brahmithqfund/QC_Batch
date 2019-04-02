@@ -95,7 +95,7 @@ public class QCStore {
 
 	public static String NextDueDate;
 
-	@Test(priority = 100, groups = { "1stBatch1" })
+	@Test(priority = 100, groups = { "1stBatch" })
 	public static void QC_NewLoan_Promotion_Txn() throws Exception {
 		try {
 			// test =
