@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="QC_3Payments_Refinance_Semimonthly_StepUp_LoanAmt_Edit_Txn_Testdata">QC_3Payments_Refinance_Semimonthly_StepUp_LoanAmt_Edit_Txn_Testdata</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="QC_3Payments_Refinance_Weekly_StepSame_LoanAmountEdit_Txn_Testdata">QC_3Payments_Refinance_Weekly_StepSame_LoanAmountEdit_Txn_Testdata</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="QC_3Payments_Refinance_Weekly_StepUp_NoCash_Txn_Testdata">QC_3Payments_Refinance_Weekly_StepUp_NoCash_Txn_Testdata</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -125,9 +130,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="QC_3Payments_Refinance_Semimonthly_StepUp_LoanAmt_Edit_Txn_Testdata">
-                  </a> <!-- QC_3Payments_Refinance_Semimonthly_StepUp_LoanAmt_Edit_Txn_Testdata -->
-                  <span class="method-name">QC_3Payments_Refinance_Semimonthly_StepUp_LoanAmt_Edit_Txn_Testdata</span>
+                  <a name="QC_3Payments_Refinance_Weekly_StepSame_LoanAmountEdit_Txn_Testdata">
+                  </a> <!-- QC_3Payments_Refinance_Weekly_StepSame_LoanAmountEdit_Txn_Testdata -->
+                  <span class="method-name">QC_3Payments_Refinance_Weekly_StepSame_LoanAmountEdit_Txn_Testdata</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="QC_3Payments_Refinance_Weekly_StepUp_NoCash_Txn_Testdata">
+                  </a> <!-- QC_3Payments_Refinance_Weekly_StepUp_NoCash_Txn_Testdata -->
+                  <span class="method-name">QC_3Payments_Refinance_Weekly_StepUp_NoCash_Txn_Testdata</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -145,7 +157,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;groups&gt;
       &lt;run&gt;
-        &lt;include name=&quot;Ratikanta_ILP&quot;/&gt;
+        &lt;include name=&quot;Ratikanta_ILP_Weekly&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
@@ -174,10 +186,14 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">Ratikanta_ILP</span>
+              <span class="test-group-name">Ratikanta_ILP_Weekly</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">QC_3Payments_Refinance_Semimonthly_StepUp_LoanAmt_Edit_Txn_Testdata</span>
+                <span class="method-in-group-name">QC_3Payments_Refinance_Weekly_StepSame_LoanAmountEdit_Txn_Testdata</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">QC_3Payments_Refinance_Weekly_StepUp_NoCash_Txn_Testdata</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -197,16 +213,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'QC_3Payments_Refinance_Semimonthly_StepUp_LoanAmt_Edit_Txn_Testdata')
+data.setCell(0, 1, 'QC_3Payments_Refinance_Weekly_StepSame_LoanAmountEdit_Txn_Testdata')
 data.setCell(0, 2, 'tests.QCStore')
-data.setCell(0, 3, 3350955);
+data.setCell(0, 3, 2975319);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'QC_3Payments_Refinance_Weekly_StepUp_NoCash_Txn_Testdata')
+data.setCell(1, 2, 'tests.QCStore')
+data.setCell(1, 3, 2786046);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 55 minutes</span>
+              <span class="suite-total-time">Total running time: 1 hours</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -221,9 +241,36 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">11 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.QCStore</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">QC_2Payments_Refinance_Monthly_StepUp_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">QC_3Payments_Refinance_Monthly_StepDown_NoCash_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">QC_3Payments_Refinance_Monthly_StepUp_NoCash_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">QC_3Payments_Refinance_BiWeekly_StepUp_NoCash_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">QC_2Payments_Refinance_Monthly_StepSame_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">QC_3Payments_Refinance_BiWeekly_StepDown_LoanAmountEdit_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">QC_3Payments_Refinance_Monthly_StepDown_LoanAmountEdit_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">QC_3Payments_Refinance_Semimonthly_StepUp_LoanAmt_Edit_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">QC_3Payments_Refinance_Monthly_StepUp_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">QC_2Payments_Refinance_Monthly_StepDown_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">QC_3Payments_Refinance_BiWeekly_StepUp_Txn_Testdata</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -239,19 +286,35 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">killProcess</span>
-                <span class="method-start">130 ms</span>
+                <span class="method-start">122 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">QC_3Payments_Refinance_Semimonthly_StepUp_LoanAmt_Edit_Txn_Testdata</span>
-                <span class="method-start">5130 ms</span>
+                <span class="method-name">QC_3Payments_Refinance_Weekly_StepSame_LoanAmountEdit_Txn_Testdata</span>
+                <span class="method-start">5122 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">3356088 ms</span>
+                <span class="method-start">2980444 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=QC_3Payments_Refinance_Semimonthly_StepUp_LoanAmt_Edit_Txn_Testdata status=SUCCESS ...)</span>
-                <span class="method-start">3356089 ms</span>
+                <span class="method-name">getResult([TestResult name=QC_3Payments_Refinance_Weekly_StepSame_LoanAmountEdit_Txn_Testdata status=SUCCESS m...)</span>
+                <span class="method-start">2980445 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">killProcess</span>
+                <span class="method-start">2980657 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">QC_3Payments_Refinance_Weekly_StepUp_NoCash_Txn_Testdata</span>
+                <span class="method-start">2985657 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endReport</span>
+                <span class="method-start">5771705 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=QC_3Payments_Refinance_Weekly_StepUp_NoCash_Txn_Testdata status=SUCCESS method=QCSt...)</span>
+                <span class="method-start">5771705 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

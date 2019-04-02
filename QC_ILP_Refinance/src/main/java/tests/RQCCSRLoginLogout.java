@@ -77,6 +77,7 @@ public class RQCCSRLoginLogout extends QCStore
 							 driver = new RemoteWebDriver(new URL(Node), cap);	
 						}
 						 wait = new WebDriverWait(driver, 40000);
+						
 
 						driver.manage().window().maximize();
 						driver.manage().timeouts().implicitlyWait(05, TimeUnit.SECONDS);

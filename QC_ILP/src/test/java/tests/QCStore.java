@@ -1847,7 +1847,7 @@ public class QCStore {
 
 	// RATIKANTA transactions
 
-	 @Test(priority = 1, groups = "Ratikanta_ILP")
+	@Test(priority = 1, groups = "Ratikanta_ILP")
 	public static void RQC_Bankruptcy_WORecovery_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_Bankruptcy_WORecovery"),
@@ -1914,7 +1914,7 @@ public class QCStore {
 		}
 	}
 
-	 @Test(priority = 2, groups = "Ratikanta_ILP")
+	@Test(priority = 2, groups = "Ratikanta_ILP")
 	public static void RQC_Bankruptcy_Discharge_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_Bankruptcy_Discharge"),
@@ -1980,7 +1980,7 @@ public class QCStore {
 		}
 	}
 
-	  @Test(priority = 3, groups = "Ratikanta_ILP")
+	@Test(priority = 3, groups = "Ratikanta_ILP")
 	public static void RQC_Bankruptcy_Dismiss_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_Bankruptcy_Dismiss"),
@@ -2046,7 +2046,7 @@ public class QCStore {
 		}
 	}
 
-	 @Test(priority = 4, groups = "Ratikanta_ILP")
+	@Test(priority = 4, groups = "Ratikanta_ILP")
 	public static void RQC_Default_Refinance_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_Default_Refinance"),
@@ -2113,7 +2113,7 @@ public class QCStore {
 		}
 	}
 
-	 @Test(priority = 5, groups = "Ratikanta_ILP")
+   @Test(priority = 5, groups = "Ratikanta_ILP")
 	public static void RQC_DefaultPayment_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_DefaultPayment"),
@@ -2378,7 +2378,7 @@ public class QCStore {
 		}
 	}
 
-	 @Test(priority = 9, groups = "Ratikanta_ILP")
+	@Test(priority = 9, groups = "Ratikanta_ILP")
 	public static void RQC_Default_TLPConversion_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_Default_TLPConversion"),

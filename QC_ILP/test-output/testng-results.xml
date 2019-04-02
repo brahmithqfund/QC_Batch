@@ -1,136 +1,234 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results skipped="0" failed="0" ignored="54" total="55" passed="1">
+<testng-results skipped="0" failed="0" ignored="44" total="53" passed="9">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Suite" duration-ms="141420" started-at="2019-03-21T13:13:01Z" finished-at="2019-03-21T13:15:23Z">
+  <suite name="Suite" duration-ms="8257444" started-at="2019-03-29T12:57:39Z" finished-at="2019-03-29T15:15:17Z">
     <groups>
-      <group name="Brahmith1">
-        <method signature="QCStore.QC_NewLoan_Promotion_Txn()[pri:4, instance:tests.QCStore@5f9d02cb]" name="QC_NewLoan_Promotion_Txn" class="tests.QCStore"/>
-      </group> <!-- Brahmith1 -->
+      <group name="Ratikanta_ILP">
+        <method signature="QCStore.RQC_Bankruptcy_Discharge_Txn_Testdata()[pri:2, instance:tests.QCStore@5f9d02cb]" name="RQC_Bankruptcy_Discharge_Txn_Testdata" class="tests.QCStore"/>
+        <method signature="QCStore.RQC_Bankruptcy_Dismiss_Txn_Testdata()[pri:3, instance:tests.QCStore@5f9d02cb]" name="RQC_Bankruptcy_Dismiss_Txn_Testdata" class="tests.QCStore"/>
+        <method signature="QCStore.RQC_Bankruptcy_WORecovery_Txn_Testdata()[pri:1, instance:tests.QCStore@5f9d02cb]" name="RQC_Bankruptcy_WORecovery_Txn_Testdata" class="tests.QCStore"/>
+        <method signature="QCStore.RQC_DefaultPayment_Txn_Testdata()[pri:5, instance:tests.QCStore@5f9d02cb]" name="RQC_DefaultPayment_Txn_Testdata" class="tests.QCStore"/>
+        <method signature="QCStore.RQC_DefaultPayment_Void_Txn_Testdata()[pri:6, instance:tests.QCStore@5f9d02cb]" name="RQC_DefaultPayment_Void_Txn_Testdata" class="tests.QCStore"/>
+        <method signature="QCStore.RQC_Default_Refinance_Txn_Testdata()[pri:4, instance:tests.QCStore@5f9d02cb]" name="RQC_Default_Refinance_Txn_Testdata" class="tests.QCStore"/>
+        <method signature="QCStore.RQC_Default_TLPConversion_Txn_Testdata()[pri:9, instance:tests.QCStore@5f9d02cb]" name="RQC_Default_TLPConversion_Txn_Testdata" class="tests.QCStore"/>
+        <method signature="QCStore.RQC_WriteOffRecovery_Txn_Testdata()[pri:7, instance:tests.QCStore@5f9d02cb]" name="RQC_WriteOffRecovery_Txn_Testdata" class="tests.QCStore"/>
+        <method signature="QCStore.RQC_WriteOffRecovery_Void_Txn_Testdata()[pri:8, instance:tests.QCStore@5f9d02cb]" name="RQC_WriteOffRecovery_Void_Txn_Testdata" class="tests.QCStore"/>
+      </group> <!-- Ratikanta_ILP -->
     </groups>
-    <test name="Test" duration-ms="141420" started-at="2019-03-21T13:13:01Z" finished-at="2019-03-21T13:15:23Z">
+    <test name="Test" duration-ms="8257444" started-at="2019-03-29T12:57:39Z" finished-at="2019-03-29T15:15:17Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="112" started-at="2019-03-21T13:13:01Z" finished-at="2019-03-21T13:13:01Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="107" started-at="2019-03-29T12:57:39Z" finished-at="2019-03-29T12:57:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-03-21T13:13:01Z" finished-at="2019-03-21T13:13:06Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-29T12:57:40Z" finished-at="2019-03-29T12:57:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="QC_NewLoan_Promotion_Txn()[pri:4, instance:tests.QCStore@5f9d02cb]" name="QC_NewLoan_Promotion_Txn" duration-ms="136028" started-at="2019-03-21T13:13:06Z" finished-at="2019-03-21T13:15:22Z">
+        <test-method status="PASS" signature="RQC_Bankruptcy_WORecovery_Txn_Testdata()[pri:1, instance:tests.QCStore@5f9d02cb]" name="RQC_Bankruptcy_WORecovery_Txn_Testdata" duration-ms="586843" started-at="2019-03-29T12:57:45Z" finished-at="2019-03-29T13:07:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- QC_NewLoan_Promotion_Txn -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-21T13:15:22Z" finished-at="2019-03-21T13:15:22Z">
+        </test-method> <!-- RQC_Bankruptcy_WORecovery_Txn_Testdata -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-29T13:07:31Z" finished-at="2019-03-29T13:07:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="262" started-at="2019-03-21T13:15:22Z" finished-at="2019-03-21T13:15:23Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="222" started-at="2019-03-29T13:07:31Z" finished-at="2019-03-29T13:07:32Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=QC_NewLoan_Promotion_Txn status=SUCCESS method=QCStore.QC_NewLoan_Promotion_Txn()[pri:4, instance:tests.QCStore@5f9d02cb] output={null}]]]>
-=======
-  <suite name="Suite" duration-ms="808743" started-at="2019-03-21T07:25:45Z" finished-at="2019-03-21T07:39:13Z">
-    <groups>
-      <group name="Janaki_EOD_set11">
-        <method signature="QCStore.JQC_ILP_Deposit_EOD_Txn()[pri:8, instance:tests.QCStore@527740a2]" name="JQC_ILP_Deposit_EOD_Txn" class="tests.QCStore"/>
-      </group> <!-- Janaki_EOD_set11 -->
-    </groups>
-    <test name="Test" duration-ms="808743" started-at="2019-03-21T07:25:45Z" finished-at="2019-03-21T07:39:13Z">
-      <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="78" started-at="2019-03-21T07:25:45Z" finished-at="2019-03-21T07:25:45Z">
+                <![CDATA[[TestResult name=RQC_Bankruptcy_WORecovery_Txn_Testdata status=SUCCESS method=QCStore.RQC_Bankruptcy_WORecovery_Txn_Testdata()[pri:1, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5016" started-at="2019-03-21T07:25:45Z" finished-at="2019-03-21T07:25:50Z">
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-29T13:07:32Z" finished-at="2019-03-29T13:07:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="JQC_ILP_Deposit_EOD_Txn()[pri:8, instance:tests.QCStore@527740a2]" name="JQC_ILP_Deposit_EOD_Txn" duration-ms="803339" started-at="2019-03-21T07:25:50Z" finished-at="2019-03-21T07:39:13Z">
+        <test-method status="PASS" signature="RQC_Bankruptcy_Discharge_Txn_Testdata()[pri:2, instance:tests.QCStore@5f9d02cb]" name="RQC_Bankruptcy_Discharge_Txn_Testdata" duration-ms="737687" started-at="2019-03-29T13:07:37Z" finished-at="2019-03-29T13:19:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- JQC_ILP_Deposit_EOD_Txn -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="292" started-at="2019-03-21T07:39:13Z" finished-at="2019-03-21T07:39:13Z">
+        </test-method> <!-- RQC_Bankruptcy_Discharge_Txn_Testdata -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-29T13:19:54Z" finished-at="2019-03-29T13:19:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="79" started-at="2019-03-29T13:19:54Z" finished-at="2019-03-29T13:19:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=JQC_ILP_Deposit_EOD_Txn status=SUCCESS method=QCStore.JQC_ILP_Deposit_EOD_Txn()[pri:8, instance:tests.QCStore@527740a2] output={null}]]]>
->>>>>>> janaki1.2
-=======
-<testng-results skipped="0" failed="0" ignored="44" total="46" passed="2">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Suite" duration-ms="2806434" started-at="2019-03-23T17:48:23Z" finished-at="2019-03-23T18:35:10Z">
-    <groups>
-      <group name="Ratikanta_ILP">
-        <method signature="QCStore.RQC_Default_TLPConversion_Txn_Testdata()[pri:9, instance:tests.QCStore@527740a2]" name="RQC_Default_TLPConversion_Txn_Testdata" class="tests.QCStore"/>
-        <method signature="QCStore.RQC_WriteOffRecovery_Void_Txn_Testdata()[pri:8, instance:tests.QCStore@527740a2]" name="RQC_WriteOffRecovery_Void_Txn_Testdata" class="tests.QCStore"/>
-      </group> <!-- Ratikanta_ILP -->
-    </groups>
-    <test name="Test" duration-ms="2806434" started-at="2019-03-23T17:48:23Z" finished-at="2019-03-23T18:35:10Z">
-      <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="121" started-at="2019-03-23T17:48:23Z" finished-at="2019-03-23T17:48:23Z">
+                <![CDATA[[TestResult name=RQC_Bankruptcy_Discharge_Txn_Testdata status=SUCCESS method=QCStore.RQC_Bankruptcy_Discharge_Txn_Testdata()[pri:2, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-23T17:48:23Z" finished-at="2019-03-23T17:48:28Z">
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-03-29T13:19:54Z" finished-at="2019-03-29T13:19:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="RQC_WriteOffRecovery_Void_Txn_Testdata()[pri:8, instance:tests.QCStore@527740a2]" name="RQC_WriteOffRecovery_Void_Txn_Testdata" duration-ms="1387727" started-at="2019-03-23T17:48:28Z" finished-at="2019-03-23T18:11:36Z">
+        <test-method status="PASS" signature="RQC_Bankruptcy_Dismiss_Txn_Testdata()[pri:3, instance:tests.QCStore@5f9d02cb]" name="RQC_Bankruptcy_Dismiss_Txn_Testdata" duration-ms="636929" started-at="2019-03-29T13:19:59Z" finished-at="2019-03-29T13:30:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RQC_Bankruptcy_Dismiss_Txn_Testdata -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="72" started-at="2019-03-29T13:30:36Z" finished-at="2019-03-29T13:30:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RQC_Bankruptcy_Dismiss_Txn_Testdata status=SUCCESS method=QCStore.RQC_Bankruptcy_Dismiss_Txn_Testdata()[pri:3, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-29T13:30:36Z" finished-at="2019-03-29T13:30:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-29T13:30:36Z" finished-at="2019-03-29T13:30:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="RQC_Default_Refinance_Txn_Testdata()[pri:4, instance:tests.QCStore@5f9d02cb]" name="RQC_Default_Refinance_Txn_Testdata" duration-ms="1010227" started-at="2019-03-29T13:30:41Z" finished-at="2019-03-29T13:47:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RQC_Default_Refinance_Txn_Testdata -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-29T13:47:32Z" finished-at="2019-03-29T13:47:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="48" started-at="2019-03-29T13:47:32Z" finished-at="2019-03-29T13:47:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RQC_Default_Refinance_Txn_Testdata status=SUCCESS method=QCStore.RQC_Default_Refinance_Txn_Testdata()[pri:4, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-29T13:47:32Z" finished-at="2019-03-29T13:47:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="RQC_DefaultPayment_Txn_Testdata()[pri:5, instance:tests.QCStore@5f9d02cb]" name="RQC_DefaultPayment_Txn_Testdata" duration-ms="1091633" started-at="2019-03-29T13:47:37Z" finished-at="2019-03-29T14:05:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RQC_DefaultPayment_Txn_Testdata -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-29T14:05:48Z" finished-at="2019-03-29T14:05:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="52" started-at="2019-03-29T14:05:48Z" finished-at="2019-03-29T14:05:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RQC_DefaultPayment_Txn_Testdata status=SUCCESS method=QCStore.RQC_DefaultPayment_Txn_Testdata()[pri:5, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-29T14:05:48Z" finished-at="2019-03-29T14:05:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="RQC_DefaultPayment_Void_Txn_Testdata()[pri:6, instance:tests.QCStore@5f9d02cb]" name="RQC_DefaultPayment_Void_Txn_Testdata" duration-ms="1199321" started-at="2019-03-29T14:05:53Z" finished-at="2019-03-29T14:25:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RQC_DefaultPayment_Void_Txn_Testdata -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-29T14:25:53Z" finished-at="2019-03-29T14:25:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="55" started-at="2019-03-29T14:25:53Z" finished-at="2019-03-29T14:25:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RQC_DefaultPayment_Void_Txn_Testdata status=SUCCESS method=QCStore.RQC_DefaultPayment_Void_Txn_Testdata()[pri:6, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-29T14:25:53Z" finished-at="2019-03-29T14:25:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="RQC_WriteOffRecovery_Txn_Testdata()[pri:7, instance:tests.QCStore@5f9d02cb]" name="RQC_WriteOffRecovery_Txn_Testdata" duration-ms="894085" started-at="2019-03-29T14:25:58Z" finished-at="2019-03-29T14:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RQC_WriteOffRecovery_Txn_Testdata -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="1" started-at="2019-03-29T14:40:52Z" finished-at="2019-03-29T14:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="57" started-at="2019-03-29T14:40:52Z" finished-at="2019-03-29T14:40:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RQC_WriteOffRecovery_Txn_Testdata status=SUCCESS method=QCStore.RQC_WriteOffRecovery_Txn_Testdata()[pri:7, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-29T14:40:52Z" finished-at="2019-03-29T14:40:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="RQC_WriteOffRecovery_Void_Txn_Testdata()[pri:8, instance:tests.QCStore@5f9d02cb]" name="RQC_WriteOffRecovery_Void_Txn_Testdata" duration-ms="909555" started-at="2019-03-29T14:40:57Z" finished-at="2019-03-29T14:56:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RQC_WriteOffRecovery_Void_Txn_Testdata -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-23T18:11:36Z" finished-at="2019-03-23T18:11:36Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="1" started-at="2019-03-29T14:56:06Z" finished-at="2019-03-29T14:56:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="219" started-at="2019-03-23T18:11:36Z" finished-at="2019-03-23T18:11:36Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="57" started-at="2019-03-29T14:56:06Z" finished-at="2019-03-29T14:56:07Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=RQC_WriteOffRecovery_Void_Txn_Testdata status=SUCCESS method=QCStore.RQC_WriteOffRecovery_Void_Txn_Testdata()[pri:8, instance:tests.QCStore@527740a2] output={null}]]]>
->>>>>>> Ratikanta1.1
+                <![CDATA[[TestResult name=RQC_WriteOffRecovery_Void_Txn_Testdata status=SUCCESS method=QCStore.RQC_WriteOffRecovery_Void_Txn_Testdata()[pri:8, instance:tests.QCStore@5f9d02cb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-21T07:39:13Z" finished-at="2019-03-21T07:39:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-=======
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-03-23T18:11:36Z" finished-at="2019-03-23T18:11:41Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-03-29T14:56:07Z" finished-at="2019-03-29T14:56:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="RQC_Default_TLPConversion_Txn_Testdata()[pri:9, instance:tests.QCStore@527740a2]" name="RQC_Default_TLPConversion_Txn_Testdata" duration-ms="1407744" started-at="2019-03-23T18:11:41Z" finished-at="2019-03-23T18:35:09Z">
+        <test-method status="PASS" signature="RQC_Default_TLPConversion_Txn_Testdata()[pri:9, instance:tests.QCStore@5f9d02cb]" name="RQC_Default_TLPConversion_Txn_Testdata" duration-ms="1145315" started-at="2019-03-29T14:56:12Z" finished-at="2019-03-29T15:15:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RQC_Default_TLPConversion_Txn_Testdata -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-23T18:35:09Z" finished-at="2019-03-23T18:35:09Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="1" started-at="2019-03-29T15:15:17Z" finished-at="2019-03-29T15:15:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="603" started-at="2019-03-23T18:35:09Z" finished-at="2019-03-23T18:35:10Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="63" started-at="2019-03-29T15:15:17Z" finished-at="2019-03-29T15:15:17Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=RQC_Default_TLPConversion_Txn_Testdata status=SUCCESS method=QCStore.RQC_Default_TLPConversion_Txn_Testdata()[pri:9, instance:tests.QCStore@527740a2] output={null}]]]>
+                <![CDATA[[TestResult name=RQC_Default_TLPConversion_Txn_Testdata status=SUCCESS method=QCStore.RQC_Default_TLPConversion_Txn_Testdata()[pri:9, instance:tests.QCStore@5f9d02cb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
->>>>>>> Ratikanta1.1
       </class> <!-- tests.QCStore -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
