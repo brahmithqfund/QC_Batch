@@ -1,19 +1,11 @@
-<<<<<<< HEAD
-#Mon Mar 25 11:42:04 IST 2019
+#Tue Apr 02 14:26:18 IST 2019
 vl=How many times the 'Finish' button pressed during the day
 l=Wizard class name
 ct=jbt
-d=1553494324051
-=======
-#Mon Mar 25 10:24:13 IST 2019
-vl=How many times the 'Finish' button pressed during the day
-l=Wizard class name
-ct=jbt
-d=1553489653158
->>>>>>> Ratikanta1.1
+d=1554195378658
 c=0
 cmp=usage
 a=finishWizard
 cl=org.eclipse.m2e.core.ui.internal.wizards.MavenImportWizard
 v=2.1.1
-s=0
+s=2
