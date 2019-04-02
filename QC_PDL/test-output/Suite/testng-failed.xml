@@ -5,10 +5,16 @@
     <groups>
       <run>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <include name="Janaki"/>
 =======
         <include name="Anoop"/>
 >>>>>>> anoop1.1
+=======
+        <include name="1stBatch"/>
+        <include name="Rebate"/>
+        <include name="EOD1"/>
+>>>>>>> brahmith1.1
       </run>
     </groups>
     <classes>
@@ -16,6 +22,7 @@
         <methods>
 <<<<<<< HEAD
           <include name="getResult"/>
+          <include name="QC_Refinance_StepDownURP_Txn"/>
           <include name="setup"/>
           <include name="JQC_AgeStore_Deposit_Return_Refinance_Void_Txn"/>
 =======

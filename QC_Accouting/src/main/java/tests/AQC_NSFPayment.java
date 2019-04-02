@@ -68,8 +68,7 @@ public class AQC_NSFPayment extends QCStore{
 					test.log(LogStatus.PASS, "Click on GO Button under loan section");
 					Thread.sleep(4000);
 					
-					  loan_nbr= driver.findElement(locator(Aprop.getProperty("csr_loan_nbr"))).getText();
-					  test.log(LogStatus.PASS, "Loan Number is" + loan_nbr);
+					 
 					driver.findElement(By.name("transactionList")).sendKeys(TxnType);
 					test.log(LogStatus.PASS, "Transaction Type is selected as :"+TxnType);
 
@@ -82,6 +81,8 @@ public class AQC_NSFPayment extends QCStore{
 
 
 					String tenderamunt=driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr/td[2]/table/tbody/tr[7]/td[1]/table[2]/tbody/tr[1]/td/table/tbody/tr[1]/td[3]/input")).getAttribute("value");
+					
+					
 					test.log(LogStatus.PASS, " payment amount is"+tenderamunt);
 
 					driver.findElement(By.name("transactionDataBean.tenderTypeFirst")).sendKeys(TenderType);

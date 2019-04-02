@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <include name="Ratikanta_ILP"/>
 =======
 <<<<<<< HEAD
@@ -33,11 +34,15 @@
 =======
         <include name="Anoop"/>
 >>>>>>> anoop1.1
+=======
+        <include name="Brahmith"/>
+>>>>>>> brahmith1.1
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -51,8 +56,12 @@
           <include name="getResult"/>
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> brahmith1.1
           <include name="QC_ILP_Refinanace_Txn"/>
+          <include name="QC_Installmentpayment_Void_Txn"/>
           <include name="getResult"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> brahmith1.1
@@ -84,6 +93,8 @@
           <include name="JQC_ILP_GraceDays_Deposit_dropdown_Txn"/>
 =======
           <include name="getResult"/>
+=======
+>>>>>>> brahmith1.1
           <include name="setup"/>
           <include name="ILP_ACHAutoClear"/>
           <include name="ILP_voidRefinance"/>

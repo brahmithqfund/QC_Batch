@@ -193,7 +193,7 @@ public class QCStore {
 
 	// Brahmith Transactions
 
-	@Test(priority = 4, groups = "Brahmith1")
+	@Test(priority = 4, groups = "Brahmith")
 
 	public static void QC_NewLoan_Promotion_Txn() throws Exception {
 		try {

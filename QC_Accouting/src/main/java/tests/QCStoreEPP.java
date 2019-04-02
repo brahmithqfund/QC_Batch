@@ -54,7 +54,7 @@ public class QCStoreEPP extends QCStore {
 					String RegSSN = TestData.getCellData(sheetName, "SSN", row);
 					String TenderType = TestData.getCellData(sheetName, "TenderType", row);
 					String Income_PayFrequency = TestData.getCellData(sheetName, "Income_PayFrequency", row);
-					String ChkAcctNumber = TestData.getCellData(sheetName, "ChkAcctNumber", row);
+					String ChkAcctNumber = SSN.substring(SSN.length() - 4);  
 					String PIN = TestData.getCellData(sheetName, "PIN", row);
 					if (SSN.equals(RegSSN)) {
 						State = TestData.getCellData(sheetName, "StateID", row);

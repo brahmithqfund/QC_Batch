@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testsuite hostname="QTLSYS2-238" ignored="54" name="Test" tests="1" failures="0" timestamp="21 Mar 2019 13:15:23 GMT" time="141.42" errors="0">
   <testcase name="QC_NewLoan_Promotion_Txn" time="136.028" classname="tests.QCStore"/>
 =======
@@ -14,6 +15,10 @@
 <testsuite hostname="QTLSYS1-182" ignored="54" name="Test" tests="1" failures="0" timestamp="27 Mar 2019 05:33:16 GMT" time="81.694" errors="0">
   <testcase name="JQC_ILP_GraceDays_Deposit_EOD_Txn" time="76.374" classname="tests.QCStore"/>
 >>>>>>> janaki1.2
+=======
+<testsuite hostname="QTLSYS2-238" ignored="54" name="Test" tests="1" failures="0" timestamp="26 Mar 2019 13:11:18 GMT" time="665.366" errors="0">
+  <testcase name="QC_Installmentpayment_Void_Txn" time="659.943" classname="tests.QCStore"/>
+>>>>>>> brahmith1.1
   <testcase name="QC_PayAnyotherAmount_Void_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- QC_PayAnyotherAmount_Void_Txn -->
@@ -59,9 +64,6 @@
   <testcase name="QC_ILP_NewLoanInstallmentDeposit_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- QC_ILP_NewLoanInstallmentDeposit_Txn -->
-  <testcase name="QC_Installmentpayment_Void_Txn" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- QC_Installmentpayment_Void_Txn -->
   <testcase name="RQC_DefaultPayment_Void_Txn_Testdata" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- RQC_DefaultPayment_Void_Txn_Testdata -->

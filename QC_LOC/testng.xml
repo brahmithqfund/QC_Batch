@@ -6,9 +6,7 @@
   <run>
 
   <!--  Brahmith scenarios   -->  
-
     <include name="EOD"/>  
-
    <include name="EOD2"/>
  <!-- <include name="1st Batch"/>-->
 
@@ -28,8 +26,7 @@
 
       <include name="Anoop_EOD3"/>
 
-    <!--  Rati scenarios   -->  
-
+    <!--  Rati scenarios   -->
     <!-- <include name="Ratikanta_NEOD"/> -->
       <!-- <include name="Ratikanta_EOD"/>-->
   <!--  Shashi scenarios  -->

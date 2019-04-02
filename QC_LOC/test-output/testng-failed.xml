@@ -7,6 +7,7 @@
       <run>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <include name="Jyothi"/>
 =======
 <<<<<<< HEAD
@@ -39,6 +40,10 @@
 =======
         <include name="Anoop_EOD4"/>
 >>>>>>> anoop1.1
+=======
+        <include name="EOD"/>
+        <include name="EOD2"/>
+>>>>>>> brahmith1.1
       </run>
     </groups>
 =======
@@ -48,6 +53,7 @@
     <classes>
       <class name="tests.QCStore">
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
           <include name="getResult"/>
@@ -95,8 +101,12 @@
 =======
 =======
 >>>>>>> anoop1.1
+=======
+>>>>>>> brahmith1.1
           <include name="getResult"/>
+          <include name="LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn"/>
           <include name="setup"/>
+<<<<<<< HEAD
           <include name="PaymentDepositEODReDeposit"/>
           <include name="killProcess"/>
 <<<<<<< HEAD
@@ -143,6 +153,10 @@
 >>>>>>> janaki1.2
 =======
 >>>>>>> anoop1.1
+=======
+          <include name="LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn"/>
+          <include name="killProcess"/>
+>>>>>>> brahmith1.1
         </methods>
       </class> <!-- tests.QCStore -->
     </classes>
