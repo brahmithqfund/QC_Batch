@@ -112,7 +112,7 @@ public class JQCAgeStoreGraceDays extends QCStore{
 								    //NextDueDate= driver.findElement(locator(Jprop.getProperty("csr_due_date"))).getText();
 									NextDueDate=driver.findElement(By.xpath("//*[@id='all']/div[1]/table[1]/tbody/tr[3]/td[5]")).getText();
 							        test.log(LogStatus.PASS, "Next due date is "+NextDueDate);
-							        Thread.sleep(7000);
+							        Thread.sleep(5000);
 							        driver.close();
 									break;
 									}
@@ -125,6 +125,7 @@ public class JQCAgeStoreGraceDays extends QCStore{
 									driver.switchTo().defaultContent();
 								    driver.switchTo().frame("mainFrame");
 								    driver.switchTo().frame("main");	
+								    Thread.sleep(2000);
 							    driver.findElement(By.name("button")).click();
 								test.log(LogStatus.PASS, "Clicked on GO Button under Search results");
 								// driver.findElement(By.name("button")).click();

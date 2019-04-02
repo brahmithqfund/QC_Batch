@@ -204,9 +204,10 @@ public class RQCCSRNewLoan2 extends QCStore {
 							driver.switchTo().defaultContent();
 							driver.switchTo().frame("mainFrame");
 							driver.switchTo().frame("main");
+							Thread.sleep(3000);
 							driver.findElement(locator(Rprop.getProperty("csr_new_loan_go_button"))).click();
 							test.log(LogStatus.PASS, "Clicked on GO Button");
-
+                             Thread.sleep(5000);
 							for (String winHandle1 : driver.getWindowHandles()) {
 								driver.switchTo().window(winHandle1);
 							}
@@ -215,6 +216,7 @@ public class RQCCSRNewLoan2 extends QCStore {
 							driver.switchTo().frame("main");
 							// Selection of Product based on the Name provided
 							// in Test Data
+							Thread.sleep(1000);
 							if (driver.findElement(By.id("LoanButtonId")).isEnabled()) {
 
 								WebElement htmltable = driver.findElement(By.xpath(
@@ -1812,6 +1814,7 @@ public class RQCCSRNewLoan2 extends QCStore {
 			driver.findElement(By.name("finishLoan")).click();
 
 			test.log(LogStatus.PASS, "click on Finish Loan button ");
+			Thread.sleep(8000);
 			try {
 				Alert alert = driver.switchTo().alert();
 				alert.accept();

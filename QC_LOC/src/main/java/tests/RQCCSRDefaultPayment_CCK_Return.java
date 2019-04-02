@@ -155,7 +155,9 @@ public class RQCCSRDefaultPayment_CCK_Return extends QCStore {
 
 		catch (Exception e) {
 			// TODO Auto-generated catch block
+			Assert.assertTrue(false);
 			e.printStackTrace();
+			
 			//test.log(LogStatus.FAIL, "Default Payment is failed");
 
 		}

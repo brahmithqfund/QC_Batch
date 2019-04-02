@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 #Tue Apr 02 14:23:46 IST 2019
 vl=How many times the 'Finish' button pressed during the day
 l=Wizard class name
 ct=jbt
 d=1554195226800
+=======
+#Tue Apr 02 12:45:32 IST 2019
+vl=How many times the 'Finish' button pressed during the day
+l=Wizard class name
+ct=jbt
+d=1554189332388
+>>>>>>> Ratikanta1.1
 c=0
 cmp=usage
 a=finishWizard

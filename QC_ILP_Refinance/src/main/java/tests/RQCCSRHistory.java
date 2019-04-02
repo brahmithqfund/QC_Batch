@@ -41,7 +41,7 @@ public class RQCCSRHistory extends QCStore{
 			String sheetName="Borrower_Registration";
 			String sheetName_calc="HistoryFieldsValidation";
 			String sheetName_new_loan="New_Loan";
-			
+			String sheetName_History="History" ;
 
 			for(int row=2;row<=lastrow;row++)
 			{	
@@ -54,7 +54,7 @@ public class RQCCSRHistory extends QCStore{
 			        String StoreId = TestData.getCellData(sheetName,"StoreID",row);
 			        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
 			        String StateID = TestData.getCellData(sheetName,"StateID",row);
-			        String Income_PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
+			        String Income_PayFrequency = TestData.getCellData(sheetName_History,"Income_PayFrequency",row);
 			        String Header = StateID+ "_" + ProductID;	      
 			        String columnname=StateID+"_"+ ProductID+"_"+Income_PayFrequency;                                //column name
 			        System.out.println(columnname);
