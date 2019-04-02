@@ -97,7 +97,7 @@ public class JQCAgeStoreGraceDays extends QCStore{
 							    driver.switchTo().frame("main");
 			//==============================================================				    
 							    String mainwindow=driver.getWindowHandle();
-							    Thread.sleep(5000);
+							    Thread.sleep(8000);
 							    driver.findElement(By.xpath("/html/body/table/tbody/tr[1]/td[1]/table[2]/tbody/tr[2]/td/table/tbody/tr[2]/td[2]/a")).click();
 							    test.log(LogStatus.PASS, "Clicked on Customer number link");
 							    for(String winHandle : driver.getWindowHandles()){
@@ -112,6 +112,7 @@ public class JQCAgeStoreGraceDays extends QCStore{
 								    //NextDueDate= driver.findElement(locator(Jprop.getProperty("csr_due_date"))).getText();
 									NextDueDate=driver.findElement(By.xpath("//*[@id='all']/div[1]/table[1]/tbody/tr[3]/td[5]")).getText();
 							        test.log(LogStatus.PASS, "Next due date is "+NextDueDate);
+							        Thread.sleep(7000);
 							        driver.close();
 									break;
 									}

@@ -74,7 +74,7 @@ public class QCAgeStoreGraceDays extends QCStore {
 							driver.findElement(By.cssSelector("li[id='911101']")).click();
 							test.log(LogStatus.PASS, "Clicked on Transactions");
 						} catch (Exception e) {
-							driver.get("https://qcuat.qfund.net/cc/login/index.jsp");
+							driver.get("http://192.168.2.203/cc/demoIndex.do");
 							driver.switchTo().defaultContent();
 
 							wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("topFrame")));
@@ -106,6 +106,7 @@ public class QCAgeStoreGraceDays extends QCStore {
 						driver.switchTo().frame("main");
 
 						String mainwindow = driver.getWindowHandle();
+						Thread.sleep(1000);
 						driver.findElement(By
 								.xpath("/html/body/table/tbody/tr[1]/td[1]/table[2]/tbody/tr[2]/td/table/tbody/tr[2]/td[2]/a"))
 								.click();
@@ -140,7 +141,8 @@ public class QCAgeStoreGraceDays extends QCStore {
 							driver.findElement(By.xpath("//*[@id='988190657']/a")).click();
 							test.log(LogStatus.PASS, "Clicked on Start Scheduler");
 						} catch (Exception e) {
-							driver.get("https://qcuat.qfund.net/cc/login/index.jsp");
+							//driver.get("https://qcuat.qfund.net/cc/login/index.jsp");
+							driver.get("http://192.168.2.203/cc/demoIndex.do");
 
 							driver.switchTo().defaultContent();
 							driver.switchTo().frame("topFrame");
@@ -233,7 +235,7 @@ public class QCAgeStoreGraceDays extends QCStore {
 				test.log(LogStatus.INFO, " " + e);
 				test.log(LogStatus.INFO,
 						"Age store Grace days process is initiated again due to Application sync issue");
-				driver.get("https://qcuat.qfund.net/cc/login/index.jsp");
+				driver.get("http://192.168.2.203/cc/demoIndex.do");
 				continue;
 
 			}
@@ -375,7 +377,7 @@ public class QCAgeStoreGraceDays extends QCStore {
 							driver.findElement(By.xpath("//*[@id='988190657']/a")).click();
 							test.log(LogStatus.PASS, "Clicked on Start Scheduler");
 						} catch (Exception e) {
-							driver.get("https://qcuat.qfund.net/cc/login/index.jsp");
+							driver.get("http://192.168.2.203/cc/demoIndex.do");
 							driver.switchTo().defaultContent();
 							driver.switchTo().frame("topFrame");
 							driver.findElement(By.xpath("//*[@id='930000']/a")).click();

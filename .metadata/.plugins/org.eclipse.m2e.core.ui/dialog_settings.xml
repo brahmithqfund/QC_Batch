@@ -14,7 +14,11 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+<<<<<<< HEAD
 			<item value="C:\QC_Batch\QC_Accouting"/>
+=======
+			<item value="C:\QC_Batch\QC_ILP_Refinance"/>
+>>>>>>> Ratikanta1.1
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

@@ -35,8 +35,8 @@ public class VQCCSRReturnPosting extends QCStore {
 					String AdminPassword = TestData.getCellData(sheetName, "AdminPassword", row);
 					String AdminURL = TestData.getCellData(sheetName, "AdminURL", row);
 					String PIN = TestData.getCellData(sheetName, "PIN", row);
-					String StoreID = vstoreid;
-					//String StoreID = TestData.getCellData(sheetName, "StoreID", row);
+					//String StoreID = vstoreid;
+					String StoreID = TestData.getCellData(sheetName, "StoreID", row);
 					String ReasonForReturn = TestData.getCellData(sheetName, "ReasonForReturn", row);
 					String Esign_CollateralType = TestData.getCellData(sheetName, "Esign_CollateralType", row);
 
@@ -68,16 +68,31 @@ public class VQCCSRReturnPosting extends QCStore {
 
 					test.log(LogStatus.PASS, "Clicked on Submit button");
 
-					Thread.sleep(1000);
+					/*Thread.sleep(1000);
+
+					driver.switchTo().defaultContent();
+
+					driver.switchTo().frame("topFrame");
+					
+					Thread.sleep(3000);
+					driver.findElement(By.xpath("//*[@id='500000']/a")).click();
+					
+					//driver.findElement(By.linkText("Transactions")).click();
+					test.log(LogStatus.PASS, "Clicked on Transaction tab");
+
+					Thread.sleep(1000);*/
+					
+					Thread.sleep(3000);
+
 
 					driver.switchTo().defaultContent();
 
 					driver.switchTo().frame("topFrame");
 
-					driver.findElement(By.xpath("//*[@id='500000']/a")).click();
-
+					driver.findElement(By.xpath("//*[@id='500000']/a")).click(); 
+					Thread.sleep(3000);
 					test.log(LogStatus.PASS, "Clicked on Transaction tab");
-
+					
 					Thread.sleep(1000);
 
 					// .....................Colateral
@@ -168,28 +183,34 @@ public class VQCCSRReturnPosting extends QCStore {
 						driver.close();
 
 					}
-					if (Esign_CollateralType.equalsIgnoreCase("ACH")) {
+					if(Esign_CollateralType.equalsIgnoreCase("ACH"))
+					{
 						driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 
 						driver.switchTo().defaultContent();
 
 						driver.switchTo().frame("mainFrame");
 
+						
 						Thread.sleep(5000);
-
+					
+							
+						
 						driver.findElement(By.linkText("ACH")).click();
 
 						test.log(LogStatus.PASS, "Clicked on ACH link");
 						Thread.sleep(5000);
-
+						
+						//Thread.sleep(5000);
+						
 						driver.findElement(By.linkText("LOC")).click();
 
 						test.log(LogStatus.PASS, "Clicked on LOC");
-
+						
 						Thread.sleep(5000);
 						
 
-						Thread.sleep(500);
+						//Thread.sleep(5000);
 
 						driver.findElement(By.linkText("ACH Processing(NACHA))")).click();
 						// driver.findElement(By.xpath("//*[@id='503019']/a")).click();
@@ -236,7 +257,7 @@ public class VQCCSRReturnPosting extends QCStore {
 						driver.switchTo().defaultContent();
 						driver.switchTo().frame("mainFrame");
 						driver.switchTo().frame("main");
-						   //business_date="12/10/2018";
+						   //business_date="10/10/2018";
 						String App_date[] = business_date.split("/");
 						System.out.println("business_date");
 

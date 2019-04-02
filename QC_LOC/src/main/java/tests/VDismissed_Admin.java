@@ -136,7 +136,7 @@ public class VDismissed_Admin extends QCStore{
 	driver.switchTo().defaultContent();
 
 	driver.switchTo().frame("mainFrame");
-	Thread.sleep(5000);
+	Thread.sleep(7000);
 	driver.findElement(By.linkText("Bankrupt/Deceased Suite")).click();
 
 	test.log(LogStatus.PASS, "Clicked on Bankrupt");
@@ -269,7 +269,7 @@ public class VDismissed_Admin extends QCStore{
 	
 	test.log(LogStatus.PASS, "PP1 is entered: "+AttorneyP3);*/
 	
-	Thread.sleep(500);
+	Thread.sleep(5000);
 	
 	driver.findElement(By.name("bt_AddBankruptcy")).click();
 	

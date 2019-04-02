@@ -5,6 +5,9 @@
     <groups>
       <run>
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
         <include name="Ratikanta_ILP"/>
 =======
 <<<<<<< HEAD
@@ -17,6 +20,15 @@
         <include name="Jyothi"/>
 >>>>>>> jyothi1.2
 >>>>>>> 26f8126931b7afc696e5ebd31895ac4dfa2dd77b
+=======
+        <include name="Anoop"/>
+>>>>>>> janaki1.2
+=======
+        <include name="Ratikanta_ILP"/>
+>>>>>>> Ratikanta1.1
+=======
+        <include name="Janaki"/>
+>>>>>>> janaki1.2
       </run>
     </groups>
     <classes>
@@ -24,9 +36,12 @@
         <methods>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
           <include name="RQC_WriteOffRecovery_Txn_Testdata"/>
           <include name="RQC_WriteOffRecovery_Void_Txn_Testdata"/>
           <include name="getResult"/>
+<<<<<<< HEAD
 =======
           <include name="getResult"/>
 <<<<<<< HEAD
@@ -49,8 +64,21 @@
 =======
 >>>>>>> master
 >>>>>>> brahmith1.1
+=======
+>>>>>>> janaki1.2
+=======
+          <include name="RQC_WriteOffRecovery_Void_Txn_Testdata"/>
+          <include name="getResult"/>
+>>>>>>> Ratikanta1.1
+=======
+          <include name="JQC_ILP_Deposit_MidDay_Txn"/>
+          <include name="getResult"/>
+>>>>>>> janaki1.2
           <include name="setup"/>
+          <include name="JQC_ILP_GraceDays_Deposit_MidDay_Txn"/>
+          <include name="JQC_ILP_GraceDays_Deposit_dropdown_Txn"/>
           <include name="endReport"/>
+          <include name="JQC_ILP_SignaturLoan_Default_Txn"/>
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->

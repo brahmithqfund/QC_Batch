@@ -3,6 +3,7 @@ P
  src/test/java/tests/QCStore.java,f\1\f1f5f4816296e60d7232d0a00b509d48935fb3a4
 W
 'src/test/java/tests/JObjects.properties,8\0\80cc7a1d4a27a98d5470617f02e4ff852bf81b78
+<<<<<<< HEAD
 r
 BBTestData/QCStore/ILP_Weekly/QC_InstallPayment_Ref_Rescind_Txn.xls,9\c\9cee6bab29ea38c5c515948c7a2349ffb3b04558
 m
@@ -208,3 +209,9 @@ Z
 +test-output/Default suite/Default test.html,e\e\ee618e2e5aa3d207f69c99fec27e84c075d26e49
 K
 test-output/Suite/Test.html,3\1\31357fe46d2999309ea0de9218937ca607062cde
+=======
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+V
+&src/main/java/tests/JQCCSRNewLoan.java,1\a\1aa8fbe8259dfe5d3904a554715ed22b6115521f
+>>>>>>> e31ec4bf2072503baf9571ae62c26eb70ecba25b

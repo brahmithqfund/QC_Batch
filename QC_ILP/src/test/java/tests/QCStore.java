@@ -1592,6 +1592,27 @@ public class QCStore {
 					JQCCSRLoginLogout.logout(SSN, AppURL);
 					JQCCSRLoginLogout.login(SSN, AppURL);
 					JQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
+					JQCCSRLoginLogout.login(SSN, AppURL);
+					JQC_Payment.payment(SSN, AppURL);
+					JQCCSRLoginLogout.logout(SSN, AppURL);
+					JQCCSRLoginLogout.login(SSN, AppURL);
+					JQCCSRNewLoan2.newLoan2(SSN, AppURL);
+					JQCCSRLoginLogout.logout(SSN, AppURL);
+					JQCCSRLoginLogout.login(SSN, AppURL);
+					JQCAgeStoreGraceDays.ageStoreGraceDays2ndTime(SSN, AppURL);
+					JQCCSRLoginLogout.login(SSN, AppURL);
+					JQC_Payment.payment1(SSN, AppURL);
+					JQCCSRLoginLogout.logout(SSN, AppURL);
+					JQCCSRLoginLogout.login(SSN, AppURL);
+					JQCAgeStoreGraceDays.ageStoreGraceDays3rdTime(SSN, AppURL);
+					JQCCSRLoginLogout.login(SSN, AppURL);
+					JQC_Payment.payment2(SSN, AppURL);
+					JQCCSRLoginLogout.logout(SSN, AppURL);
+					JQCCSRLoginLogout.login(SSN, AppURL);
+					JQCAgeStoreGraceDays.ageStoreGraceDays4thTime(SSN, AppURL);
+					/*JQCCSRLoginLogout.login(SSN, AppURL);
+					JQC_Payment.payment2(SSN, AppURL);
+					JQCCSRLoginLogout.logout(SSN, AppURL);*/
 
 				}
 			}
@@ -1601,7 +1622,7 @@ public class QCStore {
 			System.out.println("under catch of Test" + e);
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario 11 JQC_ILP_Deposit_dropdown_Txn ");
+			test.log(LogStatus.ERROR, "Unable to start JQC_ILP_Payment_Refinance_StepUp_Txn ");
 
 		}
 	}
@@ -1736,7 +1757,7 @@ public class QCStore {
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 					System.out.println(AppURL);
 
-					JQCCSRLoginLogout.login(SSN, AppURL);
+					/*JQCCSRLoginLogout.login(SSN, AppURL);
 					JQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					JQCCSRLoginLogout.logout(SSN, AppURL);
 					JQCCSRLoginLogout.login(SSN, AppURL);
@@ -1753,7 +1774,7 @@ public class QCStore {
 					JQCAdminLoginLogout.logout(SSN, AppURL);
 					JQCCSRLoginLogout.login(SSN, AppURL);
 					JQCSafeAssign.safeAssign(SSN, AppURL);
-					JQCCSRLoginLogout.logout(SSN, AppURL);
+					JQCCSRLoginLogout.logout(SSN, AppURL);*/
 					JQCCSRLoginLogout.login(SSN, AppURL);
 					JQCDrawerAssign.drawerAssign(SSN, AppURL);
 					JQCCSRLoginLogout.logout(SSN, AppURL);
@@ -1959,7 +1980,7 @@ public class QCStore {
 		}
 	}
 
-	 @Test(priority = 3, groups = "Ratikanta_ILP")
+	  @Test(priority = 3, groups = "Ratikanta_ILP")
 	public static void RQC_Bankruptcy_Dismiss_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_Bankruptcy_Dismiss"),
@@ -2159,7 +2180,7 @@ public class QCStore {
 		}
 	}
 
-	 @Test(priority = 6, groups = "Ratikanta_ILP")
+  @Test(priority = 6, groups = "Ratikanta_ILP")
 	public static void RQC_DefaultPayment_Void_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_DefaultPayment_Void"),
@@ -2291,7 +2312,7 @@ public class QCStore {
 		}
 	}
 
-	 @Test(priority = 8, groups = "Ratikanta_ILP")
+	@Test(priority = 8, groups = "Ratikanta_ILP")
 	public static void RQC_WriteOffRecovery_Void_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_WriteOffRecovery_Void"),
@@ -2422,106 +2443,8 @@ public class QCStore {
 		}
 	}
 
-	 @Test(priority = 10, groups = "Ratikanta_ILP")
-		public static void RQC_3Payments_Refinance_StepUp_Txn_Testdata() throws Exception {
-			try {
-				test = reports.startTest(("QC_3Payments_Refinance_StepUp"),
+	
 
-						"Login->Borrower Registration->New Loan->Payment-->Refinance");
-				String FileName = "QC_3Payments_Refinance_StepUp_Txn_Testdata.xls";
-				// String FileName=
-				// Rprop.getProperty("QC_DefaultPayment_Txn_Testdata_Scenario")+".xls";
-				// ExcelNew TestData;
-				TestData = new ExcelNew(System.getProperty("user.dir")
-						+ Rprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
-
-				// test=reports.startTest("Lend Nation Smoke_testing","Lend Nation
-				// Application test report");
-
-				// String FileName= "Registration_Lend_Nation.xls";
-				// Excel TestData = new
-				// ExcelNew(System.getProperty("user.dir")+"/TestData/LendNation/"+FileName);
-				// int lastrow=TestData.getLastRow("Start");
-				int lastrow = TestData.getLastRow("Start");
-				String sheetName = "Start";
-				// int lastrow=TestData.getLastRow("Borrower");
-				System.out.println(lastrow);
-				for (int row = 2; row <= lastrow; row++) {
-
-					String RunFlag = TestData.getCellData(sheetName, "Run", row);
-					// System.out.println(RunFlag);
-					if (RunFlag.equals("Y")) {
-						// driver.get(appUrl);
-						// test.log(LogStatus.INFO, "Application is launched");
-						// driver.manage().window().maximize();
-						String AppURL = TestData.getCellData(sheetName, "AppURL", row);
-						String SSN = TestData.getCellData(sheetName, "SSN", row);
-
-						System.out.println(AppURL);
-
-						RQCCSRLoginLogout.login(SSN, AppURL);
-						RQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
-						RQCCSRLoginLogout.logout(SSN, AppURL);
-						
-						RQCCSRLoginLogout.login(SSN, AppURL);
-						RQCCSRNewLoan.newLoan(SSN, AppURL);
-						RQCCSRLoginLogout.logout(SSN, AppURL);
-						
-						RQCCSRLoginLogout.login(SSN, AppURL);
-						RQCAgeStoreGraceDays.ageStoreGraceDays(SSN, AppURL);
-						
-						RQCCSRLoginLogout.login(SSN, AppURL);
-						RQCPayment.payment(SSN, AppURL);
-						RQCCSRLoginLogout.logout(SSN, AppURL);
-						
-						RQCCSRLoginLogout.login(SSN, AppURL);
-						RQCCSRNewLoan2.newLoan2(SSN, AppURL);
-						RQCCSRLoginLogout.logout(SSN, AppURL);
-						
-						RQCCSRLoginLogout.login(SSN, AppURL);
-						RQCAgeStoreGraceDays.ageStoreGraceDays2ndTime(SSN, AppURL);
-						
-						RQCCSRLoginLogout.login(SSN, AppURL);
-						RQCPayment.payment1(SSN, AppURL);
-						RQCCSRLoginLogout.logout(SSN, AppURL);
-						
-						RQCCSRLoginLogout.login(SSN, AppURL);
-						RQCAgeStoreGraceDays.ageStoreGraceDays3rdTime(SSN, AppURL);
-						
-						RQCCSRLoginLogout.login(SSN, AppURL);
-						RQCPayment.payment2(SSN, AppURL);
-						RQCCSRLoginLogout.logout(SSN, AppURL);
-						
-						RQCCSRLoginLogout.login(SSN, AppURL);
-						RQCAgeStoreGraceDays.ageStoreGraceDays4thTime(SSN, AppURL);
-						
-						RQCCSRLoginLogout.login(SSN, AppURL);
-						RQCPayment.payment3(SSN, AppURL);
-						RQCCSRLoginLogout.logout(SSN, AppURL);
-						
-						RQCCSRLoginLogout.login(SSN, AppURL);
-						QC_Edit_BorrowRegestration.editborrower_saveexit(SSN, AppURL);
-						RQCCSRLoginLogout.logout(SSN, AppURL);
-						
-						/*RQCCSRLoginLogout.login(SSN, AppURL);
-						RQCRefinance.StepUp(SSN, AppURL);
-						RQCCSRLoginLogout.logout(SSN, AppURL);*/
-						
-
-					}
-				}
-			}
-
-			catch (Exception e) {
-				System.out.println("under catch of Test" + e);
-				String screenshotPath = getScreenhot(driver, "RQC_3Payments_Refinance_StepUp_Txn");
-				test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
-				test.log(LogStatus.ERROR, "Unable to start scenarios ");
-
-			}
-		}	 
-	 
-	 
 //============================================================================================================
 	// Anoop Transactions
 
@@ -3273,7 +3196,7 @@ public class QCStore {
 		}
 	}
 	
-	@Test(priority = 1, enabled = true, groups = "Jyothi")
+	/*@Test(priority = 1, enabled = true, groups = "Jyothi")
 
 	public void ILP_InstallmentStepup() throws Exception {
 
@@ -3304,7 +3227,7 @@ public class QCStore {
 				JQCCSRLoginLogout.logout(SSN, AppURL);
 				JQCCSRLoginLogout.login(SSN, AppURL);
 				
-				/*VQC_Payment.payment(SSN, AppURL);
+				VQC_Payment.payment(SSN, AppURL);
 				JQCCSRLoginLogout.logout(SSN, AppURL);
 				JQCCSRLoginLogout.login(SSN, AppURL);
 				VQCCSRNewLoan2.newLoan2(SSN, AppURL);
@@ -3317,15 +3240,15 @@ public class QCStore {
 				JQCCSRLoginLogout.logout(SSN, AppURL);
 				JQCCSRLoginLogout.login(SSN, AppURL);
 				JQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
-				JQCCSRLoginLogout.logout(SSN, AppURL);*/
-			/*	JQCCSRLoginLogout.login(SSN, AppURL);
+				JQCCSRLoginLogout.logout(SSN, AppURL);
+				JQCCSRLoginLogout.login(SSN, AppURL);
 				VQC_Payment.payment2(SSN, AppURL);
-				JQCCSRLoginLogout.logout(SSN, AppURL);*/
+				JQCCSRLoginLogout.logout(SSN, AppURL);
 				
 				
 			}
 		}
-	}
+	}*/
 
 
 	@BeforeClass(alwaysRun = true)
@@ -3393,7 +3316,7 @@ public class QCStore {
 				Rreader.close();
 				csr_url = Rprop.getProperty("CSR_URL");
 				csrloginpage = Rprop.getProperty("Login_Page");
-				AdminURL = Rprop.getProperty("ADMIN_URL");
+				AdminURL = Rprop.getProperty("ADMIN_CSR_URL");
 				String Rfilename = Rprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
 				reports = new ExtentReports(
@@ -3431,9 +3354,9 @@ public class QCStore {
 				Vprop = new Properties();
 				Vprop.load(Vreader);
 				Vreader.close();
-				csr_url = Vprop.getProperty("CSR_URL");
-				csrloginpage = Vprop.getProperty("Login_Page");
-				AdminURL = Vprop.getProperty("ADMIN_URL");
+				//csr_url = Vprop.getProperty("CSR_URL");
+				//csrloginpage = Vprop.getProperty("Login_Page");
+				//AdminURL = Vprop.getProperty("ADMIN_URL");
 				String Vfilename = Vprop.getProperty("QC_Store_extent_report_file_name") + timestamp + ".html";
 
 				reports = new ExtentReports(
