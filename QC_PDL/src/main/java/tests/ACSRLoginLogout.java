@@ -33,6 +33,7 @@ public class ACSRLoginLogout extends QCStore{
 				
 					if(Aprop.getProperty("login_method").equalsIgnoreCase("local"))
 					{
+						
 						driver = new InternetExplorerDriver();
 					}
 					else
@@ -67,7 +68,7 @@ public class ACSRLoginLogout extends QCStore{
 
 					test.log(LogStatus.INFO, "<FONT color=green> Login Sucessfully");
 					test.log(LogStatus.INFO, "******************************************************** ");
-					Thread.sleep(3000);
+					Thread.sleep(5000);
 					break;
 				}	
 

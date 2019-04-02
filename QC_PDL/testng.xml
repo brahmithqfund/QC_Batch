@@ -6,7 +6,7 @@
   <run>
 
     <!-- Janaki's group--> 
-       <include name="Janaki"/>
+      <!--  <include name="Janaki"/> -->
    <!-- <include name="Janaki_WORecovery"/> -->  
    
        <!-- Brahmith group--> 
@@ -15,7 +15,7 @@
   <!--     <include name="Rebate"/>  -->
     <!-- <include name="1stBatch"/> -->   	
  <!-- Anoop group--> 
- <include name="Anoop"/> 
+ <include name="Anoopre"/> 
 
   </run>
 
