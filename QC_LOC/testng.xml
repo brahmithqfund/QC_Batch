@@ -15,7 +15,7 @@
   <!--  Janaki scenarios  -->
  <!-- <include name="Janaki"/>  -->
   <!--  <include name="Janaki1"/>  --> 
-     <include name="Janaki_NEOD"/> 
+  <!--    <include name="Janaki_NEOD"/>  -->
       <!-- <include name="Janaki_EOD"/> --> 
 
 

@@ -118,8 +118,8 @@ public class QCStore {
 
 	private static Object rescind;
 
-	public static String bstoreid="520";
-	public static String busername="csr520";
+	public static String bstoreid="505";
+	public static String busername="csr505";
 	
 	public static String vstoreid="508";
 	public static String vusername="csr508";
@@ -7135,8 +7135,8 @@ public class QCStore {
 
 		try {
 
-			//Runtime.getRuntime().exec("taskkill /IM iexplore.exe /F");
-			//Runtime.getRuntime().exec("taskkill /F /IM IEDriverServer.exe");
+			Runtime.getRuntime().exec("taskkill /IM iexplore.exe /F");
+			Runtime.getRuntime().exec("taskkill /F /IM IEDriverServer.exe");
 
 			Thread.sleep(5000); // Allow OS to kill the process
 			System.out.println("killed the IE process LOC process");
