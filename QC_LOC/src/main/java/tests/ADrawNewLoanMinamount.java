@@ -210,11 +210,11 @@ public static void LOC() throws InterruptedException
 
 	
 	Thread.sleep(5000);
-	
-	e5.sendKeys(MinLOCamount);
+	e5.sendKeys("150");
+	//e5.sendKeys(MinLOCamount);
 	e5.sendKeys(Keys.TAB);
 	Thread.sleep(4000);
-	test.log(LogStatus.PASS, "LOC amount enterd  as "+MinLOCamount);
+	test.log(LogStatus.PASS, "LOC amount enterd  as"+MinLOCamount);
 		Thread.sleep(1000);
 		driver.findElement(By.name("advanceRequestBean.paymentCollateralType")).sendKeys(ESign_CollateralType);
 		test.log(LogStatus.PASS, "Collateral Type is enterted as "+ESign_CollateralType);
@@ -275,8 +275,8 @@ public static void LOC() throws InterruptedException
 
 		if (ESign_CollateralType.equals("ACH"))
 		{
-			driver.findElement(By.name("advanceRequestBean.disbAmtFirst")).sendKeys(MinLOCamount);
-			
+			//driver.findElement(By.name("advanceRequestBean.disbAmtFirst")).sendKeys(MinLOCamount);
+			driver.findElement(By.name("advanceRequestBean.disbAmtFirst")).sendKeys("150");
 			test.log(LogStatus.PASS, "Disb amount enterd  as "+MinLOCamount);
 			
 			driver.findElement(By.name("requestBean.password")).sendKeys(ESign_Password);

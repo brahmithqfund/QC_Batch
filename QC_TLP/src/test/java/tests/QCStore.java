@@ -95,7 +95,7 @@ public class QCStore {
 	public static String appdate;
 	public static String day;
 
-	@Test(priority = 101, groups="Brahmith1")
+	@Test(priority = 101, groups="Brahmith")
 	public static void QC_TLP_NewLoan_Txn() throws Exception {
 		try {
 			// test =
@@ -498,7 +498,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 119, groups = "Brahmith")
+	@Test(priority = 119, groups = "Brahmith1")
 	public static void QC_Installmentpayment_Void_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Installmentpayment_Void_Txn_scenario")),
@@ -559,7 +559,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 120,groups="Brahmith")
+	@Test(priority = 120,groups="Brahmith1")
 	public static void QC_PayAnyotherAmount_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Payanyotheramount_Txn_scenario")),
@@ -617,7 +617,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 121,groups="Brahmith")
+	@Test(priority = 121,groups="Brahmith1")
 	public static void QC_PayAnyotherAmount_Void_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Payanyotheramount_Void_Txn_scenario")),
@@ -677,7 +677,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 131,groups="Brahmith")
+	@Test(priority = 131,groups="Brahmith1")
 	public static void QC_TLP_Writeoff_Recovery_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Writeoff_Recovery_Txn_scenario")),
@@ -739,7 +739,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 132,groups="Brahmith")
+	@Test(priority = 132,groups="Brahmith1")
 	public static void QC_TLP_Writeoff_Recovery_Void_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Writeoff_Recovery_Void_Txn_scenario")),

@@ -74,8 +74,8 @@ public class LOCMaxloanCount extends QCStore{
 	{
 
 		test.log(LogStatus.INFO, "*****Performing  New Loan transaction *****");
-		int lastrow=TestData.getLastRow("NewLoan");
-		String sheetName="NewLoan";
+		int lastrow=TestData.getLastRow("New_Loan");
+		String sheetName="New_Loan";
 
 		for(int row=2;row<=lastrow;row++)
 		{	
@@ -205,7 +205,7 @@ public class LOCMaxloanCount extends QCStore{
 					WebElement e1=driver.findElement(By.id("LoanButtonId"));
 					Actions builder = new Actions(driver);
 					builder.moveToElement(e1).build().perform();
-					Thread.sleep(3000);
+					Thread.sleep(6000);
 					builder.doubleClick(e1).perform();
 					
 					//e1.submit();

@@ -2,6 +2,7 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="77815" started-at="2019-04-02T07:23:28Z" finished-at="2019-04-02T07:24:45Z">
     <groups>
     </groups>
@@ -60,6 +61,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- endReport -->
         <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.LendNation@5ce81285]" name="getResult" is-config="true" duration-ms="0" started-at="2019-04-02T07:24:45Z" finished-at="2019-04-02T07:24:45Z">
+=======
+  <suite name="Default suite" duration-ms="576266" started-at="2019-03-25T10:52:02Z" finished-at="2019-03-25T11:01:38Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="576266" started-at="2019-03-25T10:52:02Z" finished-at="2019-03-25T11:01:38Z">
+      <class name="tests.LendNation">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.LendNation@5ce81285]" name="setup" is-config="true" duration-ms="2061" started-at="2019-03-25T10:52:02Z" finished-at="2019-03-25T10:52:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="LendNation()[pri:0, instance:tests.LendNation@5ce81285]" name="LendNation" duration-ms="573981" started-at="2019-03-25T10:52:04Z" finished-at="2019-03-25T11:01:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LendNation -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.LendNation@5ce81285]" name="getResult" is-config="true" duration-ms="1" started-at="2019-03-25T11:01:38Z" finished-at="2019-03-25T11:01:38Z">
+>>>>>>> ed2c491bd27e4295563c266a26fe8e49e10943ef
           <params>
             <param index="0">
               <value>
@@ -70,6 +87,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
+=======
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.LendNation@5ce81285]" name="endReport" is-config="true" duration-ms="206" started-at="2019-03-25T11:01:38Z" finished-at="2019-03-25T11:01:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+>>>>>>> ed2c491bd27e4295563c266a26fe8e49e10943ef
       </class> <!-- tests.LendNation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

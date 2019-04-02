@@ -7,10 +7,11 @@
 
   
   <!-- Brahmith group-->
-   <!-- <include name="Brahmith"/> --> 
+   <include name="Brahmith"/> 
+
    
   <!-- Janaki's group-->
-   <!-- <include name="Janaki"/> -->  
+   <!-- <include name="Janaki"/>  --> 
    <!-- <include name="Janaki_EOD_set1"/> -->
    <!-- <include name="Janaki_EOD_set2"/> -->
    

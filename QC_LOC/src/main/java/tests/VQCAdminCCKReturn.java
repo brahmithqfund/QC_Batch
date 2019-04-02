@@ -96,7 +96,7 @@ public class VQCAdminCCKReturn extends QCStore {
 		//driver.get("http://192.168.2.203/cc/login/index.jsp");
 		//driver.get("https://qcuat.qfund.net/cc/demoIndex.do");
 		
-		Thread.sleep(3000);
+		Thread.sleep(6000);
 		
 		driver.switchTo().defaultContent();
 
@@ -134,7 +134,7 @@ public class VQCAdminCCKReturn extends QCStore {
 			
 			test.log(LogStatus.PASS, "Store nbr entered is :" +StoreID);
 		
-			
+			//loan_nbr="10440398";
 			driver.findElement(By.name("requestBean.loanNo")).sendKeys(loan_nbr);
 			
 			test.log(LogStatus.PASS, "loan nbr entered is :" +loan_nbr);
@@ -151,7 +151,7 @@ public class VQCAdminCCKReturn extends QCStore {
 			
 			test.log(LogStatus.PASS, "Clicked on Submit");
 			
-			Thread.sleep(5000);
+			Thread.sleep(8000);
 			
 			driver.findElement(By.name("requestBean.chkName")).click();
 			

@@ -95,7 +95,7 @@ public class QCStore {
 
 	public static String NextDueDate;
 
-	@Test(priority = 100, groups = { "1stBatch1" })
+	@Test(priority = 100, groups = { "1stBatch" })
 	public static void QC_NewLoan_Promotion_Txn() throws Exception {
 		try {
 			// test =
@@ -299,9 +299,9 @@ public class QCStore {
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCEncryptionDetails.readEncryptionDetails(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					// QCCSRLoginLogout.adminLogin(driver, SSN, AppURL);
+					 QCCSRLoginLogout.adminLogin( SSN, AppURL);
 					QCAdminEncryption.getEncryption(driver, SSN, AppURL);
-					// QCCSRLoginLogout.adminLogout(driver,SSN, AppURL);
+				
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCAgeStoreVoid.ageStoreVoid(SSN, AppURL);
 
@@ -1015,6 +1015,7 @@ public class QCStore {
 					// row);
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 
+					BProc3.proc();
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
@@ -1158,7 +1159,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 102, groups = { "1stBatch" })
+	@Test(priority = 102, groups = { "1stBatch1" })
 	public static void QC_RefinanceStepDown_Txn() throws Exception {
 		try {
 			// test =
@@ -1219,7 +1220,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 103, groups = { "1stBatch" })
+	@Test(priority = 103, groups = { "1stBatch1" })
 	public static void QC_RefinanceStepDown_Void_Txn() throws Exception {
 		try {
 			// test =
@@ -1779,6 +1780,7 @@ public class QCStore {
 				ACSRACHDeposit.runscheduler(SSN, AppURL);
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQC_EPPPayment.epppayment(SSN, AppURL);
+				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRACHDeposit.runscheduler(SSN, AppURL);
 				ACSRLoginLogout.login(SSN, AppURL);
@@ -1895,6 +1897,7 @@ public class QCStore {
 				ACSRACHDeposit.runscheduler(SSN, AppURL);
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQC_EPPPayment.epppayment(SSN, AppURL);
+				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRACHDeposit.runscheduler(SSN, AppURL);
 				ACSRLoginLogout.login(SSN, AppURL);
@@ -1953,6 +1956,7 @@ public class QCStore {
 				ACSRACHDeposit.runscheduler(SSN, AppURL);
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQC_EPPPayment.epppayment(SSN, AppURL);
+				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRACHDeposit.runscheduler(SSN, AppURL);
 				ACSRLoginLogout.login(SSN, AppURL);
@@ -2247,7 +2251,6 @@ public class QCStore {
 				String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
 				ACSRLoginLogout.login(SSN, AppURL);
-				Thread.sleep(3000);
 				ACSRBorrowerRegistration.borrowerReg(SSN, AppURL);
 				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
@@ -2410,6 +2413,7 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRNewLoanPage.newLoan(SSN, AppURL);
+				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ARunschedulerGracedays.runscheduler(SSN, AppURL);
 				ACSRLoginLogout.login(SSN, AppURL);
@@ -2492,6 +2496,7 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRNewLoanPage.newLoan(SSN, AppURL);
+				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRRescindLoan.agerescind(SSN, AppURL);
 
@@ -2541,6 +2546,7 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRNewLoanPage.newLoan(SSN, AppURL);
+				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRRescindLoan.agerescind(SSN, AppURL);
 				ACSRLoginLogout.login(SSN, AppURL);
@@ -2633,6 +2639,7 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRNewLoanPage.newLoan(SSN, AppURL);
+				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRRescindLoan.agerescind(SSN, AppURL);
 
@@ -2726,6 +2733,7 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRNewLoanPage.newLoan(SSN, AppURL);
+				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRRescindLoan.agerescind(SSN, AppURL);
 
@@ -2773,6 +2781,7 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRNewLoanPage.newLoan(SSN, AppURL);
+				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRRescindLoan.agerescind(SSN, AppURL);
 				ACSRLoginLogout.login(SSN, AppURL);
@@ -4628,7 +4637,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 420, enabled = true, groups = "Janaki1")
+	@Test(priority = 420, enabled = true, groups = "Janaki")
 	public static void JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(
@@ -4813,7 +4822,7 @@ public class QCStore {
 
 		try {
 
-			//Runtime.getRuntime().exec("taskkill /F /IM IEDriverServer.exe");
+			Runtime.getRuntime().exec("taskkill /F /IM IEDriverServer.exe");
 
 			Thread.sleep(5000); // Allow OS to kill the process
 			System.out.println("killed the process");

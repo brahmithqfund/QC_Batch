@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\QC_Batch\QC_ILP\testng.xml</span>
+                    <span>C:\QC_Batch\QC_Accouting\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="QC_NewLoan_Promotion_Txn">QC_NewLoan_Promotion_Txn</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="Reverse_and_Reallocation">Reverse_and_Reallocation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -125,9 +125,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="QC_NewLoan_Promotion_Txn">
-                  </a> <!-- QC_NewLoan_Promotion_Txn -->
-                  <span class="method-name">QC_NewLoan_Promotion_Txn</span>
+                  <a name="Reverse_and_Reallocation">
+                  </a> <!-- Reverse_and_Reallocation -->
+                  <span class="method-name">Reverse_and_Reallocation</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +135,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\QC_Batch\QC_ILP\testng.xml</span>
+            <span class="header-content">C:\QC_Batch\QC_Accouting\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,7 +145,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;groups&gt;
       &lt;run&gt;
-        &lt;include name=&quot;Brahmith1&quot;/&gt;
+        &lt;include name=&quot;Brahmith2&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
@@ -174,10 +174,10 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">Brahmith1</span>
+              <span class="test-group-name">Brahmith2</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">QC_NewLoan_Promotion_Txn</span>
+                <span class="method-in-group-name">Reverse_and_Reallocation</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -199,14 +199,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'QC_NewLoan_Promotion_Txn')
+data.setCell(0, 1, 'Reverse_and_Reallocation')
 data.setCell(0, 2, 'tests.QCStore')
-data.setCell(0, 3, 136028);
+data.setCell(0, 3, 36152);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 36 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -221,119 +221,23 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">54 ignored methods</span>
+            <span class="header-content">6 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">tests.QCStore</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">QC_PayAnyotherAmount_Void_Txn</span>
+                <span class="ignored-method-name">Recon_ILP_EARNED_FEE_Variance</span>
                 <br/>
-                <span class="ignored-method-name">RQC_Bankruptcy_Dismiss_Txn_Testdata</span>
+                <span class="ignored-method-name">Recon_CashRoll</span>
                 <br/>
-                <span class="ignored-method-name">JQC_ILP_GraceDays_Deposit_dropdown_Txn</span>
+                <span class="ignored-method-name">Recon_ILP_Debit_Card_Variance_scenario</span>
                 <br/>
-                <span class="ignored-method-name">ILP_RefinanceStepSame</span>
+                <span class="ignored-method-name">WriteOff</span>
                 <br/>
-                <span class="ignored-method-name">ILP_inactiveNewloan</span>
+                <span class="ignored-method-name">EPP</span>
                 <br/>
-                <span class="ignored-method-name">RQC_WriteOffRecovery_Txn_Testdata</span>
-                <br/>
-                <span class="ignored-method-name">QC_ILP_Refinanace_Txn</span>
-                <br/>
-                <span class="ignored-method-name">ILP_borrowregNewloan</span>
-                <br/>
-                <span class="ignored-method-name">JQC_ILP_Payment_Refinance_StepUp_Txn</span>
-                <br/>
-                <span class="ignored-method-name">QC_LessInterest_VoidFullPayment_Txn</span>
-                <br/>
-                <span class="ignored-method-name">JQC_ILP_GraceDays_Deposit_Menu_Txn</span>
-                <br/>
-                <span class="ignored-method-name">RQC_Default_TLPConversion_Txn_Testdata</span>
-                <br/>
-                <span class="ignored-method-name">RQC_Bankruptcy_Discharge_Txn_Testdata</span>
-                <br/>
-                <span class="ignored-method-name">QC_ILP_NewLoanInstallmentDeposit_Txn</span>
-                <br/>
-                <span class="ignored-method-name">QC_Installmentpayment_Void_Txn</span>
-                <br/>
-                <span class="ignored-method-name">RQC_DefaultPayment_Void_Txn_Testdata</span>
-                <br/>
-                <span class="ignored-method-name">QC_InstallPayment_Ref_Rescind_Txn</span>
-                <br/>
-                <span class="ignored-method-name">JQC_ILP_GraceDays_Deposit_MidDay_Txn</span>
-                <br/>
-                <span class="ignored-method-name">QC_NewLoan_TLPConversion_Txn</span>
-                <br/>
-                <span class="ignored-method-name">ILP_RefinanceStepSame_Void</span>
-                <br/>
-                <span class="ignored-method-name">ILP_Redeposit</span>
-                <br/>
-                <span class="ignored-method-name">QC_AgeStore_Void_Txn</span>
-                <br/>
-                <span class="ignored-method-name">ILP_RefinanceStepDown</span>
-                <br/>
-                <span class="ignored-method-name">ILP_ProcessClear</span>
-                <br/>
-                <span class="ignored-method-name">QC_ILP_Deposit_Return_Txn</span>
-                <br/>
-                <span class="ignored-method-name">ILP_voidRefinance</span>
-                <br/>
-                <span class="ignored-method-name">QC_PayAnyotherAmount_Txn</span>
-                <br/>
-                <span class="ignored-method-name">QC_NewLoan_Void_Txn</span>
-                <br/>
-                <span class="ignored-method-name">RQC_WriteOffRecovery_Void_Txn_Testdata</span>
-                <br/>
-                <span class="ignored-method-name">ILP_RefinanceStepDown_void</span>
-                <br/>
-                <span class="ignored-method-name">RQC_Bankruptcy_WORecovery_Txn_Testdata</span>
-                <br/>
-                <span class="ignored-method-name">JQC_ILP_SignaturLoan_Default_Txn</span>
-                <br/>
-                <span class="ignored-method-name">JQC_ILP_Deposit_MidDay_Txn</span>
-                <br/>
-                <span class="ignored-method-name">RQC_3Payments_Refinance_StepUp_Txn_Testdata</span>
-                <br/>
-                <span class="ignored-method-name">QC_Installmentpayment_Txn</span>
-                <br/>
-                <span class="ignored-method-name">ILP_RefinanceStepup</span>
-                <br/>
-                <span class="ignored-method-name">QC_ILP_Buyback_Void_Txn</span>
-                <br/>
-                <span class="ignored-method-name">QC_ILP_Buyback_Txn</span>
-                <br/>
-                <span class="ignored-method-name">ILP_maxloanCount</span>
-                <br/>
-                <span class="ignored-method-name">QC_ILP_clear_Menu_Txn</span>
-                <br/>
-                <span class="ignored-method-name">RQC_DefaultPayment_Txn_Testdata</span>
-                <br/>
-                <span class="ignored-method-name">QC_ILP_Return_Menu_Txn</span>
-                <br/>
-                <span class="ignored-method-name">JQC_ILP_Deposit_Menu_Txn</span>
-                <br/>
-                <span class="ignored-method-name">ILP_RefinanceStepUpVoid</span>
-                <br/>
-                <span class="ignored-method-name">JQC_ILP_Deposit_dropdown_Txn</span>
-                <br/>
-                <span class="ignored-method-name">ILP_InstallmentStepup</span>
-                <br/>
-                <span class="ignored-method-name">JQC_ILP_GraceDays_Deposit_EOD_Txn</span>
-                <br/>
-                <span class="ignored-method-name">ILP_agerescindtest</span>
-                <br/>
-                <span class="ignored-method-name">ILP_rescindloan</span>
-                <br/>
-                <span class="ignored-method-name">ILP_ACHAutoClear</span>
-                <br/>
-                <span class="ignored-method-name">ILP_CheckAutoClear</span>
-                <br/>
-                <span class="ignored-method-name">JQC_ILP_Deceased_Txn</span>
-                <br/>
-                <span class="ignored-method-name">JQC_ILP_Deposit_EOD_Txn</span>
-                <br/>
-                <span class="ignored-method-name">RQC_Default_Refinance_Txn_Testdata</span>
+                <span class="ignored-method-name">Recon_ILP_EARNED_FEE</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -352,19 +256,19 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">killProcess</span>
-                <span class="method-start">119 ms</span>
+                <span class="method-start">112 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">QC_NewLoan_Promotion_Txn</span>
-                <span class="method-start">5120 ms</span>
+                <span class="method-name">Reverse_and_Reallocation</span>
+                <span class="method-start">5124 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">141150 ms</span>
+                <span class="method-start">41278 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=QC_NewLoan_Promotion_Txn status=SUCCESS method=QCStore.QC_NewLoan_Promotion_Txn()[p...)</span>
-                <span class="method-start">141150 ms</span>
+                <span class="method-name">getResult([TestResult name=Reverse_and_Reallocation status=SUCCESS method=QCStore.Reverse_and_Reallocation()[p...)</span>
+                <span class="method-start">41278 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -48,7 +48,8 @@ public class QCCSRLoginLogout extends QCStore
 					String username = busername;
 							//TestData.getCellData(sheetName,"UserName",row);
 					String password =TestData.getCellData(sheetName,"Password",row);
-					String store_id = bstoreid;
+					//String store_id = bstoreid;
+					String store_id = vstoreid;
 					//TestData.getCellData(sheetName,"StoreID",row);
 					
 
@@ -198,7 +199,7 @@ public static void logout(String SSN,String AppURL){
 				driver.manage().window().maximize();
 				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			
-				driver.get(AdminURL);
+				driver.get(BAdminURL);
 
 				driver.findElement(By.name("loginRequestBean.userId")).sendKeys(UserName);
 

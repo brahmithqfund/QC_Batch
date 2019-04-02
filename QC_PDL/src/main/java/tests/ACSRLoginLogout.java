@@ -33,6 +33,7 @@ public class ACSRLoginLogout extends QCStore{
 				
 					if(Aprop.getProperty("login_method").equalsIgnoreCase("local"))
 					{
+						
 						driver = new InternetExplorerDriver();
 					}
 					else
@@ -67,7 +68,7 @@ public class ACSRLoginLogout extends QCStore{
 
 					test.log(LogStatus.INFO, "<FONT color=green> Login Sucessfully");
 					test.log(LogStatus.INFO, "******************************************************** ");
-					Thread.sleep(3000);
+					Thread.sleep(5000);
 					break;
 				}	
 
@@ -82,15 +83,15 @@ public class ACSRLoginLogout extends QCStore{
 			driver.findElement(By.xpath("//*[@id='icons']/li[7]/a")).click();
 			test.log(LogStatus.PASS, "Clicked On logout Button");
 			test.log(LogStatus.PASS, "<FONT color=green> Logout Successfully"); 
-			Thread.sleep(6000);
-			if(driver.getTitle().contains("Login")){
+			driver.quit();
+			/*if(driver.getTitle().contains("Login")){
 				//test.log(LogStatus.PASS, "<FONT color=green> Logout Successfully"); 
 				test.log(LogStatus.INFO, "******************************************************** ");
 				driver.quit();
 			}
 			else{
 				test.log(LogStatus.PASS, "<FONT color=Red> Logout was unsuccessfull"); 
-			}
+			}*/
 
 		}
 		catch(Exception e)

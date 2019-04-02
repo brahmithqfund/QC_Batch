@@ -47,6 +47,16 @@ public class QCPayment extends QCStore
 					String SSN1 = SSN.substring(0, 3);
 					String SSN2 = SSN.substring(3,5);
 					String SSN3 = SSN.substring(5,9);
+					
+					
+					String Tender_Amount = TestData.getCellData(sheetName,"TenderAmount",row);
+					String CCMONbr = TestData.getCellData(sheetName,"CCMONbr",row);
+					String CardType = TestData.getCellData(sheetName,"Card Type ",row);
+					String CardNbr = TestData.getCellData(sheetName,"Debit Card No",row);
+					String ExpMonth = TestData.getCellData(sheetName,"Expiry Month",row);
+					String ExpYear = TestData.getCellData(sheetName,"Expiry Year",row);
+					String CVVNbr = TestData.getCellData(sheetName,"CVV",row);
+					String CCName = TestData.getCellData(sheetName,"CardHolderName",row);
 
 					Thread.sleep(3000);
 					test.log(LogStatus.INFO,"PartialPayment started");
@@ -101,9 +111,8 @@ public class QCPayment extends QCStore
 					test.log(LogStatus.PASS, "PaymentAmount entered :"+PaymentAmount);
 					driver.findElement(By.name("requestBean.siilBean.tenderTypeFirst")).sendKeys(TenderType);
 					test.log(LogStatus.PASS, "Tender Type is :"+TenderType);
+					Thread.sleep(500);
 					
-					driver.findElement(By.name("requestBean.siilBean.tenderAmtFirst")).sendKeys(TenderAmount);
-					test.log(LogStatus.PASS, "TenderAmount is :"+TenderAmount);	
 					}
 					else if(PaymentType.equalsIgnoreCase("Pay Off the balance")){
 						driver.findElement(By.id("PD3")).click();
@@ -124,6 +133,38 @@ public class QCPayment extends QCStore
 						test.log(LogStatus.PASS, "Tender Type is :"+TenderType);
 						driver.findElement(By.name("requestBean.siilBean.tenderAmtFirst")).sendKeys(TenderAmount.trim());
 						test.log(LogStatus.PASS, "TenderAmount is :"+TenderAmount);	
+					}
+					
+					if(TenderType.equalsIgnoreCase("Debit Card"))
+					{
+					 
+					
+						Thread.sleep(2000);
+						/*driver.findElement(By.name("requestBean.siilBean.tenderAmtFirst")).sendKeys(CardType);
+						 test.log(LogStatus.PASS, " Tender amount " +CardNbr);*/
+						driver.findElement(By.name("cardType")).sendKeys(CardType);
+					 test.log(LogStatus.PASS, " Enter the Card Number " +CardNbr);
+					 driver.findElement(By.name("ccnumber")).sendKeys(CardNbr);
+					 test.log(LogStatus.PASS, " Enter the Card Number " +CardNbr);
+					 driver.findElement(By.name("expmonth")).sendKeys(ExpMonth);
+					 test.log(LogStatus.PASS, " Enter the Exp Month " +ExpMonth);
+					 driver.findElement(By.name("expyear")).sendKeys(ExpYear);
+					 test.log(LogStatus.PASS, " Enter the Exp Year " +ExpYear);
+					 Thread.sleep(500);
+					 driver.findElement(By.id("cvvnumber")).sendKeys(CVVNbr);
+					 test.log(LogStatus.PASS, " Enter the CVV number " +CVVNbr);
+					 driver.findElement(By.name("ccname")).sendKeys(CCName);
+					 test.log(LogStatus.PASS, " Enter the card holder name " +CCName);
+						//driver.findElement(By.name("requestBean.siilBean.tenderAmtFirst")).sendKeys(TenderAmount);
+						//test.log(LogStatus.PASS, "TenderAmount is :"+TenderAmount);	
+			
+					}
+					
+					if(TenderType.equalsIgnoreCase("Cash"))
+					{
+					 
+					driver.findElement(By.name("requestBean.siilBean.tenderAmtFirst")).sendKeys(TenderAmount);
+					test.log(LogStatus.PASS, "TenderAmount is :"+TenderAmount);	
 					}
 					driver.findElement(By.name("requestBean.password")).sendKeys(PIN);
 					test.log(LogStatus.PASS, "Pin is entered as "+ PIN);

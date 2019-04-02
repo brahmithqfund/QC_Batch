@@ -74,15 +74,16 @@ public class AQCAdminLoginLogout extends QCStore {
 			driver.findElement(locator(Aprop.getProperty(("admin_logout_link")))).click();
 			test.log(LogStatus.PASS, "Clicked On logout Button");
 			System.out.println("clicked on logout"); 
+			driver.quit();
 
-			if(driver.getTitle().contains("Login")){
+			/*if(driver.getTitle().contains("Login")){
 				test.log(LogStatus.PASS, "Logout is Successfully"); 
 				test.log(LogStatus.INFO, "************************************************************");
 				driver.close();
 			}
 			else{
 				test.log(LogStatus.PASS, "Logout was unsuccessfull"); 
-			}
+			}*/
 
 		}		
 		catch (Exception e) {

@@ -193,7 +193,7 @@ public class QCStore {
 
 	// Brahmith Transactions
 
-	@Test(priority = 4, groups = "Brahmith1")
+	@Test(priority = 4, groups = "Brahmith")
 
 	public static void QC_NewLoan_Promotion_Txn() throws Exception {
 		try {
@@ -1757,7 +1757,7 @@ public class QCStore {
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 					System.out.println(AppURL);
 
-					JQCCSRLoginLogout.login(SSN, AppURL);
+					/*JQCCSRLoginLogout.login(SSN, AppURL);
 					JQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					JQCCSRLoginLogout.logout(SSN, AppURL);
 					JQCCSRLoginLogout.login(SSN, AppURL);
@@ -1774,7 +1774,7 @@ public class QCStore {
 					JQCAdminLoginLogout.logout(SSN, AppURL);
 					JQCCSRLoginLogout.login(SSN, AppURL);
 					JQCSafeAssign.safeAssign(SSN, AppURL);
-					JQCCSRLoginLogout.logout(SSN, AppURL);
+					JQCCSRLoginLogout.logout(SSN, AppURL);*/
 					JQCCSRLoginLogout.login(SSN, AppURL);
 					JQCDrawerAssign.drawerAssign(SSN, AppURL);
 					JQCCSRLoginLogout.logout(SSN, AppURL);
@@ -2503,7 +2503,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 11, enabled = true, groups = "Anoop")
+	@Test(priority = 12, enabled = true, groups = "Anoopsss")
 
 	public void ILP_ACHAutoClear() throws Exception {
 
@@ -2557,7 +2557,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 12, enabled = true, groups = "Anoop")
+	@Test(priority = 11, enabled = true, groups = "Anoop")
 
 	public void ILP_CheckAutoClear() throws Exception {
 
@@ -3409,7 +3409,10 @@ public class QCStore {
 				+ screenshotName + dateName + ".png";
 		File finalDestination = new File(destination);
 		FileUtils.copyFile(source, finalDestination);
+		reports.flush();
+		driver.quit();
 		return destination;
+		
 	}
 
 	@AfterMethod(alwaysRun = true)
@@ -3429,8 +3432,8 @@ public class QCStore {
 
 			test.log(LogStatus.PASS, result.getName() + " Test Case is Passed");
 		}
-		reports.flush();
-		driver.quit();
+		/*reports.flush();
+		driver.quit();*/
 
 	}
 

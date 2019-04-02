@@ -6,21 +6,20 @@
   <run>
 
   <!-- Janaki's group--> 
-    <!-- <include name="Janaki"/>  -->
+    <!-- <include name="Janaki"/> --> 
     <!-- <include name="Janaki_EOD_set1"/> --> 
-   <!-- <include name="Janaki_EOD_set2"/> --> 
+   <!-- <include name="Janaki_EOD_set2"/>  -->
    <!-- <include name="janaki_Refinance_StUp"/> -->
   
    <!-- Brahmith group--> 
-<!-- <include name="Brahmith1"/> -->  
+<include name="Brahmith"/>  
+
 
 
    <!-- Anoop group-->  
-
-    <!--<include name="Anoop"/> -->  
+    <include name="Anoop"/>  
     <!--  <include name="Anoop_stDown"/>-->
      <!--<include name="Anoop_StdownVoid"/> -->
-
 
 
 

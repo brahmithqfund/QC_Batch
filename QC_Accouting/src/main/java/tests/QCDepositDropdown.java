@@ -129,6 +129,9 @@ public class QCDepositDropdown extends QCStore{
 									 test.log(LogStatus.PASS, "Click on GO Button after transaction type selection ");								 
 									 driver.findElement(locator(prop.getProperty("deposite_ilp_dstype"))).sendKeys(Deposit_Type);								 
 									 test.log(LogStatus.PASS, " Select the Deposit_Type as"+Deposit_Type);
+									 
+									 driver.findElement(By.name("transactionDataBean.password")).sendKeys("1234");
+									 test.log(LogStatus.PASS, "Entered the password ");
 									 driver.findElement(locator(prop.getProperty("clear_finish"))).click();
 									 test.log(LogStatus.PASS, "Click on Check deposit button ");								 					
 
