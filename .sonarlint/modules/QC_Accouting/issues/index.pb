@@ -76,5 +76,13 @@ _
 /src/main/java/tests/QCBorrowerRegistration.java,3\6\36b3d2e94f593fc585eb05915b8d037717e01738
 Z
 *src/main/java/tests/QCDepositDropdown.java,f\5\f570d21ec5fb2dd36a87e6951d7d3656fcba6122
-h
-8JTestData_Monthly/QCStore/ILP/QC_ILP_Deposit_EOD_Txn.xls,0\d\0db3b5b7f4ec4b48b520601e8c01d58a20d166dd
+F
+test-output/passed.png,9\6\96b721e41daae92ce544186fb5fb4265c2c4d44e
+F
+test-output/failed.png,b\0\b05812c036384696c17aaf7f5884acbefeb28381
+G
+test-output/skipped.png,5\3\5327eafbe20afe3001b606dcadf107c6d9c7b725
+P
+ test-output/navigator-bullet.png,d\e\de87e3593c6c0c8116e96e80a41c2088969971f3
+L
+test-output/bullet_point.png,c\0\c0b0119f0662880dcdadc70b27420ce51b778a1e

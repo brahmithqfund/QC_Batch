@@ -2,35 +2,35 @@
 <testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="95117" started-at="2019-03-27T11:27:00Z" finished-at="2019-03-27T11:28:35Z">
+  <suite name="Suite" duration-ms="41483" started-at="2019-03-29T13:23:49Z" finished-at="2019-03-29T13:24:30Z">
     <groups>
-      <group name="Brahmith1">
-        <method signature="QCStore.EPP()[pri:6, instance:tests.QCStore@370736d9]" name="EPP" class="tests.QCStore"/>
-      </group> <!-- Brahmith1 -->
+      <group name="Brahmith2">
+        <method signature="QCStore.Reverse_and_Reallocation()[pri:2, instance:tests.QCStore@370736d9]" name="Reverse_and_Reallocation" class="tests.QCStore"/>
+      </group> <!-- Brahmith2 -->
     </groups>
-    <test name="Test" duration-ms="95117" started-at="2019-03-27T11:27:00Z" finished-at="2019-03-27T11:28:35Z">
+    <test name="Test" duration-ms="41483" started-at="2019-03-29T13:23:49Z" finished-at="2019-03-29T13:24:30Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@370736d9]" name="setup" is-config="true" duration-ms="108" started-at="2019-03-27T11:27:00Z" finished-at="2019-03-27T11:27:00Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@370736d9]" name="setup" is-config="true" duration-ms="105" started-at="2019-03-29T13:23:49Z" finished-at="2019-03-29T13:23:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@370736d9]" name="killProcess" is-config="true" duration-ms="5011" started-at="2019-03-27T11:27:00Z" finished-at="2019-03-27T11:27:05Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@370736d9]" name="killProcess" is-config="true" duration-ms="5012" started-at="2019-03-29T13:23:49Z" finished-at="2019-03-29T13:23:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="EPP()[pri:6, instance:tests.QCStore@370736d9]" name="EPP" duration-ms="89250" started-at="2019-03-27T11:27:05Z" finished-at="2019-03-27T11:28:34Z">
+        <test-method status="PASS" signature="Reverse_and_Reallocation()[pri:2, instance:tests.QCStore@370736d9]" name="Reverse_and_Reallocation" duration-ms="36152" started-at="2019-03-29T13:23:54Z" finished-at="2019-03-29T13:24:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EPP -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@370736d9]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-27T11:28:34Z" finished-at="2019-03-27T11:28:34Z">
+        </test-method> <!-- Reverse_and_Reallocation -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@370736d9]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-29T13:24:30Z" finished-at="2019-03-29T13:24:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@370736d9]" name="getResult" is-config="true" duration-ms="733" started-at="2019-03-27T11:28:34Z" finished-at="2019-03-27T11:28:35Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@370736d9]" name="getResult" is-config="true" duration-ms="198" started-at="2019-03-29T13:24:30Z" finished-at="2019-03-29T13:24:30Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=EPP status=SUCCESS method=QCStore.EPP()[pri:6, instance:tests.QCStore@370736d9] output={null}]]]>
+                <![CDATA[[TestResult name=Reverse_and_Reallocation status=SUCCESS method=QCStore.Reverse_and_Reallocation()[pri:2, instance:tests.QCStore@370736d9] output={null}]]]>
               </value>
             </param>
           </params>

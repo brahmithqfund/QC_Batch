@@ -191,6 +191,12 @@ public class QCStore {
 	public static String csr_url;
 	public static String csrloginpage;
 	public static String cust_doc_total_amount;
+	public static String cust_doc_interest;
+	public static int payment_no;
+	//public static String interest_page[];
+	public static String interest_page[] = new String [20];
+	public static int increment;
+	public static int totalrows;
 
 	// Brahmith Transactions
 
@@ -261,7 +267,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 2, groups = "Brahmith")
+	@Test(priority = 2, groups = "Brahmith2")
 
 	public static void Reverse_and_Reallocation() throws Exception {
 		try {
@@ -288,9 +294,10 @@ public class QCStore {
 					// String AppURL = TestData.getCellData(sheetName, "AppURL",
 					// row);
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
-
+					payment_no=5;
+					/*
 					System.out.println(AppURL);
-
+					
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
@@ -302,46 +309,26 @@ public class QCStore {
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
 					
+					for(payment_no=1;payment_no<=5;payment_no++)
+					{
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCPayment.payment(SSN, SSN);
+						QCCSRLoginLogout.logout(SSN, AppURL);
+						
+						QCCSRLoginLogout.login(SSN, AppURL);
+						QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
+					}
+					
+										
 					QCCSRLoginLogout.login(SSN, AppURL);
-					QCPayment.payment(SSN, SSN);
+					Chargeback.chargeback(SSN, SSN);*/
+					
+					QCCSRLoginLogout.login(SSN, AppURL);
+					RRHistory.history(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
 					
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCPayment.payment(SSN, SSN);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
-					
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCPayment.payment(SSN, SSN);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
-					
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCPayment.payment(SSN, SSN);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
-					
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCPayment.payment(SSN, SSN);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
-					
-					QCCSRLoginLogout.login(SSN, AppURL);
-					Chargeback.chargeback(SSN, SSN);
-					
-					
-					
+					ChargebackQuery.proc();
 					
 					
 					
@@ -580,7 +567,7 @@ public class QCStore {
 	}
 
 	
-	@Test(priority = 6, groups = { "Brahmith1" })
+	@Test(priority = 6, groups = { "Brahmith" })
 	public static void EPP() throws Exception {
 		try {
 			// test =
@@ -604,7 +591,7 @@ public class QCStore {
 				if (RunFlag.equals("Y")) {
 
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
-					/*QCCSRLoginLogoutPDL.login(SSN, AppURL);
+					QCCSRLoginLogoutPDL.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogoutPDL.login(SSN, AppURL);
@@ -616,24 +603,15 @@ public class QCStore {
 					QCStoreEPP.epp(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogoutPDL.login(SSN, AppURL);
-					QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);*/
+					QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
 					QCCSRLoginLogoutPDL.login(SSN, AppURL);
 					QCDepositDropdown.depositDropDown(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogoutPDL.login(SSN, AppURL);
-					QCInternalTransfer.internalTransfer(SSN, AppURL);
-
-					QCCSRLoginLogoutPDL.login(SSN, AppURL);
-					QCCashMgmtDeposit.cashmgmtDeposit(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogoutPDL.login(SSN, AppURL);
-					/*QCClearDropdown.clearDropDown(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCCSRHistory.history(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);*/
-
+					
+					SQLquery.proc();					
+					
+	
+					break;
 				}
 			}
 		}
@@ -674,27 +652,27 @@ public class QCStore {
 
 					
 
-					/*QCCSRLoginLogoutTX.login(SSN, AppURL);
-					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);*/
 					QCCSRLoginLogoutTX.login(SSN, AppURL);
-					QCCSRNewLoan.newLoan(SSN, AppURL);
+					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogoutTX.login(SSN, AppURL);
+					QCCSRNewLoanTX.newLoan(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogoutTX.login(SSN, AppURL);
 					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
 					
 					
-					QCCSRLoginLogoutTX.login(SSN, AppURL);
+					/*QCCSRLoginLogoutTX.login(SSN, AppURL);
 					QCRefinanceNew.refinance(SSN, SSN);
-					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);*/
 					
-					QCCSRLoginLogoutTX.login(SSN, AppURL);
+					/*QCCSRLoginLogoutTX.login(SSN, AppURL);
 					QCHistoryold.history(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					
 					QCCSRLoginLogoutTX.login(SSN, AppURL);
 					QCHistoryNew.history(SSN, SSN);
-					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);*/
 					
 		
 				}

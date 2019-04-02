@@ -60,7 +60,7 @@ public class QCRefinanceNew extends QCStore{
 				String SSN3 = SSN.substring(5, 9);
 
 				Thread.sleep(3000);
-				test.log(LogStatus.INFO, "Refinance StepDown  process has started");
+				test.log(LogStatus.INFO, "Refinance process has started");
 				driver.switchTo().frame("topFrame");
 				driver.findElement(locator(prop.getProperty("transactions_tab"))).click();
 				test.log(LogStatus.PASS, "Clicked on Loan Transactions");
@@ -262,18 +262,21 @@ public class QCRefinanceNew extends QCStore{
 					driver.switchTo().frame("main");
 					if(driver.findElement(By.name("ok")).isDisplayed())
 					{
-						test.log(LogStatus.PASS, "<FONT color=green style=Arial>Refinance Stepup is pass ");
+						test.log(LogStatus.PASS, "<FONT color=green style=Arial>Refinance is pass ");
 						test.log(LogStatus.INFO, "**********************************************************************************");
 
 					}
 					else
 					{
-						test.log(LogStatus.PASS, "<FONT color=green style=Arial>Refinance Stepup is pass ");
+						test.log(LogStatus.PASS, "<FONT color=green style=Arial>Refinance is pass ");
 						test.log(LogStatus.INFO, "**********************************************************************************");
 					}
 				
-					break;}
-			break;}
+					break;
+					}
+		
+			
+		}
 		}
 		catch(Exception e)
 		{

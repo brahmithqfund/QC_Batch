@@ -1,241 +1,306 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results skipped="0" failed="0" ignored="34" total="35" passed="1">
+<testng-results skipped="0" failed="0" ignored="23" total="35" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="769606" started-at="2019-03-20T12:36:59Z" finished-at="2019-03-20T12:49:48Z">
-    <groups>
-      <group name="Anoop_st_down">
-        <method signature="QCStore.TLP_RefinanceStepDown()[pri:310, instance:tests.QCStore@527740a2]" name="TLP_RefinanceStepDown" class="tests.QCStore"/>
-      </group> <!-- Anoop_st_down -->
-    </groups>
-    <test name="Test" duration-ms="769606" started-at="2019-03-20T12:36:59Z" finished-at="2019-03-20T12:49:48Z">
-      <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="110" started-at="2019-03-20T12:36:59Z" finished-at="2019-03-20T12:36:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-03-20T12:36:59Z" finished-at="2019-03-20T12:37:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="TLP_RefinanceStepDown()[pri:310, instance:tests.QCStore@527740a2]" name="TLP_RefinanceStepDown" duration-ms="763747" started-at="2019-03-20T12:37:04Z" finished-at="2019-03-20T12:49:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TLP_RefinanceStepDown -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="731" started-at="2019-03-20T12:49:47Z" finished-at="2019-03-20T12:49:48Z">
-=======
-<testng-results skipped="0" failed="0" ignored="27" total="35" passed="8">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Suite" duration-ms="5097588" started-at="2019-03-19T11:18:51Z" finished-at="2019-03-19T12:43:49Z">
+  <suite name="Suite" duration-ms="7093776" started-at="2019-04-01T05:10:48Z" finished-at="2019-04-01T07:09:02Z">
     <groups>
       <group name="Brahmith">
-        <method signature="QCStore.QC_Installmentpayment_Txn()[pri:118, instance:tests.QCStore@527740a2]" name="QC_Installmentpayment_Txn" class="tests.QCStore"/>
-        <method signature="QCStore.QC_Installmentpayment_Void_Txn()[pri:119, instance:tests.QCStore@527740a2]" name="QC_Installmentpayment_Void_Txn" class="tests.QCStore"/>
-        <method signature="QCStore.QC_PayAnyotherAmount_Txn()[pri:120, instance:tests.QCStore@527740a2]" name="QC_PayAnyotherAmount_Txn" class="tests.QCStore"/>
-        <method signature="QCStore.QC_PayAnyotherAmount_Void_Txn()[pri:121, instance:tests.QCStore@527740a2]" name="QC_PayAnyotherAmount_Void_Txn" class="tests.QCStore"/>
-        <method signature="QCStore.QC_TLP_Buyback_Txn()[pri:116, instance:tests.QCStore@527740a2]" name="QC_TLP_Buyback_Txn" class="tests.QCStore"/>
-        <method signature="QCStore.QC_TLP_Buyback_Void_Txn()[pri:117, instance:tests.QCStore@527740a2]" name="QC_TLP_Buyback_Void_Txn" class="tests.QCStore"/>
-        <method signature="QCStore.QC_TLP_Writeoff_Recovery_Txn()[pri:131, instance:tests.QCStore@527740a2]" name="QC_TLP_Writeoff_Recovery_Txn" class="tests.QCStore"/>
-        <method signature="QCStore.QC_TLP_Writeoff_Recovery_Void_Txn()[pri:132, instance:tests.QCStore@527740a2]" name="QC_TLP_Writeoff_Recovery_Void_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_AgeStore_Void_Txn()[pri:105, instance:tests.QCStore@5f9d02cb]" name="QC_AgeStore_Void_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_Installmentpayment_Txn()[pri:118, instance:tests.QCStore@5f9d02cb]" name="QC_Installmentpayment_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_Installmentpayment_Void_Txn()[pri:119, instance:tests.QCStore@5f9d02cb]" name="QC_Installmentpayment_Void_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_NewLoan_Promotion_Txn()[pri:103, instance:tests.QCStore@5f9d02cb]" name="QC_NewLoan_Promotion_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_NewLoan_Void_Txn()[pri:104, instance:tests.QCStore@5f9d02cb]" name="QC_NewLoan_Void_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_PayAnyotherAmount_Txn()[pri:120, instance:tests.QCStore@5f9d02cb]" name="QC_PayAnyotherAmount_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_PayAnyotherAmount_Void_Txn()[pri:121, instance:tests.QCStore@5f9d02cb]" name="QC_PayAnyotherAmount_Void_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_TLP_Buyback_Txn()[pri:116, instance:tests.QCStore@5f9d02cb]" name="QC_TLP_Buyback_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_TLP_Buyback_Void_Txn()[pri:117, instance:tests.QCStore@5f9d02cb]" name="QC_TLP_Buyback_Void_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_TLP_NewLoan_Txn()[pri:101, instance:tests.QCStore@5f9d02cb]" name="QC_TLP_NewLoan_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_TLP_Writeoff_Recovery_Txn()[pri:131, instance:tests.QCStore@5f9d02cb]" name="QC_TLP_Writeoff_Recovery_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_TLP_Writeoff_Recovery_Void_Txn()[pri:132, instance:tests.QCStore@5f9d02cb]" name="QC_TLP_Writeoff_Recovery_Void_Txn" class="tests.QCStore"/>
       </group> <!-- Brahmith -->
     </groups>
-    <test name="Test" duration-ms="5097588" started-at="2019-03-19T11:18:51Z" finished-at="2019-03-19T12:43:49Z">
+    <test name="Test" duration-ms="7093776" started-at="2019-04-01T05:10:48Z" finished-at="2019-04-01T07:09:02Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="102" started-at="2019-03-19T11:18:51Z" finished-at="2019-03-19T11:18:51Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="98" started-at="2019-04-01T05:10:48Z" finished-at="2019-04-01T05:10:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-03-19T11:18:51Z" finished-at="2019-03-19T11:18:56Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-04-01T05:10:48Z" finished-at="2019-04-01T05:10:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="QC_TLP_Buyback_Txn()[pri:116, instance:tests.QCStore@527740a2]" name="QC_TLP_Buyback_Txn" duration-ms="538253" started-at="2019-03-19T11:18:56Z" finished-at="2019-03-19T11:27:54Z">
+        <test-method status="PASS" signature="QC_TLP_NewLoan_Txn()[pri:101, instance:tests.QCStore@5f9d02cb]" name="QC_TLP_NewLoan_Txn" duration-ms="330902" started-at="2019-04-01T05:10:53Z" finished-at="2019-04-01T05:16:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_TLP_NewLoan_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="305" started-at="2019-04-01T05:16:24Z" finished-at="2019-04-01T05:16:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_TLP_NewLoan_Txn status=SUCCESS method=QCStore.QC_TLP_NewLoan_Txn()[pri:101, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-04-01T05:16:24Z" finished-at="2019-04-01T05:16:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-04-01T05:16:25Z" finished-at="2019-04-01T05:16:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_NewLoan_Promotion_Txn()[pri:103, instance:tests.QCStore@5f9d02cb]" name="QC_NewLoan_Promotion_Txn" duration-ms="207456" started-at="2019-04-01T05:16:30Z" finished-at="2019-04-01T05:19:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_NewLoan_Promotion_Txn -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-04-01T05:19:57Z" finished-at="2019-04-01T05:19:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="63" started-at="2019-04-01T05:19:57Z" finished-at="2019-04-01T05:19:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_NewLoan_Promotion_Txn status=SUCCESS method=QCStore.QC_NewLoan_Promotion_Txn()[pri:103, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-04-01T05:19:57Z" finished-at="2019-04-01T05:20:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_NewLoan_Void_Txn()[pri:104, instance:tests.QCStore@5f9d02cb]" name="QC_NewLoan_Void_Txn" duration-ms="235378" started-at="2019-04-01T05:20:02Z" finished-at="2019-04-01T05:23:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_NewLoan_Void_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="43" started-at="2019-04-01T05:23:58Z" finished-at="2019-04-01T05:23:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_NewLoan_Void_Txn status=SUCCESS method=QCStore.QC_NewLoan_Void_Txn()[pri:104, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-04-01T05:23:58Z" finished-at="2019-04-01T05:23:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-04-01T05:23:58Z" finished-at="2019-04-01T05:24:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_AgeStore_Void_Txn()[pri:105, instance:tests.QCStore@5f9d02cb]" name="QC_AgeStore_Void_Txn" duration-ms="605510" started-at="2019-04-01T05:24:03Z" finished-at="2019-04-01T05:34:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_AgeStore_Void_Txn -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-04-01T05:34:08Z" finished-at="2019-04-01T05:34:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="43" started-at="2019-04-01T05:34:08Z" finished-at="2019-04-01T05:34:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_AgeStore_Void_Txn status=SUCCESS method=QCStore.QC_AgeStore_Void_Txn()[pri:105, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-04-01T05:34:08Z" finished-at="2019-04-01T05:34:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_TLP_Buyback_Txn()[pri:116, instance:tests.QCStore@5f9d02cb]" name="QC_TLP_Buyback_Txn" duration-ms="530366" started-at="2019-04-01T05:34:13Z" finished-at="2019-04-01T05:43:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- QC_TLP_Buyback_Txn -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="1" started-at="2019-03-19T11:27:54Z" finished-at="2019-03-19T11:27:54Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-04-01T05:43:04Z" finished-at="2019-04-01T05:43:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="223" started-at="2019-03-19T11:27:54Z" finished-at="2019-03-19T11:27:55Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="600" started-at="2019-04-01T05:43:04Z" finished-at="2019-04-01T05:43:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=QC_TLP_Buyback_Txn status=SUCCESS method=QCStore.QC_TLP_Buyback_Txn()[pri:116, instance:tests.QCStore@527740a2] output={null}]]]>
+                <![CDATA[[TestResult name=QC_TLP_Buyback_Txn status=SUCCESS method=QCStore.QC_TLP_Buyback_Txn()[pri:116, instance:tests.QCStore@5f9d02cb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-19T11:27:55Z" finished-at="2019-03-19T11:28:00Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-04-01T05:43:04Z" finished-at="2019-04-01T05:43:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="QC_TLP_Buyback_Void_Txn()[pri:117, instance:tests.QCStore@527740a2]" name="QC_TLP_Buyback_Void_Txn" duration-ms="577992" started-at="2019-03-19T11:28:00Z" finished-at="2019-03-19T11:37:38Z">
+        <test-method status="PASS" signature="QC_TLP_Buyback_Void_Txn()[pri:117, instance:tests.QCStore@5f9d02cb]" name="QC_TLP_Buyback_Void_Txn" duration-ms="606027" started-at="2019-04-01T05:43:09Z" finished-at="2019-04-01T05:53:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- QC_TLP_Buyback_Void_Txn -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="1" started-at="2019-03-19T11:37:38Z" finished-at="2019-03-19T11:37:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="58" started-at="2019-03-19T11:37:38Z" finished-at="2019-03-19T11:37:38Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="36" started-at="2019-04-01T05:53:15Z" finished-at="2019-04-01T05:53:15Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=QC_TLP_Buyback_Void_Txn status=SUCCESS method=QCStore.QC_TLP_Buyback_Void_Txn()[pri:117, instance:tests.QCStore@527740a2] output={null}]]]>
+                <![CDATA[[TestResult name=QC_TLP_Buyback_Void_Txn status=SUCCESS method=QCStore.QC_TLP_Buyback_Void_Txn()[pri:117, instance:tests.QCStore@5f9d02cb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-19T11:37:38Z" finished-at="2019-03-19T11:37:43Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-04-01T05:53:15Z" finished-at="2019-04-01T05:53:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-04-01T05:53:15Z" finished-at="2019-04-01T05:53:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="QC_Installmentpayment_Txn()[pri:118, instance:tests.QCStore@527740a2]" name="QC_Installmentpayment_Txn" duration-ms="551909" started-at="2019-03-19T11:37:43Z" finished-at="2019-03-19T11:46:54Z">
+        <test-method status="PASS" signature="QC_Installmentpayment_Txn()[pri:118, instance:tests.QCStore@5f9d02cb]" name="QC_Installmentpayment_Txn" duration-ms="642456" started-at="2019-04-01T05:53:20Z" finished-at="2019-04-01T06:04:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- QC_Installmentpayment_Txn -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-19T11:46:54Z" finished-at="2019-03-19T11:46:54Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-04-01T06:04:03Z" finished-at="2019-04-01T06:04:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="59" started-at="2019-03-19T11:46:54Z" finished-at="2019-03-19T11:46:55Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="37" started-at="2019-04-01T06:04:03Z" finished-at="2019-04-01T06:04:03Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=QC_Installmentpayment_Txn status=SUCCESS method=QCStore.QC_Installmentpayment_Txn()[pri:118, instance:tests.QCStore@527740a2] output={null}]]]>
+                <![CDATA[[TestResult name=QC_Installmentpayment_Txn status=SUCCESS method=QCStore.QC_Installmentpayment_Txn()[pri:118, instance:tests.QCStore@5f9d02cb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-19T11:46:55Z" finished-at="2019-03-19T11:47:00Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-04-01T06:04:03Z" finished-at="2019-04-01T06:04:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="QC_Installmentpayment_Void_Txn()[pri:119, instance:tests.QCStore@527740a2]" name="QC_Installmentpayment_Void_Txn" duration-ms="577744" started-at="2019-03-19T11:47:00Z" finished-at="2019-03-19T11:56:37Z">
+        <test-method status="PASS" signature="QC_Installmentpayment_Void_Txn()[pri:119, instance:tests.QCStore@5f9d02cb]" name="QC_Installmentpayment_Void_Txn" duration-ms="646405" started-at="2019-04-01T06:04:08Z" finished-at="2019-04-01T06:14:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- QC_Installmentpayment_Void_Txn -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-19T11:56:37Z" finished-at="2019-03-19T11:56:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="40" started-at="2019-03-19T11:56:37Z" finished-at="2019-03-19T11:56:37Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="32" started-at="2019-04-01T06:14:54Z" finished-at="2019-04-01T06:14:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=QC_Installmentpayment_Void_Txn status=SUCCESS method=QCStore.QC_Installmentpayment_Void_Txn()[pri:119, instance:tests.QCStore@527740a2] output={null}]]]>
+                <![CDATA[[TestResult name=QC_Installmentpayment_Void_Txn status=SUCCESS method=QCStore.QC_Installmentpayment_Void_Txn()[pri:119, instance:tests.QCStore@5f9d02cb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-19T11:56:37Z" finished-at="2019-03-19T11:56:42Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-04-01T06:14:54Z" finished-at="2019-04-01T06:14:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-04-01T06:14:54Z" finished-at="2019-04-01T06:14:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="QC_PayAnyotherAmount_Txn()[pri:120, instance:tests.QCStore@527740a2]" name="QC_PayAnyotherAmount_Txn" duration-ms="500951" started-at="2019-03-19T11:56:42Z" finished-at="2019-03-19T12:05:03Z">
+        <test-method status="PASS" signature="QC_PayAnyotherAmount_Txn()[pri:120, instance:tests.QCStore@5f9d02cb]" name="QC_PayAnyotherAmount_Txn" duration-ms="564409" started-at="2019-04-01T06:14:59Z" finished-at="2019-04-01T06:24:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- QC_PayAnyotherAmount_Txn -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-19T12:05:03Z" finished-at="2019-03-19T12:05:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="51" started-at="2019-03-19T12:05:03Z" finished-at="2019-03-19T12:05:03Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="36" started-at="2019-04-01T06:24:24Z" finished-at="2019-04-01T06:24:24Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=QC_PayAnyotherAmount_Txn status=SUCCESS method=QCStore.QC_PayAnyotherAmount_Txn()[pri:120, instance:tests.QCStore@527740a2] output={null}]]]>
+                <![CDATA[[TestResult name=QC_PayAnyotherAmount_Txn status=SUCCESS method=QCStore.QC_PayAnyotherAmount_Txn()[pri:120, instance:tests.QCStore@5f9d02cb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-19T12:05:03Z" finished-at="2019-03-19T12:05:08Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-04-01T06:24:24Z" finished-at="2019-04-01T06:24:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-04-01T06:24:24Z" finished-at="2019-04-01T06:24:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="QC_PayAnyotherAmount_Void_Txn()[pri:121, instance:tests.QCStore@527740a2]" name="QC_PayAnyotherAmount_Void_Txn" duration-ms="544711" started-at="2019-03-19T12:05:08Z" finished-at="2019-03-19T12:14:13Z">
+        <test-method status="PASS" signature="QC_PayAnyotherAmount_Void_Txn()[pri:121, instance:tests.QCStore@5f9d02cb]" name="QC_PayAnyotherAmount_Void_Txn" duration-ms="669971" started-at="2019-04-01T06:24:29Z" finished-at="2019-04-01T06:35:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- QC_PayAnyotherAmount_Void_Txn -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="42" started-at="2019-03-19T12:14:13Z" finished-at="2019-03-19T12:14:13Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-04-01T06:35:39Z" finished-at="2019-04-01T06:35:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="34" started-at="2019-04-01T06:35:39Z" finished-at="2019-04-01T06:35:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=QC_PayAnyotherAmount_Void_Txn status=SUCCESS method=QCStore.QC_PayAnyotherAmount_Void_Txn()[pri:121, instance:tests.QCStore@527740a2] output={null}]]]>
+                <![CDATA[[TestResult name=QC_PayAnyotherAmount_Void_Txn status=SUCCESS method=QCStore.QC_PayAnyotherAmount_Void_Txn()[pri:121, instance:tests.QCStore@5f9d02cb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-19T12:14:13Z" finished-at="2019-03-19T12:14:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-19T12:14:13Z" finished-at="2019-03-19T12:14:18Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-04-01T06:35:39Z" finished-at="2019-04-01T06:35:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="QC_TLP_Writeoff_Recovery_Txn()[pri:131, instance:tests.QCStore@527740a2]" name="QC_TLP_Writeoff_Recovery_Txn" duration-ms="965911" started-at="2019-03-19T12:14:18Z" finished-at="2019-03-19T12:30:24Z">
+        <test-method status="PASS" signature="QC_TLP_Writeoff_Recovery_Txn()[pri:131, instance:tests.QCStore@5f9d02cb]" name="QC_TLP_Writeoff_Recovery_Txn" duration-ms="1149796" started-at="2019-04-01T06:35:44Z" finished-at="2019-04-01T06:54:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- QC_TLP_Writeoff_Recovery_Txn -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-19T12:30:24Z" finished-at="2019-03-19T12:30:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="56" started-at="2019-03-19T12:30:24Z" finished-at="2019-03-19T12:30:24Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="47" started-at="2019-04-01T06:54:53Z" finished-at="2019-04-01T06:54:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=QC_TLP_Writeoff_Recovery_Txn status=SUCCESS method=QCStore.QC_TLP_Writeoff_Recovery_Txn()[pri:131, instance:tests.QCStore@527740a2] output={null}]]]>
+                <![CDATA[[TestResult name=QC_TLP_Writeoff_Recovery_Txn status=SUCCESS method=QCStore.QC_TLP_Writeoff_Recovery_Txn()[pri:131, instance:tests.QCStore@5f9d02cb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-19T12:30:24Z" finished-at="2019-03-19T12:30:29Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-04-01T06:54:53Z" finished-at="2019-04-01T06:54:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-04-01T06:54:53Z" finished-at="2019-04-01T06:54:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="QC_TLP_Writeoff_Recovery_Void_Txn()[pri:132, instance:tests.QCStore@527740a2]" name="QC_TLP_Writeoff_Recovery_Void_Txn" duration-ms="799403" started-at="2019-03-19T12:30:29Z" finished-at="2019-03-19T12:43:48Z">
+        <test-method status="PASS" signature="QC_TLP_Writeoff_Recovery_Void_Txn()[pri:132, instance:tests.QCStore@5f9d02cb]" name="QC_TLP_Writeoff_Recovery_Void_Txn" duration-ms="843648" started-at="2019-04-01T06:54:58Z" finished-at="2019-04-01T07:09:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- QC_TLP_Writeoff_Recovery_Void_Txn -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="48" started-at="2019-03-19T12:43:48Z" finished-at="2019-03-19T12:43:49Z">
->>>>>>> brahmith1.1
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-04-01T07:09:02Z" finished-at="2019-04-01T07:09:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="37" started-at="2019-04-01T07:09:02Z" finished-at="2019-04-01T07:09:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TLP_RefinanceStepDown status=SUCCESS method=QCStore.TLP_RefinanceStepDown()[pri:310, instance:tests.QCStore@527740a2] output={null}]]]>
+                <![CDATA[[TestResult name=QC_TLP_Writeoff_Recovery_Void_Txn status=SUCCESS method=QCStore.QC_TLP_Writeoff_Recovery_Void_Txn()[pri:132, instance:tests.QCStore@5f9d02cb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-20T12:49:47Z" finished-at="2019-03-20T12:49:47Z">
-=======
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@527740a2]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-19T12:43:48Z" finished-at="2019-03-19T12:43:48Z">
->>>>>>> brahmith1.1
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
       </class> <!-- tests.QCStore -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

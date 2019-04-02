@@ -95,7 +95,7 @@ public class QCStore {
 	public static String appdate;
 	public static String day;
 
-	@Test(priority = 101, groups="Brahmith1")
+	@Test(priority = 101, groups="Brahmith")
 	public static void QC_TLP_NewLoan_Txn() throws Exception {
 		try {
 			// test =

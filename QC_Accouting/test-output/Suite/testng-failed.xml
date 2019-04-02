@@ -10,9 +10,9 @@
     <classes>
       <class name="tests.QCStore">
         <methods>
+          <include name="Recon_ILP_EARNED_FEE_Variance"/>
           <include name="getResult"/>
           <include name="setup"/>
-          <include name="EPP"/>
           <include name="endReport"/>
           <include name="killProcess"/>
         </methods>

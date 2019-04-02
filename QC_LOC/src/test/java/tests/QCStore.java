@@ -1682,7 +1682,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 67, groups = { "EOD1" })
+	@Test(priority = 67, groups = { "EOD" })
 	public static void LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn() throws Exception {
 		try {
 
@@ -1707,7 +1707,7 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-	/*				QCCSRLoginLogout.login(SSN, AppURL);
+					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
@@ -1764,7 +1764,7 @@ public class QCStore {
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCDrawerAssign.drawerAssign(SSN, AppURL);
 
-					QCCSRLoginLogout.logout(SSN, AppURL);*/
+					QCCSRLoginLogout.logout(SSN, AppURL);
 
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRHistory.history(SSN, AppURL);
@@ -1974,12 +1974,12 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					/*QCCSRLoginLogout.adminLogin(SSN, SSN);
+					QCCSRLoginLogout.adminLogin(SSN, SSN);
 					BAdminStartDate.toStartdate(SSN, SSN);
 					QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
-					BProc3.proc();*/
+					BProc3.proc();
 					
-			/*		QCCSRLoginLogout.login(SSN, AppURL);
+					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
@@ -2014,7 +2014,7 @@ public class QCStore {
 					QCAdminACHReturn.achreturn(SSN, SSN);
 
 					QCCSRLoginLogout.login(SSN, AppURL);
-					QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);*/
+					QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
 
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCEODDeposit.eodDeposit(SSN, AppURL);

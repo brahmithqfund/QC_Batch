@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="Deposit_Type" key="selection"/>
+		<item value="" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="Brahmith1"/>
+			<item value="brahmith1"/>
+			<item value="brahmith"/>
 			<item value="Deposit_Type"/>
 			<item value="transactionDataBean.chk21ReDepType"/>
 			<item value="deposite_ilp_dstype"/>
 			<item value="Misc_PhotoIDNbr"/>
 			<item value="IDNbr"/>
-			<item value="last4cheknum"/>
-			<item value="Bank_ChkgAcctNbr"/>
-			<item value="24706757#DEFAULT##1#BUY"/>
 		</list>
 		<list key="replacehistory">
 			<item value="QC_SSN_THREE_LOC"/>
