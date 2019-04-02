@@ -1,16 +1,8 @@
-<<<<<<< HEAD
-#Fri Mar 22 15:23:07 IST 2019
+#Tue Apr 02 11:27:03 IST 2019
 vl=How many times the 'Finish' button pressed during the day
 l=Wizard class name
 ct=jbt
-d=1553248387841
-=======
-#Fri Mar 22 14:29:15 IST 2019
-vl=How many times the 'Finish' button pressed during the day
-l=Wizard class name
-ct=jbt
-d=1553245155886
->>>>>>> anoop1.1
+d=1554184623147
 c=0
 cmp=usage
 a=finishWizard
