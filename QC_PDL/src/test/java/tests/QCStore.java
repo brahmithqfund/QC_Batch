@@ -1780,6 +1780,7 @@ public class QCStore {
 				ACSRACHDeposit.runscheduler(SSN, AppURL);
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQC_EPPPayment.epppayment(SSN, AppURL);
+				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRACHDeposit.runscheduler(SSN, AppURL);
 				ACSRLoginLogout.login(SSN, AppURL);
@@ -1896,6 +1897,7 @@ public class QCStore {
 				ACSRACHDeposit.runscheduler(SSN, AppURL);
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQC_EPPPayment.epppayment(SSN, AppURL);
+				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRACHDeposit.runscheduler(SSN, AppURL);
 				ACSRLoginLogout.login(SSN, AppURL);
@@ -1954,6 +1956,7 @@ public class QCStore {
 				ACSRACHDeposit.runscheduler(SSN, AppURL);
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQC_EPPPayment.epppayment(SSN, AppURL);
+				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRACHDeposit.runscheduler(SSN, AppURL);
 				ACSRLoginLogout.login(SSN, AppURL);
@@ -2248,7 +2251,6 @@ public class QCStore {
 				String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
 				ACSRLoginLogout.login(SSN, AppURL);
-				Thread.sleep(3000);
 				ACSRBorrowerRegistration.borrowerReg(SSN, AppURL);
 				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
@@ -2411,6 +2413,7 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRNewLoanPage.newLoan(SSN, AppURL);
+				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ARunschedulerGracedays.runscheduler(SSN, AppURL);
 				ACSRLoginLogout.login(SSN, AppURL);
@@ -2493,6 +2496,7 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRNewLoanPage.newLoan(SSN, AppURL);
+				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRRescindLoan.agerescind(SSN, AppURL);
 
@@ -2542,6 +2546,7 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRNewLoanPage.newLoan(SSN, AppURL);
+				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRRescindLoan.agerescind(SSN, AppURL);
 				ACSRLoginLogout.login(SSN, AppURL);
@@ -2634,6 +2639,7 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRNewLoanPage.newLoan(SSN, AppURL);
+				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRRescindLoan.agerescind(SSN, AppURL);
 
@@ -2727,6 +2733,7 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRNewLoanPage.newLoan(SSN, AppURL);
+				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRRescindLoan.agerescind(SSN, AppURL);
 
@@ -2774,6 +2781,7 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRNewLoanPage.newLoan(SSN, AppURL);
+				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRRescindLoan.agerescind(SSN, AppURL);
 				ACSRLoginLogout.login(SSN, AppURL);

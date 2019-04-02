@@ -468,6 +468,7 @@ public class ACSRNewLoanPage extends QCStore{
 		driver.findElement(By.xpath(e)).click();
 		
 		test.log(LogStatus.PASS, "click on Yes button ");
+		Thread.sleep(3000);
 	
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame("mainFrame");
@@ -1219,7 +1220,7 @@ public class ACSRNewLoanPage extends QCStore{
 			driver.findElement(By.name("OKBut")).click();
 
 			test.log(LogStatus.PASS, "click on Yes button ");
-
+			Thread.sleep(3000);
 			driver.switchTo().defaultContent();
 			driver.switchTo().frame("mainFrame");
 			driver.switchTo().frame("main");

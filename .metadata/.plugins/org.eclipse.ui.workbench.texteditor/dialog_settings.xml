@@ -3,15 +3,20 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<item value="// Anoop" key="selection"/>
 =======
 		<item value="" key="selection"/>
 >>>>>>> brahmith1.1
+=======
+		<item value="click on Yes button" key="selection"/>
+>>>>>>> anoop1.1
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+<<<<<<< HEAD
 <<<<<<< HEAD
 			<item value="// anoop"/>
 =======
@@ -24,6 +29,12 @@
 			<item value="Misc_PhotoIDNbr"/>
 			<item value="IDNbr"/>
 >>>>>>> brahmith1.1
+=======
+			<item value="click on Yes button"/>
+			<item value="// anoop"/>
+			<item value="QC_EPP_AgestoreInstallmentwise_EPPPayment"/>
+			<item value="QC_Refinanace StepUp"/>
+>>>>>>> anoop1.1
 		</list>
 		<list key="replacehistory">
 		</list>
