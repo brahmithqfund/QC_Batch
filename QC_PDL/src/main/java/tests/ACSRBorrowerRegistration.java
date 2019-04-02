@@ -118,7 +118,7 @@ public class ACSRBorrowerRegistration extends QCStore {
 				//driver.findElement(By.xpath("//*[contains(text(),'Borrower')]")).click();			
 				test.log(LogStatus.PASS, "Clicked on Borrower");
 				//driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
-				Thread.sleep(1500);
+				Thread.sleep(3000);
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");			 
 				wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("li[id='901000']")));

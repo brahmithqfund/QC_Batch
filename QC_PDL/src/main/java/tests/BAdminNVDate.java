@@ -24,7 +24,7 @@ public class BAdminNVDate extends QCStore
 	public static void toStartdate(String SSN,String AppURL) throws InterruptedException, ParseException
 	{
 
-				String StoreID ="3245";                                                       
+				String StoreID ="727";                                                       
 				
 					startdate="12/27/2017";
 			

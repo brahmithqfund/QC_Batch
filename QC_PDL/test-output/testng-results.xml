@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="75" total="77" passed="2">
   <reporter-output>
   </reporter-output>
@@ -47,6 +48,36 @@
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=JQC_AgeStore_Refinance_Rescind_Txn status=SUCCESS method=QCStore.JQC_AgeStore_Refinance_Rescind_Txn()[pri:412, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+=======
+<testng-results skipped="0" failed="0" ignored="76" total="77" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="806833" started-at="2019-04-02T05:14:17Z" finished-at="2019-04-02T05:27:44Z">
+    <groups>
+      <group name="AnoopRe">
+        <method signature="QCStore.RefinanceStepup()[pri:9, instance:tests.QCStore@5f9d02cb]" name="RefinanceStepup" class="tests.QCStore"/>
+      </group> <!-- AnoopRe -->
+    </groups>
+    <test name="Test" duration-ms="806833" started-at="2019-04-02T05:14:17Z" finished-at="2019-04-02T05:27:44Z">
+      <class name="tests.QCStore">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="100" started-at="2019-04-02T05:14:17Z" finished-at="2019-04-02T05:14:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-04-02T05:14:17Z" finished-at="2019-04-02T05:14:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="RefinanceStepup()[pri:9, instance:tests.QCStore@5f9d02cb]" name="RefinanceStepup" duration-ms="801512" started-at="2019-04-02T05:14:22Z" finished-at="2019-04-02T05:27:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RefinanceStepup -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="206" started-at="2019-04-02T05:27:43Z" finished-at="2019-04-02T05:27:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RefinanceStepup status=SUCCESS method=QCStore.RefinanceStepup()[pri:9, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+>>>>>>> anoop1.1
               </value>
             </param>
           </params>

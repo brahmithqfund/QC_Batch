@@ -4,16 +4,37 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
+<<<<<<< HEAD
         <include name="Janaki"/>
+=======
+        <include name="Anoop"/>
+>>>>>>> anoop1.1
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
+<<<<<<< HEAD
           <include name="getResult"/>
           <include name="setup"/>
           <include name="JQC_AgeStore_Deposit_Return_Refinance_Void_Txn"/>
+=======
+          <include name="GracedaysDepositMenu"/>
+          <include name="Achdeposit"/>
+          <include name="setup"/>
+          <include name="RefinanceStepupVoid"/>
+>>>>>>> anoop1.1
           <include name="killProcess"/>
+          <include name="AQC_EPP_Prepayment"/>
+          <include name="AQC_EPP_Redeposit"/>
+          <include name="getResult"/>
+          <include name="RefinanceStepup"/>
+          <include name="maxloanCount"/>
+          <include name="rebateStepupVoid"/>
+          <include name="rebateStepup"/>
+          <include name="RefinanceStepSameVoid"/>
+          <include name="RefinanceStepSame"/>
+          <include name="AQC_EPP_nsfPayment"/>
         </methods>
       </class> <!-- tests.QCStore -->
     </classes>

@@ -2503,7 +2503,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 11, enabled = true, groups = "Anoop")
+	@Test(priority = 12, enabled = true, groups = "Anoopsss")
 
 	public void ILP_ACHAutoClear() throws Exception {
 
@@ -2557,7 +2557,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 12, enabled = true, groups = "Anoop")
+	@Test(priority = 11, enabled = true, groups = "Anoop")
 
 	public void ILP_CheckAutoClear() throws Exception {
 
@@ -3409,7 +3409,10 @@ public class QCStore {
 				+ screenshotName + dateName + ".png";
 		File finalDestination = new File(destination);
 		FileUtils.copyFile(source, finalDestination);
+		reports.flush();
+		driver.quit();
 		return destination;
+		
 	}
 
 	@AfterMethod(alwaysRun = true)
@@ -3429,8 +3432,8 @@ public class QCStore {
 
 			test.log(LogStatus.PASS, result.getName() + " Test Case is Passed");
 		}
-		reports.flush();
-		driver.quit();
+		/*reports.flush();
+		driver.quit();*/
 
 	}
 

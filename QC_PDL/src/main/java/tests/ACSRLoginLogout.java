@@ -82,15 +82,15 @@ public class ACSRLoginLogout extends QCStore{
 			driver.findElement(By.xpath("//*[@id='icons']/li[7]/a")).click();
 			test.log(LogStatus.PASS, "Clicked On logout Button");
 			test.log(LogStatus.PASS, "<FONT color=green> Logout Successfully"); 
-			Thread.sleep(6000);
-			if(driver.getTitle().contains("Login")){
+			driver.quit();
+			/*if(driver.getTitle().contains("Login")){
 				//test.log(LogStatus.PASS, "<FONT color=green> Logout Successfully"); 
 				test.log(LogStatus.INFO, "******************************************************** ");
 				driver.quit();
 			}
 			else{
 				test.log(LogStatus.PASS, "<FONT color=Red> Logout was unsuccessfull"); 
-			}
+			}*/
 
 		}
 		catch(Exception e)

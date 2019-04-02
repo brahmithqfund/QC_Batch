@@ -23,16 +23,15 @@
 
   <!--  Anoop scenarios -->
      <!--<include name="Anoop_EOD1"/>-->
+
 <!--      <include name="Anoop_EOD2"/> -->
 
-      <!-- <include name="Anoop_EOD3"/> -->
-  
+      <include name="Anoop_EOD3"/>
 
     <!--  Rati scenarios   -->  
+
     <!-- <include name="Ratikanta_NEOD"/> -->
       <!-- <include name="Ratikanta_EOD"/>-->
-
- 
   <!--  Shashi scenarios  -->
  <!--  <include name="NonEOD"/>  -->
   <!--  <include name="Shashi"/> -->
@@ -40,9 +39,9 @@
 
   <!--  Jyothi scenarios -->
 
-    <include name="1st Batch"/>
+    <!-- <include name="1st Batch"/> -->
+       <!--  <include name="Jyothi"/> -->
 
-        <!-- <include name="Jyothi"/> -->
 
   </run>
   </groups>

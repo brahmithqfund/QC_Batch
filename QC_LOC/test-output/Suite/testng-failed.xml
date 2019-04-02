@@ -5,6 +5,7 @@
     <groups>
       <run>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <include name="Jyothi"/>
 =======
 <<<<<<< HEAD
@@ -38,11 +39,15 @@
         <include name="Anoop_EOD1"/>
 >>>>>>> janaki1.2
 >>>>>>> bd07c6d5205653a8caa48fad7384faa0a833d949
+=======
+        <include name="Anoop_EOD4"/>
+>>>>>>> anoop1.1
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <include name="getResult"/>
           <include name="setup"/>
@@ -101,15 +106,12 @@
           <include name="DrawAndEOD"/>
 >>>>>>> janaki1.2
 >>>>>>> bd07c6d5205653a8caa48fad7384faa0a833d949
-          <include name="killProcess"/>
-          <include name="RQC_LOC_2missedPayment_Default_EOD_Txn_Testdata"/>
-          <include name="RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Txn_Testdata"/>
-          <include name="RQC_LOC_PayOff_Closure_PayoffReturn_Txn_Testdata"/>
+=======
           <include name="getResult"/>
-          <include name="RQC_LOC_PayOff_Closure_Txn_Testdata"/>
-          <include name="RQC_LOC_PayOff_Agestore180days_AutoClosure_Txn_Testdata"/>
-          <include name="RQC_LOC_Deposit_Return_2ndDeposit_Clear_3rdDeposit_Return_Default_Txn_Testdata"/>
-          <include name="RQC_LOC_Default_DefaultPayment_Return_Txn_Testdata"/>
+          <include name="setup"/>
+          <include name="PaymentDepositEODReDeposit"/>
+>>>>>>> anoop1.1
+          <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->
     </classes>

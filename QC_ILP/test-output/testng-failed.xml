@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <include name="Ratikanta_ILP"/>
 =======
 <<<<<<< HEAD
@@ -29,11 +30,15 @@
 =======
         <include name="Janaki"/>
 >>>>>>> janaki1.2
+=======
+        <include name="Anoop"/>
+>>>>>>> anoop1.1
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -77,6 +82,12 @@
           <include name="setup"/>
           <include name="JQC_ILP_GraceDays_Deposit_MidDay_Txn"/>
           <include name="JQC_ILP_GraceDays_Deposit_dropdown_Txn"/>
+=======
+          <include name="getResult"/>
+          <include name="setup"/>
+          <include name="ILP_ACHAutoClear"/>
+          <include name="ILP_voidRefinance"/>
+>>>>>>> anoop1.1
           <include name="endReport"/>
           <include name="JQC_ILP_SignaturLoan_Default_Txn"/>
           <include name="killProcess"/>

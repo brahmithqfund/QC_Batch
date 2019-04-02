@@ -2,160 +2,22 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-<<<<<<< HEAD
-		<item value="@Test" key="selection"/>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-		<item value="@Test" key="selection"/>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-		<item value="1stBatch1" key="selection"/>
-=======
-		<item value="Anoop_EOD2" key="selection"/>
->>>>>>> anoop1.1
-=======
-		<item value="Janaki1" key="selection"/>
->>>>>>> janaki1.2
->>>>>>> 94f8c6c7c813472811788079e0dd42466be9f995
-=======
-		<item value="" key="selection"/>
->>>>>>> Ratikanta1.1
-=======
-		<item value="Janaki_EOD_set2" key="selection"/>
->>>>>>> janaki1.2
->>>>>>> bd07c6d5205653a8caa48fad7384faa0a833d949
+		<item value="// Anoop" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-<<<<<<< HEAD
-			<item value="//@Test"/>
-<<<<<<< HEAD
-			<item value="//&#x09;@Test"/>
-			<item value="@Test"/>
-			<item value="head"/>
-			<item value="dependency"/>
-			<item value="jy"/>
-=======
-			<item value="//////@Test"/>
-			<item value="PayOff_after_RescindPeriod"/>
-			<item value="Payment_Return_PayOff"/>
->>>>>>> jyothi1.2
-			<item value="jyothi"/>
-			<item value="semimonthly_NextPay_NotOn_End"/>
-			<item value="store"/>
-			<item value="storeid"/>
+			<item value="// anoop"/>
 		</list>
 		<list key="replacehistory">
-			<item value="@Test"/>
-<<<<<<< HEAD
-=======
-			<item value="enabled = true"/>
-			<item value="enabled = false"/>
->>>>>>> jyothi1.2
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-			<item value="//@Test"/>
-			<item value="@Test"/>
-			<item value="enabled = false"/>
-			<item value="Janaki"/>
-			<item value="Ratikanta"/>
-<<<<<<< HEAD
-			<item value="Jyothi"/>
-			<item value="Insurance"/>
-			<item value="Insurance Coverage "/>
-		</list>
-		<list key="replacehistory">
-			<item value="//@Test"/>
-			<item value="@Test"/>
-			<item value=""/>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-			<item value="1stBatch1"/>
-			<item value="QC_SSN_THREE_PDL"/>
-			<item value="QC_SSN_THREE_LOC"/>
-			<item value="Date1"/>
-			<item value="QC_SSN_THREE_TLP"/>
-			<item value="proc"/>
-			<item value="1709"/>
-			<item value="ilp"/>
-=======
-			<item value="QC_Deceased"/>
-			<item value="Janaki1"/>
-			<item value="Janaki_WORecovery"/>
-			<item value="write"/>
-=======
-			<item value="Janaki_EOD_set2"/>
->>>>>>> janaki1.2
-			<item value="Janaki_EOD_set1"/>
-			<item value="QC_Refinance_Rescind"/>
-			<item value="QC_Deposit_Return_Refinance_Void"/>
-			<item value="Janaki1"/>
-			<item value="QC_Deposit_Return_Refinance"/>
-			<item value="QC_ACHReturn_Refinance_Rescind"/>
-			<item value="QC_NSFPosting_Refinance_Rescind"/>
-		</list>
-		<list key="replacehistory">
-<<<<<<< HEAD
->>>>>>> anoop1.1
->>>>>>> 94f8c6c7c813472811788079e0dd42466be9f995
-=======
-			<item value="enabled = false"/>
-			<item value="Janaki"/>
-			<item value="//@Test"/>
-			<item value="enabled = true"/>
-			<item value="JaNAKI"/>
-			<item value="Refinance"/>
-			<item value="janaki"/>
-		</list>
-		<list key="replacehistory">
-			<item value="enabled = true"/>
-			<item value="@Test"/>
-			<item value="enabled = false"/>
-			<item value="Rprop"/>
->>>>>>> Ratikanta1.1
-=======
-			<item value="Janaki"/>
->>>>>>> janaki1.2
->>>>>>> bd07c6d5205653a8caa48fad7384faa0a833d949
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
-<<<<<<< HEAD
-		<item value="839" key="DIALOG_X_ORIGIN"/>
-		<item value="356" key="DIALOG_Y_ORIGIN"/>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-		<item value="745" key="DIALOG_X_ORIGIN"/>
-		<item value="136" key="DIALOG_Y_ORIGIN"/>
-=======
-		<item value="991" key="DIALOG_X_ORIGIN"/>
-		<item value="210" key="DIALOG_Y_ORIGIN"/>
->>>>>>> anoop1.1
-=======
-		<item value="1067" key="DIALOG_X_ORIGIN"/>
-		<item value="233" key="DIALOG_Y_ORIGIN"/>
->>>>>>> janaki1.2
-=======
-		<item value="122" key="DIALOG_X_ORIGIN"/>
-		<item value="356" key="DIALOG_Y_ORIGIN"/>
->>>>>>> Ratikanta1.1
-=======
-		<item value="653" key="DIALOG_X_ORIGIN"/>
-		<item value="356" key="DIALOG_Y_ORIGIN"/>
->>>>>>> janaki1.2
->>>>>>> bd07c6d5205653a8caa48fad7384faa0a833d949
+		<item value="563" key="DIALOG_X_ORIGIN"/>
+		<item value="119" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

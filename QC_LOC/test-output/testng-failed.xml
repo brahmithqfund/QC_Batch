@@ -6,6 +6,7 @@
     <groups>
       <run>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <include name="Jyothi"/>
 =======
 <<<<<<< HEAD
@@ -35,6 +36,9 @@
         <include name="Anoop_EOD2"/>
 >>>>>>> anoop1.1
 >>>>>>> bd07c6d5205653a8caa48fad7384faa0a833d949
+=======
+        <include name="Anoop_EOD4"/>
+>>>>>>> anoop1.1
       </run>
     </groups>
 =======
@@ -44,6 +48,7 @@
     <classes>
       <class name="tests.QCStore">
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <include name="getResult"/>
           <include name="setup"/>
@@ -88,13 +93,13 @@
 >>>>>>> jyothi1.2
 >>>>>>> 26f8126931b7afc696e5ebd31895ac4dfa2dd77b
 =======
-          <include name="getResult"/>
-          <include name="setup"/>
-          <include name="LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn"/>
->>>>>>> brahmith1.1
 =======
 >>>>>>> anoop1.1
+          <include name="getResult"/>
+          <include name="setup"/>
+          <include name="PaymentDepositEODReDeposit"/>
           <include name="killProcess"/>
+<<<<<<< HEAD
           <include name="RQC_LOC_2missedPayment_Default_EOD_Txn_Testdata"/>
           <include name="RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Txn_Testdata"/>
           <include name="RQC_LOC_PayOff_Closure_PayoffReturn_Txn_Testdata"/>
@@ -136,6 +141,8 @@
           <include name="Clear_Return_EODTwice"/>
           <include name="SQC_LOC_LessMinPayment_Deposit"/>
 >>>>>>> janaki1.2
+=======
+>>>>>>> anoop1.1
         </methods>
       </class> <!-- tests.QCStore -->
     </classes>
