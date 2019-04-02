@@ -3,15 +3,20 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<item value="Anoop" key="selection"/>
 =======
 		<item value="Refinance" key="selection"/>
 >>>>>>> Ratikanta1.1
+=======
+		<item value="QC_Refinanace StepUp" key="selection"/>
+>>>>>>> 33354a572293420cb1c9bb16b353c54411f71fe2
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+<<<<<<< HEAD
 <<<<<<< HEAD
 			<item value="Anoop"/>
 			<item value="RefinanceStepdown"/>
@@ -26,6 +31,11 @@
 			<item value="//@Test"/>
 			<item value="RQC_DefaultPayment_Void"/>
 >>>>>>> Ratikanta1.1
+=======
+			<item value="QC_Refinanace StepUp"/>
+			<item value="anoop"/>
+			<item value="annop"/>
+>>>>>>> 33354a572293420cb1c9bb16b353c54411f71fe2
 		</list>
 		<list key="replacehistory">
 		</list>
@@ -34,7 +44,12 @@
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
+<<<<<<< HEAD
 		<item value="92" key="DIALOG_X_ORIGIN"/>
 		<item value="399" key="DIALOG_Y_ORIGIN"/>
+=======
+		<item value="563" key="DIALOG_X_ORIGIN"/>
+		<item value="119" key="DIALOG_Y_ORIGIN"/>
+>>>>>>> 33354a572293420cb1c9bb16b353c54411f71fe2
 	</section>
 </section>

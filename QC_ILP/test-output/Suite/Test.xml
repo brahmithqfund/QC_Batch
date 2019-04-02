@@ -18,6 +18,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testsuite hostname="QTLSYS2-238" ignored="54" name="Test" tests="1" failures="0" timestamp="21 Mar 2019 13:15:23 GMT" time="141.42" errors="0">
   <testcase name="QC_NewLoan_Promotion_Txn" time="136.028" classname="tests.QCStore"/>
 =======
@@ -32,6 +33,10 @@
 <testsuite hostname="QTLSYS2-238" ignored="54" name="Test" tests="1" failures="0" timestamp="26 Mar 2019 13:11:18 GMT" time="665.366" errors="0">
   <testcase name="QC_Installmentpayment_Void_Txn" time="659.943" classname="tests.QCStore"/>
 >>>>>>> brahmith1.1
+=======
+<testsuite hostname="QTLSYS1-182" ignored="52" name="Test" tests="1" failures="0" timestamp="29 Mar 2019 09:23:56 GMT" time="851.202" errors="0">
+  <testcase name="JQC_ILP_GraceDays_Deposit_EOD_Txn" time="845.927" classname="tests.QCStore"/>
+>>>>>>> janaki1.2
   <testcase name="QC_PayAnyotherAmount_Void_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- QC_PayAnyotherAmount_Void_Txn -->
@@ -92,11 +97,16 @@
   <testcase name="ILP_RefinanceStepSame_Void" time="0.0" classname="tests.QCStore">
 >>>>>>> ed2c491bd27e4295563c266a26fe8e49e10943ef
     <ignored/>
+<<<<<<< HEAD
   </testcase> <!-- ILP_Redeposit -->
   <testcase name="QC_PayAnyotherAmount_Void_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- QC_PayAnyotherAmount_Void_Txn -->
   <testcase name="QC_AgeStore_Void_Txn" time="0.0" classname="tests.QCStore">
+=======
+  </testcase> <!-- ILP_RefinanceStepSame_Void -->
+  <testcase name="ILP_Redeposit" time="0.0" classname="tests.QCStore">
+>>>>>>> 33354a572293420cb1c9bb16b353c54411f71fe2
     <ignored/>
 <<<<<<< HEAD
   </testcase> <!-- QC_AgeStore_Void_Txn -->
@@ -219,12 +229,18 @@ at tests.QCStore.ILP_voidRefinance(QCStore.java:2536)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   <testcase name="JQC_ILP_GraceDays_Deposit_dropdown_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_ILP_GraceDays_Deposit_dropdown_Txn -->
 >>>>>>> Ratikanta1.1
+<<<<<<< HEAD
 >>>>>>> ed2c491bd27e4295563c266a26fe8e49e10943ef
+=======
+=======
+>>>>>>> janaki1.2
+>>>>>>> 33354a572293420cb1c9bb16b353c54411f71fe2
   <testcase name="ILP_voidRefinance" time="0.0" classname="tests.QCStore">
 =======
   <testcase name="RQC_Bankruptcy_Dismiss_Txn_Testdata" time="0.0" classname="tests.QCStore">
@@ -249,7 +265,6 @@ at tests.QCStore.ILP_voidRefinance(QCStore.java:2536)
 =======
   <testcase name="RQC_WriteOffRecovery_Void_Txn_Testdata" time="0.0" classname="tests.QCStore">
     <ignored/>
-<<<<<<< HEAD
   </testcase> <!-- RQC_WriteOffRecovery_Void_Txn_Testdata -->
   <testcase name="RQC_WriteOffRecovery_Txn_Testdata" time="0.0" classname="tests.QCStore">
     <ignored/>
@@ -266,6 +281,7 @@ at tests.QCStore.ILP_voidRefinance(QCStore.java:2536)
   <testcase name="RQC_Bankruptcy_WORecovery_Txn_Testdata" time="0.0" classname="tests.QCStore">
 >>>>>>> ed2c491bd27e4295563c266a26fe8e49e10943ef
     <ignored/>
+<<<<<<< HEAD
   </testcase> <!-- ILP_RefinanceStepSame -->
   <testcase name="ILP_inactiveNewloan" time="0.0" classname="tests.QCStore">
     <ignored/>
@@ -282,6 +298,9 @@ at tests.QCStore.ILP_voidRefinance(QCStore.java:2536)
   <testcase name="ILP_RefinanceStepDown_void" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- ILP_RefinanceStepDown_void -->
+=======
+  </testcase> <!-- RQC_Bankruptcy_WORecovery_Txn_Testdata -->
+>>>>>>> 33354a572293420cb1c9bb16b353c54411f71fe2
   <testcase name="JQC_ILP_SignaturLoan_Default_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_ILP_SignaturLoan_Default_Txn -->
@@ -290,6 +309,7 @@ at tests.QCStore.ILP_voidRefinance(QCStore.java:2536)
   </testcase> <!-- JQC_ILP_Deposit_MidDay_Txn -->
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -305,6 +325,12 @@ at tests.QCStore.ILP_voidRefinance(QCStore.java:2536)
   <testcase name="QC_NewLoan_Promotion_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- QC_NewLoan_Promotion_Txn -->
+<<<<<<< HEAD
+=======
+>>>>>>> Ratikanta1.1
+=======
+>>>>>>> janaki1.2
+>>>>>>> 33354a572293420cb1c9bb16b353c54411f71fe2
   <testcase name="QC_Installmentpayment_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- QC_Installmentpayment_Txn -->
@@ -312,6 +338,7 @@ at tests.QCStore.ILP_voidRefinance(QCStore.java:2536)
   <testcase name="ILP_RefinanceStepup" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- ILP_RefinanceStepup -->
+<<<<<<< HEAD
   <testcase name="QC_LessInterest_VoidFullPayment_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
 =======
@@ -319,6 +346,8 @@ at tests.QCStore.ILP_voidRefinance(QCStore.java:2536)
     <ignored/>
 >>>>>>> anoop1.1
   </testcase> <!-- QC_LessInterest_VoidFullPayment_Txn -->
+=======
+>>>>>>> janaki1.2
   <testcase name="QC_ILP_Buyback_Void_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- QC_ILP_Buyback_Void_Txn -->
@@ -336,17 +365,21 @@ at tests.QCStore.ILP_voidRefinance(QCStore.java:2536)
 <<<<<<< HEAD
   </testcase> <!-- ILP_maxloanCount -->
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
   </testcase> <!-- RQC_Bankruptcy_Discharge_Txn_Testdata -->
 >>>>>>> anoop1.1
+=======
+>>>>>>> janaki1.2
   <testcase name="QC_ILP_clear_Menu_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- QC_ILP_clear_Menu_Txn -->
   <testcase name="RQC_DefaultPayment_Txn_Testdata" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- RQC_DefaultPayment_Txn_Testdata -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> ed2c491bd27e4295563c266a26fe8e49e10943ef
@@ -392,6 +425,11 @@ at tests.QCStore.ILP_voidRefinance(QCStore.java:2536)
     <ignored/>
   </testcase> <!-- QC_Installmentpayment_Void_Txn -->
 >>>>>>> anoop1.1
+=======
+  <testcase name="QC_ILP_Return_Menu_Txn" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- QC_ILP_Return_Menu_Txn -->
+>>>>>>> janaki1.2
   <testcase name="JQC_ILP_Deposit_Menu_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_ILP_Deposit_Menu_Txn -->
@@ -399,6 +437,7 @@ at tests.QCStore.ILP_voidRefinance(QCStore.java:2536)
     <ignored/>
 <<<<<<< HEAD
   </testcase> <!-- ILP_RefinanceStepUpVoid -->
+<<<<<<< HEAD
 >>>>>>> janaki1.2
 =======
   </testcase> <!-- RQC_DefaultPayment_Void_Txn_Testdata -->
@@ -434,7 +473,15 @@ at tests.QCStore.ILP_voidRefinance(QCStore.java:2536)
   </testcase> <!-- JQC_ILP_GraceDays_Deposit_MidDay_Txn -->
 =======
 >>>>>>> janaki1.2
+<<<<<<< HEAD
 >>>>>>> ed2c491bd27e4295563c266a26fe8e49e10943ef
+=======
+=======
+  <testcase name="JQC_ILP_Deposit_dropdown_Txn" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- JQC_ILP_Deposit_dropdown_Txn -->
+>>>>>>> janaki1.2
+>>>>>>> 33354a572293420cb1c9bb16b353c54411f71fe2
   <testcase name="ILP_agerescindtest" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- ILP_agerescindtest -->
@@ -445,6 +492,7 @@ at tests.QCStore.ILP_voidRefinance(QCStore.java:2536)
     <ignored/>
   </testcase> <!-- ILP_rescindloan -->
   <testcase name="ILP_ACHAutoClear" time="0.0" classname="tests.QCStore">
+<<<<<<< HEAD
 =======
 >>>>>>> anoop1.1
     <ignored/>
@@ -454,6 +502,8 @@ at tests.QCStore.ILP_voidRefinance(QCStore.java:2536)
     <ignored/>
   </testcase> <!-- QC_NewLoan_TLPConversion_Txn -->
   <testcase name="ILP_CheckAutoClear" time="0.0" classname="tests.QCStore">
+=======
+>>>>>>> 33354a572293420cb1c9bb16b353c54411f71fe2
 =======
   </testcase> <!-- JQC_ILP_GraceDays_Deposit_MidDay_Txn -->
   <testcase name="QC_NewLoan_TLPConversion_Txn" time="0.0" classname="tests.QCStore">
@@ -467,10 +517,16 @@ at tests.QCStore.ILP_voidRefinance(QCStore.java:2536)
     <ignored/>
   </testcase> <!-- JQC_ILP_Deposit_EOD_Txn -->
 <<<<<<< HEAD
+<<<<<<< HEAD
   <testcase name="ILP_RefinanceStepSame_Void" time="0.0" classname="tests.QCStore">
 =======
   <testcase name="RQC_Default_Refinance_Txn_Testdata" time="0.0" classname="tests.QCStore">
 >>>>>>> ed2c491bd27e4295563c266a26fe8e49e10943ef
     <ignored/>
   </testcase> <!-- ILP_RefinanceStepSame_Void -->
+=======
+  <testcase name="RQC_Default_Refinance_Txn_Testdata" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- RQC_Default_Refinance_Txn_Testdata -->
+>>>>>>> 33354a572293420cb1c9bb16b353c54411f71fe2
 </testsuite> <!-- Test -->
