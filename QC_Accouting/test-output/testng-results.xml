@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
+<testng-results skipped="0" failed="0" ignored="7" total="8" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="41483" started-at="2019-03-29T13:23:49Z" finished-at="2019-03-29T13:24:30Z">
+  <suite name="Suite" duration-ms="25700" started-at="2019-04-03T09:40:22Z" finished-at="2019-04-03T09:40:48Z">
     <groups>
-      <group name="Brahmith2">
-        <method signature="QCStore.Reverse_and_Reallocation()[pri:2, instance:tests.QCStore@370736d9]" name="Reverse_and_Reallocation" class="tests.QCStore"/>
-      </group> <!-- Brahmith2 -->
+      <group name="Janaki">
+        <method signature="QCStore.ERM_Re_deposit()[pri:1, instance:tests.QCStore@5f9d02cb]" name="ERM_Re_deposit" class="tests.QCStore"/>
+      </group> <!-- Janaki -->
     </groups>
-    <test name="Test" duration-ms="41483" started-at="2019-03-29T13:23:49Z" finished-at="2019-03-29T13:24:30Z">
+    <test name="Test" duration-ms="25700" started-at="2019-04-03T09:40:22Z" finished-at="2019-04-03T09:40:48Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@370736d9]" name="setup" is-config="true" duration-ms="105" started-at="2019-03-29T13:23:49Z" finished-at="2019-03-29T13:23:49Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="78" started-at="2019-04-03T09:40:22Z" finished-at="2019-04-03T09:40:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@370736d9]" name="killProcess" is-config="true" duration-ms="5012" started-at="2019-03-29T13:23:49Z" finished-at="2019-03-29T13:23:54Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5008" started-at="2019-04-03T09:40:22Z" finished-at="2019-04-03T09:40:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="Reverse_and_Reallocation()[pri:2, instance:tests.QCStore@370736d9]" name="Reverse_and_Reallocation" duration-ms="36152" started-at="2019-03-29T13:23:54Z" finished-at="2019-03-29T13:24:30Z">
+        <test-method status="PASS" signature="ERM_Re_deposit()[pri:1, instance:tests.QCStore@5f9d02cb]" name="ERM_Re_deposit" duration-ms="19879" started-at="2019-04-03T09:40:27Z" finished-at="2019-04-03T09:40:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Reverse_and_Reallocation -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@370736d9]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-29T13:24:30Z" finished-at="2019-03-29T13:24:30Z">
+        </test-method> <!-- ERM_Re_deposit -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-04-03T09:40:47Z" finished-at="2019-04-03T09:40:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@370736d9]" name="getResult" is-config="true" duration-ms="198" started-at="2019-03-29T13:24:30Z" finished-at="2019-03-29T13:24:30Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="719" started-at="2019-04-03T09:40:47Z" finished-at="2019-04-03T09:40:48Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Reverse_and_Reallocation status=SUCCESS method=QCStore.Reverse_and_Reallocation()[pri:2, instance:tests.QCStore@370736d9] output={null}]]]>
+                <![CDATA[[TestResult name=ERM_Re_deposit status=SUCCESS method=QCStore.ERM_Re_deposit()[pri:1, instance:tests.QCStore@5f9d02cb] output={null}]]]>
               </value>
             </param>
           </params>

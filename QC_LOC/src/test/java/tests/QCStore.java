@@ -2036,10 +2036,6 @@ public class QCStore {
 
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
-					/*
-					 * QCCSRLoginLogout.login(SSN, AppURL);
-					 * QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
-					 */
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCDefaultStatus.defaultStatus(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
