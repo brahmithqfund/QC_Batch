@@ -18,7 +18,7 @@ public class QCRedeposit extends QCStore {
 				String RegSSN = TestData.getCellData(sheetName, "SSN", row);
 
 				if (SSN.equals(RegSSN)) {
-					//loan_nbr="10309818";
+					//loan_nbr="10442048";
 					String Representation_Type = TestData.getCellData(sheetName, "Representation_Type", row);
 
 					test.log(LogStatus.PASS, "Re Deposit has started");

@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testsuite skipped="6" hostname="QTLSYS1-182" name="tests.QCStore" tests="8" failures="0" timestamp="26 Mar 2019 13:00:03 GMT" time="1577.001" errors="0">
   <testcase name="JQC_AgeStore_Deposit_Return_Refinance_Void_Txn" time="841.321" classname="tests.QCStore"/>
   <testcase name="JQC_AgeStore_Refinance_Rescind_Txn" time="735.680" classname="tests.QCStore"/>
@@ -225,6 +226,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 =======
   </testcase> <!-- QC_FutureDeposit_EOD_Txn -->
 >>>>>>> brahmith1.1
+=======
+<testsuite skipped="6" hostname="QTLSYS1-182" name="tests.QCStore" tests="7" failures="0" timestamp="04 Apr 2019 05:52:23 GMT" time="735.365" errors="0">
+  <testcase name="JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata" time="735.365" classname="tests.QCStore"/>
+>>>>>>> janaki1.2
   <testcase name="JQC_AgeStore_GraceDays_DCDeposit_Menu_Txn" classname="tests.QCStore">
     <skipped/>
   </testcase> <!-- JQC_AgeStore_GraceDays_DCDeposit_Menu_Txn -->

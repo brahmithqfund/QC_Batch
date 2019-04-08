@@ -6,12 +6,12 @@
   <run>
 
     <!-- Janaki's group--> 
-      <!--  <include name="Janaki"/> -->
-   <!-- <include name="Janaki_WORecovery"/> -->  
+       <!-- <include name="Janaki"/> -->
+  <!--  <include name="Janaki_WORecovery"/>  --> 
    
   	
  <!-- Anoop group--> 
- <include name="Anoopre"/> 
+ <!-- <include name="Anoopre"/>  -->
 
        <!-- Brahmith group-->  
   <!--   <include name="1stBatch2"/>  -->

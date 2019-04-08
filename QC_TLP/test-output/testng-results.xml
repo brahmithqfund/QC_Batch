@@ -2,45 +2,38 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<testng-results skipped="0" failed="0" ignored="34" total="35" passed="1">
+<<<<<<< HEAD
 =======
-<testng-results skipped="0" failed="0" ignored="27" total="35" passed="8">
 >>>>>>> janaki1.2
+<testng-results skipped="0" failed="0" ignored="34" total="35" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="5912250" started-at="2019-03-29T11:21:15Z" finished-at="2019-03-29T12:59:47Z">
+  <suite name="Suite" duration-ms="748185" started-at="2019-04-05T05:15:55Z" finished-at="2019-04-05T05:28:23Z">
     <groups>
-      <group name="Janaki">
-        <method signature="QCStore.JQC_DefaultPayment_Txn_Testdata()[pri:207, instance:tests.QCStore@5f9d02cb]" name="JQC_DefaultPayment_Txn_Testdata" class="tests.QCStore"/>
-        <method signature="QCStore.JQC_DefaultPayment_Void_Txn_Testdata()[pri:208, instance:tests.QCStore@5f9d02cb]" name="JQC_DefaultPayment_Void_Txn_Testdata" class="tests.QCStore"/>
-        <method signature="QCStore.JQC_TLP_Deposit_Menu_Txn()[pri:204, instance:tests.QCStore@5f9d02cb]" name="JQC_TLP_Deposit_Menu_Txn" class="tests.QCStore"/>
-        <method signature="QCStore.JQC_TLP_Deposit_MidDay_Txn()[pri:200, instance:tests.QCStore@5f9d02cb]" name="JQC_TLP_Deposit_MidDay_Txn" class="tests.QCStore"/>
-        <method signature="QCStore.JQC_TLP_Deposit_dropdown_Txn()[pri:203, instance:tests.QCStore@5f9d02cb]" name="JQC_TLP_Deposit_dropdown_Txn" class="tests.QCStore"/>
-        <method signature="QCStore.JQC_TLP_GraceDays_Deposit_Menu_Txn()[pri:202, instance:tests.QCStore@5f9d02cb]" name="JQC_TLP_GraceDays_Deposit_Menu_Txn" class="tests.QCStore"/>
-        <method signature="QCStore.JQC_TLP_GraceDays_Deposit_MidDay_Txn()[pri:201, instance:tests.QCStore@5f9d02cb]" name="JQC_TLP_GraceDays_Deposit_MidDay_Txn" class="tests.QCStore"/>
-        <method signature="QCStore.JQC_TLP_GraceDays_Deposit_dropdown_Txn()[pri:205, instance:tests.QCStore@5f9d02cb]" name="JQC_TLP_GraceDays_Deposit_dropdown_Txn" class="tests.QCStore"/>
-      </group> <!-- Janaki -->
+      <group name="Janaki_EOD_set2">
+        <method signature="QCStore.JQC_TLP_GraceDays_Deposit_EOD_Txn()[pri:210, instance:tests.QCStore@5f9d02cb]" name="JQC_TLP_GraceDays_Deposit_EOD_Txn" class="tests.QCStore"/>
+      </group> <!-- Janaki_EOD_set2 -->
     </groups>
-    <test name="Test" duration-ms="5912250" started-at="2019-03-29T11:21:15Z" finished-at="2019-03-29T12:59:47Z">
+    <test name="Test" duration-ms="748185" started-at="2019-04-05T05:15:55Z" finished-at="2019-04-05T05:28:23Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="80" started-at="2019-03-29T11:21:15Z" finished-at="2019-03-29T11:21:15Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="78" started-at="2019-04-05T05:15:55Z" finished-at="2019-04-05T05:15:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-29T11:21:15Z" finished-at="2019-03-29T11:21:20Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5007" started-at="2019-04-05T05:15:55Z" finished-at="2019-04-05T05:16:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="JQC_TLP_Deposit_MidDay_Txn()[pri:200, instance:tests.QCStore@5f9d02cb]" name="JQC_TLP_Deposit_MidDay_Txn" duration-ms="609506" started-at="2019-03-29T11:21:20Z" finished-at="2019-03-29T11:31:29Z">
+        <test-method status="PASS" signature="JQC_TLP_GraceDays_Deposit_EOD_Txn()[pri:210, instance:tests.QCStore@5f9d02cb]" name="JQC_TLP_GraceDays_Deposit_EOD_Txn" duration-ms="742912" started-at="2019-04-05T05:16:00Z" finished-at="2019-04-05T05:28:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- JQC_TLP_Deposit_MidDay_Txn -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="244" started-at="2019-03-29T11:31:29Z" finished-at="2019-03-29T11:31:29Z">
+        </test-method> <!-- JQC_TLP_GraceDays_Deposit_EOD_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="172" started-at="2019-04-05T05:28:23Z" finished-at="2019-04-05T05:28:23Z">
           <params>
             <param index="0">
               <value>
-<<<<<<< HEAD
                 <![CDATA[[TestResult name=JQC_TLP_GraceDays_Deposit_EOD_Txn status=SUCCESS method=QCStore.JQC_TLP_GraceDays_Deposit_EOD_Txn()[pri:210, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+<<<<<<< HEAD
 =======
 <testng-results skipped="0" failed="0" ignored="23" total="35" passed="12">
   <reporter-output>
@@ -276,12 +269,15 @@
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=QC_PayAnyotherAmount_Txn status=SUCCESS method=QCStore.QC_PayAnyotherAmount_Txn()[pri:120, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+=======
+>>>>>>> janaki1.2
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-04-05T10:29:16Z" finished-at="2019-04-05T10:29:16Z">
           <reporter-output>
           </reporter-output>
@@ -513,6 +509,9 @@
           </reporter-output>
         </test-method> <!-- getResult -->
         <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-04-05T10:58:51Z" finished-at="2019-04-05T10:58:51Z">
+=======
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-04-05T05:28:23Z" finished-at="2019-04-05T05:28:23Z">
+>>>>>>> janaki1.2
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

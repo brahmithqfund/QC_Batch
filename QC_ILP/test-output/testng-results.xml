@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="44" total="53" passed="9">
   <reporter-output>
   </reporter-output>
@@ -77,30 +78,32 @@
 <<<<<<< HEAD
   <suite name="Suite" duration-ms="81694" started-at="2019-03-27T05:31:54Z" finished-at="2019-03-27T05:33:16Z">
 =======
+=======
+>>>>>>> janaki1.2
 <testng-results skipped="0" failed="0" ignored="52" total="53" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="851202" started-at="2019-03-29T09:09:45Z" finished-at="2019-03-29T09:23:56Z">
->>>>>>> janaki1.2
+  <suite name="Suite" duration-ms="147815" started-at="2019-04-04T09:17:25Z" finished-at="2019-04-04T09:19:53Z">
     <groups>
       <group name="Janaki_EOD_set2">
         <method signature="QCStore.JQC_ILP_GraceDays_Deposit_EOD_Txn()[pri:9, instance:tests.QCStore@5f9d02cb]" name="JQC_ILP_GraceDays_Deposit_EOD_Txn" class="tests.QCStore"/>
       </group> <!-- Janaki_EOD_set2 -->
     </groups>
-    <test name="Test" duration-ms="851202" started-at="2019-03-29T09:09:45Z" finished-at="2019-03-29T09:23:56Z">
+    <test name="Test" duration-ms="147815" started-at="2019-04-04T09:17:25Z" finished-at="2019-04-04T09:19:53Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="86" started-at="2019-03-29T09:09:45Z" finished-at="2019-03-29T09:09:45Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="93" started-at="2019-04-04T09:17:25Z" finished-at="2019-04-04T09:17:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-29T09:09:45Z" finished-at="2019-03-29T09:09:50Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5024" started-at="2019-04-04T09:17:25Z" finished-at="2019-04-04T09:17:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="JQC_ILP_GraceDays_Deposit_EOD_Txn()[pri:9, instance:tests.QCStore@5f9d02cb]" name="JQC_ILP_GraceDays_Deposit_EOD_Txn" duration-ms="845927" started-at="2019-03-29T09:09:50Z" finished-at="2019-03-29T09:23:56Z">
+        <test-method status="PASS" signature="JQC_ILP_GraceDays_Deposit_EOD_Txn()[pri:9, instance:tests.QCStore@5f9d02cb]" name="JQC_ILP_GraceDays_Deposit_EOD_Txn" duration-ms="142480" started-at="2019-04-04T09:17:30Z" finished-at="2019-04-04T09:19:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JQC_ILP_GraceDays_Deposit_EOD_Txn -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="234" started-at="2019-03-27T05:33:16Z" finished-at="2019-03-27T05:33:16Z">
           <params>
@@ -174,15 +177,19 @@
 =======
 =======
         <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="1" started-at="2019-03-29T09:23:56Z" finished-at="2019-03-29T09:23:56Z">
+=======
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-04-04T09:19:53Z" finished-at="2019-04-04T09:19:53Z">
+>>>>>>> janaki1.2
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="173" started-at="2019-03-29T09:23:56Z" finished-at="2019-03-29T09:23:56Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="218" started-at="2019-04-04T09:19:53Z" finished-at="2019-04-04T09:19:53Z">
           <params>
             <param index="0">
               <value>
 >>>>>>> 33354a572293420cb1c9bb16b353c54411f71fe2
                 <![CDATA[[TestResult name=JQC_ILP_GraceDays_Deposit_EOD_Txn status=SUCCESS method=QCStore.JQC_ILP_GraceDays_Deposit_EOD_Txn()[pri:9, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> janaki1.2
 >>>>>>> ed2c491bd27e4295563c266a26fe8e49e10943ef
@@ -466,12 +473,15 @@
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=ILP_agerescindtest status=SUCCESS method=QCStore.ILP_agerescindtest()[pri:5, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+=======
+>>>>>>> janaki1.2
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-04-01T11:35:09Z" finished-at="2019-04-01T11:35:14Z">
           <reporter-output>
           </reporter-output>
@@ -843,6 +853,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 >>>>>>> 33354a572293420cb1c9bb16b353c54411f71fe2
 =======
 >>>>>>> brahmith1.1
+=======
+>>>>>>> janaki1.2
       </class> <!-- tests.QCStore -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
