@@ -4,6 +4,7 @@
 		<item value="false" key="isRegEx"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<item value="Anoop" key="selection"/>
 =======
 		<item value="Refinance" key="selection"/>
@@ -11,11 +12,15 @@
 =======
 		<item value="QC_Refinanace StepUp" key="selection"/>
 >>>>>>> 33354a572293420cb1c9bb16b353c54411f71fe2
+=======
+		<item value="Brahmith" key="selection"/>
+>>>>>>> brahmith1.1
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			<item value="Anoop"/>
@@ -36,8 +41,16 @@
 			<item value="anoop"/>
 			<item value="annop"/>
 >>>>>>> 33354a572293420cb1c9bb16b353c54411f71fe2
+=======
+			<item value="Brahmith1"/>
+			<item value="1stBatch1"/>
+			<item value="Brahmith2"/>
+			<item value="Brahmith"/>
+>>>>>>> brahmith1.1
 		</list>
 		<list key="replacehistory">
+			<item value="Brahmith"/>
+			<item value="1stBatch"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
@@ -45,11 +58,16 @@
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<item value="92" key="DIALOG_X_ORIGIN"/>
 		<item value="399" key="DIALOG_Y_ORIGIN"/>
 =======
 		<item value="563" key="DIALOG_X_ORIGIN"/>
 		<item value="119" key="DIALOG_Y_ORIGIN"/>
 >>>>>>> 33354a572293420cb1c9bb16b353c54411f71fe2
+=======
+		<item value="819" key="DIALOG_X_ORIGIN"/>
+		<item value="133" key="DIALOG_Y_ORIGIN"/>
+>>>>>>> brahmith1.1
 	</section>
 </section>

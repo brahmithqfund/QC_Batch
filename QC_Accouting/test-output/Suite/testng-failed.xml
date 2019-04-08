@@ -4,15 +4,16 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="Brahmith1"/>
+        <include name="Brahmith"/>
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
-          <include name="Recon_ILP_EARNED_FEE_Variance"/>
+          <include name="Recon_CashRoll"/>
           <include name="getResult"/>
           <include name="setup"/>
+          <include name="WriteOff"/>
           <include name="endReport"/>
           <include name="killProcess"/>
         </methods>

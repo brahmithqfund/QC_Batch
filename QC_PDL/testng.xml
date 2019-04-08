@@ -9,13 +9,16 @@
       <!--  <include name="Janaki"/> -->
    <!-- <include name="Janaki_WORecovery"/> -->  
    
-
-
-<!-- <include name="EOD"/> -->
-  <!--     <include name="Rebate"/>  -->
-    <!-- <include name="1stBatch"/> -->   	
+  	
  <!-- Anoop group--> 
  <include name="Anoopre"/> 
+
+       <!-- Brahmith group-->  
+  <!--   <include name="1stBatch2"/>  -->
+    <!--  <include name="Rebate"/>  --> 
+       <include name="EOD"/> 
+ 
+
 
 
   </run>

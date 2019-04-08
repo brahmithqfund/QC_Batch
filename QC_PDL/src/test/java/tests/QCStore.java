@@ -1081,7 +1081,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 170, groups = { "1stBatch" })
+	@Test(priority = 170, groups = { "1stBatch1" })
 	public static void QC_PartialPayment_RefundVoid_Txn() throws Exception {
 		try {
 			// test =
@@ -1159,7 +1159,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 102, groups = { "1stBatch1" })
+	@Test(priority = 102, groups = { "1stBatch" })
 	public static void QC_RefinanceStepDown_Txn() throws Exception {
 		try {
 			// test =
@@ -1220,7 +1220,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 103, groups = { "1stBatch1" })
+	@Test(priority = 103, groups = { "1stBatch" })
 	public static void QC_RefinanceStepDown_Void_Txn() throws Exception {
 		try {
 			// test =
@@ -1534,7 +1534,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 281, groups = { "EOD" })
+	@Test(priority = 281, groups = { "EOD1" })
 	public static void QC_EOD_Deposit_Txn() throws Exception {
 		try {
 			// test =
@@ -1606,7 +1606,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 282, groups = { "EOD" })
+	@Test(priority = 282, groups = { "EOD1" })
 	public static void QC_GraceDays_EODDeposit_Txn() throws Exception {
 		try {
 			// test =
