@@ -152,6 +152,7 @@ public static void runscheduler(String SSN,String AppURL) throws Exception{
 					 Thread.sleep(5000);
 					 test.log(LogStatus.INFO, "<FONT color=green> ****Scheduler completed******");
 					 test.log(LogStatus.INFO, "<FONT color=green> Logout Successfully");
+					 driver.quit();
 					// CSRLoginLogout.login();
 					 
 			}}}

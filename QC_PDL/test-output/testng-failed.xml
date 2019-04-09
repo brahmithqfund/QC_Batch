@@ -4,31 +4,32 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <include name="Janaki"/>
-=======
         <include name="Anoop"/>
->>>>>>> anoop1.1
-=======
-        <include name="1stBatch"/>
-        <include name="Rebate"/>
-        <include name="EOD1"/>
->>>>>>> brahmith1.1
-=======
-        <include name="Anoopre"/>
->>>>>>> anoop1.1
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
-          <include name="getResult"/>
-          <include name="QC_Refinance_StepDownURP_Txn"/>
+          <include name="GracedaysDepositMenu"/>
+          <include name="AQC_EPP_Return"/>
           <include name="setup"/>
-          <include name="RefinanceStepup"/>
+          <include name="AQC_EPPDeposit"/>
+          <include name="RefinanceStepupVoid"/>
+          <include name="GracedaysMiddayDeposit"/>
+          <include name="borrowregNewloan"/>
           <include name="killProcess"/>
+          <include name="AQC_EPP_Prepayment"/>
+          <include name="AQC_EPP_Redeposit"/>
+          <include name="getResult"/>
+          <include name="RefinanceStepup"/>
+          <include name="maxloanCount"/>
+          <include name="rebateStepupVoid"/>
+          <include name="rebateStepup"/>
+          <include name="RefinanceStepSameVoid"/>
+          <include name="AQC_EPP_refund"/>
+          <include name="AQC_EPP_clear"/>
+          <include name="RefinanceStepSame"/>
+          <include name="AQC_EPP_nsfPayment"/>
         </methods>
       </class> <!-- tests.QCStore -->
     </classes>

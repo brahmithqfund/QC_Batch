@@ -5320,7 +5320,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 417, enabled = true, groups = "Anoop_EOD1")
+	@Test(priority = 417, enabled = true, groups = "Anoop_EOD11")
 
 	public void DrawAndEOD() throws Exception {
 		FileName = "QC_LOC_Draw_EOD.xls";
@@ -5537,7 +5537,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 414, enabled = true, groups = "Anoop_EOD1")
+	@Test(priority = 414, enabled = true, groups = "Anoop_EOD1")
 
 	public void HigherPaymentAndEod() throws Exception {
 		FileName = "QC_LOC_MorePayment_EOD.xls";
@@ -5593,7 +5593,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 413, enabled = true, groups = "Anoop_EOD1")
+	@Test(priority = 413, enabled = true, groups = "Anoop_EOD1")
 
 	public void PaymentAndEod() throws Exception {
 		FileName = "QC_LOC_Payment_EOD.xls";

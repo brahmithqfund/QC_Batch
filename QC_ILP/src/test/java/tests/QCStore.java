@@ -2907,7 +2907,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 6, enabled = true, groups = "Anoop")
+	//@Test(priority = 6, enabled = true, groups = "Anoop")
 
 	public void ILP_RefinanceStepup() throws Exception {
 
@@ -2958,7 +2958,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 1, enabled = true, groups = "Anoop")
+	//@Test(priority = 1, enabled = true, groups = "Anoop")
 
 	public void ILP_Redeposit() throws Exception {
 
@@ -3011,7 +3011,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 5, enabled = true, groups = "Anoop")
+	//@Test(priority = 5, enabled = true, groups = "Anoop")
 
 	public void ILP_agerescindtest() throws Exception {
 		test = reports.startTest("QC_AgeStore_Rescind Loan", "Login-->Age the loan to rescind days--->Rescind loan");
@@ -3052,7 +3052,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 4, enabled = true, groups = "Anoop")
+	//@Test(priority = 4, enabled = true, groups = "Anoop")
 
 	public void ILP_rescindloan() throws Exception {
 		test = reports.startTest("QC_Rescind", "Loan->Rescind");
@@ -3090,7 +3090,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 3, enabled = true, groups = "Anoop")
+	//@Test(priority = 3, enabled = true, groups = "Anoop")
 
 	public void ILP_maxloanCount() throws Exception {
 		FileName = "QC_MaxLoanCount.xls";
@@ -3116,6 +3116,7 @@ public class QCStore {
 
 					ACSRLoginLogout.login(SSN, AppURL);
 					MaxLoanCount.maxLoan(SSN, AppURL);
+					ACSRLoginLogout.logout();
 					if (!(i == 2)) {
 						test.log(LogStatus.INFO, "******Customer loan Number " + i + "is approved successfully*****");
 						break;
@@ -3135,7 +3136,7 @@ public class QCStore {
 
 	}
 
-	@Test(priority = 2, enabled = true, groups = "Anoop")
+	//@Test(priority = 2, enabled = true, groups = "Anoop")
 	public void ILP_inactiveNewloan() throws Exception {
 		FileName = "QC_NewLoan_InactiveCustomer.xls";
 		test = reports.startTest("QC_NewLoan_InactiveCustomer", "Login-->Home Screen-->In active customer-->New Loan");
@@ -3409,8 +3410,8 @@ public class QCStore {
 				+ screenshotName + dateName + ".png";
 		File finalDestination = new File(destination);
 		FileUtils.copyFile(source, finalDestination);
-		reports.flush();
-		driver.quit();
+		/*reports.flush();
+		driver.quit();*/
 		return destination;
 		
 	}
@@ -3432,8 +3433,8 @@ public class QCStore {
 
 			test.log(LogStatus.PASS, result.getName() + " Test Case is Passed");
 		}
-		/*reports.flush();
-		driver.quit();*/
+		reports.flush();
+		driver.quit();
 
 	}
 

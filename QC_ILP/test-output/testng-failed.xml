@@ -4,103 +4,16 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <include name="Ratikanta_ILP"/>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <include name="Anoop_StdownVoid"/>
-=======
-        <include name="Brahmith1"/>
->>>>>>> brahmith1.1
-=======
-        <include name="Jyothi"/>
->>>>>>> jyothi1.2
->>>>>>> 26f8126931b7afc696e5ebd31895ac4dfa2dd77b
-=======
         <include name="Anoop"/>
->>>>>>> janaki1.2
-=======
-        <include name="Ratikanta_ILP"/>
->>>>>>> Ratikanta1.1
-=======
-        <include name="Janaki"/>
->>>>>>> janaki1.2
-=======
-        <include name="Anoop"/>
->>>>>>> anoop1.1
-=======
-        <include name="Brahmith"/>
->>>>>>> brahmith1.1
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-          <include name="RQC_WriteOffRecovery_Txn_Testdata"/>
-          <include name="RQC_WriteOffRecovery_Void_Txn_Testdata"/>
           <include name="getResult"/>
-<<<<<<< HEAD
-=======
-          <include name="getResult"/>
-<<<<<<< HEAD
-=======
-=======
->>>>>>> brahmith1.1
-          <include name="QC_ILP_Refinanace_Txn"/>
-          <include name="QC_Installmentpayment_Void_Txn"/>
-          <include name="getResult"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> brahmith1.1
-<<<<<<< HEAD
-          <include name="ILP_RefinanceStepDown_void"/>
-=======
-          <include name="QC_InstallPayment_Ref_Rescind_Txn"/>
->>>>>>> brahmith1.1
-<<<<<<< HEAD
-=======
-          <include name="ILP_InstallmentStepup"/>
->>>>>>> jyothi1.2
->>>>>>> 26f8126931b7afc696e5ebd31895ac4dfa2dd77b
-=======
->>>>>>> master
->>>>>>> brahmith1.1
-=======
->>>>>>> janaki1.2
-=======
-          <include name="RQC_WriteOffRecovery_Void_Txn_Testdata"/>
-          <include name="getResult"/>
->>>>>>> Ratikanta1.1
-=======
-          <include name="JQC_ILP_Deposit_MidDay_Txn"/>
-          <include name="getResult"/>
->>>>>>> janaki1.2
           <include name="setup"/>
-          <include name="JQC_ILP_GraceDays_Deposit_MidDay_Txn"/>
-          <include name="JQC_ILP_GraceDays_Deposit_dropdown_Txn"/>
-=======
-          <include name="getResult"/>
-=======
->>>>>>> brahmith1.1
-          <include name="setup"/>
-          <include name="ILP_ACHAutoClear"/>
           <include name="ILP_voidRefinance"/>
->>>>>>> anoop1.1
           <include name="endReport"/>
-          <include name="JQC_ILP_SignaturLoan_Default_Txn"/>
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->
