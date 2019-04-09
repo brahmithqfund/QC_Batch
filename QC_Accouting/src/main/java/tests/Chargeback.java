@@ -122,7 +122,8 @@ public class Chargeback extends QCStore {
 						}
 						driver.findElement(By.xpath("//*[@id='dispute']")).click();
 						test.log(LogStatus.PASS, "Clicked on charge back button");
-						
+						test.log(LogStatus.PASS, "**************************************");
+					
 						try {
 							Alert alert = driver.switchTo().alert();
 							alert.accept();

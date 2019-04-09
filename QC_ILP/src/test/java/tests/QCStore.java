@@ -1178,84 +1178,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 56, groups = "Brahmith")
-
-	public static void QC_ILP_Refinanace_Txn() throws Exception {
-		try {
-			test = reports.startTest((prop.getProperty("QC_ILP_Refinance_Txn_scenario")),
-					"Login->Borrower Registratino->New Loan->New MO Installment Loan on 12-Dec-2018 – $400 Payment on 10-JAN-2019 – $380 Payment on 09-FEB-2019 – $447.71 Payment on 08-APR-2019 – Refinance on 08-APR-2019");
-
-			// test =
-			// extent.createTest(prop.getProperty("QC_Store_AgeStore_Deposit_Menu_Txn_file_name"));
-
-			FileName = prop.getProperty("QC_ILP_Refinance_Txn_file_name") + ".xls";
-
-			TestData = new ExcelNew(System.getProperty("user.dir")
-					+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
-
-			int lastrow = TestData.getLastRow("Start");
-			String sheetName = "Start";
-
-			System.out.println(lastrow);
-			for (int row = 2; row <= lastrow; row++) {
-
-				String RunFlag = TestData.getCellData(sheetName, "Run", row);
-				// System.out.println(RunFlag);
-				if (RunFlag.equals("Y")) {
-
-					// AppURL = TestData.getCellData(sheetName, "AppURL", row);
-					String SSN = TestData.getCellData(sheetName, "SSN", row);
-
-					System.out.println(AppURL);
-
-					/*QCCSRLoginLogout.login(SSN, AppURL);
-					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCCSRNewLoan.newLoan(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
-					QCCSRLoginLogout.login(SSN, AppURL);
-					QCPayment.payment(SSN, SSN);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
-					
-				BQCCSRNewLoan2.newLoan2(SSN, AppURL);
-				QCCSRLoginLogout.logout(SSN, AppURL);
-				QCCSRLoginLogout.login(SSN, AppURL);
-				QCAgeStoreGraceDays.ageStoreGraceDays2ndTime(SSN, SSN);
-				QCCSRLoginLogout.login(SSN, AppURL);
-				QCPayment.paymentTwice(SSN, SSN);
-				QCCSRLoginLogout.logout(SSN, AppURL);
-				
-				QCCSRLoginLogout.login(SSN, AppURL);
-				QCAgeStoreGraceDays.ageStoreGraceDays3rdTime(SSN, SSN);*/
-				QCCSRLoginLogout.login(SSN, AppURL);
-				QCPayment.paymentThrice(SSN, SSN);
-				QCCSRLoginLogout.logout(SSN, AppURL);
-				
-				QCCSRLoginLogout.login(SSN, AppURL);
-				QCAgeStoreGraceDays.ageStoreGraceDays4thTime(SSN, SSN);
-				QCCSRLoginLogout.login(SSN, AppURL);
-				QCPayment.payment4(SSN, SSN);
-				QCCSRLoginLogout.logout(SSN, AppURL);
-					
-					QCCSRHistory.history(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-				}
-			}
-		}
-
-		catch (Exception e) {
-			System.out.println("QC_Installmentpayment_Void_Txn");
-			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
-			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario QC_Installmentpayment_Void_Txn ");
-
-		}
-	}
-
+	
 	// Janaki Transactions edited by Janaki
 
 	@Test(priority = 0, enabled = true, groups = "Janaki")
@@ -1757,7 +1680,7 @@ public class QCStore {
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 					System.out.println(AppURL);
 
-					/*JQCCSRLoginLogout.login(SSN, AppURL);
+					JQCCSRLoginLogout.login(SSN, AppURL);
 					JQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					JQCCSRLoginLogout.logout(SSN, AppURL);
 					JQCCSRLoginLogout.login(SSN, AppURL);
@@ -1774,7 +1697,7 @@ public class QCStore {
 					JQCAdminLoginLogout.logout(SSN, AppURL);
 					JQCCSRLoginLogout.login(SSN, AppURL);
 					JQCSafeAssign.safeAssign(SSN, AppURL);
-					JQCCSRLoginLogout.logout(SSN, AppURL);*/
+					JQCCSRLoginLogout.logout(SSN, AppURL);
 					JQCCSRLoginLogout.login(SSN, AppURL);
 					JQCDrawerAssign.drawerAssign(SSN, AppURL);
 					JQCCSRLoginLogout.logout(SSN, AppURL);
@@ -1847,7 +1770,7 @@ public class QCStore {
 
 	// RATIKANTA transactions
 
-	 @Test(priority = 1, groups = "Ratikanta_ILP")
+	@Test(priority = 1, groups = "Ratikanta_ILP")
 	public static void RQC_Bankruptcy_WORecovery_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_Bankruptcy_WORecovery"),
@@ -1914,7 +1837,7 @@ public class QCStore {
 		}
 	}
 
-	 @Test(priority = 2, groups = "Ratikanta_ILP")
+	@Test(priority = 2, groups = "Ratikanta_ILP")
 	public static void RQC_Bankruptcy_Discharge_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_Bankruptcy_Discharge"),
@@ -1980,7 +1903,7 @@ public class QCStore {
 		}
 	}
 
-	  @Test(priority = 3, groups = "Ratikanta_ILP")
+	@Test(priority = 3, groups = "Ratikanta_ILP")
 	public static void RQC_Bankruptcy_Dismiss_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_Bankruptcy_Dismiss"),
@@ -2046,7 +1969,7 @@ public class QCStore {
 		}
 	}
 
-	 @Test(priority = 4, groups = "Ratikanta_ILP")
+	@Test(priority = 4, groups = "Ratikanta_ILP")
 	public static void RQC_Default_Refinance_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_Default_Refinance"),
@@ -2113,7 +2036,7 @@ public class QCStore {
 		}
 	}
 
-	 @Test(priority = 5, groups = "Ratikanta_ILP")
+   @Test(priority = 5, groups = "Ratikanta_ILP")
 	public static void RQC_DefaultPayment_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_DefaultPayment"),
@@ -2378,7 +2301,7 @@ public class QCStore {
 		}
 	}
 
-	 @Test(priority = 9, groups = "Ratikanta_ILP")
+	@Test(priority = 9, groups = "Ratikanta_ILP")
 	public static void RQC_Default_TLPConversion_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("QC_Default_TLPConversion"),
@@ -3409,9 +3332,7 @@ public class QCStore {
 				+ screenshotName + dateName + ".png";
 		File finalDestination = new File(destination);
 		FileUtils.copyFile(source, finalDestination);
-		reports.flush();
-		driver.quit();
-		return destination;
+				return destination;
 		
 	}
 
@@ -3432,8 +3353,8 @@ public class QCStore {
 
 			test.log(LogStatus.PASS, result.getName() + " Test Case is Passed");
 		}
-		/*reports.flush();
-		driver.quit();*/
+		reports.flush();
+		driver.quit();
 
 	}
 

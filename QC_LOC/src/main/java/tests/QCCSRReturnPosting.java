@@ -32,8 +32,8 @@ public class QCCSRReturnPosting extends QCStore {
 				if (SSN.equals(RegSSN)) {
 					
 					String PIN = TestData.getCellData(sheetName, "PIN", row);
-					//String StoreID = bstoreid;
-					String StoreID = vstoreid;
+					String StoreID = bstoreid;
+					//String StoreID = vstoreid;
 							//TestData.getCellData(sheetName, "StoreID", row);
 					String ReasonForReturn = TestData.getCellData(sheetName, "ReasonForReturn", row);
 					String Esign_CollateralType = TestData.getCellData(sheetName, "Esign_CollateralType", row);

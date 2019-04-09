@@ -2036,10 +2036,6 @@ public class QCStore {
 
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
-					/*
-					 * QCCSRLoginLogout.login(SSN, AppURL);
-					 * QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
-					 */
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCDefaultStatus.defaultStatus(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
@@ -2166,7 +2162,7 @@ public class QCStore {
 
 	// Ratikanta Scenarios
 
-	@Test(priority = 201, groups = "Ratikanta_NEOD")
+	@Test(priority = 201, groups = "Ratikanta_LOC")
 	public static void RQC_LOC_ManualDefault_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("New LOC - Manual Default"),
@@ -2230,7 +2226,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 202, groups = "Ratikanta_NEOD")
+	@Test(priority = 202, groups = "Ratikanta_LOC")
 	public static void RQC_LOC_Deposit_Return_ManualDefault_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("New LOC - Deposit - Return- Manual Default"),
@@ -2297,7 +2293,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 203, groups = "Ratikanta_NEOD")
+	@Test(priority = 203, groups = "Ratikanta_LOC")
 	public static void RQC_LOC_Deposit_Return_2ndDeposit_Clear_3rdDeposit_Return_Default_Txn_Testdata()
 			throws Exception {
 		try {
@@ -2387,7 +2383,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 204, groups = "Ratikanta_NEOD")
+	@Test(priority = 204, groups = "Ratikanta_LOC")
 	public static void RQC_LOC_2missedPayment_Default_EOD_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(
@@ -2457,7 +2453,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 205, groups = "Ratikanta_NEOD")
+	@Test(priority = 205, groups = "Ratikanta_LOC")
 	public static void RQC_LOC_Default_DefaultPayment_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("Default - Default Payment"),
@@ -2493,7 +2489,7 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					// Old
+					// Old Flow
 
 					/*
 					 * RCSRLoginLogout.login(SSN, AppURL);
@@ -2515,7 +2511,7 @@ public class QCStore {
 					// RCSRLoginLogout.login(SSN, AppURL);
 					// RQCCSRDefaultPayment.sdefaultpayment(SSN, AppURL);
 
-					// New
+					// New Flow
 
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
@@ -2547,12 +2543,14 @@ public class QCStore {
 
 		catch (Exception e) {
 			System.out.println("under catch of Test" + e);
-			test.log(LogStatus.ERROR, "Unable to start scenarios ");
+			String screenshotPath = getScreenhot(driver, "QC_LOC_Default_DefaultPayment_Txn");
+			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
+			test.log(LogStatus.ERROR, "Unable to start scenario QC_LOC_Default_DefaultPayment_Txn ");
 
 		}
 	}
 
-	@Test(priority = 206, groups = "Ratikanta_NEOD")
+	@Test(priority = 206, groups = "Ratikanta_LOC")
 	public static void RQC_LOC_Default_DefaultPayment_Void_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("Default - Default Payment - Void"),
@@ -2628,7 +2626,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 207, groups = "Ratikanta_NEOD")
+	@Test(priority = 207, groups = "Ratikanta_LOC")
 	public static void RQC_LOC_Default_PartialDefaultPayment_Void_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("Default - Partial Default Payment - Void"),
@@ -2702,7 +2700,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 208, groups = "Ratikanta_NEOD")
+	@Test(priority = 208, groups = "Ratikanta_LOC")
 	public static void RQC_LOC_Default_DefaultPayment_Return_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("Default - Default Payment(ACH/CCK/MO) - Return"),
@@ -2782,7 +2780,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 209, groups = "Ratikanta_NEOD")
+	@Test(priority = 209, groups = "Ratikanta_LOC")
 	public static void RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("Default - Partial Default Payment - Full Default payment"),
@@ -2855,7 +2853,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 210, groups = "Ratikanta_NEOD")
+	@Test(priority = 210, groups = "Ratikanta_LOC")
 	public static void RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Void_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("Default - Partial Default Payment - Full Default payment - Void"),
@@ -2931,7 +2929,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 211, groups = "Ratikanta_NEOD")
+	@Test(priority = 211, groups = "Ratikanta_LOC")
 	public static void RQC_LOC_PayOff_Closure_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("New LOC_Payoff_LOC Closure"),
@@ -2996,7 +2994,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 212, groups = "Ratikanta_NEOD")
+	@Test(priority = 212, groups = "Ratikanta_LOC")
 	public static void RQC_LOC_Payment_PayOff_Closure_Void_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("New LOC_Payment_Payoff_LOC Closure_Void"),
@@ -3067,7 +3065,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 213, groups = "Ratikanta_NEOD")
+	@Test(priority = 213, groups = "Ratikanta_LOC")
 	public static void RQC_LOC_PayOff_Closure_PayoffReturn_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("New LOC_Payoff_LOC Closure_Payoff return"),
@@ -3138,7 +3136,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 214, groups = "Ratikanta_NEOD")
+	@Test(priority = 214, groups = "Ratikanta_LOC")
 	public static void RQC_LOC_PayOff_Agestore180days_AutoClosure_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("New LOC_Payoff_Age the store to 180 days_Auto Closure"),
@@ -3206,6 +3204,8 @@ public class QCStore {
 
 		}
 	}
+	
+	
 
 	@Test(priority = 215, groups = "Ratikanta_EOD")
 	public static void RQC_LOC_ManualDefault_EOD_Txn_Testdata() throws Exception {
@@ -3242,6 +3242,11 @@ public class QCStore {
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 
 					System.out.println(AppURL);
+					
+					//QCCSRLoginLogout.adminLogin(SSN, AppURL);
+					//RAdminStoreDate.toStartdate(SSN, AppURL);
+					//QCCSRLoginLogout.adminLogout(driver, SSN, AppURL);
+					//RProcTest.proc();
 
 					RCSRLoginLogout.login(SSN, AppURL);
 					RQCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
@@ -3360,7 +3365,7 @@ public class QCStore {
 	}
 
 	// ============================================================================================================
-	@Test(priority = 202)
+	/*@Test(priority = 202)
 	public static void RQC_DefaultPayment_Void_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("ILP_Scenario_No.37"),
@@ -3417,7 +3422,7 @@ public class QCStore {
 			test.log(LogStatus.ERROR, "Unable to start scenarios ");
 
 		}
-	}
+	}*/
 
 	// Janaki's (Ratikanta) scenarios
 
@@ -3471,8 +3476,6 @@ public class QCStore {
 			System.out.println("under catch of Test" + e);
 			String screenshotPath = getScreenhot(driver, "QC_LOC_New_Loan_Void_Txn");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
-			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
-			// start scenario 1 " , ExtentColor.RED));
 			test.log(LogStatus.ERROR, "Unable to start scenario 17 JQC_LOC_New_Loan_Void_Txn ");
 
 		}
@@ -5537,7 +5540,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 414, enabled = true, groups = "Anoop_EOD1")
+	@Test(priority = 414, enabled = true, groups = "Anoop_EOD1")
 
 	public void HigherPaymentAndEod() throws Exception {
 		FileName = "QC_LOC_MorePayment_EOD.xls";
@@ -5593,7 +5596,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 413, enabled = true, groups = "Anoop_EOD1")
+	@Test(priority = 413, enabled = true, groups = "Anoop_EOD1")
 
 	public void PaymentAndEod() throws Exception {
 		FileName = "QC_LOC_Payment_EOD.xls";
@@ -5648,7 +5651,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 412, enabled = true, groups = "Anoop_EOD1")
+	@Test(priority = 412, enabled = true, groups = "Anoop_EOD1")
 
 	public void EODOnDueDate() throws Exception {
 		FileName = "QC_LOC_EODDuedate.xls";

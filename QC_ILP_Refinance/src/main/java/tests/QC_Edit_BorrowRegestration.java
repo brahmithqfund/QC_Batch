@@ -174,7 +174,18 @@ public class QC_Edit_BorrowRegestration extends QCStore{
 
 					if(Income_PayFrequency.equals("Bi-Weekly")){
 						driver.findElement(By.name("customerBean.payFreqCdDisp")).sendKeys(Income_PayFrequency);
-						test.log(LogStatus.PASS, "Income_PayFrequency is entered: "+Income_PayFrequency);	
+						test.log(LogStatus.PASS, "Income_PayFrequency is entered: "+Income_PayFrequency);
+						Thread.sleep(500);
+						try { 
+							Alert alert = driver.switchTo().alert();
+							alert.accept();
+							// if alert present, accept and move on.												
+
+						}
+						catch (NoAlertPresentException e) {
+							//do what you normally would if you didn't have the alert.
+						}
+						Thread.sleep(500);
 						driver.findElement(By.id("rad_wk4")).click();
 						 test.log(LogStatus.PASS, "Clicked on wednsday button ");
 					}

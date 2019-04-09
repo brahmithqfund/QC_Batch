@@ -5,6 +5,9 @@
     <groups>
       <run>
 <<<<<<< HEAD
+        <include name="Ratikanta_ILP"/>
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -37,20 +40,34 @@
 =======
         <include name="Brahmith"/>
 >>>>>>> brahmith1.1
+>>>>>>> ed2c491bd27e4295563c266a26fe8e49e10943ef
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
 <<<<<<< HEAD
+          <include name="RQC_Bankruptcy_Discharge_Txn_Testdata"/>
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> ed2c491bd27e4295563c266a26fe8e49e10943ef
           <include name="RQC_WriteOffRecovery_Txn_Testdata"/>
           <include name="RQC_WriteOffRecovery_Void_Txn_Testdata"/>
+          <include name="RQC_DefaultPayment_Txn_Testdata"/>
           <include name="getResult"/>
+<<<<<<< HEAD
+          <include name="RQC_DefaultPayment_Void_Txn_Testdata"/>
+          <include name="setup"/>
+          <include name="RQC_Bankruptcy_Dismiss_Txn_Testdata"/>
+          <include name="RQC_Default_Refinance_Txn_Testdata"/>
+          <include name="endReport"/>
+          <include name="RQC_Default_TLPConversion_Txn_Testdata"/>
+=======
 <<<<<<< HEAD
 =======
           <include name="getResult"/>
@@ -101,6 +118,7 @@
 >>>>>>> anoop1.1
           <include name="endReport"/>
           <include name="JQC_ILP_SignaturLoan_Default_Txn"/>
+>>>>>>> ed2c491bd27e4295563c266a26fe8e49e10943ef
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->

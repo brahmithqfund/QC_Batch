@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
+<<<<<<< HEAD
+        <include name="Ratikanta_LOC"/>
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -44,15 +46,18 @@
         <include name="EOD"/>
         <include name="EOD2"/>
 >>>>>>> brahmith1.1
+>>>>>>> ed2c491bd27e4295563c266a26fe8e49e10943ef
       </run>
     </groups>
-=======
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
->>>>>>> janaki1.2
     <classes>
       <class name="tests.QCStore">
         <methods>
+<<<<<<< HEAD
+          <include name="getResult"/>
+          <include name="setup"/>
+          <include name="RQC_LOC_ManualDefault_EOD_Txn_Testdata"/>
+          <include name="killProcess"/>
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -157,8 +162,9 @@
           <include name="LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn"/>
           <include name="killProcess"/>
 >>>>>>> brahmith1.1
+>>>>>>> ed2c491bd27e4295563c266a26fe8e49e10943ef
         </methods>
       </class> <!-- tests.QCStore -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -39,7 +39,6 @@ INDEX VERSION 1.127+C:\QC_Batch\.metadata\.plugins\org.eclipse.jdt.core
 370855044.index
 2698180110.index
 1967806600.index
-1386167714.index
 1258425935.index
 945307090.index
 2773915061.index
@@ -73,7 +72,6 @@ INDEX VERSION 1.127+C:\QC_Batch\.metadata\.plugins\org.eclipse.jdt.core
 3273689814.index
 3100220011.index
 1035265894.index
-4121661813.index
 3553046814.index
 3453563906.index
 273154298.index

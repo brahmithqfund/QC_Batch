@@ -5,9 +5,9 @@
     <groups>
       <run>
 <<<<<<< HEAD
-        <include name="Anoop_st_void"/>
+        <include name="Brahmith1"/>
 =======
-        <include name="Janaki"/>
+        <include name="Janaki_EOD_set2"/>
 >>>>>>> janaki1.2
       </run>
     </groups>
@@ -15,17 +15,19 @@
       <class name="tests.QCStore">
         <methods>
 <<<<<<< HEAD
-          <include name="TLP_RefinanceStepDownVoid"/>
-          <include name="getResult"/>
-          <include name="setup"/>
+          <include name="QC_PayAnyotherAmount_Void_Txn"/>
+          <include name="QC_TLP_Writeoff_Recovery_Txn"/>
+          <include name="QC_Installmentpayment_Void_Txn"/>
 =======
-          <include name="JQC_TLP_Deposit_Menu_Txn"/>
-          <include name="JQC_TLP_Deposit_dropdown_Txn"/>
-          <include name="JQC_TLP_GraceDays_Deposit_dropdown_Txn"/>
-          <include name="JQC_DefaultPayment_Txn_Testdata"/>
+          <include name="JQC_TLP_GraceDays_Deposit_EOD_Txn"/>
+>>>>>>> janaki1.2
           <include name="getResult"/>
+          <include name="QC_TLP_Writeoff_Recovery_Void_Txn"/>
           <include name="setup"/>
-          <include name="JQC_DefaultPayment_Void_Txn_Testdata"/>
+<<<<<<< HEAD
+          <include name="QC_Installmentpayment_Txn"/>
+          <include name="QC_PayAnyotherAmount_Txn"/>
+=======
 >>>>>>> janaki1.2
           <include name="endReport"/>
           <include name="killProcess"/>

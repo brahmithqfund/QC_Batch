@@ -3,6 +3,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 <testsuite skipped="6" hostname="QTLSYS1-182" name="tests.QCStore" tests="8" failures="0" timestamp="26 Mar 2019 13:00:03 GMT" time="1577.001" errors="0">
   <testcase name="JQC_AgeStore_Deposit_Return_Refinance_Void_Txn" time="841.321" classname="tests.QCStore"/>
   <testcase name="JQC_AgeStore_Refinance_Rescind_Txn" time="735.680" classname="tests.QCStore"/>
@@ -31,12 +34,18 @@
   <testcase name="QC_Void_FullReturnPayment_Txn" time="1389.679" classname="tests.QCStore"/>
   <testcase name="QC_PartialPayment_RefundVoid_Txn" time="1107.442" classname="tests.QCStore"/>
   <testcase name="QC_Refinance_StepSameURP_Txn" time="851.613" classname="tests.QCStore">
+=======
+<testsuite skipped="6" hostname="QTLSYS2-238" name="tests.QCStore" tests="8" failures="1" timestamp="08 Apr 2019 04:37:50 GMT" time="833.716" errors="0">
+  <testcase name="QC_GraceDays_EODDeposit_Txn" time="506.734" classname="tests.QCStore"/>
+  <testcase name="QC_FutureDeposit_EOD_Txn" time="326.982" classname="tests.QCStore">
+>>>>>>> brahmith1.1
     <failure type="java.lang.AssertionError" message="expected [true] but found [false]">
       <![CDATA[java.lang.AssertionError: expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
+<<<<<<< HEAD
 at tests.QCRefinance.refinanceStepSame(QCRefinance.java:730)
 at tests.QCStore.QC_Refinance_StepSameURP_Txn(QCStore.java:1457)
 =======
@@ -75,6 +84,10 @@ at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
 at tests.ACSRBorrowerRegistration.borrowerReg(ACSRBorrowerRegistration.java:117)
 at tests.QCStore.RefinanceStepup(QCStore.java:2491)
 >>>>>>> anoop1.1
+=======
+at tests.QCBorrowerRegistration.borrowerRegistration(QCBorrowerRegistration.java:519)
+at tests.QCStore.QC_FutureDeposit_EOD_Txn(QCStore.java:1706)
+>>>>>>> brahmith1.1
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -103,6 +116,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
 <<<<<<< HEAD
     </failure>
+<<<<<<< HEAD
   </testcase> <!-- QC_Refinance_StepSameURP_Txn -->
   <testcase name="QC_Refinance_StepSameVoidURP_Txn" time="735.355" classname="tests.QCStore">
     <failure type="java.lang.AssertionError" message="expected [true] but found [false]">
@@ -184,6 +198,38 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
     </error>
   </testcase> <!-- RefinanceStepup -->
 >>>>>>> anoop1.1
+=======
+<testsuite skipped="6" hostname="QTLSYS1-182" name="tests.QCStore" tests="28" failures="0" timestamp="29 Mar 2019 18:23:22 GMT" time="17519.504" errors="0">
+  <testcase name="JQC_AgeStore_Deposit_PrePayment_Txn" time="721.353" classname="tests.QCStore"/>
+  <testcase name="JQC_AgeStore_Deposit_PrePayment_Void_Txn" time="754.812" classname="tests.QCStore"/>
+  <testcase name="JQC_AgeStore_Deposit_ClearDropdown_Txn" time="604.700" classname="tests.QCStore"/>
+  <testcase name="JQC_AgeStore_Deposit_ClearMenu_Txn" time="722.352" classname="tests.QCStore"/>
+  <testcase name="JQC_AgeStore_Deposit_AutoClear_Txn" time="805.171" classname="tests.QCStore"/>
+  <testcase name="JQC_AgeStore_PrePayment_Return_Txn" time="811.201" classname="tests.QCStore"/>
+  <testcase name="JQC_AgeStore_PrePayment_Clear_Txn" time="864.832" classname="tests.QCStore"/>
+  <testcase name="JQC_AgeStore_NSFPosting_Refinance_Rescind_Txn" time="752.614" classname="tests.QCStore"/>
+  <testcase name="JQC_AgeStore_ACHReturn_Refinance_Rescind_Txn" time="830.666" classname="tests.QCStore"/>
+  <testcase name="JQC_AgeStore_Deposit_Return_Refinance_Txn" time="749.239" classname="tests.QCStore"/>
+  <testcase name="JQC_AgeStore_Deposit_Return_Refinance_Void_Txn" time="776.633" classname="tests.QCStore"/>
+  <testcase name="JQC_AgeStore_Refinance_Rescind_Txn" time="703.861" classname="tests.QCStore"/>
+  <testcase name="JQC_AgeStore_Redeposit_Prepayment_Void_Prepayment_Return_Txn" time="930.123" classname="tests.QCStore"/>
+  <testcase name="JQC_Return_ReDeposit_Clear_Txn" time="912.469" classname="tests.QCStore"/>
+  <testcase name="JQC_BuyBack_Txn_Testdata" time="579.185" classname="tests.QCStore"/>
+  <testcase name="JQC_BuyBack_Void_Txn_Testdata" time="697.552" classname="tests.QCStore"/>
+  <testcase name="JQC_BuyBack_Rebate_Txn_Testdata" time="395.264" classname="tests.QCStore"/>
+  <testcase name="JQC_BuyBack_Rebate_Void_Txn_Testdata" time="440.359" classname="tests.QCStore"/>
+  <testcase name="JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata" time="907.026" classname="tests.QCStore"/>
+  <testcase name="JQC_Deposit_Return_EPP_Txn_Testdata" time="1004.774" classname="tests.QCStore"/>
+  <testcase name="JQC_EPP_AgestoreInstallmentwise_EPPPayment_Txn_Testdata" time="1942.540" classname="tests.QCStore"/>
+  <testcase name="JQC_EPP_Txn_Testdata" time="612.777" classname="tests.QCStore"/>
+>>>>>>> janaki1.2
+=======
+  </testcase> <!-- QC_FutureDeposit_EOD_Txn -->
+>>>>>>> brahmith1.1
+=======
+<testsuite skipped="6" hostname="QTLSYS1-182" name="tests.QCStore" tests="7" failures="0" timestamp="04 Apr 2019 05:52:23 GMT" time="735.365" errors="0">
+  <testcase name="JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata" time="735.365" classname="tests.QCStore"/>
+>>>>>>> janaki1.2
   <testcase name="JQC_AgeStore_GraceDays_DCDeposit_Menu_Txn" classname="tests.QCStore">
     <skipped/>
   </testcase> <!-- JQC_AgeStore_GraceDays_DCDeposit_Menu_Txn -->

@@ -1,5 +1,5 @@
 =\=\=\=\=\=\=
 <<<<<<<=HEAD
->>>>>>>=janaki1.2
+>>>>>>>=33354a572293420cb1c9bb16b353c54411f71fe2
 eclipse.preferences.version=1
-org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1554184862558" defaultVMConnector\="">\r\n<vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\r\n<vm id\="1554184862558" name\="jre1.8.0_171" path\="C\:\\Program Files\\Java\\jre1.8.0_171"/>\r\n</vmType>\r\n</vmSettings>\r\n
+org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1554792839330" defaultVMConnector\="">\r\n<vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\r\n<vm id\="1554707682101" name\="jre1.8.0_101" path\="C\:\\Program Files\\Java\\jre1.8.0_101"/>\r\n<vm id\="1554792839330" javadocURL\="https\://docs.oracle.com/javase/8/docs/api/" name\="jre1.8.0_171" path\="C\:\\Program Files\\Java\\jre1.8.0_171"/>\r\n</vmType>\r\n</vmSettings>\r\n

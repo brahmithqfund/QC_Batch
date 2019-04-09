@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
@@ -140,6 +141,8 @@ public class RQCPayment extends QCStore
 						//do what you normally would if you didn't have the alert.
 					}
 					Thread.sleep(4000);
+					
+					wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("checkno")));
 					if(driver.findElement(By.name("checkno")).isDisplayed())
 					{
 					test.log(LogStatus.PASS, "Payment transaction is successfully");
@@ -292,6 +295,7 @@ break;
 						//do what you normally would if you didn't have the alert.
 					}
 					Thread.sleep(4000);
+					wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("checkno")));
 					if(driver.findElement(By.name("checkno")).isDisplayed())
 					{
 					test.log(LogStatus.PASS, "Payment transaction is successfully");
@@ -444,6 +448,7 @@ break;
 						//do what you normally would if you didn't have the alert.
 					}
 					Thread.sleep(4000);
+					wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("checkno")));
 					if(driver.findElement(By.name("checkno")).isDisplayed())
 					{
 					test.log(LogStatus.PASS, "Payment transaction is successfully");
@@ -596,6 +601,7 @@ break;
 						//do what you normally would if you didn't have the alert.
 					}
 					Thread.sleep(4000);
+					wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("checkno")));
 					if(driver.findElement(By.name("checkno")).isDisplayed())
 					{
 					test.log(LogStatus.PASS, "Payment transaction is successfully");
@@ -747,7 +753,7 @@ break;
 					catch (NoAlertPresentException e) {
 						//do what you normally would if you didn't have the alert.
 					}
-					Thread.sleep(4000);
+					Thread.sleep(10000);
 					//if(driver.findElement(By.name("Ok")).isDisplayed())
 					{
 					test.log(LogStatus.PASS, "Payment transaction is successfully");

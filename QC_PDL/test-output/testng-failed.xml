@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <include name="Janaki"/>
 =======
         <include name="Anoop"/>
@@ -19,15 +20,21 @@
 =======
         <include name="Anoopre"/>
 >>>>>>> anoop1.1
+=======
+        <include name="EOD"/>
+>>>>>>> brahmith1.1
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
           <include name="getResult"/>
-          <include name="QC_Refinance_StepDownURP_Txn"/>
           <include name="setup"/>
+<<<<<<< HEAD
           <include name="RefinanceStepup"/>
+=======
+          <include name="QC_FutureDeposit_EOD_Txn"/>
+>>>>>>> brahmith1.1
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->

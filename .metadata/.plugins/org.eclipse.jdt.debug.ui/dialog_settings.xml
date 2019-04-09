@@ -4,6 +4,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 	<item value="82" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.columnWidth2"/>
 	<item value="1" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.sortColumn"/>
 	<item value="194" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.columnWidth1"/>
@@ -12,13 +16,15 @@
 	</section>
 =======
 >>>>>>> Ratikanta1.1
+>>>>>>> ed2c491bd27e4295563c266a26fe8e49e10943ef
 	<section name="org.eclipse.jdt.internal.debug.ui.ExpressionInformationControlCreator$ExpressionInformationControl">
-		<item value="500" key="SashWeightTree"/>
-		<item value="500" key="SashWeightDetails"/>
+		<item value="200" key="SashWeightTree"/>
+		<item value="200" key="SashWeightDetails"/>
 		<item value="614" key="WIDTH"/>
-<<<<<<< HEAD
 		<item value="194" key="HEIGHT"/>
 	</section>
+<<<<<<< HEAD
+=======
 >>>>>>> janaki1.2
 =======
 		<item value="188" key="HEIGHT"/>
@@ -32,4 +38,9 @@
 		<item value="194" key="HEIGHT"/>
 	</section>
 >>>>>>> brahmith1.1
+>>>>>>> ed2c491bd27e4295563c266a26fe8e49e10943ef
+=======
+>>>>>>> brahmith1.1
+=======
+>>>>>>> janaki1.2
 </section>

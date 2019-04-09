@@ -51,7 +51,7 @@ public class ChargebackQuery extends QCStore{
 
 		// Execute a query
 		stmt = conn.createStatement();
-		loan_nbr="10441158";
+		//loan_nbr="10441633";
 		//System.out.println("after conn");
 		try {
 		

@@ -68,7 +68,7 @@ public class QCCSRLoginLogout extends QCStore
 						test.log(LogStatus.INFO, "CSR Application is launched " );
 						//test.log(LogStatus.INFO, MarkupHelper.createLabel("CSR Application is launched", ExtentColor.BLUE));
 						
-						if(prop.getProperty("login_method").equalsIgnoreCase("local"))
+						if(Rprop.getProperty("login_method").equalsIgnoreCase("local"))
 						{
 							driver = new InternetExplorerDriver();
 						}
@@ -89,20 +89,20 @@ public class QCCSRLoginLogout extends QCStore
 						driver.get(AppURL);
 					
 						
-					    driver.findElement(locator(prop.getProperty("csr_username"))).sendKeys(username);
+					    driver.findElement(locator(Rprop.getProperty("csr_username"))).sendKeys(username);
 				        test.log(LogStatus.PASS, "Username is entered: "+username);
 				        
 				        
 
-					    driver.findElement(locator(prop.getProperty("csr_password"))).clear();
-					    driver.findElement(locator(prop.getProperty("csr_password"))).sendKeys(password);
+					    driver.findElement(locator(Rprop.getProperty("csr_password"))).clear();
+					    driver.findElement(locator(Rprop.getProperty("csr_password"))).sendKeys(password);
 				        test.log(LogStatus.PASS, "Password is entered: "+password);
 				        
 				       
-				        driver.findElement(locator(prop.getProperty("csr_storeid"))).sendKeys(store_id);;
+				        driver.findElement(locator(Rprop.getProperty("csr_storeid"))).sendKeys(store_id);;
 				        test.log(LogStatus.PASS, "Storenumber is entered: "+store_id);
 				        //Click Login Button
-				        driver.findElement(locator(prop.getProperty("csr_login_button"))).click();
+				        driver.findElement(locator(Rprop.getProperty("csr_login_button"))).click();
 				        test.log(LogStatus.PASS, "Clicked on login button");
 				        
 				       Thread.sleep(2000);
@@ -131,7 +131,7 @@ public static void logout(String SSN,String AppURL){
 					driver.switchTo().defaultContent();
 					 driver.switchTo().frame("topFrame");
 					
-			driver.findElement(locator(prop.getProperty(("csr_logout_link")))).click();
+			driver.findElement(locator(Rprop.getProperty(("csr_logout_link")))).click();
 			     test.log(LogStatus.PASS, "Clicked On logout Button");
 			     //driver.close();
 			    // if(driver.getTitle().contains("Login"))
@@ -185,7 +185,7 @@ public static void logout(String SSN,String AppURL){
 				test.log(LogStatus.INFO, "********Admin Application is launched********");
 
 
-				if(prop.getProperty("login_method").equalsIgnoreCase("local"))
+				if(Rprop.getProperty("login_method").equalsIgnoreCase("local"))
 				{
 					driver = new InternetExplorerDriver();
 				}
@@ -243,7 +243,7 @@ public static void logout(String SSN,String AppURL){
 			driver.switchTo().defaultContent();
 			 driver.switchTo().frame("topFrame");
 			
-	driver.findElement(locator(prop.getProperty(("admin_logout_link")))).click();
+	driver.findElement(locator(Rprop.getProperty(("admin_logout_link")))).click();
 	     test.log(LogStatus.PASS, "Clicked On logout Button");
 	     if(driver.getTitle().contains("Login")){
 	    	 test.log(LogStatus.PASS, "Logout is Successfully"); 

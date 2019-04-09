@@ -5,6 +5,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 import com.relevantcodes.extentreports.LogStatus;
 
@@ -134,7 +135,7 @@ public class RQCWeeklyRefinance extends QCStore{
 						}
 						else{
 							test.log(LogStatus.FAIL, " Disb amount mismatched ");
-							
+							Assert.assertTrue(false);
 							
 							break;
 							
@@ -194,7 +195,7 @@ public class RQCWeeklyRefinance extends QCStore{
 								}
 								else{
 									test.log(LogStatus.FAIL, " Loan Fee amount mismatched ");
-									
+									Assert.assertTrue(false);
 									
 									break;
 									
@@ -325,18 +326,18 @@ public class RQCWeeklyRefinance extends QCStore{
 					driver.switchTo().frame("main");
 					if(driver.findElement(By.name("ok")).isDisplayed())
 					{
-						test.log(LogStatus.PASS, "<FONT color=green style=Arial>Refinance Stepup is pass ");
+						test.log(LogStatus.PASS, "<FONT color=green style=Arial>Refinance Completed Successfully ");
 						test.log(LogStatus.INFO, "**********************************************************************************");
 
 					}
 					else
 					{
-						test.log(LogStatus.PASS, "<FONT color=green style=Arial>Refinance Stepup is pass ");
+						test.log(LogStatus.PASS, "<FONT color=green style=Arial>Refinance Completed Successfully ");
 						test.log(LogStatus.INFO, "**********************************************************************************");
 					}
 				}
 				else{
-					test.log(LogStatus.FAIL, " Refinance Stepup message is not displayed ");
+					test.log(LogStatus.FAIL, " Refinance message is not displayed ");
 				}
 				break;}
 			break;}
@@ -467,7 +468,7 @@ public class RQCWeeklyRefinance extends QCStore{
 				}
 				else{
 					test.log(LogStatus.FAIL, " Disb amount mismatched ");
-					
+					Assert.assertTrue(false);
 					
 					break;
 					
@@ -532,7 +533,7 @@ public class RQCWeeklyRefinance extends QCStore{
 								}
 								else{
 									test.log(LogStatus.FAIL, " Loan Fee amount mismatched ");
-									
+									Assert.assertTrue(false);
 									
 									break;
 									
@@ -661,18 +662,18 @@ public class RQCWeeklyRefinance extends QCStore{
 					driver.switchTo().frame("main");
 					if(driver.findElement(By.name("ok")).isDisplayed())
 					{
-						test.log(LogStatus.PASS, "<FONT color=green style=Arial>Refinance Stepup is pass ");
+						test.log(LogStatus.PASS, "<FONT color=green style=Arial>Refinance Completed Successfully ");
 						test.log(LogStatus.INFO, "**********************************************************************************");
 
 					}
 					else
 					{
-						test.log(LogStatus.PASS, "<FONT color=green style=Arial>Refinance Stepup is pass ");
+						test.log(LogStatus.PASS, "<FONT color=green style=Arial>Refinance Completed Successfully ");
 						test.log(LogStatus.INFO, "**********************************************************************************");
 					}
 				}
 				else{
-					test.log(LogStatus.FAIL, " Refinance Stepup message is not displayed ");
+					test.log(LogStatus.FAIL, " Refinance message is not displayed ");
 				}
 				break;}
 			break;}
@@ -790,7 +791,7 @@ public class RQCWeeklyRefinance extends QCStore{
 					}
 					else{
 						test.log(LogStatus.FAIL, " Disb amount mismatched ");
-						
+						Assert.assertTrue(false);
 						
 						break;
 						
@@ -853,7 +854,7 @@ public class RQCWeeklyRefinance extends QCStore{
 								}
 								else{
 									test.log(LogStatus.FAIL, " Loan Fee amount mismatched ");
-									
+									Assert.assertTrue(false);
 									
 									break;
 									
@@ -971,19 +972,19 @@ public class RQCWeeklyRefinance extends QCStore{
 					driver.switchTo().frame("main");
 					if(driver.findElement(By.name("ok")).isDisplayed())
 					{
-						test.log(LogStatus.PASS, " Refinance Stepup is pass ");
-						test.log(LogStatus.PASS, "<FONT color=green style=Arial>Refinance Stepup is pass ");
+						//test.log(LogStatus.PASS, " Refinance Stepup is pass ");
+						test.log(LogStatus.PASS, "<FONT color=green style=Arial>Refinance Completed Successfully ");
 						test.log(LogStatus.INFO, "**********************************************************************************");
 
 					}
 					else
 					{
-						test.log(LogStatus.PASS, "<FONT color=green style=Arial>Refinance Stepup is pass ");
+						test.log(LogStatus.PASS, "<FONT color=green style=Arial>Refinance Completed Successfully ");
 						test.log(LogStatus.INFO, "**********************************************************************************");
 					}
 				}
 				else{
-					test.log(LogStatus.FAIL, " Refinance Stepup message is not displayed ");
+					test.log(LogStatus.FAIL, " Refinance message is not displayed ");
 				}
 				break;}
 			break;}

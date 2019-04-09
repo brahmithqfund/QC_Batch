@@ -5,6 +5,9 @@
     <groups>
       <run>
 <<<<<<< HEAD
+        <include name="Ratikanta_LOC"/>
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <include name="Jyothi"/>
@@ -47,11 +50,17 @@
         <include name="EOD"/>
         <include name="EOD2"/>
 >>>>>>> brahmith1.1
+>>>>>>> ed2c491bd27e4295563c266a26fe8e49e10943ef
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
+<<<<<<< HEAD
+          <include name="getResult"/>
+          <include name="setup"/>
+          <include name="RQC_LOC_ManualDefault_EOD_Txn_Testdata"/>
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -123,6 +132,7 @@
 >>>>>>> anoop1.1
 =======
 >>>>>>> brahmith1.1
+>>>>>>> ed2c491bd27e4295563c266a26fe8e49e10943ef
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->
