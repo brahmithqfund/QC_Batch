@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <include name="Janaki"/>
 =======
         <include name="Anoop"/>
@@ -23,11 +24,15 @@
 =======
         <include name="EOD"/>
 >>>>>>> brahmith1.1
+=======
+        <include name="Anoop"/>
+>>>>>>> anoop1.1
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
+<<<<<<< HEAD
           <include name="getResult"/>
           <include name="setup"/>
 <<<<<<< HEAD
@@ -35,7 +40,28 @@
 =======
           <include name="QC_FutureDeposit_EOD_Txn"/>
 >>>>>>> brahmith1.1
+=======
+          <include name="GracedaysDepositMenu"/>
+          <include name="AQC_EPP_Return"/>
+          <include name="setup"/>
+          <include name="AQC_EPPDeposit"/>
+          <include name="RefinanceStepupVoid"/>
+          <include name="GracedaysMiddayDeposit"/>
+          <include name="borrowregNewloan"/>
+>>>>>>> anoop1.1
           <include name="killProcess"/>
+          <include name="AQC_EPP_Prepayment"/>
+          <include name="AQC_EPP_Redeposit"/>
+          <include name="getResult"/>
+          <include name="RefinanceStepup"/>
+          <include name="maxloanCount"/>
+          <include name="rebateStepupVoid"/>
+          <include name="rebateStepup"/>
+          <include name="RefinanceStepSameVoid"/>
+          <include name="AQC_EPP_refund"/>
+          <include name="AQC_EPP_clear"/>
+          <include name="RefinanceStepSame"/>
+          <include name="AQC_EPP_nsfPayment"/>
         </methods>
       </class> <!-- tests.QCStore -->
     </classes>

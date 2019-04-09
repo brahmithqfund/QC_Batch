@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testsuite skipped="6" hostname="QTLSYS1-182" name="tests.QCStore" tests="8" failures="0" timestamp="26 Mar 2019 13:00:03 GMT" time="1577.001" errors="0">
   <testcase name="JQC_AgeStore_Deposit_Return_Refinance_Void_Txn" time="841.321" classname="tests.QCStore"/>
   <testcase name="JQC_AgeStore_Refinance_Rescind_Txn" time="735.680" classname="tests.QCStore"/>
@@ -230,6 +231,20 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 <testsuite skipped="6" hostname="QTLSYS1-182" name="tests.QCStore" tests="7" failures="0" timestamp="04 Apr 2019 05:52:23 GMT" time="735.365" errors="0">
   <testcase name="JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata" time="735.365" classname="tests.QCStore"/>
 >>>>>>> janaki1.2
+=======
+<testsuite skipped="6" hostname="QTLSYS2-48" name="tests.QCStore" tests="17" failures="0" timestamp="05 Apr 2019 08:44:35 GMT" time="5265.996" errors="0">
+  <testcase name="RefinanceStepSameVoid" time="521.674" classname="tests.QCStore"/>
+  <testcase name="borrowregNewloan" time="170.453" classname="tests.QCStore"/>
+  <testcase name="rebateStepup" time="385.611" classname="tests.QCStore"/>
+  <testcase name="rebateStepupVoid" time="470.457" classname="tests.QCStore"/>
+  <testcase name="AQC_EPPDeposit" time="423.679" classname="tests.QCStore"/>
+  <testcase name="AQC_EPP_Prepayment" time="449.385" classname="tests.QCStore"/>
+  <testcase name="AQC_EPP_clear" time="457.140" classname="tests.QCStore"/>
+  <testcase name="AQC_EPP_refund" time="622.989" classname="tests.QCStore"/>
+  <testcase name="AQC_EPP_Return" time="619.739" classname="tests.QCStore"/>
+  <testcase name="AQC_EPP_nsfPayment" time="557.439" classname="tests.QCStore"/>
+  <testcase name="AQC_EPP_Redeposit" time="587.430" classname="tests.QCStore"/>
+>>>>>>> anoop1.1
   <testcase name="JQC_AgeStore_GraceDays_DCDeposit_Menu_Txn" classname="tests.QCStore">
     <skipped/>
   </testcase> <!-- JQC_AgeStore_GraceDays_DCDeposit_Menu_Txn -->

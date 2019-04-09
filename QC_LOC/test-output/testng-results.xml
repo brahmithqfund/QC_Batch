@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="85" total="86" passed="1">
 =======
 <<<<<<< HEAD
@@ -19,20 +20,31 @@
       <group name="1st Batch">
         <method signature="QCStore.LOC_PayOff_after_RescindPeriod_Txn()[pri:134, instance:tests.QCStore@527740a2]" name="LOC_PayOff_after_RescindPeriod_Txn" class="tests.QCStore"/>
       </group> <!-- 1st Batch -->
+=======
+<testng-results skipped="0" failed="0" ignored="113" total="114" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="1064321" started-at="2019-04-08T13:00:49Z" finished-at="2019-04-08T13:18:34Z">
+    <groups>
+      <group name="Anoop_EOD11">
+        <method signature="QCStore.DrawAndEOD()[pri:417, instance:tests.QCStore@5f9d02cb]" name="DrawAndEOD" class="tests.QCStore"/>
+      </group> <!-- Anoop_EOD11 -->
+>>>>>>> anoop1.1
     </groups>
-    <test name="Test" duration-ms="64467" started-at="2019-03-27T11:27:02Z" finished-at="2019-03-27T11:28:06Z">
+    <test name="Test" duration-ms="1064321" started-at="2019-04-08T13:00:49Z" finished-at="2019-04-08T13:18:34Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@527740a2]" name="setup" is-config="true" duration-ms="93" started-at="2019-03-27T11:27:02Z" finished-at="2019-03-27T11:27:02Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="118" started-at="2019-04-08T13:00:49Z" finished-at="2019-04-08T13:00:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@527740a2]" name="killProcess" is-config="true" duration-ms="5013" started-at="2019-03-27T11:27:02Z" finished-at="2019-03-27T11:27:07Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5027" started-at="2019-04-08T13:00:49Z" finished-at="2019-04-08T13:00:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="LOC_PayOff_after_RescindPeriod_Txn()[pri:134, instance:tests.QCStore@527740a2]" name="LOC_PayOff_after_RescindPeriod_Txn" duration-ms="59173" started-at="2019-03-27T11:27:07Z" finished-at="2019-03-27T11:28:06Z">
+        <test-method status="PASS" signature="DrawAndEOD()[pri:417, instance:tests.QCStore@5f9d02cb]" name="DrawAndEOD" duration-ms="1058889" started-at="2019-04-08T13:00:54Z" finished-at="2019-04-08T13:18:33Z">
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- LOC_PayOff_after_RescindPeriod_Txn -->
         <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@527740a2]" name="getResult" is-config="true" duration-ms="172" started-at="2019-03-27T11:28:06Z" finished-at="2019-03-27T11:28:06Z">
           <params>
@@ -4174,6 +4186,14 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 >>>>>>> 33354a572293420cb1c9bb16b353c54411f71fe2
 =======
 >>>>>>> janaki1.2
+=======
+        </test-method> <!-- DrawAndEOD -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="270" started-at="2019-04-08T13:18:33Z" finished-at="2019-04-08T13:18:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DrawAndEOD status=SUCCESS method=QCStore.DrawAndEOD()[pri:417, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+>>>>>>> anoop1.1
               </value>
             </param>
           </params>

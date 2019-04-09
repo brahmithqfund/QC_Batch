@@ -3,6 +3,7 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<item value="QC_LOC_Deposit_EOD" key="selection"/>
 =======
 <<<<<<< HEAD
@@ -23,11 +24,15 @@
 		<item value="EOD2" key="selection"/>
 >>>>>>> janaki1.2
 >>>>>>> 150c2c55447fe8f6acefbc99758066447280432a
+=======
+		<item value="QC_Loan_Stepsame" key="selection"/>
+>>>>>>> anoop1.1
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+<<<<<<< HEAD
 <<<<<<< HEAD
 			<item value="QC_LOC_Deposit_EOD"/>
 			<item value="Anoop_EOD11"/>
@@ -77,6 +82,16 @@
 			<item value="Clicked on Search button"/>
 >>>>>>> janaki1.2
 >>>>>>> 150c2c55447fe8f6acefbc99758066447280432a
+=======
+			<item value="QC_Loan_Stepsame"/>
+			<item value="QC_Loan_StepUP"/>
+			<item value="QC_AgeStore_Rescind Loan"/>
+			<item value="QC_Rescind"/>
+			<item value="QC_MaxLoanCount"/>
+			<item value="QC_NewLoan_InactiveCustomer"/>
+			<item value="QC_Loan_Redeposit"/>
+			<item value="QC_NewLoan_AgeStore_DepositMenu"/>
+>>>>>>> anoop1.1
 		</list>
 		<list key="replacehistory">
 			<item value="Brahmith"/>
@@ -86,6 +101,7 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 		<item value="284" key="DIALOG_HEIGHT"/>
 		<item value="816" key="DIALOG_X_ORIGIN"/>
@@ -110,5 +126,10 @@
 		<item value="230" key="DIALOG_Y_ORIGIN"/>
 >>>>>>> janaki1.2
 >>>>>>> 150c2c55447fe8f6acefbc99758066447280432a
+=======
+		<item value="284" key="DIALOG_HEIGHT"/>
+		<item value="816" key="DIALOG_X_ORIGIN"/>
+		<item value="252" key="DIALOG_Y_ORIGIN"/>
+>>>>>>> anoop1.1
 	</section>
 </section>

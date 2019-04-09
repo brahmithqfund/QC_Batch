@@ -32,12 +32,12 @@ public class AQCSafeAssign extends QCStore{
 
 				driver.findElement(By.xpath("//*[contains(text(),'Cash Management')]")).click();			
 				test.log(LogStatus.PASS, "Clicked on Cash Management");
-				Thread.sleep(1500);
+				Thread.sleep(2000);
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");
 				driver.findElement(By.linkText("Safe")).click();
 				test.log(LogStatus.PASS, "Clicked on Safe");	
-				Thread.sleep(1000);
+				Thread.sleep(3000);
 				
 				driver.findElement(By.xpath("//*[@id='932010']/a")).click();
 

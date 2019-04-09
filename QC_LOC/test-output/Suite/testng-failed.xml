@@ -5,6 +5,7 @@
     <groups>
       <run>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <include name="Ratikanta_LOC"/>
 =======
 <<<<<<< HEAD
@@ -51,11 +52,15 @@
         <include name="EOD2"/>
 >>>>>>> brahmith1.1
 >>>>>>> ed2c491bd27e4295563c266a26fe8e49e10943ef
+=======
+        <include name="Anoop_EOD1"/>
+>>>>>>> anoop1.1
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <include name="getResult"/>
           <include name="setup"/>
@@ -119,10 +124,13 @@
 =======
           <include name="VoidandEod"/>
           <include name="PayOFFandEod"/>
+=======
+>>>>>>> anoop1.1
           <include name="getResult"/>
           <include name="setup"/>
           <include name="DepositAndEOD"/>
           <include name="DrawAndEOD"/>
+<<<<<<< HEAD
 >>>>>>> janaki1.2
 >>>>>>> bd07c6d5205653a8caa48fad7384faa0a833d949
 =======
@@ -133,6 +141,8 @@
 =======
 >>>>>>> brahmith1.1
 >>>>>>> ed2c491bd27e4295563c266a26fe8e49e10943ef
+=======
+>>>>>>> anoop1.1
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->

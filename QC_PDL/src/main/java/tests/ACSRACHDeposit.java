@@ -36,6 +36,7 @@ public class ACSRACHDeposit extends QCStore {
 				driver.switchTo().frame("topFrame");
 				driver.findElement(By.xpath("//*[contains(text(),'Loan Transactions')]")).click();			
 				test.log(LogStatus.PASS, "Clicked on Loan Transactions");
+				Thread.sleep(3000);
 				driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 				driver.switchTo().defaultContent();
 				driver.switchTo().frame("mainFrame");

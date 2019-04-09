@@ -5,6 +5,7 @@
     <groups>
       <run>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <include name="Ratikanta_ILP"/>
 =======
 <<<<<<< HEAD
@@ -41,11 +42,15 @@
         <include name="Brahmith"/>
 >>>>>>> brahmith1.1
 >>>>>>> ed2c491bd27e4295563c266a26fe8e49e10943ef
+=======
+        <include name="Anoop"/>
+>>>>>>> anoop1.1
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <include name="RQC_Bankruptcy_Discharge_Txn_Testdata"/>
 =======
@@ -109,16 +114,17 @@
           <include name="JQC_ILP_GraceDays_Deposit_MidDay_Txn"/>
           <include name="JQC_ILP_GraceDays_Deposit_dropdown_Txn"/>
 =======
-          <include name="getResult"/>
 =======
->>>>>>> brahmith1.1
-          <include name="setup"/>
-          <include name="ILP_ACHAutoClear"/>
-          <include name="ILP_voidRefinance"/>
 >>>>>>> anoop1.1
+          <include name="getResult"/>
+          <include name="setup"/>
+          <include name="ILP_voidRefinance"/>
           <include name="endReport"/>
+<<<<<<< HEAD
           <include name="JQC_ILP_SignaturLoan_Default_Txn"/>
 >>>>>>> ed2c491bd27e4295563c266a26fe8e49e10943ef
+=======
+>>>>>>> anoop1.1
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->

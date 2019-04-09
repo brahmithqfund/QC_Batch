@@ -5323,7 +5323,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 417, enabled = true, groups = "Anoop_EOD1")
+	@Test(priority = 417, enabled = true, groups = "Anoop_EOD11")
 
 	public void DrawAndEOD() throws Exception {
 		FileName = "QC_LOC_Draw_EOD.xls";
