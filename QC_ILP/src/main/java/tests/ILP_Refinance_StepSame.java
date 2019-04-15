@@ -52,6 +52,18 @@ public class ILP_Refinance_StepSame extends QCStore{
 
 				Thread.sleep(3000);
 				test.log(LogStatus.INFO,"**************RefinanceStep Same  started**************");
+				
+				driver.switchTo().frame("bottom");
+				String Str_date=driver.findElement(By.xpath("/html/body/blink/table/tbody/tr/td[4]")).getText();
+				
+				String appdatelist[]=Str_date.split(":");
+				appdate=appdatelist[1].trim();
+				
+				test.log(LogStatus.PASS, "Current store date is "+Str_date);
+
+
+				driver.switchTo().defaultContent();
+				
 				driver.switchTo().frame("topFrame");
 				driver.findElement(locator(Aprop.getProperty("transactions_tab"))).click();			
 				test.log(LogStatus.PASS, "Clicked on Loan Transactions");

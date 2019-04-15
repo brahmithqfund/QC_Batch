@@ -2157,7 +2157,7 @@ public class QCStore {
 
 	// This test case is to check status for the customer and apply loan for
 	// inactive customers
-	//@Test(priority = 2, enabled=true, groups = "Anoop")
+	@Test(priority = 2, enabled=true, groups = "Anoop")
 	public void inactiveNewloan() throws Exception {
 		FileName = "QC_NewLoan_InactiveCustomer.xls";
 		test = reports.startTest("QC_NewLoan_InactiveCustomer", "Login-->Home Screen-->In active customer-->New Loan");
@@ -2189,7 +2189,7 @@ public class QCStore {
 	 * Make sure that "ESign_LoanAmt" column having an amount 50 and for pdl max
 	 * loan count for customer 10 and maximum loan 500
 	 */
-	//@Test(priority = 6, enabled=true, groups = "Anoop")
+	@Test(priority = 6, enabled=true, groups = "Anoop")
 
 	public void maxloanCount() throws Exception {
 		FileName = "QC_MaxLoanCount_Testdata.xls";
@@ -2235,7 +2235,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 4, enabled=true, groups = "Anoop")
+	@Test(priority = 4, enabled=true, groups = "Anoop")
 
 	public void rescindloan() throws Exception {
 		test = reports.startTest("QC_NewLoan_Rescind", "BorrowerRegistration-->New Loan->Rescind");
@@ -2272,7 +2272,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 5, enabled=true, groups = "Anoop")
+	@Test(priority = 5, enabled=true, groups = "Anoop")
 
 	public void agerescindtest() throws Exception {
 		test = reports.startTest("QC_NewLoan_AgeStore_Rescind", "Login-->Age the loan to rescind days--->Rescind loan");
@@ -2313,7 +2313,7 @@ public class QCStore {
 	}
 
 	// Ach deposit from drop down
-	//@Test(priority = 3, enabled=true, groups = "Anoop")
+	@Test(priority = 3, enabled=true, groups = "Anoop")
 	public void Achdeposit() throws Exception {
 		test = reports.startTest("QC_NewLoan_Deposit", "Login-->Age the stote up to due date--->Perform deposit");
 		FileName = "QC_BorrowerReg_NewLoan_AchDeposit_Txn_Testdata.xls";
@@ -2352,7 +2352,7 @@ public class QCStore {
 
 	// ACH deposit from safe
 	/* Give this test case as 0 priority mandatory */
-	//@Test(priority = 0, enabled=true, groups = "Anoop")
+	@Test(priority = 0, enabled=true, groups = "Anoop")
 	public void middayDeposit() throws Exception {
 		FileName = "QC_BorrowerReg_NewLoan_MidDayDeposit_Txn_Testdata.xls";
 		test = reports.startTest("QC_NewLoan_MiddayDeposit",
@@ -2391,7 +2391,7 @@ public class QCStore {
 	}
 
 	// Adding 5 days to due date and perform midday deposit
-	//@Test(priority = 7, enabled=true, groups = "Anoop")
+	@Test(priority = 7, enabled=true, groups = "Anoop")
 
 	public void GracedaysMiddayDeposit() throws Exception {
 
@@ -2432,7 +2432,7 @@ public class QCStore {
 	}
 
 	// Adding 5 days to due date and perform deposit from deposit menu
-	@Test(priority = 8, enabled=true, groups = "Anoop1")
+	@Test(priority = 8, enabled=true, groups = "Anoop")
 
 	public void GracedaysDepositMenu() throws Exception {
 
@@ -2474,7 +2474,7 @@ public class QCStore {
 
 	// Age the store to 3 days and perform partial payment and age the store to
 	// due date and perform re finance step up
-	//@Test(priority = 9, enabled=true, groups = "Anoop")
+	@Test(priority = 9, enabled=true, groups = "Anoop")
 
 	public void RefinanceStepup() throws Exception {
 
@@ -2524,7 +2524,7 @@ public class QCStore {
 
 	// Age the store to 3 days and perform partial payment and age the store to
 	// due date and perform re finance step same
-	//@Test(priority = 10, enabled=true, groups = "Anoop")
+	@Test(priority = 10, enabled=true, groups = "Anoop")
 
 	public void RefinanceStepSame() throws Exception {
 
@@ -2570,7 +2570,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 11, enabled=true, groups = "Anoop")
+	@Test(priority = 11, enabled=true, groups = "Anoop")
 
 	public void RefinanceStepupVoid() throws Exception {
 
@@ -2668,7 +2668,7 @@ public class QCStore {
 	}
 
 	// This needs to be 0 or top priority
-	//@Test(priority = 1, enabled=true, groups = "Anoop")
+	@Test(priority = 1, enabled=true, groups = "Anoop")
 	public void futureMidayDeposit() throws Exception {
 		FileName = "QC_AgeStoretoduedate_FutureDeposit_MiddayDeposit.xls";
 		test = reports.startTest("QC_Future MidDay Deposit",
