@@ -4,80 +4,22 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <include name="Ratikanta_LOC"/>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <include name="Jyothi"/>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <include name="Ratikanta_NEOD"/>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <include name="NonEOD1"/>
-=======
-<<<<<<< HEAD
-        <include name="EOD1"/>
->>>>>>> brahmith1.1
-=======
-        <include name="Anoop_EOD2"/>
->>>>>>> anoop1.1
->>>>>>> f96b7d09c18261a556e71ad66742e2079a8ac046
-=======
-        <include name="Jyothi"/>
->>>>>>> jyothi1.2
->>>>>>> 26f8126931b7afc696e5ebd31895ac4dfa2dd77b
-=======
-        <include name="EOD2"/>
->>>>>>> brahmith1.1
-=======
-        <include name="Anoop_EOD2"/>
->>>>>>> anoop1.1
->>>>>>> bd07c6d5205653a8caa48fad7384faa0a833d949
-=======
-        <include name="Anoop_EOD4"/>
->>>>>>> anoop1.1
-=======
-        <include name="EOD"/>
-        <include name="EOD2"/>
->>>>>>> brahmith1.1
->>>>>>> ed2c491bd27e4295563c266a26fe8e49e10943ef
-=======
         <include name="Anoop_EOD1"/>
->>>>>>> anoop1.1
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
+          <include name="HigherPaymentAndEod"/>
+          <include name="VoidandEod"/>
+          <include name="PayOFFandEod"/>
+          <include name="PaymentAndEod"/>
           <include name="getResult"/>
           <include name="setup"/>
-          <include name="RQC_LOC_ManualDefault_EOD_Txn_Testdata"/>
-          <include name="killProcess"/>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> anoop1.1
-          <include name="getResult"/>
-          <include name="setup"/>
+          <include name="EODOnDueDate"/>
           <include name="DepositAndEOD"/>
           <include name="DrawAndEOD"/>
           <include name="killProcess"/>
-<<<<<<< HEAD
->>>>>>> brahmith1.1
->>>>>>> ed2c491bd27e4295563c266a26fe8e49e10943ef
-=======
->>>>>>> anoop1.1
         </methods>
       </class> <!-- tests.QCStore -->
     </classes>
