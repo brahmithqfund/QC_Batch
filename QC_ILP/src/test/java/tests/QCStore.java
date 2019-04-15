@@ -2910,6 +2910,11 @@ public class QCStore {
 			if (RunFlag.equals("Y")) {
 				String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				
+				QCCSRLoginLogout.adminLogin(SSN, SSN);
+				AAdminStartDate.toStartdateSc1(SSN, SSN);
+				QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
+				AProc1.proc();
 
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRBorrowerRegistration.borrowerReg(SSN, AppURL);

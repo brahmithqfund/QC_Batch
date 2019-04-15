@@ -2,22 +2,23 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="@Test" key="selection"/>
+		<item value="Anoop_EOD1" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="//@Test"/>
-			<item value="QC_NewLoan_AgeStore_DepositMenu"/>
-			<item value="QC_SSN_THREE_LOC"/>
-			<item value="QC_SSN_THREE_ILP"/>
+			<item value="Anoop_EOD1"/>
+			<item value="Anoop1"/>
+			<item value="QC_Loan_Redeposit"/>
+			<item value="QC_NewLoan_MiddayDeposit"/>
 			<item value="// anoop"/>
-			<item value="@Test"/>
-			<item value="Alert Handeld"/>
-			<item value="QC_Loan_StepUP"/>
+			<item value="QC_Refinanace StepUp"/>
+			<item value="QCCSRLoginLogout.adminLogin(SSN, SSN);"/>
+			<item value="CCSRLoginLogout.adminLogin(SSN, SSN);"/>
 		</list>
 		<list key="replacehistory">
+			<item value="QC_SSN_ONE_PDL"/>
 			<item value="@Test"/>
 			<item value="QC_SSN_ONE_LOC"/>
 			<item value="QC_SSN_ONE_ILP"/>

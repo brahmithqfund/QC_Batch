@@ -1,177 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="39" total="42" passed="2">
+<testng-results skipped="0" failed="0" ignored="51" total="52" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="1185824" started-at="2019-04-09T11:28:33Z" finished-at="2019-04-09T11:48:18Z">
+  <suite name="Suite" duration-ms="918057" started-at="2019-04-15T05:43:42Z" finished-at="2019-04-15T05:59:00Z">
     <groups>
-      <group name="Anoop">
-        <method signature="QCStore.ILP_CheckAutoClear()[pri:11, instance:tests.QCStore@5f9d02cb]" name="ILP_CheckAutoClear" class="tests.QCStore"/>
-        <method signature="QCStore.ILP_ProcessClear()[pri:10, instance:tests.QCStore@5f9d02cb]" name="ILP_ProcessClear" class="tests.QCStore"/>
-        <method signature="QCStore.ILP_voidRefinance()[pri:14, instance:tests.QCStore@5f9d02cb]" name="ILP_voidRefinance" class="tests.QCStore"/>
-      </group> <!-- Anoop -->
+      <group name="Anoop_StdownVoid">
+        <method signature="QCStore.ILP_RefinanceStepDown_void()[pri:0, instance:tests.QCStore@5f9d02cb]" name="ILP_RefinanceStepDown_void" class="tests.QCStore"/>
+      </group> <!-- Anoop_StdownVoid -->
     </groups>
-    <test name="Test" duration-ms="1185824" started-at="2019-04-09T11:28:33Z" finished-at="2019-04-09T11:48:18Z">
+    <test name="Test" duration-ms="918057" started-at="2019-04-15T05:43:42Z" finished-at="2019-04-15T05:59:00Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="112" started-at="2019-04-09T11:28:33Z" finished-at="2019-04-09T11:28:33Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="170" started-at="2019-04-15T05:43:42Z" finished-at="2019-04-15T05:43:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-04-09T11:28:33Z" finished-at="2019-04-09T11:28:38Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5002" started-at="2019-04-15T05:43:42Z" finished-at="2019-04-15T05:43:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="ILP_ProcessClear()[pri:10, instance:tests.QCStore@5f9d02cb]" name="ILP_ProcessClear" duration-ms="588079" started-at="2019-04-09T11:28:38Z" finished-at="2019-04-09T11:38:26Z">
+        <test-method status="PASS" signature="ILP_RefinanceStepDown_void()[pri:0, instance:tests.QCStore@5f9d02cb]" name="ILP_RefinanceStepDown_void" duration-ms="912607" started-at="2019-04-15T05:43:47Z" finished-at="2019-04-15T05:58:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ILP_ProcessClear -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-04-09T11:38:26Z" finished-at="2019-04-09T11:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="209" started-at="2019-04-09T11:38:26Z" finished-at="2019-04-09T11:38:26Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ILP_ProcessClear status=SUCCESS method=QCStore.ILP_ProcessClear()[pri:10, instance:tests.QCStore@5f9d02cb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-04-09T11:38:26Z" finished-at="2019-04-09T11:38:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="ILP_CheckAutoClear()[pri:11, instance:tests.QCStore@5f9d02cb]" name="ILP_CheckAutoClear" duration-ms="582343" started-at="2019-04-09T11:38:31Z" finished-at="2019-04-09T11:48:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ILP_CheckAutoClear -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="1" started-at="2019-04-09T11:48:13Z" finished-at="2019-04-09T11:48:13Z">
+        </test-method> <!-- ILP_RefinanceStepDown_void -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="1" started-at="2019-04-15T05:58:59Z" finished-at="2019-04-15T05:58:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="47" started-at="2019-04-09T11:48:13Z" finished-at="2019-04-09T11:48:13Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="262" started-at="2019-04-15T05:58:59Z" finished-at="2019-04-15T05:59:00Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ILP_CheckAutoClear status=SUCCESS method=QCStore.ILP_CheckAutoClear()[pri:11, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+                <![CDATA[[TestResult name=ILP_RefinanceStepDown_void status=SUCCESS method=QCStore.ILP_RefinanceStepDown_void()[pri:0, instance:tests.QCStore@5f9d02cb] output={null}]]]>
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5001" started-at="2019-04-09T11:48:13Z" finished-at="2019-04-09T11:48:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="FAIL" signature="ILP_voidRefinance()[pri:14, instance:tests.QCStore@5f9d02cb]" name="ILP_voidRefinance" duration-ms="2" started-at="2019-04-09T11:48:18Z" finished-at="2019-04-09T11:48:18Z">
-          <exception class="java.io.FileNotFoundException">
-            <message>
-              <![CDATA[C:\QC_Batch\QC_ILP\ATestData\CSR\ILP_BiWeekly\QC_Loan_Refinance_Void.xls (The system cannot find the file specified)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: C:\QC_Batch\QC_ILP\ATestData\CSR\ILP_BiWeekly\QC_Loan_Refinance_Void.xls (The system cannot find the file specified)
-at java.io.FileInputStream.open0(Native Method)
-at java.io.FileInputStream.open(Unknown Source)
-at java.io.FileInputStream.<init>(Unknown Source)
-at java.io.FileInputStream.<init>(Unknown Source)
-at tests.ExcelNew.<init>(ExcelNew.java:35)
-at tests.QCStore.ILP_voidRefinance(QCStore.java:2382)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ILP_voidRefinance -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-04-09T11:48:18Z" finished-at="2019-04-09T11:48:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="3" started-at="2019-04-09T11:48:18Z" finished-at="2019-04-09T11:48:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ILP_voidRefinance status=FAILURE method=QCStore.ILP_voidRefinance()[pri:14, instance:tests.QCStore@5f9d02cb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-48', ip: '192.168.2.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: driver.version: RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-48', ip: '192.168.2.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-at tests.QCStore.getScreenhot(QCStore.java:3330)
-at tests.QCStore.getResult(QCStore.java:3353)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->

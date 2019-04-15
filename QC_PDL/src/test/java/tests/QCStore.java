@@ -2369,6 +2369,12 @@ public class QCStore {
 			if (RunFlag.equals("Y")) {
 				String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				
+				QCCSRLoginLogout.adminLogin(SSN, SSN);
+				AAdminStartDate.toStartdate(SSN, SSN);
+				QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
+				AProc1.proc();
+				
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRBorrowerRegistration.borrowerReg(SSN, AppURL);
 				ACSRLoginLogout.logout();
@@ -2493,6 +2499,11 @@ public class QCStore {
 			if (RunFlag.equals("Y")) {
 				String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				
+				QCCSRLoginLogout.adminLogin(SSN, SSN);
+				AAdminStartDate.toStartdateNV(SSN, SSN);
+				QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
+				AProc1.proc();
 
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRBorrowerRegistration.borrowerReg(SSN, AppURL);
