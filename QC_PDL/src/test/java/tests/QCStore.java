@@ -2215,10 +2215,12 @@ public class QCStore {
 
 					ACSRLoginLogout.login(SSN, AppURL);
 					AMaxLoanCount.maxLoan(SSN, AppURL);
+					//ACSRLoginLogout.logout();
 					if (!(i == 11)) {
 						test.log(LogStatus.INFO, "******Customer loan Number " + i + "is approved successfully*****");
 					} else {
 						test.log(LogStatus.INFO, "******Customer loan Number " + i + "is denied*****");
+						break;
 					}
 				}
 
@@ -2227,7 +2229,7 @@ public class QCStore {
 				 * AQCCSRHistory.history(SSN,AppURL); ACSRLoginLogout.logout();
 				 */
 
-				test.log(LogStatus.INFO, "****Test Scenario for max loan amount is pass******");
+				//test.log(LogStatus.INFO, "****Test Scenario for max loan amount is pass******");
 
 			}
 		}
@@ -2367,6 +2369,12 @@ public class QCStore {
 			if (RunFlag.equals("Y")) {
 				String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				
+				QCCSRLoginLogout.adminLogin(SSN, SSN);
+				AAdminStartDate.toStartdate(SSN, SSN);
+				QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
+				AProc1.proc();
+				
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRBorrowerRegistration.borrowerReg(SSN, AppURL);
 				ACSRLoginLogout.logout();
@@ -2413,7 +2421,7 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRNewLoanPage.newLoan(SSN, AppURL);
-				ACSRLoginLogout.logout();
+				ACSRLoginLogout.logout();	
 				ACSRLoginLogout.login(SSN, AppURL);
 				ARunschedulerGracedays.runscheduler(SSN, AppURL);
 				ACSRLoginLogout.login(SSN, AppURL);
@@ -2454,6 +2462,7 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRNewLoanPage.newLoan(SSN, AppURL);
+				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ARunschedulerGracedays.runscheduler(SSN, AppURL);
 				ACSRLoginLogout.login(SSN, AppURL);
@@ -2490,6 +2499,11 @@ public class QCStore {
 			if (RunFlag.equals("Y")) {
 				String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				
+				QCCSRLoginLogout.adminLogin(SSN, SSN);
+				AAdminStartDate.toStartdateNV(SSN, SSN);
+				QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
+				AProc1.proc();
 
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRBorrowerRegistration.borrowerReg(SSN, AppURL);

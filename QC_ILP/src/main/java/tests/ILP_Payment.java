@@ -36,6 +36,18 @@ public class ILP_Payment extends QCStore{
 
 				Thread.sleep(3000);
 				test.log(LogStatus.INFO,"PartialPayment started");
+				
+				driver.switchTo().frame("bottom");
+				String Str_date=driver.findElement(By.xpath("/html/body/blink/table/tbody/tr/td[4]")).getText();
+				
+				String appdatelist[]=Str_date.split(":");
+				appdate=appdatelist[1].trim();
+				
+				test.log(LogStatus.PASS, "Current store date is "+Str_date);
+
+
+				driver.switchTo().defaultContent();
+				
 				driver.switchTo().frame("topFrame");
 				driver.findElement(locator(Aprop.getProperty("transactions_tab"))).click();			
 				test.log(LogStatus.PASS, "Clicked on Loan Transactions");
@@ -113,7 +125,7 @@ public class ILP_Payment extends QCStore{
 				driver.findElement(By.name("finish")).click();
 				test.log(LogStatus.PASS, "Clicked on Finish Partial Payment");
 
-				Thread.sleep(3000);
+				Thread.sleep(6000);
 				try { 
 					Alert alert = driver.switchTo().alert();
 

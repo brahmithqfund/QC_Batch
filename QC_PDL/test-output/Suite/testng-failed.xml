@@ -4,37 +4,15 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <include name="Janaki"/>
-=======
-        <include name="Anoop"/>
->>>>>>> anoop1.1
-=======
-        <include name="1stBatch"/>
-        <include name="Rebate"/>
-        <include name="EOD1"/>
->>>>>>> brahmith1.1
-=======
-        <include name="Anoopre"/>
->>>>>>> anoop1.1
-=======
-        <include name="EOD"/>
->>>>>>> brahmith1.1
+        <include name="Anoop1"/>
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
+          <include name="GracedaysDepositMenu"/>
           <include name="getResult"/>
           <include name="setup"/>
-<<<<<<< HEAD
-          <include name="RefinanceStepup"/>
-=======
-          <include name="QC_FutureDeposit_EOD_Txn"/>
->>>>>>> brahmith1.1
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->

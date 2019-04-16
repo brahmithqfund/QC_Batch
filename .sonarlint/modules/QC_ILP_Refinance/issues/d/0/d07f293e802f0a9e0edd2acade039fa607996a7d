@@ -1,74 +1,74 @@
 
-Osquid:S1135â"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ
-nsquid:S00117}"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø¸íÈ
-bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Á³£›
-csquid:CommentedOutCodeLineÃ"<This block of commented-out lines of code should be removed.(´ì¬§
-osquid:S00117í"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃıŸâ
-hsquid:CommentedOutCodeLineµ"<This block of commented-out lines of code should be removed.(²±Œ­øÿÿÿÿ
 Jsquid:S1199Š"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ
-bsquid:CommentedOutCodeLinet"<This block of commented-out lines of code should be removed.(²Ğòí
-hsquid:CommentedOutCodeLineŸ"<This block of commented-out lines of code should be removed.(”›Ùøÿÿÿÿÿ
-nsquid:S00117}"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø¸íÈ
-Psquid:UselessParenthesesCheckö"!Remove those useless parentheses.(êÓéùÿÿÿÿ
-osquid:S00117§"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü½Ä²
-?squid:S1148x"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-gsquid:S1132G"KMove the "local" string literal on the left side of this string comparison.(ÀäŒåıÿÿÿÿ
-[squid:UselessImportCheck"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ
-hsquid:CommentedOutCodeLineú"<This block of commented-out lines of code should be removed.(Ó‹ŒÃÿÿÿÿÿ
-Usquid:UselessImportCheck
-"1Remove this unused import 'java.util.Properties'.(¬µ²
-esquid:S3008!"NRename this field "URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï¹«™
-Usquid:UselessImportCheck"1Remove this unused import 'java.text.DateFormat'.(÷Œá¼
+@squid:S1148£"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+bsquid:CommentedOutCodeLine<"<This block of commented-out lines of code should be removed.(ÛŠÏÊ
 i
 squid:S134G"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(ÀäŒåıÿÿÿÿ
+bsquid:CommentedOutCodeLinet"<This block of commented-out lines of code should be removed.(²Ğòí
 gsquid:CommentedOutCodeLine1"<This block of commented-out lines of code should be removed.(ÂÊüÿÿÿÿ
-gsquid:CommentedOutCodeLine?"<This block of commented-out lines of code should be removed.(Œ¥«øÿÿÿÿ
-hsquid:S1132¼"KMove the "local" string literal on the left side of this string comparison.(ÀäŒåıÿÿÿÿ
-nsquid:UselessImportCheck"JRemove this unused import 'com.relevantcodes.extentreports.ExtentReports'.(èşÛÑ
-Esquid:S1172§"-Remove this unused method parameter "AppURL".(ü½Ä²
-gsquid:CommentedOutCodeLineE"<This block of commented-out lines of code should be removed.(ÚÄê‹øÿÿÿÿ
-hsquid:CommentedOutCodeLine’"<This block of commented-out lines of code should be removed.(ÒÌâ–øÿÿÿÿ
-Nsquid:S1135s"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ
-Asquid:S1166r"%Either log or rethrow this exception.(ñ“Š±üÿÿÿÿ
+osquid:S00117§"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü½Ä²
+bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Á³£›
+tsquid:S00117Â"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸıÌşÿÿÿÿ
+Usquid:UselessImportCheck"1Remove this unused import 'java.text.DateFormat'.(÷Œá¼
 ssquid:S00117""VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹û÷×ûÿÿÿÿ
-@squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Esquid:S1172§"-Remove this unused method parameter "AppURL".(ü½Ä²
+osquid:S00117í"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃıŸâ
+csquid:CommentedOutCodeLineŒ"<This block of commented-out lines of code should be removed.(½¼¡¦
+gsquid:CommentedOutCodeLine."<This block of commented-out lines of code should be removed.(‹™®Õüÿÿÿÿ
+Bsquid:S1166Š"%Either log or rethrow this exception.(¼Ôîàùÿÿÿÿ
+osquid:S00117°"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ïñ©
+Ksquid:EmptyStatementUsageCheckf"Remove this empty statement.(Ì²‚¢øÿÿÿÿ
+nsquid:S001173"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Šİ–
+osquid:S00117í"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃıŸâ
+ssquid:S00117""VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹û÷×ûÿÿÿÿ
+gsquid:CommentedOutCodeLineE"<This block of commented-out lines of code should be removed.(ÚÄê‹øÿÿÿÿ
 bsquid:CommentedOutCodeLine%"<This block of commented-out lines of code should be removed.(°«¨
-ssquid:S00117M"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸıÌşÿÿÿÿ
-Nsquid:S1313M"2Make this IP "192.168.2.164" address configurable.(ŸıÌşÿÿÿÿ
-hsquid:CommentedOutCodeLineˆ"<This block of commented-out lines of code should be removed.(—ÈÉ¿ıÿÿÿÿ
 Bsquid:S1166á"%Either log or rethrow this exception.(ñ“Š±üÿÿÿÿ
 bsquid:S1192("FDefine a constant instead of duplicating this literal "Login" 5 times.(÷º¢°üÿÿÿÿ
-gsquid:CommentedOutCodeLine."<This block of commented-out lines of code should be removed.(‹™®Õüÿÿÿÿ
-}"squid:ClassVariableVisibilityCheck!"OMake URL a static final constant or non-public and provide accessors if needed.(ï¹«™
-nsquid:S001173"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Šİ–
-osquid:S00117´"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û«ù
-Ksquid:UselessParenthesesCheck†"!Remove those useless parentheses.(¥¹¿Š
-csquid:CommentedOutCodeLine¸"<This block of commented-out lines of code should be removed.(®ùŒ•
-Asquid:S1172}"*Remove this unused method parameter "SSN".(ø¸íÈ
-wsquid:UselessImportCheck"NRemove this unused import 'org.openqa.selenium.support.ui.ExpectedConditions'.(û€Èéúÿÿÿÿ
 Osquid:S1313Â"2Make this IP "192.168.2.164" address configurable.(ŸıÌşÿÿÿÿ
-Osquid:UselessImportCheck	"+Remove this unused import 'java.util.Date'.(¸…¼ü
 bsquid:CommentedOutCodeLineN"<This block of commented-out lines of code should be removed.(´ì¬§
+hsquid:CommentedOutCodeLineú"<This block of commented-out lines of code should be removed.(Ó‹ŒÃÿÿÿÿÿ
+nsquid:S00117}"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø¸íÈ
+ksquid:UselessImportCheck"BRemove this unused import 'org.openqa.selenium.support.ui.Select'.(´—âÛøÿÿÿÿ
+hsquid:S1132¼"KMove the "local" string literal on the left side of this string comparison.(ÀäŒåıÿÿÿÿ
+hsquid:CommentedOutCodeLine’"<This block of commented-out lines of code should be removed.(ÒÌâ–øÿÿÿÿ
+csquid:CommentedOutCodeLine¸"<This block of commented-out lines of code should be removed.(®ùŒ•
+Osquid:S1135â"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ
+nsquid:S00117-"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ïñ©
+nsquid:S00117³"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò›Í-
+@squid:S1444!")Make this "public static URL" field final(ï¹«™
+ssquid:S00117M"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸıÌşÿÿÿÿ
+osquid:S00117§"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü½Ä²
+hsquid:CommentedOutCodeLineŒ"<This block of commented-out lines of code should be removed.(”›Ùøÿÿÿÿÿ
+?squid:S1148x"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Bsquid:S1172í"*Remove this unused method parameter "SSN".(ÃıŸâ
+Ksquid:UselessParenthesesCheck†"!Remove those useless parentheses.(¥¹¿Š
+Asquid:S1172}"*Remove this unused method parameter "SSN".(ø¸íÈ
+bsquid:CommentedOutCodeLine4"<This block of commented-out lines of code should be removed.(”ı‰­
+gsquid:CommentedOutCodeLine?"<This block of commented-out lines of code should be removed.(Œ¥«øÿÿÿÿ
+}"squid:ClassVariableVisibilityCheck!"OMake URL a static final constant or non-public and provide accessors if needed.(ï¹«™
+Osquid:UselessImportCheck	"+Remove this unused import 'java.util.Date'.(¸…¼ü
+@squid:S1148ç"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Usquid:UselessImportCheck
+"1Remove this unused import 'java.util.Properties'.(¬µ²
+wsquid:UselessImportCheck"NRemove this unused import 'org.openqa.selenium.support.ui.ExpectedConditions'.(û€Èéúÿÿÿÿ
+Psquid:UselessParenthesesCheckö"!Remove those useless parentheses.(êÓéùÿÿÿÿ
+gsquid:S1132G"KMove the "local" string literal on the left side of this string comparison.(ÀäŒåıÿÿÿÿ
+esquid:S3008!"NRename this field "URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï¹«™
+hsquid:CommentedOutCodeLineŸ"<This block of commented-out lines of code should be removed.(”›Ùøÿÿÿÿÿ
+Nsquid:S1135s"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ
+bsquid:CommentedOutCodeLine'"<This block of commented-out lines of code should be removed.(ªİ¾
+osquid:S00117´"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û«ù
+nsquid:UselessImportCheck"JRemove this unused import 'com.relevantcodes.extentreports.ExtentReports'.(èşÛÑ
+nsquid:S00117}"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø¸íÈ
+hsquid:CommentedOutCodeLineˆ"<This block of commented-out lines of code should be removed.(—ÈÉ¿ıÿÿÿÿ
+csquid:CommentedOutCodeLineÃ"<This block of commented-out lines of code should be removed.(´ì¬§
 j
 squid:S134¼"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(ÀäŒåıÿÿÿÿ
-bsquid:CommentedOutCodeLine<"<This block of commented-out lines of code should be removed.(ÛŠÏÊ
-Bsquid:S1172í"*Remove this unused method parameter "SSN".(ÃıŸâ
-ssquid:S00117""VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹û÷×ûÿÿÿÿ
-nsquid:S00117³"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò›Í-
-@squid:S1148£"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-csquid:CommentedOutCodeLineŒ"<This block of commented-out lines of code should be removed.(½¼¡¦
-bsquid:CommentedOutCodeLine'"<This block of commented-out lines of code should be removed.(ªİ¾
-bsquid:CommentedOutCodeLine4"<This block of commented-out lines of code should be removed.(”ı‰­
-tsquid:S00117Â"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸıÌşÿÿÿÿ
-@squid:S1148ç"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-nsquid:S00117-"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ïñ©
-csquid:CommentedOutCodeLineã"<This block of commented-out lines of code should be removed.(²Ğòí
-hsquid:CommentedOutCodeLineŒ"<This block of commented-out lines of code should be removed.(”›Ùøÿÿÿÿÿ
-ksquid:UselessImportCheck"BRemove this unused import 'org.openqa.selenium.support.ui.Select'.(´—âÛøÿÿÿÿ
-Ksquid:EmptyStatementUsageCheckf"Remove this empty statement.(Ì²‚¢øÿÿÿÿ
 Bsquid:S1166"%Either log or rethrow this exception.(¼Ôîàùÿÿÿÿ
-Bsquid:S1166Š"%Either log or rethrow this exception.(¼Ôîàùÿÿÿÿ
-@squid:S1444!")Make this "public static URL" field final(ï¹«™
-osquid:S00117°"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ïñ©
-osquid:S00117í"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃıŸâ
-osquid:S00117§"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü½Ä²
+@squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Asquid:S1166r"%Either log or rethrow this exception.(ñ“Š±üÿÿÿÿ
+csquid:CommentedOutCodeLineã"<This block of commented-out lines of code should be removed.(²Ğòí
+hsquid:CommentedOutCodeLineµ"<This block of commented-out lines of code should be removed.(²±Œ­øÿÿÿÿ
+Nsquid:S1313M"2Make this IP "192.168.2.164" address configurable.(ŸıÌşÿÿÿÿ
+[squid:UselessImportCheck"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ

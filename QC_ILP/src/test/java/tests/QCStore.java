@@ -2425,7 +2425,7 @@ public class QCStore {
 			}
 		}
 	}
-
+//Dont execute this one 
 	@Test(priority = 12, enabled = true, groups = "Anoopsss")
 
 	public void ILP_ACHAutoClear() throws Exception {
@@ -2596,6 +2596,11 @@ public class QCStore {
 				String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
 
+				QCCSRLoginLogout.adminLogin(SSN, SSN);
+				AAdminStartDate.toStartdate(SSN, SSN);
+				QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
+				AProc1.proc();
+				
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRBorrowerRegistration.borrowerReg(SSN, AppURL);
 				ACSRLoginLogout.logout();
@@ -2648,6 +2653,11 @@ public class QCStore {
 			if (RunFlag.equals("Y")) {
 				String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				
+				QCCSRLoginLogout.adminLogin(SSN, SSN);
+				AAdminStartDate.toStartdate(SSN, SSN);
+				QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
+				AProc1.proc();
 
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRBorrowerRegistration.borrowerReg(SSN, AppURL);
@@ -2900,6 +2910,11 @@ public class QCStore {
 			if (RunFlag.equals("Y")) {
 				String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
+				
+				QCCSRLoginLogout.adminLogin(SSN, SSN);
+				AAdminStartDate.toStartdateSc1(SSN, SSN);
+				QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
+				AProc1.proc();
 
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRBorrowerRegistration.borrowerReg(SSN, AppURL);
@@ -3039,6 +3054,7 @@ public class QCStore {
 
 					ACSRLoginLogout.login(SSN, AppURL);
 					MaxLoanCount.maxLoan(SSN, AppURL);
+					ACSRLoginLogout.logout();
 					if (!(i == 2)) {
 						test.log(LogStatus.INFO, "******Customer loan Number " + i + "is approved successfully*****");
 						break;
@@ -3332,7 +3348,12 @@ public class QCStore {
 				+ screenshotName + dateName + ".png";
 		File finalDestination = new File(destination);
 		FileUtils.copyFile(source, finalDestination);
+
 				return destination;
+
+		/*reports.flush();
+		driver.quit();*/
+
 		
 	}
 

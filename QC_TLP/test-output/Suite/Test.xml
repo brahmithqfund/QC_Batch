@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testsuite hostname="QTLSYS1-182" ignored="34" name="Test" tests="1" failures="0" timestamp="27 Mar 2019 05:06:25 GMT" time="954.397" errors="0">
   <testcase name="JQC_TLP_GraceDays_Deposit_EOD_Txn" time="949.11" classname="tests.QCStore"/>
 =======
@@ -29,23 +30,22 @@
   <testcase name="QC_TLP_Writeoff_Recovery_Txn" time="701.27" classname="tests.QCStore"/>
   <testcase name="QC_TLP_Writeoff_Recovery_Void_Txn" time="664.579" classname="tests.QCStore"/>
 >>>>>>> brahmith1.1
+=======
+<testsuite hostname="QTLSYS1-182" ignored="34" name="Test" tests="1" failures="0" timestamp="05 Apr 2019 05:28:23 GMT" time="748.185" errors="0">
+  <testcase name="JQC_TLP_GraceDays_Deposit_EOD_Txn" time="742.912" classname="tests.QCStore"/>
+>>>>>>> janaki1.2
   <testcase name="JQC_TLP_GraceDays_Deposit_Menu_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_TLP_GraceDays_Deposit_Menu_Txn -->
-=======
-<testsuite hostname="QTLSYS1-182" ignored="27" name="Test" tests="8" failures="0" timestamp="29 Mar 2019 12:59:47 GMT" time="5912.25" errors="0">
-  <testcase name="JQC_TLP_Deposit_MidDay_Txn" time="609.506" classname="tests.QCStore"/>
-  <testcase name="JQC_TLP_GraceDays_Deposit_MidDay_Txn" time="702.073" classname="tests.QCStore"/>
-  <testcase name="JQC_TLP_GraceDays_Deposit_Menu_Txn" time="613.625" classname="tests.QCStore"/>
-  <testcase name="JQC_TLP_Deposit_dropdown_Txn" time="465.432" classname="tests.QCStore"/>
-  <testcase name="JQC_TLP_Deposit_Menu_Txn" time="698.3" classname="tests.QCStore"/>
-  <testcase name="JQC_TLP_GraceDays_Deposit_dropdown_Txn" time="713.831" classname="tests.QCStore"/>
-  <testcase name="JQC_DefaultPayment_Txn_Testdata" time="1015.694" classname="tests.QCStore"/>
-  <testcase name="JQC_DefaultPayment_Void_Txn_Testdata" time="1053.138" classname="tests.QCStore"/>
->>>>>>> janaki1.2
   <testcase name="TLP_agerescind" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- TLP_agerescind -->
+<<<<<<< HEAD
+=======
+  <testcase name="QC_PayAnyotherAmount_Void_Txn" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- QC_PayAnyotherAmount_Void_Txn -->
+>>>>>>> janaki1.2
   <testcase name="JQC_TLP_Deceased_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_TLP_Deceased_Txn -->
@@ -65,11 +65,14 @@
     <ignored/>
   </testcase> <!-- newLoan -->
 <<<<<<< HEAD
+<<<<<<< HEAD
   <testcase name="TLP_RefinanceStepSame" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- TLP_RefinanceStepSame -->
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> janaki1.2
 =======
 >>>>>>> janaki1.2
   <testcase name="QC_PayAnyotherAmount_Txn" time="0.0" classname="tests.QCStore">
@@ -83,6 +86,15 @@
   <testcase name="QC_NewLoan_Void_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- QC_NewLoan_Void_Txn -->
+  <testcase name="JQC_TLP_Deposit_dropdown_Txn" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- JQC_TLP_Deposit_dropdown_Txn -->
+  <testcase name="JQC_TLP_Deposit_MidDay_Txn" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- JQC_TLP_Deposit_MidDay_Txn -->
+  <testcase name="JQC_DefaultPayment_Txn_Testdata" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- JQC_DefaultPayment_Txn_Testdata -->
   <testcase name="TLP_ProcessClearFromMenu" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- TLP_ProcessClearFromMenu -->
@@ -95,6 +107,9 @@
   <testcase name="QC_TLP_NewLoan_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- QC_TLP_NewLoan_Txn -->
+  <testcase name="JQC_TLP_GraceDays_Deposit_MidDay_Txn" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- JQC_TLP_GraceDays_Deposit_MidDay_Txn -->
   <testcase name="TLP_RefinanceStepSame_Void" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- TLP_RefinanceStepSame_Void -->
@@ -112,6 +127,7 @@
     <ignored/>
   </testcase> <!-- TLP_bankruptcyDismiss -->
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> brahmith1.1
@@ -121,48 +137,38 @@
   <testcase name="JQC_TLP_GraceDays_Deposit_EOD_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_TLP_GraceDays_Deposit_EOD_Txn -->
+=======
+>>>>>>> janaki1.2
   <testcase name="JQC_TLP_GraceDays_Deposit_dropdown_Txn" time="0.0" classname="tests.QCStore">
-=======
-  <testcase name="JQC_TLP_GraceDays_Deposit_EOD_Txn" time="0.0" classname="tests.QCStore">
->>>>>>> janaki1.2
     <ignored/>
-  </testcase> <!-- JQC_TLP_GraceDays_Deposit_EOD_Txn -->
-  <testcase name="QC_Installmentpayment_Void_Txn" time="0.0" classname="tests.QCStore">
+  </testcase> <!-- JQC_TLP_GraceDays_Deposit_dropdown_Txn -->
+  <testcase name="JQC_TLP_Deposit_Menu_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
-<<<<<<< HEAD
   </testcase> <!-- JQC_TLP_Deposit_Menu_Txn -->
+<<<<<<< HEAD
   <testcase name="TLP_RefinanceStepDownVoid" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- TLP_RefinanceStepDownVoid -->
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> janaki1.2
   <testcase name="QC_Installmentpayment_Void_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- QC_Installmentpayment_Void_Txn -->
-=======
-  </testcase> <!-- QC_Installmentpayment_Void_Txn -->
   <testcase name="TLP_RefinanceStepDownVoid" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- TLP_RefinanceStepDownVoid -->
->>>>>>> janaki1.2
   <testcase name="QC_TLP_Writeoff_Recovery_Void_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- QC_TLP_Writeoff_Recovery_Void_Txn -->
-=======
-  <testcase name="JQC_DefaultPayment_Txn_Testdata" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- JQC_DefaultPayment_Txn_Testdata -->
->>>>>>> brahmith1.1
   <testcase name="TLP_ProcessClear" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- TLP_ProcessClear -->
-<<<<<<< HEAD
-  <testcase name="TLP_ProcessClearFromMenu" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- TLP_ProcessClearFromMenu -->
   <testcase name="JQC_DefaultPayment_Void_Txn_Testdata" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_DefaultPayment_Void_Txn_Testdata -->
+<<<<<<< HEAD
   <testcase name="TLP_RefinanceStepDown" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- TLP_RefinanceStepDown -->
@@ -179,6 +185,8 @@
     <ignored/>
   </testcase> <!-- JQC_DefaultPayment_Void_Txn_Testdata -->
 >>>>>>> brahmith1.1
+=======
+>>>>>>> janaki1.2
   <testcase name="TLP_ProcessAutoClear" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- TLP_ProcessAutoClear -->

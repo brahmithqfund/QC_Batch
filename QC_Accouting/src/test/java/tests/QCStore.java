@@ -621,7 +621,76 @@ public class QCStore {
 
 		}
 	}
+	
+	//Janaki Transcations
+	
+	@Test(priority = 1, groups = "Janaki")
 
+	public static void ERM_Re_deposit() throws Exception {
+		try {
+
+			test = reports.startTest(prop.getProperty("ERM_Re_Deposit"),
+					"DC_NewLoan --> Deposit --> chargeBack --> Redeposit --> ERM");
+
+			FileName = prop.getProperty("ERM_Re_Deposit_file_name") + ".xls";
+
+			TestData = new ExcelNew(System.getProperty("user.dir")
+					+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
+
+			String sheetName = "Start";
+			int lastrow = TestData.getLastRow("Start");
+			System.out.println(lastrow);
+			for (int row = 2; row <= lastrow; row++) {
+
+				String RunFlag = TestData.getCellData(sheetName, "Run", row);
+				// System.out.println(RunFlag);
+				if (RunFlag.equals("Y")) {
+
+					// AppURL = TestData.getCellData(sheetName, "AppURL", row);
+					String SSN = TestData.getCellData(sheetName, "SSN", row);
+
+					System.out.println(AppURL);
+					QCCSRLoginLogout.adminLogin(SSN, SSN);
+					BAdminStartDate.toStartdate(SSN, SSN);
+					QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
+					BProc3.proc();
+
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCCSRNewLoan.newLoan(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
+					
+					QCCSRLoginLogout.login(SSN, AppURL);
+					JQCDepositDropdown.depositDropDown(SSN, SSN);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					
+					QCCSRLoginLogout.login(SSN, AppURL);
+					Chargeback.chargeback(SSN, SSN);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					
+					UpdateTable_Proc4.proc();
+					
+		
+				}
+			}
+		}
+
+		catch (Exception e) {
+
+			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
+			// start scenario 1 " , ExtentColor.RED));
+			test.log(LogStatus.ERROR, "Unable to start scenario QC_BorrowerRegistration_NewLoan_Promotion_Txn ");
+
+		}
+	}
+
+	
 
 	@BeforeClass(alwaysRun = true)
 	public void setup() throws IOException {

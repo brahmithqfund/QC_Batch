@@ -7,7 +7,12 @@
 
   
    <!-- Brahmith group--> 
+<<<<<<< HEAD
 <include name="Brahmith1"/>  
+
+<!-- Janaki group--> 
+<include name="Janaki"/>
+
 
 
   </run>
