@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testsuite skipped="0" hostname="qtlsys2-66pc" name="tests.QCStore" tests="1" failures="0" timestamp="01 Apr 2019 05:55:10 GMT" time="333.776" errors="0">
   <testcase name="JQC_LOC_New_Loan_Rescind_Txn" time="333.776" classname="tests.QCStore"/>
 =======
@@ -1647,4 +1648,8 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 <testsuite skipped="0" hostname="QTLSYS2-48" name="tests.QCStore" tests="1" failures="0" timestamp="08 Apr 2019 13:18:34 GMT" time="1064.186" errors="0">
   <testcase name="DrawAndEOD" time="1064.186" classname="tests.QCStore"/>
 >>>>>>> anoop1.1
+=======
+<testsuite skipped="0" hostname="QTLSYS2-238" name="tests.QCStore" tests="1" failures="0" timestamp="08 Apr 2019 11:14:52 GMT" time="1983.241" errors="0">
+  <testcase name="LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn" time="1983.241" classname="tests.QCStore"/>
+>>>>>>> brahmith1.1
 </testsuite> <!-- tests.QCStore -->

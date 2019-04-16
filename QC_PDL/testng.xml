@@ -11,16 +11,14 @@
    
   	
  <!-- Anoop group--> 
- <include name="Anoop"/> 
+ <!-- <include name="Anoopre"/> --> 
 
        <!-- Brahmith group-->  
-  <!--   <include name="1stBatch2"/>  -->
-    <!--  <include name="Rebate"/>  --> 
-      <!--  <include name="EOD"/>  -->
+    <!-- <include name="1stBatch"/> 
+     <include name="Rebate"/>  --> 
+       <include name="EOD2"/> 
+
  
-
-
-
 
   </run>
 

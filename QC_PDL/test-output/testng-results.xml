@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" ignored="65" total="66" passed="0">
   <reporter-output>
   </reporter-output>
@@ -95,6 +96,36 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=GracedaysDepositMenu status=FAILURE method=QCStore.GracedaysDepositMenu()[pri:8, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+=======
+<testng-results skipped="0" failed="0" ignored="76" total="77" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="91367" started-at="2019-04-16T05:24:00Z" finished-at="2019-04-16T05:25:31Z">
+    <groups>
+      <group name="EOD2">
+        <method signature="QCStore.QC_FutureDeposit_EOD_Txn()[pri:283, instance:tests.QCStore@5f9d02cb]" name="QC_FutureDeposit_EOD_Txn" class="tests.QCStore"/>
+      </group> <!-- EOD2 -->
+    </groups>
+    <test name="Test" duration-ms="91367" started-at="2019-04-16T05:24:00Z" finished-at="2019-04-16T05:25:31Z">
+      <class name="tests.QCStore">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="95" started-at="2019-04-16T05:24:00Z" finished-at="2019-04-16T05:24:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5012" started-at="2019-04-16T05:24:00Z" finished-at="2019-04-16T05:24:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="QC_FutureDeposit_EOD_Txn()[pri:283, instance:tests.QCStore@5f9d02cb]" name="QC_FutureDeposit_EOD_Txn" duration-ms="86004" started-at="2019-04-16T05:24:05Z" finished-at="2019-04-16T05:25:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_FutureDeposit_EOD_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="239" started-at="2019-04-16T05:25:31Z" finished-at="2019-04-16T05:25:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QC_FutureDeposit_EOD_Txn status=SUCCESS method=QCStore.QC_FutureDeposit_EOD_Txn()[pri:283, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+>>>>>>> brahmith1.1
               </value>
             </param>
           </params>

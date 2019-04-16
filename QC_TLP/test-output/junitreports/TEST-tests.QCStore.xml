@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testsuite skipped="0" hostname="QTLSYS1-182" name="tests.QCStore" tests="1" failures="0" timestamp="27 Mar 2019 05:06:26 GMT" time="954.319" errors="0">
   <testcase name="JQC_TLP_GraceDays_Deposit_EOD_Txn" time="954.319" classname="tests.QCStore"/>
 =======
@@ -45,4 +46,8 @@
 <testsuite skipped="0" hostname="QTLSYS1-182" name="tests.QCStore" tests="1" failures="0" timestamp="05 Apr 2019 05:28:23 GMT" time="748.091" errors="0">
   <testcase name="JQC_TLP_GraceDays_Deposit_EOD_Txn" time="748.091" classname="tests.QCStore"/>
 >>>>>>> janaki1.2
+=======
+<testsuite skipped="0" hostname="QTLSYS2-238" name="tests.QCStore" tests="1" failures="0" timestamp="16 Apr 2019 07:49:57 GMT" time="352.134" errors="0">
+  <testcase name="QC_TLP_Writeoff_Recovery_Txn" time="352.134" classname="tests.QCStore"/>
+>>>>>>> brahmith1.1
 </testsuite> <!-- tests.QCStore -->

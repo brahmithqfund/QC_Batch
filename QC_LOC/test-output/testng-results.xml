@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="85" total="86" passed="1">
 =======
 <<<<<<< HEAD
@@ -135,6 +136,32 @@
           </reporter-output>
         </test-method> <!-- LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn -->
         <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="815" started-at="2019-04-01T11:46:19Z" finished-at="2019-04-01T11:46:20Z">
+=======
+<testng-results skipped="0" failed="0" ignored="113" total="114" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="1983369" started-at="2019-04-08T10:41:49Z" finished-at="2019-04-08T11:14:52Z">
+    <groups>
+      <group name="EOD1">
+        <method signature="QCStore.LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn()[pri:66, instance:tests.QCStore@5f9d02cb]" name="LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn" class="tests.QCStore"/>
+      </group> <!-- EOD1 -->
+    </groups>
+    <test name="Test" duration-ms="1983369" started-at="2019-04-08T10:41:49Z" finished-at="2019-04-08T11:14:52Z">
+      <class name="tests.QCStore">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="113" started-at="2019-04-08T10:41:49Z" finished-at="2019-04-08T10:41:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5019" started-at="2019-04-08T10:41:49Z" finished-at="2019-04-08T10:41:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn()[pri:66, instance:tests.QCStore@5f9d02cb]" name="LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn" duration-ms="1977876" started-at="2019-04-08T10:41:54Z" finished-at="2019-04-08T11:14:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="346" started-at="2019-04-08T11:14:52Z" finished-at="2019-04-08T11:14:52Z">
+>>>>>>> brahmith1.1
           <params>
             <param index="0">
               <value>
@@ -145,6 +172,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5027" started-at="2019-04-01T11:46:20Z" finished-at="2019-04-01T11:46:25Z">
           <reporter-output>
           </reporter-output>
@@ -4200,6 +4228,8 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+=======
+>>>>>>> brahmith1.1
       </class> <!-- tests.QCStore -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

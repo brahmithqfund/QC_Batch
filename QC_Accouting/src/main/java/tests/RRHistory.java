@@ -140,8 +140,8 @@ public class RRHistory extends QCStore{
 					
 					for(increment=totalrows-payment_no;increment<=totalrows;increment++)
 					{
-
-						cust_doc_interest= driver.findElement(By.xpath("//*[@id='transactionDetailsTable']/tbody/tr["+payment_no+"]/td[11]/font")).getText();
+																		//*[@id='transactionDetailsTable']/tbody/tr["+payment_no+"]/td[11]/font
+						cust_doc_interest= driver.findElement(By.xpath("//*[@id='transactionDetailsTable']/tbody/tr["+payment_no+"]/td[7]/font")).getText();
 						
 							//interest_page[i]="1";
 							

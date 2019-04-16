@@ -24,7 +24,11 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
+<<<<<<< HEAD
       <span class="top-banner-font-1">1 suite, 1 failed test</span>
+=======
+      <span class="top-banner-font-1">1 suite</span>
+>>>>>>> brahmith1.1
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +42,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,6 +95,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
+<<<<<<< HEAD
                     <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
@@ -106,6 +111,23 @@
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
+=======
+                    <span class="method-stats">1 method,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="QC_FutureDeposit_EOD_Txn">QC_FutureDeposit_EOD_Txn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+>>>>>>> brahmith1.1
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,14 +139,19 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+<<<<<<< HEAD
           <div class="suite-Suite-class-failed">
+=======
+          <div class="suite-Suite-class-passed">
+>>>>>>> brahmith1.1
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">tests.QCStore</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+<<<<<<< HEAD
                   <a name="GracedaysDepositMenu">
                   </a> <!-- GracedaysDepositMenu -->
                   <span class="method-name">GracedaysDepositMenu</span>
@@ -153,10 +180,15 @@ Session ID: 1080297e-ca82-4a9f-8a72-45dd52ee79e9
 	at tests.QCStore.GracedaysDepositMenu(QCStore.java:2463)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
+=======
+                  <a name="QC_FutureDeposit_EOD_Txn">
+                  </a> <!-- QC_FutureDeposit_EOD_Txn -->
+                  <span class="method-name">QC_FutureDeposit_EOD_Txn</span>
+>>>>>>> brahmith1.1
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -170,7 +202,11 @@ Session ID: 1080297e-ca82-4a9f-8a72-45dd52ee79e9
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;groups&gt;
       &lt;run&gt;
+<<<<<<< HEAD
         &lt;include name=&quot;Anoop1&quot;/&gt;
+=======
+        &lt;include name=&quot;EOD2&quot;/&gt;
+>>>>>>> brahmith1.1
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
@@ -199,10 +235,17 @@ Session ID: 1080297e-ca82-4a9f-8a72-45dd52ee79e9
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
+<<<<<<< HEAD
               <span class="test-group-name">Anoop1</span>
               <br/>
               <div class="method-in-group">
                 <span class="method-in-group-name">GracedaysDepositMenu</span>
+=======
+              <span class="test-group-name">EOD2</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">QC_FutureDeposit_EOD_Txn</span>
+>>>>>>> brahmith1.1
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -224,14 +267,24 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
+<<<<<<< HEAD
 data.setCell(0, 1, 'GracedaysDepositMenu')
 data.setCell(0, 2, 'tests.QCStore')
 data.setCell(0, 3, 764190);
+=======
+data.setCell(0, 1, 'QC_FutureDeposit_EOD_Txn')
+data.setCell(0, 2, 'tests.QCStore')
+data.setCell(0, 3, 86004);
+>>>>>>> brahmith1.1
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
+<<<<<<< HEAD
               <span class="suite-total-time">Total running time: 12 minutes</span>
+=======
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+>>>>>>> brahmith1.1
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -246,7 +299,11 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
+<<<<<<< HEAD
             <span class="header-content">65 ignored methods</span>
+=======
+            <span class="header-content">76 ignored methods</span>
+>>>>>>> brahmith1.1
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -276,9 +333,15 @@ return data;
                 <br/>
                 <span class="ignored-method-name">QC_Epp_Deposit_Void_Txn</span>
                 <br/>
+<<<<<<< HEAD
                 <span class="ignored-method-name">QC_Refinance_StepSameURP_Txn</span>
                 <br/>
                 <span class="ignored-method-name">JQC_AgeStore_NSFPosting_Refinance_Rescind_Txn</span>
+=======
+                <span class="ignored-method-name">JQC_AgeStore_NSFPosting_Refinance_Rescind_Txn</span>
+                <br/>
+                <span class="ignored-method-name">QC_Refinance_StepSameURP_Txn</span>
+>>>>>>> brahmith1.1
                 <br/>
                 <span class="ignored-method-name">JQC_AgeStore_GraceDays_DCDeposit_Menu_Txn</span>
                 <br/>
@@ -286,9 +349,15 @@ return data;
                 <br/>
                 <span class="ignored-method-name">JQC_AgeStore_DCDeposit_Txn</span>
                 <br/>
+<<<<<<< HEAD
                 <span class="ignored-method-name">QC_Epp_Return_NSFPayment_Txn</span>
                 <br/>
                 <span class="ignored-method-name">JQC_EPP_AgestoreInstallmentwise_EPPPayment_Txn_Testdata</span>
+=======
+                <span class="ignored-method-name">JQC_EPP_AgestoreInstallmentwise_EPPPayment_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">QC_Epp_Return_NSFPayment_Txn</span>
+>>>>>>> brahmith1.1
                 <br/>
                 <span class="ignored-method-name">QC_Deposit_GraceDays_Txn</span>
                 <br/>
@@ -335,6 +404,11 @@ return data;
                 <span class="ignored-method-name">JQC_AgeStore_PrePayment_Clear_Txn</span>
                 <br/>
                 <span class="ignored-method-name">JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata</span>
+<<<<<<< HEAD
+=======
+                <br/>
+                <span class="ignored-method-name">GracedaysMiddayDeposit</span>
+>>>>>>> brahmith1.1
                 <br/>
                 <span class="ignored-method-name">QC_NewLoan_Void_Txn</span>
                 <br/>
@@ -346,6 +420,13 @@ return data;
                 <br/>
                 <span class="ignored-method-name">JQC_AgeStore_GraceDays_DCDeposit_Dropdown_Txn</span>
                 <br/>
+<<<<<<< HEAD
+=======
+                <span class="ignored-method-name">maxloanCount</span>
+                <br/>
+                <span class="ignored-method-name">RefinanceStepup</span>
+                <br/>
+>>>>>>> brahmith1.1
                 <span class="ignored-method-name">QC_FutureDeposit_DropDown</span>
                 <br/>
                 <span class="ignored-method-name">rebateStepup</span>
@@ -362,14 +443,24 @@ return data;
                 <br/>
                 <span class="ignored-method-name">JQC_AgeStore_ACHReturn_Refinance_Rescind_Txn</span>
                 <br/>
+                <span class="ignored-method-name">JQC_AgeStore_ACHReturn_Refinance_Rescind_Txn</span>
+                <br/>
                 <span class="ignored-method-name">JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata</span>
                 <br/>
                 <span class="ignored-method-name">JQC_BuyBack_Rebate_Txn_Testdata</span>
+<<<<<<< HEAD
                 <br/>
                 <span class="ignored-method-name">rebateStepupVoid</span>
                 <br/>
                 <span class="ignored-method-name">QC_FutureDeposit_EOD_Txn</span>
                 <br/>
+=======
+                <br/>
+                <span class="ignored-method-name">rebateStepupVoid</span>
+                <br/>
+                <span class="ignored-method-name">agerescindtest</span>
+                <br/>
+>>>>>>> brahmith1.1
                 <span class="ignored-method-name">QC_Refinance_StepDownVoidURP_Txn</span>
                 <br/>
                 <span class="ignored-method-name">JQC_AgeStore_Deposit_ClearDropdown_Txn</span>
@@ -377,6 +468,13 @@ return data;
                 <span class="ignored-method-name">JQC_Return_ReDeposit_Clear_Txn</span>
                 <br/>
                 <span class="ignored-method-name">QC_Void_FullReturnPayment_Txn</span>
+<<<<<<< HEAD
+                <br/>
+                <span class="ignored-method-name">JQC_AgeStore_Deposit_PrePayment_Txn</span>
+=======
+>>>>>>> brahmith1.1
+                <br/>
+                <span class="ignored-method-name">JQC_AgeStore_Redeposit_Prepayment_Void_Prepayment_Return_Txn</span>
                 <br/>
                 <span class="ignored-method-name">JQC_AgeStore_Deposit_PrePayment_Txn</span>
                 <br/>
@@ -399,6 +497,7 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">killProcess</span>
+<<<<<<< HEAD
                 <span class="method-start">94 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
@@ -410,6 +509,17 @@ return data;
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=GracedaysDepositMenu status=FAILURE method=QCStore.GracedaysDepositMenu()[pri:8, in...)</span>
                 <span class="method-start">769370 ms</span>
+=======
+                <span class="method-start">100 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">QC_FutureDeposit_EOD_Txn</span>
+                <span class="method-start">5112 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=QC_FutureDeposit_EOD_Txn status=SUCCESS method=QCStore.QC_FutureDeposit_EOD_Txn()[p...)</span>
+                <span class="method-start">91120 ms</span>
+>>>>>>> brahmith1.1
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
