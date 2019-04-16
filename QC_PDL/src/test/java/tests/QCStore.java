@@ -1015,7 +1015,7 @@ public class QCStore {
 					// row);
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 
-					BProc3.proc();
+					//BProc3.proc();
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
@@ -1081,7 +1081,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 170, groups = { "1stBatch1" })
+	@Test(priority = 170, groups = { "1stBatch" })
 	public static void QC_PartialPayment_RefundVoid_Txn() throws Exception {
 		try {
 			// test =
@@ -1534,7 +1534,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 281, groups = { "EOD1" })
+	@Test(priority = 281, groups = { "EOD" })
 	public static void QC_EOD_Deposit_Txn() throws Exception {
 		try {
 			// test =
@@ -1606,7 +1606,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 282, groups = { "EOD1" })
+	@Test(priority = 282, groups = { "EOD" })
 	public static void QC_GraceDays_EODDeposit_Txn() throws Exception {
 		try {
 			// test =

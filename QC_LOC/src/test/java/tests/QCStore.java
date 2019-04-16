@@ -1580,7 +1580,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 66, groups = { "EOD" })
+	@Test(priority = 66, groups = { "EOD1" })
 
 	public static void LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn() throws Exception {
 		try {

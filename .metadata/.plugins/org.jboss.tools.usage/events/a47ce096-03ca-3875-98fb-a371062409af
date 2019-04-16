@@ -1,58 +1,11 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-#Tue Apr 02 14:26:18 IST 2019
+#Tue Apr 16 12:17:21 IST 2019
 vl=How many times the 'Finish' button pressed during the day
 l=Wizard class name
 ct=jbt
-d=1554195378658
-=======
-#Tue Apr 02 12:45:32 IST 2019
-vl=How many times the 'Finish' button pressed during the day
-l=Wizard class name
-ct=jbt
-d=1554189332388
->>>>>>> Ratikanta1.1
-=======
-<<<<<<< HEAD
-#Tue Apr 02 11:31:05 IST 2019
-vl=How many times the 'Finish' button pressed during the day
-l=Wizard class name
-ct=jbt
-d=1554184865855
-=======
-#Tue Apr 02 10:35:03 IST 2019
-vl=How many times the 'Finish' button pressed during the day
-l=Wizard class name
-ct=jbt
-d=1554181503840
->>>>>>> anoop1.1
-=======
-#Tue Apr 02 10:25:08 IST 2019
-vl=How many times the 'Finish' button pressed during the day
-l=Wizard class name
-ct=jbt
-d=1554180908146
->>>>>>> brahmith1.1
->>>>>>> ed2c491bd27e4295563c266a26fe8e49e10943ef
-=======
-#Tue Apr 02 14:33:00 IST 2019
-vl=How many times the 'Finish' button pressed during the day
-l=Wizard class name
-ct=jbt
-d=1554195780673
->>>>>>> 33354a572293420cb1c9bb16b353c54411f71fe2
-=======
-#Mon Apr 08 10:20:55 IST 2019
-vl=How many times the 'Finish' button pressed during the day
-l=Wizard class name
-ct=jbt
-d=1554699055706
->>>>>>> brahmith1.1
+d=1555397241639
 c=0
 cmp=usage
 a=finishWizard
 cl=org.eclipse.m2e.core.ui.internal.wizards.MavenImportWizard
 v=2.1.1
-s=2
+s=0
