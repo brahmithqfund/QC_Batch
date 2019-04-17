@@ -51,7 +51,7 @@ public class ChargebackQuery extends QCStore{
 
 		// Execute a query
 		stmt = conn.createStatement();
-		//loan_nbr="10441633";
+		//loan_nbr="10442630";
 		//System.out.println("after conn");
 		try {
 		
@@ -98,7 +98,7 @@ public class ChargebackQuery extends QCStore{
 					Double dvalue2=Double.parseDouble(values2);
 					test.log(LogStatus.PASS, "UNPAID_INTEREST value is "+ dvalue2);
 					double total=dvalue+dvalue2;
-					test.log(LogStatus.PASS, "Total interest value after adding the interests is "+ total);
+					test.log(LogStatus.PASS, "Total interest value after adding the interests is "+ total*10);
 					stotal[i]=String.valueOf(total);
 					/*String s1[]=stotal.split("-");
 					stotal=s1[1];*/

@@ -1130,7 +1130,7 @@ public class QCStore {
 	}
 
 	// Date: 01/02/2018
-	@Test(priority = 206, enabled = true, groups = "Janaki_EOD_set1")
+	@Test(priority = 206, enabled = true, groups = "Janaki")
 
 	public static void JQC_TLP_Deceased_Txn() throws Exception {
 		try {
