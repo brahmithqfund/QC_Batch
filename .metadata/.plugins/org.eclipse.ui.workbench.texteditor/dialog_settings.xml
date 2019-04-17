@@ -3,15 +3,20 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<item value="Anoop_EOD1" key="selection"/>
 =======
 		<item value="QC_Void_FullReturnPayment" key="selection"/>
 >>>>>>> brahmith1.1
+=======
+		<item value="EOD2" key="selection"/>
+>>>>>>> janaki1.2
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+<<<<<<< HEAD
 <<<<<<< HEAD
 			<item value="Anoop_EOD1"/>
 			<item value="Anoop1"/>
@@ -40,6 +45,18 @@
 		<list key="replacehistory">
 			<item value="Brahmith"/>
 >>>>>>> brahmith1.1
+=======
+			<item value="EOD2"/>
+			<item value="ACHDeposit_EODs_Return_ReDeposit_Return"/>
+			<item value="ACHDeposit_EODs_Return_ReDeposit_Clear"/>
+			<item value="Janaki_WORecovery"/>
+			<item value="EOD"/>
+			<item value="Janaki_EOD_set1"/>
+			<item value="Janaki_EOD_set2"/>
+			<item value="janaki"/>
+		</list>
+		<list key="replacehistory">
+>>>>>>> janaki1.2
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
@@ -47,11 +64,16 @@
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<item value="563" key="DIALOG_X_ORIGIN"/>
 		<item value="119" key="DIALOG_Y_ORIGIN"/>
 =======
 		<item value="612" key="DIALOG_X_ORIGIN"/>
 		<item value="356" key="DIALOG_Y_ORIGIN"/>
 >>>>>>> brahmith1.1
+=======
+		<item value="762" key="DIALOG_X_ORIGIN"/>
+		<item value="346" key="DIALOG_Y_ORIGIN"/>
+>>>>>>> janaki1.2
 	</section>
 </section>

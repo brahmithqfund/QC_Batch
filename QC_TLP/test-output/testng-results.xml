@@ -4,31 +4,35 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> janaki1.2
 =======
 >>>>>>> janaki1.2
 <testng-results skipped="0" failed="0" ignored="34" total="35" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="748185" started-at="2019-04-05T05:15:55Z" finished-at="2019-04-05T05:28:23Z">
+  <suite name="Suite" duration-ms="679925" started-at="2019-04-16T05:05:43Z" finished-at="2019-04-16T05:17:03Z">
     <groups>
       <group name="Janaki_EOD_set2">
         <method signature="QCStore.JQC_TLP_GraceDays_Deposit_EOD_Txn()[pri:210, instance:tests.QCStore@5f9d02cb]" name="JQC_TLP_GraceDays_Deposit_EOD_Txn" class="tests.QCStore"/>
       </group> <!-- Janaki_EOD_set2 -->
     </groups>
-    <test name="Test" duration-ms="748185" started-at="2019-04-05T05:15:55Z" finished-at="2019-04-05T05:28:23Z">
+    <test name="Test" duration-ms="679925" started-at="2019-04-16T05:05:43Z" finished-at="2019-04-16T05:17:03Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="78" started-at="2019-04-05T05:15:55Z" finished-at="2019-04-05T05:15:55Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="78" started-at="2019-04-16T05:05:43Z" finished-at="2019-04-16T05:05:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5007" started-at="2019-04-05T05:15:55Z" finished-at="2019-04-05T05:16:00Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5008" started-at="2019-04-16T05:05:43Z" finished-at="2019-04-16T05:05:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="JQC_TLP_GraceDays_Deposit_EOD_Txn()[pri:210, instance:tests.QCStore@5f9d02cb]" name="JQC_TLP_GraceDays_Deposit_EOD_Txn" duration-ms="742912" started-at="2019-04-05T05:16:00Z" finished-at="2019-04-05T05:28:23Z">
+        <test-method status="PASS" signature="JQC_TLP_GraceDays_Deposit_EOD_Txn()[pri:210, instance:tests.QCStore@5f9d02cb]" name="JQC_TLP_GraceDays_Deposit_EOD_Txn" duration-ms="674620" started-at="2019-04-16T05:05:48Z" finished-at="2019-04-16T05:17:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JQC_TLP_GraceDays_Deposit_EOD_Txn -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="172" started-at="2019-04-05T05:28:23Z" finished-at="2019-04-05T05:28:23Z">
           <params>
             <param index="0">
@@ -372,125 +376,24 @@
           </reporter-output>
         </test-method> <!-- getResult -->
         <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-29T11:53:35Z" finished-at="2019-03-29T11:53:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-29T11:53:35Z" finished-at="2019-03-29T11:53:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="JQC_TLP_Deposit_dropdown_Txn()[pri:203, instance:tests.QCStore@5f9d02cb]" name="JQC_TLP_Deposit_dropdown_Txn" duration-ms="465432" started-at="2019-03-29T11:53:40Z" finished-at="2019-03-29T12:01:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- JQC_TLP_Deposit_dropdown_Txn -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="1" started-at="2019-03-29T12:01:26Z" finished-at="2019-03-29T12:01:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="35" started-at="2019-03-29T12:01:26Z" finished-at="2019-03-29T12:01:26Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=JQC_TLP_Deposit_dropdown_Txn status=SUCCESS method=QCStore.JQC_TLP_Deposit_dropdown_Txn()[pri:203, instance:tests.QCStore@5f9d02cb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-29T12:01:26Z" finished-at="2019-03-29T12:01:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="JQC_TLP_Deposit_Menu_Txn()[pri:204, instance:tests.QCStore@5f9d02cb]" name="JQC_TLP_Deposit_Menu_Txn" duration-ms="698300" started-at="2019-03-29T12:01:31Z" finished-at="2019-03-29T12:13:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- JQC_TLP_Deposit_Menu_Txn -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-29T12:13:09Z" finished-at="2019-03-29T12:13:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="35" started-at="2019-03-29T12:13:09Z" finished-at="2019-03-29T12:13:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=JQC_TLP_Deposit_Menu_Txn status=SUCCESS method=QCStore.JQC_TLP_Deposit_Menu_Txn()[pri:204, instance:tests.QCStore@5f9d02cb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-29T12:13:09Z" finished-at="2019-03-29T12:13:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="JQC_TLP_GraceDays_Deposit_dropdown_Txn()[pri:205, instance:tests.QCStore@5f9d02cb]" name="JQC_TLP_GraceDays_Deposit_dropdown_Txn" duration-ms="713831" started-at="2019-03-29T12:13:14Z" finished-at="2019-03-29T12:25:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- JQC_TLP_GraceDays_Deposit_dropdown_Txn -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="37" started-at="2019-03-29T12:25:08Z" finished-at="2019-03-29T12:25:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=JQC_TLP_GraceDays_Deposit_dropdown_Txn status=SUCCESS method=QCStore.JQC_TLP_GraceDays_Deposit_dropdown_Txn()[pri:205, instance:tests.QCStore@5f9d02cb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-29T12:25:08Z" finished-at="2019-03-29T12:25:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-29T12:25:08Z" finished-at="2019-03-29T12:25:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="JQC_DefaultPayment_Txn_Testdata()[pri:207, instance:tests.QCStore@5f9d02cb]" name="JQC_DefaultPayment_Txn_Testdata" duration-ms="1015694" started-at="2019-03-29T12:25:13Z" finished-at="2019-03-29T12:42:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- JQC_DefaultPayment_Txn_Testdata -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="46" started-at="2019-03-29T12:42:09Z" finished-at="2019-03-29T12:42:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=JQC_DefaultPayment_Txn_Testdata status=SUCCESS method=QCStore.JQC_DefaultPayment_Txn_Testdata()[pri:207, instance:tests.QCStore@5f9d02cb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-29T12:42:09Z" finished-at="2019-03-29T12:42:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5000" started-at="2019-03-29T12:42:09Z" finished-at="2019-03-29T12:42:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="JQC_DefaultPayment_Void_Txn_Testdata()[pri:208, instance:tests.QCStore@5f9d02cb]" name="JQC_DefaultPayment_Void_Txn_Testdata" duration-ms="1053138" started-at="2019-03-29T12:42:14Z" finished-at="2019-03-29T12:59:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- JQC_DefaultPayment_Void_Txn_Testdata -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-03-29T12:59:47Z" finished-at="2019-03-29T12:59:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="36" started-at="2019-03-29T12:59:47Z" finished-at="2019-03-29T12:59:47Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=JQC_DefaultPayment_Void_Txn_Testdata status=SUCCESS method=QCStore.JQC_DefaultPayment_Void_Txn_Testdata()[pri:208, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+=======
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-04-16T05:17:03Z" finished-at="2019-04-16T05:17:03Z">
 >>>>>>> janaki1.2
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="204" started-at="2019-04-16T05:17:03Z" finished-at="2019-04-16T05:17:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JQC_TLP_GraceDays_Deposit_EOD_Txn status=SUCCESS method=QCStore.JQC_TLP_GraceDays_Deposit_EOD_Txn()[pri:210, instance:tests.QCStore@5f9d02cb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-04-05T10:58:51Z" finished-at="2019-04-05T10:58:51Z">
 =======
         <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-04-05T05:28:23Z" finished-at="2019-04-05T05:28:23Z">
@@ -500,6 +403,8 @@
         </test-method> <!-- endReport -->
 =======
 >>>>>>> brahmith1.1
+=======
+>>>>>>> janaki1.2
       </class> <!-- tests.QCStore -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

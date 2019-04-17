@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" ignored="65" total="66" passed="0">
   <reporter-output>
   </reporter-output>
   <suite name="Suite" duration-ms="788158" started-at="2019-04-12T12:59:17Z" finished-at="2019-04-12T13:12:25Z">
+=======
+<testng-results skipped="0" failed="0" ignored="76" total="77" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="271693" started-at="2019-04-16T04:50:48Z" finished-at="2019-04-16T04:55:19Z">
+>>>>>>> janaki1.2
     <groups>
       <group name="Anoop1">
         <method signature="QCStore.GracedaysDepositMenu()[pri:8, instance:tests.QCStore@5f9d02cb]" name="GracedaysDepositMenu" class="tests.QCStore"/>
       </group> <!-- Anoop1 -->
     </groups>
+<<<<<<< HEAD
     <test name="Test" duration-ms="788158" started-at="2019-04-12T12:59:17Z" finished-at="2019-04-12T13:12:25Z">
       <class name="tests.QCStore">
         <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="94" started-at="2019-04-12T12:59:17Z" finished-at="2019-04-12T12:59:17Z">
@@ -126,6 +134,27 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               <value>
                 <![CDATA[[TestResult name=QC_FutureDeposit_EOD_Txn status=SUCCESS method=QCStore.QC_FutureDeposit_EOD_Txn()[pri:283, instance:tests.QCStore@5f9d02cb] output={null}]]]>
 >>>>>>> brahmith1.1
+=======
+    <test name="Test" duration-ms="271693" started-at="2019-04-16T04:50:48Z" finished-at="2019-04-16T04:55:19Z">
+      <class name="tests.QCStore">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="78" started-at="2019-04-16T04:50:48Z" finished-at="2019-04-16T04:50:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5008" started-at="2019-04-16T04:50:48Z" finished-at="2019-04-16T04:50:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata()[pri:423, instance:tests.QCStore@5f9d02cb]" name="JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata" duration-ms="266358" started-at="2019-04-16T04:50:53Z" finished-at="2019-04-16T04:55:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="234" started-at="2019-04-16T04:55:19Z" finished-at="2019-04-16T04:55:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata status=SUCCESS method=QCStore.JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata()[pri:423, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+>>>>>>> janaki1.2
               </value>
             </param>
           </params>
