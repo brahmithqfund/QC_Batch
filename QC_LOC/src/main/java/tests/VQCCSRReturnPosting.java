@@ -35,8 +35,8 @@ public class VQCCSRReturnPosting extends QCStore {
 					String AdminPassword = TestData.getCellData(sheetName, "AdminPassword", row);
 					String AdminURL = TestData.getCellData(sheetName, "AdminURL", row);
 					String PIN = TestData.getCellData(sheetName, "PIN", row);
-					//String StoreID = vstoreid;
-					String StoreID = TestData.getCellData(sheetName, "StoreID", row);
+					String StoreID = nstoreid;
+					//String StoreID = TestData.getCellData(sheetName, "StoreID", row);
 					String ReasonForReturn = TestData.getCellData(sheetName, "ReasonForReturn", row);
 					String Esign_CollateralType = TestData.getCellData(sheetName, "Esign_CollateralType", row);
 

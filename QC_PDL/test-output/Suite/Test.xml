@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testsuite hostname="QTLSYS2-48" ignored="65" name="Test" tests="1" failures="1" timestamp="12 Apr 2019 13:12:25 GMT" time="788.158" errors="0">
   <testcase name="GracedaysDepositMenu" time="764.19" classname="tests.QCStore">
     <failure type="org.openqa.selenium.NoSuchElementException" message="Unable to find element with name == requestBean.chkName (WARNING: The server did not provide any stacktrace information)
@@ -59,16 +60,22 @@ at tests.QCStore.GracedaysDepositMenu(QCStore.java:2463)
 <testsuite hostname="QTLSYS1-182" ignored="76" name="Test" tests="1" failures="0" timestamp="16 Apr 2019 04:55:19 GMT" time="271.693" errors="0">
   <testcase name="JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata" time="266.358" classname="tests.QCStore"/>
 >>>>>>> janaki1.2
+=======
+<testsuite hostname="QTLSYS1-182" ignored="76" name="Test" tests="1" failures="0" timestamp="18 Apr 2019 06:16:55 GMT" time="101.32" errors="0">
+  <testcase name="JQC_AgeStore_Deposit_ClearMenu_Txn" time="95.984" classname="tests.QCStore"/>
+>>>>>>> janaki1.2
   <testcase name="JQC_AgeStore_Refinance_Rescind_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_AgeStore_Refinance_Rescind_Txn -->
   <testcase name="middayDeposit" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- middayDeposit -->
->>>>>>> brahmith1.1
   <testcase name="QC_Epp_Check_Deposit_Clear_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- QC_Epp_Check_Deposit_Clear_Txn -->
+  <testcase name="Achdeposit" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- Achdeposit -->
   <testcase name="QC_Refinance_StepDownURP_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- QC_Refinance_StepDownURP_Txn -->
@@ -88,20 +95,6 @@ at tests.QCStore.GracedaysDepositMenu(QCStore.java:2463)
     <ignored/>
   </testcase> <!-- QC_RefinanceStepDown_Txn -->
   <testcase name="QC_PartialPayment_RefundVoid_Txn" time="0.0" classname="tests.QCStore">
-<<<<<<< HEAD
-    <ignored/>
-  </testcase> <!-- QC_PartialPayment_RefundVoid_Txn -->
-  <testcase name="QC_Epp_PrePayment_Return_Txn" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- QC_Epp_PrePayment_Return_Txn -->
-  <testcase name="JQC_AgeStore_Deposit_Return_Refinance_Txn" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- JQC_AgeStore_Deposit_Return_Refinance_Txn -->
-  <testcase name="QC_Epp_Deposit_Void_Txn" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- QC_Epp_Deposit_Void_Txn -->
-  <testcase name="JQC_AgeStore_NSFPosting_Refinance_Rescind_Txn" time="0.0" classname="tests.QCStore">
-=======
     <ignored/>
   </testcase> <!-- QC_PartialPayment_RefundVoid_Txn -->
   <testcase name="QC_Epp_PrePayment_Return_Txn" time="0.0" classname="tests.QCStore">
@@ -111,15 +104,17 @@ at tests.QCStore.GracedaysDepositMenu(QCStore.java:2463)
     <ignored/>
   </testcase> <!-- JQC_AgeStore_Deposit_Return_Refinance_Txn -->
   <testcase name="rescindloan" time="0.0" classname="tests.QCStore">
->>>>>>> janaki1.2
     <ignored/>
-  </testcase> <!-- JQC_AgeStore_NSFPosting_Refinance_Rescind_Txn -->
-<<<<<<< HEAD
-=======
+  </testcase> <!-- rescindloan -->
+  <testcase name="QC_Epp_Deposit_Void_Txn" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- QC_Epp_Deposit_Void_Txn -->
   <testcase name="QC_Refinance_StepSameURP_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- QC_Refinance_StepSameURP_Txn -->
->>>>>>> brahmith1.1
+  <testcase name="JQC_AgeStore_NSFPosting_Refinance_Rescind_Txn" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- JQC_AgeStore_NSFPosting_Refinance_Rescind_Txn -->
   <testcase name="JQC_AgeStore_GraceDays_DCDeposit_Menu_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_AgeStore_GraceDays_DCDeposit_Menu_Txn -->
@@ -129,27 +124,12 @@ at tests.QCStore.GracedaysDepositMenu(QCStore.java:2463)
   <testcase name="JQC_AgeStore_DCDeposit_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_AgeStore_DCDeposit_Txn -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> janaki1.2
   <testcase name="QC_Epp_Return_NSFPayment_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- QC_Epp_Return_NSFPayment_Txn -->
   <testcase name="JQC_EPP_AgestoreInstallmentwise_EPPPayment_Txn_Testdata" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_EPP_AgestoreInstallmentwise_EPPPayment_Txn_Testdata -->
-<<<<<<< HEAD
-=======
-  <testcase name="JQC_EPP_AgestoreInstallmentwise_EPPPayment_Txn_Testdata" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- JQC_EPP_AgestoreInstallmentwise_EPPPayment_Txn_Testdata -->
-  <testcase name="QC_Epp_Return_NSFPayment_Txn" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- QC_Epp_Return_NSFPayment_Txn -->
->>>>>>> brahmith1.1
-=======
->>>>>>> janaki1.2
   <testcase name="QC_Deposit_GraceDays_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- QC_Deposit_GraceDays_Txn -->
@@ -162,9 +142,15 @@ at tests.QCStore.GracedaysDepositMenu(QCStore.java:2463)
   <testcase name="JQC_BuyBack_Txn_Testdata" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_BuyBack_Txn_Testdata -->
+<<<<<<< HEAD
   <testcase name="JQC_AgeStore_Deposit_ClearMenu_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_AgeStore_Deposit_ClearMenu_Txn -->
+=======
+  <testcase name="AQC_EPP_Redeposit" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- AQC_EPP_Redeposit -->
+>>>>>>> janaki1.2
   <testcase name="QC_OpenLoan_NewLoan_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- QC_OpenLoan_NewLoan_Txn -->
@@ -186,6 +172,15 @@ at tests.QCStore.GracedaysDepositMenu(QCStore.java:2463)
   <testcase name="JQC_BuyBack_Rebate_Void_Txn_Testdata" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_BuyBack_Rebate_Void_Txn_Testdata -->
+<<<<<<< HEAD
+=======
+  <testcase name="AQC_EPP_nsfPayment" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- AQC_EPP_nsfPayment -->
+  <testcase name="GracedaysDepositMenu" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- GracedaysDepositMenu -->
+>>>>>>> janaki1.2
   <testcase name="QC_AgeStore_Void_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- QC_AgeStore_Void_Txn -->
@@ -193,20 +188,14 @@ at tests.QCStore.GracedaysDepositMenu(QCStore.java:2463)
     <ignored/>
   </testcase> <!-- JQC_AgeStore_Deposit_AutoClear_Txn -->
   <testcase name="JQC_AgeStore_PrePayment_Clear_Txn" time="0.0" classname="tests.QCStore">
-<<<<<<< HEAD
-=======
     <ignored/>
   </testcase> <!-- JQC_AgeStore_PrePayment_Clear_Txn -->
   <testcase name="JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata -->
   <testcase name="GracedaysMiddayDeposit" time="0.0" classname="tests.QCStore">
->>>>>>> brahmith1.1
     <ignored/>
-  </testcase> <!-- JQC_AgeStore_PrePayment_Clear_Txn -->
-  <testcase name="JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- JQC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata -->
+  </testcase> <!-- GracedaysMiddayDeposit -->
   <testcase name="QC_NewLoan_Void_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- QC_NewLoan_Void_Txn -->
@@ -219,15 +208,19 @@ at tests.QCStore.GracedaysDepositMenu(QCStore.java:2463)
   <testcase name="JQC_AgeStore_GraceDays_DCDeposit_Dropdown_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_AgeStore_GraceDays_DCDeposit_Dropdown_Txn -->
-<<<<<<< HEAD
-=======
   <testcase name="maxloanCount" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- maxloanCount -->
   <testcase name="RefinanceStepup" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- RefinanceStepup -->
+<<<<<<< HEAD
 >>>>>>> brahmith1.1
+=======
+  <testcase name="rebateStepup" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- rebateStepup -->
+>>>>>>> janaki1.2
   <testcase name="QC_FutureDeposit_DropDown" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- QC_FutureDeposit_DropDown -->
@@ -243,17 +236,24 @@ at tests.QCStore.GracedaysDepositMenu(QCStore.java:2463)
   <testcase name="QC_Epp_Return_ReDeposit_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- QC_Epp_Return_ReDeposit_Txn -->
-  <testcase name="JQC_AgeStore_ACHReturn_Refinance_Rescind_Txn" time="0.0" classname="tests.QCStore">
-    <ignored/>
 <<<<<<< HEAD
+  <testcase name="JQC_AgeStore_ACHReturn_Refinance_Rescind_Txn" time="0.0" classname="tests.QCStore">
 =======
+  <testcase name="futureMidayDeposit" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- futureMidayDeposit -->
+  <testcase name="AQC_EPP_Return" time="0.0" classname="tests.QCStore">
+    <ignored/>
+  </testcase> <!-- AQC_EPP_Return -->
+  <testcase name="RefinanceStepupVoid" time="0.0" classname="tests.QCStore">
+>>>>>>> janaki1.2
+    <ignored/>
   </testcase> <!-- RefinanceStepupVoid -->
   <testcase name="inactiveNewloan" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- inactiveNewloan -->
   <testcase name="JQC_AgeStore_ACHReturn_Refinance_Rescind_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
->>>>>>> brahmith1.1
   </testcase> <!-- JQC_AgeStore_ACHReturn_Refinance_Rescind_Txn -->
   <testcase name="JQC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata" time="0.0" classname="tests.QCStore">
     <ignored/>
@@ -264,38 +264,12 @@ at tests.QCStore.GracedaysDepositMenu(QCStore.java:2463)
   <testcase name="QC_FutureDeposit_EOD_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- QC_FutureDeposit_EOD_Txn -->
-<<<<<<< HEAD
-=======
   <testcase name="agerescindtest" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- agerescindtest -->
->>>>>>> brahmith1.1
   <testcase name="QC_Refinance_StepDownVoidURP_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- QC_Refinance_StepDownVoidURP_Txn -->
-  <testcase name="JQC_AgeStore_Deposit_ClearDropdown_Txn" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- JQC_AgeStore_Deposit_ClearDropdown_Txn -->
-  <testcase name="JQC_Return_ReDeposit_Clear_Txn" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- JQC_Return_ReDeposit_Clear_Txn -->
-  <testcase name="QC_Void_FullReturnPayment_Txn" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- QC_Void_FullReturnPayment_Txn -->
-<<<<<<< HEAD
-  <testcase name="JQC_AgeStore_Deposit_PrePayment_Txn" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- JQC_AgeStore_Deposit_PrePayment_Txn -->
-  <testcase name="JQC_AgeStore_Redeposit_Prepayment_Void_Prepayment_Return_Txn" time="0.0" classname="tests.QCStore">
-    <ignored/>
-=======
-=======
-  <testcase name="QC_Refinance_StepDownVoidURP_Txn" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- QC_Refinance_StepDownVoidURP_Txn -->
-  <testcase name="agerescindtest" time="0.0" classname="tests.QCStore">
-    <ignored/>
-  </testcase> <!-- agerescindtest -->
   <testcase name="JQC_Return_ReDeposit_Clear_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- JQC_Return_ReDeposit_Clear_Txn -->
@@ -305,7 +279,6 @@ at tests.QCStore.GracedaysDepositMenu(QCStore.java:2463)
   <testcase name="QC_Void_FullReturnPayment_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- QC_Void_FullReturnPayment_Txn -->
->>>>>>> janaki1.2
   <testcase name="RefinanceStepSame" time="0.0" classname="tests.QCStore">
     <ignored/>
   </testcase> <!-- RefinanceStepSame -->
@@ -314,6 +287,5 @@ at tests.QCStore.GracedaysDepositMenu(QCStore.java:2463)
   </testcase> <!-- JQC_AgeStore_Deposit_PrePayment_Txn -->
   <testcase name="JQC_AgeStore_Redeposit_Prepayment_Void_Prepayment_Return_Txn" time="0.0" classname="tests.QCStore">
     <ignored/>
->>>>>>> brahmith1.1
   </testcase> <!-- JQC_AgeStore_Redeposit_Prepayment_Void_Prepayment_Return_Txn -->
 </testsuite> <!-- Test -->

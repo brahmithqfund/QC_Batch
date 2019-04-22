@@ -6,6 +6,7 @@
       <run>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <include name="Anoop1"/>
 =======
         <include name="EOD"/>
@@ -13,11 +14,15 @@
 =======
         <include name="Anoop"/>
 >>>>>>> anoop1.1
+=======
+        <include name="Janaki1"/>
+>>>>>>> janaki1.2
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
+<<<<<<< HEAD
           <include name="getResult"/>
           <include name="setup"/>
 <<<<<<< HEAD
@@ -34,6 +39,11 @@
           <include name="RefinanceStepSameVoid"/>
           <include name="RefinanceStepSame"/>
 >>>>>>> anoop1.1
+=======
+          <include name="JQC_AgeStore_Deposit_ClearMenu_Txn"/>
+          <include name="getResult"/>
+          <include name="setup"/>
+>>>>>>> janaki1.2
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->

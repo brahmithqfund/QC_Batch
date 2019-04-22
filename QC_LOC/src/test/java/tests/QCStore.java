@@ -123,6 +123,9 @@ public class QCStore {
 	
 	public static String vstoreid="508";
 	public static String vusername="csr508";
+	
+	public static String nstoreid="581";
+	public static String nusername="csr581";
 
 
 
@@ -4760,7 +4763,8 @@ public class QCStore {
 
 	// Anoop scenarios
 
-	@Test(priority = 427, enabled = true, groups = "Anoop_EOD31")
+	@Test(priority = 427, enabled = true, groups = "Anoop_EOD3")
+
 
 	public void PaymentDepositEODReDeposit() throws Exception {
 		FileName = "QC_PaymentDepositEODReDeposit.xls";
@@ -5056,7 +5060,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 421, enabled = true, groups = "Anoop_EOD2")
+	@Test(priority = 421, enabled = true, groups = "Anoop_EOD2")
 
 	public void Deposit_DrawEODTwice() throws Exception {
 		FileName = "QC_LOC_Draw_EODTwice.xls";
@@ -5136,7 +5140,7 @@ public class QCStore {
 		}
 	}
 
-	//@Test(priority = 420, enabled = true, groups = "Anoop_EOD2")
+	@Test(priority = 420, enabled = true, groups = "Anoop_EOD2")
 
 	public void DepositEODTwice() throws Exception {
 		FileName = "QC_LOC_DepositEODTwice.xls";

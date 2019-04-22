@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testsuite skipped="6" hostname="QTLSYS2-48" name="tests.QCStore" tests="7" failures="0" timestamp="12 Apr 2019 13:12:25 GMT" time="788.049" errors="1">
   <testcase name="GracedaysDepositMenu" time="788.049" classname="tests.QCStore">
     <error type="org.openqa.selenium.NoSuchElementException" message="Unable to find element with name == requestBean.chkName (WARNING: The server did not provide any stacktrace information)
@@ -86,6 +87,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
   <testcase name="rebateStepup" time="304.625" classname="tests.QCStore"/>
   <testcase name="rebateStepupVoid" time="346.002" classname="tests.QCStore"/>
 >>>>>>> anoop1.1
+=======
+<testsuite skipped="6" hostname="QTLSYS1-182" name="tests.QCStore" tests="7" failures="0" timestamp="18 Apr 2019 06:16:55 GMT" time="101.226" errors="0">
+  <testcase name="JQC_AgeStore_Deposit_ClearMenu_Txn" time="101.226" classname="tests.QCStore"/>
+>>>>>>> janaki1.2
   <testcase name="JQC_AgeStore_GraceDays_DCDeposit_Menu_Txn" classname="tests.QCStore">
     <skipped/>
   </testcase> <!-- JQC_AgeStore_GraceDays_DCDeposit_Menu_Txn -->
