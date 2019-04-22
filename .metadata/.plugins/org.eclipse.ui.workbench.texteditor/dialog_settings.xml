@@ -4,6 +4,7 @@
 		<item value="false" key="isRegEx"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<item value="Anoop_EOD1" key="selection"/>
 =======
 		<item value="QC_Void_FullReturnPayment" key="selection"/>
@@ -11,6 +12,9 @@
 =======
 		<item value="EOD2" key="selection"/>
 >>>>>>> janaki1.2
+=======
+		<item value="Anoop1" key="selection"/>
+>>>>>>> anoop1.1
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
@@ -18,14 +22,18 @@
 		<list key="findhistory">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<item value="Anoop_EOD1"/>
+=======
+>>>>>>> anoop1.1
 			<item value="Anoop1"/>
-			<item value="QC_Loan_Redeposit"/>
-			<item value="QC_NewLoan_MiddayDeposit"/>
-			<item value="// anoop"/>
-			<item value="QC_Refinanace StepUp"/>
-			<item value="QCCSRLoginLogout.adminLogin(SSN, SSN);"/>
-			<item value="CCSRLoginLogout.adminLogin(SSN, SSN);"/>
+			<item value="QC_Loan_Refinance_Void"/>
+			<item value="QC_LOC_paymentDraw_Void_EOD"/>
+			<item value="QC_LOC_payment_Draw"/>
+			<item value="Anoop_EOD3"/>
+			<item value="QC_RefinanceStepUp_rebate"/>
+			<item value="refi"/>
+			<item value="Anoop_EOD2"/>
 		</list>
 		<list key="replacehistory">
 			<item value="QC_SSN_ONE_PDL"/>
@@ -65,6 +73,7 @@
 		<item value="380" key="DIALOG_HEIGHT"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<item value="563" key="DIALOG_X_ORIGIN"/>
 		<item value="119" key="DIALOG_Y_ORIGIN"/>
 =======
@@ -75,5 +84,9 @@
 		<item value="762" key="DIALOG_X_ORIGIN"/>
 		<item value="346" key="DIALOG_Y_ORIGIN"/>
 >>>>>>> janaki1.2
+=======
+		<item value="1041" key="DIALOG_X_ORIGIN"/>
+		<item value="166" key="DIALOG_Y_ORIGIN"/>
+>>>>>>> anoop1.1
 	</section>
 </section>

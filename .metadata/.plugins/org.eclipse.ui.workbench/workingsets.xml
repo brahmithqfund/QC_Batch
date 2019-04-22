@@ -1,12 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1554800431809_0" label="Window Working Set" name="Aggregate for window 1554800431808"/>
-=======
-<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1554706940328_0" label="Window Working Set" name="Aggregate for window 1554706940328"/>
->>>>>>> brahmith1.1
-=======
-<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1554708120727_0" label="Window Working Set" name="Aggregate for window 1554708120727"/>
->>>>>>> janaki1.2
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1555909938822_0" label="Window Working Set" name="Aggregate for window 1555909938822"/>
 </workingSetManager>

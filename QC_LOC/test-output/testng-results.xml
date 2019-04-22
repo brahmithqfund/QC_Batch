@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="85" total="86" passed="1">
 =======
 <<<<<<< HEAD
@@ -12,12 +13,14 @@
 <<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="65" total="66" passed="1">
 =======
+=======
+>>>>>>> anoop1.1
 <testng-results skipped="0" failed="0" ignored="111" total="112" passed="1">
->>>>>>> janaki1.2
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="2067012" started-at="2019-04-08T05:30:08Z" finished-at="2019-04-08T06:04:35Z">
+  <suite name="Suite" duration-ms="896975" started-at="2019-04-19T05:55:46Z" finished-at="2019-04-19T06:10:43Z">
     <groups>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <group name="1st Batch">
         <method signature="QCStore.LOC_PayOff_after_RescindPeriod_Txn()[pri:134, instance:tests.QCStore@527740a2]" name="LOC_PayOff_after_RescindPeriod_Txn" class="tests.QCStore"/>
@@ -273,14 +276,42 @@
 >>>>>>> anoop1.1
 =======
 >>>>>>> janaki1.2
+=======
+      <group name="Anoop_EOD31">
+        <method signature="QCStore.PaymentDepositEODReDeposit()[pri:427, instance:tests.QCStore@5f9d02cb]" name="PaymentDepositEODReDeposit" class="tests.QCStore"/>
+      </group> <!-- Anoop_EOD31 -->
+    </groups>
+    <test name="Test" duration-ms="896975" started-at="2019-04-19T05:55:46Z" finished-at="2019-04-19T06:10:43Z">
+      <class name="tests.QCStore">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="111" started-at="2019-04-19T05:55:46Z" finished-at="2019-04-19T05:55:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5019" started-at="2019-04-19T05:55:46Z" finished-at="2019-04-19T05:55:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="PaymentDepositEODReDeposit()[pri:427, instance:tests.QCStore@5f9d02cb]" name="PaymentDepositEODReDeposit" duration-ms="891282" started-at="2019-04-19T05:55:51Z" finished-at="2019-04-19T06:10:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PaymentDepositEODReDeposit -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="545" started-at="2019-04-19T06:10:42Z" finished-at="2019-04-19T06:10:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PaymentDepositEODReDeposit status=SUCCESS method=QCStore.PaymentDepositEODReDeposit()[pri:427, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+>>>>>>> anoop1.1
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+<<<<<<< HEAD
 =======
 >>>>>>> brahmith1.1
+=======
+>>>>>>> anoop1.1
       </class> <!-- tests.QCStore -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

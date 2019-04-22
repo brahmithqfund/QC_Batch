@@ -4760,7 +4760,7 @@ public class QCStore {
 
 	// Anoop scenarios
 
-	@Test(priority = 427, enabled = true, groups = "Anoop_EOD3")
+	@Test(priority = 427, enabled = true, groups = "Anoop_EOD31")
 
 	public void PaymentDepositEODReDeposit() throws Exception {
 		FileName = "QC_PaymentDepositEODReDeposit.xls";
@@ -4779,9 +4779,9 @@ public class QCStore {
 				String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
 
-				ACSRLoginLogout.login(SSN, AppURL);
+				/*ACSRLoginLogout.login(SSN, AppURL);
 				ACSRBorrowerRegistration.borrowerReg(SSN, AppURL);
-				ACSRLoginLogout.logout();
+				ACSRLoginLogout.logout();*/
 
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCCSRNewLoan.newLoan(SSN, AppURL);
@@ -4942,6 +4942,7 @@ public class QCStore {
 				AQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
 
 				// EOD Process
+				AQCAdminStoreSetup.storeSetup(SSN, AppURL);
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCEODDeposit.eodDeposit(SSN, AppURL);
 				AQCAdminStoreSetup.storeSetup(SSN, AppURL);
@@ -4978,10 +4979,10 @@ public class QCStore {
 				String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
 				
-				QCCSRLoginLogout.adminLogin(SSN, SSN);
+				/*QCCSRLoginLogout.adminLogin(SSN, SSN);
 				AAdminStartDateLOC2.toStartdate(SSN, SSN);
 				QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
-				AProc1.proc();
+				AProc1.proc();*/
 
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRBorrowerRegistration.borrowerReg(SSN, AppURL);
@@ -5026,6 +5027,7 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 
 				// EOD Process
+				AQCAdminStoreSetup.storeSetup(SSN, AppURL);
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCEODDeposit.eodDeposit(SSN, AppURL);
 				AQCAdminStoreSetup.storeSetup(SSN, AppURL);
@@ -5054,7 +5056,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 421, enabled = true, groups = "Anoop_EOD2")
+	//@Test(priority = 421, enabled = true, groups = "Anoop_EOD2")
 
 	public void Deposit_DrawEODTwice() throws Exception {
 		FileName = "QC_LOC_Draw_EODTwice.xls";
@@ -5134,7 +5136,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 420, enabled = true, groups = "Anoop_EOD2")
+	//@Test(priority = 420, enabled = true, groups = "Anoop_EOD2")
 
 	public void DepositEODTwice() throws Exception {
 		FileName = "QC_LOC_DepositEODTwice.xls";
@@ -5221,9 +5223,9 @@ public class QCStore {
 				String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
 
-				ACSRLoginLogout.login(SSN, AppURL);
+				/*ACSRLoginLogout.login(SSN, AppURL);
 				ACSRBorrowerRegistration.borrowerReg(SSN, AppURL);
-				ACSRLoginLogout.logout();
+				ACSRLoginLogout.logout();*/
 
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCCSRNewLoan.newLoan(SSN, AppURL);
@@ -5286,11 +5288,11 @@ public class QCStore {
 				String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
 				
-				QCCSRLoginLogout.adminLogin(SSN, SSN);
+				/*QCCSRLoginLogout.adminLogin(SSN, SSN);
 				AAdminStartDateLOC2.toStartdate(SSN, SSN);
 				QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
 				AProc1.proc();
-
+*/
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRBorrowerRegistration.borrowerReg(SSN, AppURL);
 				ACSRLoginLogout.logout();

@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <include name="Ratikanta_LOC"/>
 =======
 <<<<<<< HEAD
@@ -56,6 +57,9 @@
         <include name="EOD"/>
         <include name="EOD2"/>
 >>>>>>> janaki1.2
+=======
+        <include name="Anoop_EOD31"/>
+>>>>>>> anoop1.1
       </run>
     </groups>
     <classes>
@@ -64,10 +68,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> anoop1.1
           <include name="getResult"/>
           <include name="setup"/>
-          <include name="RQC_LOC_ManualDefault_EOD_Txn_Testdata"/>
+          <include name="PaymentDepositEODReDeposit"/>
           <include name="killProcess"/>
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -91,6 +99,8 @@
           <include name="LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn"/>
           <include name="killProcess"/>
 >>>>>>> janaki1.2
+=======
+>>>>>>> anoop1.1
         </methods>
       </class> <!-- tests.QCStore -->
     </classes>

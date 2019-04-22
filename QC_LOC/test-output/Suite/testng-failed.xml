@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <include name="Ratikanta_LOC"/>
 =======
 <<<<<<< HEAD
@@ -60,11 +61,15 @@
         <include name="EOD"/>
         <include name="EOD2"/>
 >>>>>>> janaki1.2
+=======
+        <include name="Anoop_EOD31"/>
+>>>>>>> anoop1.1
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -154,6 +159,11 @@
 >>>>>>> anoop1.1
 =======
 >>>>>>> janaki1.2
+=======
+          <include name="getResult"/>
+          <include name="setup"/>
+          <include name="PaymentDepositEODReDeposit"/>
+>>>>>>> anoop1.1
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->

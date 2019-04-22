@@ -198,7 +198,8 @@ public static void scheduler() throws InterruptedException{
 		test.log(LogStatus.PASS, "Clicked on Scheduler Ok Successfully");
 		Thread.sleep(5000);
 		test.log(LogStatus.INFO, "<FONT color=green>  ****Scheduler completed******");
-		test.log(LogStatus.INFO, "Logout Successfully");}
+		test.log(LogStatus.INFO, "Logout Successfully");
+		driver.quit();}
 	catch (Exception e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();

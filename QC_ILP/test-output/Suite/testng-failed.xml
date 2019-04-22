@@ -5,10 +5,14 @@
     <groups>
       <run>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <include name="Anoop"/>
 =======
         <include name="Brahmith"/>
 >>>>>>> brahmith1.1
+=======
+        <include name="Anoop1"/>
+>>>>>>> anoop1.1
       </run>
     </groups>
     <classes>
