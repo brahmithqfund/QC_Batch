@@ -1,100 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="65" total="66" passed="0">
+<testng-results skipped="0" failed="0" ignored="54" total="60" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="788158" started-at="2019-04-12T12:59:17Z" finished-at="2019-04-12T13:12:25Z">
+  <suite name="Suite" duration-ms="2029204" started-at="2019-04-19T02:09:51Z" finished-at="2019-04-19T02:43:41Z">
     <groups>
-      <group name="Anoop1">
-        <method signature="QCStore.GracedaysDepositMenu()[pri:8, instance:tests.QCStore@5f9d02cb]" name="GracedaysDepositMenu" class="tests.QCStore"/>
-      </group> <!-- Anoop1 -->
+      <group name="Anoop">
+        <method signature="QCStore.RefinanceStepSame()[pri:10, instance:tests.QCStore@5f9d02cb]" name="RefinanceStepSame" class="tests.QCStore"/>
+        <method signature="QCStore.RefinanceStepSameVoid()[pri:12, instance:tests.QCStore@5f9d02cb]" name="RefinanceStepSameVoid" class="tests.QCStore"/>
+        <method signature="QCStore.RefinanceStepup()[pri:9, instance:tests.QCStore@5f9d02cb]" name="RefinanceStepup" class="tests.QCStore"/>
+        <method signature="QCStore.RefinanceStepupVoid()[pri:11, instance:tests.QCStore@5f9d02cb]" name="RefinanceStepupVoid" class="tests.QCStore"/>
+        <method signature="QCStore.rebateStepup()[pri:14, instance:tests.QCStore@5f9d02cb]" name="rebateStepup" class="tests.QCStore"/>
+        <method signature="QCStore.rebateStepupVoid()[pri:15, instance:tests.QCStore@5f9d02cb]" name="rebateStepupVoid" class="tests.QCStore"/>
+      </group> <!-- Anoop -->
     </groups>
-    <test name="Test" duration-ms="788158" started-at="2019-04-12T12:59:17Z" finished-at="2019-04-12T13:12:25Z">
+    <test name="Test" duration-ms="2029204" started-at="2019-04-19T02:09:51Z" finished-at="2019-04-19T02:43:41Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="94" started-at="2019-04-12T12:59:17Z" finished-at="2019-04-12T12:59:17Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="102" started-at="2019-04-19T02:09:51Z" finished-at="2019-04-19T02:09:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5086" started-at="2019-04-12T12:59:17Z" finished-at="2019-04-12T12:59:22Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5012" started-at="2019-04-19T02:09:52Z" finished-at="2019-04-19T02:09:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="FAIL" signature="GracedaysDepositMenu()[pri:8, instance:tests.QCStore@5f9d02cb]" name="GracedaysDepositMenu" duration-ms="764190" started-at="2019-04-12T12:59:22Z" finished-at="2019-04-12T13:12:06Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to find element with name == requestBean.chkName (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-48', ip: '192.168.2.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:5573/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: 1080297e-ca82-4a9f-8a72-45dd52ee79e9
-*** Element info: {Using=name, value=requestBean.chkName}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with name == requestBean.chkName (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'QTLSYS2-48', ip: '192.168.2.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:5573/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: 1080297e-ca82-4a9f-8a72-45dd52ee79e9
-*** Element info: {Using=name, value=requestBean.chkName}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
-at org.openqa.selenium.By$ByName.findElement(By.java:284)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-at tests.AQC_CSRDepositMenu.depositMenu(AQC_CSRDepositMenu.java:151)
-at tests.QCStore.GracedaysDepositMenu(QCStore.java:2463)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="RefinanceStepup()[pri:9, instance:tests.QCStore@5f9d02cb]" name="RefinanceStepup" duration-ms="338285" started-at="2019-04-19T02:09:57Z" finished-at="2019-04-19T02:15:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GracedaysDepositMenu -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="18773" started-at="2019-04-12T13:12:06Z" finished-at="2019-04-12T13:12:25Z">
+        </test-method> <!-- RefinanceStepup -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="206" started-at="2019-04-19T02:15:35Z" finished-at="2019-04-19T02:15:35Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=GracedaysDepositMenu status=FAILURE method=QCStore.GracedaysDepositMenu()[pri:8, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+                <![CDATA[[TestResult name=RefinanceStepup status=SUCCESS method=QCStore.RefinanceStepup()[pri:9, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5036" started-at="2019-04-19T02:15:35Z" finished-at="2019-04-19T02:15:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="RefinanceStepSame()[pri:10, instance:tests.QCStore@5f9d02cb]" name="RefinanceStepSame" duration-ms="316978" started-at="2019-04-19T02:15:40Z" finished-at="2019-04-19T02:20:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RefinanceStepSame -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="51" started-at="2019-04-19T02:20:57Z" finished-at="2019-04-19T02:20:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RefinanceStepSame status=SUCCESS method=QCStore.RefinanceStepSame()[pri:10, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5025" started-at="2019-04-19T02:20:57Z" finished-at="2019-04-19T02:21:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="RefinanceStepupVoid()[pri:11, instance:tests.QCStore@5f9d02cb]" name="RefinanceStepupVoid" duration-ms="356745" started-at="2019-04-19T02:21:02Z" finished-at="2019-04-19T02:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RefinanceStepupVoid -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="41" started-at="2019-04-19T02:26:59Z" finished-at="2019-04-19T02:26:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RefinanceStepupVoid status=SUCCESS method=QCStore.RefinanceStepupVoid()[pri:11, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5027" started-at="2019-04-19T02:26:59Z" finished-at="2019-04-19T02:27:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="RefinanceStepSameVoid()[pri:12, instance:tests.QCStore@5f9d02cb]" name="RefinanceStepSameVoid" duration-ms="345958" started-at="2019-04-19T02:27:04Z" finished-at="2019-04-19T02:32:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RefinanceStepSameVoid -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="80" started-at="2019-04-19T02:32:50Z" finished-at="2019-04-19T02:32:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RefinanceStepSameVoid status=SUCCESS method=QCStore.RefinanceStepSameVoid()[pri:12, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5020" started-at="2019-04-19T02:32:50Z" finished-at="2019-04-19T02:32:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="rebateStepup()[pri:14, instance:tests.QCStore@5f9d02cb]" name="rebateStepup" duration-ms="299564" started-at="2019-04-19T02:32:55Z" finished-at="2019-04-19T02:37:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rebateStepup -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="34" started-at="2019-04-19T02:37:55Z" finished-at="2019-04-19T02:37:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=rebateStepup status=SUCCESS method=QCStore.rebateStepup()[pri:14, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5021" started-at="2019-04-19T02:37:55Z" finished-at="2019-04-19T02:38:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="rebateStepupVoid()[pri:15, instance:tests.QCStore@5f9d02cb]" name="rebateStepupVoid" duration-ms="340947" started-at="2019-04-19T02:38:00Z" finished-at="2019-04-19T02:43:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rebateStepupVoid -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="43" started-at="2019-04-19T02:43:41Z" finished-at="2019-04-19T02:43:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=rebateStepupVoid status=SUCCESS method=QCStore.rebateStepupVoid()[pri:15, instance:tests.QCStore@5f9d02cb] output={null}]]]>
               </value>
             </param>
           </params>

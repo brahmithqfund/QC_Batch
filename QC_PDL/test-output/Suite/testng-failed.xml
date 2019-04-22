@@ -4,15 +4,20 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="Anoop1"/>
+        <include name="Anoop"/>
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
-          <include name="GracedaysDepositMenu"/>
           <include name="getResult"/>
           <include name="setup"/>
+          <include name="RefinanceStepup"/>
+          <include name="rebateStepupVoid"/>
+          <include name="RefinanceStepupVoid"/>
+          <include name="rebateStepup"/>
+          <include name="RefinanceStepSameVoid"/>
+          <include name="RefinanceStepSame"/>
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->

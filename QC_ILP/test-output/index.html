@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="ILP_RefinanceStepDown_void">ILP_RefinanceStepDown_void</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="ILP_voidRefinance">ILP_voidRefinance</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -125,9 +125,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ILP_RefinanceStepDown_void">
-                  </a> <!-- ILP_RefinanceStepDown_void -->
-                  <span class="method-name">ILP_RefinanceStepDown_void</span>
+                  <a name="ILP_voidRefinance">
+                  </a> <!-- ILP_voidRefinance -->
+                  <span class="method-name">ILP_voidRefinance</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -145,7 +145,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;groups&gt;
       &lt;run&gt;
-        &lt;include name=&quot;Anoop_StdownVoid&quot;/&gt;
+        &lt;include name=&quot;Anoop1&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
@@ -174,10 +174,10 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">Anoop_StdownVoid</span>
+              <span class="test-group-name">Anoop1</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">ILP_RefinanceStepDown_void</span>
+                <span class="method-in-group-name">ILP_voidRefinance</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -199,14 +199,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'ILP_RefinanceStepDown_void')
+data.setCell(0, 1, 'ILP_voidRefinance')
 data.setCell(0, 2, 'tests.QCStore')
-data.setCell(0, 3, 912607);
+data.setCell(0, 3, 351855);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 minutes</span>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -221,7 +221,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">51 ignored methods</span>
+            <span class="header-content">45 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -229,61 +229,33 @@ return data;
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">QC_PayAnyotherAmount_Void_Txn</span>
                 <br/>
-                <span class="ignored-method-name">RQC_Bankruptcy_Dismiss_Txn_Testdata</span>
-                <br/>
-                <span class="ignored-method-name">JQC_ILP_GraceDays_Deposit_dropdown_Txn</span>
-                <br/>
-                <span class="ignored-method-name">ILP_RefinanceStepSame</span>
-                <br/>
-                <span class="ignored-method-name">ILP_inactiveNewloan</span>
-                <br/>
-                <span class="ignored-method-name">RQC_WriteOffRecovery_Txn_Testdata</span>
-                <br/>
-                <span class="ignored-method-name">ILP_borrowregNewloan</span>
-                <br/>
-                <span class="ignored-method-name">JQC_ILP_Payment_Refinance_StepUp_Txn</span>
-                <br/>
-                <span class="ignored-method-name">QC_NewLoan_Promotion_Txn</span>
-                <br/>
-                <span class="ignored-method-name">QC_LessInterest_VoidFullPayment_Txn</span>
-                <br/>
-                <span class="ignored-method-name">JQC_ILP_GraceDays_Deposit_Menu_Txn</span>
-                <br/>
-                <span class="ignored-method-name">RQC_Default_TLPConversion_Txn_Testdata</span>
-                <br/>
-                <span class="ignored-method-name">RQC_Bankruptcy_Discharge_Txn_Testdata</span>
-                <br/>
-                <span class="ignored-method-name">QC_ILP_NewLoanInstallmentDeposit_Txn</span>
-                <br/>
-                <span class="ignored-method-name">QC_Installmentpayment_Void_Txn</span>
-                <br/>
-                <span class="ignored-method-name">RQC_DefaultPayment_Void_Txn_Testdata</span>
-                <br/>
-                <span class="ignored-method-name">QC_InstallPayment_Ref_Rescind_Txn</span>
-                <br/>
-                <span class="ignored-method-name">JQC_ILP_GraceDays_Deposit_MidDay_Txn</span>
-                <br/>
-                <span class="ignored-method-name">QC_NewLoan_TLPConversion_Txn</span>
-                <br/>
-                <span class="ignored-method-name">ILP_RefinanceStepSame_Void</span>
-                <br/>
-                <span class="ignored-method-name">ILP_Redeposit</span>
+                <span class="ignored-method-name">QC_AgeStore_Void_Txn</span>
                 <br/>
                 <span class="ignored-method-name">ILP_RefinanceStepDown</span>
-                <br/>
-                <span class="ignored-method-name">QC_AgeStore_Void_Txn</span>
                 <br/>
                 <span class="ignored-method-name">ILP_ProcessClear</span>
                 <br/>
                 <span class="ignored-method-name">QC_ILP_Deposit_Return_Txn</span>
                 <br/>
-                <span class="ignored-method-name">ILP_voidRefinance</span>
+                <span class="ignored-method-name">RQC_Bankruptcy_Dismiss_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">JQC_ILP_GraceDays_Deposit_dropdown_Txn</span>
                 <br/>
                 <span class="ignored-method-name">QC_PayAnyotherAmount_Txn</span>
                 <br/>
                 <span class="ignored-method-name">QC_NewLoan_Void_Txn</span>
                 <br/>
+                <span class="ignored-method-name">ILP_RefinanceStepSame</span>
+                <br/>
+                <span class="ignored-method-name">RQC_WriteOffRecovery_Txn_Testdata</span>
+                <br/>
                 <span class="ignored-method-name">RQC_WriteOffRecovery_Void_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">ILP_borrowregNewloan</span>
+                <br/>
+                <span class="ignored-method-name">JQC_ILP_Payment_Refinance_StepUp_Txn</span>
+                <br/>
+                <span class="ignored-method-name">ILP_RefinanceStepDown_void</span>
                 <br/>
                 <span class="ignored-method-name">RQC_Bankruptcy_WORecovery_Txn_Testdata</span>
                 <br/>
@@ -291,33 +263,47 @@ return data;
                 <br/>
                 <span class="ignored-method-name">JQC_ILP_Deposit_MidDay_Txn</span>
                 <br/>
+                <span class="ignored-method-name">QC_NewLoan_Promotion_Txn</span>
+                <br/>
                 <span class="ignored-method-name">QC_Installmentpayment_Txn</span>
                 <br/>
-                <span class="ignored-method-name">ILP_RefinanceStepup</span>
+                <span class="ignored-method-name">QC_LessInterest_VoidFullPayment_Txn</span>
                 <br/>
                 <span class="ignored-method-name">QC_ILP_Buyback_Void_Txn</span>
                 <br/>
                 <span class="ignored-method-name">QC_ILP_Buyback_Txn</span>
                 <br/>
-                <span class="ignored-method-name">ILP_maxloanCount</span>
+                <span class="ignored-method-name">JQC_ILP_GraceDays_Deposit_Menu_Txn</span>
+                <br/>
+                <span class="ignored-method-name">RQC_Default_TLPConversion_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">RQC_Bankruptcy_Discharge_Txn_Testdata</span>
                 <br/>
                 <span class="ignored-method-name">QC_ILP_clear_Menu_Txn</span>
                 <br/>
                 <span class="ignored-method-name">RQC_DefaultPayment_Txn_Testdata</span>
                 <br/>
+                <span class="ignored-method-name">QC_ILP_NewLoanInstallmentDeposit_Txn</span>
+                <br/>
+                <span class="ignored-method-name">QC_Installmentpayment_Void_Txn</span>
+                <br/>
                 <span class="ignored-method-name">QC_ILP_Return_Menu_Txn</span>
+                <br/>
+                <span class="ignored-method-name">RQC_DefaultPayment_Void_Txn_Testdata</span>
+                <br/>
+                <span class="ignored-method-name">JQC_ILP_Deposit_Menu_Txn</span>
                 <br/>
                 <span class="ignored-method-name">ILP_RefinanceStepUpVoid</span>
                 <br/>
-                <span class="ignored-method-name">JQC_ILP_Deposit_Menu_Txn</span>
+                <span class="ignored-method-name">QC_InstallPayment_Ref_Rescind_Txn</span>
                 <br/>
                 <span class="ignored-method-name">JQC_ILP_Deposit_dropdown_Txn</span>
                 <br/>
                 <span class="ignored-method-name">JQC_ILP_GraceDays_Deposit_EOD_Txn</span>
                 <br/>
-                <span class="ignored-method-name">ILP_agerescindtest</span>
+                <span class="ignored-method-name">JQC_ILP_GraceDays_Deposit_MidDay_Txn</span>
                 <br/>
-                <span class="ignored-method-name">ILP_rescindloan</span>
+                <span class="ignored-method-name">QC_NewLoan_TLPConversion_Txn</span>
                 <br/>
                 <span class="ignored-method-name">ILP_ACHAutoClear</span>
                 <br/>
@@ -326,6 +312,8 @@ return data;
                 <span class="ignored-method-name">JQC_ILP_Deceased_Txn</span>
                 <br/>
                 <span class="ignored-method-name">JQC_ILP_Deposit_EOD_Txn</span>
+                <br/>
+                <span class="ignored-method-name">ILP_RefinanceStepSame_Void</span>
                 <br/>
                 <span class="ignored-method-name">RQC_Default_Refinance_Txn_Testdata</span>
                 <br/>
@@ -346,19 +334,19 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">killProcess</span>
-                <span class="method-start">176 ms</span>
+                <span class="method-start">116 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">ILP_RefinanceStepDown_void</span>
-                <span class="method-start">5178 ms</span>
+                <span class="method-name">ILP_voidRefinance</span>
+                <span class="method-start">5117 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">917787 ms</span>
+                <span class="method-start">356974 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=ILP_RefinanceStepDown_void status=SUCCESS method=QCStore.ILP_RefinanceStepDown_void...)</span>
-                <span class="method-start">917788 ms</span>
+                <span class="method-name">getResult([TestResult name=ILP_voidRefinance status=SUCCESS method=QCStore.ILP_voidRefinance()[pri:14, instanc...)</span>
+                <span class="method-start">356974 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

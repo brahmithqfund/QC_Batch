@@ -222,6 +222,7 @@ public static void logout(String SSN,String AppURL){
 				driver.findElement(By.name("login")).click();
 
 				test.log(LogStatus.PASS, "Clicked on Submit button");
+				Thread.sleep(3000);
 				break;
 
 }

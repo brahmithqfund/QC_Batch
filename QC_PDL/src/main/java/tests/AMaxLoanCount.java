@@ -230,246 +230,246 @@ public class AMaxLoanCount extends QCStore{
 		{					
 			rnum=rnum+1;														
 			try{ driver.findElement(By.xpath("//*[@id='riskViewBdy']/table[3]/tbody/tr[1]/td/table/tbody/tr[3]/td/table/tbody/tr[4]/td[2]/input")).click();
-			}	
-			catch(Exception e){
-				test.log(LogStatus.PASS, "CustomerReached maximum Loan amounts");
-				ACSRLoginLogout.logout();
-				
+			test.log(LogStatus.PASS, "Product selected as "+stateProduct);
 
 
-			}
-			System.out.println(" after product ID");
-		}
-		test.log(LogStatus.PASS, "Product selected as "+stateProduct);
+			driver.findElement(By.id("LoanButtonId")).click();
 
 
-		driver.findElement(By.id("LoanButtonId")).click();
-
-
-		driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr[1]/td/table[2]/tbody/tr/td/table/tbody/tr[3]/td[3]/select")).sendKeys(ESign_CollateralType);
-		test.log(LogStatus.PASS, "Collateral Type is enterted as "+ESign_CollateralType);
-		if(!(ESign_LoanAmt.isEmpty()))
-		{
-			driver.findElement(By.name("advanceRequestBean.advanceAmt")).clear();
-			driver.findElement(By.name("advanceRequestBean.advanceAmt")).sendKeys(ESign_LoanAmt);
-			test.log(LogStatus.PASS, "Loan amount is entered as"+ESign_LoanAmt);
-			try { 
-				Alert alert = driver.switchTo().alert();
-				//  alert.dismiss();
-				alert.accept();
-
-
-			}
-			catch (NoAlertPresentException e) {
-				//do what you normally would if you didn't have the alert.
-			}
-		}
-	
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@id='advanceRequestBean.disbursementType']")).sendKeys(ESign_DisbType);
-		test.log(LogStatus.PASS, "Disb Type is enterted as "+ESign_DisbType);
-
-
-		Thread.sleep(5000);
-		driver.findElement(By.name("advanceRequestBean.courtesyCallFlag")).sendKeys(ESign_CourtesyCallConsent);
-		test.log(LogStatus.PASS, "Payment Reminder Consent is selected as "+ESign_CourtesyCallConsent);
-		//driver.findElement(By.name("advanceRequestBean.emailConsentFlag")).sendKeys(ESign_CourtesyCallConsent);
-		//test.log(LogStatus.PASS, "Electronic Communication Consent is selected as "+ESign_CourtesyCallConsent);
-
-		if(ESign_CourtesyCallConsent.equals("Yes"))
-		{
-			if(ESign_Preference.equals("Call"))	
+			driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr[1]/td/table[2]/tbody/tr/td/table/tbody/tr[3]/td[3]/select")).sendKeys(ESign_CollateralType);
+			test.log(LogStatus.PASS, "Collateral Type is enterted as "+ESign_CollateralType);
+			if(!(ESign_LoanAmt.isEmpty()))
 			{
-				driver.findElement(By.xpath("//*[@id='preferenceCall']")).click();
-				test.log(LogStatus.PASS, "Courtesy Call Consent is selected as "+ESign_Preference);
-			}
-			if(ESign_Preference.equals("Mail"))	
-			{
-				driver.findElement(By.xpath("//*[@id='preferenceMail']")).click();
-				test.log(LogStatus.PASS, "Courtesy Call Consent is selected as "+ESign_Preference);
-			}
-			if(ESign_Preference.equals("SMS"))	
-			{
-				driver.findElement(By.xpath("//*[@id='preferenceSms']")).click();
-				test.log(LogStatus.PASS, "Courtesy Call Consent is selected as "+ESign_Preference);
-
+				driver.findElement(By.name("advanceRequestBean.advanceAmt")).clear();
+				driver.findElement(By.name("advanceRequestBean.advanceAmt")).sendKeys(ESign_LoanAmt);
+				test.log(LogStatus.PASS, "Loan amount is entered as"+ESign_LoanAmt);
 				try { 
 					Alert alert = driver.switchTo().alert();
-					alert.dismiss();
-					//if alert present, accept and move on.														
+					//  alert.dismiss();
+					alert.accept();
+
 
 				}
 				catch (NoAlertPresentException e) {
 					//do what you normally would if you didn't have the alert.
 				}
 			}
-
-		}
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@id='advanceRequestBean.disbursementType']")).sendKeys(ESign_DisbType);
-		test.log(LogStatus.PASS, "Disb Type is enterted as "+ESign_DisbType);
-
-
-		if(AllowPromotion.equals("Yes"))
-		{
-			driver.findElement(By.xpath("//*[@id='allowCoupons']/td[3]/input")).click();
-			test.log(LogStatus.PASS, "Allow Promotion is selected ");
-			driver.findElement(By.xpath("//*[@id='coupon']/td[3]/div[1]/input")).sendKeys(CouponNbr);
-			test.log(LogStatus.PASS, "CouponNbr is selected as "+CouponNbr);
-		}
-
-		//'''''''''''''''''''''''''''''''''''''''''''''''//'''''''''''''''''''''''''''''''''''''''''''''//
-
-
-		if (ESign_CollateralType.equals("CHECK"))
-		{
-
-			//driver.findElement(By.xpath("//*[@id='idNoChecks']/td[3]/select")).sendKeys(ESign_Checks);
-			//test.log(Status.PASS, "ESign_Checks is selected as "+ESign_Checks);
-			//WebDriverWait wait = new WebDriverWait(driver, 1000);	
-			//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='chkNbr0']")));
-			//driver.findElement(By.xpath("//*[@id='chkNbr0']")).sendKeys(ESign_CheckNbr);
-
-
-			driver.findElement(By.name("requestBean.noOfChecks")).sendKeys(No_of_checks);
-			driver.findElement(By.name("requestBean.noOfChecks")).sendKeys(Keys.ENTER);
+		
 			Thread.sleep(2000);
-			driver.findElement(By.name("chkNbr0")).sendKeys(ESign_CheckNbr);
-			test.log(LogStatus.PASS, "Check number is "+ESign_CheckNbr);
-			driver.findElement(By.name("chkBoxNbr0")).click();
-			driver.findElement(By.name("Print0")).click();
-			try { 
+			driver.findElement(By.xpath("//*[@id='advanceRequestBean.disbursementType']")).sendKeys(ESign_DisbType);
+			test.log(LogStatus.PASS, "Disb Type is enterted as "+ESign_DisbType);
+
+
+			Thread.sleep(5000);
+			driver.findElement(By.name("advanceRequestBean.courtesyCallFlag")).sendKeys(ESign_CourtesyCallConsent);
+			test.log(LogStatus.PASS, "Payment Reminder Consent is selected as "+ESign_CourtesyCallConsent);
+			//driver.findElement(By.name("advanceRequestBean.emailConsentFlag")).sendKeys(ESign_CourtesyCallConsent);
+			//test.log(LogStatus.PASS, "Electronic Communication Consent is selected as "+ESign_CourtesyCallConsent);
+
+			if(ESign_CourtesyCallConsent.equals("Yes"))
+			{
+				if(ESign_Preference.equals("Call"))	
+				{
+					driver.findElement(By.xpath("//*[@id='preferenceCall']")).click();
+					test.log(LogStatus.PASS, "Courtesy Call Consent is selected as "+ESign_Preference);
+				}
+				if(ESign_Preference.equals("Mail"))	
+				{
+					driver.findElement(By.xpath("//*[@id='preferenceMail']")).click();
+					test.log(LogStatus.PASS, "Courtesy Call Consent is selected as "+ESign_Preference);
+				}
+				if(ESign_Preference.equals("SMS"))	
+				{
+					driver.findElement(By.xpath("//*[@id='preferenceSms']")).click();
+					test.log(LogStatus.PASS, "Courtesy Call Consent is selected as "+ESign_Preference);
+
+					try { 
+						Alert alert = driver.switchTo().alert();
+						alert.dismiss();
+						//if alert present, accept and move on.														
+
+					}
+					catch (NoAlertPresentException e) {
+						//do what you normally would if you didn't have the alert.
+					}
+				}
+
+			}
+			Thread.sleep(2000);
+			driver.findElement(By.xpath("//*[@id='advanceRequestBean.disbursementType']")).sendKeys(ESign_DisbType);
+			test.log(LogStatus.PASS, "Disb Type is enterted as "+ESign_DisbType);
+
+
+			if(AllowPromotion.equals("Yes"))
+			{
+				driver.findElement(By.xpath("//*[@id='allowCoupons']/td[3]/input")).click();
+				test.log(LogStatus.PASS, "Allow Promotion is selected ");
+				driver.findElement(By.xpath("//*[@id='coupon']/td[3]/div[1]/input")).sendKeys(CouponNbr);
+				test.log(LogStatus.PASS, "CouponNbr is selected as "+CouponNbr);
+			}
+
+			//'''''''''''''''''''''''''''''''''''''''''''''''//'''''''''''''''''''''''''''''''''''''''''''''//
+
+
+			if (ESign_CollateralType.equals("CHECK"))
+			{
+
+				//driver.findElement(By.xpath("//*[@id='idNoChecks']/td[3]/select")).sendKeys(ESign_Checks);
+				//test.log(Status.PASS, "ESign_Checks is selected as "+ESign_Checks);
+				//WebDriverWait wait = new WebDriverWait(driver, 1000);	
+				//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='chkNbr0']")));
+				//driver.findElement(By.xpath("//*[@id='chkNbr0']")).sendKeys(ESign_CheckNbr);
+
+
+				driver.findElement(By.name("requestBean.noOfChecks")).sendKeys(No_of_checks);
+				driver.findElement(By.name("requestBean.noOfChecks")).sendKeys(Keys.ENTER);
+				Thread.sleep(2000);
+				driver.findElement(By.name("chkNbr0")).sendKeys(ESign_CheckNbr);
+				test.log(LogStatus.PASS, "Check number is "+ESign_CheckNbr);
+				driver.findElement(By.name("chkBoxNbr0")).click();
+				driver.findElement(By.name("Print0")).click();
+				try { 
+					Alert alert = driver.switchTo().alert();
+					String almsg= alert.getText();
+
+					alert.accept();
+					test.log(LogStatus.PASS, "alert handled "+almsg);
+
+					//if alert present, accept and move on.														
+
+				}
+				catch (NoAlertPresentException e) {
+					//do what you normally would if you didn't have the alert.
+				}
+
+				Thread.sleep(3000);
+				driver.findElement(By.name("advanceRequestBean.loggedUserPassword")).sendKeys(ESign_Password);
+
+				test.log(LogStatus.PASS, "ESign_Checks is selected as "+ESign_Password);
+				//	for(int i=1;i<=3;i++){
+				//	driver.findElement(By.name("advanceRequestBean.loggedUserPassword")).sendKeys(Keys.TAB);;
+				//	}
+				//	driver.findElement(By.name("advanceRequestBean.loggedUserPassword")).sendKeys(Keys.ENTER);
+				//driver.findElement(By.name("finishadvance")).click();
+
+				driver.findElement(By.name("finishadvance")).click();
+				test.log(LogStatus.PASS, "click on Finish Loan button ");
+			}
+
+			//'''''''''''''''''''''''''''''''''''''''''''''//'''''''''''''''''''''''''''''''''''''''''''''''//
+
+			if (ESign_CollateralType.equals("ACH"))
+			{	Thread.sleep(2000);
+			driver.findElement(By.xpath("//*[@id='chkgAcctNbr']")).sendKeys(last4cheknum);
+			test.log(LogStatus.PASS, "	Chkg Acct Nbr(Last 4 Digits Only) is enterted as "+last4cheknum);	
+			driver.findElement(By.name("advanceRequestBean.loggedUserPassword")).sendKeys(ESign_Password);
+			//driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr[10]/td/input")).sendKeys(ESign_Password);
+			test.log(LogStatus.PASS, "ESign_Checks is selected as "+ESign_Password);
+
+
+			Thread.sleep(6000);
+			for(int i=1;i<=3;i++){
+				driver.findElement(By.name("advanceRequestBean.loggedUserPassword")).sendKeys(Keys.TAB);
+			}
+			driver.findElement(By.name("advanceRequestBean.loggedUserPassword")).sendKeys(Keys.ENTER);
+			//driver.findElement(By.name("finishadvance")).click();
+			test.log(LogStatus.PASS, "click on Finish Loan button ");
+			}
+
+			//..................................................//.......................................
+			if (ESign_CollateralType.equals("DEBIT CARD"))
+			{
+
+
+				driver.findElement(By.xpath("//*[@id='cardsList']/select")).sendKeys("NEW CARD");
+				test.log(LogStatus.PASS, "Select card as : " + "NEW CARD");
+
+				driver.findElement(By.xpath("//*[@id='cardType1']/select")).sendKeys(cardType);
+				test.log(LogStatus.PASS, "Enterd card Type  : " + cardType);
+
+				driver.findElement(By.xpath("//*[@id='ccnumber']")).sendKeys(cardNumber);
+				test.log(LogStatus.PASS, "Card number is :" + cardNumber);
+
+				driver.findElement(By.xpath("//*[@id='expmonth']")).sendKeys(cardEx_month);
+				test.log(LogStatus.PASS, "Enterd Expiry month " + cardEx_month);
+
+				driver.findElement(By.xpath("//*[@id='expyear']")).sendKeys(cardEx_Year);
+				test.log(LogStatus.PASS, "Enterd Expiry year " + cardEx_month);
+
+				driver.findElement(By.xpath("//*[@id='cvvnumber']")).sendKeys(cvv);
+				test.log(LogStatus.PASS, "Enterd CVV " + cvv);
+				driver.findElement(By.xpath("//*[@id='ccname']")).sendKeys(CardHolderName);
+				test.log(LogStatus.PASS, "Card holder name is " + CardHolderName);
+
+				driver.findElement(By.xpath(" /html/body/form[1]/table/tbody/tr[1]/td/table[2]/tbody/tr/td/table/tbody/tr[12]/td[3]/div[1]/input[3]")).click();
+				test.log(LogStatus.PASS, "Clicked on add card button ");
+				Thread.sleep(30000);
+				driver.findElement(By.name("advanceRequestBean.loggedUserPassword")).sendKeys(ESign_Password);
+				test.log(LogStatus.PASS, "ESign_Checks is selected as "+ESign_Password);
+				driver.findElement(By.name("finishadvance")).click();
+				test.log(LogStatus.PASS, "click on Finish Loan button ");
+
+			}
+
+
+			Thread.sleep(3000);
+			try {
 				Alert alert = driver.switchTo().alert();
 				String almsg= alert.getText();
 
 				alert.accept();
 				test.log(LogStatus.PASS, "alert handled "+almsg);
 
-				//if alert present, accept and move on.														
+				//if alert present, accept and move on.
 
 			}
 			catch (NoAlertPresentException e) {
 				//do what you normally would if you didn't have the alert.
 			}
 
-			Thread.sleep(3000);
-			driver.findElement(By.name("advanceRequestBean.loggedUserPassword")).sendKeys(ESign_Password);
+			for( String winHandle1 : driver.getWindowHandles())
+			{
+				driver.switchTo().window(winHandle1);
+			}
+			driver.switchTo().defaultContent();
+			driver.switchTo().frame("mainFrame");
+			driver.switchTo().frame("main");
+			Thread.sleep(2000);
+			String confirm_text1=driver.findElement(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr/td/table[1]/tbody/tr[4]/td[2]/table/tbody/tr[2]/td")).getText();
+			String confirm_text2=driver.findElement(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr/td/table[1]/tbody/tr[4]/td[2]/table/tbody/tr[3]/td")).getText();
+			String confirm_text3=driver.findElement(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr/td/table[1]/tbody/tr[4]/td[2]/table/tbody/tr[4]/td")).getText();
+			
+			test.log(LogStatus.PASS, "confirm text is  "+confirm_text1+confirm_text2+confirm_text3);
+			
+			String e="/html/body/form/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr/td/input[1]";
+			
+			driver.findElement(By.xpath(e)).click();
+			
+			test.log(LogStatus.PASS, "click on Yes button ");
+			Thread.sleep(4000);
+			driver.switchTo().defaultContent();
+			driver.switchTo().frame("mainFrame");
+			driver.switchTo().frame("bdyLoad");
+			if(driver.findElement(By.name("Ok")).isDisplayed())
+			{
+			test.log(LogStatus.PASS, "New Loan is Completed Successfully");
+				ACSRLoginLogout.logout();
+			}
+			else
+			{
+				test.log(LogStatus.FAIL, "New Loan is not Completed Successfully ");
+			}
 
-			test.log(LogStatus.PASS, "ESign_Checks is selected as "+ESign_Password);
-			//	for(int i=1;i<=3;i++){
-			//	driver.findElement(By.name("advanceRequestBean.loggedUserPassword")).sendKeys(Keys.TAB);;
-			//	}
-			//	driver.findElement(By.name("advanceRequestBean.loggedUserPassword")).sendKeys(Keys.ENTER);
-			//driver.findElement(By.name("finishadvance")).click();
+			}	
+			catch(Exception e){
+				test.log(LogStatus.PASS, "CustomerReached maximum Loan amounts");
+				ACSRLoginLogout.logout();
+				
 
-			driver.findElement(By.name("finishadvance")).click();
-			test.log(LogStatus.PASS, "click on Finish Loan button ");
+			}
+			//System.out.println(" after product ID");
 		}
-
-		//'''''''''''''''''''''''''''''''''''''''''''''//'''''''''''''''''''''''''''''''''''''''''''''''//
-
-		if (ESign_CollateralType.equals("ACH"))
-		{	Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@id='chkgAcctNbr']")).sendKeys(last4cheknum);
-		test.log(LogStatus.PASS, "	Chkg Acct Nbr(Last 4 Digits Only) is enterted as "+last4cheknum);	
-		driver.findElement(By.name("advanceRequestBean.loggedUserPassword")).sendKeys(ESign_Password);
-		//driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr[10]/td/input")).sendKeys(ESign_Password);
-		test.log(LogStatus.PASS, "ESign_Checks is selected as "+ESign_Password);
-
-
-		Thread.sleep(6000);
-		for(int i=1;i<=3;i++){
-			driver.findElement(By.name("advanceRequestBean.loggedUserPassword")).sendKeys(Keys.TAB);
-		}
-		driver.findElement(By.name("advanceRequestBean.loggedUserPassword")).sendKeys(Keys.ENTER);
-		//driver.findElement(By.name("finishadvance")).click();
-		test.log(LogStatus.PASS, "click on Finish Loan button ");
-		}
-
-		//..................................................//.......................................
-		if (ESign_CollateralType.equals("DEBIT CARD"))
-		{
-
-
-			driver.findElement(By.xpath("//*[@id='cardsList']/select")).sendKeys("NEW CARD");
-			test.log(LogStatus.PASS, "Select card as : " + "NEW CARD");
-
-			driver.findElement(By.xpath("//*[@id='cardType1']/select")).sendKeys(cardType);
-			test.log(LogStatus.PASS, "Enterd card Type  : " + cardType);
-
-			driver.findElement(By.xpath("//*[@id='ccnumber']")).sendKeys(cardNumber);
-			test.log(LogStatus.PASS, "Card number is :" + cardNumber);
-
-			driver.findElement(By.xpath("//*[@id='expmonth']")).sendKeys(cardEx_month);
-			test.log(LogStatus.PASS, "Enterd Expiry month " + cardEx_month);
-
-			driver.findElement(By.xpath("//*[@id='expyear']")).sendKeys(cardEx_Year);
-			test.log(LogStatus.PASS, "Enterd Expiry year " + cardEx_month);
-
-			driver.findElement(By.xpath("//*[@id='cvvnumber']")).sendKeys(cvv);
-			test.log(LogStatus.PASS, "Enterd CVV " + cvv);
-			driver.findElement(By.xpath("//*[@id='ccname']")).sendKeys(CardHolderName);
-			test.log(LogStatus.PASS, "Card holder name is " + CardHolderName);
-
-			driver.findElement(By.xpath(" /html/body/form[1]/table/tbody/tr[1]/td/table[2]/tbody/tr/td/table/tbody/tr[12]/td[3]/div[1]/input[3]")).click();
-			test.log(LogStatus.PASS, "Clicked on add card button ");
-			Thread.sleep(30000);
-			driver.findElement(By.name("advanceRequestBean.loggedUserPassword")).sendKeys(ESign_Password);
-			test.log(LogStatus.PASS, "ESign_Checks is selected as "+ESign_Password);
-			driver.findElement(By.name("finishadvance")).click();
-			test.log(LogStatus.PASS, "click on Finish Loan button ");
-
-		}
-
-
-		Thread.sleep(3000);
-		try {
-			Alert alert = driver.switchTo().alert();
-			String almsg= alert.getText();
-
-			alert.accept();
-			test.log(LogStatus.PASS, "alert handled "+almsg);
-
-			//if alert present, accept and move on.
-
-		}
-		catch (NoAlertPresentException e) {
-			//do what you normally would if you didn't have the alert.
-		}
-
-		for( String winHandle1 : driver.getWindowHandles())
-		{
-			driver.switchTo().window(winHandle1);
-		}
-		driver.switchTo().defaultContent();
-		driver.switchTo().frame("mainFrame");
-		driver.switchTo().frame("main");
-		Thread.sleep(2000);
-		String confirm_text1=driver.findElement(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr/td/table[1]/tbody/tr[4]/td[2]/table/tbody/tr[2]/td")).getText();
-		String confirm_text2=driver.findElement(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr/td/table[1]/tbody/tr[4]/td[2]/table/tbody/tr[3]/td")).getText();
-		String confirm_text3=driver.findElement(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr/td/table[1]/tbody/tr[4]/td[2]/table/tbody/tr[4]/td")).getText();
-		
-		test.log(LogStatus.PASS, "confirm text is  "+confirm_text1+confirm_text2+confirm_text3);
-		
-		String e="/html/body/form/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr/td/input[1]";
-		
-		driver.findElement(By.xpath(e)).click();
-		
-		test.log(LogStatus.PASS, "click on Yes button ");
-		
-		driver.switchTo().defaultContent();
-		driver.switchTo().frame("mainFrame");
-		driver.switchTo().frame("bdyLoad");
-		if(driver.findElement(By.name("Ok")).isDisplayed())
-		{
-		test.log(LogStatus.PASS, "New Loan is Completed Successfully");
-			ACSRLoginLogout.logout();
-		}
-		else
-		{
-			test.log(LogStatus.FAIL, "New Loan is not Completed Successfully ");
-		}
-	}
+			}
 //********************************************************************************************************
 	public static void ILP() throws InterruptedException
 	{

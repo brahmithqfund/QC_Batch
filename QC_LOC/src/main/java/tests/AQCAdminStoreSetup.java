@@ -156,9 +156,10 @@ public class AQCAdminStoreSetup extends QCStore
 				{
 
 				}
-				Thread.sleep(500);
+				Thread.sleep(4500);
 
 				//driver.findElement(By.xpath("/html/body/table/tbody/tr/td/table/tbody/tr/td/form/table/tbody/tr[3]/td[2]/table/tbody/tr[2]/td/input")).click();
+				driver.findElement(By.name("Submit")).click();
 
 				test.log(LogStatus.PASS, "Clicked on OK button"); 
 

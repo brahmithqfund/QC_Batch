@@ -15,16 +15,16 @@
 
  
   <!--  Ratikanta(Janaki) scenarios  -->
- <!-- <include name="Janaki"/>  -->
+ <!-- <include name="Janaki"/>  -->															
   <!--  <include name="Janaki1"/>  --> 
   <!--    <include name="Janaki_NEOD"/>  -->
       <!-- <include name="Janaki_EOD"/> --> 
 
 
   <!--  Anoop scenarios -->
-     <include name="Anoop_EOD1"/>
-    <!--  <include name="Anoop_EOD2"/> -->
-      <!-- <include name="Anoop_EOD3"/> -->
+    <!--  <include name="Anoop_EOD1"/> -->
+     <!-- <include name="Anoop_EOD2"/>  -->
+      <include name="Anoop_EOD31"/>
 
 
     <!--  Rati scenarios   -->

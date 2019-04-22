@@ -2371,11 +2371,11 @@ public class QCStore {
 //============================================================================================================
 	// Anoop Transactions
 
-	@Test(priority = 14, enabled = true, groups = "Anoop")
+	@Test(priority = 14, enabled = true, groups = "Anoop1")
 
 	public void ILP_voidRefinance() throws Exception {
 
-		FileName = "QC_Loan_Refinance_Void.xls";
+		FileName = "ILP_Scenario_NO.52.xls";
 		test = reports.startTest("QC_Loan_Refinance_Void",
 				"Loan->Age store for 12 days->Make Payment less than interest amount->Age Store for 10 Days->Refinance->Void Refinance");
 
@@ -2596,10 +2596,10 @@ public class QCStore {
 				String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
 
-				QCCSRLoginLogout.adminLogin(SSN, SSN);
+				/*QCCSRLoginLogout.adminLogin(SSN, SSN);
 				AAdminStartDate.toStartdate(SSN, SSN);
 				QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
-				AProc1.proc();
+				AProc1.proc();*/
 				
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRBorrowerRegistration.borrowerReg(SSN, AppURL);
@@ -2654,10 +2654,10 @@ public class QCStore {
 				String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
 				
-				QCCSRLoginLogout.adminLogin(SSN, SSN);
+				/*QCCSRLoginLogout.adminLogin(SSN, SSN);
 				AAdminStartDate.toStartdate(SSN, SSN);
 				QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
-				AProc1.proc();
+				AProc1.proc();*/
 
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRBorrowerRegistration.borrowerReg(SSN, AppURL);
@@ -2759,14 +2759,14 @@ public class QCStore {
 				String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
 
-				ACSRLoginLogout.login(SSN, AppURL);
+				/*ACSRLoginLogout.login(SSN, AppURL);
 				ACSRBorrowerRegistration.borrowerReg(SSN, AppURL);
 				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRNewLoanPage.newLoan(SSN, AppURL);
 				ACSRLoginLogout.logout();
 				ACSRLoginLogout.login(SSN, AppURL);
-				ACSRRescindLoan.agerescind(SSN, AppURL);
+				ACSRRescindLoan.agerescind(SSN, AppURL);*/
 
 				ACSRLoginLogout.login(SSN, AppURL);
 				ILP_Payment.payment(SSN, AppURL);
@@ -2840,7 +2840,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 6, enabled = true, groups = "Anoop")
+	//@Test(priority = 6, enabled = true, groups = "Anoop")
 
 	public void ILP_RefinanceStepup() throws Exception {
 
@@ -2891,7 +2891,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 1, enabled = true, groups = "Anoop")
+	//@Test(priority = 1, enabled = true, groups = "Anoop")
 
 	public void ILP_Redeposit() throws Exception {
 
@@ -2949,7 +2949,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 5, enabled = true, groups = "Anoop")
+	//@Test(priority = 5, enabled = true, groups = "Anoop")
 
 	public void ILP_agerescindtest() throws Exception {
 		test = reports.startTest("QC_AgeStore_Rescind Loan", "Login-->Age the loan to rescind days--->Rescind loan");
@@ -2990,7 +2990,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 4, enabled = true, groups = "Anoop")
+	//@Test(priority = 4, enabled = true, groups = "Anoop")
 
 	public void ILP_rescindloan() throws Exception {
 		test = reports.startTest("QC_Rescind", "Loan->Rescind");
@@ -3028,7 +3028,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 3, enabled = true, groups = "Anoop")
+	//@Test(priority = 3, enabled = true, groups = "Anoop")
 
 	public void ILP_maxloanCount() throws Exception {
 		FileName = "QC_MaxLoanCount.xls";
@@ -3074,7 +3074,7 @@ public class QCStore {
 
 	}
 
-	@Test(priority = 2, enabled = true, groups = "Anoop")
+	//@Test(priority = 2, enabled = true, groups = "Anoop")
 	public void ILP_inactiveNewloan() throws Exception {
 		FileName = "QC_NewLoan_InactiveCustomer.xls";
 		test = reports.startTest("QC_NewLoan_InactiveCustomer", "Login-->Home Screen-->In active customer-->New Loan");
