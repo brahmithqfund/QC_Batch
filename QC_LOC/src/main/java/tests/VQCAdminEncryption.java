@@ -43,8 +43,8 @@ public class VQCAdminEncryption extends QCStore
 				String AdminURL = TestData.getCellData(sheetName,"AdminURL",row);
 			
 				String Tran_cd = TestData.getCellData(sheetName,"Tran_cd",row);
-                String Store_no= TestData.getCellData(sheetName,"Store_no",row);
-
+                //String Store_no= TestData.getCellData(sheetName,"Store_no",row);
+				String Store_no = nstoreid;
 				//test.log(LogStatus.INFO, MarkupHelper.createLabel("Admin Application is launched", ExtentColor.BLUE));
 				test.log(LogStatus.INFO, "********Admin Application is launched********");
 				driver = new InternetExplorerDriver();

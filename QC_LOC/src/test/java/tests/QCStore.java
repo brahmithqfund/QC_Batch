@@ -123,12 +123,15 @@ public class QCStore {
 	
 	public static String vstoreid="508";
 	public static String vusername="csr508";
+	
+	public static String nstoreid="581";
+	public static String nusername="csr581";
 
 
 
 	// Brahmith scenarios
 
-	@Test(priority = 113, groups = { "1st Batch" })
+	//@Test(priority = 113, groups = { "1st Batch" })
 	public static void LOC_Biweekly_Nextpay_Txn() throws Exception {
 		try {
 
@@ -178,7 +181,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 114, groups = { "1st Batch" })
+	//@Test(priority = 114, groups = { "1st Batch" })
 	public static void LOC_NewLoan_MaxLOC_Txn() throws Exception {
 		try {
 
@@ -226,7 +229,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 105, groups = { "1st Batch" })
+	//@Test(priority = 105, groups = { "1st Batch" })
 	public static void LOC_Biweekly_NextPay_NotOn_End_Txn() throws Exception {
 		try {
 
@@ -275,7 +278,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 106, groups = { "1st Batch" })
+	//@Test(priority = 106, groups = { "1st Batch" })
 	public static void LOC_monthly_NextPay_NotOn_End_Txn() throws Exception {
 		try {
 
@@ -323,7 +326,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 107, groups = { "1st Batch" })
+	//@Test(priority = 107, groups = { "1st Batch" })
 	public static void LOC_semimonthly_NextPay_NotOn_End_Txn() throws Exception {
 		try {
 
@@ -371,7 +374,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 108, groups = { "1st Batch" })
+	//@Test(priority = 108, groups = { "1st Batch" })
 	public static void LOC_weekly_NextPay_NotOn_End_Txn() throws Exception {
 		try {
 
@@ -419,7 +422,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 134, groups = { "1st Batch" })
+	//@Test(priority = 134, groups = { "1st Batch" })
 	public static void LOC_PayOff_after_RescindPeriod_Txn() throws Exception {
 		try {
 
@@ -474,7 +477,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 135, groups = { "1st Batch" })
+	//@Test(priority = 135, groups = { "1st Batch" })
 	public static void LOC_PayOff_On_DueDate_Txn() throws Exception {
 		try {
 
@@ -530,7 +533,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 136, groups = { "1st Batch" })
+	//@Test(priority = 136, groups = { "1st Batch" })
 	public static void LOC_Payment_PayOff_Txn() throws Exception {
 		try {
 
@@ -590,7 +593,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 137, groups = { "1st Batch" })
+	//@Test(priority = 137, groups = { "1st Batch" })
 	public static void LOC_Payment_GraceDays_PayOff_Txn() throws Exception {
 		try {
 
@@ -651,7 +654,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 138, groups = { "1st Batch" })
+	//@Test(priority = 138, groups = { "1st Batch" })
 	public static void LOC_Payment_Void_PayOff_Txn() throws Exception {
 		try {
 
@@ -711,7 +714,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 139, groups = { "1st Batch" })
+	//@Test(priority = 139, groups = { "1st Batch" })
 	public static void LOC_Payment_Return_PayOff_Txn() throws Exception {
 		try {
 
@@ -781,7 +784,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 140, groups = { "1st Batch" })
+	//@Test(priority = 140, groups = { "1st Batch" })
 	public static void LOC_PayOff_RescindPeriod_void_Txn() throws Exception {
 		try {
 
@@ -839,7 +842,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 141, groups = { "1st Batch" })
+	//@Test(priority = 141, groups = { "1st Batch" })
 	public static void LOC_Payment_PayOff_Void_Txn() throws Exception {
 		try {
 
@@ -902,7 +905,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 142, groups = { "1st Batch" })
+	//@Test(priority = 142, groups = { "1st Batch" })
 	public static void LOC_Payment_Gracedays_PayOff_Void_Txn() throws Exception {
 		try {
 
@@ -966,7 +969,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 143, groups = { "1st Batch" })
+	//@Test(priority = 143, groups = { "1st Batch" })
 	public static void LOC_Payment_Void_PayOff_Void_Txn() throws Exception {
 		try {
 
@@ -1030,7 +1033,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 144, groups = { "1st Batch" })
+	//@Test(priority = 144, groups = { "1st Batch" })
 	public static void LOC_PayOff_Return_Txn() throws Exception {
 		try {
 
@@ -1098,7 +1101,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 145, groups = { "1st Batch" })
+	//@Test(priority = 145, groups = { "1st Batch" })
 	public static void LOC_Payment_PayOff_Return_Txn() throws Exception {
 		try {
 
@@ -1166,7 +1169,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 155, groups = { "1st Batch" })
+	//@Test(priority = 155, groups = { "1st Batch" })
 	public static void LOC_Draw_Txn() throws Exception {
 		try {
 
@@ -1221,7 +1224,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 156, groups = { "1st Batch" })
+	//@Test(priority = 156, groups = { "1st Batch" })
 	public static void LOC_Payment_Draw_Txn() throws Exception {
 		try {
 
@@ -1280,7 +1283,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 157, groups = { "1st Batch" })
+	//@Test(priority = 157, groups = { "1st Batch" })
 	public static void LOC_PayOff_Draw_Txn() throws Exception {
 		try {
 
@@ -1338,7 +1341,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 158, groups = { "1st Batch" })
+	//@Test(priority = 158, groups = { "1st Batch" })
 	public static void LOC_Draw_Void_Txn() throws Exception {
 		try {
 
@@ -1395,7 +1398,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 159, groups = { "1st Batch" })
+	//@Test(priority = 159, groups = { "1st Batch" })
 	public static void LOC_Payment_Draw_Void_Txn() throws Exception {
 		try {
 
@@ -1457,7 +1460,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 160, groups = { "1st Batch" })
+	//@Test(priority = 160, groups = { "1st Batch" })
 	public static void LOC_PayOff_Draw_Void_Txn() throws Exception {
 		try {
 
@@ -1517,7 +1520,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 164, groups = { "1st Batch" })
+	//@Test(priority = 164, groups = { "1st Batch" })
 	public static void LOC_Deposit_Return_PayOff_Txn() throws Exception {
 		try {
 
@@ -1580,7 +1583,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 66, groups = { "EOD1" })
+	//@Test(priority = 66, groups = { "EOD1" })
 
 	public static void LOC_ACHDeposit_EODs_Return_ReDeposit_Clear_Txn() throws Exception {
 		try {
@@ -1688,7 +1691,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 67, groups = { "EOD" })
+	//@Test(priority = 67, groups = { "EOD" })
 	public static void LOC_ACHDeposit_EODs_Return_ReDeposit_Return_Txn() throws Exception {
 		try {
 
@@ -1790,7 +1793,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 68, groups = { "EOD" })
+	//@Test(priority = 68, groups = { "EOD" })
 	public static void LOC_ACHDeposit_EODs_Return_Txn() throws Exception {
 		try {
 
@@ -1955,7 +1958,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 69, groups = { "EOD2" })
+	//@Test(priority = 69, groups = { "EOD2" })
 	public static void LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn() throws Exception {
 		try {
 
@@ -2062,7 +2065,7 @@ public class QCStore {
 	}
 
 
-	@Test(priority = 70, groups = { "EOD2" })
+	//@Test(priority = 70, groups = { "EOD2" })
 	public static void LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn() throws Exception {
 
 		try {
@@ -2162,7 +2165,7 @@ public class QCStore {
 
 	// Ratikanta Scenarios
 
-	@Test(priority = 201, groups = "Ratikanta_LOC")
+	//@Test(priority = 201, groups = "Ratikanta_LOC")
 	public static void RQC_LOC_ManualDefault_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("New LOC - Manual Default"),
@@ -2226,7 +2229,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 202, groups = "Ratikanta_LOC")
+	//@Test(priority = 202, groups = "Ratikanta_LOC")
 	public static void RQC_LOC_Deposit_Return_ManualDefault_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("New LOC - Deposit - Return- Manual Default"),
@@ -2293,7 +2296,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 203, groups = "Ratikanta_LOC")
+	//@Test(priority = 203, groups = "Ratikanta_LOC")
 	public static void RQC_LOC_Deposit_Return_2ndDeposit_Clear_3rdDeposit_Return_Default_Txn_Testdata()
 			throws Exception {
 		try {
@@ -2383,7 +2386,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 204, groups = "Ratikanta_LOC")
+	//@Test(priority = 204, groups = "Ratikanta_LOC")
 	public static void RQC_LOC_2missedPayment_Default_EOD_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(
@@ -2453,7 +2456,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 205, groups = "Ratikanta_LOC")
+	//@Test(priority = 205, groups = "Ratikanta_LOC")
 	public static void RQC_LOC_Default_DefaultPayment_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("Default - Default Payment"),
@@ -2550,7 +2553,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 206, groups = "Ratikanta_LOC")
+	//@Test(priority = 206, groups = "Ratikanta_LOC")
 	public static void RQC_LOC_Default_DefaultPayment_Void_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("Default - Default Payment - Void"),
@@ -2626,7 +2629,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 207, groups = "Ratikanta_LOC")
+	//@Test(priority = 207, groups = "Ratikanta_LOC")
 	public static void RQC_LOC_Default_PartialDefaultPayment_Void_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("Default - Partial Default Payment - Void"),
@@ -2700,7 +2703,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 208, groups = "Ratikanta_LOC")
+	//@Test(priority = 208, groups = "Ratikanta_LOC")
 	public static void RQC_LOC_Default_DefaultPayment_Return_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("Default - Default Payment(ACH/CCK/MO) - Return"),
@@ -2780,7 +2783,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 209, groups = "Ratikanta_LOC")
+	//@Test(priority = 209, groups = "Ratikanta_LOC")
 	public static void RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("Default - Partial Default Payment - Full Default payment"),
@@ -2853,7 +2856,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 210, groups = "Ratikanta_LOC")
+	//@Test(priority = 210, groups = "Ratikanta_LOC")
 	public static void RQC_LOC_Default_PartialDefaultPayment_FullDefaultPayment_Void_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("Default - Partial Default Payment - Full Default payment - Void"),
@@ -2929,7 +2932,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 211, groups = "Ratikanta_LOC")
+	//@Test(priority = 211, groups = "Ratikanta_LOC")
 	public static void RQC_LOC_PayOff_Closure_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("New LOC_Payoff_LOC Closure"),
@@ -2994,7 +2997,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 212, groups = "Ratikanta_LOC")
+	//@Test(priority = 212, groups = "Ratikanta_LOC")
 	public static void RQC_LOC_Payment_PayOff_Closure_Void_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("New LOC_Payment_Payoff_LOC Closure_Void"),
@@ -3065,7 +3068,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 213, groups = "Ratikanta_LOC")
+	//@Test(priority = 213, groups = "Ratikanta_LOC")
 	public static void RQC_LOC_PayOff_Closure_PayoffReturn_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("New LOC_Payoff_LOC Closure_Payoff return"),
@@ -3136,7 +3139,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 214, groups = "Ratikanta_LOC")
+	//@Test(priority = 214, groups = "Ratikanta_LOC")
 	public static void RQC_LOC_PayOff_Agestore180days_AutoClosure_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("New LOC_Payoff_Age the store to 180 days_Auto Closure"),
@@ -3207,7 +3210,7 @@ public class QCStore {
 	
 	
 
-	@Test(priority = 215, groups = "Ratikanta_EOD")
+	//@Test(priority = 215, groups = "Ratikanta_EOD")
 	public static void RQC_LOC_ManualDefault_EOD_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("New LOC_Manual Default_EOD on Payment Due Date"),
@@ -3280,7 +3283,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 216, groups = "Ratikanta_EOD")
+	//@Test(priority = 216, groups = "Ratikanta_EOD")
 	public static void RQC_LOC_Deposit_Return_2ndDeposit_Return_Default_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("New LOC_Deposit_Return_2nd Deposit_Return_Default(EOD/Auto EOD)"),
@@ -3365,7 +3368,7 @@ public class QCStore {
 	}
 
 	// ============================================================================================================
-	/*@Test(priority = 202)
+	/*//@Test(priority = 202)
 	public static void RQC_DefaultPayment_Void_Txn_Testdata() throws Exception {
 		try {
 			test = reports.startTest(("ILP_Scenario_No.37"),
@@ -3426,7 +3429,7 @@ public class QCStore {
 
 	// Janaki's (Ratikanta) scenarios
 
-	@Test(priority = 301, enabled = true, groups = "Janaki_NEOD")
+	//@Test(priority = 301, enabled = true, groups = "Janaki_NEOD")
 
 	public static void JQC_LOC_New_Loan_Void_Txn() throws Exception {
 		try {
@@ -3481,7 +3484,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 302, enabled = true, groups = "Janaki_NEOD")
+	//@Test(priority = 302, enabled = true, groups = "Janaki_NEOD")
 
 	public static void JQC_LOC_New_Loan_Rescind_Txn() throws Exception {
 		try {
@@ -3533,7 +3536,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 303, enabled = true, groups = "Janaki_NEOD")
+	//@Test(priority = 303, enabled = true, groups = "Janaki_NEOD")
 
 	public static void JQC_LOC_New_Loan_Void_GraceDay_Txn() throws Exception {
 		try {
@@ -3591,7 +3594,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 304, enabled = true, groups = "Janaki_NEOD")
+	//@Test(priority = 304, enabled = true, groups = "Janaki_NEOD")
 
 	public static void JQC_LOC_New_Loan_GraceDay_Rescind_Txn() throws Exception {
 		try {
@@ -3645,7 +3648,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 305, enabled = true, groups = "Janaki_NEOD")
+	//@Test(priority = 305, enabled = true, groups = "Janaki_NEOD")
 
 	public static void JQC_LOC_New_Loan_After_RescindDays_Txn() throws Exception {
 		try {
@@ -3698,7 +3701,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 306, enabled = true, groups = "Janaki_NEOD")
+	//@Test(priority = 306, enabled = true, groups = "Janaki_NEOD")
 
 	public static void JQC_LOC_Payment_After_Rescind_Txn() throws Exception {
 		try {
@@ -3752,7 +3755,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 307, enabled = true, groups = "Janaki_NEOD")
+	//@Test(priority = 307, enabled = true, groups = "Janaki_NEOD")
 
 	public static void JQC_LOC_Payment_OnDueDate_Txn() throws Exception {
 		try {
@@ -3806,7 +3809,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 308, enabled = true, groups = "Janaki_NEOD")
+	//@Test(priority = 308, enabled = true, groups = "Janaki_NEOD")
 
 
 	public static void JQC_LOC_LessThan_MinPayment_Txn() throws Exception {
@@ -3861,7 +3864,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 309, enabled = true, groups = "Janaki_NEOD")
+	//@Test(priority = 309, enabled = true, groups = "Janaki_NEOD")
 
 	public static void JQC_LOC_GreaterThan_MinPayment_Txn() throws Exception {
 		try {
@@ -3915,7 +3918,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 310, enabled = true, groups = "Janaki_NEOD")
+	//@Test(priority = 310, enabled = true, groups = "Janaki_NEOD")
 	public static void JQC_LOC_DueDate_GreaterThan_MinPayment_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_DueDate_GreaterThan_MinPayment_Txn"),
@@ -3970,7 +3973,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 311, enabled = true, groups = "Janaki_NEOD")
+	//@Test(priority = 311, enabled = true, groups = "Janaki_NEOD")
 	public static void JQC_LOC_DueDate_LessThan_MinPayment_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_DueDate_LessThan_MinPayment_Txn"),
@@ -4023,7 +4026,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 312, enabled = true, groups = "Janaki_NEOD")
+	//@Test(priority = 312, enabled = true, groups = "Janaki_NEOD")
 	public static void JQC_LOC_Payment_void_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_Payment_void_Txn"),
@@ -4079,7 +4082,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 313, enabled = true, groups = "Janaki_NEOD")
+	//@Test(priority = 313, enabled = true, groups = "Janaki_NEOD")
 	public static void JQC_LOC_Payment_void_NextBusinessDay_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_Payment_void_NextBusinessDay_Txn"),
@@ -4143,7 +4146,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 314, enabled = true, groups = "Janaki_NEOD")
+	//@Test(priority = 314, enabled = true, groups = "Janaki_NEOD")
 	public static void JQC_LOC_LessThan_MinPayment_Viod_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_LessThan_MinPayment_Void_Txn"),
@@ -4200,7 +4203,7 @@ public class QCStore {
 	}
 
 	
-	@Test(priority = 315, enabled = true, groups = "Janaki_NEOD")
+	//@Test(priority = 315, enabled = true, groups = "Janaki_NEOD")
 	public static void JQC_LOC_GreaterThan_MinPayment_Void_Txn() throws Exception {
 
 		try {
@@ -4257,7 +4260,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 316, enabled = true, groups = "Janaki_NEOD")
+	//@Test(priority = 316, enabled = true, groups = "Janaki_NEOD")
 	public static void JQC_LOC_LessThan_MinPayment_Return_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_LessThan_MinPayment_Return_Txn"),
@@ -4320,7 +4323,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 317, enabled = true, groups = "Janaki_NEOD")
+	//@Test(priority = 317, enabled = true, groups = "Janaki_NEOD")
 	public static void JQC_LOC_GreaterThan_MinPayment_Return_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_GreaterThan_MinPayment_Return_Txn"),
@@ -4383,7 +4386,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 318, enabled = true, groups = "Janaki_NEOD")
+	//@Test(priority = 318, enabled = true, groups = "Janaki_NEOD")
 	public static void JQC_LOC_Refinance_StepSame_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_Refinance_StepSame_Txn"),
@@ -4441,7 +4444,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 319, enabled = true, groups = "Janaki_NEOD")
+	//@Test(priority = 319, enabled = true, groups = "Janaki_NEOD")
 	public static void JQC_LOC_Refinance_StepUp_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_Refinance_StepUp_Txn"),
@@ -4500,7 +4503,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 320, enabled = true, groups = "Janaki_NEOD")
+	//@Test(priority = 320, enabled = true, groups = "Janaki_NEOD")
 	public static void JQC_LOC_Refinance_CABPayment_Return_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_Refinance_CABPayment_Return_Txn"),
@@ -4566,7 +4569,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 321, enabled = true, groups = "Janaki_NEOD")
+	//@Test(priority = 321, enabled = true, groups = "Janaki_NEOD")
 	public static void JQC_LOC_Refinance_Stepdown_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_Refinance_Stepdown_Txn"),
@@ -4625,7 +4628,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 322, enabled = true, groups = "Janaki_NEOD")
+	//@Test(priority = 322, enabled = true, groups = "Janaki_NEOD")
 	public static void JQC_LOC_Refinance_Latefee_Payment_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_Refinance_Latefee_Payment_Txn"),
@@ -4691,7 +4694,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 323, enabled = true, groups = "Janaki_EOD")
+	//@Test(priority = 323, enabled = true, groups = "Janaki_EOD")
 	public static void JQC_LOC_Refinance_EOD_Payment_Txn() throws Exception {
 		try {
 			test = reports.startTest(Jprop.getProperty("QC_LOC_Refinance_EOD_Payment_Txn"),
@@ -4760,7 +4763,7 @@ public class QCStore {
 
 	// Anoop scenarios
 
-	@Test(priority = 427, enabled = true, groups = "Anoop_EOD3")
+	//@Test(priority = 427, enabled = true, groups = "Anoop_EOD3")
 
 	public void PaymentDepositEODReDeposit() throws Exception {
 		FileName = "QC_PaymentDepositEODReDeposit.xls";
@@ -4830,7 +4833,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 426, enabled = true, groups = "Anoop_EOD3")
+	//@Test(priority = 426, enabled = true, groups = "Anoop_EOD3")
 
 	public void DepositEODReDeposit() throws Exception {
 		FileName = "QC_DepositEODReDeposit.xls";
@@ -4892,7 +4895,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 423, enabled = true, groups = "Anoop_EOD3")
+	//@Test(priority = 423, enabled = true, groups = "Anoop_EOD3")
 
 	public void SignatureNewLoan_EODTwice() throws Exception {
 		FileName = "QC_LOC_SignatureLoan_EOD.xls";
@@ -4959,7 +4962,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 422, enabled = true, groups = "Anoop_EOD3")
+	//@Test(priority = 422, enabled = true, groups = "Anoop_EOD3")
 
 	public void Clear_Return_EODTwice() throws Exception {
 		FileName = "QC_LOC_clearReturnEODTwice.xls";
@@ -5054,7 +5057,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 421, enabled = true, groups = "Anoop_EOD2")
+	//@Test(priority = 421, enabled = true, groups = "Anoop_EOD2")
 
 	public void Deposit_DrawEODTwice() throws Exception {
 		FileName = "QC_LOC_Draw_EODTwice.xls";
@@ -5134,7 +5137,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 420, enabled = true, groups = "Anoop_EOD2")
+	//@Test(priority = 420, enabled = true, groups = "Anoop_EOD2")
 
 	public void DepositEODTwice() throws Exception {
 		FileName = "QC_LOC_DepositEODTwice.xls";
@@ -5202,7 +5205,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 419, enabled = true, groups = "Anoop_EOD2")
+	//@Test(priority = 419, enabled = true, groups = "Anoop_EOD2")
 
 	public void PaymentdrawVoidEOD() throws Exception {
 		FileName = "QC_LOC_paymentDraw_Void_EOD.xls";
@@ -5267,7 +5270,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 418, enabled = true, groups = "Anoop_EOD2")
+	//@Test(priority = 418, enabled = true, groups = "Anoop_EOD2")
 
 	public void PaymentAndDraw() throws Exception {
 		FileName = "QC_LOC_payment_Draw.xls";
@@ -5333,7 +5336,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 417, enabled = true, groups = "Anoop_EOD1")
+	//@Test(priority = 417, enabled = true, groups = "Anoop_EOD1")
 
 	public void DrawAndEOD() throws Exception {
 		FileName = "QC_LOC_Draw_EOD.xls";
@@ -5387,7 +5390,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 416, enabled = true, groups = "Anoop_EOD1")
+	//@Test(priority = 416, enabled = true, groups = "Anoop_EOD1")
 
 	public void DepositAndEOD() throws Exception {
 		FileName = "QC_LOC_Deposit_EOD.xls";
@@ -5438,7 +5441,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 415, enabled = true, groups = "Anoop_EOD1")
+	//@Test(priority = 415, enabled = true, groups = "Anoop_EOD1")
 
 	public void PayOFFandEod() throws Exception {
 		FileName = "QC_LOC_PayOff_EOD.xls";
@@ -5492,7 +5495,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 414, enabled = true, groups = "Anoop_EOD1")
+	//@Test(priority = 414, enabled = true, groups = "Anoop_EOD1")
 
 	public void VoidandEod() throws Exception {
 		FileName = "QC_LOC_Void_EOD.xls";
@@ -5550,7 +5553,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 414, enabled = true, groups = "Anoop_EOD1")
+	//@Test(priority = 414, enabled = true, groups = "Anoop_EOD1")
 
 	public void HigherPaymentAndEod() throws Exception {
 		FileName = "QC_LOC_MorePayment_EOD.xls";
@@ -5606,7 +5609,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 413, enabled = true, groups = "Anoop_EOD1")
+	//@Test(priority = 413, enabled = true, groups = "Anoop_EOD1")
 
 	public void PaymentAndEod() throws Exception {
 		FileName = "QC_LOC_Payment_EOD.xls";
@@ -5661,7 +5664,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 412, enabled = true, groups = "Anoop_EOD1")
+	//@Test(priority = 412, enabled = true, groups = "Anoop_EOD1")
 
 	public void EODOnDueDate() throws Exception {
 		FileName = "QC_LOC_EODDuedate.xls";
@@ -5716,7 +5719,7 @@ public class QCStore {
 	
 	//****************************************Anoop-Scenarios-NonEOD****************************************//
 	
-	@Test(priority = 487, enabled = true, groups = { "NonEOD" })
+	//@Test(priority = 487, enabled = true, groups = { "NonEOD" })
 
 	public void MinLocAmounts() throws Exception {
 		FileName = "QC_LOC_NewLoan_monthly_MinAmount.xls";
@@ -5747,7 +5750,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 488, enabled = true, groups = { "NonEOD" })
+	//@Test(priority = 488, enabled = true, groups = { "NonEOD" })
 
 	public void MaxLocAmounts() throws Exception {
 		FileName = "QC_LOC_NewLoan_monthly_Maxamount.xls";
@@ -5778,7 +5781,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 489, enabled = true, groups = { "NonEOD" })
+	//@Test(priority = 489, enabled = true, groups = { "NonEOD" })
 
 	public void LOC_maxloanCount() throws Exception {
 		FileName = "QC_LOC_MaxLoan.xls";
@@ -5815,7 +5818,7 @@ public class QCStore {
 		}
 	}
 
-@Test(priority = 490, enabled = true, groups = { "NonEOD" })
+//@Test(priority = 490, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanWeekly_Duedatevalidation() throws Exception {
 		FileName = "QC_LOC_EndDate_Weekly_Duedate.xls";
@@ -5846,7 +5849,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 491, enabled = true, groups = { "NonEOD" })
+	//@Test(priority = 491, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanSemiMonthly_Duedatevalidation() throws Exception {
 		FileName = "QC_LOC_EndDate_Semimonthly_Duedate.xls";
@@ -5877,7 +5880,7 @@ public class QCStore {
 		}
 	}
 
-@Test(priority = 492, enabled = true, groups = { "NonEOD" })
+//@Test(priority = 492, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanMonthly_Duedatevalidation() throws Exception {
 		FileName = "QC_LOC_EndDate_monthly_Duedate.xls";
@@ -5908,7 +5911,7 @@ public class QCStore {
 		}
 	}
 
-@Test(priority = 493, enabled = true, groups = { "NonEOD" })
+//@Test(priority = 493, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanBiweeklyPaymentDuedate() throws Exception {
 		FileName = "QC_LOC_EndDate_Biweekly_Duedate.xls";
@@ -5939,7 +5942,7 @@ public class QCStore {
 		}
 	}
 
-@Test(priority = 494, enabled = true, groups = { "NonEOD" })
+//@Test(priority = 494, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanWeekly() throws Exception {
 		FileName = "QC_LOC_NewLoan_Weekly.xls";
@@ -5969,7 +5972,7 @@ public class QCStore {
 		}
 	}
 
-@Test(priority = 495, enabled = true, groups = { "NonEOD" })
+//@Test(priority = 495, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanSemiMonthly() throws Exception {
 		FileName = "QC_LOC_NewLoan_Semimonthly.xls";
@@ -5999,7 +6002,7 @@ public class QCStore {
 		}
 	}
 
-@Test(priority = 496, enabled = true, groups = { "NonEOD" })
+//@Test(priority = 496, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanMonthly() throws Exception {
 		FileName = "QC_LOC_NewLoan_monthly.xls";
@@ -6029,7 +6032,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 497, enabled = true, groups = { "NonEOD" })
+	//@Test(priority = 497, enabled = true, groups = { "NonEOD" })
 
 	public void NewLoanBiweekly() throws Exception {
 		FileName = "QC_LOC_NewLoan_Biweekly.xls";
@@ -6062,7 +6065,7 @@ public class QCStore {
 
 
 
-	@Test(priority = 498, enabled = true, groups = { "NonEOD1" })
+	//@Test(priority = 498, enabled = true, groups = { "NonEOD1" })
 	public void AReviseCredit_IncIncome() throws Exception {
 
 		FileName = "QC_ ReviseCredit_IncreaseIncome.xls";
@@ -6125,7 +6128,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 499, enabled = true, groups = { "NonEOD" })
+	//@Test(priority = 499, enabled = true, groups = { "NonEOD" })
 	public void AReviseCredit_PayofffIncreaseIncome() throws Exception {
 		FileName = "QC_Payoff_AReviseCreditincreaseincome.xls";
 		test = reports.startTest("QC_Payoff_AReviseCreditincreaseincome",
@@ -6208,7 +6211,7 @@ public class QCStore {
 
 	//**************************************Shashi-Scenarios************************************//
 
-	@Test(priority = 500, enabled = true, groups = "Shashi")
+	//@Test(priority = 500, enabled = true, groups = "Shashi")
 
 	public void Deposit_Dropdown() throws Exception {
 		FileName = "QC_LOC_Deposit_Dropdown.xls";
@@ -6245,7 +6248,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 501, enabled = true, groups = "Shashi")
+	//@Test(priority = 501, enabled = true, groups = "Shashi")
 
 	public void Deposit_Dropdown_Void() throws Exception {
 		FileName = "QC_LOC_Deposit_DropDown_Void.xls";
@@ -6284,7 +6287,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 502, enabled = true, groups = "Shashi")
+	//@Test(priority = 502, enabled = true, groups = "Shashi")
 
 	public void SQC_LOC_Deposit_Bulk() throws Exception {
 		FileName = "QC_LOC_Deposit_Bulk.xls";
@@ -6321,7 +6324,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 503, enabled = true, groups = "Shashi")
+	//@Test(priority = 503, enabled = true, groups = "Shashi")
 
 	public void SQC_LOC_Deposit_Bulk_Void() throws Exception {
 		FileName = "QC_LOC_Deposit_Bulk_Void.xls";
@@ -6360,7 +6363,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 504, enabled = true, groups = "Shashi")
+	//@Test(priority = 504, enabled = true, groups = "Shashi")
 
 	public void MidDay_Deposit() throws Exception {
 		FileName = "QC_LOC_MidDay_Deposit.xls";
@@ -6397,7 +6400,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 505, enabled = true, groups = "Shashi")
+	//@Test(priority = 505, enabled = true, groups = "Shashi")
 
 	public void MidDay_Void_Deposit() throws Exception {
 		FileName = "QC_LOC_MidDay_Void_Deposit.xls";
@@ -6438,7 +6441,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 506, enabled = true, groups = "Shashi")
+	//@Test(priority = 506, enabled = true, groups = "Shashi")
 
 	public void SQC_LOC_LessMinPayment_Deposit() throws Exception {
 		FileName = "QC_LOC_LessMinPayment_Deposit.xls";
@@ -6479,7 +6482,7 @@ public class QCStore {
 
 	// V Jyothi scenarios
 
-	@Test(priority = 600, enabled = true,groups ="Jyothi")
+	//@Test(priority = 600, enabled = true,groups ="Jyothi")
 
 	public static void LOC_Writeoff() throws Exception {
 
@@ -6524,7 +6527,7 @@ public class QCStore {
 
 	}
 
-	@Test(priority = 601, enabled = true,groups = "Jyothi")
+	//@Test(priority = 601, enabled = true,groups = "Jyothi")
 
 	public static void LOC_WriteoffRecovery() throws Exception {
 
@@ -6579,7 +6582,7 @@ public class QCStore {
 
 	}
 
-	@Test(priority = 602, enabled = true,groups = "Jyothi")
+	//@Test(priority = 602, enabled = true,groups = "Jyothi")
 
 	public static void LOC_PartialWriteoffRecovery() throws Exception {
 
@@ -6629,7 +6632,7 @@ public class QCStore {
 
 	}
 
-	@Test(priority = 603, enabled = true,groups = "Jyothi")
+	//@Test(priority = 603, enabled = true,groups = "Jyothi")
 
 	public static void LOC_PartialWriteoffRecoveryVoid() throws Exception {
 
@@ -6684,7 +6687,7 @@ public class QCStore {
 
 	}
 
-	@Test(priority = 604, enabled = true,groups = "Jyothi")
+	//@Test(priority = 604, enabled = true,groups = "Jyothi")
 
 	public static void LOC_Bankrupt_Writeoff() throws Exception {
 
@@ -6732,7 +6735,7 @@ public class QCStore {
 
 	}
 
-	@Test(priority = 605, enabled = true,groups = "Jyothi")
+	//@Test(priority = 605, enabled = true,groups = "Jyothi")
 
 	public static void LOC_Bankrupt_Writeoff_Dismissed() throws Exception {
 
@@ -6782,7 +6785,7 @@ public class QCStore {
 
 	}
 
-	@Test(priority = 606, enabled = true,groups = "Jyothi")
+	//@Test(priority = 606, enabled = true,groups = "Jyothi")
 	public static void LOC_Deposit_Return_Writeoff() throws Exception {
 
 		FileName = "LOC_Deposit_Return_Writeoff.xls";
@@ -6831,7 +6834,7 @@ public class QCStore {
 
 	}
 
-	@Test(priority = 607, enabled = true,groups = "Jyothi")
+	//@Test(priority = 607, enabled = true,groups = "Jyothi")
 
 	public static void LOC_Deposit2_Return_Writeoff() throws Exception {
 
@@ -6952,7 +6955,7 @@ public class QCStore {
 
 	}
 	
-	@Test(priority = 609, enabled = true,groups ="Jyothi1")
+	//@Test(priority = 609, enabled = true,groups ="Jyothi1")
 	public static void QC_ILP_Refinance_Payanyother_Step_Up_Txn() throws Exception {
 		FileName = "QC_ILP_Payanyotheramount.xls";
 		test = reports.startTest("VQC_ILP_Refinance_Payanyother_Step_Up",

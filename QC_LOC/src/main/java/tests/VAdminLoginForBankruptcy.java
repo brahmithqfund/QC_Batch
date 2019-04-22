@@ -47,7 +47,8 @@ public class VAdminLoginForBankruptcy extends QCStore{
 				//String AdminURL="https://qcuat.qfund.net/cc/adminIndex.do";
 				String PIN = TestData.getCellData(sheetName,"PIN",row);
 				String Trancd = TestData.getCellData(sheetName,"Trancd",row);
-				String StoreID = TestData.getCellData(sheetName,"StoreID",row);
+				//String StoreID = TestData.getCellData(sheetName,"StoreID",row);
+				String StoreID = nstoreid;
 				String BankruptcyStatus = TestData.getCellData(sheetName,"BankruptcyStatus",row);
 				String CaseNo = TestData.getCellData(sheetName,"CaseNo",row);
 				String BankChapter = TestData.getCellData(sheetName,"BankChapter",row);
