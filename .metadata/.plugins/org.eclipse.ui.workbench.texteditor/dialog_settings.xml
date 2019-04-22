@@ -9,12 +9,13 @@
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
 			<item value="pdl"/>
+			<item value="maxloa"/>
+			<item value="// anoop"/>
 			<item value="maxloan"/>
 			<item value="max"/>
 			<item value="ma"/>
 			<item value="jyothi"/>
 			<item value="//@Test("/>
-			<item value="refinance"/>
 		</list>
 		<list key="replacehistory">
 			<item value="@Test("/>

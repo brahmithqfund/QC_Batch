@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_yLT5QWTBEemtIcd2SvHzpA" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_yLT5QmTBEemtIcd2SvHzpA" bindingContexts="_yLT5RGTBEemtIcd2SvHzpA">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;AMaxLoanCount.java&quot; tooltip=&quot;QC_PDL/src/main/java/tests/AMaxLoanCount.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/QC_PDL/src/main/java/tests/AMaxLoanCount.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;QCStore.java&quot; tooltip=&quot;QC_PDL/src/test/java/tests/QCStore.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/QC_PDL/src/test/java/tests/QCStore.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;VQCCSRWriteOffRecovery_Partial.java&quot; tooltip=&quot;QC_LOC/src/main/java/tests/VQCCSRWriteOffRecovery_Partial.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/QC_LOC/src/main/java/tests/VQCCSRWriteOffRecovery_Partial.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;VQCCSRWriteOff.java&quot; tooltip=&quot;QC_LOC/src/main/java/tests/VQCCSRWriteOff.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/QC_LOC/src/main/java/tests/VQCCSRWriteOff.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;QCStore.java&quot; tooltip=&quot;QC_LOC/src/test/java/tests/QCStore.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/QC_LOC/src/test/java/tests/QCStore.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart&quot; name=&quot;testng.xml&quot; tooltip=&quot;QC_ILP/testng.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/QC_ILP/testng.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;QCCSRLoginLogoutTX.java&quot; tooltip=&quot;QC_Accouting/src/main/java/tests/QCCSRLoginLogoutTX.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/QC_Accouting/src/main/java/tests/QCCSRLoginLogoutTX.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;QCStore.java&quot; tooltip=&quot;QC_Accouting/src/test/java/tests/QCStore.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/QC_Accouting/src/test/java/tests/QCStore.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;AMaxLoanCount.java&quot; tooltip=&quot;QC_PDL/src/main/java/tests/AMaxLoanCount.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/QC_PDL/src/main/java/tests/AMaxLoanCount.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;QCStore.java&quot; tooltip=&quot;QC_PDL/src/test/java/tests/QCStore.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/QC_PDL/src/test/java/tests/QCStore.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;AQCDrawerAssign.java&quot; tooltip=&quot;QC_LOC/src/main/java/tests/AQCDrawerAssign.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/QC_LOC/src/main/java/tests/AQCDrawerAssign.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;QCStore.java&quot; tooltip=&quot;QC_LOC/src/test/java/tests/QCStore.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/QC_LOC/src/test/java/tests/QCStore.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;VQCCSRWriteOffRecovery_Partial.java&quot; tooltip=&quot;QC_LOC/src/main/java/tests/VQCCSRWriteOffRecovery_Partial.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/QC_LOC/src/main/java/tests/VQCCSRWriteOffRecovery_Partial.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;VQCCSRWriteOff.java&quot; tooltip=&quot;QC_LOC/src/main/java/tests/VQCCSRWriteOff.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/QC_LOC/src/main/java/tests/VQCCSRWriteOff.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart&quot; name=&quot;testng.xml&quot; tooltip=&quot;QC_ILP/testng.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/QC_ILP/testng.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;QCCSRLoginLogoutTX.java&quot; tooltip=&quot;QC_Accouting/src/main/java/tests/QCCSRLoginLogoutTX.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/QC_Accouting/src/main/java/tests/QCCSRLoginLogoutTX.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;QCStore.java&quot; tooltip=&quot;QC_Accouting/src/test/java/tests/QCStore.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/QC_Accouting/src/test/java/tests/QCStore.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_yLT5QmTBEemtIcd2SvHzpA" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_yYWPsGTBEemtIcd2SvHzpA" label="%trimmedwindow.label.eclipseSDK" x="25" y="25" width="1024" height="768">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_yLT5QmTBEemtIcd2SvHzpA" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_yYWPsGTBEemtIcd2SvHzpA" label="%trimmedwindow.label.eclipseSDK" x="0" y="0" width="1024" height="768">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="isRestored" value="true"/>
@@ -72,8 +72,9 @@
           <tags>persp.newWizSC:org.eclipse.m2e.core.wizards.Maven2ProjectWizard</tags>
           <tags>persp.showIn:org.eclipse.tm.terminal.view.ui.TerminalsView</tags>
           <tags>persp.actionSet:org.eclipse.wst.ws.explorer.explorer</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_ynWVAWTBEemtIcd2SvHzpA" selectedElement="_ynWVB2TBEemtIcd2SvHzpA" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_ynWVAWTBEemtIcd2SvHzpA" selectedElement="_ynWVAmTBEemtIcd2SvHzpA" horizontal="true">
             <children xsi:type="basic:PartStack" xmi:id="_ynWVAmTBEemtIcd2SvHzpA" elementId="topLeft" containerData="2500" selectedElement="_ynWVA2TBEemtIcd2SvHzpA">
+              <tags>active</tags>
               <children xsi:type="advanced:Placeholder" xmi:id="_ynWVA2TBEemtIcd2SvHzpA" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_ym0wkGTBEemtIcd2SvHzpA"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_ynWVBGTBEemtIcd2SvHzpA" elementId="org.eclipse.ui.views.ResourceNavigator" toBeRendered="false" ref="_ym1XoGTBEemtIcd2SvHzpA"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_ynWVBWTBEemtIcd2SvHzpA" elementId="org.eclipse.jdt.ui.TypeHierarchy" toBeRendered="false" ref="_ym1XoWTBEemtIcd2SvHzpA"/>
@@ -88,7 +89,6 @@
                 </children>
               </children>
               <children xsi:type="basic:PartStack" xmi:id="_ynWVDWTBEemtIcd2SvHzpA" elementId="bottomRight" containerData="3000" selectedElement="_ynWVFWTBEemtIcd2SvHzpA">
-                <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_ynWVDmTBEemtIcd2SvHzpA" elementId="org.eclipse.ui.views.AllMarkersView" ref="_ynT4wWTBEemtIcd2SvHzpA"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_ynWVD2TBEemtIcd2SvHzpA" elementId="org.eclipse.ui.views.PropertySheet" ref="_ynT4wmTBEemtIcd2SvHzpA"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_ynWVEGTBEemtIcd2SvHzpA" elementId="org.eclipse.wst.server.ui.ServersView" ref="_ynUf0GTBEemtIcd2SvHzpA"/>
@@ -133,6 +133,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; currentWorkingSetName=&quot;Aggregate for window 1555912764542&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;0&quot;/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_yn1dMGTBEemtIcd2SvHzpA" elementId="org.eclipse.ui.navigator.ProjectExplorer">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -189,8 +191,6 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
-      <tags>active</tags>
-      <tags>activeOnClose</tags>
       <menus xmi:id="_y26bAGTBEemtIcd2SvHzpA" elementId="org.eclipse.ui.console.ConsoleView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -230,7 +230,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ygGdgGTBEemtIcd2SvHzpA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_xlrxwGTDEemX4q6eMZ5zSQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_yLth42TBEemtIcd2SvHzpA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_gglqgGTuEembSLdOxUJ_IQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_yLth42TBEemtIcd2SvHzpA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ygGdgWTBEemtIcd2SvHzpA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -263,7 +263,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ygHroGTBEemtIcd2SvHzpA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_xluOAGTDEemX4q6eMZ5zSQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_yLs652TBEemtIcd2SvHzpA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ggot0GTuEembSLdOxUJ_IQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_yLs652TBEemtIcd2SvHzpA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ygHroWTBEemtIcd2SvHzpA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
