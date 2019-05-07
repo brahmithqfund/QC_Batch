@@ -4,103 +4,16 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <include name="Ratikanta_LOC"/>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <include name="Jyothi"/>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <include name="Ratikanta_NEOD"/>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <include name="NonEOD1"/>
-=======
-<<<<<<< HEAD
-        <include name="EOD1"/>
->>>>>>> brahmith1.1
-=======
-        <include name="Anoop_EOD2"/>
->>>>>>> anoop1.1
->>>>>>> f96b7d09c18261a556e71ad66742e2079a8ac046
-=======
-        <include name="Jyothi"/>
->>>>>>> jyothi1.2
->>>>>>> 26f8126931b7afc696e5ebd31895ac4dfa2dd77b
-=======
         <include name="EOD2"/>
->>>>>>> brahmith1.1
-=======
-        <include name="Anoop_EOD2"/>
->>>>>>> anoop1.1
->>>>>>> bd07c6d5205653a8caa48fad7384faa0a833d949
-=======
-        <include name="Anoop_EOD4"/>
->>>>>>> anoop1.1
-=======
-        <include name="EOD"/>
-        <include name="EOD2"/>
->>>>>>> brahmith1.1
->>>>>>> ed2c491bd27e4295563c266a26fe8e49e10943ef
-=======
-        <include name="Anoop_EOD1"/>
->>>>>>> anoop1.1
-=======
-        <include name="EOD"/>
-        <include name="EOD2"/>
->>>>>>> janaki1.2
-=======
-        <include name="Anoop_EOD31"/>
->>>>>>> anoop1.1
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> anoop1.1
           <include name="getResult"/>
-          <include name="setup"/>
-          <include name="PaymentDepositEODReDeposit"/>
-          <include name="killProcess"/>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> anoop1.1
-          <include name="getResult"/>
-          <include name="setup"/>
-          <include name="DepositAndEOD"/>
-          <include name="DrawAndEOD"/>
-          <include name="killProcess"/>
-<<<<<<< HEAD
->>>>>>> brahmith1.1
->>>>>>> ed2c491bd27e4295563c266a26fe8e49e10943ef
-=======
->>>>>>> anoop1.1
-=======
-          <include name="getResult"/>
-          <include name="LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn"/>
           <include name="setup"/>
           <include name="LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn"/>
           <include name="killProcess"/>
->>>>>>> janaki1.2
-=======
->>>>>>> anoop1.1
         </methods>
       </class> <!-- tests.QCStore -->
     </classes>

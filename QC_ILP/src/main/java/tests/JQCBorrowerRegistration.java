@@ -77,7 +77,8 @@ public class JQCBorrowerRegistration extends QCStore {
 				       String Misc_PhotoIDType = TestData.getCellData(sheetName,"Misc_PhotoIDType",row);
 				       String BorrDOB = TestData.getCellData(sheetName,"Misc_DOB",row);
 				       String Income_IncomeType = TestData.getCellData(sheetName,"Income_IncomeType",row);
-				       String Income_Employer = TestData.getCellData(sheetName,"Income_Employer",row);
+				       //String Income_Employer = TestData.getCellData(sheetName,"Income_Employer",row);
+				       String Income_Employer ="Employer";
 				       String Income_WorkPhone = TestData.getCellData(sheetName,"Income_WorkPhone",row);
 				       String Income_NetIncomeAmt = TestData.getCellData(sheetName,"Income_NetIncomeAmt",row);
 				       String Income_GrossIncome = TestData.getCellData(sheetName,"Income_GrossIncome",row);

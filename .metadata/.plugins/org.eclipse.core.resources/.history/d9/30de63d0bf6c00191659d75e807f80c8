@@ -1,0 +1,31 @@
+package tests;
+
+
+
+
+
+import java.net.URL;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+import com.relevantcodes.extentreports.LogStatus;
+
+
+public class CSRLoginLogout extends LendNation
+{
+	public static void login(String SSN,String AppURL) throws Exception
+	{
+		String sheetName="Login";
+		int lastrow=TestData.getLastRow("Login");
+			
+}
+		
+}
+
+

@@ -35,8 +35,10 @@ public class JQCCSRLoginLogout extends QCStore
 					if(SSN.equals(RegSSN))
 					{	
 				
-						String csr_url = TestData.getCellData(sheetName,"AppURL",row);
-
+						//String csr_url = TestData.getCellData(sheetName,"AppURL",row);
+						
+						String csr_url =Jprop.getProperty("csr_url");
+						
 						String username = TestData.getCellData(sheetName,"UserName",row);
 						System.out.println("ÜN"+username);
 						String password = TestData.getCellData(sheetName,"Password",row);
@@ -44,7 +46,7 @@ public class JQCCSRLoginLogout extends QCStore
 						String store_id = TestData.getCellData(sheetName,"StoreID",row);
 						System.out.println("St"+store_id);
 						Thread.sleep(4000);
-						test.log(LogStatus.INFO, "Opened the CSR URL " +AppURL);
+						test.log(LogStatus.INFO, "Opened the CSR URL " +csr_url);
 						test.log(LogStatus.INFO, "CSR Application is launched " );
 						if(prop.getProperty("login_method").equalsIgnoreCase("local"))
 						{

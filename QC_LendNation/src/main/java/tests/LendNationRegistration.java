@@ -5,9 +5,11 @@ import static org.testng.Assert.assertEquals;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -38,8 +40,14 @@ public class LendNationRegistration extends LendNation{
 		  String FileName= prop.getProperty("file_name");
 			
 		ExcelNew TestData = new ExcelNew(System.getProperty("user.dir")+prop.getProperty("Test_data_sheet_path")+FileName);  		 
-		int lastrow=TestData.getLastRow("Personal Information");
-		String sheetName="Personal Information";
+		int lastrow=TestData.getLastRow("Registration");
+		String sheetName="Registration";
+		
+		driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		//WebDriverWait wait = new WebDriverWait(driver, 5000);
+		
 		WebDriverWait wait = new WebDriverWait(driver, 30000);
 		for(int row=2;row<=lastrow;row++)
 		{		
@@ -78,49 +86,30 @@ public class LendNationRegistration extends LendNation{
 		  test.log(LogStatus.PASS, "Opened Lend Natino URL  "+AppURL);
 
 		  Thread.sleep(2000);
-		  
-		//  driver.findElement(locator(prop.getProperty("Automation_link"))).click();
-		  driver.findElement(locator(prop.getProperty("QTP_link"))).click();
-		  
-		  test.log(LogStatus.PASS, "Clicked on Automation link ");
+		
+		  /*driver.findElement(By.xpath("/html/body/div/div[4]/div/a")).click();	
+		  test.log(LogStatus.PASS, "Clicked on Pre-Prod link ");*/
 
-		  Thread.sleep(4000);
-		  try{
-			 // 
+		  driver.findElement(By.linkText("QTP")).click();	
+		  test.log(LogStatus.PASS, "Clicked on QTP link ");
+
+		  Thread.sleep(2000);
+
 			  
-			  new Select(driver.findElement(locator(prop.getProperty("state_selection")))).selectByVisibleText(state);
+			  new Select(driver.findElement(By.xpath("//select[starts-with(@class,'form-control')]"))).selectByVisibleText(state);
 			  test.log(LogStatus.PASS, "Selected the State : "+state);
 			
 			  
-			  driver.findElement(locator(prop.getProperty("continue_button"))).click();
+		 driver.findElement(locator(prop.getProperty("continue_button"))).click();
 			  test.log(LogStatus.PASS, "Clicked on Continue button ");
 
-		  }
-		  catch(Exception e)
-		  {
-			  System.out.println("under catch");
-			  //driver.findElement(By.xpath("//div[id='StateConfirmation']/div/div/div/div[2]/select")).click();
-		  }
-		 
-		  
-		  
-		  //new Select(driver.findElement(By.xpath("//select[@class='form-control valid']"))).selectByVisibleText(state);
 		  Thread.sleep(4000);
-		 // test.log(LogStatus.INFO, "Lend Nation application navigated to Registration page",ExtentColor.GREEN);
-
-		  
-
+		
 		  driver.findElement(locator(prop.getProperty("start_new_loan_button"))).click();
 		  test.log(LogStatus.PASS, "Clicked on Start New Loan button");
-		  //test.log(LogStatus.INFO, "Lend Nation application navigated to Registration page" );
+
 		test.log(LogStatus.INFO, "Lend Nation application navigated to Registration page");
 
-		  //test.log(LogStatus.INFO, "Lend Nation application navigated to Registration page", ExtentColor.GREEN));
-		//test.log(LogStatus.PASS,(Throwable) "Test Case Passed is passTest", ExtentColor.GREEN));
-
-
-
-		  //driver.findElement(By.linkText("START LOAN APPLICATION ")).click();
 		  Thread.sleep(2000);
 
 		  driver.findElement(locator(prop.getProperty("email_field"))).sendKeys(email);
@@ -144,16 +133,7 @@ public class LendNationRegistration extends LendNation{
 		  driver.findElement(locator(prop.getProperty("SSN_third_field"))).sendKeys(SSN3);
 		  test.log(LogStatus.PASS, "Entered SSN Number : "+SSN);
 
-		  //new Select(driver.findElement(By.id("question0"))).selectByIndex(1);
-
-		  /*
-		 try{
-			 new Select(driver.findElement(By.id("question0"))).selectByVisibleText(security_question);
-		 }
-		  catch(Exception e){
-			  new Select(driver.findElement(By.id("question0"))).selectByIndex(1);
-		  }
-	*/
+		 
 		  int i_security_question_a=Integer.parseInt(security_question_a);
 		  new Select(driver.findElement(locator(prop.getProperty("question_first_field")))).selectByIndex(i_security_question_a);
 		  test.log(LogStatus.PASS, "Selected the first question  ");
@@ -175,8 +155,7 @@ public class LendNationRegistration extends LendNation{
 		  driver.findElement(locator(prop.getProperty("answer_third_field"))).sendKeys(security_question_answer_c);
 		  test.log(LogStatus.PASS, "Entered the third question answer  as "+ security_question_answer_c);
 		  Thread.sleep(3000);
-		 // driver.findElement(By.xpath("//span[@id='recaptcha-anchor' and @tabindex='0']/div[5]")).click();  // Added on 29-01-2019
-		 // test.log(LogStatus.PASS, "Clicked on Captha button ");
+		 
 		  Thread.sleep(3000);
 		  driver.findElement(locator(prop.getProperty("submit_button"))).click();
 		  test.log(LogStatus.PASS, "Clicked on Submit button ");
@@ -184,19 +163,9 @@ public class LendNationRegistration extends LendNation{
 		
 
 		  Thread.sleep(30000);
-		 // wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(locator(prop.getProperty("firstname_field")))));
-		/*  if( driver.findElement(locator(prop.getProperty("firstname_field"))).isEnabled())
-		  {
-				//test.log(LogStatus.PASS, "Registered Successfully with SSN : " +SSN);	
-				test.log(LogStatus.PASS, "Registered Successfully with SSN : " +SSN,);
-
-			 	}
-				else
-				{
-				test.log(LogStatus.FAIL, "Registered is not Successfull with SSN  : " +SSN);
-				}*/
+		 
 			test.log(LogStatus.PASS, "Registered Successfully with SSN : " +SSN);
-
+			test.log(LogStatus.PASS, "********************************************* ");
 		  
 			break;
 			}
@@ -204,6 +173,7 @@ public class LendNationRegistration extends LendNation{
 	  }
 		 catch(Exception e)
 		  {
+			 System.out.println("Exception"+e);
 				test.log(LogStatus.ERROR, "registration Information is not successfully filled with SSN : " +SSN);
 				test.log(LogStatus.ERROR, "Error message  " +e);
 				  String screenshotPath = getScreenhot(driver, "registration");

@@ -141,9 +141,10 @@ public class JQCCSRWOVoid extends QCStore {
 					} catch (NoAlertPresentException e) {
 						
 					}
-					driver.findElement(By.name("checkno")).click();
-					 test.log(LogStatus.PASS, "Clicked on No");
+					driver.findElement(By.name("checkyes")).click();
+					 test.log(LogStatus.PASS, "Clicked on Yes");
 					 test.log(LogStatus.PASS, "Void Completed Successfully");
+					 test.log(LogStatus.PASS, "*******************************");
 					driver.close();
 					
 					// ------------------------------------

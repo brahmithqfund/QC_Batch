@@ -17,6 +17,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.poi.util.SystemOutLogger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -89,31 +90,13 @@ public class LendNation {
 	public static String loan_number;
 	
 	
-	//static ExtentHtmlReporter htmlReporter;
-	//static ExtentReports extent;
-	//ExtentTest logger;
-	
-	
-	
-	
-	//Extent 3.0.3 logging
-	//ExtentHtmlReporter htmlReporter;
-	//ExtentReports extent;
-	//ExtentTest logger;
-
-	
   @Test(priority=0)
   public static void LendNation() throws Exception {
 	  
-	  
+	 try{ 
 	  String FileName= prop.getProperty("file_name");
 		ExcelNew TestData = new ExcelNew(System.getProperty("user.dir")+prop.getProperty("Test_data_sheet_path")+FileName);  
-	  test=reports.startTest("Lend Nation Smoke_testing","Lend Nation Application test report");
-	  //test.log(LogStatus.INFO, "Registration of Lend Nation has started ");
-	 // test.log(LogStatus.INFO, MarkupHelper.createLabel("Registration of Lend Nation has started", ExtentColor.BLUE));
-	  
-	  //String FileName= "Registration_Lend_Nation.xls";
-		//Excel TestData = new Excel(System.getProperty("user.dir")+"/TestData/LendNation/"+FileName);  		 
+	  test=reports.startTest("Lend Nation Smoke_testing","Lend Nation Application test report");		 
 		int lastrow=TestData.getLastRow("Start");
 		String sheetName="Start";
 		//int lastrow=TestData.getLastRow("Borrower");
@@ -123,40 +106,37 @@ public class LendNation {
 			
 			
 			String RunFlag = TestData.getCellData(sheetName,"Run",row);
-			//System.out.println(RunFlag);
 		if(RunFlag.equals("Y"))
 		{	
-			//driver.get(appUrl);
-			//test.log(LogStatus.INFO, "Application is launched");
-			//driver.manage().window().maximize();
 				String AppURL = TestData.getCellData(sheetName,"AppURL",row); 
 				String SSN = TestData.getCellData(sheetName,"SSN",row); 
 				
 				System.out.println(AppURL);
 				
-				for(int i=0; i<=10; i++)
-				{
-					LendNationLogin.login();
-					Thread.sleep(2000);
-					test.log(LogStatus.PASS, "Page refreshed");
-					
-				}
+				loan_number="10658548";
 				
+				System.out.println(loan_number);
 				
-				/*System.out.println(loan_number);
-				
-				LendNationRegistration.registration(SSN, AppURL);
+				/*LendNationRegistration.registration(SSN, AppURL);
 				LendNationPersonalInformation.personalInformation(SSN, AppURL);
-			   LendNationFinancialInformation.financialInformation(SSN, AppURL);
-			  LendNationRepaymentInformation.repaymentInformation(SSN, AppURL);
-			LendNationSubmitApplication.submitApplication(SSN, AppURL);
-			 LendNationSignContract.signContract(SSN, AppURL);
-			LendNationCSR.lendNationCSR(SSN, AppURL, loan_number);*/
-				
+			    LendNationFinancialInformation.financialInformation(SSN, AppURL);
+			    LendNationRepaymentInformation.repaymentInformation(SSN, AppURL);
+			    LendNationLoanDecision.loandecision(SSN, AppURL);*/
+			    //LoginLogout.onlineLogout(SSN, AppURL);
+			    
+			    //LendNationCSR.lendNationCSR(SSN, AppURL);
+			    LoginLogout.onlineLogin(SSN, AppURL);
+			    LendNationSignContract.signContract(SSN, AppURL);
+			    //LoginLogout.onlineLogout(SSN, AppURL);
 				break;
+		
 				
   }
   }
+	 }catch(Exception e){
+			
+		System.out.println(e);	
+		}
   }
   
  
@@ -167,26 +147,24 @@ public class LendNation {
 		//Date D = new Date();		
 		String filename="LendNation_"+timestamp+".html";
 		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/chromedriver.exe");
+		
 		System.setProperty("webdriver.ie.driver",System.getProperty("user.dir")+"/IEDriverServer.exe");
 		System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"/geckodriver.exe");
 
 		//driver = new InternetExplorerDriver();	
 		//driver = new FirefoxDriver();	
-		driver=new ChromeDriver();
+		/*driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		WebDriverWait wait = new WebDriverWait(driver, 5000);	
+		WebDriverWait wait = new WebDriverWait(driver, 5000);*/	
 		
-		//prop=prop.getProperty("user.dir")+"/Tests/Objects.properties";
+	
 		BufferedReader reader;
 		String propertyFilePath=("user.dir")+"/Objects.properties";
 		
-		//InputStream input = new FileInputStream("D:/QC_Workspace/AA_Automation/src/Tests/Objects.properties");
-		//prop.load(input);
-		//System.out.println(prop.getProperty("LendNation_URL"));
 		
 		try {
-			//reader = new BufferedReader(new FileReader("D:/QC_Workspace/AA_Automation/src/Tests/Objects.properties"));
+			
 			reader = new BufferedReader(new FileReader("C:/QC_Batch/QC_LendNation/src/test/java/tests/Objects.properties"));
 
 			prop = new Properties();

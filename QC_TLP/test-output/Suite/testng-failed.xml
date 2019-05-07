@@ -4,15 +4,15 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="Janaki_EOD_set2"/>
+        <include name="Janaki"/>
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
-          <include name="JQC_TLP_GraceDays_Deposit_EOD_Txn"/>
           <include name="getResult"/>
           <include name="setup"/>
+          <include name="JQC_DefaultPayment_Void_Txn_Testdata"/>
           <include name="endReport"/>
           <include name="killProcess"/>
         </methods>
