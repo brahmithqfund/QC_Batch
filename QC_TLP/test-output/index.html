@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods,   9 passed</span>
+                    <span class="method-stats">9 methods, 1 failed,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="JQC_DefaultPayment_Void_Txn_Testdata">JQC_DefaultPayment_Void_Txn_Testdata</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,11 +117,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="JQC_DefaultPayment_Txn_Testdata">JQC_DefaultPayment_Txn_Testdata</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.QCStore" hash-for-method="JQC_DefaultPayment_Void_Txn_Testdata">JQC_DefaultPayment_Void_Txn_Testdata</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -157,6 +166,26 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.QCStore</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="JQC_DefaultPayment_Void_Txn_Testdata">
+                  </a> <!-- JQC_DefaultPayment_Void_Txn_Testdata -->
+                  <span class="method-name">JQC_DefaultPayment_Void_Txn_Testdata</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at tests.JQCCSRNewLoan.newLoan(JQCCSRNewLoan.java:268)
+	at tests.QCStore.JQC_DefaultPayment_Void_Txn_Testdata(QCStore.java:1270)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -168,13 +197,6 @@
                   <a name="JQC_DefaultPayment_Txn_Testdata">
                   </a> <!-- JQC_DefaultPayment_Txn_Testdata -->
                   <span class="method-name">JQC_DefaultPayment_Txn_Testdata</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="JQC_DefaultPayment_Void_Txn_Testdata">
-                  </a> <!-- JQC_DefaultPayment_Void_Txn_Testdata -->
-                  <span class="method-name">JQC_DefaultPayment_Void_Txn_Testdata</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -329,44 +351,44 @@ data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'JQC_DefaultPayment_Void_Txn_Testdata')
 data.setCell(0, 2, 'tests.QCStore')
-data.setCell(0, 3, 516129);
+data.setCell(0, 3, 422248);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'JQC_DefaultPayment_Txn_Testdata')
+data.setCell(1, 1, 'JQC_TLP_GraceDays_Deposit_MidDay_Txn')
 data.setCell(1, 2, 'tests.QCStore')
-data.setCell(1, 3, 433492);
+data.setCell(1, 3, 384970);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'JQC_TLP_Deposit_Menu_Txn')
+data.setCell(2, 1, 'JQC_DefaultPayment_Txn_Testdata')
 data.setCell(2, 2, 'tests.QCStore')
-data.setCell(2, 3, 423000);
+data.setCell(2, 3, 383171);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'JQC_TLP_GraceDays_Deposit_MidDay_Txn')
+data.setCell(3, 1, 'JQC_TLP_GraceDays_Deposit_Menu_Txn')
 data.setCell(3, 2, 'tests.QCStore')
-data.setCell(3, 3, 422421);
+data.setCell(3, 3, 373321);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'JQC_TLP_GraceDays_Deposit_Menu_Txn')
+data.setCell(4, 1, 'JQC_TLP_GraceDays_Deposit_dropdown_Txn')
 data.setCell(4, 2, 'tests.QCStore')
-data.setCell(4, 3, 416166);
+data.setCell(4, 3, 369115);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'JQC_TLP_GraceDays_Deposit_dropdown_Txn')
+data.setCell(5, 1, 'JQC_TLP_Deposit_Menu_Txn')
 data.setCell(5, 2, 'tests.QCStore')
-data.setCell(5, 3, 402809);
+data.setCell(5, 3, 295933);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'JQC_TLP_Deposit_MidDay_Txn')
 data.setCell(6, 2, 'tests.QCStore')
-data.setCell(6, 3, 347174);
+data.setCell(6, 3, 295862);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'JQC_TLP_Deposit_dropdown_Txn')
 data.setCell(7, 2, 'tests.QCStore')
-data.setCell(7, 3, 317764);
+data.setCell(7, 3, 285268);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'JQC_TLP_Deceased_Txn')
 data.setCell(8, 2, 'tests.QCStore')
-data.setCell(8, 3, 302277);
+data.setCell(8, 3, 270458);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 59 minutes</span>
+              <span class="suite-total-time">Total running time: 51 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -401,9 +423,9 @@ return data;
                 <br/>
                 <span class="ignored-method-name">newLoan</span>
                 <br/>
-                <span class="ignored-method-name">QC_PayAnyotherAmount_Txn</span>
-                <br/>
                 <span class="ignored-method-name">TLP_RefinanceStepSame</span>
+                <br/>
+                <span class="ignored-method-name">QC_PayAnyotherAmount_Txn</span>
                 <br/>
                 <span class="ignored-method-name">QC_NewLoan_Void_Txn</span>
                 <br/>
@@ -429,9 +451,9 @@ return data;
                 <br/>
                 <span class="ignored-method-name">JQC_TLP_GraceDays_Deposit_EOD_Txn</span>
                 <br/>
-                <span class="ignored-method-name">QC_Installmentpayment_Void_Txn</span>
-                <br/>
                 <span class="ignored-method-name">TLP_RefinanceStepDownVoid</span>
+                <br/>
+                <span class="ignored-method-name">QC_Installmentpayment_Void_Txn</span>
                 <br/>
                 <span class="ignored-method-name">QC_TLP_Writeoff_Recovery_Void_Txn</span>
                 <br/>
@@ -456,147 +478,149 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">killProcess</span>
-                <span class="method-start">78 ms</span>
+                <span class="method-start">84 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">JQC_TLP_Deposit_MidDay_Txn</span>
-                <span class="method-start">5086 ms</span>
+                <span class="method-start">5084 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">352260 ms</span>
+                <span class="method-start">300948 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=JQC_TLP_Deposit_MidDay_Txn status=SUCCESS method=QCStore.JQC_TLP_Deposit_MidDay_Txn...)</span>
-                <span class="method-start">352260 ms</span>
+                <span class="method-start">300948 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">killProcess</span>
-                <span class="method-start">352479 ms</span>
+                <span class="method-start">301120 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">JQC_TLP_GraceDays_Deposit_MidDay_Txn</span>
-                <span class="method-start">357487 ms</span>
+                <span class="method-start">306120 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">779908 ms</span>
+                <span class="method-start">691092 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=JQC_TLP_GraceDays_Deposit_MidDay_Txn status=SUCCESS method=QCStore.JQC_TLP_GraceDay...)</span>
-                <span class="method-start">779908 ms</span>
+                <span class="method-start">691092 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">killProcess</span>
-                <span class="method-start">779940 ms</span>
+                <span class="method-start">691152 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">JQC_TLP_GraceDays_Deposit_Menu_Txn</span>
-                <span class="method-start">784947 ms</span>
+                <span class="method-start">696152 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">1201113 ms</span>
+                <span class="method-start">1069474 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=JQC_TLP_GraceDays_Deposit_Menu_Txn status=SUCCESS method=QCStore.JQC_TLP_GraceDays_...)</span>
-                <span class="method-start">1201113 ms</span>
+                <span class="method-start">1069474 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">killProcess</span>
-                <span class="method-start">1201145 ms</span>
+                <span class="method-start">1069507 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">JQC_TLP_Deposit_dropdown_Txn</span>
-                <span class="method-start">1206153 ms</span>
+                <span class="method-start">1074507 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">1523917 ms</span>
+                <span class="method-start">1359776 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=JQC_TLP_Deposit_dropdown_Txn status=SUCCESS method=QCStore.JQC_TLP_Deposit_dropdown...)</span>
-                <span class="method-start">1523917 ms</span>
+                <span class="method-start">1359776 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">killProcess</span>
-                <span class="method-start">1523949 ms</span>
+                <span class="method-start">1359808 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">JQC_TLP_Deposit_Menu_Txn</span>
-                <span class="method-start">1528956 ms</span>
+                <span class="method-start">1364808 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">1951956 ms</span>
+                <span class="method-start">1660743 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=JQC_TLP_Deposit_Menu_Txn status=SUCCESS method=QCStore.JQC_TLP_Deposit_Menu_Txn()[p...)</span>
-                <span class="method-start">1951956 ms</span>
+                <span class="method-start">1660743 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">killProcess</span>
-                <span class="method-start">1951971 ms</span>
+                <span class="method-start">1660799 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">JQC_TLP_GraceDays_Deposit_dropdown_Txn</span>
-                <span class="method-start">1956977 ms</span>
+                <span class="method-start">1665799 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">2359786 ms</span>
+                <span class="method-start">2034919 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=JQC_TLP_GraceDays_Deposit_dropdown_Txn status=SUCCESS method=QCStore.JQC_TLP_GraceD...)</span>
-                <span class="method-start">2359786 ms</span>
+                <span class="method-start">2034919 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">killProcess</span>
-                <span class="method-start">2359834 ms</span>
+                <span class="method-start">2034956 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">JQC_TLP_Deceased_Txn</span>
-                <span class="method-start">2364842 ms</span>
+                <span class="method-start">2039956 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">2667119 ms</span>
+                <span class="method-start">2310415 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=JQC_TLP_Deceased_Txn status=SUCCESS method=QCStore.JQC_TLP_Deceased_Txn()[pri:206, ...)</span>
-                <span class="method-start">2667119 ms</span>
+                <span class="method-start">2310415 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">killProcess</span>
-                <span class="method-start">2667151 ms</span>
+                <span class="method-start">2310444 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">JQC_DefaultPayment_Txn_Testdata</span>
-                <span class="method-start">2672159 ms</span>
+                <span class="method-start">2315444 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">3105651 ms</span>
+                <span class="method-start">2698616 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=JQC_DefaultPayment_Txn_Testdata status=SUCCESS method=QCStore.JQC_DefaultPayment_Tx...)</span>
-                <span class="method-start">3105651 ms</span>
+                <span class="method-start">2698616 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">killProcess</span>
-                <span class="method-start">3105699 ms</span>
+                <span class="method-start">2698645 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">JQC_DefaultPayment_Void_Txn_Testdata</span>
-                <span class="method-start">3110706 ms</span>
+                <span class="method-start">2703645 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">3626835 ms</span>
+                <span class="method-start">3125894 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=JQC_DefaultPayment_Void_Txn_Testdata status=SUCCESS method=QCStore.JQC_DefaultPayme...)</span>
-                <span class="method-start">3626835 ms</span>
+                <span class="method-name">getResult([TestResult name=JQC_DefaultPayment_Void_Txn_Testdata status=FAILURE method=QCStore.JQC_DefaultPayme...)</span>
+                <span class="method-start">3125894 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

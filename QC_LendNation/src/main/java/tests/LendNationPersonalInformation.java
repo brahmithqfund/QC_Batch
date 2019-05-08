@@ -1,5 +1,6 @@
 package tests;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -24,7 +25,7 @@ public class LendNationPersonalInformation extends LendNation{
 			ExcelNew TestData = new ExcelNew(System.getProperty("user.dir")+prop.getProperty("Test_data_sheet_path")+FileName);  		 
 			int lastrow=TestData.getLastRow("Personal Information");
 			String sheetName="Personal Information";
-			WebDriverWait wait = new WebDriverWait(driver, 30000);
+			WebDriverWait wait = new WebDriverWait(driver, 15000);
 			
 			
 			for(int row=2;row<=lastrow;row++)
@@ -77,12 +78,23 @@ public class LendNationPersonalInformation extends LendNation{
 				String ReferenceLastNameB = TestData.getCellData(sheetName,"ReferenceLastNameB",row);
 				String RelationB = TestData.getCellData(sheetName,"RelationB",row);
 				String PhoneB = TestData.getCellData(sheetName,"PhoneB",row);
+				
+				String ProductType = TestData.getCellData(sheetName,"ProductType",row);
+				String Marital_Status = TestData.getCellData(sheetName,"Marital_Status",row);
+				String MFName = TestData.getCellData(sheetName,"MFName",row);
+				String MMName = TestData.getCellData(sheetName,"MMName",row);
+				String MLName = TestData.getCellData(sheetName,"MLName",row);
+				String Maddress = TestData.getCellData(sheetName,"Maddress",row);
+				String Mcity = TestData.getCellData(sheetName,"Mcity",row);
+				String Mstate = TestData.getCellData(sheetName,"Mstate",row);
+				String Mpostalcode = TestData.getCellData(sheetName,"Mpostalcode",row);
+				String Mapt = TestData.getCellData(sheetName,"Mapt",row);
 
-				//test.log(LogStatus.INFO, "Lend Nation application navigated to Personal Information page  ");
+				
 				test.log(LogStatus.INFO, "Lend Nation application navigated to Personal Information page");
 
-Thread.sleep(5000);
-		  driver.findElement(locator(prop.getProperty("firstname_field"))).sendKeys(firstname);
+			Thread.sleep(3000);
+			driver.findElement(locator(prop.getProperty("firstname_field"))).sendKeys(firstname);
 			test.log(LogStatus.PASS, "Entered first name  :  " + firstname);
 
 		  driver.findElement(locator(prop.getProperty("middlename_field"))).sendKeys(middlename);
@@ -150,7 +162,7 @@ Thread.sleep(5000);
 			test.log(LogStatus.PASS, "Entered identification  :"+ Identification);
 
 
-	//entering id number
+		  //entering id number
 		  driver.findElement(locator(prop.getProperty("identification_no"))).sendKeys(IDNumber);
 			test.log(LogStatus.PASS, "Entered ID No as "+ IDNumber);
 
@@ -158,8 +170,43 @@ Thread.sleep(5000);
 		  driver.findElement(locator(prop.getProperty("doe_day_field"))).sendKeys(DOE2);
 		  driver.findElement(locator(prop.getProperty("doe_year_field"))).sendKeys(DOE3);
 			test.log(LogStatus.PASS, "Entered Expiry date as  "+ date_of_exp);
-
-	 //1st Reference details entering 
+			
+			//Marital Status
+			if(ProductType.equalsIgnoreCase("ILP")){
+				
+				  new Select(driver.findElement(By.id("maritalStatus"))).selectByVisibleText(Marital_Status);
+				  test.log(LogStatus.PASS, "Selected Marital_Status  ");
+				  
+				  //spouse's information 
+				  	driver.findElement(By.id("psFirstName")).sendKeys(MFName);
+					test.log(LogStatus.PASS, "Entered Spouses first name as  "+ MFName);
+					
+					driver.findElement(By.id("psMiddleInitial")).sendKeys(MMName);
+					test.log(LogStatus.PASS, "Entered Spouses middle name as  "+ MMName);
+					
+					driver.findElement(By.id("psLastName")).sendKeys(MLName);
+					test.log(LogStatus.PASS, "Entered Spouses last name as  "+ MLName);
+					
+					driver.findElement(By.id("psAddress")).sendKeys(Maddress);
+					test.log(LogStatus.PASS, "Entered Spouses address as  "+ Maddress);
+					
+					driver.findElement(By.id("psAptNo")).sendKeys(Mapt);
+					test.log(LogStatus.PASS, "Entered Spouses apt as  "+ Mapt);
+					
+					driver.findElement(By.id("psCity")).sendKeys(Mcity);
+					test.log(LogStatus.PASS, "Entered Spouses city as  "+ Mcity);
+					
+					new Select(driver.findElement(By.id("psStateName"))).selectByVisibleText(Mstate);
+					test.log(LogStatus.PASS, "Entered Spouses state as  "+ Mstate);
+					
+					driver.findElement(By.id("psPostalCode")).clear();
+					driver.findElement(By.id("psPostalCode")).sendKeys(Mpostalcode);
+					test.log(LogStatus.PASS, "Entered Spouses zip code as  "+ Mpostalcode);
+				  
+				   
+			}
+		
+			//1st Reference details entering 
 		  
 		  driver.findElement(locator(prop.getProperty("first_reference_name"))).sendKeys(ReferenceFirstNameA);
 			test.log(LogStatus.PASS, "Entered first reference name as  "+ ReferenceFirstNameA);
@@ -190,15 +237,6 @@ Thread.sleep(5000);
 			Thread.sleep(3000);
 			
 					
-			//js.executeScript("window.scrollBy(0,1000)");
-
-			//System.out.println("start scroll");
-			//test.log(LogStatus.PASS, "scrolled under the document  ");
-
-			//driver.findElement(By.id("scrollDiv1")).click();
-			//driver.findElement(By.id("scrollDiv1")).sendKeys(Keys.ARROW_DOWN);
-			//driver.findElement(By.id("scrollDiv1")).sendKeys(Keys.ARROW_DOWN);
-
 			driver.findElement(locator(prop.getProperty("first_scrolling_area"))).click();
 
 			//JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -284,11 +322,12 @@ Thread.sleep(5000);
 			  {
 					//test.log(LogStatus.PASS, "Personal Information Entered Successfully with SSN : " +SSN);
 					test.log(LogStatus.PASS, "Personal Information Entered Successfully with SSN : " +SSN);
+					test.log(LogStatus.PASS, "********************************************* ");
 
 				 	}
 					else
 					{
-					test.log(LogStatus.FAIL, "Personal Information is not entered Successfully with SSN : " +SSN);
+					test.log(LogStatus.FAIL, "Personal Information is not entered Successfully with SSN : " +SSN);					
 					}
 		  
 	 // break;

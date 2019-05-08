@@ -6,7 +6,7 @@
   <run>
 
   <!--  Brahmith scenarios   -->  
-    <include name="EOD"/>  
+    <!-- <include name="EOD"/>  --> 
    <include name="EOD2"/>
 
  <!-- <include name="1st Batch"/>-->
@@ -39,7 +39,7 @@
   <!--  Jyothi scenarios -->
 
     <!-- <include name="1st Batch"/> -->
-        <include name="Jyothi"/>
+       <!--  <include name="Jyothi"/> -->
 
 
   </run>

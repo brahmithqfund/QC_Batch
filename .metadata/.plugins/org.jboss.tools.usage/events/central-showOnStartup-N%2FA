@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 #Mon Apr 22 18:43:44 IST 2019
 l=true|false|N/A
 ct=central
 d=1555938824480
 c=7
+=======
+#Tue May 07 12:44:42 IST 2019
+l=true|false|N/A
+ct=central
+d=1557213282064
+c=0
+>>>>>>> janaki1.2Apr22Stable
 cmp=usage
 a=showOnStartup
 cl=N/A

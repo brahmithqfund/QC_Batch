@@ -20,23 +20,14 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class JQCCSRWriteOffRecovery extends QCStore {
 	public static void writeoffrecovery(String SSN, String AppURL) {
-		/*
-		 * int i; for (i = 0; i < 3; i++) {
-		 * driver.get("http://192.168.2.203/cc/login/index.jsp");
-		 */
+		
 		try {
-			// String FileName=
-			// Jprop.getProperty("QC_Store_NewLoan_file_name");
-
-			// ExcelNew TestData = new
-			// ExcelNew(System.getProperty("user.dir")+Jprop.getProperty("QC_Store_NewLoan_Test_data_sheet_path")+FileName+".xls");
 			int lastrow = TestData.getLastRow("Writeoff_Recovery");
 			String sheetName = "Writeoff_Recovery";
 
 			for (int row = 2; row <= lastrow; row++) {
 
-				// test.log(LogStatus.INFO, MarkupHelper.createLabel("CSR
-				// Application is launched", ExtentColor.BLUE));
+
 				String RegSSN = TestData.getCellData(sheetName, "SSN", row);
 				if (SSN.equals(RegSSN)) {
 					String UserName = TestData.getCellData(sheetName, "UserName", row);
@@ -49,8 +40,6 @@ public class JQCCSRWriteOffRecovery extends QCStore {
 					String TxnType = TestData.getCellData(sheetName, "TxnType", row);
 					String TenderType = TestData.getCellData(sheetName, "TenderType", row);
 
-					// String CountofDollarCoins =
-					// TestData.getCellData(sheetName,"CountofDollarCoins",row);
 
 					DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
 					String SSN1 = SSN.substring(0, 3);
@@ -58,12 +47,7 @@ public class JQCCSRWriteOffRecovery extends QCStore {
 					String SSN3 = SSN.substring(5, 9);
 
 					Thread.sleep(4000);
-					// test.log(LogStatus.INFO,
-					// MarkupHelper.createLabel("Age Store process is
-					// initiated", ExtentColor.BLUE));
-					// test.log(LogStatus.INFO, "Age Store process is
-					// initiated");
-
+					
 					test.log(LogStatus.INFO, "WriteOff Recovery Started");
 					driver.switchTo().defaultContent();
 
@@ -150,8 +134,7 @@ public class JQCCSRWriteOffRecovery extends QCStore {
 						// if alert present, accept and move on.
 
 					} catch (NoAlertPresentException e) {
-						// do what you normally would if you didn't have the
-						// alert.
+						
 					}
 					driver.findElement(By.name("checkno")).click();
 					 test.log(LogStatus.PASS, "Clicked on No");

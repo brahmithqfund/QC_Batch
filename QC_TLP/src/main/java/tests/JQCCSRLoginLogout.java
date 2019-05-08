@@ -49,9 +49,9 @@ public class JQCCSRLoginLogout extends QCStore
 					if(SSN.equals(RegSSN))
 					{	
 				
-						String csr_url = TestData.getCellData(sheetName,"AppURL",row);
+						//String csr_url = TestData.getCellData(sheetName,"AppURL",row);
+						String csr_url =Jprop.getProperty("csr_url");
 						
-						//String csr_url="https://qcuat.qfund.net/cc/demoIndex.do";
 						String username = TestData.getCellData(sheetName,"UserName",row);
 						System.out.println("ÜN"+username);
 						String password = TestData.getCellData(sheetName,"Password",row);
