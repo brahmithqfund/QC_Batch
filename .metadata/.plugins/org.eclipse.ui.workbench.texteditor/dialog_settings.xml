@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="first_scrolling_area" key="selection"/>
+		<item value="EOD2" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="EOD2"/>
+			<item value="Loan Nbr selected from List"/>
+			<item value="Janaki_WORecovery"/>
+			<item value="Janaki"/>
+			<item value="Deposit_MidDay"/>
+			<item value="QC_Deposit_MidDay"/>
 			<item value="//div[@id=&apos;aligner&apos;]"/>
 			<item value="first_scrolling_area"/>
-			<item value="wait"/>
-			<item value="LendNation_URL"/>
-			<item value="driver=new ChromeDriver();"/>
-			<item value="janaki"/>
-			<item value="csr_url"/>
-			<item value="Janaki_EOD_set2"/>
 		</list>
 		<list key="replacehistory">
 			<item value="@Test("/>
