@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <include name="Anoop1"/>
 =======
         <include name="EOD"/>
@@ -17,11 +18,15 @@
 =======
         <include name="Janaki1"/>
 >>>>>>> janaki1.2
+=======
+        <include name="1stBatch"/>
+>>>>>>> brahmith1.1
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <include name="getResult"/>
           <include name="setup"/>
@@ -44,6 +49,11 @@
           <include name="getResult"/>
           <include name="setup"/>
 >>>>>>> janaki1.2
+=======
+          <include name="QC_OpenLoan_NewLoan_Txn"/>
+          <include name="getResult"/>
+          <include name="setup"/>
+>>>>>>> brahmith1.1
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->

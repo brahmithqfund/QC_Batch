@@ -215,7 +215,7 @@ public static void logout(String SSN,String AppURL){
 
 				test.log(LogStatus.PASS, "Clicked on Submit button");
 				Thread.sleep(5000);
-				driver.get(csrloginpage);
+				//driver.get(csrloginpage);
 				Thread.sleep(3000);
 				break;
 

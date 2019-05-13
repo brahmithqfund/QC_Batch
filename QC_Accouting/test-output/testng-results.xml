@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
   <reporter-output>
   </reporter-output>
@@ -27,13 +28,119 @@
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=Reverse_and_Reallocation status=SUCCESS method=QCStore.Reverse_and_Reallocation()[pri:2, instance:tests.QCStore@370736d9] output={null}]]]>
+=======
+<testng-results skipped="0" failed="0" ignored="7" total="11" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="384023" started-at="2019-05-10T09:56:21Z" finished-at="2019-05-10T10:02:45Z">
+    <groups>
+      <group name="Brahmith1">
+        <method signature="QCStore.Payfrequency_Biweekly()[pri:13, instance:tests.QCStore@5f9d02cb]" name="Payfrequency_Biweekly" class="tests.QCStore"/>
+        <method signature="QCStore.Payfrequency_Monthly()[pri:14, instance:tests.QCStore@5f9d02cb]" name="Payfrequency_Monthly" class="tests.QCStore"/>
+        <method signature="QCStore.Payfrequency_Semi_monthly()[pri:14, instance:tests.QCStore@5f9d02cb]" name="Payfrequency_Semi_monthly" class="tests.QCStore"/>
+        <method signature="QCStore.Payfrequency_Weekly()[pri:14, instance:tests.QCStore@5f9d02cb]" name="Payfrequency_Weekly" class="tests.QCStore"/>
+      </group> <!-- Brahmith1 -->
+    </groups>
+    <test name="Test" duration-ms="384023" started-at="2019-05-10T09:56:21Z" finished-at="2019-05-10T10:02:45Z">
+      <class name="tests.QCStore">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="112" started-at="2019-05-10T09:56:21Z" finished-at="2019-05-10T09:56:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5012" started-at="2019-05-10T09:56:21Z" finished-at="2019-05-10T09:56:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="Payfrequency_Biweekly()[pri:13, instance:tests.QCStore@5f9d02cb]" name="Payfrequency_Biweekly" duration-ms="34147" started-at="2019-05-10T09:56:26Z" finished-at="2019-05-10T09:57:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Payfrequency_Biweekly -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="1" started-at="2019-05-10T09:57:00Z" finished-at="2019-05-10T09:57:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="192" started-at="2019-05-10T09:57:00Z" finished-at="2019-05-10T09:57:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Payfrequency_Biweekly status=SUCCESS method=QCStore.Payfrequency_Biweekly()[pri:13, instance:tests.QCStore@5f9d02cb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5011" started-at="2019-05-10T09:57:00Z" finished-at="2019-05-10T09:57:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="Payfrequency_Monthly()[pri:14, instance:tests.QCStore@5f9d02cb]" name="Payfrequency_Monthly" duration-ms="253687" started-at="2019-05-10T09:57:05Z" finished-at="2019-05-10T10:01:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Payfrequency_Monthly -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-05-10T10:01:19Z" finished-at="2019-05-10T10:01:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="75" started-at="2019-05-10T10:01:19Z" finished-at="2019-05-10T10:01:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Payfrequency_Monthly status=SUCCESS method=QCStore.Payfrequency_Monthly()[pri:14, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5012" started-at="2019-05-10T10:01:19Z" finished-at="2019-05-10T10:01:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="Payfrequency_Semi_monthly()[pri:14, instance:tests.QCStore@5f9d02cb]" name="Payfrequency_Semi_monthly" duration-ms="42378" started-at="2019-05-10T10:01:24Z" finished-at="2019-05-10T10:02:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Payfrequency_Semi_monthly -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="36" started-at="2019-05-10T10:02:06Z" finished-at="2019-05-10T10:02:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Payfrequency_Semi_monthly status=SUCCESS method=QCStore.Payfrequency_Semi_monthly()[pri:14, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-05-10T10:02:06Z" finished-at="2019-05-10T10:02:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5025" started-at="2019-05-10T10:02:06Z" finished-at="2019-05-10T10:02:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killProcess -->
+        <test-method status="PASS" signature="Payfrequency_Weekly()[pri:14, instance:tests.QCStore@5f9d02cb]" name="Payfrequency_Weekly" duration-ms="33270" started-at="2019-05-10T10:02:11Z" finished-at="2019-05-10T10:02:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Payfrequency_Weekly -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="42" started-at="2019-05-10T10:02:45Z" finished-at="2019-05-10T10:02:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Payfrequency_Weekly status=SUCCESS method=QCStore.Payfrequency_Weekly()[pri:14, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+>>>>>>> brahmith1.1
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@370736d9]" name="endReport" is-config="true" duration-ms="0" started-at="2019-04-12T13:23:15Z" finished-at="2019-04-12T13:23:15Z">
+=======
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-05-10T10:02:45Z" finished-at="2019-05-10T10:02:45Z">
+>>>>>>> brahmith1.1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

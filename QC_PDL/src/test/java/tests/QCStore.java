@@ -1409,7 +1409,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 198, groups = { "1stBatch" })
+	@Test(priority = 198, groups = { "1stBatch_NV" })
 	public static void QC_Refinance_StepSameURP_Txn() throws Exception {
 		try {
 			// test =
@@ -1473,7 +1473,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 199, groups = { "1stBatch" })
+	@Test(priority = 199, groups = { "1stBatch_NV" })
 	public static void QC_Refinance_StepSameVoidURP_Txn() throws Exception {
 		try {
 			// test =

@@ -4,7 +4,11 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
+<<<<<<< HEAD
         <include name="Janaki"/>
+=======
+        <include name="Brahmith"/>
+>>>>>>> brahmith1.1
       </run>
     </groups>
     <classes>
@@ -12,8 +16,13 @@
         <methods>
           <include name="getResult"/>
           <include name="setup"/>
+<<<<<<< HEAD
           <include name="JQC_DefaultPayment_Void_Txn_Testdata"/>
+=======
+          <include name="QC_TLP_NewLoan_Txn"/>
+>>>>>>> brahmith1.1
           <include name="endReport"/>
+          <include name="QC_NewLoan_Void_Txn"/>
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->

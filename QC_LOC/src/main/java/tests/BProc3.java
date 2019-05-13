@@ -9,7 +9,7 @@ import java.sql.Statement;
 
 import oracle.jdbc.OracleTypes;
 
-public class BProc3 {
+public class BProc3 extends QCStore{
 
 	public static void proc() throws ClassNotFoundException, SQLException {
 		Connection conn = null;
@@ -27,8 +27,10 @@ public class BProc3 {
 		// Open a connection
 		try {
 
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.2.241:1521:QFUNDUAT1", "QCHPROD_RECON_04162019",
-					"QCHPROD_RECON_04162019");
+
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.2.241:1521:QFUNDUAT1", prop.getProperty("db_username"),
+					prop.getProperty("db_username"));
+
 
 		} catch (SQLException e1) {
 

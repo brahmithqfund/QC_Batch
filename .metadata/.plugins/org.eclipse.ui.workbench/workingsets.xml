@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
+<<<<<<< HEAD
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1555912764542_0" label="Window Working Set" name="Aggregate for window 1555912764542"/>
+=======
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1555421152720_0" label="Window Working Set" name="Aggregate for window 1555421152720"/>
+>>>>>>> brahmith1.1
 </workingSetManager>

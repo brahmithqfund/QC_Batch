@@ -2,12 +2,17 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
+<<<<<<< HEAD
 		<item value="EOD2" key="selection"/>
+=======
+		<item value="Monthly pay week is selected" key="selection"/>
+>>>>>>> brahmith1.1
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+<<<<<<< HEAD
 			<item value="EOD2"/>
 			<item value="Loan Nbr selected from List"/>
 			<item value="Janaki_WORecovery"/>
@@ -19,13 +24,36 @@
 		</list>
 		<list key="replacehistory">
 			<item value="@Test("/>
+=======
+			<item value="Monthly pay week is selected"/>
+			<item value="Monthly type selected"/>
+			<item value="business_date1_int"/>
+			<item value="(Monthly_Type.equals(&quot;2&quot;)"/>
+			<item value="Brahmith1"/>
+			<item value="split(&quot;-&quot;)"/>
+			<item value="AppURL"/>
+			<item value="weekday"/>
+		</list>
+		<list key="replacehistory">
+			<item value="Brahmith"/>
+			<item value="month==11"/>
+			<item value="month==1"/>
+			<item value="1stBatch"/>
+			<item value="brahmith"/>
+>>>>>>> brahmith1.1
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="257" key="DIALOG_WIDTH"/>
+		<item value="558" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+<<<<<<< HEAD
 		<item value="380" key="DIALOG_HEIGHT"/>
 		<item value="894" key="DIALOG_X_ORIGIN"/>
 		<item value="356" key="DIALOG_Y_ORIGIN"/>
+=======
+		<item value="338" key="DIALOG_HEIGHT"/>
+		<item value="537" key="DIALOG_X_ORIGIN"/>
+		<item value="438" key="DIALOG_Y_ORIGIN"/>
+>>>>>>> brahmith1.1
 	</section>
 </section>
