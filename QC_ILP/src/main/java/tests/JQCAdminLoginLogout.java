@@ -23,8 +23,8 @@ public class JQCAdminLoginLogout extends QCStore {
 			for(int row=2;row<=lastrow;row++)
 			{		
 				String RegSSN = TestData.getCellData(sheetName,"SSN",row);
-				String admin_url = TestData.getCellData(sheetName,"AdminURL",row);
-
+				//String admin_url = TestData.getCellData(sheetName,"AdminURL",row);
+				String admin_url =Jprop.getProperty("AdminURL");
 				String uname = TestData.getCellData(sheetName,"AdminUserName",row);
 				String pwd = TestData.getCellData(sheetName,"AdminPassword",row);
 				

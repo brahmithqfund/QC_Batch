@@ -1,16 +1,8 @@
-<<<<<<< HEAD
-#Tue Apr 16 16:58:19 IST 2019
+#Mon May 13 10:16:50 IST 2019
 vl=How many times the 'Finish' button pressed during the day
 l=Wizard class name
 ct=jbt
-d=1555414099718
-=======
-#Tue Apr 16 12:17:21 IST 2019
-vl=How many times the 'Finish' button pressed during the day
-l=Wizard class name
-ct=jbt
-d=1555397241639
->>>>>>> brahmith1.1
+d=1557722810729
 c=0
 cmp=usage
 a=finishWizard

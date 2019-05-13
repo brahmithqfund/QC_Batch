@@ -35,10 +35,12 @@ public class JQCAdmin_Bankruptcy extends QCStore
 				{
 				String UserName = TestData.getCellData(sheetName,"AdminUserName",row);
 				String Password = TestData.getCellData(sheetName,"AdminPassword",row);
-				String AdminURL = TestData.getCellData(sheetName,"AdminURL",row);
+				//String AdminURL = TestData.getCellData(sheetName,"AdminURL",row);
 				String PIN = TestData.getCellData(sheetName,"PIN",row);
 				
-                String StoreID= TestData.getCellData(sheetName,"StoreID",row);
+				String AdminURL =Jprop.getProperty("AdminURL");
+                
+				String StoreID= TestData.getCellData(sheetName,"StoreID",row);
                 String DeceasedStatus= TestData.getCellData(sheetName,"DeceasedStatus",row);
                 
                 

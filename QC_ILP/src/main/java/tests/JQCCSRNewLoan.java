@@ -243,7 +243,7 @@ public class JQCCSRNewLoan extends QCStore {
 			
 				test.log(LogStatus.INFO, "Exception occured " + e.toString().substring(0, 250));
 				test.log(LogStatus.INFO, "New Loan process is initiated again due to Application sync issue");
-				driver.get("http://192.168.2.203/cc/login/index.jsp");
+				driver.get("https://qclocalreg.qfund.net/cc/login/index.jsp");
 				continue;
 
 			}

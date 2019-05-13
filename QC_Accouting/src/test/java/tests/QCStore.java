@@ -226,10 +226,10 @@ public class QCStore {
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 
 					System.out.println(AppURL);
-					QCCSRLoginLogout.adminLogin(SSN, SSN);
+					/*QCCSRLoginLogout.adminLogin(SSN, SSN);
 					BAdminStartDate.toStartdate(SSN, SSN);
 					QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
-					BProc3.proc();
+					BProc3.proc();*/
 
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
@@ -267,7 +267,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 2, groups = "Brahmith")
+	@Test(priority = 2, groups = "Brahmith1")
 
 	public static void Reverse_and_Reallocation() throws Exception {
 		try {
@@ -317,11 +317,13 @@ public class QCStore {
 						
 						QCCSRLoginLogout.login(SSN, AppURL);
 						QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
+						
 					}
 					
 										
 					QCCSRLoginLogout.login(SSN, AppURL);
 					Chargeback.chargeback(SSN, SSN);
+					Thread.sleep(20000);
 					
 					QCCSRLoginLogout.login(SSN, AppURL);
 					RRHistory.history(SSN, AppURL);
@@ -566,7 +568,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 12, groups = "Brahmith1")
+	@Test(priority = 12, groups = "Brahmith")
 
 	public static void Recon_ILP_EARNED_FEE_Variance() throws Exception {
 		try {

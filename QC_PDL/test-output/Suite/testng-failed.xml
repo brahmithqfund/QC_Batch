@@ -5,23 +5,45 @@
     <groups>
       <run>
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
         <include name="Anoop1"/>
 =======
         <include name="EOD"/>
 >>>>>>> brahmith1.1
+=======
+        <include name="Anoop"/>
+>>>>>>> anoop1.1
+=======
+        <include name="Janaki1"/>
+>>>>>>> janaki1.2
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
-          <include name="GracedaysDepositMenu"/>
+<<<<<<< HEAD
           <include name="getResult"/>
           <include name="setup"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
           <include name="QC_FutureDeposit_EOD_Txn"/>
           <include name="QC_GraceDays_EODDeposit_Txn"/>
 >>>>>>> brahmith1.1
+=======
+          <include name="RefinanceStepup"/>
+          <include name="rebateStepupVoid"/>
+          <include name="RefinanceStepupVoid"/>
+          <include name="rebateStepup"/>
+          <include name="RefinanceStepSameVoid"/>
+          <include name="RefinanceStepSame"/>
+>>>>>>> anoop1.1
+=======
+          <include name="JQC_AgeStore_Deposit_ClearMenu_Txn"/>
+          <include name="getResult"/>
+          <include name="setup"/>
+>>>>>>> janaki1.2
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->

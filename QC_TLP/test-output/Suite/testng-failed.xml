@@ -4,31 +4,15 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-<<<<<<< HEAD
-        <include name="Brahmith1"/>
-=======
-        <include name="Janaki_EOD_set2"/>
->>>>>>> janaki1.2
+        <include name="Janaki"/>
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
-<<<<<<< HEAD
-          <include name="QC_PayAnyotherAmount_Void_Txn"/>
-          <include name="QC_TLP_Writeoff_Recovery_Txn"/>
-          <include name="QC_Installmentpayment_Void_Txn"/>
-=======
-          <include name="JQC_TLP_GraceDays_Deposit_EOD_Txn"/>
->>>>>>> janaki1.2
           <include name="getResult"/>
-          <include name="QC_TLP_Writeoff_Recovery_Void_Txn"/>
           <include name="setup"/>
-<<<<<<< HEAD
-          <include name="QC_Installmentpayment_Txn"/>
-          <include name="QC_PayAnyotherAmount_Txn"/>
-=======
->>>>>>> janaki1.2
+          <include name="JQC_DefaultPayment_Void_Txn_Testdata"/>
           <include name="endReport"/>
           <include name="killProcess"/>
         </methods>

@@ -451,11 +451,11 @@ public class ACSRNewLoanPage extends QCStore{
 			//do what you normally would if you didn't have the alert.
 		}
 
-		
+		Thread.sleep(4000);
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame("mainFrame");
 		driver.switchTo().frame("main");
-		Thread.sleep(4000);
+		
 		
 		String confirm_text1=driver.findElement(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr/td/table[1]/tbody/tr[4]/td[2]/table/tbody/tr[2]/td")).getText();
 		String confirm_text2=driver.findElement(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr/td/table[1]/tbody/tr[4]/td[2]/table/tbody/tr[3]/td")).getText();

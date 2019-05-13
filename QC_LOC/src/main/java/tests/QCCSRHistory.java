@@ -71,8 +71,8 @@ public class QCCSRHistory extends QCStore{
 					String Password = TestData.getCellData(sheetName,"Password",row);
 			       // System.out.println(Password);
 			        //String StoreId = TestData.getCellData(sheetName,"StoreID",row);
-					String store_id = vstoreid;
-					String username = vusername;
+					String store_id = nstoreid;
+					String username = nusername;
 			        String ProductID = TestData.getCellData(sheetName_new_loan,"ProductID",row);
 			        String StateID = TestData.getCellData(sheetName,"StateID",row);
 			        String Income_PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);

@@ -117,6 +117,7 @@ public class ACSRRescindLoan extends QCStore{
 					driver.findElement(By.name("requestBean.password")).sendKeys(Password);
 					test.log(LogStatus.PASS, "Password is selected as "+Password);
 					driver.findElement(By.name("finish")).click();
+					test.log(LogStatus.PASS, "Clicked on finish ");
 				}	
 				
 				
@@ -130,7 +131,7 @@ public class ACSRRescindLoan extends QCStore{
 				 catch (NoAlertPresentException e) {
 					 //do what you normally would if you didn't have the alert.
 				 }
-				 	 Thread.sleep(6000);
+				 	 Thread.sleep(9000);
 				 driver.switchTo().defaultContent();
 				 driver.switchTo().frame("mainFrame");
 				 driver.switchTo().frame("main");

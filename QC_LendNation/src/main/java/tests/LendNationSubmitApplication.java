@@ -1,5 +1,6 @@
 package tests;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -26,7 +27,7 @@ public class LendNationSubmitApplication extends LendNation{
 				ExcelNew TestData = new ExcelNew(System.getProperty("user.dir")+prop.getProperty("Test_data_sheet_path")+FileName); 
 			int lastrow=TestData.getLastRow("Submit Application");
 			String sheetName="Submit Application";
-			WebDriverWait wait = new WebDriverWait(driver, 30000);
+			WebDriverWait wait = new WebDriverWait(driver, 5000);
 
 			for(int row=2;row<=lastrow;row++)
 			{		
@@ -35,11 +36,15 @@ public class LendNationSubmitApplication extends LendNation{
 				{	
 			String LoanAmount = TestData.getCellData(sheetName,"LoanAmount",row);
 			
-			Thread.sleep(40000);
+			/*Thread.sleep(500);
+			test.log(LogStatus.INFO, "Lend Nation application navigated to Verify by Phone page " );
+			
+			driver.findElement(By.xpath("//button[contains(text(),'Go to Dashboard')]")).click();
+			test.log(LogStatus.PASS, "Clicked on Go to Dashboard button " );*/
+			
 			driver.findElement(locator(prop.getProperty("loan_amount"))).sendKeys(LoanAmount);
-			// test.log(LogStatus.INFO, "Lend Nation application navigated to Submit Application page " );
 			test.log(LogStatus.INFO, "Lend Nation application navigated to Submit Application page");
-
+			
 
 			  test.log(LogStatus.PASS, "Entered Loan Amount as : " + LoanAmount);
 			  

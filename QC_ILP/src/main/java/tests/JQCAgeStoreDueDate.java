@@ -94,7 +94,7 @@ public class JQCAgeStoreDueDate extends QCStore{
 						    System.out.println("mainwindow"+mainwindow);
 								    driver.findElement(By.xpath("/html/body/table/tbody/tr[1]/td[1]/table[2]/tbody/tr[2]/td/table/tbody/tr[2]/td[2]/a")).click();
 								    test.log(LogStatus.PASS, "Clicked on Customer number link");
-								  
+								    Thread.sleep(2000);
 								    for(String winHandle : driver.getWindowHandles()){
 								    	System.out.println("winHandle>>>>"+winHandle);
 								    	System.out.println(driver.getWindowHandles().size());

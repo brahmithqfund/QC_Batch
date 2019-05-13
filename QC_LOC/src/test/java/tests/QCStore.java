@@ -123,6 +123,9 @@ public class QCStore {
 	
 	public static String vstoreid="508";
 	public static String vusername="csr508";
+	
+	public static String nstoreid="581";
+	public static String nusername="csr581";
 
 
 
@@ -4762,6 +4765,7 @@ public class QCStore {
 
 	@Test(priority = 427, enabled = true, groups = "Anoop_EOD3")
 
+
 	public void PaymentDepositEODReDeposit() throws Exception {
 		FileName = "QC_PaymentDepositEODReDeposit.xls";
 		test = reports.startTest("QC_PaymentDepositEODReDeposit",
@@ -4779,9 +4783,9 @@ public class QCStore {
 				String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
 
-				ACSRLoginLogout.login(SSN, AppURL);
+				/*ACSRLoginLogout.login(SSN, AppURL);
 				ACSRBorrowerRegistration.borrowerReg(SSN, AppURL);
-				ACSRLoginLogout.logout();
+				ACSRLoginLogout.logout();*/
 
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCCSRNewLoan.newLoan(SSN, AppURL);
@@ -4942,6 +4946,7 @@ public class QCStore {
 				AQCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
 
 				// EOD Process
+				AQCAdminStoreSetup.storeSetup(SSN, AppURL);
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCEODDeposit.eodDeposit(SSN, AppURL);
 				AQCAdminStoreSetup.storeSetup(SSN, AppURL);
@@ -4978,10 +4983,10 @@ public class QCStore {
 				String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
 				
-				QCCSRLoginLogout.adminLogin(SSN, SSN);
+				/*QCCSRLoginLogout.adminLogin(SSN, SSN);
 				AAdminStartDateLOC2.toStartdate(SSN, SSN);
 				QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
-				AProc1.proc();
+				AProc1.proc();*/
 
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRBorrowerRegistration.borrowerReg(SSN, AppURL);
@@ -5026,6 +5031,7 @@ public class QCStore {
 				ACSRLoginLogout.logout();
 
 				// EOD Process
+				AQCAdminStoreSetup.storeSetup(SSN, AppURL);
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCEODDeposit.eodDeposit(SSN, AppURL);
 				AQCAdminStoreSetup.storeSetup(SSN, AppURL);
@@ -5221,9 +5227,9 @@ public class QCStore {
 				String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
 
-				ACSRLoginLogout.login(SSN, AppURL);
+				/*ACSRLoginLogout.login(SSN, AppURL);
 				ACSRBorrowerRegistration.borrowerReg(SSN, AppURL);
-				ACSRLoginLogout.logout();
+				ACSRLoginLogout.logout();*/
 
 				ACSRLoginLogout.login(SSN, AppURL);
 				AQCCSRNewLoan.newLoan(SSN, AppURL);
@@ -5286,11 +5292,11 @@ public class QCStore {
 				String AppURL = TestData.getCellData(sheetName, "AppURL", row);
 				String SSN = TestData.getCellData(sheetName, "SSN", row);
 				
-				QCCSRLoginLogout.adminLogin(SSN, SSN);
+				/*QCCSRLoginLogout.adminLogin(SSN, SSN);
 				AAdminStartDateLOC2.toStartdate(SSN, SSN);
 				QCCSRLoginLogout.adminLogout(driver, SSN, SSN);
 				AProc1.proc();
-
+*/
 				ACSRLoginLogout.login(SSN, AppURL);
 				ACSRBorrowerRegistration.borrowerReg(SSN, AppURL);
 				ACSRLoginLogout.logout();
