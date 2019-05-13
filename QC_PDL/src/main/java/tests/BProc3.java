@@ -29,8 +29,8 @@ public class BProc3 extends QCStore{
 		// Open a connection
 		try {
 
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.2.241:1521:QFUNDUAT1", "QCHPROD_QTP_03122019",
-					"QCHPROD_QTP_03122019");
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.2.241:1521:QFUNDUAT1", prop.getProperty("db_username"),
+					prop.getProperty("db_username"));
 
 		} catch (SQLException e1) {
 

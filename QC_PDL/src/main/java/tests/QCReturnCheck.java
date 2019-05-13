@@ -43,7 +43,8 @@ public class QCReturnCheck extends QCStore{
 					{
 						
 						
-						String StoreID = TestData.getCellData(sheetName,"StoreID",row);
+						String StoreID = "3245";
+								//TestData.getCellData(sheetName,"StoreID",row);
 						String ReasonForReturn = TestData.getCellData(sheetName,"ReasonForReturn",row);
 						String Esign_CollateralType = TestData.getCellData(sheetName,"Esign_CollateralType",row);
 
@@ -112,8 +113,9 @@ public class QCReturnCheck extends QCStore{
 							
 						    driver.findElement(By.name("button")).click();   
 						    test.log(LogStatus.PASS, "Clicked on Submit Button");
-						    String req_loan_number=driver.findElement(By.xpath("/html/body/table/tbody/tr/td/table[2]/tbody/tr[4]/td[5]")).getText();
-//loan_nbr="10310914";
+						   // loan_nbr="10505918";
+						   /* String req_loan_number=driver.findElement(By.xpath("/html/body/table/tbody/tr/td/table[2]/tbody/tr[4]/td[5]")).getText();
+
 						    Thread.sleep(3000);
 						    if(loan_nbr.toLowerCase().trim().equalsIgnoreCase(req_loan_number.toLowerCase().trim()))
 						    {
@@ -122,23 +124,34 @@ public class QCReturnCheck extends QCStore{
 						    else
 						    {
 						    	 test.log(LogStatus.FAIL, "Loan number verification is not successfull");
-						    }
+						    }*/
 						    
 						    Thread.sleep(500);
-						   /* int last_rec = driver.findElements(By.xpath("/html/body/table/tbody/tr/td/table[2]/tbody/tr")).size();
+						    int last_rec = driver.findElements(By.xpath("/html/body/table/tbody/tr/td/table[2]/tbody/tr")).size();
 						   for(i=4;i<=last_rec;i++)
 						   {
-						    String req_loan_number=driver.findElement(By.xpath("/html/body/table/tbody/tr/td/table[2]/tbody/tr["+i+"]/td[5]")).getText();
+						    String req_loan_number2=driver.findElement(By.xpath("/html/body/table/tbody/tr/td/table[2]/tbody/tr["+i+"]/td[5]")).getText();
 						    												
-						    		if(loan_nbr.equalsIgnoreCase(req_loan_number))
+						    		if(loan_nbr.trim().equalsIgnoreCase(req_loan_number2.trim()))
 						    		{
-						    		test.log(LogStatus.PASS, "Verifying loan number "+req_loan_number);
-								    driver.findElement(By.name("requestBean.chkName")).click();
+						    		test.log(LogStatus.PASS, "Verifying loan number "+req_loan_number2);
+						    		driver.findElement(By.xpath("/html/body/table/tbody/tr/td/table[2]/tbody/tr["+i+"]/td[1]/input")).click();
 						    test.log(LogStatus.PASS, "Clicked on WebCheck box");
+						   
+						    driver.switchTo().defaultContent();
+
+							driver.switchTo().frame("mainFrame");
+							
+							driver.switchTo().frame("main");
+							
+							Thread.sleep(500);
+							
+				    		driver.findElement(By.xpath("/html/body/table/tbody/tr/td/table[2]/tbody/tr["+i+"]/td[11]/select")).sendKeys(ReasonForReturn);
+							test.log(LogStatus.PASS, "Return For Reason is: "+ReasonForReturn);
 						    break;
 						   }
-						   }*/
-						    driver.findElement(By.name("requestBean.chkName")).click();
+						   }
+						    /*driver.findElement(By.name("requestBean.chkName")).click();
 						    test.log(LogStatus.PASS, "Clicked on WebCheck box");
 						    driver.switchTo().defaultContent();
 
@@ -149,7 +162,7 @@ public class QCReturnCheck extends QCStore{
 							Thread.sleep(500);
 							
 							driver.findElement(By.name("rtnReasonId")).sendKeys(ReasonForReturn);
-							test.log(LogStatus.PASS, "Return For Reason is: "+ReasonForReturn);
+							test.log(LogStatus.PASS, "Return For Reason is: "+ReasonForReturn);*/
 							
 							driver.findElement(By.name("CmdReturnPosting")).click();
 							

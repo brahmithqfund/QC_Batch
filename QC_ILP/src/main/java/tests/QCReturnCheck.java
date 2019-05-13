@@ -226,7 +226,7 @@ public class QCReturnCheck extends QCStore{
 							 driver.switchTo().defaultContent();
 							 driver.switchTo().frame("mainFrame");
 							 driver.switchTo().frame("main");
-							//String business_date="02/03/2020";
+							//String business_date="05/14/2018";
 							String App_date[] =business_date.split("/");
 							System.out.println("business_date");
 							

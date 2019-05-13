@@ -4,24 +4,15 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-<<<<<<< HEAD
-        <include name="Anoop1"/>
-=======
-        <include name="EOD"/>
->>>>>>> brahmith1.1
+        <include name="1stBatch"/>
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
-          <include name="GracedaysDepositMenu"/>
+          <include name="QC_OpenLoan_NewLoan_Txn"/>
           <include name="getResult"/>
           <include name="setup"/>
-<<<<<<< HEAD
-=======
-          <include name="QC_FutureDeposit_EOD_Txn"/>
-          <include name="QC_GraceDays_EODDeposit_Txn"/>
->>>>>>> brahmith1.1
           <include name="killProcess"/>
         </methods>
       </class> <!-- tests.QCStore -->

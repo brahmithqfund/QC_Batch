@@ -163,7 +163,7 @@ public class QCStore {
 
 	public static String loan_nbr;
 	public static String NextDueDate;
-	public static String AppURL = "http://192.168.2.203/cc/demoIndex.do";
+	public static String AppURL = "https://qclocalreg.qfund.net/cc/demoIndex.do";
 	public static String business_date;
 	public static String No_of_Installments;
 	public static String transaction_date;
@@ -348,7 +348,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 8, groups = "Brahmith")
+	@Test(priority = 3, groups = "Brahmith")
 
 	public static void WriteOff() throws Exception {
 		try {
@@ -566,7 +566,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 12, groups = "Brahmith1")
+	@Test(priority = 12, groups = "Brahmith")
 
 	public static void Recon_ILP_EARNED_FEE_Variance() throws Exception {
 		try {
@@ -622,6 +622,182 @@ public class QCStore {
 		}
 	}
 	
+	@Test(priority = 13, groups = "Brahmith1")
+	public static void Payfrequency_Biweekly() throws Exception {
+		try {
+
+			test = reports.startTest(prop.getProperty("Frequency_scenario"),
+					"Frequency verification");
+
+			FileName = prop.getProperty("Frequency_file_name") + ".xls";
+
+			TestData = new ExcelNew(System.getProperty("user.dir")
+					+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
+
+			String sheetName = "Start";
+			int lastrow = TestData.getLastRow("Start");
+			System.out.println(lastrow);
+			for (int row = 2; row <= lastrow; row++) {
+
+				String RunFlag = TestData.getCellData(sheetName, "Run", row);
+				// System.out.println(RunFlag);
+				if (RunFlag.equals("Y")) {
+
+					// AppURL = TestData.getCellData(sheetName, "AppURL", row);
+					String SSN = TestData.getCellData(sheetName, "SSN", row);
+
+					
+
+					QCCSRLoginLogoutTX.login(SSN, AppURL);
+					Frequency.borrowerRegistration(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+				
+					
+					
+					
+		
+				}
+			}
+		}
+
+		catch (Exception e) {
+
+			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
+			// start scenario 1 " , ExtentColor.RED));
+			test.log(LogStatus.ERROR, "Unable to start scenario QC_BorrowerRegistration_NewLoan_Promotion_Txn ");
+
+		}
+	}
+	@Test(priority = 14, groups = "Brahmith1")
+	public static void Payfrequency_Weekly() throws Exception {
+		try {
+
+			test = reports.startTest(prop.getProperty("Frequency_weekly_scenario"),
+					"Frequency verification");
+
+			FileName = prop.getProperty("Frequency_weekly_file_name") + ".xls";
+
+			TestData = new ExcelNew(System.getProperty("user.dir")
+					+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
+
+			String sheetName = "Start";
+			int lastrow = TestData.getLastRow("Start");
+			System.out.println(lastrow);
+			for (int row = 2; row <= lastrow; row++) {
+
+				String RunFlag = TestData.getCellData(sheetName, "Run", row);
+				// System.out.println(RunFlag);
+				if (RunFlag.equals("Y")) {
+
+					// AppURL = TestData.getCellData(sheetName, "AppURL", row);
+					String SSN = TestData.getCellData(sheetName, "SSN", row);
+
+					
+
+					QCCSRLoginLogoutTX.login(SSN, AppURL);
+					Frequency_Weekly.borrowerRegistration(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+				
+					
+				}
+			}
+		}
+
+		catch (Exception e) {
+
+			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
+			// start scenario 1 " , ExtentColor.RED));
+			test.log(LogStatus.ERROR, "Unable to start scenario QC_BorrowerRegistration_NewLoan_Promotion_Txn ");
+
+		}
+	}
+	
+	@Test(priority = 14, groups = "Brahmith1")
+	public static void Payfrequency_Monthly() throws Exception {
+		try {
+
+			test = reports.startTest(prop.getProperty("Frequency_Monthly_scenario"),
+					"Frequency verification");
+
+			FileName = prop.getProperty("Frequency_Monthly_file_name") + ".xls";
+
+			TestData = new ExcelNew(System.getProperty("user.dir")
+					+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
+
+			String sheetName = "Start";
+			int lastrow = TestData.getLastRow("Start");
+			System.out.println(lastrow);
+			for (int row = 2; row <= lastrow; row++) {
+
+				String RunFlag = TestData.getCellData(sheetName, "Run", row);
+				// System.out.println(RunFlag);
+				if (RunFlag.equals("Y")) {
+
+					// AppURL = TestData.getCellData(sheetName, "AppURL", row);
+					String SSN = TestData.getCellData(sheetName, "SSN", row);
+
+					
+
+					QCCSRLoginLogoutTX.login(SSN, AppURL);
+					Frequency_Monthly.borrowerRegistration(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+				
+					
+				}
+			}
+		}
+
+		catch (Exception e) {
+
+			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
+			// start scenario 1 " , ExtentColor.RED));
+			test.log(LogStatus.ERROR, "Unable to start scenario QC_BorrowerRegistration_NewLoan_Promotion_Txn ");
+
+		}
+	}
+	@Test(priority = 14, groups = "Brahmith1")
+	public static void Payfrequency_Semi_monthly() throws Exception {
+		try {
+
+			test = reports.startTest(prop.getProperty("Frequency_Semi_monthly_scenario"),
+					"Frequency verification");
+
+			FileName = prop.getProperty("Frequency_Semi_monthly_file_name") + ".xls";
+
+			TestData = new ExcelNew(System.getProperty("user.dir")
+					+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
+
+			String sheetName = "Start";
+			int lastrow = TestData.getLastRow("Start");
+			System.out.println(lastrow);
+			for (int row = 2; row <= lastrow; row++) {
+
+				String RunFlag = TestData.getCellData(sheetName, "Run", row);
+				// System.out.println(RunFlag);
+				if (RunFlag.equals("Y")) {
+
+					// AppURL = TestData.getCellData(sheetName, "AppURL", row);
+					String SSN = TestData.getCellData(sheetName, "SSN", row);
+
+					
+
+					QCCSRLoginLogoutTX.login(SSN, AppURL);
+					Frequency_Semi_monthly.borrowerRegistration(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+				
+					
+				}
+			}
+		}
+
+		catch (Exception e) {
+
+			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
+			// start scenario 1 " , ExtentColor.RED));
+			test.log(LogStatus.ERROR, "Unable to start scenario QC_BorrowerRegistration_NewLoan_Promotion_Txn ");
+
+		}
+	}
 	//Janaki Transcations
 	
 	@Test(priority = 1, groups = "Janaki")

@@ -677,7 +677,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 131,groups="Brahmith1")
+	@Test(priority = 131,groups="Brahmith")
 	public static void QC_TLP_Writeoff_Recovery_Txn() throws Exception {
 		try {
 			test = reports.startTest((prop.getProperty("QC_TLP_Writeoff_Recovery_Txn_scenario")),
@@ -706,14 +706,14 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					/*QCCSRLoginLogout.login(SSN, AppURL);
+					QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
-					QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);*/
+					QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
 
 					QCCSRWriteOff.writeoff(SSN, SSN);
@@ -2113,7 +2113,7 @@ public class QCStore {
 
 		try {
 
-			//Runtime.getRuntime().exec("taskkill /F /IM IEDriverServer.exe");
+			Runtime.getRuntime().exec("taskkill /F /IM IEDriverServer.exe");
 
 			Thread.sleep(5000); // Allow OS to kill the process
 			System.out.println("killed the process in TLP");

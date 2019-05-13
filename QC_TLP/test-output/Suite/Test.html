@@ -55,58 +55,108 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> janaki1.2
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>10/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Apr 05 10:45:55 IST 2019</td>
+<td>Started on:</td><td>Wed May 08 15:44:54 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>748 seconds (748185 ms)</td>
-</tr><tr>
-<td>Included groups:</td><td>Janaki_EOD_set2 </td>
-<<<<<<< HEAD
-=======
-<td>Tests passed/Failed/Skipped:</td><td>12/0/0</td>
-</tr><tr>
-<td>Started on:</td><td>Mon Apr 01 10:40:48 IST 2019</td>
-</tr>
-<tr><td>Total time:</td><td>7093 seconds (7093776 ms)</td>
+<tr><td>Total time:</td><td>4585 seconds (4585149 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>Brahmith </td>
->>>>>>> brahmith1.1
-=======
-<td>Included groups:</td><td>Janaki </td>
->>>>>>> janaki1.2
-=======
-<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
-</tr><tr>
-<td>Started on:</td><td>Fri Apr 05 15:38:16 IST 2019</td>
-</tr>
-<tr><td>Total time:</td><td>3035 seconds (3035615 ms)</td>
-</tr><tr>
-<td>Included groups:</td><td>Brahmith1 </td>
->>>>>>> brahmith1.1
-=======
->>>>>>> janaki1.2
-=======
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
-</tr><tr>
-<td>Started on:</td><td>Tue Apr 16 13:14:04 IST 2019</td>
-</tr>
-<tr><td>Total time:</td><td>352 seconds (352251 ms)</td>
-</tr><tr>
-<td>Included groups:</td><td>Brahmith1 </td>
->>>>>>> brahmith1.1
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.QCStore.QC_NewLoan_Void_Txn()'><b>QC_NewLoan_Void_Txn</b><br>Test class: tests.QCStore</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at tests.QCCSRNewLoan.newLoan(QCCSRNewLoan.java:270)
+	at tests.QCStore.QC_NewLoan_Void_Txn(QCStore.java:242)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1392429120", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1392429120'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at tests.QCCSRNewLoan.newLoan(QCCSRNewLoan.java:270)
+	at tests.QCStore.QC_NewLoan_Void_Txn(QCStore.java:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>126</td>
+<td>tests.QCStore@5f9d02cb</td></tr>
+<tr>
+<td title='tests.QCStore.QC_TLP_NewLoan_Txn()'><b>QC_TLP_NewLoan_Txn</b><br>Test class: tests.QCStore</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at tests.QCCSRNewLoan.newLoan(QCCSRNewLoan.java:270)
+	at tests.QCStore.QC_TLP_NewLoan_Txn(QCStore.java:138)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1498259207", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1498259207'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at tests.QCCSRNewLoan.newLoan(QCCSRNewLoan.java:270)
+	at tests.QCStore.QC_TLP_NewLoan_Txn(QCStore.java:138)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>177</td>
+<td>tests.QCStore@5f9d02cb</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -115,105 +165,54 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<td title='tests.QCStore.JQC_TLP_GraceDays_Deposit_EOD_Txn()'><b>JQC_TLP_GraceDays_Deposit_EOD_Txn</b><br>Test class: tests.QCStore</td>
-<td></td>
-<td>949</td>
-=======
 <td title='tests.QCStore.QC_AgeStore_Void_Txn()'><b>QC_AgeStore_Void_Txn</b><br>Test class: tests.QCStore</td>
 <td></td>
-<td>605</td>
+<td>578</td>
 <td>tests.QCStore@5f9d02cb</td></tr>
 <tr>
-=======
->>>>>>> brahmith1.1
 <td title='tests.QCStore.QC_Installmentpayment_Txn()'><b>QC_Installmentpayment_Txn</b><br>Test class: tests.QCStore</td>
 <td></td>
-<td>405</td>
+<td>304</td>
 <td>tests.QCStore@5f9d02cb</td></tr>
 <tr>
 <td title='tests.QCStore.QC_Installmentpayment_Void_Txn()'><b>QC_Installmentpayment_Void_Txn</b><br>Test class: tests.QCStore</td>
 <td></td>
-<td>443</td>
+<td>357</td>
+<td>tests.QCStore@5f9d02cb</td></tr>
+<tr>
+<td title='tests.QCStore.QC_NewLoan_Promotion_Txn()'><b>QC_NewLoan_Promotion_Txn</b><br>Test class: tests.QCStore</td>
+<td></td>
+<td>455</td>
 <td>tests.QCStore@5f9d02cb</td></tr>
 <tr>
 <td title='tests.QCStore.QC_PayAnyotherAmount_Txn()'><b>QC_PayAnyotherAmount_Txn</b><br>Test class: tests.QCStore</td>
 <td></td>
-<td>395</td>
+<td>304</td>
 <td>tests.QCStore@5f9d02cb</td></tr>
 <tr>
 <td title='tests.QCStore.QC_PayAnyotherAmount_Void_Txn()'><b>QC_PayAnyotherAmount_Void_Txn</b><br>Test class: tests.QCStore</td>
 <td></td>
-<td>394</td>
+<td>354</td>
+<td>tests.QCStore@5f9d02cb</td></tr>
+<tr>
+<td title='tests.QCStore.QC_TLP_Buyback_Txn()'><b>QC_TLP_Buyback_Txn</b><br>Test class: tests.QCStore</td>
+<td></td>
+<td>311</td>
+<td>tests.QCStore@5f9d02cb</td></tr>
+<tr>
+<td title='tests.QCStore.QC_TLP_Buyback_Void_Txn()'><b>QC_TLP_Buyback_Void_Txn</b><br>Test class: tests.QCStore</td>
+<td></td>
+<td>356</td>
 <td>tests.QCStore@5f9d02cb</td></tr>
 <tr>
 <td title='tests.QCStore.QC_TLP_Writeoff_Recovery_Txn()'><b>QC_TLP_Writeoff_Recovery_Txn</b><br>Test class: tests.QCStore</td>
 <td></td>
-<td>701</td>
+<td>540</td>
 <td>tests.QCStore@5f9d02cb</td></tr>
 <tr>
 <td title='tests.QCStore.QC_TLP_Writeoff_Recovery_Void_Txn()'><b>QC_TLP_Writeoff_Recovery_Void_Txn</b><br>Test class: tests.QCStore</td>
 <td></td>
-<<<<<<< HEAD
-<td>843</td>
->>>>>>> brahmith1.1
-=======
-<td title='tests.QCStore.JQC_DefaultPayment_Txn_Testdata()'><b>JQC_DefaultPayment_Txn_Testdata</b><br>Test class: tests.QCStore</td>
-<td></td>
-<td>1015</td>
-<td>tests.QCStore@5f9d02cb</td></tr>
-<tr>
-<td title='tests.QCStore.JQC_DefaultPayment_Void_Txn_Testdata()'><b>JQC_DefaultPayment_Void_Txn_Testdata</b><br>Test class: tests.QCStore</td>
-<td></td>
-<td>1053</td>
-<td>tests.QCStore@5f9d02cb</td></tr>
-<tr>
-<td title='tests.QCStore.JQC_TLP_Deposit_Menu_Txn()'><b>JQC_TLP_Deposit_Menu_Txn</b><br>Test class: tests.QCStore</td>
-<td></td>
-<td>698</td>
-<td>tests.QCStore@5f9d02cb</td></tr>
-<tr>
-<td title='tests.QCStore.JQC_TLP_Deposit_MidDay_Txn()'><b>JQC_TLP_Deposit_MidDay_Txn</b><br>Test class: tests.QCStore</td>
-<td></td>
-<td>609</td>
-<td>tests.QCStore@5f9d02cb</td></tr>
-<tr>
-<td title='tests.QCStore.JQC_TLP_Deposit_dropdown_Txn()'><b>JQC_TLP_Deposit_dropdown_Txn</b><br>Test class: tests.QCStore</td>
-<td></td>
-<td>465</td>
-<td>tests.QCStore@5f9d02cb</td></tr>
-<tr>
-<td title='tests.QCStore.JQC_TLP_GraceDays_Deposit_Menu_Txn()'><b>JQC_TLP_GraceDays_Deposit_Menu_Txn</b><br>Test class: tests.QCStore</td>
-<td></td>
-<td>613</td>
-<td>tests.QCStore@5f9d02cb</td></tr>
-<tr>
-<td title='tests.QCStore.JQC_TLP_GraceDays_Deposit_MidDay_Txn()'><b>JQC_TLP_GraceDays_Deposit_MidDay_Txn</b><br>Test class: tests.QCStore</td>
-<td></td>
-<td>702</td>
-<td>tests.QCStore@5f9d02cb</td></tr>
-<tr>
-<td title='tests.QCStore.JQC_TLP_GraceDays_Deposit_dropdown_Txn()'><b>JQC_TLP_GraceDays_Deposit_dropdown_Txn</b><br>Test class: tests.QCStore</td>
-<td></td>
-<td>713</td>
->>>>>>> janaki1.2
-=======
-<td>664</td>
->>>>>>> brahmith1.1
-=======
-<td title='tests.QCStore.JQC_TLP_GraceDays_Deposit_EOD_Txn()'><b>JQC_TLP_GraceDays_Deposit_EOD_Txn</b><br>Test class: tests.QCStore</td>
-<td></td>
-<td>742</td>
->>>>>>> janaki1.2
-=======
-<td title='tests.QCStore.QC_TLP_Writeoff_Recovery_Txn()'><b>QC_TLP_Writeoff_Recovery_Txn</b><br>Test class: tests.QCStore</td>
-<td></td>
-<td>346</td>
->>>>>>> brahmith1.1
+<td>655</td>
 <td>tests.QCStore@5f9d02cb</td></tr>
 </table><p>
 </body>
