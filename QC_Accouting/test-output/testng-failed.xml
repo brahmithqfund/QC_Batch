@@ -4,7 +4,7 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="Brahmith1"/>
+        <include name="Brahmith2"/>
       </run>
     </groups>
     <classes>
@@ -12,7 +12,7 @@
         <methods>
           <include name="getResult"/>
           <include name="setup"/>
-          <include name="WriteOff"/>
+          <include name="Txn11_EPP"/>
           <include name="endReport"/>
           <include name="killProcess"/>
         </methods>

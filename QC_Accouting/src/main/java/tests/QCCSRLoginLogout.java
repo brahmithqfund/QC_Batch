@@ -70,6 +70,7 @@ public class QCCSRLoginLogout extends QCStore
 						
 						if(prop.getProperty("login_method").equalsIgnoreCase("local"))
 						{
+							
 							driver = new InternetExplorerDriver();
 						}
 						else

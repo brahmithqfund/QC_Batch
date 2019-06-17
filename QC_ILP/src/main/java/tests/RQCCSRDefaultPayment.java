@@ -38,7 +38,7 @@ public class RQCCSRDefaultPayment extends QCStore {
 				String TenderType = TestData.getCellData(sheetName, "TenderType", row);
 				String PIN = TestData.getCellData(sheetName, "PIN", row);
 				if (SSN.equals(RegSSN)) {
-					State = TestData.getCellData(sheetName, "StateID", row);
+					//State = TestData.getCellData(sheetName, "StateID", row);
 
 					SSN1 = SSN.substring(0, 3);
 					SSN2 = SSN.substring(3, 5);

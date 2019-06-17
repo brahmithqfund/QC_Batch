@@ -96,7 +96,7 @@ public static void internalTransfer(String SSN,String AppURL) throws Exception
 						 }
 						 catch(Exception e)
 						 {
-							     driver.get(prop.getProperty("login_page")); 
+							    /* driver.get(prop.getProperty("login_page")); 
 							     driver.findElement(By.xpath("//*[@id='930000']/a")).click();			
 							
 							    driver.switchTo().defaultContent();
@@ -105,9 +105,9 @@ public static void internalTransfer(String SSN,String AppURL) throws Exception
 							    test.log(LogStatus.PASS, "Clicked on Safe");
 							    Thread.sleep(500);
 							    driver.findElement(By.xpath("//*[@id='932040']/a")).click();
-							    test.log(LogStatus.PASS, "Clicked on Internal Transfer");
+							    test.log(LogStatus.PASS, "Clicked on Internal Transfer");*/
 						 }
-						Thread.sleep(500);
+						Thread.sleep(2000);
 						for( String winHandle1 : driver.getWindowHandles())
 						{
 						    driver.switchTo().window(winHandle1);

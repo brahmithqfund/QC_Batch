@@ -104,7 +104,7 @@ public class Chargeback extends QCStore {
 						
 						try{
 							driver.findElement(By.xpath("//*[@id='transactionDetailsTable']/tbody/tr[3]/td/input")).click();
-							test.log(LogStatus.PASS, "Selected the first installment radio button");
+							test.log(LogStatus.PASS, "Selected the first installment radio button1");
 							
 						}
 						catch(Exception e)
@@ -113,8 +113,16 @@ public class Chargeback extends QCStore {
 						}
 						
 						try{
-							driver.findElement(By.xpath("//input[@name='rad' and @value='24706757#DEFAULT##1#BUY']")).click();
-							test.log(LogStatus.PASS, "Selected the first deposit radio button");
+							driver.findElement(By.xpath("//input[@name='rad' and @value='27157973#DEFAULT##1#BUY']")).click();
+							test.log(LogStatus.PASS, "Selected the first deposit radio button2");
+						}
+						catch(Exception e)
+						{
+							
+						}
+						try{
+							driver.findElement(By.xpath("//input[@name='rad' and @value="+loan_nbr+"]")).click();
+							test.log(LogStatus.PASS, "Selected the first deposit radio button3");
 						}
 						catch(Exception e)
 						{

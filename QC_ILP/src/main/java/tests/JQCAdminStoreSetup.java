@@ -31,7 +31,8 @@ public class JQCAdminStoreSetup extends QCStore
 					//String AdminURL = TestData.getCellData(sheetName,"AdminURL",row);
 					String AdminURL =Jprop.getProperty("AdminURL");
 
-					String StoreID = TestData.getCellData(sheetName,"StoreID",row);
+					String StoreID ="1709"; 
+							//TestData.getCellData(sheetName,"StoreID",row);
 
 					driver = new InternetExplorerDriver();
 					wait = new WebDriverWait(driver, 40000);

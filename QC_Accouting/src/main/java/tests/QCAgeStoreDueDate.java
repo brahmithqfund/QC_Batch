@@ -36,7 +36,7 @@ public class QCAgeStoreDueDate extends QCStore{
 
 					for(int row=2;row<=lastrow;row++)
 							{		
-								String RegSSN = TestData.getCellData(sheetName,"SSN",row);
+						String RegSSN = TestData.getCellData(sheetName,"SSN",row);
 								if(SSN.equals(RegSSN))
 								{
 								

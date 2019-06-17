@@ -32,8 +32,8 @@ public class SQLquery extends QCStore{
 		// Open a connection
 		try {
 
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.2.241:1521:QFUNDUAT1", "QCHPROD_QTP_03122019",
-					"QCHPROD_QTP_03122019");
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.2.241:1521:QFUNDUAT1", prop.getProperty("db_username"),
+					prop.getProperty("db_username"));
 			test.log(LogStatus.PASS, "Connecting to DB ");
 
 		} catch (SQLException e1) {
@@ -44,7 +44,7 @@ public class SQLquery extends QCStore{
 
 		// Execute a query
 		stmt = conn.createStatement();
-		//System.out.println("after conn");
+		//loan_nbr="10507593";
 		try {
 		
 			resultSet = stmt.executeQuery("SELECT LOAN_TRAN_CODE,TRAN_ID FROM st_lo_trans where loan_code="+loan_nbr);

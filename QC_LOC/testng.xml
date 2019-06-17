@@ -7,10 +7,10 @@
 
   <!--  Brahmith scenarios   -->  
     <!-- <include name="EOD"/>  --> 
-   <include name="EOD2"/>
+<!--    <include name="EOD2"/> -->
 
  <!--    <include name="EOD"/>   -->
-   <include name="EOD21"/>
+ <!--   <include name="EOD21"/> -->
 
  <!-- <include name="1st Batch"/>-->
 
@@ -19,6 +19,7 @@
   <!--  <include name="Janaki1"/>  --> 
   <!--    <include name="Janaki_NEOD"/>  -->
       <!-- <include name="Janaki_EOD"/> --> 
+      
 
 
   <!--  Anoop scenarios -->

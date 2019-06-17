@@ -140,7 +140,7 @@ public class QCAdminEncryption extends QCStore
 
 	test.log(LogStatus.PASS, "Store number Entered"+encryption_store_no); 
 
-
+	//encryption_transaction_nbr="25108330";
 	driver.findElement(By.name("requestBean.tranNbr")).sendKeys(encryption_transaction_nbr);
 
 	test.log(LogStatus.PASS, "Tran number Entered"+encryption_transaction_nbr); 

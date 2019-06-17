@@ -1,79 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results skipped="0" failed="0" ignored="112" total="114" passed="2">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Suite" duration-ms="528144" started-at="2019-05-09T07:08:52Z" finished-at="2019-05-09T07:17:40Z">
-    <groups>
-      <group name="EOD2">
-        <method signature="QCStore.LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn()[pri:69, instance:tests.QCStore@5f9d02cb]" name="LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn" class="tests.QCStore"/>
-        <method signature="QCStore.LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn()[pri:70, instance:tests.QCStore@5f9d02cb]" name="LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn" class="tests.QCStore"/>
-      </group> <!-- EOD2 -->
-    </groups>
-    <test name="Test" duration-ms="528144" started-at="2019-05-09T07:08:52Z" finished-at="2019-05-09T07:17:40Z">
-      <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="90" started-at="2019-05-09T07:08:52Z" finished-at="2019-05-09T07:08:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5022" started-at="2019-05-09T07:08:52Z" finished-at="2019-05-09T07:08:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn()[pri:69, instance:tests.QCStore@5f9d02cb]" name="LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn" duration-ms="393251" started-at="2019-05-09T07:08:57Z" finished-at="2019-05-09T07:15:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="774" started-at="2019-05-09T07:15:30Z" finished-at="2019-05-09T07:15:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn status=SUCCESS method=QCStore.LOC_ACHDeposit_EOD_Return_EOD_Default_Redeposit_Txn()[pri:69, instance:tests.QCStore@5f9d02cb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5018" started-at="2019-05-09T07:15:31Z" finished-at="2019-05-09T07:15:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn()[pri:70, instance:tests.QCStore@5f9d02cb]" name="LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn" duration-ms="123378" started-at="2019-05-09T07:15:36Z" finished-at="2019-05-09T07:17:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="593" started-at="2019-05-09T07:17:40Z" finished-at="2019-05-09T07:17:40Z">
-=======
 <testng-results skipped="0" failed="0" ignored="113" total="114" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="474183" started-at="2019-05-05T05:56:11Z" finished-at="2019-05-05T06:04:05Z">
+  <suite name="Suite" duration-ms="60614" started-at="2019-06-04T11:29:01Z" finished-at="2019-06-04T11:30:02Z">
     <groups>
-      <group name="EOD21">
-        <method signature="QCStore.LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn()[pri:70, instance:tests.QCStore@5f9d02cb]" name="LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn" class="tests.QCStore"/>
-      </group> <!-- EOD21 -->
+      <group name="Ratikanta_LOC1">
+        <method signature="QCStore.RQC_LOC_Deposit_Return_2ndDeposit_Clear_3rdDeposit_Return_Default_Txn_Testdata()[pri:203, instance:tests.QCStore@5f9d02cb]" name="RQC_LOC_Deposit_Return_2ndDeposit_Clear_3rdDeposit_Return_Default_Txn_Testdata" class="tests.QCStore"/>
+      </group> <!-- Ratikanta_LOC1 -->
     </groups>
-    <test name="Test" duration-ms="474183" started-at="2019-05-05T05:56:11Z" finished-at="2019-05-05T06:04:05Z">
+    <test name="Test" duration-ms="60614" started-at="2019-06-04T11:29:01Z" finished-at="2019-06-04T11:30:02Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="104" started-at="2019-05-05T05:56:11Z" finished-at="2019-05-05T05:56:11Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="108" started-at="2019-06-04T11:29:01Z" finished-at="2019-06-04T11:29:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5031" started-at="2019-05-05T05:56:11Z" finished-at="2019-05-05T05:56:16Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5027" started-at="2019-06-04T11:29:01Z" finished-at="2019-06-04T11:29:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn()[pri:70, instance:tests.QCStore@5f9d02cb]" name="LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn" duration-ms="468837" started-at="2019-05-05T05:56:16Z" finished-at="2019-05-05T06:04:05Z">
+        <test-method status="PASS" signature="RQC_LOC_Deposit_Return_2ndDeposit_Clear_3rdDeposit_Return_Default_Txn_Testdata()[pri:203, instance:tests.QCStore@5f9d02cb]" name="RQC_LOC_Deposit_Return_2ndDeposit_Clear_3rdDeposit_Return_Default_Txn_Testdata" duration-ms="54704" started-at="2019-06-04T11:29:06Z" finished-at="2019-06-04T11:30:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="196" started-at="2019-05-05T06:04:05Z" finished-at="2019-05-05T06:04:05Z">
->>>>>>> brahmith1.1
+        </test-method> <!-- RQC_LOC_Deposit_Return_2ndDeposit_Clear_3rdDeposit_Return_Default_Txn_Testdata -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="759" started-at="2019-06-04T11:30:01Z" finished-at="2019-06-04T11:30:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn status=SUCCESS method=QCStore.LOC_ACHDeposit_EOD_Return_EOD_Redeposit_Txn()[pri:70, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+                <![CDATA[[TestResult name=RQC_LOC_Deposit_Return_2ndDeposit_Clear_3rdDeposit_Return_Default_Txn_Testdata status=SUCCESS method=QCStore.RQC_LOC_Deposit_Return_2ndDeposit_Clear_3rdDeposit_Return_Default_Txn_Testdata()[pri:203, instance:tests.QCStore@5f9d02cb] output={null}]]]>
               </value>
             </param>
           </params>

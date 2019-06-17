@@ -85,7 +85,9 @@ public class QCCashMgmtDeposit extends QCStore {
 						driver.findElement(By.xpath("//*[@id='932050']/a")).click();
 						test.log(LogStatus.PASS, "Clicked on Deposit");
 					} catch (Exception e) {
+						Thread.sleep(2000);
 						driver.get(prop.getProperty("login_page")); 
+						Thread.sleep(2000);
 						for (String winHandle1 : driver.getWindowHandles()) {
 							driver.switchTo().window(winHandle1);
 						}

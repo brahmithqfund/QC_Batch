@@ -104,7 +104,7 @@ public class QCAdminEncryption extends QCStore
 
 	test.log(LogStatus.PASS, "Clicked on Employee tab");
 
-	
+	Thread.sleep(3000);
 
 	driver.switchTo().defaultContent();
 
@@ -134,7 +134,9 @@ public class QCAdminEncryption extends QCStore
 	driver.switchTo().frame("mainFrame");
 
 	driver.switchTo().frame("main");
-
+	//encryption_store_no="1709";
+	//encryption_transaction_nbr="25110443";
+	
 	driver.findElement(By.name("requestBean.locationNbr")).sendKeys(encryption_store_no);
 
 	test.log(LogStatus.PASS, "Store number Entered"+encryption_store_no); 
