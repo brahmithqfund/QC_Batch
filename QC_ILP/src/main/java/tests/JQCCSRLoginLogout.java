@@ -39,11 +39,13 @@ public class JQCCSRLoginLogout extends QCStore
 						
 						String csr_url =Jprop.getProperty("csr_url");
 						
-						String username = TestData.getCellData(sheetName,"UserName",row);
+						String username = "csr1709";
+								//TestData.getCellData(sheetName,"UserName",row);
 						System.out.println("ÜN"+username);
 						String password = TestData.getCellData(sheetName,"Password",row);
 						System.out.println("PWD"+password);
-						String store_id = TestData.getCellData(sheetName,"StoreID",row);
+						String store_id ="1709"; 
+								//TestData.getCellData(sheetName,"StoreID",row);
 						System.out.println("St"+store_id);
 						Thread.sleep(4000);
 						test.log(LogStatus.INFO, "Opened the CSR URL " +csr_url);
@@ -124,7 +126,8 @@ public static void logout(String SSN,String AppURL){
 						driver.quit();
 			     }
 			    else{
-						test.log(LogStatus.PASS, "<FONT color=Red> Logout was unsuccessfull"); 
+			    	driver.quit();
+			    	//test.log(LogStatus.PASS, "<FONT color=Red> Logout was unsuccessfull"); 
 					}			     	
 			}
 						

@@ -112,13 +112,19 @@ public class QCAgeStoreGraceDays extends QCStore {
 						test.log(LogStatus.PASS, "Clicked on Customer number link");
 						for (String winHandle : driver.getWindowHandles()) {
 							if (!mainwindow.equalsIgnoreCase(winHandle)) {
-								driver.switchTo().window(winHandle);
+								
+								try {
+									driver.switchTo().window(winHandle);
 
-								loan_nbr = driver.findElement(locator(prop.getProperty("csr_loan_nbr"))).getText();
-								test.log(LogStatus.PASS, "Loan Number is" + loan_nbr);
-								Thread.sleep(2000);
-								NextDueDate = driver.findElement(locator(prop.getProperty("csr_due_date"))).getText();
-								test.log(LogStatus.PASS, "Next due date is " + NextDueDate);
+									loan_nbr = driver.findElement(locator(prop.getProperty("csr_loan_nbr"))).getText();
+									test.log(LogStatus.PASS, "Loan Number is" + loan_nbr);
+									Thread.sleep(2000);
+									NextDueDate = driver.findElement(locator(prop.getProperty("csr_due_date"))).getText();
+									test.log(LogStatus.PASS, "Next due date is " + NextDueDate);
+								} catch (Exception e) {
+									// TODO: handle exception
+								}
+								
 								driver.close();
 								break;
 							}

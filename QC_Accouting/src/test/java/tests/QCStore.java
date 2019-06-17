@@ -202,7 +202,7 @@ public class QCStore {
 
 	@Test(priority = 1, groups = "Brahmith")
 
-	public static void Recon_ILP_Debit_Card_Variance_scenario() throws Exception {
+	public static void Txn1_Recon_ILP_Debit_Card_Variance_scenario() throws Exception {
 		try {
 
 			test = reports.startTest(prop.getProperty("Recon_ILP_Debit_Card_Variance_scenario"),
@@ -267,9 +267,9 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 2, groups = "Brahmith1")
+	@Test(priority = 2, groups = "Brahmith")
 
-	public static void Reverse_and_Reallocation() throws Exception {
+	public static void Txn3_4_Reverse_and_Reallocation() throws Exception {
 		try {
 			// test =
 			// extent.createTest(prop.getProperty("QC_Store_NewLoan_Void_Txn_file_name"));
@@ -350,9 +350,9 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 3, groups = "Brahmith")
+	@Test(priority = 3, groups = "Brahmith1")  //Development not completed
 
-	public static void WriteOff() throws Exception {
+	public static void Txn5_WriteOff() throws Exception {
 		try {
 			// test =
 			// extent.createTest(prop.getProperty("QC_Store_AgeStore_Void_Txn_file_name"));
@@ -379,17 +379,16 @@ public class QCStore {
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 
 					System.out.println(AppURL);
-
-					QCCSRLoginLogout.login(SSN, AppURL);
+			/*		QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
-					
+			
 					QCCSRLoginLogout.login(SSN, AppURL);
-					QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
+					QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);		
 					
 					QCCSRLoginLogout.login(SSN, AppURL);
 					JQCDepositDropdown.depositDropDown(SSN, SSN);
@@ -408,13 +407,37 @@ public class QCStore {
 					
 					QCCSRLoginLogout.login(SSN, AppURL);
 					JQCDepositDropdown.depositDropDown(SSN, SSN);
+					QCCSRLoginLogout.logout(SSN, AppURL);
 					
-					/*QCCSRLoginLogout.login(SSN, AppURL);
-					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
-					
+										
 					QCCSRLoginLogout.login(SSN, AppURL);
 					Chargeback.chargeback(SSN, SSN);
-					QCCSRLoginLogout.logout(SSN, AppURL);*/
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					//Need to check here by adding due date
+					
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
+					
+					
+					
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);*/
+		
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCDefaultPayment.sdefaultpayment(SSN, SSN);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+			
+					QCCSRLoginLogout.login(SSN, AppURL);
+
+					
+					QCCSRWriteOff.writeoff(SSN, SSN);
+					QCCSRLoginLogout.login(SSN, AppURL);
+					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
+					QCCSRLoginLogout.login(SSN, AppURL);
+					Chargeback.chargeback(SSN, SSN);
+					QCCSRLoginLogout.logout(SSN, AppURL);
+					
+					
 					
 					
 					
@@ -433,9 +456,9 @@ public class QCStore {
 		}
 	}
 
-		@Test(priority = 11, groups = "Brahmith")
+		@Test(priority = 11, groups = "Brahmith2")  //NSF checkbox issue
 
-	public static void Recon_CashRoll() throws Exception {
+	public static void Txn6_Recon_CashRoll() throws Exception {
 		try {
 			// test =
 			// extent.createTest(prop.getProperty("QC_Store_AgeStore_Void_Txn_file_name"));
@@ -463,7 +486,7 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogoutPDL.login(SSN, AppURL);
+				/*	QCCSRLoginLogoutPDL.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
@@ -476,26 +499,20 @@ public class QCStore {
 					
 					QCCSRLoginLogoutPDL.login(SSN, AppURL);
 					JQCDepositDropdownPDL.depositDropDown(SSN, SSN);
-					
-					
-					
-				/*	QCCSRLoginLogoutPDL.login(SSN, AppURL);
-					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
-					
-					QCCSRLoginLogoutPDL.login(SSN, AppURL);
-					Chargeback.chargeback(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					
+					
 					QCCSRLoginLogoutPDL.login(SSN, AppURL);
-					AQC_NSFPayment.nsfpayment(SSN, SSN);*/
+					QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);*/
 					
 					
-				
+					DBReturn.proc();
+					DBverify.proc();
 					
-					
-					
-					
-					
+				/*	QCCSRLoginLogoutPDL.login(SSN, AppURL);
+					AQC_NSFPayment.nsfpayment(SSN, SSN);
+					*/
+		
 				}
 			}
 		}
@@ -511,7 +528,7 @@ public class QCStore {
 
 	
 	@Test(priority = 6, groups = { "Brahmith" })
-	public static void EPP() throws Exception {
+	public static void Txn11_EPP() throws Exception {
 		try {
 			// test =
 			// extent.createTest(prop.getProperty("QC_Store_AgeStore_Void_Txn_file_name"));
@@ -551,7 +568,8 @@ public class QCStore {
 					QCDepositDropdown.depositDropDown(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					
-					SQLquery.proc();					
+					SQLquery.proc();	
+					
 					
 	
 					break;
@@ -570,7 +588,7 @@ public class QCStore {
 
 	@Test(priority = 12, groups = "Brahmith")
 
-	public static void Recon_ILP_EARNED_FEE_Variance() throws Exception {
+	public static void Txn8_Recon_ILP_EARNED_FEE_Variance() throws Exception {
 		try {
 
 			test = reports.startTest(prop.getProperty("Recon_ILP_EARNED_FEE_Variance_scenario"),
@@ -624,7 +642,7 @@ public class QCStore {
 		}
 	}
 	
-	@Test(priority = 13, groups = "Brahmith1")
+	@Test(priority = 13, groups = "Brahmith_date")
 	public static void Payfrequency_Biweekly() throws Exception {
 		try {
 
@@ -670,7 +688,7 @@ public class QCStore {
 
 		}
 	}
-	@Test(priority = 14, groups = "Brahmith1")
+	@Test(priority = 14, groups = "Brahmith_date")
 	public static void Payfrequency_Weekly() throws Exception {
 		try {
 
@@ -714,7 +732,7 @@ public class QCStore {
 		}
 	}
 	
-	@Test(priority = 14, groups = "Brahmith1")
+	@Test(priority = 14, groups = "Brahmith_date")
 	public static void Payfrequency_Monthly() throws Exception {
 		try {
 
@@ -757,7 +775,7 @@ public class QCStore {
 
 		}
 	}
-	@Test(priority = 14, groups = "Brahmith1")
+	@Test(priority = 14, groups = "Brahmith_date")
 	public static void Payfrequency_Semi_monthly() throws Exception {
 		try {
 
@@ -800,6 +818,41 @@ public class QCStore {
 
 		}
 	}
+	
+	@Test(priority = 15, groups = "PDF")
+	public static void PDF() throws Exception {
+		try {
+
+			test = reports.startTest(prop.getProperty("Frequency_Semi_monthly_scenario"),
+					"Frequency verification");
+
+			FileName = prop.getProperty("Frequency_Semi_monthly_file_name") + ".xls";
+
+			TestData = new ExcelNew(System.getProperty("user.dir")
+					+ prop.getProperty("QC_Store_NewLoan_Test_data_sheet_path") + FileName);
+
+			String sheetName = "Start";
+			int lastrow = TestData.getLastRow("Start");
+			System.out.println(lastrow);
+		
+
+
+					
+
+					PDF.readPDFInURL();
+			
+			
+		}
+
+		catch (Exception e) {
+
+			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
+			// start scenario 1 " , ExtentColor.RED));
+			test.log(LogStatus.ERROR, "Unable to start scenario QC_BorrowerRegistration_NewLoan_Promotion_Txn ");
+
+		}
+	}
+	
 	//Janaki Transcations
 	
 	@Test(priority = 1, groups = "Janaki")

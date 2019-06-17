@@ -214,7 +214,9 @@ public class JQCBorrowerRegistration extends QCStore {
 						test.log(LogStatus.PASS, "DOB3 is entered: "+DOB3);
 						driver.findElement(locator(Jprop.getProperty("CSR_reg_income_type"))).sendKeys(Income_IncomeType);
 						test.log(LogStatus.PASS, "IncomeType is entered: "+Income_IncomeType);
+						Thread.sleep(2000);
 						driver.findElement(locator(Jprop.getProperty("CSR_reg_employer"))).sendKeys(Income_Employer);
+						Thread.sleep(1000);
 						test.log(LogStatus.PASS, "Employer is entered: "+Income_Employer);
 						driver.findElement(locator(Jprop.getProperty("CSR_reg_work_phone1"))).sendKeys(IncomeP1);
 						test.log(LogStatus.PASS, "PP1 is entered: "+IncomeP1);

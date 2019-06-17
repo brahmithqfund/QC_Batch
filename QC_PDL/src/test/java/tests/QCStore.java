@@ -148,7 +148,7 @@ public class QCStore {
 
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario QC_BorrowerRegistration_NewLoan_Promotion_Txn ");
+			test.log(LogStatus.ERROR, "Unable to execute scenario QC_BorrowerRegistration_NewLoan_Promotion_Txn ");
 
 		}
 	}
@@ -202,7 +202,7 @@ public class QCStore {
 			System.out.println("under catch of Test");
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario QC_OpenLoan_NewLoan_Txn ");
+			test.log(LogStatus.ERROR, "Unable to execute scenario QC_OpenLoan_NewLoan_Txn ");
 
 		}
 	}
@@ -255,7 +255,7 @@ public class QCStore {
 
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario QC_NewLoan_Void_Txn ");
+			test.log(LogStatus.ERROR, "Unable to execute scenario QC_NewLoan_Void_Txn ");
 
 		}
 	}
@@ -318,7 +318,7 @@ public class QCStore {
 			System.out.println("under catch of Test");
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario QC_AgeStore_Void_Txn ");
+			test.log(LogStatus.ERROR, "Unable to execute scenario QC_AgeStore_Void_Txn ");
 
 		}
 	}
@@ -378,7 +378,7 @@ public class QCStore {
 			System.out.println("QC_Store_AgeStore_Deposit_GraceDays_Dropdown_Txn");
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario QC_Store_AgeStore_Deposit_GraceDays_Dropdown_Txn ");
+			test.log(LogStatus.ERROR, "Unable to execute scenario QC_Store_AgeStore_Deposit_GraceDays_Dropdown_Txn ");
 
 		}
 	}
@@ -440,7 +440,7 @@ public class QCStore {
 			System.out.println("under catch of Test");
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario QC_AgeStore_Void_Txn ");
+			test.log(LogStatus.ERROR, "Unable to execute scenario QC_AgeStore_Void_Txn ");
 
 		}
 	}
@@ -503,7 +503,7 @@ public class QCStore {
 			System.out.println("under catch of Test");
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario QC_FutureDeposit_DropDown ");
+			test.log(LogStatus.ERROR, "Unable to execute scenario QC_FutureDeposit_DropDown ");
 
 		}
 	}
@@ -566,7 +566,7 @@ public class QCStore {
 			System.out.println("under catch of Test");
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario QC_Epp_Deposit_Void_Txn");
+			test.log(LogStatus.ERROR, "Unable to execute scenario QC_Epp_Deposit_Void_Txn");
 
 		}
 	}
@@ -631,7 +631,7 @@ public class QCStore {
 			System.out.println("under catch of Test");
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario QC_Epp_PrePayment_Txn");
+			test.log(LogStatus.ERROR, "Unable to execute scenario QC_Epp_PrePayment_Txn");
 
 		}
 	}
@@ -698,7 +698,7 @@ public class QCStore {
 			System.out.println("under catch of Test");
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario QC_Epp_Deposit_Clear_Txn");
+			test.log(LogStatus.ERROR, "Unable to execute scenario QC_Epp_Deposit_Clear_Txn");
 
 		}
 	}
@@ -770,7 +770,7 @@ public class QCStore {
 			System.out.println("under catch of Test");
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario QC_EppDepositClear_Refund_Txn");
+			test.log(LogStatus.ERROR, "Unable to execute scenario QC_EppDepositClear_Refund_Txn");
 
 		}
 	}
@@ -840,7 +840,7 @@ public class QCStore {
 			System.out.println("under catch of Test");
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario QC_Epp_PrePayment_Return_Txn");
+			test.log(LogStatus.ERROR, "Unable to execute scenario QC_Epp_PrePayment_Return_Txn");
 
 		}
 	}
@@ -910,7 +910,7 @@ public class QCStore {
 			System.out.println("under catch of Test");
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario QC_Epp_Return_NSFPayment_Txn");
+			test.log(LogStatus.ERROR, "Unable to execute scenario QC_Epp_Return_NSFPayment_Txn");
 
 		}
 	}
@@ -983,7 +983,7 @@ public class QCStore {
 			System.out.println("under catch of Test");
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario QC_Epp_Return_ReDeposit_Txn");
+			test.log(LogStatus.ERROR, "Unable to execute scenario QC_Epp_Return_ReDeposit_Txn");
 
 		}
 	}
@@ -1076,7 +1076,7 @@ public class QCStore {
 			System.out.println("under catch of Test");
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario QC_Void_FullReturnPayment_Txn");
+			test.log(LogStatus.ERROR, "Unable to execute scenario QC_Void_FullReturnPayment_Txn");
 
 		}
 	}
@@ -1154,7 +1154,7 @@ public class QCStore {
 			System.out.println("under catch of Test");
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario QC_PartialPayment_RefundVoid_Txn");
+			test.log(LogStatus.ERROR, "Unable to execute scenario QC_PartialPayment_RefundVoid_Txn");
 
 		}
 	}
@@ -1215,7 +1215,7 @@ public class QCStore {
 			System.out.println("under catch of Test");
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario QC_FutureDeposit_EOD_Txn ");
+			test.log(LogStatus.ERROR, "Unable to execute scenario QC_FutureDeposit_EOD_Txn ");
 
 		}
 	}
@@ -1278,7 +1278,7 @@ public class QCStore {
 			System.out.println("under catch of Test");
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario QC_FutureDeposit_EOD_Txn ");
+			test.log(LogStatus.ERROR, "Unable to execute scenario QC_FutureDeposit_EOD_Txn ");
 
 		}
 	}
@@ -1342,7 +1342,7 @@ public class QCStore {
 			System.out.println("under catch of Test");
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario QC_FutureDeposit_EOD_Txn ");
+			test.log(LogStatus.ERROR, "Unable to execute scenario QC_FutureDeposit_EOD_Txn ");
 
 		}
 	}
@@ -1404,7 +1404,7 @@ public class QCStore {
 			System.out.println("under catch of Test");
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario QC_FutureDeposit_EOD_Txn ");
+			test.log(LogStatus.ERROR, "Unable to execute scenario QC_FutureDeposit_EOD_Txn ");
 
 		}
 	}
@@ -1468,7 +1468,7 @@ public class QCStore {
 			System.out.println("under catch of Test");
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario QC_FutureDeposit_EOD_Txn ");
+			test.log(LogStatus.ERROR, "Unable to execute scenario QC_FutureDeposit_EOD_Txn ");
 
 		}
 	}
@@ -1529,7 +1529,7 @@ public class QCStore {
 			System.out.println("under catch of Test");
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario QC_FutureDeposit_EOD_Txn ");
+			test.log(LogStatus.ERROR, "Unable to execute scenario QC_FutureDeposit_EOD_Txn ");
 
 		}
 	}
@@ -1601,7 +1601,7 @@ public class QCStore {
 			System.out.println("under catch of Test");
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario QC_store_AgeStore_DueDate_Deposit_EOD_Txn ");
+			test.log(LogStatus.ERROR, "Unable to execute scenario QC_store_AgeStore_DueDate_Deposit_EOD_Txn ");
 
 		}
 	}
@@ -1671,7 +1671,7 @@ public class QCStore {
 			System.out.println("under catch of Test");
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario QC_store_AgeStore_DueDate_Deposit_EOD_Txn ");
+			test.log(LogStatus.ERROR, "Unable to execute scenario QC_store_AgeStore_DueDate_Deposit_EOD_Txn ");
 
 		}
 	}
@@ -1741,7 +1741,7 @@ public class QCStore {
 			System.out.println("under catch of Test");
 			// test.log(LogStatus.ERROR, MarkupHelper.createLabel("Unable to
 			// start scenario 1 " , ExtentColor.RED));
-			test.log(LogStatus.ERROR, "Unable to start scenario QC_FutureDeposit_EOD_Txn ");
+			test.log(LogStatus.ERROR, "Unable to execute scenario QC_FutureDeposit_EOD_Txn ");
 
 		}
 	}
@@ -2879,7 +2879,7 @@ public class QCStore {
 			String screenshotPath = getScreenhot(driver, "QC_AgeStore_Deposit_PrePayment_Txn");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
-			test.log(LogStatus.ERROR, "Unable to start scenario JQC_AgeStore_Deposit_PrePayment_Txn ");
+			test.log(LogStatus.ERROR, "Unable to execute scenario JQC_AgeStore_Deposit_PrePayment_Txn ");
 
 		}
 	}
@@ -2946,7 +2946,7 @@ public class QCStore {
 			String screenshotPath = getScreenhot(driver, "QC_AgeStore_Deposit_PrePayment_Void_Txn");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
-			test.log(LogStatus.ERROR, "Unable to start scenario JQC_AgeStore_Deposit_PrePaymentVoid_Txn ");
+			test.log(LogStatus.ERROR, "Unable to execute scenario JQC_AgeStore_Deposit_PrePaymentVoid_Txn ");
 
 		}
 	}
@@ -3015,7 +3015,7 @@ public class QCStore {
 			String screenshotPath = getScreenhot(driver, "QC_AgeStore_Deposit_ClearDropdown_Txn");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
-			test.log(LogStatus.ERROR, "Unable to start scenario JQC_AgeStore_Deposit_ClearDropdown_Txn ");
+			test.log(LogStatus.ERROR, "Unable to execute scenario JQC_AgeStore_Deposit_ClearDropdown_Txn ");
 
 		}
 	}
@@ -3084,7 +3084,7 @@ public class QCStore {
 			String screenshotPath = getScreenhot(driver, "QC_AgeStore_Deposit_ClearMenu_Txn");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
-			test.log(LogStatus.ERROR, "Unable to start scenario JQC_AgeStore_Deposit_ClearMenu_Txn ");
+			test.log(LogStatus.ERROR, "Unable to execute scenario JQC_AgeStore_Deposit_ClearMenu_Txn ");
 
 		}
 	}
@@ -3158,7 +3158,7 @@ public class QCStore {
 			String screenshotPath = getScreenhot(driver, "QC_AgeStore_Deposit_AutoClear_Txn");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
-			test.log(LogStatus.ERROR, "Unable to start scenario JQC_AgeStore_Deposit_AutoClear_Txn ");
+			test.log(LogStatus.ERROR, "Unable to execute scenario JQC_AgeStore_Deposit_AutoClear_Txn ");
 
 		}
 	}
@@ -3214,7 +3214,7 @@ public class QCStore {
 			String screenshotPath = getScreenhot(driver, "QC_AgeStore_DCDeposit_Txn");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
-			test.log(LogStatus.ERROR, "Unable to start scenario JQC_AgeStore_DCDeposit_Txn ");
+			test.log(LogStatus.ERROR, "Unable to execute scenario JQC_AgeStore_DCDeposit_Txn ");
 
 		}
 	}
@@ -3270,7 +3270,7 @@ public class QCStore {
 			String screenshotPath = getScreenhot(driver, "QC_AgeStore_DCDeposit_Menu_Txn");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
-			test.log(LogStatus.ERROR, "Unable to start scenario JQC_AgeStore_DCDeposit_Menu_Txn");
+			test.log(LogStatus.ERROR, "Unable to execute scenario JQC_AgeStore_DCDeposit_Menu_Txn");
 
 		}
 	}
@@ -3331,7 +3331,7 @@ public class QCStore {
 			String screenshotPath = getScreenhot(driver, "QC_AgeStore_GraceDays_DCDeposit_Dropdown_Txn");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
-			test.log(LogStatus.ERROR, "Unable to start scenario JQC_AgeStore_GraceDays_DCDeposit_Txn");
+			test.log(LogStatus.ERROR, "Unable to execute scenario JQC_AgeStore_GraceDays_DCDeposit_Txn");
 
 		}
 	}
@@ -3389,7 +3389,7 @@ public class QCStore {
 			String screenshotPath = getScreenhot(driver, "QC_AgeStore_GraceDays_DCDeposit_Menu_Txn");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
-			test.log(LogStatus.ERROR, "Unable to start scenario JQC_AgeStore_GraceDays_DCDeposit_Menu_Txn ");
+			test.log(LogStatus.ERROR, "Unable to execute scenario JQC_AgeStore_GraceDays_DCDeposit_Menu_Txn ");
 
 		}
 	}
@@ -3461,7 +3461,7 @@ public class QCStore {
 			String screenshotPath = getScreenhot(driver, "QC_AgeStore_ACHReturn_Refinance_Rescind_Txn");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
-			test.log(LogStatus.ERROR, "Unable to start scenario JQC_AgeStore_ACHReturn_Refinance_Rescind_Txn");
+			test.log(LogStatus.ERROR, "Unable to execute scenario JQC_AgeStore_ACHReturn_Refinance_Rescind_Txn");
 
 		}
 	}
@@ -3534,7 +3534,7 @@ public class QCStore {
 			String screenshotPath = getScreenhot(driver, "QC_AgeStore_NSFPosting_Refinance_Rescind_Txn");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
-			test.log(LogStatus.ERROR, "Unable to start scenario JQC_AgeStore_NSFPosting_Refinance_Rescind_Txn");
+			test.log(LogStatus.ERROR, "Unable to execute scenario JQC_AgeStore_NSFPosting_Refinance_Rescind_Txn");
 
 		}
 	}
@@ -3604,7 +3604,7 @@ public class QCStore {
 			String screenshotPath = getScreenhot(driver, "QC_AgeStore_PrePayment_Return_Txn");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
-			test.log(LogStatus.ERROR, "Unable to start scenario JQC_AgeStore_PrePayment_Return_Txn");
+			test.log(LogStatus.ERROR, "Unable to execute scenario JQC_AgeStore_PrePayment_Return_Txn");
 
 		}
 	}
@@ -3669,7 +3669,7 @@ public class QCStore {
 			String screenshotPath = getScreenhot(driver, "QC_AgeStore_PrePayment_Clear_Txn");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
-			test.log(LogStatus.ERROR, "Unable to start scenario JQC_AgeStore_PrePayment_Clear_Txn");
+			test.log(LogStatus.ERROR, "Unable to execute scenario JQC_AgeStore_PrePayment_Clear_Txn");
 
 		}
 	}
@@ -3747,7 +3747,7 @@ public class QCStore {
 			String screenshotPath = getScreenhot(driver, "QC_AgeStore_Deposit_Return_Refinance_Txn");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
-			test.log(LogStatus.ERROR, "Unable to start scenario JQC_Deposit_Return_Refinance_Txn_file_name");
+			test.log(LogStatus.ERROR, "Unable to execute scenario JQC_Deposit_Return_Refinance_Txn_file_name");
 
 		}
 	}
@@ -3828,7 +3828,7 @@ public class QCStore {
 			String screenshotPath = getScreenhot(driver, "QC_AgeStore_Deposit_Return_Refinance_Void_Txn");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
-			test.log(LogStatus.ERROR, "Unable to start scenario JQC_Deposit_Return_Refinance_Txn_file_name");
+			test.log(LogStatus.ERROR, "Unable to execute scenario JQC_Deposit_Return_Refinance_Txn_file_name");
 
 		}
 	}
@@ -3890,7 +3890,7 @@ public class QCStore {
 			String screenshotPath = getScreenhot(driver, "QC_AgeStore_Refinance_Rescind_Txn");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
-			test.log(LogStatus.ERROR, "Unable to start scenario JQC_Deposit_Return_Refinance_Txn_file_name");
+			test.log(LogStatus.ERROR, "Unable to execute scenario JQC_Deposit_Return_Refinance_Txn_file_name");
 
 		}
 	}
@@ -3978,7 +3978,7 @@ public class QCStore {
 			String screenshotPath = getScreenhot(driver, "QC_AgeStore_Redeposit_Prepayment_Void_Prepayment_Return_Txn");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
-			test.log(LogStatus.ERROR, "Unable to start scenario JQC_Redeposit_Prepayment_Void_Return_Txn");
+			test.log(LogStatus.ERROR, "Unable to execute scenario JQC_Redeposit_Prepayment_Void_Return_Txn");
 
 		}
 	}
@@ -4053,7 +4053,7 @@ public class QCStore {
 			String screenshotPath = getScreenhot(driver, "QC_Return_ReDeposit_Clear_Txn");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
-			test.log(LogStatus.ERROR, "Unable to start scenario JQC_Return_ReDeposit_Clear_Txn ");
+			test.log(LogStatus.ERROR, "Unable to execute scenario JQC_Return_ReDeposit_Clear_Txn ");
 
 		}
 	}
@@ -4109,7 +4109,7 @@ public class QCStore {
 			String screenshotPath = getScreenhot(driver, "QC_NewLoan_Veritec_Txn");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
-			test.log(LogStatus.ERROR, "Unable to start scenario JQC_NewLoan_Veritec_Txn ");
+			test.log(LogStatus.ERROR, "Unable to execute scenario JQC_NewLoan_Veritec_Txn ");
 
 		}
 	}
@@ -4162,7 +4162,7 @@ public class QCStore {
 			String screenshotPath = getScreenhot(driver, "QC_BuyBack_Txn_Testdata");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
-			test.log(LogStatus.ERROR, "Unable to start scenarios ");
+			test.log(LogStatus.ERROR, "Unable to execute scenarios ");
 
 		}
 
@@ -4217,7 +4217,7 @@ public class QCStore {
 			String screenshotPath = getScreenhot(driver, "QC_BuyBack_Void_Txn_Testdata");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
-			test.log(LogStatus.ERROR, "Unable to start scenarios ");
+			test.log(LogStatus.ERROR, "Unable to execute scenarios ");
 
 		}
 	}
@@ -4269,7 +4269,7 @@ public class QCStore {
 			String screenshotPath = getScreenhot(driver, "QC_BuyBack_Rebate_Txn_Testdata");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
-			test.log(LogStatus.ERROR, "Unable to start scenarios ");
+			test.log(LogStatus.ERROR, "Unable to execute scenarios ");
 
 		}
 	}
@@ -4322,7 +4322,7 @@ public class QCStore {
 			String screenshotPath = getScreenhot(driver, "QC_BuyBack_Rebate_Void_Txn_Testdata");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
-			test.log(LogStatus.ERROR, "Unable to start scenarios ");
+			test.log(LogStatus.ERROR, "Unable to execute scenarios ");
 
 		}
 	}
@@ -4374,7 +4374,7 @@ public class QCStore {
 			String screenshotPath = getScreenhot(driver, "QC_EPP_Txn_Testdata");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
-			test.log(LogStatus.ERROR, "Unable to start scenarios ");
+			test.log(LogStatus.ERROR, "Unable to execute scenarios ");
 
 		}
 	}
@@ -4440,7 +4440,7 @@ public class QCStore {
 			String screenshotPath = getScreenhot(driver, "QC_Deposit_Return_EPP_Txn_Testdata");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
-			test.log(LogStatus.ERROR, "Unable to start scenarios ");
+			test.log(LogStatus.ERROR, "Unable to execute scenarios ");
 
 		}
 	}
@@ -4509,7 +4509,7 @@ public class QCStore {
 			String screenshotPath = getScreenhot(driver, "QC_EPP_AgestoreInstallmentwise_EPPPayment_Txn_Testdata");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
-			test.log(LogStatus.ERROR, "Unable to start scenarios ");
+			test.log(LogStatus.ERROR, "Unable to execute scenarios ");
 
 		}
 	}
@@ -4578,7 +4578,7 @@ public class QCStore {
 			String screenshotPath = getScreenhot(driver, "QC_PartialWORecovery_FullWORecovery_Void_Txn_Testdata");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
-			test.log(LogStatus.ERROR, "Unable to start scenarios ");
+			test.log(LogStatus.ERROR, "Unable to execute scenarios ");
 
 		}
 	}
@@ -4646,7 +4646,7 @@ public class QCStore {
 			String screenshotPath = getScreenhot(driver, "QC_ACH_PartialWORecovery_FullWORecovery_Void_Txn_Testdata");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
-			test.log(LogStatus.ERROR, "Unable to start scenarios ");
+			test.log(LogStatus.ERROR, "Unable to execute scenarios ");
 
 		}
 	}
@@ -4725,7 +4725,7 @@ public class QCStore {
 					"QC_ChkDeposit_RtnChk_ReDeposit_Payment_Void_Clear_Txn_Testdata");
 			test.log(LogStatus.INFO, test.addScreenCapture(screenshotPath));
 
-			test.log(LogStatus.ERROR, "Unable to start scenarios ");
+			test.log(LogStatus.ERROR, "Unable to execute scenarios ");
 
 		}
 	}

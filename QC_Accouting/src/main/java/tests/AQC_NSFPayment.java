@@ -85,11 +85,11 @@ public class AQC_NSFPayment extends QCStore{
 					
 					test.log(LogStatus.PASS, " payment amount is"+tenderamunt);
 
-					driver.findElement(By.name("transactionDataBean.tenderTypeFirst")).sendKeys(TenderType);
-					test.log(LogStatus.PASS, " Select the Deposit_Type as"+TenderType);
-					//Thread.sleep(1000);
-					driver.findElement(By.xpath("/html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr/td[2]/table/tbody/tr[7]/td[1]/table[2]/tbody/tr[1]/td/table/tbody/tr[12]/td[3]/input")).sendKeys(tenderamunt);
-					test.log(LogStatus.PASS, " Enterd tender amount is"+tenderamunt);
+					
+					
+					//Need to add code
+					
+					
 
 					driver.findElement(By.name("requestBean.password")).sendKeys(PIN);
 					test.log(LogStatus.PASS, " Entered password "+PIN);
@@ -131,9 +131,7 @@ public class AQC_NSFPayment extends QCStore{
 
 
 				}
-				else{
-					test.log(LogStatus.FAIL, "RegSSN and SSN not matching ");
-				}}
+				}
 
 	}
 

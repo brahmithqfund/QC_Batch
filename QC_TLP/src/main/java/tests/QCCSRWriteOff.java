@@ -208,7 +208,7 @@ public class QCCSRWriteOff extends QCStore {
 								// alert.
 							}
 							test.log(LogStatus.PASS, "Transfered to Collection");
-					        driver.close();
+					        //driver.close();
 							break;
 							}
 					    }
@@ -280,7 +280,7 @@ public class QCCSRWriteOff extends QCStore {
 						}
 						catch(Exception e)
 						{
-							driver.get(prop.getProperty("login_page")); 
+							/*driver.get(prop.getProperty("login_page")); 
 							
 							Thread.sleep(10000);
 							driver.switchTo().defaultContent();
@@ -341,7 +341,7 @@ public class QCCSRWriteOff extends QCStore {
 						test.log(LogStatus.PASS, "Clicked on WriteOff");
 						Thread.sleep(5000);
 							encryption_transaction_nbr = driver.findElement(By.name("customerBean.randomNbr1")).getAttribute("value");				
-							test.log(LogStatus.PASS, "Trans Number is" + encryption_transaction_nbr);
+							test.log(LogStatus.PASS, "Trans Number is" + encryption_transaction_nbr);*/
 						}
 						
 		//Admin Login For Getting Encryption Key

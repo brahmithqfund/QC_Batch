@@ -98,7 +98,9 @@ public class Frequency_Semi_monthly extends QCStore {
 						business_date2 = business_datenew[1];
 						business_date3 = business_datenew[2];
 						int business_date1_int = Integer.parseInt(business_date1);
+						int business_date2_int = Integer.parseInt(business_date2);
 						int business_date3_int = Integer.parseInt(business_date3);
+						
 						test.log(LogStatus.PASS, "Business date is :" + business_date);
 						Thread.sleep(2000);
 						driver.switchTo().defaultContent();
@@ -130,6 +132,24 @@ public class Frequency_Semi_monthly extends QCStore {
 						int day_display = d.getDay();
 						int month_dispay = d.getMonth();
 						int year_display = d.getYear();
+						
+						LocalDate convertedDate = LocalDate.parse(business_date, DateTimeFormatter.ofPattern("M/d/yyyy"));
+						convertedDate = convertedDate.withDayOfMonth(
+						                                convertedDate.getMonth().length(convertedDate.isLeapYear()));
+						
+						//LocalDate now = LocalDate.of((business_date3_int ), (business_date2_int), business_date1_int);// now();
+						// //2015-11-23
+						//firstday = now.with(firstInMonth(DayOfWeek.valueOf(business_date2)));
+						String f=String.valueOf(convertedDate);
+						String convertedDatenew[] = f.split("-");
+						String convertedDate1 = convertedDatenew[0];
+						String convertedDate2 = convertedDatenew[1];
+						String convertedDate3 = convertedDatenew[2];
+						
+						int lst_date=Integer.parseInt(convertedDate3);
+						String date = null;
+						
+					
 
 						
 						
@@ -140,7 +160,7 @@ public class Frequency_Semi_monthly extends QCStore {
 								test.log(LogStatus.PASS, "Income_PayFrequency is entered: " + Income_PayFrequency);
 								driver.findElement(By.id("rad_semi1")).click();
 								 test.log(LogStatus.PASS, "Clicked on 1st and 16th check box  ");
-								 int business_date2_int = Integer.parseInt(business_date2);
+								// int business_date2_int = Integer.parseInt(business_date2);
 									
 									Thread.sleep(3000);
 										
@@ -156,7 +176,7 @@ public class Frequency_Semi_monthly extends QCStore {
 												.findElement(By
 														.xpath("//input[@class='textBox50editablepp' and @name='NPYYYY']"))
 												.getAttribute("value");
-										String date = date1 + "/" + date2 + "/" + date3;
+										date = date1 + "/" + date2 + "/" + date3;
 
 									
 										if (business_date2_int  <=15) {
@@ -226,7 +246,7 @@ public class Frequency_Semi_monthly extends QCStore {
 							test.log(LogStatus.PASS, "Income_PayFrequency is entered: " + Income_PayFrequency);
 							driver.findElement(By.id("rad_semi1")).click();
 							 test.log(LogStatus.PASS, "Clicked on 1st and 16th of check box  ");
-							 int business_date2_int = Integer.parseInt(business_date2);
+							// int business_date2_int = Integer.parseInt(business_date2);
 								
 								
 									
@@ -242,7 +262,7 @@ public class Frequency_Semi_monthly extends QCStore {
 											.findElement(By
 													.xpath("//input[@class='textBox50editablepp' and @name='NPYYYY']"))
 											.getAttribute("value");
-									String date = date1 + "/" + date2 + "/" + date3;
+									date = date1 + "/" + date2 + "/" + date3;
 
 								
 									if (business_date2_int  <=15) {
@@ -312,7 +332,7 @@ public class Frequency_Semi_monthly extends QCStore {
 								test.log(LogStatus.PASS, "Income_PayFrequency is entered: " + Income_PayFrequency);
 								driver.findElement(By.id("rad_semi2")).click();
 								 test.log(LogStatus.PASS, "Clicked on 16th and last day check box  ");
-								int business_date2_int = Integer.parseInt(business_date2);
+								//int business_date2_int = Integer.parseInt(business_date2);
 									
 									
 							
@@ -328,7 +348,7 @@ public class Frequency_Semi_monthly extends QCStore {
 												.findElement(By
 														.xpath("//input[@class='textBox50editablepp' and @name='NPYYYY']"))
 												.getAttribute("value");
-										String date = date1 + "/" + date2 + "/" + date3;
+										date = date1 + "/" + date2 + "/" + date3;
 
 									
 										if (business_date2_int  <=14) {
@@ -364,7 +384,7 @@ public class Frequency_Semi_monthly extends QCStore {
 											
 											String date_new = (business_date1_int) + "/" + business_date2_int + "/"
 													+ business_date3_int;
-											LocalDate convertedDate = LocalDate.parse(date, DateTimeFormatter.ofPattern("M/d/yyyy"));
+											convertedDate = LocalDate.parse(date, DateTimeFormatter.ofPattern("M/d/yyyy"));
 											convertedDate = convertedDate.withDayOfMonth(
 											                                convertedDate.getMonth().length(convertedDate.isLeapYear()));
 											String convertedDate_str=String.valueOf(convertedDate);
@@ -439,7 +459,7 @@ public class Frequency_Semi_monthly extends QCStore {
 								test.log(LogStatus.PASS, "Income_PayFrequency is entered: " + Income_PayFrequency);
 								driver.findElement(By.id("rad_semi2")).click();
 								 test.log(LogStatus.PASS, "Clicked on 16th and last day check box  ");
-								int business_date2_int = Integer.parseInt(business_date2);
+								//int business_date2_int = Integer.parseInt(business_date2);
 									
 									
 							
@@ -455,7 +475,7 @@ public class Frequency_Semi_monthly extends QCStore {
 												.findElement(By
 														.xpath("//input[@class='textBox50editablepp' and @name='NPYYYY']"))
 												.getAttribute("value");
-										String date = date1 + "/" + date2 + "/" + date3;
+										date = date1 + "/" + date2 + "/" + date3;
 
 									
 										if (business_date2_int  <=14) {
@@ -491,7 +511,7 @@ public class Frequency_Semi_monthly extends QCStore {
 											
 											String date_new = (business_date1_int) + "/" + business_date2_int + "/"
 													+ business_date3_int;
-											LocalDate convertedDate = LocalDate.parse(date, DateTimeFormatter.ofPattern("M/d/yyyy"));
+											convertedDate = LocalDate.parse(date, DateTimeFormatter.ofPattern("M/d/yyyy"));
 											convertedDate = convertedDate.withDayOfMonth(
 											                                convertedDate.getMonth().length(convertedDate.isLeapYear()));
 											String convertedDate_str=String.valueOf(convertedDate);
@@ -561,22 +581,508 @@ public class Frequency_Semi_monthly extends QCStore {
 							
 							}
 						}
-						else if (Monthly_Type.equals("2")) {
+						
+						else if (Monthly_Type.equals("Other")) {
+							driver.findElement(By.name("customerBean.payFreqCdDisp")).sendKeys(Income_PayFrequency);
+							test.log(LogStatus.PASS, "Income_PayFrequency is entered: " + Income_PayFrequency);
+
+							test.log(LogStatus.PASS, "Monthly type selected: " + Monthly_Type);
+							//driver.findElement(By.id("rad_monthly2")).click();
+							//test.log(LogStatus.PASS, "Clicked on monthly type: " + Monthly_Type);
+							
+							driver.findElement(By.id("oth1")).click();
+							test.log(LogStatus.PASS, "Clicked on Other radio button");
+							
+							try { 
+							    Alert alert = driver.switchTo().alert();
+							    alert.accept();
+							   // if alert present, accept and move on.												
+								
+							}
+							catch (NoAlertPresentException e) {
+							    //do what you normally would if you didn't have the alert.
+							}
+							driver.findElement(By.name("semi_other")).click();
+							test.log(LogStatus.PASS, "Clicked first option/ dates radio button");
+							
+							
+							Select dropdown = new Select(driver.findElement(By.name("customerBean.semiFirstDate")));
+
+							List<WebElement> options = dropdown.getOptions();
+							
+							Select dropdown2 = new Select(driver.findElement(By.name("customerBean.semiSecondDate")));
+
+							List<WebElement> options2 = dropdown2.getOptions();
+
+							for (int k = 1; k <= 15; k++) {
+								
+
+									
+								Thread.sleep(2000);
+									driver.findElement(By.name("customerBean.semiFirstDate"))
+											.sendKeys(options.get(k).getText());
+									test.log(LogStatus.PASS,
+											"Day selected : " + options.get(k).getText());
+									dropdown2.selectByIndex(k);
+									//driver.findElement(By.name("customerBean.semiSecondDate")).sendKeys(options2.get(k).getText());
+									test.log(LogStatus.PASS,
+
+											"Second Day selected : " + options2.get(k).getText());
+									String date1 = driver
+											.findElement(
+													By.xpath("//input[@name='NPMM' and @class='textBox20editablepp']"))
+											.getAttribute("value");
+									
+									String date2 = driver
+											.findElement(
+													By.xpath("//input[@class='textBox20editablepp' and @name='NPDD']"))
+											.getAttribute("value");
+									String date3 = driver
+											.findElement(By
+													.xpath("//input[@class='textBox50editablepp' and @name='NPYYYY']"))
+											.getAttribute("value");
+									Thread.sleep(2000);
+									date = date1 + "/" + date2 + "/" + date3;
+									
+									
+									
+									
+									if(business_date2_int>=k)
+									{
+										
+										
+										String expected_date = business_date1_int + "/" + (k+15) + "/"
+												+ business_date3_int;
+										String expected_date2 = "0" + (business_date1_int) + "/0" + (k+15) + "/"
+												+ business_date3_int;
+										String expected_date3 = (business_date1_int ) + "/" + "0" + (k+15) + "/"
+												+ business_date3_int;
+										String expected_date4 = "0" + (business_date1_int) + "/" + (k+15) + "/"
+												+ business_date3_int;
+										if (date.equalsIgnoreCase(expected_date)
+												|| date.equalsIgnoreCase(expected_date2)
+												|| date.equalsIgnoreCase(expected_date3)
+												|| date.equalsIgnoreCase(expected_date4)) {
+											test.log(LogStatus.PASS, "Displayed date: " + date + "== Expected date"
+													+ (business_date1_int) + "/" + (k+15) + "/" + business_date3);
+										} else {
+											test.log(LogStatus.FAIL,
+													"Displayed date: " + date + "Not equals to Expected date"
+															+ business_date1_int + "/" + (k+15) + "/"+business_date3);
+									}
+											
+										
+							}
+									else if(business_date2_int<k&&!(month_dispay==11))
+									{
+										
+										
+										String expected_date = business_date1_int + "/" + (k) + "/"
+												+ business_date3_int;
+										String expected_date2 = "0" + (business_date1_int) + "/0" + (k) + "/"
+												+ business_date3_int;
+										String expected_date3 = (business_date1_int ) + "/" + "0" + (k) + "/"
+												+ business_date3_int;
+										String expected_date4 = "0" + (business_date1_int) + "/" + (k) + "/"
+												+ business_date3_int;
+										if (date.equalsIgnoreCase(expected_date)
+												|| date.equalsIgnoreCase(expected_date2)
+												|| date.equalsIgnoreCase(expected_date3)
+												|| date.equalsIgnoreCase(expected_date4)) {
+											test.log(LogStatus.PASS, "Displayed date: " + date + "== Expected date"
+													+ (business_date1_int) + "/" + (k) + "/" + business_date3);
+										} else {
+											test.log(LogStatus.FAIL,
+													"Displayed date: " + date + "Not equals to Expected date"
+															+ business_date1_int + "/" + (k) + "/"+business_date3);
+									}
+										
+											
+										
+							}
+									
+						
+									else if(business_date2_int>=k&&(month_dispay==11))
+									{
+										
+										
+										String expected_date = business_date1_int + "/" + (k+15) + "/"
+												+ business_date3_int;
+										String expected_date2 = "0" + (business_date1_int) + "/0" + (k+15) + "/"
+												+ business_date3_int;
+										String expected_date3 = (business_date1_int ) + "/" + "0" + (k+15) + "/"
+												+ business_date3_int;
+										String expected_date4 = "0" + (business_date1_int) + "/" + (k+15) + "/"
+												+ business_date3_int;
+										if (date.equalsIgnoreCase(expected_date)
+												|| date.equalsIgnoreCase(expected_date2)
+												|| date.equalsIgnoreCase(expected_date3)
+												|| date.equalsIgnoreCase(expected_date4)) {
+											test.log(LogStatus.PASS, "Displayed date: " + date + "== Expected date"
+													+ (business_date1_int) + "/" + (k+15) + "/" + business_date3);
+										} else {
+											test.log(LogStatus.FAIL,
+													"Displayed date: " + date + "Not equals to Expected date"
+															+ business_date1_int + "/" + (k+15) + "/"+business_date3);
+									}
+
+																				
+									
+									
+									
+									
+						}
+									dropdown.selectByIndex(0);
+									Thread.sleep(2000);
+									dropdown2.selectByIndex(0);
+									Thread.sleep(2000);
+						}
+							
+								dropdown.selectByIndex(0);
+								Thread.sleep(2000);
+								dropdown2.selectByIndex(0);
+								Thread.sleep(2000);
+//Last Day selection
+//feb and 28								
+								if(month_dispay==1&&lst_date==28)
+								{
+
+									driver.findElement(By.name("customerBean.semiFirstDate"))
+											.sendKeys("13");
+									test.log(LogStatus.PASS,
+											"Day selected : " + 13);
+									
+									driver.findElement(By.name("customerBean.semiSecondDate")).sendKeys("Last Day");
+									test.log(LogStatus.PASS,
+
+											"Second Day selected : Last day");
+									String date1 = driver
+											.findElement(
+													By.xpath("//input[@name='NPMM' and @class='textBox20editablepp']"))
+											.getAttribute("value");
+								
+									String date2 = driver
+											.findElement(
+													By.xpath("//input[@class='textBox20editablepp' and @name='NPDD']"))
+											.getAttribute("value");
+									String date3 = driver
+											.findElement(By
+													.xpath("//input[@class='textBox50editablepp' and @name='NPYYYY']"))
+											.getAttribute("value");
+									Thread.sleep(2000);
+									date = date1 + "/" + date2 + "/" + date3;
+								}
+//feb and 29								
+								if(month_dispay==1&&lst_date==29)
+								{
+									driver.findElement(By.name("customerBean.semiFirstDate"))
+									.sendKeys("14");
+							test.log(LogStatus.PASS,
+									"Day selected : " + 14);
+							
+							driver.findElement(By.name("customerBean.semiSecondDate")).sendKeys("Last Day");
+							test.log(LogStatus.PASS,
+
+									"Second Day selected : Last day");
+							String date1 = driver
+									.findElement(
+											By.xpath("//input[@name='NPMM' and @class='textBox20editablepp']"))
+									.getAttribute("value");
+							Thread.sleep(3000);
+							String date2 = driver
+									.findElement(
+											By.xpath("//input[@class='textBox20editablepp' and @name='NPDD']"))
+									.getAttribute("value");
+							String date3 = driver
+									.findElement(By
+											.xpath("//input[@class='textBox50editablepp' and @name='NPYYYY']"))
+									.getAttribute("value");
+							Thread.sleep(2000);
+							date = date1 + "/" + date2 + "/" + date3;	
+								}
+// 30 days month							
+								if(lst_date==30)
+								{
+									driver.findElement(By.name("customerBean.semiFirstDate"))
+									.sendKeys("15");
+							test.log(LogStatus.PASS,
+									"Day selected : " + 15);
+							
+							driver.findElement(By.name("customerBean.semiSecondDate")).sendKeys("Last Day");
+							test.log(LogStatus.PASS,
+
+									"Second Day selected : Last day");
+							String date1 = driver
+									.findElement(
+											By.xpath("//input[@name='NPMM' and @class='textBox20editablepp']"))
+									.getAttribute("value");
+							Thread.sleep(3000);
+							String date2 = driver
+									.findElement(
+											By.xpath("//input[@class='textBox20editablepp' and @name='NPDD']"))
+									.getAttribute("value");
+							String date3 = driver
+									.findElement(By
+											.xpath("//input[@class='textBox50editablepp' and @name='NPYYYY']"))
+									.getAttribute("value");
+							Thread.sleep(2000);
+							date = date1 + "/" + date2 + "/" + date3;	
+								}
+//31 days month
+				/*				if(lst_date==31)
+								{
+									driver.findElement(By.name("customerBean.semiFirstDate"))
+									.sendKeys("14");
+							test.log(LogStatus.PASS,
+									"Day selected : " + 14);
+							
+							driver.findElement(By.name("customerBean.semiSecondDate")).sendKeys("Last Day");
+							test.log(LogStatus.PASS,
+
+									"Second Day selected : Last day");
+							String date1 = driver
+									.findElement(
+											By.xpath("//input[@name='NPMM' and @class='textBox20editablepp']"))
+									.getAttribute("value");
+							Thread.sleep(3000);
+							String date2 = driver
+									.findElement(
+											By.xpath("//input[@class='textBox20editablepp' and @name='NPDD']"))
+									.getAttribute("value");
+							String date3 = driver
+									.findElement(By
+											.xpath("//input[@class='textBox50editablepp' and @name='NPYYYY']"))
+									.getAttribute("value");
+							Thread.sleep(2000);
+							date = date1 + "/" + date2 + "/" + date3;	
+								}*/
+	//verifying date of feb month							
+								if(business_date2_int<15&&(lst_date==28)&&(month_dispay==1))
+								{
+									
+									
+									String expected_date = business_date1_int + "/" + (13) + "/"
+											+ business_date3_int;
+									String expected_date2 = "0" + (business_date1_int) + "/0" + (13) + "/"
+											+ business_date3_int;
+									String expected_date3 = (business_date1_int ) + "/" + "0" + (13) + "/"
+											+ business_date3_int;
+									String expected_date4 = "0" + (business_date1_int) + "/" + (13) + "/"
+											+ business_date3_int;
+									if (date.equalsIgnoreCase(expected_date)
+											|| date.equalsIgnoreCase(expected_date2)
+											|| date.equalsIgnoreCase(expected_date3)
+											|| date.equalsIgnoreCase(expected_date4)) {
+										test.log(LogStatus.PASS, "Displayed date: " + date + "== Expected date"
+												+ (business_date1_int) + "/" + (13) + "/" + business_date3);
+									} else {
+										test.log(LogStatus.FAIL,
+												"Displayed date: " + date + "Not equals to Expected date"
+														+ business_date1_int + "/" + (13) + "/"+business_date3);
+								}
+										
+									
+						}
+//verifying date of feb month					
+								else if(business_date2_int>=13&&(lst_date==28))
+								{
+									
+									
+									String expected_date = business_date1_int + "/" + (28) + "/"
+											+ business_date3_int;
+									String expected_date2 = "0" + (business_date1_int) + "/0" + (28) + "/"
+											+ business_date3_int;
+									String expected_date3 = (business_date1_int ) + "/" + "0" + (28) + "/"
+											+ business_date3_int;
+									String expected_date4 = "0" + (business_date1_int) + "/" + (28) + "/"
+											+ business_date3_int;
+									if (date.equalsIgnoreCase(expected_date)
+											|| date.equalsIgnoreCase(expected_date2)
+											|| date.equalsIgnoreCase(expected_date3)
+											|| date.equalsIgnoreCase(expected_date4)) {
+										test.log(LogStatus.PASS, "Displayed date: " + date + "== Expected date"
+												+ (business_date1_int) + "/" + (28) + "/" + business_date3);
+									} else {
+										test.log(LogStatus.FAIL,
+												"Displayed date: " + date + "Not equals to Expected date"
+														+ business_date1_int + "/" + (28) + "/"+business_date3);
+								}
+										
+									
+						}
+//verifying date of feb month	29 days
+								else if(business_date2_int<14&&(lst_date==29))
+								{
+									
+									
+									String expected_date = business_date1_int + "/" + (14) + "/"
+											+ business_date3_int;
+									String expected_date2 = "0" + (business_date1_int) + "/0" + (14) + "/"
+											+ business_date3_int;
+									String expected_date3 = (business_date1_int ) + "/" + "0" + (14) + "/"
+											+ business_date3_int;
+									String expected_date4 = "0" + (business_date1_int) + "/" + (14) + "/"
+											+ business_date3_int;
+									if (date.equalsIgnoreCase(expected_date)
+											|| date.equalsIgnoreCase(expected_date2)
+											|| date.equalsIgnoreCase(expected_date3)
+											|| date.equalsIgnoreCase(expected_date4)) {
+										test.log(LogStatus.PASS, "Displayed date: " + date + "== Expected date"
+												+ (business_date1_int) + "/" + (14) + "/" + business_date3);
+									} else {
+										test.log(LogStatus.FAIL,
+												"Displayed date: " + date + "Not equals to Expected date"
+														+ business_date1_int + "/" + (14) + "/"+business_date3);
+								}
+										
+									
+						}
+								else if(business_date2_int>=14&&(lst_date==29))
+								{
+									
+									
+									String expected_date = business_date1_int + "/" + (29) + "/"
+											+ business_date3_int;
+									String expected_date2 = "0" + (business_date1_int) + "/0" + (29) + "/"
+											+ business_date3_int;
+									String expected_date3 = (business_date1_int ) + "/" + "0" + (29) + "/"
+											+ business_date3_int;
+									String expected_date4 = "0" + (business_date1_int) + "/" + (29) + "/"
+											+ business_date3_int;
+									if (date.equalsIgnoreCase(expected_date)
+											|| date.equalsIgnoreCase(expected_date2)
+											|| date.equalsIgnoreCase(expected_date3)
+											|| date.equalsIgnoreCase(expected_date4)) {
+										test.log(LogStatus.PASS, "Displayed date: " + date + "== Expected date"
+												+ (business_date1_int) + "/" + (29) + "/" + business_date3);
+									} else {
+										test.log(LogStatus.FAIL,
+												"Displayed date: " + date + "Not equals to Expected date"
+														+ business_date1_int + "/" + (29) + "/"+business_date3);
+								}
+										
+									
+						}
+//verifying date of 30 days
+								else if(business_date2_int<15&&(lst_date==30))
+								{
+									
+									
+									String expected_date = business_date1_int + "/" + (15) + "/"
+											+ business_date3_int;
+									String expected_date2 = "0" + (business_date1_int) + "/0" + (15) + "/"
+											+ business_date3_int;
+									String expected_date3 = (business_date1_int ) + "/" + "0" + (15) + "/"
+											+ business_date3_int;
+									String expected_date4 = "0" + (business_date1_int) + "/" + (15) + "/"
+											+ business_date3_int;
+									if (date.equalsIgnoreCase(expected_date)
+											|| date.equalsIgnoreCase(expected_date2)
+											|| date.equalsIgnoreCase(expected_date3)
+											|| date.equalsIgnoreCase(expected_date4)) {
+										test.log(LogStatus.PASS, "Displayed date: " + date + "== Expected date"
+												+ (business_date1_int) + "/" + (15) + "/" + business_date3);
+									} else {
+										test.log(LogStatus.FAIL,
+												"Displayed date: " + date + "Not equals to Expected date"
+														+ business_date1_int + "/" + (15) + "/"+business_date3);
+								}
+										
+									
+						}	
+								else if(business_date2_int>=15&&(lst_date==30))
+								{
+									
+									
+									String expected_date = business_date1_int + "/" + (30) + "/"
+											+ business_date3_int;
+									String expected_date2 = "0" + (business_date1_int) + "/0" + (30) + "/"
+											+ business_date3_int;
+									String expected_date3 = (business_date1_int ) + "/" + "0" + (30) + "/"
+											+ business_date3_int;
+									String expected_date4 = "0" + (business_date1_int) + "/" + (30) + "/"
+											+ business_date3_int;
+									if (date.equalsIgnoreCase(expected_date)
+											|| date.equalsIgnoreCase(expected_date2)
+											|| date.equalsIgnoreCase(expected_date3)
+											|| date.equalsIgnoreCase(expected_date4)) {
+										test.log(LogStatus.PASS, "Displayed date: " + date + "== Expected date"
+												+ (business_date1_int) + "/" + (30) + "/" + business_date3);
+									} else {
+										test.log(LogStatus.FAIL,
+												"Displayed date: " + date + "Not equals to Expected date"
+														+ business_date1_int + "/" + (30) + "/"+business_date3);
+								}
+										
+									
+						}
+/*//verifying date of 31 days
+								else if(business_date2_int<15&&(lst_date==31))
+						{
+							
+							
+							String expected_date = business_date1_int + "/" + (31) + "/"
+									+ business_date3_int;
+							String expected_date2 = "0" + (business_date1_int) + "/0" + (31) + "/"
+									+ business_date3_int;
+							String expected_date3 = (business_date1_int ) + "/" + "0" + (31) + "/"
+									+ business_date3_int;
+							String expected_date4 = "0" + (business_date1_int) + "/" + (31) + "/"
+									+ business_date3_int;
+							if (date.equalsIgnoreCase(expected_date)
+									|| date.equalsIgnoreCase(expected_date2)
+									|| date.equalsIgnoreCase(expected_date3)
+									|| date.equalsIgnoreCase(expected_date4)) {
+								test.log(LogStatus.PASS, "Displayed date: " + date + "== Expected date"
+										+ (business_date1_int) + "/" + (31) + "/" + business_date3);
+							} else {
+								test.log(LogStatus.FAIL,
+										"Displayed date: " + date + "Not equals to Expected date"
+												+ business_date1_int + "/" + (31) + "/"+business_date3);
+						}
+								
+							
+				}*/
+							
+								
+						
+							
+							
+						}
+							
+						else if (Monthly_Type.equals("Other2")) {
 							driver.findElement(By.name("customerBean.payFreqCdDisp")).sendKeys(Income_PayFrequency);
 							test.log(LogStatus.PASS, "Income_PayFrequency is entered: " + Income_PayFrequency);
 
 							test.log(LogStatus.PASS, "Monthly type selected: " + Monthly_Type);
 							driver.findElement(By.id("rad_monthly2")).click();
 							test.log(LogStatus.PASS, "Clicked on monthly type: " + Monthly_Type);
-
-							Select dropdown = new Select(driver.findElement(By.name("customerBean.monthlyWeek")));
+							
+							driver.findElement(By.id("oth1")).click();
+							test.log(LogStatus.PASS, "Clicked on Other radio button");
+							
+							try { 
+							    Alert alert = driver.switchTo().alert();
+							    alert.accept();
+							   // if alert present, accept and move on.												
+								
+							}
+							catch (NoAlertPresentException e) {
+							    //do what you normally would if you didn't have the alert.
+							}
+							driver.findElement(By.id("semi_other")).click();
+							test.log(LogStatus.PASS, "Clicked first option/ dates radio button");
+							
+							
+							Select dropdown = new Select(driver.findElement(By.name("customerBean.semiFirstDate")));
 
 							List<WebElement> options = dropdown.getOptions();
-							Select dropdown2 = new Select(driver.findElement(By.name("customerBean.monthlyDay")));
+							
+							Select dropdown2 = new Select(driver.findElement(By.name("customerBean.semiSecondDate")));
 
 							List<WebElement> options2 = dropdown2.getOptions();
 
-							for (int k = 1; k <= 5; k++) {
+							for (int k = 1; k <= 15; k++) {
 								for (int m = 1; m <= 7; m++) {
 
 									String weekday = options2.get(m).getText();
@@ -599,8 +1105,9 @@ public class Frequency_Semi_monthly extends QCStore {
 											.findElement(By
 													.xpath("//input[@class='textBox50editablepp' and @name='NPYYYY']"))
 											.getAttribute("value");
-									String date = date1 + "/" + date2 + "/" + date3;
+									date = date1 + "/" + date2 + "/" + date3;
 
+									LocalDate now;
 									// First week
 									if (options.get(k).getText().equalsIgnoreCase("FIRST")) {
 
@@ -636,7 +1143,7 @@ public class Frequency_Semi_monthly extends QCStore {
 												day = "SATURDAY";
 											}
 
-											int business_date2_int = Integer.parseInt(business_date2);
+											
 
 											if (day.equalsIgnoreCase(weekday)) {
 
@@ -649,11 +1156,11 @@ public class Frequency_Semi_monthly extends QCStore {
 													int dayOfMonth;
 
 													if (month == 11) {
-														LocalDate now = LocalDate.of((year + 1), (1), j);// now();
+														now = LocalDate.of((year + 1), (1), j);// now();
 																											// //2015-11-23
 														firstday = now.with(firstInMonth(DayOfWeek.valueOf(day)));
 													} else {
-														LocalDate now = LocalDate.of(year, (month + 2), j);// now();
+														now = LocalDate.of(year, (month + 2), j);// now();
 																											// //2015-11-23
 														firstday = now.with(firstInMonth(DayOfWeek.valueOf(day)));
 
@@ -739,7 +1246,7 @@ public class Frequency_Semi_monthly extends QCStore {
 												day = "SATURDAY";
 											}
 
-											int business_date2_int = Integer.parseInt(business_date2);
+										
 
 											if (day.equalsIgnoreCase(weekday)) {
 
@@ -751,12 +1258,12 @@ public class Frequency_Semi_monthly extends QCStore {
 
 													int dayOfMonth;
 													if (month == 11) {
-														LocalDate now = LocalDate.of((year + 1), (1), j);// now();
+														now = LocalDate.of((year + 1), (1), j);// now();
 																											// //2015-11-23
 														firstday = now.with(firstInMonth(DayOfWeek.valueOf(day)));
 
 													} else {
-														LocalDate now = LocalDate.of(year, (month + 2), j);// now();
+														now = LocalDate.of(year, (month + 2), j);// now();
 																											// //2015-11-23
 														firstday = now.with(firstInMonth(DayOfWeek.valueOf(day)));
 													}
@@ -853,7 +1360,7 @@ public class Frequency_Semi_monthly extends QCStore {
 												day = "SATURDAY";
 											}
 
-											int business_date2_int = Integer.parseInt(business_date2);
+											
 
 											if (day.equalsIgnoreCase(weekday)) {
 
@@ -865,11 +1372,11 @@ public class Frequency_Semi_monthly extends QCStore {
 
 													int dayOfMonth;
 													if (month == 11) {
-														LocalDate now = LocalDate.of((year + 1), (1), j);// now();
+													now = LocalDate.of((year + 1), (1), j);// now();
 																											// //2015-11-23
 														firstday = now.with(firstInMonth(DayOfWeek.valueOf(day)));
 													} else {
-														LocalDate now = LocalDate.of(year, (month + 2), j);// now();
+													 now = LocalDate.of(year, (month + 2), j);// now();
 																											// //2015-11-23
 														firstday = now.with(firstInMonth(DayOfWeek.valueOf(day)));
 													}
@@ -966,7 +1473,7 @@ public class Frequency_Semi_monthly extends QCStore {
 												day = "SATURDAY";
 											}
 
-											int business_date2_int = Integer.parseInt(business_date2);
+											
 
 											if (day.equalsIgnoreCase(weekday)) {
 
@@ -977,11 +1484,11 @@ public class Frequency_Semi_monthly extends QCStore {
 													// business_date3int=Integer.parseInt(business_date3);
 
 													if (month == 11) {
-														LocalDate now = LocalDate.of((year + 1), (1), j);// now();
+												now = LocalDate.of((year + 1), (1), j);// now();
 																											// //2015-11-23
 														firstday = now.with(firstInMonth(DayOfWeek.valueOf(day)));
 													} else {
-														LocalDate now = LocalDate.of(year, (month + 2), j);// now();
+												now = LocalDate.of(year, (month + 2), j);// now();
 																											// //2015-11-23
 														firstday = now.with(firstInMonth(DayOfWeek.valueOf(day)));
 													}
@@ -1078,7 +1585,7 @@ public class Frequency_Semi_monthly extends QCStore {
 													day = "SATURDAY";
 												}
 
-												int business_date2_int = Integer.parseInt(business_date2);
+												
 
 												if (day.equalsIgnoreCase(weekday)) {
 
@@ -1090,11 +1597,11 @@ public class Frequency_Semi_monthly extends QCStore {
 
 														int dayOfMonth;
 														if (month == 11) {
-															LocalDate now = LocalDate.of((year + 1), (1), j);// now();
+															now = LocalDate.of((year + 1), (1), j);// now();
 																												// //2015-11-23
 															firstday = now.with(firstInMonth(DayOfWeek.valueOf(day)));
 														} else {
-															LocalDate now = LocalDate.of(year, (month + 2), j);// now();
+													now = LocalDate.of(year, (month + 2), j);// now();
 																												// //2015-11-23
 															firstday = now.with(firstInMonth(DayOfWeek.valueOf(day)));
 														}
@@ -1197,7 +1704,7 @@ public class Frequency_Semi_monthly extends QCStore {
 													day = "SATURDAY";
 												}
 
-												int business_date2_int = Integer.parseInt(business_date2);
+												
 
 												if (day.equalsIgnoreCase(weekday)) {
 
@@ -1209,11 +1716,11 @@ public class Frequency_Semi_monthly extends QCStore {
 
 														int dayOfMonth;
 														if (month == 11) {
-															LocalDate now = LocalDate.of((year + 1), (1), j);// now();
+													now = LocalDate.of((year + 1), (1), j);// now();
 																												// //2015-11-23
 															firstday = now.with(firstInMonth(DayOfWeek.valueOf(day)));
 														} else {
-															LocalDate now = LocalDate.of(year, (month + 1), j);// now();
+															now = LocalDate.of(year, (month + 1), j);// now();
 																												// //2015-11-23
 															firstday = now.with(firstInMonth(DayOfWeek.valueOf(day)));
 

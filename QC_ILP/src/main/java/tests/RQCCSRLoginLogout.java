@@ -46,9 +46,11 @@ public class RQCCSRLoginLogout extends QCStore
 					String RegSSN = TestData.getCellData(sheetName,"SSN",row);
 					//String csr_url = TestData.getCellData(sheetName,"AppURL",row);
 
-					String username = TestData.getCellData(sheetName,"UserName",row);
+					String username = "csr1709";
+							//TestData.getCellData(sheetName,"UserName",row);
 					String password = TestData.getCellData(sheetName,"Password",row);
-					String store_id = TestData.getCellData(sheetName,"StoreID",row);
+					String store_id ="1709"; 
+							//TestData.getCellData(sheetName,"StoreID",row);
 					
 					
 

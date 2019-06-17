@@ -1,14 +1,10 @@
 package tests;
 
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
 import com.relevantcodes.extentreports.LogStatus;
@@ -187,6 +183,7 @@ public class QCRefinanceprocess extends QCStore{
 							}*/
 							driver.findElement(By.name("qualify")).click();
 							test.log(LogStatus.PASS, "Clicked on qualify button ");
+							Thread.sleep(5000);
 							String paymentamount=driver.findElement(By.name("requestBean.siilBean.paymentAmt")).getAttribute("value");
 							test.log(LogStatus.PASS, "Getting payment amount "+paymentamount);
 							driver.findElement(By.name("requestBean.siilBean.tenderTypeFirst")).sendKeys(TenderType);
@@ -305,7 +302,7 @@ public class QCRefinanceprocess extends QCStore{
 				
 					driver.findElement(By.name("requestBean.password")).sendKeys(PIN);
 					test.log(LogStatus.PASS, "ESign_Checks is selected as "+PIN);
-						
+					Thread.sleep(5000);
 						driver.findElement(By.name("finishLoan")).click();
 						test.log(LogStatus.PASS, "click on Finish Loan button ");
 													
@@ -321,13 +318,20 @@ public class QCRefinanceprocess extends QCStore{
 								driver.switchTo().frame("mainFrame");
 								driver.switchTo().frame("main");
 								
-								String confirm_text1=driver.findElement(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr[2]/td[1]/b[1]")).getText();
+								try {
+									String confirm_text1=driver.findElement(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr[2]/td[1]/b[1]")).getText();
+									
+									String confirm_text2=driver.findElement(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr[2]/td[1]/b[2]")).getText();
+									String confirm_text3=driver.findElement(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr[2]/td[1]/b[3]")).getText();
+									String confirm_text4=driver.findElement(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr[3]/td/b")).getText();
 								
-								String confirm_text2=driver.findElement(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr[2]/td[1]/b[2]")).getText();
-								String confirm_text3=driver.findElement(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr[2]/td[1]/b[3]")).getText();
-								String confirm_text4=driver.findElement(By.xpath("/html/body/form/table/tbody/tr/td/table/tbody/tr[3]/td/b")).getText();
-							
-								test.log(LogStatus.PASS, "confirm text is  "+confirm_text1+" Will receive an "+confirm_text2+" of "+confirm_text3+" First payment date is "+confirm_text4);
+									test.log(LogStatus.PASS, "confirm text is  "+confirm_text1+" Will receive an "+confirm_text2+" of "+confirm_text3+" First payment date is "+confirm_text4);
+									
+								}
+								catch (Exception e) {
+									//do what you normally would if you didn't have the alert.
+								}
+								Thread.sleep(5000);
 								
 								driver.findElement(By.name("OKBut")).click();
 

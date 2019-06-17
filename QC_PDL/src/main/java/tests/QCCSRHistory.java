@@ -200,7 +200,7 @@ System.out.println(columnname+"_TxnHistory_FieldValue");
 					driver.switchTo().frame("topFrame");
 					driver.findElement(By.xpath("//*[contains(text(),'Loan Transactions')]")).click();	*/		
 					test.log(LogStatus.PASS, "Clicked on Loan Transactions");
-					Thread.sleep(1000);
+					Thread.sleep(3000);
 					driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 					driver.switchTo().defaultContent();
 					driver.switchTo().frame("mainFrame");
@@ -226,7 +226,8 @@ System.out.println(columnname+"_TxnHistory_FieldValue");
 				    
 				  // String loan_nbr= driver.findElement(locator(prop.getProperty("csr_loan_nbr"))).getText();
 				  // test.log(LogStatus.PASS, "Loan Number is" + loan_nbr);
-				    driver.findElement(By.name("button")).click();
+					Thread.sleep(4000);
+					driver.findElement(By.name("button")).click();
 					test.log(LogStatus.PASS, "Clicked on GO Button under search results");
 					// driver.findElement(By.name("button")).click();
 					
@@ -265,6 +266,7 @@ System.out.println(columnname+"_TxnHistory_FieldValue");
 						 driver.switchTo().frame("main");*/
 					     String loan_nbr= driver.findElement(locator(prop.getProperty("csr_loan_nbr"))).getText();
 						   test.log(LogStatus.PASS, "Loan Number is" + loan_nbr);
+						   Thread.sleep(3000);
 						 driver.findElement(By.name("transactionList")).sendKeys("History");
 						 test.log(LogStatus.PASS, "Transaction Type is selected as History");
 						 driver.findElement(By.name("button")).click();
