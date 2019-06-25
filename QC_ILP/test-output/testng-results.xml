@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="51" total="52" passed="1">
+<testng-results skipped="0" failed="0" ignored="36" total="37" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="358055" started-at="2019-06-13T06:16:29Z" finished-at="2019-06-13T06:22:27Z">
+  <suite name="Suite" duration-ms="551809" started-at="2019-06-19T12:54:59Z" finished-at="2019-06-19T13:04:10Z">
     <groups>
-      <group name="Brahmith1">
-        <method signature="QCStore.QC_AgeStore_Void_Txn()[pri:54, instance:tests.QCStore@5f9d02cb]" name="QC_AgeStore_Void_Txn" class="tests.QCStore"/>
-      </group> <!-- Brahmith1 -->
+      <group name="Brahmith">
+        <method signature="QCStore.QC_ILP_NewLoanInstallmentDeposit_Txn()[pri:55, instance:tests.QCStore@5f9d02cb]" name="QC_ILP_NewLoanInstallmentDeposit_Txn" class="tests.QCStore"/>
+      </group> <!-- Brahmith -->
     </groups>
-    <test name="Test" duration-ms="358055" started-at="2019-06-13T06:16:29Z" finished-at="2019-06-13T06:22:27Z">
+    <test name="Test" duration-ms="551809" started-at="2019-06-19T12:54:59Z" finished-at="2019-06-19T13:04:10Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="107" started-at="2019-06-13T06:16:29Z" finished-at="2019-06-13T06:16:29Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="158" started-at="2019-06-19T12:54:59Z" finished-at="2019-06-19T12:54:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5011" started-at="2019-06-13T06:16:29Z" finished-at="2019-06-13T06:16:34Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5032" started-at="2019-06-19T12:54:59Z" finished-at="2019-06-19T12:55:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="QC_AgeStore_Void_Txn()[pri:54, instance:tests.QCStore@5f9d02cb]" name="QC_AgeStore_Void_Txn" duration-ms="352635" started-at="2019-06-13T06:16:34Z" finished-at="2019-06-13T06:22:27Z">
+        <test-method status="PASS" signature="QC_ILP_NewLoanInstallmentDeposit_Txn()[pri:55, instance:tests.QCStore@5f9d02cb]" name="QC_ILP_NewLoanInstallmentDeposit_Txn" duration-ms="546344" started-at="2019-06-19T12:55:04Z" finished-at="2019-06-19T13:04:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- QC_AgeStore_Void_Txn -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="1" started-at="2019-06-13T06:22:27Z" finished-at="2019-06-13T06:22:27Z">
+        </test-method> <!-- QC_ILP_NewLoanInstallmentDeposit_Txn -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="0" started-at="2019-06-19T13:04:10Z" finished-at="2019-06-19T13:04:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="283" started-at="2019-06-13T06:22:27Z" finished-at="2019-06-13T06:22:27Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="252" started-at="2019-06-19T13:04:10Z" finished-at="2019-06-19T13:04:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=QC_AgeStore_Void_Txn status=SUCCESS method=QCStore.QC_AgeStore_Void_Txn()[pri:54, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+                <![CDATA[[TestResult name=QC_ILP_NewLoanInstallmentDeposit_Txn status=SUCCESS method=QCStore.QC_ILP_NewLoanInstallmentDeposit_Txn()[pri:55, instance:tests.QCStore@5f9d02cb] output={null}]]]>
               </value>
             </param>
           </params>

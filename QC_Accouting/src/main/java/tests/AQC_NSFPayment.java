@@ -90,6 +90,7 @@ public class AQC_NSFPayment extends QCStore{
 					//Need to add code
 					
 					
+					
 
 					driver.findElement(By.name("requestBean.password")).sendKeys(PIN);
 					test.log(LogStatus.PASS, " Entered password "+PIN);
@@ -102,11 +103,14 @@ public class AQC_NSFPayment extends QCStore{
 
 						alert.accept();
 						test.log(LogStatus.PASS, "alert handled "+almsg);
+						test.log(LogStatus.PASS, "  Nsf payment  is successfull");
+						test.log(LogStatus.PASS, "********************************************** ");
 					}
 					catch (NoAlertPresentException e) {
-						//do what you normally would if you didn't have the alert.
+						test.log(LogStatus.FAIL, "  Nsf payment  is successfull");
+						test.log(LogStatus.PASS, "********************************************** ");
 					}
-					Thread.sleep(3000);
+				/*	Thread.sleep(3000);
 					driver.switchTo().defaultContent();
 					driver.switchTo().frame("mainFrame");
 					driver.switchTo().frame("main");
@@ -115,14 +119,14 @@ public class AQC_NSFPayment extends QCStore{
 					{
 
 
-						test.log(LogStatus.PASS, " EPP Nsf payment  is successfull");
+						test.log(LogStatus.PASS, "  Nsf payment  is successfull");
 						test.log(LogStatus.PASS, "********************************************** ");
 					}
 					else
 					{
-						test.log(LogStatus.FAIL, " EPP Nsf Payment  is notsuccessfull");
+						test.log(LogStatus.FAIL, " Nsf Payment  is notsuccessfull");
 						test.log(LogStatus.PASS, "********************************************** ");
-					}
+					}*/
 
 
 

@@ -842,6 +842,7 @@ public class QCStore {
 					QCCSRNewLoan.newLoan(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					int No_of_Installments_Int = Integer.parseInt(No_of_Installments);
+					//int No_of_Installments_Int =5;
 					int j;
 					for (j = 1; j <= No_of_Installments_Int; j++) {
 						test.log(LogStatus.INFO, "**********************************************");

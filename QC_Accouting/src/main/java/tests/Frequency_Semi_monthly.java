@@ -650,25 +650,28 @@ public class Frequency_Semi_monthly extends QCStore {
 									if(business_date2_int>=k)
 									{
 										
-										
-										String expected_date = business_date1_int + "/" + (k+15) + "/"
+	//Changed this code									
+										String expected_date = business_date1_int+1 + "/" + (k) + "/"
 												+ business_date3_int;
-										String expected_date2 = "0" + (business_date1_int) + "/0" + (k+15) + "/"
+										String expected_date2 = "0" + (business_date1_int+1) + "/0" + (k) + "/"
 												+ business_date3_int;
-										String expected_date3 = (business_date1_int ) + "/" + "0" + (k+15) + "/"
+										String expected_date3 = (business_date1_int+1 ) + "/" + "0" + (k) + "/"
 												+ business_date3_int;
-										String expected_date4 = "0" + (business_date1_int) + "/" + (k+15) + "/"
+										String expected_date4 = "0" + (business_date1_int+1) + "/" + (k) + "/"
 												+ business_date3_int;
 										if (date.equalsIgnoreCase(expected_date)
 												|| date.equalsIgnoreCase(expected_date2)
 												|| date.equalsIgnoreCase(expected_date3)
 												|| date.equalsIgnoreCase(expected_date4)) {
 											test.log(LogStatus.PASS, "Displayed date: " + date + "== Expected date"
-													+ (business_date1_int) + "/" + (k+15) + "/" + business_date3);
+													+ (business_date1_int+1) + "/" + (k) + "/" + business_date3);
 										} else {
 											test.log(LogStatus.FAIL,
 													"Displayed date: " + date + "Not equals to Expected date"
-															+ business_date1_int + "/" + (k+15) + "/"+business_date3);
+															+ business_date1_int+1 + "/" + (k) + "/"+business_date3);
+											getScreenhot(driver,"xyz");
+											
+											
 									}
 											
 										
@@ -990,28 +993,29 @@ public class Frequency_Semi_monthly extends QCStore {
 										
 									
 						}	
+	//Code changed							
 								else if(business_date2_int>=15&&(lst_date==30))
 								{
 									
 									
-									String expected_date = business_date1_int + "/" + (30) + "/"
+									String expected_date = business_date1_int+1 + "/" + (15) + "/"
 											+ business_date3_int;
-									String expected_date2 = "0" + (business_date1_int) + "/0" + (30) + "/"
+									String expected_date2 = "0" + (business_date1_int+1) + "/0" + (15) + "/"
 											+ business_date3_int;
-									String expected_date3 = (business_date1_int ) + "/" + "0" + (30) + "/"
+									String expected_date3 = (business_date1_int+1 ) + "/" + "0" + (15) + "/"
 											+ business_date3_int;
-									String expected_date4 = "0" + (business_date1_int) + "/" + (30) + "/"
+									String expected_date4 = "0" + (business_date1_int+1) + "/" + (15) + "/"
 											+ business_date3_int;
 									if (date.equalsIgnoreCase(expected_date)
 											|| date.equalsIgnoreCase(expected_date2)
 											|| date.equalsIgnoreCase(expected_date3)
 											|| date.equalsIgnoreCase(expected_date4)) {
 										test.log(LogStatus.PASS, "Displayed date: " + date + "== Expected date"
-												+ (business_date1_int) + "/" + (30) + "/" + business_date3);
+												+ (business_date1_int+1) + "/" + (15) + "/" + business_date3);
 									} else {
 										test.log(LogStatus.FAIL,
 												"Displayed date: " + date + "Not equals to Expected date"
-														+ business_date1_int + "/" + (30) + "/"+business_date3);
+														+ business_date1_int+1 + "/" + (15) + "/"+business_date3);
 								}
 										
 									

@@ -368,6 +368,13 @@ public class QCCSRNewLoan extends QCStore {
 
 								Thread.sleep(5000);
 
+								try {
+									driver.findElement(By.id("overridelink")).click();
+									Thread.sleep(3000);
+									
+								} catch (Exception e) {
+									// TODO: handle exception
+								}
 								driver.switchTo().window(winHandle1);
 
 								Thread.sleep(5000);

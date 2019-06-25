@@ -88,7 +88,13 @@ public class QCCSRLoginLogout extends QCStore
 					
 						driver.get(AppURL);
 					
-						
+						/*try {
+							driver.findElement(By.id("overridelink")).click();
+							Thread.sleep(3000);
+							
+						} catch (Exception e) {
+							// TODO: handle exception
+						}*/
 					    driver.findElement(locator(prop.getProperty("csr_username"))).sendKeys(username);
 				        test.log(LogStatus.PASS, "Username is entered: "+username);
 				        
@@ -202,7 +208,13 @@ public static void logout(String SSN,String AppURL){
 				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			
 				driver.get(BAdminURL);
-
+				try {
+					driver.findElement(By.id("overridelink")).click();
+					Thread.sleep(3000);
+					
+				} catch (Exception e) {
+					// TODO: handle exception
+				}
 				driver.findElement(By.name("loginRequestBean.userId")).sendKeys(UserName);
 
 				test.log(LogStatus.PASS, "Username is entered: "+UserName); 

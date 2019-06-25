@@ -47,26 +47,26 @@ public class DBReturn extends QCStore{
 		// Execute a query
 		stmt = conn.createStatement();
 		stmt2 = conn.createStatement();
-		loan_nbr="10508026";
+		//loan_nbr="10508514";
 		String schedule_id="1220";
 		try {
 			
-			stmt.executeQuery("update REPAY_DEPOSIT_SCHEDULE set CC_info_key='123456789125' where loan_code="+loan_nbr);
+			stmt.executeQuery("update REPAY_DEPOSIT_SCHEDULE set CC_info_key='123456789126' where loan_code="+loan_nbr);
 			test.log(LogStatus.PASS, "Executing the query with loan number"+loan_nbr);
-			test.log(LogStatus.PASS, "Updating the CC_info_key to 123456789125");
+			test.log(LogStatus.PASS, "Updating the CC_info_key to 123456789126");
 			
 			stmt.executeQuery("update SCHEDULE_ATTR set IS_PROCESSED='NOP' where SCHEDULE_ID="+schedule_id);
 			test.log(LogStatus.PASS, "Updating the Is_Processed to NOP");
 			
 			//resultSet =stmt2.executeQuery("select loan_code,status_id,response_code,CC_info_key from REPAY_DEPOSIT_SCHEDULE where loan_code="+loan_nbr);
-			test.log(LogStatus.PASS, "Verifying where LOAN is returned or not");
-			test.log(LogStatus.PASS, "Waiting for records to be updated");
+			//test.log(LogStatus.PASS, "Verifying where LOAN is returned or not");
+			//test.log(LogStatus.PASS, "Waiting for records to be updated");
 	Thread.sleep(60000);
 	
 			
 			
 			
-			while (resultSet .next()){
+		/*	while (resultSet .next()){
 			
 				rowValues.add(resultSet.getString(2)); 
 				
@@ -88,7 +88,8 @@ public class DBReturn extends QCStore{
 						test.log(LogStatus.PASS, "Loan not returned");
 						
 					}
-			}}
+			}
+				 }*/
 			 
 			 
 			

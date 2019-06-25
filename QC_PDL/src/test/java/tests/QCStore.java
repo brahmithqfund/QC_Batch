@@ -1159,7 +1159,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 102, groups = { "1stBatch" })
+	@Test(priority = 102, groups = { "1stBatch1" })
 	public static void QC_RefinanceStepDown_Txn() throws Exception {
 		try {
 			// test =
@@ -1220,7 +1220,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 103, groups = { "1stBatch" })
+	@Test(priority = 103, groups = { "1stBatch1" })
 	public static void QC_RefinanceStepDown_Void_Txn() throws Exception {
 		try {
 			// test =

@@ -1,0 +1,304 @@
+package tests;
+
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+/*import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.MarkupHelper;*/
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+
+
+public class BDueDate_Loan extends QCStore{
+	public static String ACH_type;
+	public static String ACH_transaction;
+	public static String ACH_status;
+	public static String ACH_amount;
+	public static String ACH_ABA_code;
+	public static String ACH_check_acc_no;
+	public static String ach_history_ach_type;
+	public static String ach_history_ach_transaction;
+	public static String ach_history_ach_status;
+	public static String ach_history_ach_amt;
+	public static String ach_history_ach_check_acc_no;
+	public static String ach_history_ach_ABA_code;
+
+	public static void history(String SSN,String AppURL)
+	{
+		try{
+	
+		
+			int lastrow=TestData.getLastRow("Borrower_Registration");
+			String sheetName="Borrower_Registration";
+			String sheetName_calc="HistoryFieldsValidation";
+			String sheetName_new_loan="New_Loan";
+			
+
+			for(int row=2;row<=lastrow;row++)
+			{	
+				String RegSSN = TestData.getCellData(sheetName,"SSN",row);
+				if(SSN.equals(RegSSN))
+				{
+					String UserName = TestData.getCellData(sheetName,"UserName",row);
+					String Password = TestData.getCellData(sheetName,"Password",row);
+			       // System.out.println(Password);
+			        String StoreId = TestData.getCellData(sheetName,"StoreID",row);
+			        String ProductID = TestData.getCellData(sheetName,"ProductID",row);
+			        String StateID = TestData.getCellData(sheetName,"StateID",row);
+			        String Income_PayFrequency = TestData.getCellData(sheetName,"Income_PayFrequency",row);
+			        String Header = StateID+ "_" + ProductID;	      
+			        String columnname=StateID+"_"+ ProductID+"_"+Income_PayFrequency;                                //column name
+			        System.out.println(columnname);
+			       String LastName = TestData.getCellData(sheetName,"LastName",row);
+			       String FirstName = TestData.getCellData(sheetName,"FirstName",row);
+			       String customer_name=LastName+", "+FirstName;
+			       String AddressLine = TestData.getCellData(sheetName,"AddressLine",row);
+			       String City = TestData.getCellData(sheetName,"City",row);
+			       String State = TestData.getCellData(sheetName,"State",row);	      
+			       String ZipCode = TestData.getCellData(sheetName,"ZipCode",row);
+			       String MonthsAtAddress = TestData.getCellData(sheetName,"MonthsAtAddress",row);	     
+			       String Bank_ABARoutingNbr = TestData.getCellData(sheetName,"Bank_ABARoutingNbr",row);
+			       String Bank_ChkgAcctNbr = TestData.getCellData(sheetName,"Bank_ChkgAcctNbr",row);	       
+			       String Ctc_PrimaryPhone = TestData.getCellData(sheetName,"Ctc_PrimaryPhone",row);
+			       String Ctc_PhoneType = TestData.getCellData(sheetName,"Ctc_PhoneType",row);
+			       String Misc_PhotoIDNbr = TestData.getCellData(sheetName,"Misc_PhotoIDNbr",row);
+			       String Misc_IDExpDate = TestData.getCellData(sheetName,"Misc_IDExpDate",row);	   
+			       String Misc_PhotoIDType = TestData.getCellData(sheetName,"Misc_PhotoIDType",row);
+			       String BorrDOB = TestData.getCellData(sheetName,"Misc_DOB",row);
+			       String Income_IncomeType = TestData.getCellData(sheetName,"Income_IncomeType",row);
+			       String ESign_CollateralType = TestData.getCellData(sheetName,"ESign_CollateralType",row);
+			       String courtesy_consent=TestData.getCellData(sheetName_new_loan,"ESign_CourtesyCallConsent",row);
+			     //  String courtesy_consent_status=TestData.getCellData(sheetName_new_loan,"ESign_Preference",row);
+			       String collateral_type=TestData.getCellData(sheetName_new_loan,"ESign_CollateralType",row);
+			       
+			       String primary_source_of_income = TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",4);
+System.out.println(sheetName_calc);
+System.out.println(columnname+"_TxnHistory_FieldValue");
+
+			       String Income_Employer = TestData.getCellData(sheetName,"Income_Employer",row);
+			       String Income_WorkPhone = TestData.getCellData(sheetName,"Income_WorkPhone",row);
+			       String NetIncomeAmt = TestData.getCellData(sheetName,"Income_NetIncomeAmt",row);
+			       String GrossIncome = TestData.getCellData(sheetName,"Income_GrossIncome",row);
+			      // NetIncomeAmt=NetIncomeAmt+".00";
+			       String pay_frequency=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",7);
+			       String loan_status=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",8);
+			       String check_status=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",9);
+			       String product_name=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",12);
+			       String product_type=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",13);
+			       
+			       String loan_amount=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",15);
+			       String Interest_Rate=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",16);
+	
+			    
+			       String apr=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",17);
+			   //    String collateral_type=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",16);
+	
+			      // String credot_or_verification_fee=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",18);
+			       String loan_account_inf_inst_amt_test=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",19);
+			       String finance_charge=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",20);
+			       String loan_frequency=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",21);
+			       String available_credit=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",22);
+			       String courtesy_consent_status=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",24);
+			       
+			       String principal_balance=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",25);
+			       String fee_due=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",26);
+			       String pay_off_amount=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",27);
+			       String loan_balance_inf_past_due_amt_test=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",28);
+			       
+
+			       String principal_paid_to_date=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",29);
+
+			       String fee_paid_date=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",30);
+
+			       String total_paid_amountc=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",31);
+			       String campaign_name=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",32);
+			       String promotion_code=TestData.getCellData(sheetName_calc,columnname+"_TxnHistory_FieldValue",33);
+			       
+			       //business_date="10/10/2018";
+			 
+			    		   //TestData.getCellData(sheetName_calc,columnname+"_Detail_FieldValue",2);
+			       String tran_date_sheet=TestData.getCellData(sheetName_calc,columnname+"_Detail_FieldValue",2);
+			       String cust_tran_test=TestData.getCellData(sheetName_calc,columnname+"_Detail_FieldValue",3);
+			       String cust_doc_total_amount_test=TestData.getCellData(sheetName_calc,columnname+"_Detail_FieldValue",4);
+			       String cust_doc_tender_type_test=TestData.getCellData(sheetName_calc,columnname+"_Detail_FieldValue",5);
+			       String cust_doc_inst_test=TestData.getCellData(sheetName_calc,columnname+"_Detail_FieldValue",6);
+			       String cust_doc_adv_amount_test=TestData.getCellData(sheetName_calc,columnname+"_Detail_FieldValue",7);
+			       String cust_doc_interest_test=TestData.getCellData(sheetName_calc,columnname+"_Detail_FieldValue",8);
+			       String cust_doc_new_balance_test=TestData.getCellData(sheetName_calc,columnname+"_Detail_FieldValue",9);
+			       String cust_doc_PromotionCoupon_Amt_test=TestData.getCellData(sheetName_calc,columnname+"_Detail_FieldValue",10);
+			      
+	 //ACH collateral details from sheet
+			      if(ESign_CollateralType.equals("ACH"))
+			      {
+				    	//To read from Excel
+			    	  ACH_type=TestData.getCellData(sheetName_calc,columnname+"_ACHHistory_FieldValue",2);
+				       ACH_transaction=TestData.getCellData(sheetName_calc,columnname+"_ACHHistory_FieldValue",3);
+				        ACH_status=TestData.getCellData(sheetName_calc,columnname+"_ACHHistory_FieldValue",4);
+				       ACH_amount=TestData.getCellData(sheetName_calc,columnname+"_ACHHistory_FieldValue",5);
+				       ACH_ABA_code=TestData.getCellData(sheetName_calc,columnname+"_ACHHistory_FieldValue",6);
+				       ACH_check_acc_no=TestData.getCellData(sheetName_calc,columnname+"_ACHHistory_FieldValue",7);
+				       
+			
+			      }
+
+			       
+			      
+			       String Income_HireDt = TestData.getCellData(sheetName,"Income_HireDt",row);
+			       String Income_DirectDeposit=TestData.getCellData(sheetName,"Income_DirectDeposit",row);	       
+			       String PrimaryRef_LastName = TestData.getCellData(sheetName,"PrimaryRef_LastName",row);
+			       String PrimaryRef_FirstName = TestData.getCellData(sheetName,"PrimaryRef_FirstName",row);
+			       String PrimaryRef_Relationship = TestData.getCellData(sheetName,"PrimaryRef_Relationship",row);
+			       String PrimaryRef_PhoneNbr=TestData.getCellData(sheetName,"PrimaryRef_PhoneNbr",row);
+			       String Ref_LastName = TestData.getCellData(sheetName,"Ref_LastName",row);
+			       String Ref_FirstName = TestData.getCellData(sheetName,"Ref_FirstName",row);
+			       String Ref_Relationship = TestData.getCellData(sheetName,"Ref_Relationship",row);
+			       String Ref_PhoneNbr=TestData.getCellData(sheetName,"Ref_PhoneNbr",row);	       
+			       String Bankruptcy=TestData.getCellData(sheetName,"Bankruptcy",row);	     
+						
+						   DateFormat  df=new SimpleDateFormat("MM/dd/yyyy");
+					        String SSN1 = SSN.substring(0, 3);
+					        String SSN2 = SSN.substring(3,5);
+					        String SSN3 = SSN.substring(5,9);
+					        
+					        String SSNverify="XXX-XX-"+SSN3;
+					        String PP1 = Ctc_PrimaryPhone.substring(0, 3);
+					        String PP2 = Ctc_PrimaryPhone.substring(3, 6);
+					        String PP3 = Ctc_PrimaryPhone.substring(6, 10);
+					        String IncomeP1 = Income_WorkPhone.substring(0, 3);
+					        String IncomeP2 = Income_WorkPhone.substring(3, 6);
+					        String IncomeP3 = Income_WorkPhone.substring(6, 10);
+					        String PrimaryRef_PhoneNbr1 = PrimaryRef_PhoneNbr.substring(0, 3);
+					        String PrimaryRef_PhoneNbr2 = PrimaryRef_PhoneNbr.substring(3, 6);
+					        String PrimaryRef_PhoneNbr3 = PrimaryRef_PhoneNbr.substring(6, 10);
+					        String Ref_PhoneNbr1 = Ref_PhoneNbr.substring(0, 3);
+					        String Ref_PhoneNbr2 = Ref_PhoneNbr.substring(3, 6);
+					        String Ref_PhoneNbr3 = Ref_PhoneNbr.substring(6, 10);			       
+					        System.out.println(Misc_IDExpDate);
+					        Date Misc_IDExpDt = df.parse(Misc_IDExpDate);
+					        String IDExpDate0 =df.format(Misc_IDExpDt);	
+					        System.out.println(IDExpDate0);
+					        String IDExpDate[] =IDExpDate0.split("/");
+					        String IDExpD1 = IDExpDate[0];
+					        String IDExpD2 = IDExpDate[1];
+					        String IDExpD3 = IDExpDate[2];
+					        String DOB[] =BorrDOB.split("/");
+					        String DOB1 = DOB[0];
+					        String DOB2 = DOB[1];
+					        String DOB3 = DOB[2];	
+					        
+					Thread.sleep(4000);
+				//	test.log(LogStatus.INFO, MarkupHelper.createLabel("Transaction History validation has started", ExtentColor.BLUE));
+					test.log(LogStatus.INFO, "Transaction History validation has started");
+					 
+			        driver.switchTo().frame("bottom");
+					String Str_date=driver.findElement(By.xpath("/html/body/blink/table/tbody/tr/td[4]")).getText();
+					String store_date[]=Str_date.split(":");
+	
+					business_date=store_date[1].trim();
+					test.log(LogStatus.PASS, "Business date is :"+business_date);
+				      String cust_transaction_date_test=business_date;
+
+					driver.switchTo().defaultContent();	
+					
+			        wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("topFrame")));
+					driver.switchTo().frame("topFrame");
+					wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("li[id='910000']")));
+			        driver.findElement(By.cssSelector("li[id='910000']")).click();	
+					/*driver.switchTo().defaultContent();				
+					driver.switchTo().frame("topFrame");
+					driver.findElement(By.xpath("//*[contains(text(),'Loan Transactions')]")).click();	*/		
+					test.log(LogStatus.PASS, "Clicked on Loan Transactions");
+					Thread.sleep(3000);
+	
+					driver.switchTo().defaultContent();
+					driver.switchTo().frame("mainFrame");
+			
+					driver.findElement(By.cssSelector("li[id='911101']")).click();			
+					test.log(LogStatus.PASS, "Clicked on Transactions");		
+					driver.switchTo().frame("main");		
+					driver.findElement(By.name("ssn1")).sendKeys(SSN1);
+					test.log(LogStatus.PASS, "SSN1 is entered: "+SSN1);
+					driver.findElement(By.name("ssn2")).sendKeys(SSN2);
+					test.log(LogStatus.PASS, "SSN2 is entered: "+SSN2);
+					driver.findElement(By.name("ssn3")).sendKeys(SSN3);
+					test.log(LogStatus.PASS, "SSN3 is entered: "+SSN3);
+					driver.findElement(By.name("submit1")).click();
+					test.log(LogStatus.PASS, "Click on submit Button");		
+					for(String winHandle : driver.getWindowHandles()){
+				    driver.switchTo().window(winHandle);
+					}
+				    driver.switchTo().defaultContent();
+				    driver.switchTo().frame("mainFrame");
+				    driver.switchTo().frame("main");
+				    
+				    
+				  // String loan_nbr= driver.findElement(locator(prop.getProperty("csr_loan_nbr"))).getText();
+				  // test.log(LogStatus.PASS, "Loan Number is" + loan_nbr);
+				    driver.findElement(By.name("button")).click();
+					test.log(LogStatus.PASS, "Clicked on GO Button under search results");
+					// driver.findElement(By.name("button")).click();
+					
+				for(String winHandle : driver.getWindowHandles()){
+					    driver.switchTo().window(winHandle);
+						}				    
+					 driver.switchTo().defaultContent();
+					    driver.switchTo().frame("mainFrame");
+					    driver.switchTo().frame("main");
+				
+					   // driver.findElement(By.xpath(" /html/body/form[1]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[7]/td[2]/table/tbody/tr/td/table/tbody/tr[4]/td[11]/input[1]")).click();
+					    driver.findElement(By.xpath("//input[@value='Go' and @type='button']")).click();
+					    test.log(LogStatus.PASS, "Clicked on Go button under Loans section");
+					    Thread.sleep(6000);
+						 driver.findElement(By.name("transactionList")).sendKeys("History");
+						 test.log(LogStatus.PASS, "Transaction Type is selected as History");
+						 driver.findElement(By.name("button")).click();
+						 test.log(LogStatus.PASS, "Clicked on Go button under Transaction selection section");
+						 
+						
+						 Thread.sleep(6000);
+					
+							 driver.switchTo().defaultContent();
+							 driver.switchTo().frame("mainFrame");
+							 driver.switchTo().frame("main");
+						 
+	
+						String DueDate= driver.findElement(By.xpath("//*[@id='transactionHistoryTable']/tbody/tr/td[3]/table/tbody/tr[4]/td/span[2]")).getText();
+						String loan_number= driver.findElement(By.xpath("//*[@id='transactionHistoryTable']/tbody/tr/td[4]/table/tbody/tr[4]/td/span[2]")).getText();
+						
+						
+
+
+
+						
+						
+
+							break;
+							
+}
+			}
+	
+		}
+
+				
+				catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+					//test.log(LogStatus.FAIL, MarkupHelper.createLabel("History is failed", ExtentColor.RED));
+					test.log(LogStatus.FAIL,"Exception occured "+e.toString().substring(0, 250));
+					test.log(LogStatus.FAIL,"History is failed");
+
+
+				}
+			}
+}
