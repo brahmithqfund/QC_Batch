@@ -353,7 +353,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 3, groups = "Brahmith")  //Issue in Writeoff
+	@Test(priority = 3, groups = "Brahmith1")  //Issue in Writeoff
 
 	public static void Txn5_WriteOff() throws Exception {
 		try {
@@ -382,7 +382,7 @@ public class QCStore {
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 
 					System.out.println(AppURL);
-					QCCSRLoginLogout.login(SSN, AppURL);
+				QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
@@ -403,11 +403,13 @@ public class QCStore {
 					BGracedays_Loan.duedate(SSN, SSN);
 					//QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
 					
-					QCCSRLoginLogout.login(SSN, AppURL);
-					Chargeback.chargeback(SSN, SSN);
-					QCCSRLoginLogout.logout(SSN, AppURL);
-					
-					QCCSRLoginLogout.login(SSN, AppURL);
+					//QCCSRLoginLogout.login(SSN, AppURL);
+					//Chargeback.chargeback(SSN, SSN);
+					//QCCSRLoginLogout.logout(SSN, AppURL);
+					DBReturn.proc();
+					DBverify.proc();
+									
+						QCCSRLoginLogout.login(SSN, AppURL);
 					BDueDate_Loan.duedate(SSN, SSN);
 					//QCAgeStoreDueDate.ageStoreDueDate(SSN, SSN);
 					
@@ -416,37 +418,40 @@ public class QCStore {
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					
 										
-					QCCSRLoginLogout.login(SSN, AppURL);
-					Chargeback.chargeback(SSN, SSN);
-					QCCSRLoginLogout.logout(SSN, AppURL);
+					//QCCSRLoginLogout.login(SSN, AppURL);
+					//Chargeback.chargeback(SSN, SSN);
+					//QCCSRLoginLogout.logout(SSN, AppURL);
 					//Need to check here by adding due date
+					/*			
+						DBReturn.proc();
+					DBverify.proc();
 					
-					QCCSRLoginLogout.login(SSN, AppURL);
-					BGracedays_Loan.duedate(SSN, SSN);
+								//QCCSRLoginLogout.login(SSN, AppURL);
+					//BGracedays_Loan.duedate(SSN, SSN);
 					//QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
 					
 					
 					
-					QCCSRLoginLogout.login(SSN, AppURL);
-					BGracedays_Loan.duedate(SSN, SSN);
+					//QCCSRLoginLogout.login(SSN, AppURL);
+					//BGracedays_Loan.duedate(SSN, SSN);
 					//QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
 		
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCDefaultPayment.sdefaultpayment(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 			
-					QCCSRLoginLogout.login(SSN, AppURL);
+						QCCSRLoginLogout.login(SSN, AppURL);
 
 					
 					QCCSRWriteOff.writeoff(SSN, SSN);
-					/*QCCSRLoginLogout.login(SSN, AppURL);
+				QCCSRLoginLogout.login(SSN, AppURL);
 					BGracedays_Loan.duedate(SSN, SSN);
 					//QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);
 					QCCSRLoginLogout.login(SSN, AppURL);
 					Chargeback.chargeback(SSN, SSN);
-					QCCSRLoginLogout.logout(SSN, AppURL);*/
+					QCCSRLoginLogout.logout(SSN, AppURL);
 					
-					
+					*/
 					
 					
 					
@@ -465,7 +470,7 @@ public class QCStore {
 		}
 	}
 
-		@Test(priority = 11, groups = "Brahmith1")  //NSF checkbox issue , Development not completed
+		@Test(priority = 11, groups = "Brahmith")  //NSF checkbox issue , Development  completed
 
 	public static void Txn6_Recon_CashRoll() throws Exception {
 		try {
@@ -495,7 +500,7 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-			/*		QCCSRLoginLogoutPDL.login(SSN, AppURL);
+					QCCSRLoginLogoutPDL.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 
@@ -518,7 +523,7 @@ public class QCStore {
 					
 					
 					DBReturn.proc();
-					DBverify.proc();*/
+					DBverify.proc();
 					
 					QCCSRLoginLogoutPDL.login(SSN, AppURL);
 					AQC_NSFPayment.nsfpayment(SSN, SSN);
@@ -626,12 +631,12 @@ public class QCStore {
 
 					
 
-					/*QCCSRLoginLogoutTX.login(SSN, AppURL);
+					QCCSRLoginLogoutTX.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogoutTX.login(SSN, AppURL);
 					QCCSRNewLoanTX.newLoan(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);*/
+					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogoutTX.login(SSN, AppURL);
 					BGracedays_Loan.duedate(SSN, SSN);
 					//QCAgeStoreGraceDays.ageStoreGraceDays(SSN, SSN);

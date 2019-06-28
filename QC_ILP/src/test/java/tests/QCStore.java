@@ -902,7 +902,7 @@ public class QCStore {
 					// AppURL = TestData.getCellData(sheetName, "AppURL", row);
 					String SSN = TestData.getCellData(sheetName, "SSN", row);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+			/*		QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
@@ -913,7 +913,7 @@ public class QCStore {
 					QCAgeStoreDueDate.ageStoreDueDate(SSN, AppURL);
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCPayment.payment(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);*/
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCRefinanceprocess.Refinance(SSN, SSN);
 					QCCSRLoginLogout.logout(SSN, AppURL);

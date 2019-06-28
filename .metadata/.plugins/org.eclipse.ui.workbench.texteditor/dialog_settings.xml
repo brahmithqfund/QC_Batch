@@ -2,22 +2,23 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="Brahmith1" key="selection"/>
+		<item value="Brahmith" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="//@Test("/>
 			<item value="Brahmith1"/>
-			<item value="//@Test"/>
-			<item value="df"/>
-			<item value="QC_TLP_NewLoan"/>
-			<item value="encry"/>
-			<item value="No_of_Installments"/>
-			<item value="CSR_URL"/>
-			<item value="graceday"/>
+			<item value="1stBatch1"/>
+			<item value="Entered tender amou"/>
+			<item value="Collateral Type is enterted a"/>
+			<item value="last"/>
+			<item value="loan_nbr"/>
+			<item value="loan"/>
 		</list>
 		<list key="replacehistory">
+			<item value="@Test("/>
 			<item value="@Test"/>
 			<item value="Brahmith"/>
 		</list>
@@ -26,7 +27,7 @@
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
-		<item value="928" key="DIALOG_X_ORIGIN"/>
-		<item value="143" key="DIALOG_Y_ORIGIN"/>
+		<item value="962" key="DIALOG_X_ORIGIN"/>
+		<item value="356" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

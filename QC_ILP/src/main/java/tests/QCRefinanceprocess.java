@@ -331,7 +331,7 @@ public class QCRefinanceprocess extends QCStore{
 								catch (Exception e) {
 									//do what you normally would if you didn't have the alert.
 								}
-								Thread.sleep(5000);
+								Thread.sleep(10000);
 								
 								driver.findElement(By.name("OKBut")).click();
 

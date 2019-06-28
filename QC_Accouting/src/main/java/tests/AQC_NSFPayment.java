@@ -88,6 +88,23 @@ public class AQC_NSFPayment extends QCStore{
 					
 					
 					//Need to add code
+					Thread.sleep(2000);
+					
+					driver.findElement(By.name("waiveNsfFeeChkBox")).click();
+					test.log(LogStatus.PASS, " Clicked on NSF waive fee check box ");
+					
+					driver.findElement(By.name("transactionDataBean.tenderTypeFirst")).sendKeys("Cash");
+					test.log(LogStatus.PASS, " Selected the tender type as Cash ");
+					
+					driver.findElement(By.name("transactionDataBean.tenderAmtFirst")).sendKeys("50");
+					test.log(LogStatus.PASS, " Selected the tender amount as 50 ");
+					driver.findElement(By.name("transactionDataBean.waiveReasons")).sendKeys("Waive NSF Prepaid");
+					test.log(LogStatus.PASS, " Selected the Waive NSF Fee Reason as Waive NSF Prepaid ");
+					driver.findElement(By.name("waiveComments")).sendKeys("test");
+					test.log(LogStatus.PASS, " Entered the comments as test ");
+					
+					
+					
 					
 					
 					
@@ -97,6 +114,17 @@ public class AQC_NSFPayment extends QCStore{
 
 					driver.findElement(By.name("Submit22")).click();
 					test.log(LogStatus.PASS, " click on finish Nsf payment button");
+					try {
+						Alert alert = driver.switchTo().alert();
+						String almsg= alert.getText();
+
+						alert.accept();
+						
+					}
+					catch (NoAlertPresentException e) {
+						test.log(LogStatus.FAIL, "  Nsf payment  is successfull");
+						test.log(LogStatus.PASS, "********************************************** ");
+					}
 					try {
 						Alert alert = driver.switchTo().alert();
 						String almsg= alert.getText();

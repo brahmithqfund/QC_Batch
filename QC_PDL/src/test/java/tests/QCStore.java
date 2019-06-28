@@ -181,9 +181,9 @@ public class QCStore {
 
 					System.out.println(AppURL);
 
-					QCCSRLoginLogout.login(SSN, AppURL);
+					/*QCCSRLoginLogout.login(SSN, AppURL);
 					QCBorrowerRegistration.borrowerRegistration(SSN, AppURL);
-					QCCSRLoginLogout.logout(SSN, AppURL);
+					QCCSRLoginLogout.logout(SSN, AppURL);*/
 					QCCSRLoginLogout.login(SSN, AppURL);
 					QCCSRNewLoan.newLoan(SSN, AppURL);
 					QCCSRLoginLogout.logout(SSN, AppURL);
@@ -1159,7 +1159,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 102, groups = { "1stBatch1" })
+	@Test(priority = 102, groups = { "1stBatch" })
 	public static void QC_RefinanceStepDown_Txn() throws Exception {
 		try {
 			// test =
@@ -1220,7 +1220,7 @@ public class QCStore {
 		}
 	}
 
-	@Test(priority = 103, groups = { "1stBatch1" })
+	@Test(priority = 103, groups = { "1stBatch" })
 	public static void QC_RefinanceStepDown_Void_Txn() throws Exception {
 		try {
 			// test =

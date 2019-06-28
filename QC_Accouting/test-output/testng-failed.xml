@@ -5,17 +5,25 @@
     <groups>
       <run>
         <include name="Brahmith"/>
+        <include name="Brahmith_date"/>
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
-          <include name="getResult"/>
           <include name="Txn8_Recon_ILP_EARNED_FEE_Variance"/>
           <include name="setup"/>
-          <include name="Txn11_EPP"/>
+          <include name="Payfrequency_Monthly"/>
           <include name="endReport"/>
           <include name="killProcess"/>
+          <include name="Payfrequency_Weekly"/>
+          <include name="Payfrequency_Semi_monthly"/>
+          <include name="getResult"/>
+          <include name="Txn1_Recon_ILP_Debit_Card_Variance_scenario"/>
+          <include name="Txn11_EPP"/>
+          <include name="Txn3_4_Reverse_and_Reallocation"/>
+          <include name="Payfrequency_Biweekly"/>
+          <include name="Txn6_Recon_CashRoll"/>
         </methods>
       </class> <!-- tests.QCStore -->
     </classes>

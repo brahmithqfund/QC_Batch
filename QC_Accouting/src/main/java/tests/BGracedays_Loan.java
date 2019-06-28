@@ -62,7 +62,7 @@ public class BGracedays_Loan extends QCStore{
 					        
 					Thread.sleep(4000);
 				//	test.log(LogStatus.INFO, MarkupHelper.createLabel("Transaction History validation has started", ExtentColor.BLUE));
-					test.log(LogStatus.INFO, "Transaction History validation has started");
+					test.log(LogStatus.INFO, "Transaction Gracedays validation has started");
 					 
 			        driver.switchTo().frame("bottom");
 					String Str_date=driver.findElement(By.xpath("/html/body/blink/table/tbody/tr/td[4]")).getText();

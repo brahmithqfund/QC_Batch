@@ -47,11 +47,11 @@ public class DBReturn extends QCStore{
 		// Execute a query
 		stmt = conn.createStatement();
 		stmt2 = conn.createStatement();
-		//loan_nbr="10508514";
+		//loan_nbr="10508939";
 		String schedule_id="1220";
 		try {
 			
-			stmt.executeQuery("update REPAY_DEPOSIT_SCHEDULE set CC_info_key='123456789126' where loan_code="+loan_nbr);
+			stmt.executeQuery("update REPAY_DEPOSIT_SCHEDULE set CC_info_key='123456789126' where installment_nbr=1 and loan_code="+loan_nbr);
 			test.log(LogStatus.PASS, "Executing the query with loan number"+loan_nbr);
 			test.log(LogStatus.PASS, "Updating the CC_info_key to 123456789126");
 			

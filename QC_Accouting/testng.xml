@@ -7,8 +7,8 @@
 
   
    <!-- Brahmith group--> 
-<include name="Brahmith1"/>  
-<!-- <include name="Brahmith_date1"/>  -->  
+<include name="Brahmith1"/>  <!-- 5 scenarios and 1 develpment pending--> 
+<!-- <include name="Brahmith_date"/>   -->   <!-- 4 scenarios --> 
 
 <!-- Janaki group--> 
 <!-- <include name="Janaki"/> -->

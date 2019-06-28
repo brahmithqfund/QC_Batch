@@ -2,38 +2,38 @@
 <testng-results skipped="0" failed="0" ignored="11" total="12" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="94049" started-at="2019-06-25T09:48:59Z" finished-at="2019-06-25T09:50:33Z">
+  <suite name="Suite" duration-ms="811962" started-at="2019-06-28T08:57:17Z" finished-at="2019-06-28T09:10:49Z">
     <groups>
       <group name="Brahmith1">
-        <method signature="QCStore.Txn6_Recon_CashRoll()[pri:11, instance:tests.QCStore@520a3426]" name="Txn6_Recon_CashRoll" class="tests.QCStore"/>
+        <method signature="QCStore.Txn5_WriteOff()[pri:3, instance:tests.QCStore@520a3426]" name="Txn5_WriteOff" class="tests.QCStore"/>
       </group> <!-- Brahmith1 -->
     </groups>
-    <test name="Test" duration-ms="94049" started-at="2019-06-25T09:48:59Z" finished-at="2019-06-25T09:50:33Z">
+    <test name="Test" duration-ms="811962" started-at="2019-06-28T08:57:17Z" finished-at="2019-06-28T09:10:49Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@520a3426]" name="setup" is-config="true" duration-ms="120" started-at="2019-06-25T09:48:59Z" finished-at="2019-06-25T09:48:59Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@520a3426]" name="setup" is-config="true" duration-ms="131" started-at="2019-06-28T08:57:17Z" finished-at="2019-06-28T08:57:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@520a3426]" name="killProcess" is-config="true" duration-ms="5014" started-at="2019-06-25T09:48:59Z" finished-at="2019-06-25T09:49:04Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@520a3426]" name="killProcess" is-config="true" duration-ms="5037" started-at="2019-06-28T08:57:18Z" finished-at="2019-06-28T08:57:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="Txn6_Recon_CashRoll()[pri:11, instance:tests.QCStore@520a3426]" name="Txn6_Recon_CashRoll" duration-ms="88082" started-at="2019-06-25T09:49:04Z" finished-at="2019-06-25T09:50:32Z">
+        <test-method status="PASS" signature="Txn5_WriteOff()[pri:3, instance:tests.QCStore@520a3426]" name="Txn5_WriteOff" duration-ms="806435" started-at="2019-06-28T08:57:23Z" finished-at="2019-06-28T09:10:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Txn6_Recon_CashRoll -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@520a3426]" name="getResult" is-config="true" duration-ms="816" started-at="2019-06-25T09:50:32Z" finished-at="2019-06-25T09:50:33Z">
+        </test-method> <!-- Txn5_WriteOff -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@520a3426]" name="getResult" is-config="true" duration-ms="341" started-at="2019-06-28T09:10:49Z" finished-at="2019-06-28T09:10:49Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Txn6_Recon_CashRoll status=SUCCESS method=QCStore.Txn6_Recon_CashRoll()[pri:11, instance:tests.QCStore@520a3426] output={null}]]]>
+                <![CDATA[[TestResult name=Txn5_WriteOff status=SUCCESS method=QCStore.Txn5_WriteOff()[pri:3, instance:tests.QCStore@520a3426] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@520a3426]" name="endReport" is-config="true" duration-ms="0" started-at="2019-06-25T09:50:32Z" finished-at="2019-06-25T09:50:32Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@520a3426]" name="endReport" is-config="true" duration-ms="0" started-at="2019-06-28T09:10:49Z" finished-at="2019-06-28T09:10:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
