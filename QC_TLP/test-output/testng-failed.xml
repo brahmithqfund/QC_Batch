@@ -4,14 +4,14 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="Brahmith1"/>
+        <include name="Brahmith"/>
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
           <include name="getResult"/>
-          <include name="QC_AgeStore_Void_Txn"/>
+          <include name="QC_TLP_Writeoff_Recovery_Void_Txn"/>
           <include name="setup"/>
           <include name="endReport"/>
           <include name="killProcess"/>

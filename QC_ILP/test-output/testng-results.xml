@@ -2,35 +2,35 @@
 <testng-results skipped="0" failed="0" ignored="51" total="52" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="358055" started-at="2019-06-13T06:16:29Z" finished-at="2019-06-13T06:22:27Z">
+  <suite name="Suite" duration-ms="268266" started-at="2019-06-27T10:11:41Z" finished-at="2019-06-27T10:16:09Z">
     <groups>
       <group name="Brahmith1">
-        <method signature="QCStore.QC_AgeStore_Void_Txn()[pri:54, instance:tests.QCStore@5f9d02cb]" name="QC_AgeStore_Void_Txn" class="tests.QCStore"/>
+        <method signature="QCStore.QC_InstallPayment_Ref_Rescind_Txn()[pri:47, instance:tests.QCStore@5f9d02cb]" name="QC_InstallPayment_Ref_Rescind_Txn" class="tests.QCStore"/>
       </group> <!-- Brahmith1 -->
     </groups>
-    <test name="Test" duration-ms="358055" started-at="2019-06-13T06:16:29Z" finished-at="2019-06-13T06:22:27Z">
+    <test name="Test" duration-ms="268266" started-at="2019-06-27T10:11:41Z" finished-at="2019-06-27T10:16:09Z">
       <class name="tests.QCStore">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="107" started-at="2019-06-13T06:16:29Z" finished-at="2019-06-13T06:16:29Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.QCStore@5f9d02cb]" name="setup" is-config="true" duration-ms="166" started-at="2019-06-27T10:11:41Z" finished-at="2019-06-27T10:11:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5011" started-at="2019-06-13T06:16:29Z" finished-at="2019-06-13T06:16:34Z">
+        <test-method status="PASS" signature="killProcess()[pri:0, instance:tests.QCStore@5f9d02cb]" name="killProcess" is-config="true" duration-ms="5031" started-at="2019-06-27T10:11:41Z" finished-at="2019-06-27T10:11:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killProcess -->
-        <test-method status="PASS" signature="QC_AgeStore_Void_Txn()[pri:54, instance:tests.QCStore@5f9d02cb]" name="QC_AgeStore_Void_Txn" duration-ms="352635" started-at="2019-06-13T06:16:34Z" finished-at="2019-06-13T06:22:27Z">
+        <test-method status="PASS" signature="QC_InstallPayment_Ref_Rescind_Txn()[pri:47, instance:tests.QCStore@5f9d02cb]" name="QC_InstallPayment_Ref_Rescind_Txn" duration-ms="262702" started-at="2019-06-27T10:11:46Z" finished-at="2019-06-27T10:16:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- QC_AgeStore_Void_Txn -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="1" started-at="2019-06-13T06:22:27Z" finished-at="2019-06-13T06:22:27Z">
+        </test-method> <!-- QC_InstallPayment_Ref_Rescind_Txn -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.QCStore@5f9d02cb]" name="endReport" is-config="true" duration-ms="1" started-at="2019-06-27T10:16:09Z" finished-at="2019-06-27T10:16:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="283" started-at="2019-06-13T06:22:27Z" finished-at="2019-06-13T06:22:27Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.QCStore@5f9d02cb]" name="getResult" is-config="true" duration-ms="343" started-at="2019-06-27T10:16:09Z" finished-at="2019-06-27T10:16:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=QC_AgeStore_Void_Txn status=SUCCESS method=QCStore.QC_AgeStore_Void_Txn()[pri:54, instance:tests.QCStore@5f9d02cb] output={null}]]]>
+                <![CDATA[[TestResult name=QC_InstallPayment_Ref_Rescind_Txn status=SUCCESS method=QCStore.QC_InstallPayment_Ref_Rescind_Txn()[pri:47, instance:tests.QCStore@5f9d02cb] output={null}]]]>
               </value>
             </param>
           </params>

@@ -1,0 +1,18 @@
+package test3.test3;
+
+import junit.framework.Test;
+import junit.framework.TestCase;
+import junit.framework.TestSuite;
+import org.testng.annotations.Test;
+/**
+ * Unit test for simple App.
+ */
+public class AppTest 
+   
+    {
+	@Test(priority = 4)
+	public static void main()
+        {
+        	System.out.println("test3 executino completed ");
+        }
+    }

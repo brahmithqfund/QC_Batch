@@ -88,6 +88,24 @@ public class AQC_NSFPayment extends QCStore{
 					
 					
 					//Need to add code
+					Thread.sleep(2000);
+					
+					driver.findElement(By.name("waiveNsfFeeChkBox")).click();
+					test.log(LogStatus.PASS, " Clicked on NSF waive fee check box ");
+					
+					driver.findElement(By.name("transactionDataBean.tenderTypeFirst")).sendKeys("Cash");
+					test.log(LogStatus.PASS, " Selected the tender type as Cash ");
+					
+					driver.findElement(By.name("transactionDataBean.tenderAmtFirst")).sendKeys("50");
+					test.log(LogStatus.PASS, " Selected the tender amount as 50 ");
+					driver.findElement(By.name("transactionDataBean.waiveReasons")).sendKeys("Waive NSF Prepaid");
+					test.log(LogStatus.PASS, " Selected the Waive NSF Fee Reason as Waive NSF Prepaid ");
+					driver.findElement(By.name("waiveComments")).sendKeys("test");
+					test.log(LogStatus.PASS, " Entered the comments as test ");
+					
+					
+					
+					
 					
 					
 
@@ -101,12 +119,26 @@ public class AQC_NSFPayment extends QCStore{
 						String almsg= alert.getText();
 
 						alert.accept();
-						test.log(LogStatus.PASS, "alert handled "+almsg);
+						
 					}
 					catch (NoAlertPresentException e) {
-						//do what you normally would if you didn't have the alert.
+						test.log(LogStatus.FAIL, "  Nsf payment  is successfull");
+						test.log(LogStatus.PASS, "********************************************** ");
 					}
-					Thread.sleep(3000);
+					try {
+						Alert alert = driver.switchTo().alert();
+						String almsg= alert.getText();
+
+						alert.accept();
+						test.log(LogStatus.PASS, "alert handled "+almsg);
+						test.log(LogStatus.PASS, "  Nsf payment  is successfull");
+						test.log(LogStatus.PASS, "********************************************** ");
+					}
+					catch (NoAlertPresentException e) {
+						test.log(LogStatus.FAIL, "  Nsf payment  is successfull");
+						test.log(LogStatus.PASS, "********************************************** ");
+					}
+				/*	Thread.sleep(3000);
 					driver.switchTo().defaultContent();
 					driver.switchTo().frame("mainFrame");
 					driver.switchTo().frame("main");
@@ -115,14 +147,14 @@ public class AQC_NSFPayment extends QCStore{
 					{
 
 
-						test.log(LogStatus.PASS, " EPP Nsf payment  is successfull");
+						test.log(LogStatus.PASS, "  Nsf payment  is successfull");
 						test.log(LogStatus.PASS, "********************************************** ");
 					}
 					else
 					{
-						test.log(LogStatus.FAIL, " EPP Nsf Payment  is notsuccessfull");
+						test.log(LogStatus.FAIL, " Nsf Payment  is notsuccessfull");
 						test.log(LogStatus.PASS, "********************************************** ");
-					}
+					}*/
 
 
 

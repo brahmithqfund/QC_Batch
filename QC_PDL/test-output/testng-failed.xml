@@ -4,16 +4,29 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="1stBatch1"/>
+        <include name="1stBatch"/>
       </run>
     </groups>
     <classes>
       <class name="tests.QCStore">
         <methods>
-          <include name="getResult"/>
+          <include name="QC_Epp_Check_Deposit_Clear_Txn"/>
+          <include name="QC_AgeStore_Void_Txn"/>
           <include name="setup"/>
-          <include name="QC_Void_FullReturnPayment_Txn"/>
+          <include name="QC_Epp_Return_NSFPayment_Txn"/>
+          <include name="QC_Deposit_GraceDays_Txn"/>
+          <include name="QC_Deposit_Menu_Txn"/>
+          <include name="QC_Epp_PrePayment_Txn"/>
+          <include name="QC_NewLoan_Void_Txn"/>
           <include name="killProcess"/>
+          <include name="QC_EppDepositClear_Refund_Txn"/>
+          <include name="QC_PartialPayment_RefundVoid_Txn"/>
+          <include name="QC_Epp_PrePayment_Return_Txn"/>
+          <include name="getResult"/>
+          <include name="QC_Epp_Deposit_Void_Txn"/>
+          <include name="QC_FutureDeposit_DropDown"/>
+          <include name="QC_Void_FullReturnPayment_Txn"/>
+          <include name="QC_Epp_Return_ReDeposit_Txn"/>
         </methods>
       </class> <!-- tests.QCStore -->
     </classes>

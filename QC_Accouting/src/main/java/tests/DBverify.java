@@ -44,10 +44,10 @@ public class DBverify extends QCStore{
 
 		// Execute a query
 		stmt = conn.createStatement();
-		loan_nbr="10508026";
+		//loan_nbr="10508939";
 		try {
 		
-			resultSet =stmt.executeQuery("select loan_code,status_id,response_code,CC_info_key from REPAY_DEPOSIT_SCHEDULE where loan_code="+loan_nbr);
+			resultSet =stmt.executeQuery("select loan_code,status_id,response_code,CC_info_key from REPAY_DEPOSIT_SCHEDULE where installment_nbr=1 and loan_code="+loan_nbr);
 			test.log(LogStatus.PASS, "Verifying where LOAN is returned or not");
 			test.log(LogStatus.PASS, "Waiting for records to be updated");
 			test.log(LogStatus.PASS, "Executing the query with loan number"+loan_nbr);
@@ -84,7 +84,7 @@ public class DBverify extends QCStore{
 					{
 						System.out.println("Value of Response_code is "+ value);
 						test.log(LogStatus.PASS, "Value of Response_code is "+value);
-						test.log(LogStatus.PASS, "Loan not returned");
+						test.log(LogStatus.FAIL, "Loan not returned");
 						
 					}
 			}

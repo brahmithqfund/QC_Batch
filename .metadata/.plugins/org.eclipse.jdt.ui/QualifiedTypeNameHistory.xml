@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="tests.DBverify"/>
-<fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="org.apache.poi.EmptyFileException"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
@@ -14,4 +13,8 @@
 <fullyQualifiedTypeName name="org.apache.pdfbox.pdfparser.PDFParser"/>
 <fullyQualifiedTypeName name="org.apache.pdfbox.cos.COSDocument"/>
 <fullyQualifiedTypeName name="java.net.MalformedURLException"/>
+<fullyQualifiedTypeName name="tests.ExcelNew"/>
+<fullyQualifiedTypeName name="tests.BDueDate_Loan"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

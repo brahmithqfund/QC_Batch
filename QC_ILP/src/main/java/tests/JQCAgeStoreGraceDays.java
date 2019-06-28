@@ -109,6 +109,14 @@ public class JQCAgeStoreGraceDays extends QCStore {
 						for (String winHandle : driver.getWindowHandles()) {
 							if (!mainwindow.equalsIgnoreCase(winHandle)) {
 								driver.switchTo().window(winHandle);
+								
+								try {
+									driver.findElement(By.id("overridelink")).click();
+									Thread.sleep(3000);
+									
+								} catch (Exception e) {
+									// TODO: handle exception
+								}
 
 								loan_nbr = driver.findElement(locator(Jprop.getProperty("csr_loan_nbr"))).getText();
 								test.log(LogStatus.PASS, "Loan Number is" + loan_nbr);

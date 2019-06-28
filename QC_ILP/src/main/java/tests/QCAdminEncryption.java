@@ -43,7 +43,7 @@ public class QCAdminEncryption extends QCStore
 				{
 				String UserName = TestData.getCellData(sheetName,"AdminUserName",row);
 				String Password = TestData.getCellData(sheetName,"AdminPassword",row);
-				String AdminURL = TestData.getCellData(sheetName,"AdminURL",row);
+				String AdminURL = BAdminURL;
 			
 				String Tran_cd = TestData.getCellData(sheetName,"Tran_cd",row);
 
@@ -66,6 +66,13 @@ public class QCAdminEncryption extends QCStore
 
 			
 				driver.get(AdminURL);
+				try {
+					driver.findElement(By.id("overridelink")).click();
+					Thread.sleep(3000);
+					
+				} catch (Exception e) {
+					// TODO: handle exception
+				}
 				//test.log(LogStatus.INFO, MarkupHelper.createLabel("Opened the Admin URL"+ AdminURL, ExtentColor.BLUE));
 				test.log(LogStatus.INFO, "Opened the Admin URL" + AdminURL);
 

@@ -8,25 +8,26 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="//@Test("/>
 			<item value="Brahmith1"/>
-			<item value="Transaction Type is select"/>
-			<item value="OKBut"/>
-			<item value=" OKBut"/>
 			<item value="1stBatch1"/>
-			<item value="partialde"/>
-			<item value="//@Test"/>
-			<item value="1stBatch"/>
+			<item value="Entered tender amou"/>
+			<item value="Collateral Type is enterted a"/>
+			<item value="last"/>
+			<item value="loan_nbr"/>
+			<item value="loan"/>
 		</list>
 		<list key="replacehistory">
-			<item value="Brahmith"/>
+			<item value="@Test("/>
 			<item value="@Test"/>
+			<item value="Brahmith"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
-		<item value="928" key="DIALOG_X_ORIGIN"/>
-		<item value="143" key="DIALOG_Y_ORIGIN"/>
+		<item value="962" key="DIALOG_X_ORIGIN"/>
+		<item value="356" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>
